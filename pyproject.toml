@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "leasepath"
+version = "0.1.0"
+description = "State-conditioned KV reuse-time prediction research"
+requires-python = ">=3.10"
+dependencies = ["jsonschema>=4.18,<5", "numpy>=1.24,<3"]
+
+[project.optional-dependencies]
+test = ["pytest>=8,<10", "mpmath>=1.3,<2"]
+measurement = ["matplotlib>=3.7,<4"]
+source = ["mpmath>=1.3,<2"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

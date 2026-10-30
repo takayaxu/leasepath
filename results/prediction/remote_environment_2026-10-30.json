@@ -1,0 +1,120 @@
+{
+  "check_date": "2026-10-30",
+  "timezone": "Asia/Shanghai",
+  "mode": "read_only_except_cpu_subprocess_assertion",
+  "model_inference_executed": false,
+  "remote_files_written": false,
+  "details": {
+    "service_processes": [
+      {
+        "pid": 1745652,
+        "python": "/home/ma-user/work/qwen35-9b-service/venv311/bin/python",
+        "config": {
+          "--host": "127.0.0.1",
+          "--port": "8000",
+          "--served-model-name": "Qwen3.5-9B",
+          "--dtype": "bfloat16",
+          "--no-enable-prefix-caching": true
+        },
+        "same_time_namespace": true,
+        "same_network_namespace": true
+      }
+    ],
+    "api": {
+      "/health": {
+        "status": 200,
+        "body": null
+      },
+      "/version": {
+        "status": 200,
+        "body": {
+          "version": "0.18.0"
+        }
+      },
+      "/v1/models": {
+        "status": 200,
+        "body": [
+          {
+            "id": "Qwen3.5-9B",
+            "max_model_len": 262144
+          }
+        ]
+      }
+    },
+    "python_environment": {
+      "venv_available": true,
+      "ensurepip_available": true,
+      "pip": {
+        "code": 0,
+        "stdout": "pip 23.1.2 from /home/ma-user/anaconda3/envs/PyTorch-2.7.1/lib/python3.12/site-packages/pip (python 3.12)\n",
+        "stderr": ""
+      }
+    },
+    "network": {
+      "pypi_minisweagent": {
+        "status": 200
+      },
+      "github": {
+        "status": 200
+      }
+    },
+    "real_tool_smoke": {
+      "code": 0,
+      "stdout": "CPU tool subprocess and assertion passed\n",
+      "stderr": ""
+    },
+    "git_version": {
+      "code": 0,
+      "stdout": "git version 2.33.0\n",
+      "stderr": ""
+    },
+    "npu": {
+      "code": 0,
+      "stdout": "+------------------------------------------------------------------------------------------------+\n| npu-smi 25.5.1                   Version: 25.5.1                                               |\n+---------------------------+---------------+----------------------------------------------------+\n| NPU   Name                | Health        | Power(W)    Temp(C)           Hugepages-Usage(page)|\n| Chip                      | Bus-Id        | AICore(%)   Memory-Usage(MB)  HBM-Usage(MB)        |\n+===========================+===============+====================================================+\n| 6     910B1               | OK            | 127.7       53                0    / 0             |\n| 0                         | 0000:82:00.0  | 14          0    / 0          58751/ 65536         |\n+===========================+===============+====================================================+\n+---------------------------+---------------+----------------------------------------------------+\n| NPU     Chip              | Process id    | Process name             | Process memory(MB)      |\n+===========================+===============+====================================================+\n| 6       0 ",
+      "stderr": ""
+    },
+    "work_mount": {
+      "code": 0,
+      "stdout": "ext4   rw,relatime\n",
+      "stderr": ""
+    }
+  },
+  "resource_probe": {
+    "architecture": "aarch64",
+    "os": "Huawei Cloud EulerOS 2.0",
+    "host_visible_logical_cpus": 192,
+    "instance_cpu_quota_us": 2400000,
+    "instance_cpu_period_us": 100000,
+    "effective_cpu_quota_cores": 24,
+    "instance_memory_limit_bytes": 206158430208,
+    "instance_memory_usage_bytes_at_probe": 36073836544,
+    "work_volume_free_gib_at_probe": 4033.17,
+    "work_volume_total_gib": 4062.62,
+    "home_and_tmp_volume_free_gib_at_probe": 49.0,
+    "work_writable_permission_check": true,
+    "docker_binary_available": false,
+    "podman_binary_available": false,
+    "docker_socket_available": false,
+    "default_python_version": "3.12.0",
+    "mini_swe_agent_installed_in_default_environment": false,
+    "litellm_installed_in_default_environment": false,
+    "default_python_pytest_version": "8.3.5"
+  },
+  "conclusion": {
+    "colocated_agent_tools_collector_feasible": true,
+    "basis": "resource quota, filesystem permission, real CPU subprocess assertion, API health and shared time/network namespaces",
+    "mini_swe_agent_end_to_end_tested": false,
+    "python_dependency_installation_tested": false,
+    "agent_task_sandbox_available_via_docker": false,
+    "prefix_caching_enabled": false,
+    "exact_kv_training_data_ready": false,
+    "recommendation": "Separate Agent virtual environment and per-task workspaces under /home/ma-user/work; use existing loopback model API; leave serving environment intact."
+  },
+  "limitations": [
+    "Filesystem free space is a mount-level snapshot, not a verified user storage quota or persistence guarantee.",
+    "CPU/RAM readings include running services; no concurrency or throughput benchmark was executed.",
+    "Docker-based benchmarks need a separate supported execution/isolation environment.",
+    "Same time namespace permits a common monotonic clock convention but does not by itself verify backend event timestamps.",
+    "Enabling and instrumenting actual hybrid prefix caching remains necessary before KV reuse-benefit experiments."
+  ]
+}

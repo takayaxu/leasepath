@@ -1,0 +1,316 @@
+{
+  "status": "passed",
+  "scope": "Synthetic event/label contract",
+  "evidence_kind": "synthetic",
+  "performance_claim_allowed": false,
+  "accepted_cases": 8,
+  "rejected_cases": 16,
+  "physical_hit_miss_labels_identical": true,
+  "cases": [
+    {
+      "id": "legal_demand_physical_miss",
+      "status": "passed",
+      "observed": "accepted",
+      "validation": {
+        "events": 17,
+        "runs": 1,
+        "idle_episodes": 1
+      },
+      "labels": [
+        {
+          "run_id": "d2",
+          "idle_episode_id": "idle-1",
+          "evidence_kind": "synthetic",
+          "start_ns": 5,
+          "end_ns": 14,
+          "duration_ns": 9,
+          "outcome": "legal_demand",
+          "reason": null,
+          "demand_request_id": "resume"
+        }
+      ]
+    },
+    {
+      "id": "legal_demand_physical_hit",
+      "status": "passed",
+      "observed": "accepted",
+      "validation": {
+        "events": 17,
+        "runs": 1,
+        "idle_episodes": 1
+      },
+      "labels": [
+        {
+          "run_id": "d2",
+          "idle_episode_id": "idle-1",
+          "evidence_kind": "synthetic",
+          "start_ns": 5,
+          "end_ns": 14,
+          "duration_ns": 9,
+          "outcome": "legal_demand",
+          "reason": null,
+          "demand_request_id": "resume"
+        }
+      ]
+    },
+    {
+      "id": "tool_end_without_retire",
+      "status": "passed",
+      "observed": "accepted",
+      "validation": {
+        "events": 10,
+        "runs": 1,
+        "idle_episodes": 1
+      },
+      "labels": [
+        {
+          "run_id": "d2",
+          "idle_episode_id": "idle-1",
+          "evidence_kind": "synthetic",
+          "start_ns": 5,
+          "end_ns": 20,
+          "duration_ns": 15,
+          "outcome": "right_censored",
+          "reason": null,
+          "demand_request_id": null
+        }
+      ]
+    },
+    {
+      "id": "tool_end_then_explicit_retire",
+      "status": "passed",
+      "observed": "accepted",
+      "validation": {
+        "events": 11,
+        "runs": 1,
+        "idle_episodes": 1
+      },
+      "labels": [
+        {
+          "run_id": "d2",
+          "idle_episode_id": "idle-1",
+          "evidence_kind": "synthetic",
+          "start_ns": 5,
+          "end_ns": 16,
+          "duration_ns": 11,
+          "outcome": "retire",
+          "reason": "explicit_abandonment",
+          "demand_request_id": null
+        }
+      ]
+    },
+    {
+      "id": "observation_ends_tool_running",
+      "status": "passed",
+      "observed": "accepted",
+      "validation": {
+        "events": 9,
+        "runs": 1,
+        "idle_episodes": 1
+      },
+      "labels": [
+        {
+          "run_id": "d2",
+          "idle_episode_id": "idle-1",
+          "evidence_kind": "synthetic",
+          "start_ns": 5,
+          "end_ns": 20,
+          "duration_ns": 15,
+          "outcome": "right_censored",
+          "reason": null,
+          "demand_request_id": null
+        }
+      ]
+    },
+    {
+      "id": "observation_ends_request_queued",
+      "status": "passed",
+      "observed": "accepted",
+      "validation": {
+        "events": 12,
+        "runs": 1,
+        "idle_episodes": 1
+      },
+      "labels": [
+        {
+          "run_id": "d2",
+          "idle_episode_id": "idle-1",
+          "evidence_kind": "synthetic",
+          "start_ns": 5,
+          "end_ns": 20,
+          "duration_ns": 15,
+          "outcome": "right_censored",
+          "reason": null,
+          "demand_request_id": null
+        }
+      ]
+    },
+    {
+      "id": "retire_at_observation_boundary",
+      "status": "passed",
+      "observed": "accepted",
+      "validation": {
+        "events": 11,
+        "runs": 1,
+        "idle_episodes": 1
+      },
+      "labels": [
+        {
+          "run_id": "d2",
+          "idle_episode_id": "idle-1",
+          "evidence_kind": "synthetic",
+          "start_ns": 5,
+          "end_ns": 20,
+          "duration_ns": 15,
+          "outcome": "retire",
+          "reason": "explicit_abandonment",
+          "demand_request_id": null
+        }
+      ]
+    },
+    {
+      "id": "demand_at_observation_boundary",
+      "status": "passed",
+      "observed": "accepted",
+      "validation": {
+        "events": 15,
+        "runs": 1,
+        "idle_episodes": 1
+      },
+      "labels": [
+        {
+          "run_id": "d2",
+          "idle_episode_id": "idle-1",
+          "evidence_kind": "synthetic",
+          "start_ns": 5,
+          "end_ns": 20,
+          "duration_ns": 15,
+          "outcome": "legal_demand",
+          "reason": null,
+          "demand_request_id": "resume"
+        }
+      ]
+    },
+    {
+      "id": "reject_incompatible_model",
+      "status": "passed",
+      "observed": "rejected",
+      "error_type": "ValueError",
+      "error": "claimed legal demand is not a compatible token prefix"
+    },
+    {
+      "id": "reject_different_token_prefix",
+      "status": "passed",
+      "observed": "rejected",
+      "error_type": "ValueError",
+      "error": "claimed legal demand is not a compatible token prefix"
+    },
+    {
+      "id": "reject_demand_lookup_token_count_mismatch",
+      "status": "passed",
+      "observed": "rejected",
+      "error_type": "ValueError",
+      "error": "legal demand token count differs from referenced lookup"
+    },
+    {
+      "id": "reject_bad_physical_counter_sum",
+      "status": "passed",
+      "observed": "rejected",
+      "error_type": "ValueError",
+      "error": "cache counters do not sum to prompt tokens"
+    },
+    {
+      "id": "reject_demand_not_at_lookup",
+      "status": "passed",
+      "observed": "rejected",
+      "error_type": "ValueError",
+      "error": "legal demand must reference an observed lookup at the same time"
+    },
+    {
+      "id": "reject_retire_without_reason",
+      "status": "passed",
+      "observed": "rejected",
+      "error_type": "ValidationError",
+      "error": "'reason' is a required property"
+    },
+    {
+      "id": "reject_duplicate_terminal",
+      "status": "passed",
+      "observed": "rejected",
+      "error_type": "ValueError",
+      "error": "outcome without open idle episode"
+    },
+    {
+      "id": "reject_demand_after_retire",
+      "status": "passed",
+      "observed": "rejected",
+      "error_type": "ValueError",
+      "error": "outcome without open idle episode"
+    },
+    {
+      "id": "reject_tool_end_without_start",
+      "status": "passed",
+      "observed": "rejected",
+      "error_type": "ValueError",
+      "error": "tool end without open invocation"
+    },
+    {
+      "id": "reject_duplicate_tool_end",
+      "status": "passed",
+      "observed": "rejected",
+      "error_type": "ValueError",
+      "error": "tool end without open invocation"
+    },
+    {
+      "id": "reject_tool_changes_workflow",
+      "status": "passed",
+      "observed": "rejected",
+      "error_type": "ValueError",
+      "error": "tool changed workflow identity"
+    },
+    {
+      "id": "reject_missing_observation_end",
+      "status": "passed",
+      "observed": "rejected",
+      "error_type": "ValueError",
+      "error": "every run must have observation_end for censoring"
+    },
+    {
+      "id": "reject_duplicate_event_id",
+      "status": "passed",
+      "observed": "rejected",
+      "error_type": "ValueError",
+      "error": "duplicate event: ('d2', 'idle')"
+    },
+    {
+      "id": "reject_time_regression",
+      "status": "passed",
+      "observed": "rejected",
+      "error_type": "ValueError",
+      "error": "events must be ordered by monotonic timestamp"
+    },
+    {
+      "id": "reject_mixed_evidence",
+      "status": "passed",
+      "observed": "rejected",
+      "error_type": "ValueError",
+      "error": "mixed evidence kinds in one run"
+    },
+    {
+      "id": "reject_missing_tool_identity",
+      "status": "passed",
+      "observed": "rejected",
+      "error_type": "ValidationError",
+      "error": "'tool_id' is a required property"
+    }
+  ],
+  "sha256": {
+    "data/fixtures/event_contract.json": "85d7684ce89cbb50671805f1e975d7a66b175edd6559f82b035b42d80cdc3cba",
+    "scripts/check_event_contract.py": "d00552696e6754113e427cdc8a8e886193a21713381325818e14645d38440bdf",
+    "src/leasepath/trace.py": "024034f712b30af4b0e84ea13c52b61806766764372cb228fabd8136afa91148",
+    "schemas/trace.schema.json": "2b3797ce76e0ce82d2035f79fb33a1e8a71a4a3f810aeac1ad0b83752e21ba31",
+    "docs/prediction_contract.md": "aaebedb59e1a6d305de086a6bf74b3d3f8a44b1c20b574331ed664c6d715c334",
+    "tests/test_event_contract.py": "4da91b24d113a91e4143c6fea2368fed53a93fc6927a3b28e61d5211baae4695",
+    "src/leasepath/contract_fixtures.py": "c0dee446e348dee6eee44eae29409e63916995ba21be88cc1842ce48c62f3d7e"
+  }
+}

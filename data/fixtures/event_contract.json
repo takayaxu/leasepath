@@ -1,0 +1,164 @@
+{
+  "description": "Hand-written synthetic event-contract cases. Times/tokens are tiny semantic examples, not performance measurements. Cases inherit earlier templates before applying explicit edits.",
+  "envelope": {
+    "schema_version": "0.1", "run_id": "d2", "clock_domain": "synthetic-clock",
+    "evidence_kind": "synthetic", "data": {}
+  },
+  "label_defaults": {
+    "run_id": "d2", "idle_episode_id": "idle-1", "evidence_kind": "synthetic",
+    "start_ns": 5, "reason": null, "demand_request_id": null
+  },
+  "events": [
+    {"event_id": "submit", "event_type": "workflow_submit", "ts_ns": 0, "workflow_id": "w"},
+    {"event_id": "seed-ready", "event_type": "request_ready", "ts_ns": 1, "workflow_id": "w", "request_id": "seed"},
+    {"event_id": "seed-enqueue", "event_type": "request_enqueue", "ts_ns": 2, "workflow_id": "w", "request_id": "seed"},
+    {"event_id": "seed-dispatch", "event_type": "request_dispatch", "ts_ns": 3, "workflow_id": "w", "request_id": "seed"},
+    {"event_id": "seed-lookup", "event_type": "cache_lookup", "ts_ns": 4, "workflow_id": "w", "request_id": "seed", "data": {"prompt_tokens": 2, "cached_tokens": 0, "executed_prefill_tokens": 2}},
+    {"event_id": "seed-end", "event_type": "request_end", "ts_ns": 5, "workflow_id": "w", "request_id": "seed"},
+    {"event_id": "idle", "event_type": "idle_start", "ts_ns": 5, "idle_episode_id": "idle-1", "data": {"context_id": "c", "context_version": "v1", "compatibility_id": "model-v1", "prefix_token_ids": [11, 12]}},
+    {"event_id": "tool-start", "event_type": "tool_start", "ts_ns": 6, "workflow_id": "w", "data": {"tool_id": "tool-1", "tool_kind": "search"}},
+    {"event_id": "tool-end", "event_type": "tool_end", "ts_ns": 10, "workflow_id": "w", "data": {"tool_id": "tool-1", "tool_kind": "search"}},
+    {"event_id": "ready", "event_type": "request_ready", "ts_ns": 11, "workflow_id": "w", "request_id": "resume"},
+    {"event_id": "enqueue", "event_type": "request_enqueue", "ts_ns": 12, "workflow_id": "w", "request_id": "resume"},
+    {"event_id": "dispatch", "event_type": "request_dispatch", "ts_ns": 13, "workflow_id": "w", "request_id": "resume"},
+    {"event_id": "lookup", "event_type": "cache_lookup", "ts_ns": 14, "workflow_id": "w", "request_id": "resume", "data": {"prompt_tokens": 3, "cached_tokens": 0, "executed_prefill_tokens": 3}},
+    {"event_id": "demand", "event_type": "legal_demand", "ts_ns": 14, "idle_episode_id": "idle-1", "request_id": "resume", "data": {"compatibility_id": "model-v1", "request_token_ids": [11, 12, 13]}},
+    {"event_id": "end", "event_type": "request_end", "ts_ns": 15, "workflow_id": "w", "request_id": "resume"},
+    {"event_id": "workflow-end", "event_type": "workflow_end", "ts_ns": 16, "workflow_id": "w"},
+    {"event_id": "observe", "event_type": "observation_end", "ts_ns": 20}
+  ],
+  "cases": [
+    {
+      "id": "legal_demand_physical_miss",
+      "expected_labels": [{"outcome": "legal_demand", "end_ns": 14, "duration_ns": 9, "demand_request_id": "resume"}]
+    },
+    {
+      "id": "legal_demand_physical_hit", "base": "legal_demand_physical_miss",
+      "edits": [{"op": "update", "event_id": "lookup", "values": {"data": {"prompt_tokens": 3, "cached_tokens": 2, "executed_prefill_tokens": 1}}}],
+      "expected_labels": [{"outcome": "legal_demand", "end_ns": 14, "duration_ns": 9, "demand_request_id": "resume"}]
+    },
+    {
+      "id": "tool_end_without_retire", "base": "legal_demand_physical_miss",
+      "edits": [
+        {"op": "remove", "event_id": "ready"}, {"op": "remove", "event_id": "enqueue"},
+        {"op": "remove", "event_id": "dispatch"}, {"op": "remove", "event_id": "lookup"},
+        {"op": "remove", "event_id": "demand"}, {"op": "remove", "event_id": "end"},
+        {"op": "remove", "event_id": "workflow-end"}
+      ],
+      "expected_labels": [{"outcome": "right_censored", "end_ns": 20, "duration_ns": 15}]
+    },
+    {
+      "id": "tool_end_then_explicit_retire", "base": "tool_end_without_retire",
+      "edits": [{"op": "insert_before", "event_id": "observe", "event": {"event_id": "retire", "event_type": "context_retire", "ts_ns": 16, "idle_episode_id": "idle-1", "data": {"reason": "explicit_abandonment"}}}],
+      "expected_labels": [{"outcome": "retire", "end_ns": 16, "duration_ns": 11, "reason": "explicit_abandonment"}]
+    },
+    {
+      "id": "observation_ends_tool_running", "base": "tool_end_without_retire",
+      "edits": [{"op": "remove", "event_id": "tool-end"}],
+      "expected_labels": [{"outcome": "right_censored", "end_ns": 20, "duration_ns": 15}]
+    },
+    {
+      "id": "observation_ends_request_queued", "base": "legal_demand_physical_miss",
+      "edits": [
+        {"op": "remove", "event_id": "dispatch"}, {"op": "remove", "event_id": "lookup"},
+        {"op": "remove", "event_id": "demand"}, {"op": "remove", "event_id": "end"},
+        {"op": "remove", "event_id": "workflow-end"}
+      ],
+      "expected_labels": [{"outcome": "right_censored", "end_ns": 20, "duration_ns": 15}]
+    },
+    {
+      "id": "retire_at_observation_boundary", "base": "tool_end_then_explicit_retire",
+      "edits": [{"op": "update", "event_id": "retire", "values": {"ts_ns": 20}}],
+      "expected_labels": [{"outcome": "retire", "end_ns": 20, "duration_ns": 15, "reason": "explicit_abandonment"}]
+    },
+    {
+      "id": "demand_at_observation_boundary", "base": "legal_demand_physical_miss",
+      "edits": [
+        {"op": "update", "event_id": "lookup", "values": {"ts_ns": 20}},
+        {"op": "update", "event_id": "demand", "values": {"ts_ns": 20}},
+        {"op": "remove", "event_id": "end"}, {"op": "remove", "event_id": "workflow-end"}
+      ],
+      "expected_labels": [{"outcome": "legal_demand", "end_ns": 20, "duration_ns": 15, "demand_request_id": "resume"}]
+    },
+    {
+      "id": "reject_incompatible_model", "base": "legal_demand_physical_miss",
+      "edits": [{"op": "update", "event_id": "demand", "values": {"data": {"compatibility_id": "model-v2", "request_token_ids": [11, 12, 13]}}}],
+      "expected_error": {"type": "ValueError", "contains": "compatible token prefix"}
+    },
+    {
+      "id": "reject_different_token_prefix", "base": "legal_demand_physical_miss",
+      "edits": [{"op": "update", "event_id": "demand", "values": {"data": {"compatibility_id": "model-v1", "request_token_ids": [91, 92, 13]}}}],
+      "expected_error": {"type": "ValueError", "contains": "compatible token prefix"}
+    },
+    {
+      "id": "reject_demand_lookup_token_count_mismatch", "base": "legal_demand_physical_miss",
+      "edits": [{"op": "update", "event_id": "demand", "values": {"data": {"compatibility_id": "model-v1", "request_token_ids": [11, 12, 13, 14]}}}],
+      "expected_error": {"type": "ValueError", "contains": "token count differs from referenced lookup"}
+    },
+    {
+      "id": "reject_bad_physical_counter_sum", "base": "legal_demand_physical_miss",
+      "edits": [{"op": "update", "event_id": "lookup", "values": {"data": {"prompt_tokens": 3, "cached_tokens": 2, "executed_prefill_tokens": 3}}}],
+      "expected_error": {"type": "ValueError", "contains": "cache counters do not sum"}
+    },
+    {
+      "id": "reject_demand_not_at_lookup", "base": "legal_demand_physical_miss",
+      "edits": [{"op": "update", "event_id": "lookup", "values": {"ts_ns": 13}}],
+      "expected_error": {"type": "ValueError", "contains": "observed lookup at the same time"}
+    },
+    {
+      "id": "reject_retire_without_reason", "base": "tool_end_then_explicit_retire",
+      "edits": [{"op": "update", "event_id": "retire", "values": {"data": {}}}],
+      "expected_error": {"type": "ValidationError", "contains": "'reason' is a required property"}
+    },
+    {
+      "id": "reject_duplicate_terminal", "base": "tool_end_then_explicit_retire",
+      "edits": [{"op": "insert_before", "event_id": "observe", "event": {"event_id": "retire-again", "event_type": "context_retire", "ts_ns": 17, "idle_episode_id": "idle-1", "data": {"reason": "duplicate"}}}],
+      "expected_error": {"type": "ValueError", "contains": "outcome without open idle episode"}
+    },
+    {
+      "id": "reject_demand_after_retire", "base": "legal_demand_physical_miss",
+      "edits": [{"op": "insert_before", "event_id": "ready", "event": {"event_id": "retire", "event_type": "context_retire", "ts_ns": 10, "idle_episode_id": "idle-1", "data": {"reason": "explicit_abandonment"}}}],
+      "expected_error": {"type": "ValueError", "contains": "outcome without open idle episode"}
+    },
+    {
+      "id": "reject_tool_end_without_start", "base": "tool_end_without_retire",
+      "edits": [{"op": "remove", "event_id": "tool-start"}],
+      "expected_error": {"type": "ValueError", "contains": "tool end without open invocation"}
+    },
+    {
+      "id": "reject_duplicate_tool_end", "base": "tool_end_without_retire",
+      "edits": [{"op": "insert_before", "event_id": "observe", "event": {"event_id": "tool-end-again", "event_type": "tool_end", "ts_ns": 11, "workflow_id": "w", "data": {"tool_id": "tool-1"}}}],
+      "expected_error": {"type": "ValueError", "contains": "tool end without open invocation"}
+    },
+    {
+      "id": "reject_tool_changes_workflow", "base": "tool_end_without_retire",
+      "edits": [{"op": "update", "event_id": "tool-end", "values": {"workflow_id": "other"}}],
+      "expected_error": {"type": "ValueError", "contains": "tool changed workflow identity"}
+    },
+    {
+      "id": "reject_missing_observation_end", "base": "tool_end_without_retire",
+      "edits": [{"op": "remove", "event_id": "observe"}],
+      "expected_error": {"type": "ValueError", "contains": "every run must have observation_end"}
+    },
+    {
+      "id": "reject_duplicate_event_id", "base": "tool_end_without_retire",
+      "edits": [{"op": "update", "event_id": "observe", "values": {"event_id": "idle"}}],
+      "expected_error": {"type": "ValueError", "contains": "duplicate event"}
+    },
+    {
+      "id": "reject_time_regression", "base": "tool_end_without_retire",
+      "edits": [{"op": "update", "event_id": "observe", "values": {"ts_ns": 9}}],
+      "expected_error": {"type": "ValueError", "contains": "ordered by monotonic timestamp"}
+    },
+    {
+      "id": "reject_mixed_evidence", "base": "tool_end_without_retire",
+      "edits": [{"op": "update", "event_id": "observe", "values": {"evidence_kind": "measured"}}],
+      "expected_error": {"type": "ValueError", "contains": "mixed evidence kinds"}
+    },
+    {
+      "id": "reject_missing_tool_identity", "base": "tool_end_without_retire",
+      "edits": [{"op": "update", "event_id": "tool-end", "values": {"data": {"tool_kind": "search"}}}],
+      "expected_error": {"type": "ValidationError", "contains": "'tool_id' is a required property"}
+    }
+  ]
+}

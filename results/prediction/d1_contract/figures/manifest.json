@@ -1,0 +1,10 @@
+{
+  "source_summary_sha256": "5af62949706006a49cafdcf56319b21c581e38854a328bb9a58059a0e14d4a2f",
+  "plot_script_sha256": "902f467f0c54f34b2e59f21457053be025df35f648bbbe183cf7aec1175f87dc",
+  "figures_sha256": {
+    "future_invariance.pdf": "27cb3a7600f1fd9e7d4e3cbd6d312acb3f72a96bffd5191c379f9e6eb970710e",
+    "future_invariance.png": "b33cb7799d0eae9151e31f4c0a4a8ad850696a38901beeeeebc5992475c2db1b",
+    "timeline.pdf": "91ac150a261a8b14a14f30f5ddc622f81ac2a95cf18219192dc38d10841d16ed",
+    "timeline.png": "ff4cc3a3c125f2e99c639b61082a6f0fe2ad45468a86255473bad254331fb4ff"
+  }
+}

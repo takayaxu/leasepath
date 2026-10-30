@@ -1,0 +1,314 @@
+{
+  "check_date": "2026-10-30",
+  "timezone": "Asia/Shanghai",
+  "ssh_alias": "modelarts-leasepath-30886",
+  "remote_files_written": false,
+  "model_inference_executed": false,
+  "details": {
+    "architecture": "aarch64",
+    "os": "NAME=\"Huawei Cloud EulerOS\"\nVERSION=\"2.0 (aarch64)\"\nID=\"hce\"\nVERSION_ID=\"2.0\"\nPRETTY_NAME=\"Huawei Cloud EulerOS 2.0 (aarch64)\"\nANSI_COLOR=\"0;31\"\n\n",
+    "python": "3.12.0",
+    "user": {
+      "returncode": 0,
+      "stdout": "uid=1000(ma-user) gid=100(ma-group) groups=100(ma-group)\n",
+      "stderr": ""
+    },
+    "host_visible_cpu": 192,
+    "cpu_affinity": 192,
+    "cgroup": {
+      "cpu/cpu.cfs_quota_us": "19200000",
+      "cpu/cpu.cfs_period_us": "100000",
+      "cpuacct/cpuacct.usage": "31183587676790",
+      "memory/memory.limit_in_bytes": "1649267441664",
+      "memory/memory.usage_in_bytes": "2173882368"
+    },
+    "storage": {
+      "home": {
+        "path": "/home/ma-user",
+        "writable": true,
+        "free_gib": 49.56,
+        "total_gib": 50.0
+      },
+      "work": {
+        "path": "/home/ma-user/work",
+        "writable": true,
+        "free_gib": 3810.18,
+        "total_gib": 4062.62
+      },
+      "tmp": {
+        "path": "/tmp",
+        "writable": true,
+        "free_gib": 49.56,
+        "total_gib": 50.0
+      }
+    },
+    "tools": {
+      "git": "/usr/bin/git",
+      "bash": "/usr/bin/bash",
+      "timeout": "/usr/bin/timeout",
+      "tar": "/usr/bin/tar",
+      "curl": "/usr/bin/curl",
+      "gcc": "/usr/bin/gcc",
+      "make": "/usr/bin/make",
+      "docker": null,
+      "podman": null,
+      "uv": null,
+      "npu-smi": "/usr/local/sbin/npu-smi",
+      "nvidia-smi": null
+    },
+    "packages": {
+      "mini-swe-agent": null,
+      "litellm": null,
+      "requests": "2.32.2",
+      "httpx": null,
+      "pytest": "8.3.5",
+      "numpy": "1.26.4",
+      "jsonschema": null,
+      "matplotlib": "3.10.3",
+      "mpmath": "1.3.0",
+      "torch": "2.7.1",
+      "torch-npu": "2.7.1.post2",
+      "vllm": null,
+      "vllm-ascend": null,
+      "transformers": "4.53.1"
+    },
+    "venv_available": true,
+    "ensurepip_available": true,
+    "pip": {
+      "returncode": 0,
+      "stdout": "pip 23.1.2 from /home/ma-user/anaconda3/envs/PyTorch-2.7.1/lib/python3.12/site-packages/pip (python 3.12)\n",
+      "stderr": ""
+    },
+    "docker_socket_access": false,
+    "tool_subprocess_smoke": {
+      "returncode": 0,
+      "stdout": "CPU subprocess assertion passed\n",
+      "stderr": ""
+    },
+    "npu": {
+      "returncode": 0,
+      "stdout": "+------------------------------------------------------------------------------------------------+\n| npu-smi 25.5.1                   Version: 25.5.1                                               |\n+---------------------------+---------------+----------------------------------------------------+\n| NPU   Name                | Health        | Power(W)    Temp(C)           Hugepages-Usage(page)|\n| Chip                      | Bus-Id        | AICore(%)   Memory-Usage(MB)  HBM-Usage(MB)        |\n+===========================+===============+====================================================+\n| 0     910B2               | OK            | 95.0        51                0    / 0             |\n| 0                         | 0000:C1:00.0  | 0           0    / 0          3419 / 65536         |\n+===========================+===============+====================================================+\n| 1     910B2               | OK            | 97.2        50                0    / 0             |\n| 0                         | 0000:01:00.0  | 0           0    / 0          3409 / 65536         |\n+===========================+===============+====================================================+\n| 2     910B2               | OK            | 95.6        50                0    / 0             |\n| 0                         | 0000:C2:00.0  | 0           0    / 0          3415 / 65536         |\n+===========================+===============+====================================================+\n| 3     910B2               | OK            | 95.2        52                0    / 0             |\n| 0                         | 0000:02:00.0  | 0           0    / 0          3410 / 65536         |\n+===========================+===============+====================================================+\n| 4     910B2               | OK            | 96.1        50                0    / 0             |\n| 0                         | 0000:81:00.0  | 0           0    / 0          3409 / 65536         |\n+===========================+===============+====================================================+\n| 5     910B2               | OK            | 98.3        53                0    / 0             |\n| 0                         | 0000:41:00.0  | 0           0    / 0          3413 / 65536         |\n+===========================+===============+====================================================+\n| 6     910B2               | OK            | 95.3        50                0    / 0             |\n| 0                         | 0000:82:00.0  | 0           0    / 0          3413 / 65536         |\n+===========================+===============+====================================================+\n| 7     910B2               | OK            | 98.6        53                0    / 0             |\n| 0                         | 0000:42:00.0  | 0           0    / 0          3414 / 65536         |\n+===========================+===============+====================================================+\n+---------------------------+---------------+----------------------------------------------------+\n| NPU     Chip              | Process id    | Process name             | Process memory(MB)      |\n+===========================+===============+====================================================+\n| No running processes found in NPU 0                                                            |\n+===========================+===============+====================================================+\n| No running processes found in NPU 1                                                            |\n+===========================+===============+====================================================+\n| No running processes found in NPU 2                                                            |\n+===========================+===============+====================================================+\n| No running processes found in NPU 3                                                            |\n+===========================+===============+====================================================+\n| No running processes found in NPU 4                                                            |\n+===========================+===============+====================================================+\n| No running processes found in NPU 5                                                            |\n+===========================+===============+====================================================+\n| No running processes found in NPU 6                                                            |\n+===========================+===============+====================================================+\n| No running processes found in NPU 7                                                            |\n+===========================+===============+====================================================+\n",
+      "stderr": ""
+    },
+    "listening_tcp_unique": [
+      {
+        "address": "127.0.0.1:9901",
+        "process": "",
+        "count": 192
+      },
+      {
+        "address": "0.0.0.0:2222",
+        "process": "users:((\"sshd\",pid=319,fd=8))",
+        "count": 1
+      },
+      {
+        "address": "127.0.0.1:9999",
+        "process": "",
+        "count": 192
+      },
+      {
+        "address": "172.16.0.237:8887",
+        "process": "users:((\"node\",pid=478,fd=20))",
+        "count": 1
+      },
+      {
+        "address": "172.16.0.237:8888",
+        "process": "users:((\"jupyter-lab\",pid=402,fd=7))",
+        "count": 1
+      },
+      {
+        "address": "127.0.0.1:5208",
+        "process": "",
+        "count": 1
+      },
+      {
+        "address": "172.16.0.237:8889",
+        "process": "users:((\"jupyter-kernelg\",pid=385,fd=6))",
+        "count": 1
+      },
+      {
+        "address": "[::]:2222",
+        "process": "users:((\"sshd\",pid=319,fd=9))",
+        "count": 1
+      }
+    ],
+    "model_services": [],
+    "api": {
+      "127.0.0.1:8000/health": {
+        "error": "URLError",
+        "detail": "<urlopen error [Errno 111] Connection refused>"
+      },
+      "127.0.0.1:8000/version": {
+        "error": "URLError",
+        "detail": "<urlopen error [Errno 111] Connection refused>"
+      },
+      "127.0.0.1:8000/v1/models": {
+        "error": "URLError",
+        "detail": "<urlopen error [Errno 111] Connection refused>"
+      }
+    },
+    "network": {
+      "pypi": {
+        "status": 200
+      },
+      "github": {
+        "status": 200
+      }
+    }
+  },
+  "model_files_probe": {
+    "candidate_work_directories": [
+      {
+        "name": ".modelarts",
+        "directory": true
+      },
+      {
+        "name": "qwen-services",
+        "directory": true
+      },
+      {
+        "name": "vllm-ascend-workflow",
+        "directory": true
+      }
+    ],
+    "candidate_models": [],
+    "candidate_envs": [],
+    "cann_paths": [
+      "ascend-toolkit",
+      "cann",
+      "cann-8.5.2",
+      "driver",
+      "nnal",
+      "toolbox"
+    ],
+    "conda_env_names": [
+      ".conda_envs_dir_test",
+      "PyTorch-2.7.1",
+      "python-3.12.0"
+    ]
+  },
+  "existing_deployment_probe": {
+    "models": [
+      {
+        "path": "/home/ma-user/work/qwen-services/models/coder390-q2-decoded-bf16",
+        "model_type": "qwen3_5",
+        "architectures": [
+          "Qwen3_5ForConditionalGeneration"
+        ],
+        "weight_shards": 20,
+        "weight_gib": 51.75
+      },
+      {
+        "path": "/home/ma-user/work/qwen-services/models/coder390-template",
+        "model_type": "qwen3_5",
+        "architectures": [
+          "Qwen3_5ForConditionalGeneration"
+        ],
+        "weight_shards": 1,
+        "weight_gib": 0.86
+      },
+      {
+        "path": "/home/ma-user/work/qwen-services/models/qwen3.5-9b",
+        "model_type": "qwen3_5",
+        "architectures": [
+          "Qwen3_5ForConditionalGeneration"
+        ],
+        "weight_shards": 4,
+        "weight_gib": 17.98
+      },
+      {
+        "path": "/home/ma-user/work/qwen-services/models/qwen3.5-4b",
+        "model_type": "qwen3_5",
+        "architectures": [
+          "Qwen3_5ForConditionalGeneration"
+        ],
+        "weight_shards": 2,
+        "weight_gib": 8.68
+      },
+      {
+        "path": "/home/ma-user/work/qwen-services/models/coder390-q4-decoded-bf16",
+        "model_type": "qwen3_5",
+        "architectures": [
+          "Qwen3_5ForConditionalGeneration"
+        ],
+        "weight_shards": 20,
+        "weight_gib": 51.75
+      },
+      {
+        "path": "/home/ma-user/work/qwen-services/models/qwen3.8-27b",
+        "model_type": "qwen3_5",
+        "architectures": [
+          "Qwen3_5ForConditionalGeneration"
+        ],
+        "weight_shards": 18,
+        "weight_gib": 51.75
+      }
+    ],
+    "environments": [
+      {
+        "path": "/home/ma-user/work/qwen-services/venv/bin/python",
+        "returncode": 0,
+        "details": {
+          "python": "3.12.0",
+          "packages": {
+            "vllm": null,
+            "vllm-ascend": null,
+            "torch": null,
+            "torch-npu": null,
+            "transformers": null,
+            "mini-swe-agent": null
+          }
+        }
+      },
+      {
+        "path": "/home/ma-user/work/vllm-ascend-workflow/cpu-venv/bin/python",
+        "error": "FileNotFoundError"
+      },
+      {
+        "path": "/home/ma-user/work/vllm-ascend-workflow/scm8-venv/bin/python",
+        "error": "FileNotFoundError"
+      },
+      {
+        "path": "/home/ma-user/work/vllm-ascend-workflow/lint-venv/bin/python",
+        "returncode": 0,
+        "details": {
+          "python": "3.12.0",
+          "packages": {
+            "vllm": null,
+            "vllm-ascend": null,
+            "torch": null,
+            "torch-npu": null,
+            "transformers": null,
+            "mini-swe-agent": null
+          }
+        }
+      }
+    ]
+  },
+  "qwen35_9b_file_check": {
+    "model_path": "/home/ma-user/work/qwen-services/models/qwen3.5-9b",
+    "config_exists": true,
+    "tokenizer_exists": true,
+    "tokenizer_config_exists": true,
+    "weight_index_exists": true,
+    "sha256_verified": false,
+    "index_referenced_shards": 4,
+    "missing_shards": []
+  },
+  "conclusion": {
+    "can_deploy_leasepath_cpu_agent_collector": true,
+    "cgroup_cpu_quota_cores": 192.0,
+    "cgroup_memory_limit_gib": 1536.0,
+    "visible_npu_count": 8,
+    "npu_model": "Ascend 910B2",
+    "hbm_gib_per_npu": 64,
+    "ssh_passwordless_alias_verified": true,
+    "model_server_currently_listening": false,
+    "model_weights_present_but_not_hash_verified": true,
+    "mini_swe_agent_installed_in_default_python": false,
+    "docker_available": false,
+    "full_project_installed_or_tested": false,
+    "npu_kernel_or_model_inference_tested": false,
+    "recommendation": "Use separate environments and task directories under /home/ma-user/work/leasepath. Prepare a version-compatible Ascend serving environment and instrument actual prefix cache events before D2-D3 data collection."
+  }
+}

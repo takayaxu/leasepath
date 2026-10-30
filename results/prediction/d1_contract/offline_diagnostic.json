@@ -1,0 +1,66 @@
+{
+  "case": "d1-permissions",
+  "policy": "offline_script",
+  "ttl": 0,
+  "capacity": 6,
+  "retention": 2,
+  "evidence_kind": "replayed",
+  "workflow_jct_s": {
+    "w": 0.30000000000000004
+  },
+  "mean_jct_s": 0.30000000000000004,
+  "queue_s": 0.0,
+  "protection_wait_s": 0.0,
+  "prefill_tokens": 301,
+  "protected_byte_seconds": 943718.4,
+  "evictions": 0,
+  "admitted": 1,
+  "rejected": 0,
+  "requests": [
+    {
+      "request_id": "r0",
+      "workflow": "w",
+      "ready_s": 0,
+      "dispatch_s": 0.0,
+      "finish_s": 0.1,
+      "queue_s": 0.0,
+      "protection_wait_s": 0.0,
+      "service_s": 0.1,
+      "cached_tokens": 0,
+      "prompt_tokens": 257,
+      "resident_input_tokens": 256,
+      "control_ms": null,
+      "device": null
+    },
+    {
+      "request_id": "r1",
+      "workflow": "w",
+      "ready_s": 0.2,
+      "dispatch_s": 0.2,
+      "finish_s": 0.30000000000000004,
+      "queue_s": 0.0,
+      "protection_wait_s": 0.0,
+      "service_s": 0.1,
+      "cached_tokens": 256,
+      "prompt_tokens": 300,
+      "resident_input_tokens": 256,
+      "control_ms": null,
+      "device": null
+    }
+  ],
+  "decisions": [
+    {
+      "request_id": "r0",
+      "ttl": 0.5,
+      "admitted": true,
+      "terminal": false
+    },
+    {
+      "request_id": "r1",
+      "ttl": 0,
+      "admitted": false,
+      "terminal": true
+    }
+  ],
+  "performance_claim_allowed": false
+}

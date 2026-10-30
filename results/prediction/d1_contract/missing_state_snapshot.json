@@ -1,0 +1,16 @@
+{
+  "run_id": "d2",
+  "idle_episode_id": "idle-1",
+  "snapshot_ns": 9,
+  "features": {
+    "elapsed_idle_s": 4e-09,
+    "compatibility_id": "model-v1",
+    "prefix_tokens": 2,
+    "tool_name": null,
+    "tool_elapsed_s": null,
+    "phase": null,
+    "retry_count": null,
+    "is_queued": null,
+    "queue_length": null
+  }
+}

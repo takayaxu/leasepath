@@ -1,0 +1,44 @@
+{
+  "description": "D1 人工预期；采用合成事件的 ns 时钟，不是实测耗时。显式补充工具和请求到 idle episode 的关联，不从未来推断。",
+  "run_id": "d2",
+  "idle_episode_id": "idle-1",
+  "linked_event_ids": ["tool-start", "tool-end", "ready", "enqueue", "dispatch"],
+  "snapshots": [
+    {
+      "as_of_ns": 9,
+      "features": {
+        "elapsed_idle_s": 4e-9,
+        "compatibility_id": "model-v1",
+        "prefix_tokens": 2,
+        "tool_name": "search",
+        "tool_elapsed_s": 3e-9,
+        "phase": "waiting_tool",
+        "retry_count": null,
+        "is_queued": null,
+        "queue_length": 0
+      }
+    },
+    {
+      "as_of_ns": 12,
+      "features": {
+        "elapsed_idle_s": 7e-9,
+        "compatibility_id": "model-v1",
+        "prefix_tokens": 2,
+        "tool_name": "search",
+        "tool_elapsed_s": null,
+        "phase": "queued",
+        "retry_count": null,
+        "is_queued": true,
+        "queue_length": 1
+      }
+    }
+  ],
+  "future_rejection_fields": [
+    "future_tool_duration_s",
+    "next_demand_request_id",
+    "outcome",
+    "observation_end_ns",
+    "future_hit",
+    "prefix_token_ids"
+  ]
+}

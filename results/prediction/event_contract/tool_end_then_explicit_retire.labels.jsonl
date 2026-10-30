@@ -1,0 +1,1 @@
+{"run_id": "d2", "idle_episode_id": "idle-1", "evidence_kind": "synthetic", "start_ns": 5, "end_ns": 16, "duration_ns": 11, "outcome": "retire", "reason": "explicit_abandonment", "demand_request_id": null}

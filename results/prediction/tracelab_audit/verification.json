@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "endpoint": "tool_result_log_span_proxy",
+  "split_counts": {
+    "train": {
+      "tools": 595081,
+      "observed": 594732,
+      "zero": 12111,
+      "positive": 582621,
+      "snapshots": 934791,
+      "missing": 349
+    },
+    "validation": {
+      "tools": 74369,
+      "observed": 74132,
+      "zero": 10,
+      "positive": 74122,
+      "snapshots": 114274,
+      "missing": 237
+    },
+    "test": {
+      "tools": 74369,
+      "observed": 74186,
+      "zero": 124,
+      "positive": 74062,
+      "snapshots": 115842,
+      "missing": 183
+    }
+  },
+  "user_overlap": 0,
+  "named_project_overlap": 0,
+  "session_overlap": 0,
+  "duplicate_sample_ids": 0,
+  "samples_aligned": 743819,
+  "verified_file_count": 10,
+  "checks": [
+    "sha256",
+    "full_gzip_jsonl_read",
+    "feature_allowlist",
+    "sample_alignment",
+    "label_semantics",
+    "user_project_session_isolation",
+    "snapshot_counts"
+  ],
+  "summary_sha256": "4d20d0a5eb3a60d3be1ea460c2e1a37edce01a3b641a909fdf4c8420373890d4"
+}

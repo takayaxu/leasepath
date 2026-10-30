@@ -1,0 +1,30 @@
+{
+  "status": "source_snapshot_audited",
+  "repository": "https://github.com/ShishirPatil/gorilla",
+  "commit": "58f57e9124ea981403792dd51e00a6577e621fae",
+  "url": "https://raw.githubusercontent.com/ShishirPatil/gorilla/58f57e9124ea981403792dd51e00a6577e621fae/berkeley-function-call-leaderboard/bfcl_eval/data/BFCL_v4_multi_turn_base.json",
+  "license_url": "https://raw.githubusercontent.com/ShishirPatil/gorilla/58f57e9124ea981403792dd51e00a6577e621fae/LICENSE",
+  "records": 200,
+  "top_level_fields": [
+    "id",
+    "initial_config",
+    "involved_classes",
+    "path",
+    "question"
+  ],
+  "first_record_id": "multi_turn_base_0",
+  "last_record_id": "multi_turn_base_199",
+  "can_supply_public_task_definitions": true,
+  "is_executed_LeasePath_trace": false,
+  "observed_tool_wall_clock_times_available": false,
+  "actual_Qwen_prompt_token_sequences_available": false,
+  "actual_cache_lookup_and_KV_owner_events_available": false,
+  "direct_replay_accepted": false,
+  "performance_claim_allowed": false,
+  "next_step": "run pinned BFCL environment and selected task trajectories, export actual model prompts and measured tool/runtime events; do not infer wall times from tool names or turn counts",
+  "synthetic_cohort_uses_this_source": false,
+  "sha256": {
+    "tasks.jsonl": "fe5c442849bdb2c2cdedc91f377411ff7fc6cd11af299766f4554d71d3d40f98",
+    "LICENSE.upstream": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+  }
+}

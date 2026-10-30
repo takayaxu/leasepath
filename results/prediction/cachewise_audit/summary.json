@@ -1,0 +1,138 @@
+{
+  "repository": "https://github.com/cachewise-project/cachewise-coding-traces",
+  "commit": "181c435a090d328d00bbbee4c8eeb27d32f3abd2",
+  "source_archive_sha256": "2ef65261adca87db8d456439d0672be42276a6939c4118dc851783cdbe4c0d0a",
+  "snapshot_files": 320,
+  "snapshot_bytes": 57895374,
+  "counts": {
+    "sessions": 94,
+    "empty_sessions": 13,
+    "raw_rows": 35127,
+    "events": 32251,
+    "llm_event_rows": 20634,
+    "tool_event_rows": 11617,
+    "distinct_message_ids": 11453,
+    "distinct_nonnull_request_ids": 11365,
+    "repeated_llm_event_rows": 9181,
+    "duplicate_tool_id_groups": 84,
+    "duplicate_tool_id_excess_rows": 84,
+    "raw_sidechain_rows": 1013,
+    "raw_retry_metadata_rows": 113,
+    "raw_compaction_rows": 33,
+    "raw_duplicate_result_id_groups": 84,
+    "synthetic_model_llm_rows": 67,
+    "redacted_tool_inputs": 11617,
+    "candidate_tool_span_rows": 9393,
+    "excluded_tool_span_rows": 2224,
+    "zero_duration_rows": 1762,
+    "missing_duration_rows": 3
+  },
+  "project_count": 11,
+  "nonempty_sessions": 81,
+  "tool_names": {
+    "Grep": 643,
+    "Read": 1912,
+    "Edit": 2002,
+    "Bash": 4049,
+    "mcp__github__search_repositories": 6,
+    "mcp__github__get_file_contents": 2,
+    "TodoWrite": 1650,
+    "mcp__github__get_me": 1,
+    "mcp__github__fork_repository": 1,
+    "mcp__github__create_pull_request": 2,
+    "ExitPlanMode": 226,
+    "MultiEdit": 223,
+    "Task": 29,
+    "Glob": 178,
+    "WebFetch": 93,
+    "Write": 396,
+    "WebSearch": 63,
+    "BashOutput": 64,
+    "KillBash": 7,
+    "KillShell": 7,
+    "NotebookEdit": 63
+  },
+  "quality_flags": {
+    "sidechain": 371,
+    "zero_duration_resolution_or_copy": 1762,
+    "raw_tool_result_not_unique": 171,
+    "missing_result": 3,
+    "missing_duration": 3,
+    "duplicate_tool_id": 168,
+    "raw_tool_use_not_unique": 168
+  },
+  "tool_log_span_s": {
+    "count": 11614,
+    "min": 0.0,
+    "p50": 0.088,
+    "p90": 15.338700000000001,
+    "p95": 44.95630000000015,
+    "p99": 361.8741100000006,
+    "max": 178164.206
+  },
+  "positive_tool_log_span_s": {
+    "count": 9852,
+    "min": 0.001,
+    "p50": 0.113,
+    "p90": 20.507799999999982,
+    "p95": 55.192149999999884,
+    "p99": 424.19041,
+    "max": 178164.206
+  },
+  "candidate_tool_log_span_s": {
+    "count": 9393,
+    "min": 0.001,
+    "p50": 0.117,
+    "p90": 19.10060000000006,
+    "p95": 48.74339999999993,
+    "p99": 248.86015999999978,
+    "max": 178164.206
+  },
+  "source_span_ge_60s": 460,
+  "source_span_ge_3600s": 26,
+  "derived_human_pause_events": 684,
+  "derived_all_tool_rows": 12298,
+  "derived_session_progress_rows": 12298,
+  "upstream_train_session_count": 34,
+  "upstream_train_vs_complement_project_overlap": [
+    "project_004",
+    "project_006",
+    "project_007",
+    "project_008"
+  ],
+  "license_files": [],
+  "license_status": "not_found",
+  "exact_kv_labels_supported": false,
+  "performance_claim_allowed": false,
+  "target": "tool_result_log_span_proxy",
+  "supported_uses": [
+    "Tool-family log-span distributions and elapsed-conditioned proxy prediction.",
+    "Reference baseline code audit; inputs are redacted so parameter TF-IDF is unavailable."
+  ],
+  "unsupported_uses": [
+    "Exact compatible-prefix next cache lookup U/D/C labels.",
+    "Natural cross-session arrival/load inference from shifted/sanitized timestamps.",
+    "Server queue, true tool execution instrumentation, KV pressure or native JCT gain.",
+    "Full-parameter CacheWise reproduction from redacted commands."
+  ],
+  "selection_policy": {
+    "preserve_all_source_rows": true,
+    "candidate_definition": "unique raw/parsed tool use and result; matching endpoints; positive span; not sidechain or synthetic",
+    "duration_upper_cutoff": null,
+    "zero_durations": "retained in source audit, excluded from positive-span proxy candidates; not imputed",
+    "missing_results": "unknown; not converted into exact D or C",
+    "split_status": "No new train/test split frozen or model fitted; project grouping exported.",
+    "time_note": "Published 2020 log dates are not original calendar proof; within-session deltas are proxies."
+  },
+  "input_sha256": {
+    "provenance.json": "a52cb9f412027a6e8656ba773c7c92cc7505f592ff69660d535019b61ff870f7",
+    "audit_module": "59f93fb9b4848cc7e503d4e0f9bb0c5e8c9f04c87a53748c50e82614baa4dceb"
+  },
+  "output_sha256": {
+    "features.jsonl": "4e57a486a95a943cc2288ebe848597176b69124ca13545c3d2068ee56ccb50c6",
+    "labels.jsonl": "7fd30f2ecf6f3ea7b939761fa5f7c5a78762967e084766a6bc2dda0d20db5208",
+    "projects.json": "98eaa2cfe6832e5b07251bc616520eaae8c5764d153f1238759cd05994a17691",
+    "quality.jsonl": "d255fe181f49f2166fb84af30d7e73e37a90e65b088ac62d23ec1f38b061df48",
+    "sessions.jsonl": "96a2dc164e02de7f525cf19f8138a6165e11fb4582886e891457fe4fdaf124f0"
+  }
+}

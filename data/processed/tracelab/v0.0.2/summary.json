@@ -1,0 +1,1115 @@
+{
+  "dataset": "TraceLab v0.0.2 adapted by LeasePath",
+  "endpoint": "tool_result_log_span_proxy",
+  "source": {
+    "repository": "https://github.com/uw-syfi/TraceLab",
+    "tag": "v0.0.2",
+    "commit": "61fea8f97277d0aa247cc2e4c7e31f90ed2bea1c",
+    "asset": "syfi_coding_trace.jsonl.gz",
+    "asset_id": 488289841,
+    "bytes": 100939722,
+    "sha256": "11ce51ec0a25e3d1d95b025bca2f7d1647e47571eb7cc968acd5fc64d4b4fb65"
+  },
+  "license": "CC BY 4.0; attribution to TraceLab (SyFI Lab, University of Washington)",
+  "seed": 20261029,
+  "split_policy": "connected users sharing any named project or session; null projects do not connect users; largest components first into largest target deficit (80/10/10); seed breaks equal-size ties; not a chronological holdout",
+  "groups": [
+    {
+      "group_id": "component_65dcb8979a25ff38",
+      "split": "train",
+      "users": [
+        "user_9397d575"
+      ],
+      "projects": [
+        "project_0d2d6270",
+        "project_109390bd",
+        "project_1722b1d2",
+        "project_1c68d933",
+        "project_1efe2bde",
+        "project_2398ac4d",
+        "project_2be6c2c7",
+        "project_34f407e4",
+        "project_3857b5dd",
+        "project_39bff8b7",
+        "project_3f82d6d6",
+        "project_41492071",
+        "project_4ee4f400",
+        "project_648cd9a3",
+        "project_67ec2bc1",
+        "project_71bb04d1",
+        "project_729c5bc6",
+        "project_73b89851",
+        "project_7d8b2d62",
+        "project_8274e5a0",
+        "project_8767963a",
+        "project_8b81ea9e",
+        "project_8ff66cde",
+        "project_941aaa29",
+        "project_956008f2",
+        "project_9876b9c5",
+        "project_a307300f",
+        "project_a6300149",
+        "project_b2d1ab4d",
+        "project_b80b0180",
+        "project_c5279574",
+        "project_c8541b51",
+        "project_ce3812d8",
+        "project_cfcd6082",
+        "project_f29d5eda"
+      ],
+      "tool_rows": 178419
+    },
+    {
+      "group_id": "component_f7df910c73154e49",
+      "split": "train",
+      "users": [
+        "user_7bea77b2"
+      ],
+      "projects": [
+        "project_22083702",
+        "project_2d223cb0",
+        "project_3fd5415a",
+        "project_4d94d097",
+        "project_7aca6f94",
+        "project_88271e30",
+        "project_a4d6bcd3",
+        "project_d2e7aa34",
+        "project_dc638838",
+        "project_fccc1888"
+      ],
+      "tool_rows": 113694
+    },
+    {
+      "group_id": "component_5170ba265f87afbc",
+      "split": "train",
+      "users": [
+        "user_35c90f74"
+      ],
+      "projects": [],
+      "tool_rows": 58448
+    },
+    {
+      "group_id": "component_d32f1ba7ff89c6c7",
+      "split": "train",
+      "users": [
+        "user_b1b04183"
+      ],
+      "projects": [
+        "project_91d5317c",
+        "project_cf9a3cd2",
+        "project_d6cd85cd",
+        "project_db738a19"
+      ],
+      "tool_rows": 54921
+    },
+    {
+      "group_id": "component_8b547858d9450b36",
+      "split": "train",
+      "users": [
+        "user_4fa663b9"
+      ],
+      "projects": [],
+      "tool_rows": 46135
+    },
+    {
+      "group_id": "component_3cf92bb961fe437b",
+      "split": "train",
+      "users": [
+        "user_4f09a394"
+      ],
+      "projects": [
+        "project_133b88c8",
+        "project_55481aa4"
+      ],
+      "tool_rows": 38521
+    },
+    {
+      "group_id": "component_667d2b67a6990850",
+      "split": "train",
+      "users": [
+        "user_a74713f8"
+      ],
+      "projects": [
+        "project_1c69f6c3",
+        "project_1cf58e02",
+        "project_20c53f40",
+        "project_2888cf39",
+        "project_34d94d10",
+        "project_38281121",
+        "project_4230b057",
+        "project_4e20cb00",
+        "project_4ec19edf",
+        "project_4eeca3e6",
+        "project_64bdc13a",
+        "project_662246ba",
+        "project_9a453a09",
+        "project_a9996203",
+        "project_d8c4802c",
+        "project_e838db04",
+        "project_f18aee9f"
+      ],
+      "tool_rows": 34851
+    },
+    {
+      "group_id": "component_c3ef77cd98b4b136",
+      "split": "validation",
+      "users": [
+        "user_869c681b"
+      ],
+      "projects": [
+        "project_0cc83699",
+        "project_c0396627",
+        "project_e1a714ef",
+        "project_e8f9620c"
+      ],
+      "tool_rows": 32297
+    },
+    {
+      "group_id": "component_7350bd4b0dc0f843",
+      "split": "test",
+      "users": [
+        "user_553d6e50"
+      ],
+      "projects": [
+        "project_00993c2a",
+        "project_024db3ae",
+        "project_05787a16",
+        "project_11b0219f",
+        "project_11f82e7b",
+        "project_14496735",
+        "project_15bad3e2",
+        "project_170a3b86",
+        "project_19f0bef6",
+        "project_1b52b00b",
+        "project_1c2b5434",
+        "project_1cc140aa",
+        "project_20cc80fd",
+        "project_2205dccb",
+        "project_231d9241",
+        "project_24029325",
+        "project_25acb443",
+        "project_26df08fa",
+        "project_2cca8e55",
+        "project_2d5d2894",
+        "project_2e11b693",
+        "project_34d7493a",
+        "project_379a2289",
+        "project_3cc74a3f",
+        "project_3d01bcef",
+        "project_3efe4dc4",
+        "project_44257347",
+        "project_447c3e3b",
+        "project_4b6effd2",
+        "project_4c9e5465",
+        "project_4da2ca4e",
+        "project_51a514ac",
+        "project_5261a540",
+        "project_531714b6",
+        "project_5ebee570",
+        "project_5efed649",
+        "project_64eccb41",
+        "project_6a9dac24",
+        "project_713a8057",
+        "project_76714f3f",
+        "project_7afe2b02",
+        "project_7c67a8b6",
+        "project_7e2b3e3c",
+        "project_7fa36358",
+        "project_80786d61",
+        "project_815f5212",
+        "project_8455878e",
+        "project_873658bb",
+        "project_8ab019d0",
+        "project_8c8a5a5e",
+        "project_939ee826",
+        "project_97480f9b",
+        "project_975ff5d4",
+        "project_97d33b26",
+        "project_9ee511df",
+        "project_9ff16ec2",
+        "project_a1918101",
+        "project_a316c0cb",
+        "project_ae808411",
+        "project_b0814144",
+        "project_b50a6b24",
+        "project_bbea6f9f",
+        "project_bc4bbe8f",
+        "project_bd384b7e",
+        "project_bfe81fd2",
+        "project_c1248d32",
+        "project_c12c86f7",
+        "project_c4f2c9af",
+        "project_c8ec9571",
+        "project_cb030117",
+        "project_cbf8665e",
+        "project_d0bc9ef6",
+        "project_d258b7be",
+        "project_d283b0d6",
+        "project_d2b6da1b",
+        "project_d6490817",
+        "project_d82c5191",
+        "project_d9eceb3f",
+        "project_da1068c1",
+        "project_dd9b5eff",
+        "project_de776c0f",
+        "project_e06313c4",
+        "project_e1a08d64",
+        "project_e1c7d032",
+        "project_e1fed85f",
+        "project_e629f585",
+        "project_ebdf923e",
+        "project_ed3833ea",
+        "project_efe12ac2"
+      ],
+      "tool_rows": 31854
+    },
+    {
+      "group_id": "component_7aab04d8e4bdcdfc",
+      "split": "train",
+      "users": [
+        "user_9243c39c"
+      ],
+      "projects": [
+        "project_136a384a",
+        "project_1884ea70",
+        "project_1a2788ba",
+        "project_1a6f9715",
+        "project_38e17fc9",
+        "project_39e779aa",
+        "project_3c98a440",
+        "project_478146b2",
+        "project_6467ab65",
+        "project_75553120",
+        "project_8ea3885a",
+        "project_c3cc11a8",
+        "project_cd4f75e9",
+        "project_e2f1d848",
+        "project_fce68742",
+        "project_fe8ddb0b"
+      ],
+      "tool_rows": 19258
+    },
+    {
+      "group_id": "component_f7daf3c244c005f9",
+      "split": "train",
+      "users": [
+        "user_e138a40c"
+      ],
+      "projects": [
+        "project_5e5c448d",
+        "project_7295f9f5",
+        "project_ae9266e7",
+        "project_d1f1570d"
+      ],
+      "tool_rows": 15072
+    },
+    {
+      "group_id": "component_191d5227c304fa4f",
+      "split": "test",
+      "users": [
+        "user_bfbe5e1f"
+      ],
+      "projects": [
+        "project_03329966",
+        "project_c867e9f0"
+      ],
+      "tool_rows": 13375
+    },
+    {
+      "group_id": "component_519255ee73f22432",
+      "split": "validation",
+      "users": [
+        "user_c70e0b0e"
+      ],
+      "projects": [
+        "project_0ac0b26a",
+        "project_2097fce5",
+        "project_304b241d",
+        "project_316d74f4",
+        "project_3d7df0c2",
+        "project_45f73fea",
+        "project_61206305",
+        "project_668cd3d7",
+        "project_6c41a1bf",
+        "project_6f7d1274",
+        "project_8752fdf5",
+        "project_8d5e6298",
+        "project_8ec6ca95",
+        "project_9450eb30",
+        "project_a32d90dc",
+        "project_a4a907f8",
+        "project_ba363f93",
+        "project_d6e91ae2",
+        "project_d73aecd8",
+        "project_e3ca3f32",
+        "project_e40e2f5a",
+        "project_e5244063",
+        "project_edb562a4",
+        "project_f0eed440",
+        "project_f8f4637e",
+        "project_fb7e5fbc",
+        "project_fc46f529"
+      ],
+      "tool_rows": 9919
+    },
+    {
+      "group_id": "component_d4948cd2c6cb77d3",
+      "split": "train",
+      "users": [
+        "user_8141341d"
+      ],
+      "projects": [
+        "project_0227edf8",
+        "project_042fad5f",
+        "project_3335ecaf",
+        "project_5b73d515",
+        "project_5d10a916",
+        "project_9cbc9f76",
+        "project_b8696a9b",
+        "project_d77e7cc2",
+        "project_ea31df95",
+        "project_f70e7ef1",
+        "project_f94921cc"
+      ],
+      "tool_rows": 9821
+    },
+    {
+      "group_id": "component_6275bf4704e690a6",
+      "split": "validation",
+      "users": [
+        "user_dd2f5c00"
+      ],
+      "projects": [
+        "project_9a904644",
+        "project_9cbeb837",
+        "project_fd8ecf74"
+      ],
+      "tool_rows": 8283
+    },
+    {
+      "group_id": "component_428c6fec90fa3a28",
+      "split": "test",
+      "users": [
+        "user_943dcf3e"
+      ],
+      "projects": [
+        "project_27bc01dc",
+        "project_28b7343b",
+        "project_2c6bfd0d",
+        "project_442b789e",
+        "project_4e8ba1dc",
+        "project_66210b3c",
+        "project_6a64a9fe",
+        "project_73de1468",
+        "project_778f35a2",
+        "project_788bfc4c",
+        "project_811155e7",
+        "project_818523f5",
+        "project_b08a937b",
+        "project_b0bf91c6",
+        "project_bbfaf67e",
+        "project_e16cfcfb",
+        "project_e939be98",
+        "project_edee5133",
+        "project_f51449fc"
+      ],
+      "tool_rows": 7432
+    },
+    {
+      "group_id": "component_2257a37258ae3bba",
+      "split": "train",
+      "users": [
+        "user_d6be4574"
+      ],
+      "projects": [
+        "project_14f6f499",
+        "project_3139434d",
+        "project_5e223e52",
+        "project_e5d23836"
+      ],
+      "tool_rows": 6166
+    },
+    {
+      "group_id": "component_2768ba22a44c65d5",
+      "split": "validation",
+      "users": [
+        "user_b629f237"
+      ],
+      "projects": [],
+      "tool_rows": 5778
+    },
+    {
+      "group_id": "component_a056b2cc6ff32c37",
+      "split": "test",
+      "users": [
+        "user_07344981"
+      ],
+      "projects": [],
+      "tool_rows": 5764
+    },
+    {
+      "group_id": "component_99df79f4c236fe86",
+      "split": "train",
+      "users": [
+        "user_da3ea557"
+      ],
+      "projects": [
+        "project_03ea7e65",
+        "project_4d1737c0",
+        "project_7974c19d",
+        "project_7ac423c7",
+        "project_8160764f",
+        "project_b0928cb9",
+        "project_d430bd5f"
+      ],
+      "tool_rows": 5413
+    },
+    {
+      "group_id": "component_d74a79e73cb2a596",
+      "split": "validation",
+      "users": [
+        "user_a86ff1a1"
+      ],
+      "projects": [
+        "project_9fe29985"
+      ],
+      "tool_rows": 4900
+    },
+    {
+      "group_id": "component_d5ec928ffdfb3b70",
+      "split": "test",
+      "users": [
+        "user_a39b0408"
+      ],
+      "projects": [
+        "project_024203bd",
+        "project_02590060",
+        "project_4cff361c",
+        "project_b06cea86",
+        "project_b1d7b983",
+        "project_b5dc85b9",
+        "project_ca51db2a",
+        "project_e6768527",
+        "project_f957d595",
+        "project_fe416fd4"
+      ],
+      "tool_rows": 4458
+    },
+    {
+      "group_id": "component_a085ada1a906e588",
+      "split": "train",
+      "users": [
+        "user_522e3db5",
+        "user_d6fb34db"
+      ],
+      "projects": [
+        "project_2271d1d6",
+        "project_2fc796bc",
+        "project_5563ade7",
+        "project_741b3465",
+        "project_86b70b7d",
+        "project_8738a17a",
+        "project_91384582",
+        "project_c5bc615f",
+        "project_f7ccc9a3",
+        "project_fb279ed7"
+      ],
+      "tool_rows": 4085
+    },
+    {
+      "group_id": "component_2b734f447d2a2665",
+      "split": "validation",
+      "users": [
+        "user_52e5fba9"
+      ],
+      "projects": [
+        "project_6163f46f",
+        "project_ed9aec7a"
+      ],
+      "tool_rows": 4021
+    },
+    {
+      "group_id": "component_3dd888a59f863be6",
+      "split": "test",
+      "users": [
+        "user_6c7ee2c7"
+      ],
+      "projects": [
+        "project_537a354e",
+        "project_c6e27a56"
+      ],
+      "tool_rows": 3837
+    },
+    {
+      "group_id": "component_6e646f4c3dbd5ddf",
+      "split": "train",
+      "users": [
+        "user_2b512dc4"
+      ],
+      "projects": [
+        "project_499b0d58",
+        "project_b7b48746"
+      ],
+      "tool_rows": 3648
+    },
+    {
+      "group_id": "component_e5ff99b0bd1f02ac",
+      "split": "validation",
+      "users": [
+        "user_88326814"
+      ],
+      "projects": [
+        "project_0803f867",
+        "project_145e22f9",
+        "project_1bbec026",
+        "project_1d7ec198",
+        "project_23e1c27d",
+        "project_24ac5655",
+        "project_3297751d",
+        "project_461c4da2",
+        "project_53a129bc",
+        "project_6edcb6dc",
+        "project_963a84b0",
+        "project_a74de4e4",
+        "project_cdaa619a",
+        "project_d816af25",
+        "project_e62eccf1",
+        "project_f16ab03e"
+      ],
+      "tool_rows": 3306
+    },
+    {
+      "group_id": "component_a7c3d020740120fb",
+      "split": "test",
+      "users": [
+        "user_b39043d0"
+      ],
+      "projects": [
+        "project_26499b72",
+        "project_4423fa46",
+        "project_7566074a",
+        "project_7a75e600",
+        "project_8436a63a",
+        "project_9dc9cb9e",
+        "project_bbd6ffbf"
+      ],
+      "tool_rows": 3138
+    },
+    {
+      "group_id": "component_251f54b6a6a8aaff",
+      "split": "train",
+      "users": [
+        "user_29af243c"
+      ],
+      "projects": [
+        "project_0d1fb27d",
+        "project_4489fc7f",
+        "project_553561c9",
+        "project_630047d8",
+        "project_7a848023",
+        "project_7e133d9c",
+        "project_b15bda16",
+        "project_cb121f37",
+        "project_e0bdd470"
+      ],
+      "tool_rows": 2722
+    },
+    {
+      "group_id": "component_5c385c69ab3b3d23",
+      "split": "validation",
+      "users": [
+        "user_4255c608"
+      ],
+      "projects": [
+        "project_27303bcd",
+        "project_43189dbe",
+        "project_6d224911",
+        "project_bfb30adb"
+      ],
+      "tool_rows": 2665
+    },
+    {
+      "group_id": "component_bd90c416140c281e",
+      "split": "test",
+      "users": [
+        "user_ffed6261"
+      ],
+      "projects": [
+        "project_cd7685df"
+      ],
+      "tool_rows": 2213
+    },
+    {
+      "group_id": "component_ff7945582c763874",
+      "split": "train",
+      "users": [
+        "user_883925a7"
+      ],
+      "projects": [
+        "project_55451413"
+      ],
+      "tool_rows": 1391
+    },
+    {
+      "group_id": "component_fd6625a8e6006589",
+      "split": "validation",
+      "users": [
+        "user_3f9cfe0d"
+      ],
+      "projects": [
+        "project_23ae10e8",
+        "project_62a4b681"
+      ],
+      "tool_rows": 1375
+    },
+    {
+      "group_id": "component_56ad952f7497eeaf",
+      "split": "train",
+      "users": [
+        "user_dcff811d"
+      ],
+      "projects": [
+        "project_105c19bc",
+        "project_df211992",
+        "project_ff9a2bb6"
+      ],
+      "tool_rows": 985
+    },
+    {
+      "group_id": "component_bfc39631f1f3e33a",
+      "split": "test",
+      "users": [
+        "user_c3518676"
+      ],
+      "projects": [
+        "project_36cf3446"
+      ],
+      "tool_rows": 950
+    },
+    {
+      "group_id": "component_3a17d78ce7ade2db",
+      "split": "validation",
+      "users": [
+        "user_ce9e33d9"
+      ],
+      "projects": [
+        "project_1406eefd",
+        "project_d61ad1eb"
+      ],
+      "tool_rows": 701
+    },
+    {
+      "group_id": "component_b797bc195d5c0cbb",
+      "split": "train",
+      "users": [
+        "user_aeeec834"
+      ],
+      "projects": [
+        "project_073668ac",
+        "project_51f34eab",
+        "project_78eda1bc"
+      ],
+      "tool_rows": 575
+    },
+    {
+      "group_id": "component_9701dfc18f933278",
+      "split": "test",
+      "users": [
+        "user_5a407c0b"
+      ],
+      "projects": [
+        "project_6a9db439"
+      ],
+      "tool_rows": 489
+    },
+    {
+      "group_id": "component_cbe7e4c011535b45",
+      "split": "validation",
+      "users": [
+        "user_be690ace"
+      ],
+      "projects": [
+        "project_63d59c6a"
+      ],
+      "tool_rows": 427
+    },
+    {
+      "group_id": "component_02b9491e235c391a",
+      "split": "train",
+      "users": [
+        "user_3b8eaed4"
+      ],
+      "projects": [
+        "project_133bb3dc",
+        "project_1b387795",
+        "project_7319c6ae",
+        "project_850890c2"
+      ],
+      "tool_rows": 413
+    },
+    {
+      "group_id": "component_bc8b64163a0458d9",
+      "split": "test",
+      "users": [
+        "user_ed34cd3c"
+      ],
+      "projects": [
+        "project_4cb71869",
+        "project_66cf192b",
+        "project_689ebe8b",
+        "project_86f875ef",
+        "project_8c60d921",
+        "project_9cbacf94",
+        "project_bda586a8",
+        "project_db7d5196"
+      ],
+      "tool_rows": 304
+    },
+    {
+      "group_id": "component_521dda33b57458ca",
+      "split": "validation",
+      "users": [
+        "user_25fd117b"
+      ],
+      "projects": [
+        "project_1cb757b6",
+        "project_69347130"
+      ],
+      "tool_rows": 301
+    },
+    {
+      "group_id": "component_bc829dc1b5d058e2",
+      "split": "test",
+      "users": [
+        "user_a3b1fea9"
+      ],
+      "projects": [],
+      "tool_rows": 282
+    },
+    {
+      "group_id": "component_639bb06268ff5900",
+      "split": "train",
+      "users": [
+        "user_a0fcea61"
+      ],
+      "projects": [
+        "project_6312f544",
+        "project_91bc1450",
+        "project_a884d139",
+        "project_c10c5fb3"
+      ],
+      "tool_rows": 269
+    },
+    {
+      "group_id": "component_9dcf032f89b70be0",
+      "split": "validation",
+      "users": [
+        "user_0429972b"
+      ],
+      "projects": [
+        "project_9db2b7ad"
+      ],
+      "tool_rows": 244
+    },
+    {
+      "group_id": "component_d1f06f0f55c52595",
+      "split": "test",
+      "users": [
+        "user_d11208e9"
+      ],
+      "projects": [
+        "project_f287e694"
+      ],
+      "tool_rows": 225
+    },
+    {
+      "group_id": "component_0f74fd9209a35a60",
+      "split": "train",
+      "users": [
+        "user_41533378"
+      ],
+      "projects": [
+        "project_767f32e9"
+      ],
+      "tool_rows": 161
+    },
+    {
+      "group_id": "component_0730246c0c532d57",
+      "split": "validation",
+      "users": [
+        "user_8aaf6299"
+      ],
+      "projects": [
+        "project_185c7d71"
+      ],
+      "tool_rows": 146
+    },
+    {
+      "group_id": "component_c4d2d21401a82f11",
+      "split": "train",
+      "users": [
+        "user_a80d43fb"
+      ],
+      "projects": [],
+      "tool_rows": 113
+    },
+    {
+      "group_id": "component_33e3c7b087658427",
+      "split": "test",
+      "users": [
+        "user_62de70c1"
+      ],
+      "projects": [
+        "project_82f66f13"
+      ],
+      "tool_rows": 48
+    },
+    {
+      "group_id": "component_202fae4e2680daf2",
+      "split": "validation",
+      "users": [
+        "user_99a799e2"
+      ],
+      "projects": [
+        "project_6d127ccc"
+      ],
+      "tool_rows": 6
+    }
+  ],
+  "split_tool_targets": {
+    "train": 595081,
+    "validation": 74369,
+    "test": 74369
+  },
+  "source_tool_rows": 743819,
+  "counts": {
+    "validation_rounds": 69469,
+    "source_rows_seen": 665453,
+    "validation_tools": 74369,
+    "validation_observed": 74132,
+    "validation_missing": 237,
+    "validation_zero": 10,
+    "missing_internal_latency": 398296,
+    "zero_internal_latency": 136408,
+    "linked_continuations": 75488,
+    "wall_timestamp_mismatch": 0,
+    "missing_result": 769,
+    "validation_snapshots": 114274,
+    "validation_positive": 74122,
+    "train_rounds": 526197,
+    "train_tools": 595081,
+    "train_observed": 594732,
+    "train_missing": 349,
+    "train_zero": 12111,
+    "train_snapshots": 934791,
+    "train_positive": 582621,
+    "test_rounds": 69787,
+    "test_tools": 74369,
+    "test_observed": 74186,
+    "test_missing": 183,
+    "test_zero": 124,
+    "test_snapshots": 115842,
+    "test_positive": 74062
+  },
+  "derived_files_sha256": {
+    "sessions.jsonl": "d2f8aeeae6c8bbc604eee1045375ef538f7928e1b26a59d801a224f8b4081160",
+    "test.features.jsonl.gz": "095bcced4909b798eca23b21363469bb69b3f9f085ff916118837176a630e420",
+    "test.labels.jsonl.gz": "003fbe6729b37fe92e90452cde8dee6ace08edaf614216470dfc8e0087a020c2",
+    "test.quality.jsonl.gz": "ac81381ce773fb831a8d572527ad206e7aea8e2b499ab2aa06b4165a688de146",
+    "train.features.jsonl.gz": "25c216e9808f7ae4653aaabe7d73687de3ee07db5e1a4040e7365fdd7c03bb92",
+    "train.labels.jsonl.gz": "ac539f6aa5340cc7562d8c4d0781600ed8b289e591dcbe59f0eca00224377fba",
+    "train.quality.jsonl.gz": "7b556f7e1d9619d1f70b4dbf7113ecf52625aba4671aa4c3fb4583dd4f09ef89",
+    "validation.features.jsonl.gz": "19ff3243b6807b0f9bca3c40595b3a166ec5a8b225ff0ea1719994cbed1a8749",
+    "validation.labels.jsonl.gz": "af913d8318c24bbaa1be9b4745512723117329564cd531b08316cf91049b18c8",
+    "validation.quality.jsonl.gz": "b136109fa505052b4575ff8a8f74a4de74c8b823a43be84c8d4d5d3aa8c87b30"
+  },
+  "adapter_sha256": "03ade77101228a5dbbbb31d5afd9c23dd4d13e7619bcac3a2b9d66310954e016",
+  "users": 52,
+  "scoped_sessions": 8059,
+  "distinct_session_ids": 8058,
+  "named_projects": 356,
+  "provider_rounds": {
+    "claude": 305445,
+    "codex": 360008
+  },
+  "tool_names": {
+    "Read": 63984,
+    "Bash": 158610,
+    "AskUserQuestion": 1499,
+    "TaskCreate": 4877,
+    "TaskUpdate": 8853,
+    "Write": 8625,
+    "Edit": 36713,
+    "EnterPlanMode": 186,
+    "ExitPlanMode": 672,
+    "EnterWorktree": 45,
+    "Skill": 188,
+    "TaskOutput": 647,
+    "Agent": 2546,
+    "TaskStop": 500,
+    "WebSearch": 1710,
+    "custom_tool_1": 5,
+    "TaskList": 117,
+    "WebFetch": 3636,
+    "TaskGet": 48,
+    "ExitWorktree": 20,
+    "ScheduleWakeup": 1635,
+    "ToolSearch": 1710,
+    "Glob": 986,
+    "Grep": 3360,
+    "NotebookEdit": 40,
+    "custom_tool_2": 17,
+    "TodoWrite": 570,
+    "Task": 7,
+    "Monitor": 1114,
+    "CronCreate": 145,
+    "CronList": 28,
+    "CronDelete": 117,
+    "exec": 46757,
+    "Explore": 4,
+    "PushNotification": 34,
+    "TeamCreate": 1,
+    "SendUserFile": 259,
+    "TaskSearch": 1,
+    "StructuredOutput": 463,
+    "Workflow": 8,
+    "shell": 5416,
+    "read_mcp_resource": 1,
+    "update_plan": 3473,
+    "apply_patch": 32332,
+    "shell_command": 7624,
+    "exec_command": 251630,
+    "view_image": 748,
+    "write_stdin": 75975,
+    "list_mcp_resources": 21,
+    "spawn_agent": 664,
+    "wait_agent": 1045,
+    "close_agent": 402,
+    "send_input": 58,
+    "update_goal": 11,
+    "wait": 11404,
+    "run": 51,
+    "get_goal": 13,
+    "list_agents": 168,
+    "request_user_input": 67,
+    "bash": 2,
+    "SendMessage": 748,
+    "BashOutput": 124,
+    "custom_tool_3": 6,
+    "custom_tool_4": 25,
+    "custom_tool_5": 2,
+    "custom_tool_6": 1,
+    "custom_tool_7": 2,
+    "LSP": 2,
+    "Artifact": 6,
+    "custom_tool_8": 1,
+    "custom_tool_9": 2,
+    "ReportFindings": 1,
+    "send_message": 550,
+    "custom_tool_10": 1,
+    "custom_tool_11": 1,
+    "custom_tool_12": 1,
+    "custom_tool_13": 1,
+    "custom_tool_14": 3,
+    "custom_tool_15": 2,
+    "custom_tool_16": 2,
+    "custom_tool_17": 1,
+    "custom_tool_18": 1,
+    "custom_tool_19": 1,
+    "custom_tool_20": 2,
+    "custom_tool_21": 2,
+    "resume_agent": 8,
+    "followup_task": 64,
+    "interrupt_agent": 13,
+    "browser_resize": 1,
+    "browser_navigate": 2,
+    "browser_console_messages": 2,
+    "browser_snapshot": 1,
+    "browser_take_screenshot": 1,
+    "custom_tool_22": 1,
+    "create_goal": 5,
+    "custom_tool_23": 2,
+    "LS": 5,
+    "KillBash": 18,
+    "MultiEdit": 2,
+    "KillShell": 3,
+    "custom_tool_24": 2,
+    "custom_tool_25": 67,
+    "custom_tool_26": 3,
+    "custom_tool_27": 2,
+    "custom_tool_28": 4,
+    "custom_tool_29": 1,
+    "list_mcp_resource_templates": 10,
+    "custom_tool_30": 3,
+    "custom_tool_31": 1,
+    "custom_tool_32": 4,
+    "custom_tool_33": 4,
+    "custom_tool_34": 1,
+    "custom_tool_35": 1,
+    "custom_tool_36": 1,
+    "custom_tool_37": 38,
+    "custom_tool_38": 43,
+    "custom_tool_39": 43,
+    "custom_tool_40": 43,
+    "custom_tool_41": 35,
+    "custom_tool_42": 27,
+    "custom_tool_43": 1,
+    "custom_tool_44": 1,
+    "custom_tool_45": 1,
+    "list_projects": 3,
+    "create_thread": 2,
+    "wait_threads": 3,
+    "read_thread_terminal": 4,
+    "list_threads": 10,
+    "read_thread": 3
+  },
+  "command_statuses": {
+    "unknown": 416267,
+    "finished": 247509,
+    "failed": 392,
+    "running": 78542,
+    "session_error": 672,
+    "aborted": 437
+  },
+  "duration_s": {
+    "min": 0.0,
+    "p50": 0.218,
+    "p90": 10.052,
+    "p95": 30.006,
+    "p99": 151.61357000000007,
+    "max": 440697.891
+  },
+  "feature_allowlist": [
+    "provider",
+    "tool_name",
+    "round_index",
+    "tool_index",
+    "input_chars",
+    "executable_parse_status",
+    "executables",
+    "command_skeleton",
+    "elapsed_s"
+  ],
+  "checkpoints_s": [
+    0,
+    1,
+    5,
+    30,
+    120
+  ],
+  "snapshot_loader": "leasepath.tracelab.iter_training_samples",
+  "snapshot_policy": "strictly pending at fixed elapsed checkpoints; zero and missing spans excluded; each episode total weight 1",
+  "label_fields": [
+    "observed_log_span_ms",
+    "is_error",
+    "command_status",
+    "command_exit_code"
+  ],
+  "limitations": [
+    "Tool-result log span is not isolated execution time.",
+    "No legal prefix identity, KV lookup or explicit retirement is present; exact U/D/C labels are unsupported.",
+    "Rows missing a coherent result time have no proxy duration label and are excluded from fitting.",
+    "Zero-duration records are retained and flagged, excluded from pending snapshots.",
+    "Codex running calls are not command completion; command_status is a future outcome label, not a feature."
+  ]
+}

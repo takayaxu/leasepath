@@ -1,0 +1,254 @@
+--- a/include/llama.h
++++ b/include/llama.h
+@@ -700,6 +700,17 @@
+             llama_memory_t mem,
+               llama_seq_id seq_id);
+ 
++    // LeasePath opt-in observation: real cell references and tensor payload.
++    // Only dense full-attention F16 K/V on device buffers is supported.
++    struct llama_leasepath_kv_usage {
++        uint64_t capacity_cells, resident_cells, active_cells, shared_cells;
++        uint64_t bytes_per_cell, payload_capacity_bytes, reserved_buffer_bytes;
++        uint64_t resident_payload_bytes, active_payload_bytes, idle_payload_bytes;
++    };
++    LLAMA_API bool llama_leasepath_memory_usage(
++            llama_memory_t mem, const llama_seq_id * active_ids, size_t n_active,
++            struct llama_leasepath_kv_usage * out);
++
+     // Check if the memory supports shifting
+     LLAMA_API bool llama_memory_can_shift(llama_memory_t mem);
+ 
+--- a/src/llama-memory.h
++++ b/src/llama-memory.h
+@@ -109,6 +109,7 @@
+     virtual llama_pos seq_pos_min(llama_seq_id seq_id) const = 0;
+     virtual llama_pos seq_pos_max(llama_seq_id seq_id) const = 0;
+ 
++    virtual bool leasepath_usage(const llama_seq_id *, size_t, llama_leasepath_kv_usage &) const { return false; }
+     virtual std::map<ggml_backend_buffer_type_t, size_t> memory_breakdown() const = 0;
+ 
+     //
+--- a/src/llama-kv-cache.h
++++ b/src/llama-kv-cache.h
+@@ -119,6 +119,7 @@
+     llama_pos seq_pos_min(llama_seq_id seq_id) const override;
+     llama_pos seq_pos_max(llama_seq_id seq_id) const override;
+ 
++    bool leasepath_usage(const llama_seq_id * active_ids, size_t n_active, llama_leasepath_kv_usage & out) const override;
+     std::map<ggml_backend_buffer_type_t, size_t> memory_breakdown() const override;
+ 
+     // state write/load
+--- a/src/llama-kv-cache.cpp
++++ b/src/llama-kv-cache.cpp
+@@ -478,6 +478,43 @@
+     const auto & cells = v_cells[seq_to_stream[seq_id]];
+ 
+     return cells.seq_pos_max(seq_id);
++}
++
++bool llama_kv_cache::leasepath_usage(const llama_seq_id * active_ids, size_t n_active, llama_leasepath_kv_usage & out) const {
++    out = {};
++    if (n_swa != 0 || layers.empty()) { return false; }
++    for (size_t a = 0; a < n_active; ++a) {
++        if (active_ids[a] < 0 || active_ids[a] >= (llama_seq_id) seq_to_stream.size()) { return false; }
++    }
++    for (const auto & layer : layers) {
++        if (layer.k->type != GGML_TYPE_F16 || layer.v->type != GGML_TYPE_F16 ||
++            ggml_backend_buffer_is_host(layer.k->buffer) || ggml_backend_buffer_is_host(layer.v->buffer)) { return false; }
++        const uint64_t cells = uint64_t(get_size()) * n_stream;
++        const uint64_t payload = ggml_nbytes(layer.k) + ggml_nbytes(layer.v);
++        if (cells == 0 || payload % cells != 0) { return false; }
++        out.bytes_per_cell += payload / cells;
++        out.payload_capacity_bytes += payload;
++    }
++    for (const auto & item : ctxs_bufs) {
++        out.reserved_buffer_bytes += ggml_backend_buffer_get_size(item.second.get());
++    }
++    for (const auto & cells : v_cells) {
++        out.capacity_cells += cells.size();
++        for (uint32_t i = 0; i < cells.size(); ++i) {
++            if (cells.is_empty(i)) { continue; }
++            ++out.resident_cells;
++            if (cells.seq_count(i) > 1) { ++out.shared_cells; }
++            bool active = false;
++            for (size_t a = 0; a < n_active; ++a) {
++                if (cells.seq_has(i, active_ids[a])) { active = true; break; }
++            }
++            if (active) { ++out.active_cells; }
++        }
++    }
++    out.resident_payload_bytes = out.resident_cells * out.bytes_per_cell;
++    out.active_payload_bytes = out.active_cells * out.bytes_per_cell;
++    out.idle_payload_bytes = out.resident_payload_bytes - out.active_payload_bytes;
++    return true;
+ }
+ 
+ std::map<ggml_backend_buffer_type_t, size_t> llama_kv_cache::memory_breakdown() const {
+--- a/src/llama-context.cpp
++++ b/src/llama-context.cpp
+@@ -2631,6 +2631,13 @@
+     return mem->seq_pos_max(seq_id);
+ }
+ 
++bool llama_leasepath_memory_usage(llama_memory_t mem, const llama_seq_id * active_ids, size_t n_active,
++                                 llama_leasepath_kv_usage * out) {
++    if (!mem || !out || (n_active && !active_ids)) { return false; }
++    *out = {};
++    return mem->leasepath_usage(active_ids, n_active, *out);
++}
++
+ bool llama_memory_can_shift(llama_memory_t mem) {
+     if (!mem) {
+         return false;
+--- a/tools/server/server.cpp
++++ b/tools/server/server.cpp
+@@ -31,6 +31,31 @@
+ #include <unordered_set>
+ 
+ using json = nlohmann::ordered_json;
++
++// Called on the server main thread only, never from the HTTP worker.
++static json leasepath_kv_snapshot(llama_context * ctx, llama_seq_id seq, bool active) {
++    llama_leasepath_kv_usage u = {};
++    json out = {{"ts_us", ggml_time_us()}, {"clock", "ggml_time_us_monotonic"},
++                {"scope", "single_slot_dense_f16_device_payload"}};
++    if (llama_n_seq_max(ctx) != 1 || !llama_leasepath_memory_usage(llama_get_memory(ctx), &seq, active ? 1 : 0, &u)) {
++        out["supported"] = false;
++        out["reason"] = "requires one slot and dense full-attention F16 device KV";
++        return out;
++    }
++    out["supported"] = true;
++    out["active_sequence_ids"] = active ? json::array({seq}) : json::array();
++    out["capacity_cells"] = u.capacity_cells;
++    out["resident_cells"] = u.resident_cells;
++    out["active_cells"] = u.active_cells;
++    out["shared_cells"] = u.shared_cells;
++    out["bytes_per_cell"] = u.bytes_per_cell;
++    out["payload_capacity_bytes"] = u.payload_capacity_bytes;
++    out["reserved_buffer_bytes"] = u.reserved_buffer_bytes;
++    out["resident_payload_bytes"] = u.resident_payload_bytes;
++    out["active_payload_bytes"] = u.active_payload_bytes;
++    out["idle_payload_bytes"] = u.idle_payload_bytes;
++    return out;
++}
+ 
+ constexpr int HTTP_POLLING_SECONDS = 1;
+ 
+@@ -127,6 +152,7 @@
+ 
+     std::vector<std::string> antiprompt;
+     std::vector<std::string> response_fields;
++    bool leasepath_resources = false;
+     bool timings_per_token = false;
+     bool leasepath_timing = false; // opt-in measurement, no cache-policy change
+     bool post_sampling_probs = false;
+@@ -320,6 +346,7 @@
+         params.verbose           = params_base.verbosity > 9;
+         params.timings_per_token = json_value(data, "timings_per_token", false);
+         params.leasepath_timing = json_value(data, "leasepath_timing", false);
++        params.leasepath_resources = json_value(data, "leasepath_resources", false);
+ 
+         params.stream           = json_value(data,       "stream",             false);
+         auto stream_opt         = json_value(data,       "stream_options",     json::object());
+@@ -624,6 +651,7 @@
+ 
+ struct result_timings {
+     json leasepath = nullptr;
++    json leasepath_kv = nullptr;
+     int32_t cache_n = -1;
+ 
+     int32_t prompt_n = -1;
+@@ -655,6 +683,7 @@
+             {"predicted_per_second",   predicted_per_second},
+         };
+ 
++        if (!leasepath_kv.is_null()) { base["leasepath_kv"] = leasepath_kv; }
+         if (!leasepath.is_null()) {
+             base["leasepath"] = leasepath;
+         }
+@@ -1721,6 +1750,7 @@
+     // stats
+     size_t n_sent_text = 0; // number of sent text character
+ 
++    json leasepath_kv_events = json::array();
+     int64_t leasepath_last_sample_us = 0;
+     int64_t t_start_process_prompt;
+     int64_t t_start_generation;
+@@ -1869,6 +1899,9 @@
+             };
+         }
+ 
++        if (task && task->params.leasepath_resources) {
++            timings.leasepath_kv = leasepath_kv_events;
++        }
+         // Add speculative metrics
+         if (n_draft_total > 0) {
+             timings.draft_n          = n_draft_total;
+@@ -1962,6 +1995,7 @@
+             {"is_processing", is_processing()},
+         };
+ 
++        res["leasepath_kv"] = leasepath_kv_snapshot(ctx, id, is_processing());
+         const auto & ptask = task ? task : task_prev;
+ 
+         if (ptask) {
+@@ -2778,6 +2812,7 @@
+         if (task.params.leasepath_timing) {
+             task.leasepath_dispatch_us = ggml_time_us();
+         }
++        slot.leasepath_kv_events = json::array();
+         slot.leasepath_last_sample_us = 0;
+         slot.reset();
+ 
+@@ -3738,6 +3773,11 @@
+ 
+                     // TODO: maybe move branch to outside of this loop in the future
+                     if (slot.state == SLOT_STATE_STARTED) {
++                        if (slot.task->params.leasepath_resources) {
++                            auto snapshot = leasepath_kv_snapshot(ctx, slot.id, true);
++                            snapshot["phase"] = "before_lookup";
++                            slot.leasepath_kv_events.push_back(std::move(snapshot));
++                        }
+                         slot.t_start_process_prompt = ggml_time_us();
+                         slot.t_start_generation = 0;
+ 
+@@ -3985,6 +4025,11 @@
+                         }
+ 
+                         slot.n_prompt_tokens_cache     = n_past;
++                        if (slot.task->params.leasepath_resources) {
++                            auto snapshot = leasepath_kv_snapshot(ctx, slot.id, true);
++                            snapshot["phase"] = "before_truncate";
++                            slot.leasepath_kv_events.push_back(std::move(snapshot));
++                        }
+                         slot.n_prompt_tokens_processed = 0;
+ 
+                         slot.prompt.tokens.keep_first(n_past);
+@@ -4012,6 +4057,11 @@
+                         slot.prompt.tokens.clear();
+                     }
+ 
++                    if (slot.task->params.leasepath_resources) {
++                        auto snapshot = leasepath_kv_snapshot(ctx, slot.id, true);
++                        snapshot["phase"] = "after_truncate";
++                        slot.leasepath_kv_events.push_back(std::move(snapshot));
++                    }
+                     // check if we should process the image
+                     if (slot.prompt.n_tokens() < slot.task->n_tokens() && input_tokens[slot.prompt.n_tokens()] == LLAMA_TOKEN_NULL) {
+                         // process the image
+@@ -4250,6 +4300,15 @@
+                 SRV_WRN("failed to find free space in the KV cache, retrying with smaller batch size, i = %d, n_batch = %d, ret = %d\n", i, n_batch, ret);
+ 
+                 continue; // continue loop of n_batch
++            }
++
++            for (auto & observed : slots) {
++                if (observed.task && observed.task->params.leasepath_resources) {
++                    llama_synchronize(ctx);
++                    auto snapshot = leasepath_kv_snapshot(ctx, observed.id, observed.is_processing());
++                    snapshot["phase"] = observed.state == SLOT_STATE_GENERATING ? "decode_complete" : "prompt_batch_complete";
++                    observed.leasepath_kv_events.push_back(std::move(snapshot));
++                }
+             }
+ 
+             // move the head of the batch forward with the number of tokens we just processed

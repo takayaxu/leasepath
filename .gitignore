@@ -1,0 +1,23 @@
+__pycache__/
+.pytest_cache/
+*.egg-info/
+.venv/
+.cache/
+models/
+.venv-infer/
+.venv-v100/
+.artifacts/
+
+# 本机凭据与环境
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# 下载的第三方快照和大型派生数据：保留来源说明与审计报告
+data/sources/cachewise/upstream/
+data/sources/tracelab/v0.0.2/reference/
+data/sources/tracelab/v0.0.2/*.gz
+data/processed/**/*.jsonl
+data/processed/**/*.jsonl.gz

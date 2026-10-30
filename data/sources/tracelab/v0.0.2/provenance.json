@@ -1,0 +1,32 @@
+{
+  "repository": "https://github.com/uw-syfi/TraceLab",
+  "tag": "v0.0.2",
+  "commit": "61fea8f97277d0aa247cc2e4c7e31f90ed2bea1c",
+  "release_asset_id": 488289841,
+  "asset_name": "syfi_coding_trace.jsonl.gz",
+  "asset_url": "https://api.github.com/repos/uw-syfi/TraceLab/releases/assets/488289841?download=1",
+  "asset_bytes": 100939722,
+  "asset_sha256": "11ce51ec0a25e3d1d95b025bca2f7d1647e47571eb7cc968acd5fc64d4b4fb65",
+  "recorded_at_utc": "2026-10-29T07:50:09.405062+00:00",
+  "reference_url_template": "https://api.github.com/repos/uw-syfi/TraceLab/contents/PATH?ref=61fea8f97277d0aa247cc2e4c7e31f90ed2bea1c",
+  "dataset_license": "CC BY 4.0",
+  "attribution": "TraceLab (SyFI Lab, University of Washington)",
+  "reference_files_sha256": {
+    "reference/LICENSE": "122da5085778889f4c36d898b7f7998345876cb75345d66b1418ae5aff0d1843",
+    "reference/LICENSE-DATASET.md": "1e96a0ec55f98ee0e4e2432626c0201104ebfb7f98cecf0a31d5313ddad92e9a",
+    "reference/README.md": "a3c6d004a2c66eb5e059fb392fab4cafc23923fc4b7b6bacb2de8b736ba52bce",
+    "reference/artifacts/llm_generation/timing_feature_ambiguity/README.md": "d030af26a239cfb5c06ea8a3033b3b992dd60d7e9727cf28fec15fa831f08b11",
+    "reference/artifacts/session/session_timing_distribution/README.md": "855dc97a423b4bc098c8959e50dfc1dbcafbdfe7c5ac2583aedeb13f7b3a5dac",
+    "reference/artifacts/utils/DB_SCHEMA.md": "036abc20eec0ea6a52647f90175b4ed9612de1543c159571d91456e0ed581ac1",
+    "reference/artifacts/utils/README.md": "32b5c0639116a4b0c29e17b981a615c01b4332f4c732746a0663506be2467dfc",
+    "reference/artifacts/utils/command_chains.py": "1c2173711b7f064cafe9ff0b980ac5ea9763970c6092e46d224f424c856d179b",
+    "reference/artifacts/utils/timing.py": "e979ea96163ccc6f01cd115e998b392531215d0aed9fa1e00a55e5bb65ec8d8f",
+    "reference/artifacts/utils/tool_stats.py": "ddbe7abd59d9a4d8a132f6c8c108eca52344bfe8cd71cd6807079cc2d7afb30c",
+    "reference/docs/prompt_cache_accounting.md": "3b6d340284021dd070f99394e5071e331441df0a368f5a7bf7566d74d12eee32",
+    "reference/example_sessions/sanitized/round_trace.jsonl": "314c49483148fe68e230a683f739e3e6e68d478948ecf342739596f30af36b57",
+    "reference/scripts/extract_claude_rounds.py": "d73c36cea41a23fe8a5c0a5a94f20abeb08fc325071c819bf2aa362e60788ee5",
+    "reference/scripts/extract_codex_rounds.py": "12d5f5730a29d6cc58c4b8f0cdce45791055a6deb598de6bf83db8ef63fd2357",
+    "reference/scripts/sanitize_round_trace.py": "a9daa8cd47ef22b0e7b9de9256bfda40036cec6d349332d93214cc5b94a5842c"
+  },
+  "upstream_code_executed": false
+}

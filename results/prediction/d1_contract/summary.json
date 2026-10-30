@@ -1,0 +1,716 @@
+{
+  "status": "passed",
+  "scope": "prediction D1 synthetic contract acceptance",
+  "evidence_kind": "synthetic",
+  "performance_claim_allowed": false,
+  "checks_passed": 50,
+  "groups": {
+    "labels": 26,
+    "state": 6,
+    "isolation": 13,
+    "permissions": 5
+  },
+  "event_positive_cases": 8,
+  "event_negative_cases": 16,
+  "runtime_callback_implemented": false,
+  "limitations": [
+    "Synthetic semantics only; no natural pilot, model accuracy or speedup evidence.",
+    "Snapshot supports a minimal feature subset, not the complete planned dataset.",
+    "Tool/request state requires explicit episode links; global queue needs complete service events.",
+    "Shared-owner check covers logical labels only, not native physical block freeing.",
+    "Existing validators do not discover omitted demands or prove retirement validity.",
+    "Source replay permission tests are not a runtime predictor callback isolation proof."
+  ],
+  "checks": [
+    {
+      "id": "legal_demand_physical_miss",
+      "group": "labels",
+      "status": "passed",
+      "detail": {
+        "id": "legal_demand_physical_miss",
+        "status": "passed",
+        "observed": "accepted",
+        "validation": {
+          "events": 17,
+          "runs": 1,
+          "idle_episodes": 1
+        },
+        "labels": [
+          {
+            "run_id": "d2",
+            "idle_episode_id": "idle-1",
+            "evidence_kind": "synthetic",
+            "start_ns": 5,
+            "end_ns": 14,
+            "duration_ns": 9,
+            "outcome": "legal_demand",
+            "reason": null,
+            "demand_request_id": "resume"
+          }
+        ]
+      }
+    },
+    {
+      "id": "legal_demand_physical_hit",
+      "group": "labels",
+      "status": "passed",
+      "detail": {
+        "id": "legal_demand_physical_hit",
+        "status": "passed",
+        "observed": "accepted",
+        "validation": {
+          "events": 17,
+          "runs": 1,
+          "idle_episodes": 1
+        },
+        "labels": [
+          {
+            "run_id": "d2",
+            "idle_episode_id": "idle-1",
+            "evidence_kind": "synthetic",
+            "start_ns": 5,
+            "end_ns": 14,
+            "duration_ns": 9,
+            "outcome": "legal_demand",
+            "reason": null,
+            "demand_request_id": "resume"
+          }
+        ]
+      }
+    },
+    {
+      "id": "tool_end_without_retire",
+      "group": "labels",
+      "status": "passed",
+      "detail": {
+        "id": "tool_end_without_retire",
+        "status": "passed",
+        "observed": "accepted",
+        "validation": {
+          "events": 10,
+          "runs": 1,
+          "idle_episodes": 1
+        },
+        "labels": [
+          {
+            "run_id": "d2",
+            "idle_episode_id": "idle-1",
+            "evidence_kind": "synthetic",
+            "start_ns": 5,
+            "end_ns": 20,
+            "duration_ns": 15,
+            "outcome": "right_censored",
+            "reason": null,
+            "demand_request_id": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "tool_end_then_explicit_retire",
+      "group": "labels",
+      "status": "passed",
+      "detail": {
+        "id": "tool_end_then_explicit_retire",
+        "status": "passed",
+        "observed": "accepted",
+        "validation": {
+          "events": 11,
+          "runs": 1,
+          "idle_episodes": 1
+        },
+        "labels": [
+          {
+            "run_id": "d2",
+            "idle_episode_id": "idle-1",
+            "evidence_kind": "synthetic",
+            "start_ns": 5,
+            "end_ns": 16,
+            "duration_ns": 11,
+            "outcome": "retire",
+            "reason": "explicit_abandonment",
+            "demand_request_id": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "observation_ends_tool_running",
+      "group": "labels",
+      "status": "passed",
+      "detail": {
+        "id": "observation_ends_tool_running",
+        "status": "passed",
+        "observed": "accepted",
+        "validation": {
+          "events": 9,
+          "runs": 1,
+          "idle_episodes": 1
+        },
+        "labels": [
+          {
+            "run_id": "d2",
+            "idle_episode_id": "idle-1",
+            "evidence_kind": "synthetic",
+            "start_ns": 5,
+            "end_ns": 20,
+            "duration_ns": 15,
+            "outcome": "right_censored",
+            "reason": null,
+            "demand_request_id": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "observation_ends_request_queued",
+      "group": "labels",
+      "status": "passed",
+      "detail": {
+        "id": "observation_ends_request_queued",
+        "status": "passed",
+        "observed": "accepted",
+        "validation": {
+          "events": 12,
+          "runs": 1,
+          "idle_episodes": 1
+        },
+        "labels": [
+          {
+            "run_id": "d2",
+            "idle_episode_id": "idle-1",
+            "evidence_kind": "synthetic",
+            "start_ns": 5,
+            "end_ns": 20,
+            "duration_ns": 15,
+            "outcome": "right_censored",
+            "reason": null,
+            "demand_request_id": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "retire_at_observation_boundary",
+      "group": "labels",
+      "status": "passed",
+      "detail": {
+        "id": "retire_at_observation_boundary",
+        "status": "passed",
+        "observed": "accepted",
+        "validation": {
+          "events": 11,
+          "runs": 1,
+          "idle_episodes": 1
+        },
+        "labels": [
+          {
+            "run_id": "d2",
+            "idle_episode_id": "idle-1",
+            "evidence_kind": "synthetic",
+            "start_ns": 5,
+            "end_ns": 20,
+            "duration_ns": 15,
+            "outcome": "retire",
+            "reason": "explicit_abandonment",
+            "demand_request_id": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "demand_at_observation_boundary",
+      "group": "labels",
+      "status": "passed",
+      "detail": {
+        "id": "demand_at_observation_boundary",
+        "status": "passed",
+        "observed": "accepted",
+        "validation": {
+          "events": 15,
+          "runs": 1,
+          "idle_episodes": 1
+        },
+        "labels": [
+          {
+            "run_id": "d2",
+            "idle_episode_id": "idle-1",
+            "evidence_kind": "synthetic",
+            "start_ns": 5,
+            "end_ns": 20,
+            "duration_ns": 15,
+            "outcome": "legal_demand",
+            "reason": null,
+            "demand_request_id": "resume"
+          }
+        ]
+      }
+    },
+    {
+      "id": "reject_incompatible_model",
+      "group": "labels",
+      "status": "passed",
+      "detail": {
+        "id": "reject_incompatible_model",
+        "status": "passed",
+        "observed": "rejected",
+        "error_type": "ValueError",
+        "error": "claimed legal demand is not a compatible token prefix"
+      }
+    },
+    {
+      "id": "reject_different_token_prefix",
+      "group": "labels",
+      "status": "passed",
+      "detail": {
+        "id": "reject_different_token_prefix",
+        "status": "passed",
+        "observed": "rejected",
+        "error_type": "ValueError",
+        "error": "claimed legal demand is not a compatible token prefix"
+      }
+    },
+    {
+      "id": "reject_demand_lookup_token_count_mismatch",
+      "group": "labels",
+      "status": "passed",
+      "detail": {
+        "id": "reject_demand_lookup_token_count_mismatch",
+        "status": "passed",
+        "observed": "rejected",
+        "error_type": "ValueError",
+        "error": "legal demand token count differs from referenced lookup"
+      }
+    },
+    {
+      "id": "reject_bad_physical_counter_sum",
+      "group": "labels",
+      "status": "passed",
+      "detail": {
+        "id": "reject_bad_physical_counter_sum",
+        "status": "passed",
+        "observed": "rejected",
+        "error_type": "ValueError",
+        "error": "cache counters do not sum to prompt tokens"
+      }
+    },
+    {
+      "id": "reject_demand_not_at_lookup",
+      "group": "labels",
+      "status": "passed",
+      "detail": {
+        "id": "reject_demand_not_at_lookup",
+        "status": "passed",
+        "observed": "rejected",
+        "error_type": "ValueError",
+        "error": "legal demand must reference an observed lookup at the same time"
+      }
+    },
+    {
+      "id": "reject_retire_without_reason",
+      "group": "labels",
+      "status": "passed",
+      "detail": {
+        "id": "reject_retire_without_reason",
+        "status": "passed",
+        "observed": "rejected",
+        "error_type": "ValidationError",
+        "error": "'reason' is a required property"
+      }
+    },
+    {
+      "id": "reject_duplicate_terminal",
+      "group": "labels",
+      "status": "passed",
+      "detail": {
+        "id": "reject_duplicate_terminal",
+        "status": "passed",
+        "observed": "rejected",
+        "error_type": "ValueError",
+        "error": "outcome without open idle episode"
+      }
+    },
+    {
+      "id": "reject_demand_after_retire",
+      "group": "labels",
+      "status": "passed",
+      "detail": {
+        "id": "reject_demand_after_retire",
+        "status": "passed",
+        "observed": "rejected",
+        "error_type": "ValueError",
+        "error": "outcome without open idle episode"
+      }
+    },
+    {
+      "id": "reject_tool_end_without_start",
+      "group": "labels",
+      "status": "passed",
+      "detail": {
+        "id": "reject_tool_end_without_start",
+        "status": "passed",
+        "observed": "rejected",
+        "error_type": "ValueError",
+        "error": "tool end without open invocation"
+      }
+    },
+    {
+      "id": "reject_duplicate_tool_end",
+      "group": "labels",
+      "status": "passed",
+      "detail": {
+        "id": "reject_duplicate_tool_end",
+        "status": "passed",
+        "observed": "rejected",
+        "error_type": "ValueError",
+        "error": "tool end without open invocation"
+      }
+    },
+    {
+      "id": "reject_tool_changes_workflow",
+      "group": "labels",
+      "status": "passed",
+      "detail": {
+        "id": "reject_tool_changes_workflow",
+        "status": "passed",
+        "observed": "rejected",
+        "error_type": "ValueError",
+        "error": "tool changed workflow identity"
+      }
+    },
+    {
+      "id": "reject_missing_observation_end",
+      "group": "labels",
+      "status": "passed",
+      "detail": {
+        "id": "reject_missing_observation_end",
+        "status": "passed",
+        "observed": "rejected",
+        "error_type": "ValueError",
+        "error": "every run must have observation_end for censoring"
+      }
+    },
+    {
+      "id": "reject_duplicate_event_id",
+      "group": "labels",
+      "status": "passed",
+      "detail": {
+        "id": "reject_duplicate_event_id",
+        "status": "passed",
+        "observed": "rejected",
+        "error_type": "ValueError",
+        "error": "duplicate event: ('d2', 'idle')"
+      }
+    },
+    {
+      "id": "reject_time_regression",
+      "group": "labels",
+      "status": "passed",
+      "detail": {
+        "id": "reject_time_regression",
+        "status": "passed",
+        "observed": "rejected",
+        "error_type": "ValueError",
+        "error": "events must be ordered by monotonic timestamp"
+      }
+    },
+    {
+      "id": "reject_mixed_evidence",
+      "group": "labels",
+      "status": "passed",
+      "detail": {
+        "id": "reject_mixed_evidence",
+        "status": "passed",
+        "observed": "rejected",
+        "error_type": "ValueError",
+        "error": "mixed evidence kinds in one run"
+      }
+    },
+    {
+      "id": "reject_missing_tool_identity",
+      "group": "labels",
+      "status": "passed",
+      "detail": {
+        "id": "reject_missing_tool_identity",
+        "status": "passed",
+        "observed": "rejected",
+        "error_type": "ValidationError",
+        "error": "'tool_id' is a required property"
+      }
+    },
+    {
+      "id": "snapshot_at_9",
+      "group": "state",
+      "status": "passed",
+      "detail": {
+        "run_id": "d2",
+        "idle_episode_id": "idle-1",
+        "snapshot_ns": 9,
+        "features": {
+          "elapsed_idle_s": 4e-09,
+          "compatibility_id": "model-v1",
+          "prefix_tokens": 2,
+          "tool_name": "search",
+          "tool_elapsed_s": 3e-09,
+          "phase": "waiting_tool",
+          "retry_count": null,
+          "is_queued": null,
+          "queue_length": 0
+        }
+      }
+    },
+    {
+      "id": "snapshot_at_12",
+      "group": "state",
+      "status": "passed",
+      "detail": {
+        "run_id": "d2",
+        "idle_episode_id": "idle-1",
+        "snapshot_ns": 12,
+        "features": {
+          "elapsed_idle_s": 7e-09,
+          "compatibility_id": "model-v1",
+          "prefix_tokens": 2,
+          "tool_name": "search",
+          "tool_elapsed_s": null,
+          "phase": "queued",
+          "retry_count": null,
+          "is_queued": true,
+          "queue_length": 1
+        }
+      }
+    },
+    {
+      "id": "future_U",
+      "group": "isolation",
+      "status": "passed",
+      "detail": "same snapshot at 9 ns; independently checked future outcome"
+    },
+    {
+      "id": "future_D",
+      "group": "isolation",
+      "status": "passed",
+      "detail": "same snapshot at 9 ns; independently checked future outcome"
+    },
+    {
+      "id": "future_C",
+      "group": "isolation",
+      "status": "passed",
+      "detail": "same snapshot at 9 ns; independently checked future outcome"
+    },
+    {
+      "id": "future_tool_and_lookup_delayed",
+      "group": "isolation",
+      "status": "passed",
+      "detail": "same snapshot at 9 ns; independently checked future outcome"
+    },
+    {
+      "id": "future_observation_extended",
+      "group": "isolation",
+      "status": "passed",
+      "detail": "same snapshot at 9 ns; independently checked future outcome"
+    },
+    {
+      "id": "observed_prefix_is_sufficient",
+      "group": "isolation",
+      "status": "passed",
+      "detail": "prefix-only input equals full-trace projection"
+    },
+    {
+      "id": "ignore_nonallowlisted_event_payload",
+      "group": "isolation",
+      "status": "passed",
+      "detail": "injected future payload leaves features unchanged"
+    },
+    {
+      "id": "reject_feature_future_tool_duration_s",
+      "group": "isolation",
+      "status": "passed",
+      "detail": "feature allowlist mismatch"
+    },
+    {
+      "id": "reject_feature_next_demand_request_id",
+      "group": "isolation",
+      "status": "passed",
+      "detail": "feature allowlist mismatch"
+    },
+    {
+      "id": "reject_feature_outcome",
+      "group": "isolation",
+      "status": "passed",
+      "detail": "feature allowlist mismatch"
+    },
+    {
+      "id": "reject_feature_observation_end_ns",
+      "group": "isolation",
+      "status": "passed",
+      "detail": "feature allowlist mismatch"
+    },
+    {
+      "id": "reject_feature_future_hit",
+      "group": "isolation",
+      "status": "passed",
+      "detail": "feature allowlist mismatch"
+    },
+    {
+      "id": "reject_feature_prefix_token_ids",
+      "group": "isolation",
+      "status": "passed",
+      "detail": "feature allowlist mismatch"
+    },
+    {
+      "id": "missing_links_remain_unknown",
+      "group": "state",
+      "status": "passed",
+      "detail": {
+        "run_id": "d2",
+        "idle_episode_id": "idle-1",
+        "snapshot_ns": 9,
+        "features": {
+          "elapsed_idle_s": 4e-09,
+          "compatibility_id": "model-v1",
+          "prefix_tokens": 2,
+          "tool_name": null,
+          "tool_elapsed_s": null,
+          "phase": null,
+          "retry_count": null,
+          "is_queued": null,
+          "queue_length": null
+        }
+      }
+    },
+    {
+      "id": "reject_snapshot_at_4",
+      "group": "state",
+      "status": "passed",
+      "detail": "idle episode has not started"
+    },
+    {
+      "id": "reject_snapshot_at_14",
+      "group": "state",
+      "status": "passed",
+      "detail": "snapshot requires an open idle episode"
+    },
+    {
+      "id": "reject_snapshot_at_observation_end",
+      "group": "state",
+      "status": "passed",
+      "detail": "snapshot at or after observation_end"
+    },
+    {
+      "id": "hit_miss_label_invariance",
+      "group": "labels",
+      "status": "passed",
+      "detail": "full exported labels identical"
+    },
+    {
+      "id": "shared_owner_retire_is_local",
+      "group": "labels",
+      "status": "passed",
+      "detail": {
+        "idle-1": [
+          "retire",
+          8,
+          3
+        ],
+        "idle-2": [
+          "legal_demand",
+          14,
+          9
+        ]
+      }
+    },
+    {
+      "id": "lru_rejects_future_script",
+      "group": "permissions",
+      "status": "passed",
+      "detail": "future script privilege mismatch"
+    },
+    {
+      "id": "retired_first_lru_rejects_future_script",
+      "group": "permissions",
+      "status": "passed",
+      "detail": "future script privilege mismatch"
+    },
+    {
+      "id": "fixed_ttl_rejects_future_script",
+      "group": "permissions",
+      "status": "passed",
+      "detail": "future script privilege mismatch"
+    },
+    {
+      "id": "fixed_ttl_retired_first_rejects_future_script",
+      "group": "permissions",
+      "status": "passed",
+      "detail": "future script privilege mismatch"
+    },
+    {
+      "id": "explicit_offline_script_is_diagnostic",
+      "group": "permissions",
+      "status": "passed",
+      "detail": "offline policy can apply a future script"
+    }
+  ],
+  "input_sha256": {
+    "data/fixtures/prediction_d1_acceptance.json": "806fcfba955ebfba8947648dcbb8fb8e0190164d6a3f051aa369b18742ecce30",
+    "data/fixtures/event_contract.json": "85d7684ce89cbb50671805f1e975d7a66b175edd6559f82b035b42d80cdc3cba",
+    "scripts/check_prediction_d1.py": "edc8fc6c42f9be3f6205541690bce728f2bcfe504d87e4a4d6fef4ec6bd87032",
+    "src/leasepath/contract_fixtures.py": "c0dee446e348dee6eee44eae29409e63916995ba21be88cc1842ce48c62f3d7e",
+    "src/leasepath/prediction_state.py": "513acd885ad7bf490a52c1f3be004429489ed682920b26b3213e17378ce6d30f",
+    "src/leasepath/trace.py": "024034f712b30af4b0e84ea13c52b61806766764372cb228fabd8136afa91148",
+    "src/leasepath/source_replay.py": "52b99f8a35dc15f27d96a90cfa8b70480dfd92df3ecce971b8a3f24e349a7d28",
+    "src/leasepath/cache.py": "3ac477520a6584fe4c9fdc5115aade6b46489d88d670875d45f546ccc232d63f",
+    "schemas/trace.schema.json": "2b3797ce76e0ce82d2035f79fb33a1e8a71a4a3f810aeac1ad0b83752e21ba31",
+    "docs/prediction_contract.md": "aaebedb59e1a6d305de086a6bf74b3d3f8a44b1c20b574331ed664c6d715c334"
+  },
+  "output_sha256": {
+    "demand_at_observation_boundary.events.jsonl": "af774e2a0f12dac223f2847e254f8521b3a96b8844d852f2da731148ffebde44",
+    "demand_at_observation_boundary.labels.jsonl": "6ddd47c5c4f9a4a76d0fa284c11e0aefbf1e4bcd174d4c0d92bfc6d843ccbb47",
+    "future_C.events.jsonl": "b9d1ead2da37206450b5c01528e0caea26287cb204fb5cb16a67d895703c5d53",
+    "future_C.labels.jsonl": "57c246dfa4fa049f64aba6f0c3ebe44b93209ee385b627178df7c894eccff8e9",
+    "future_D.events.jsonl": "d61cae97aff13fd4112bda3df630cf3aa2ca92abb48d5b9674c9be49db283358",
+    "future_D.labels.jsonl": "5fab4f41bf6b18caf12f20d0b9d6607e945074de40821a5fc8f2917eeea076ea",
+    "future_U.events.jsonl": "d89c9de2d8470313bbb62253c41782e54d67a8fbde409bfa4e94676829a48b68",
+    "future_U.labels.jsonl": "62fbe47bec53a6e0cc39fd16a00ed337645de5aa3d405ac172cc58b145ec1797",
+    "future_invariance.json": "427631bf5349cb099806223f3495289154be1616e46cdf32a9d9bf7ca0420e01",
+    "future_observation_extended.events.jsonl": "0ec7c4cbb408969cb298db1fa1452a88dec10387a7ab2625e8600d1042b62281",
+    "future_observation_extended.labels.jsonl": "62fbe47bec53a6e0cc39fd16a00ed337645de5aa3d405ac172cc58b145ec1797",
+    "future_tool_and_lookup_delayed.events.jsonl": "96aed9a6cb2f1530b90e9a1fec047cf941c74a7edd9c7fc132f331d4fa0da156",
+    "future_tool_and_lookup_delayed.labels.jsonl": "0fd5b34b7641aacca1d8529ed27e1543a59eac74e74bb93e3383b612410da45f",
+    "legal_demand_physical_hit.events.jsonl": "38eae22c271e9ea65694007d1cb2f6ce9f39f9a18b9abcf1c2dc4147da179ef7",
+    "legal_demand_physical_hit.labels.jsonl": "62fbe47bec53a6e0cc39fd16a00ed337645de5aa3d405ac172cc58b145ec1797",
+    "legal_demand_physical_miss.events.jsonl": "c770854f72dd68e5c5d2058987eca4de82836525dd2ca0d8cbed22238c8db405",
+    "legal_demand_physical_miss.labels.jsonl": "62fbe47bec53a6e0cc39fd16a00ed337645de5aa3d405ac172cc58b145ec1797",
+    "missing_state_snapshot.json": "d810e733016588ac6b8de1b4d2a3fa20147716945b25513131897d507d713c1d",
+    "observation_ends_request_queued.events.jsonl": "d1f223a3a59b48466594198be675ac38d833625f7b12f83b456decd7a88a6431",
+    "observation_ends_request_queued.labels.jsonl": "57c246dfa4fa049f64aba6f0c3ebe44b93209ee385b627178df7c894eccff8e9",
+    "observation_ends_tool_running.events.jsonl": "85d08f39761cdfbbd955d132763f75b77724f1994d30ac50ada31868286a0b14",
+    "observation_ends_tool_running.labels.jsonl": "57c246dfa4fa049f64aba6f0c3ebe44b93209ee385b627178df7c894eccff8e9",
+    "offline_diagnostic.json": "c3e8291f2f7b5f60f715ee87bd31b3e2300ae66a2245680173296f780e8af3f5",
+    "reject_bad_physical_counter_sum.events.jsonl": "7c22911508da063bb43e02394c4c35edd6df6310235b2e9e41ab8c37f702fdb6",
+    "reject_demand_after_retire.events.jsonl": "6a59165fa7d69cd6dda1825fe6f0f996a8a56d4cd15dee1f4031c831e9fa5107",
+    "reject_demand_lookup_token_count_mismatch.events.jsonl": "eb9cd33d6834db4fc04c0cb4c75b3bacdd7a5687595d3f06a4cb8c8c76777b11",
+    "reject_demand_not_at_lookup.events.jsonl": "58e9732429be2a30784be8cfe65993efcdc5e258458ef080ff73d5484526d5b6",
+    "reject_different_token_prefix.events.jsonl": "e6e494c347d640ebd13bf0592a555cf56788dc7c9b9eb39378de2df9bd0b502b",
+    "reject_duplicate_event_id.events.jsonl": "352e000d8975c7dc80af9e46f0b95bcb0f0d038fbd71dd68c40c928fd5d97847",
+    "reject_duplicate_terminal.events.jsonl": "028967115867b489bd3832d4369785e2621c03514b90140ddca5d206437272ff",
+    "reject_duplicate_tool_end.events.jsonl": "f965961d8c2ef813aa3c0098cb79e2a3953f9f73a850489f50ff90c76a868276",
+    "reject_incompatible_model.events.jsonl": "0d0f9cd53cff9a6239187ac8f540fb87df8ca8e4e86f07e6bbcd08edd7a92b89",
+    "reject_missing_observation_end.events.jsonl": "0c7b57552759ac1fb4e6bae37107371ee905333bb19c3bc4892c99b7693bafd6",
+    "reject_missing_tool_identity.events.jsonl": "0510b56705aca6353514aa91c61ba70a308fa7524f0bab2e484ce7bcaf85cbeb",
+    "reject_mixed_evidence.events.jsonl": "56ba111772d5ca5cdb8cc5cfad0653f2c4ff9e56eae1424acbc9ec3670557dfa",
+    "reject_retire_without_reason.events.jsonl": "13687c3b7aaa9d060675c203e901def140fdef9892ac9188630d71b3b4af83af",
+    "reject_time_regression.events.jsonl": "3fbaf94f8e9ff6628d5ca87cace9063c52d3f0c61ddc5e4b3448f83ebf3a9e4a",
+    "reject_tool_changes_workflow.events.jsonl": "a1384c68bcada0f35b727da32f2c12497338be002695e7a0b88ab3e150413b10",
+    "reject_tool_end_without_start.events.jsonl": "561b3d22133f83b2cd1618b96876ba1267c3c8bbe10f1fd5207f83a550589c92",
+    "retire_at_observation_boundary.events.jsonl": "9d1150613bb51018d1d869721198b2a2243912b18d76fbee16584df1ec4469e5",
+    "retire_at_observation_boundary.labels.jsonl": "3e06746dd4a86617d0f24ba3050197b2671218a1bd9feb2a4246546afd0842ab",
+    "shared_owners.events.jsonl": "4cb2b98695682d0beec6039d1c81ee1d9680ad8563ac492d9d876610dcf0d265",
+    "shared_owners.labels.jsonl": "2cb57d77489a5e7eeb01352038b8107620b8b5cef9b5dbe83f70e84b524a641a",
+    "snapshots.jsonl": "d914216430b937539b49ec450554e6d418c3507ddd06b865aa83f27244a6f267",
+    "tool_end_then_explicit_retire.events.jsonl": "79dbd0f8a6ab2218cee8de43c8fae8731e4eff48aefb4b9f7a84982140a866a4",
+    "tool_end_then_explicit_retire.labels.jsonl": "5fab4f41bf6b18caf12f20d0b9d6607e945074de40821a5fc8f2917eeea076ea",
+    "tool_end_without_retire.events.jsonl": "61402268c208931c3a56c766e2b955712233b33ef7fdc8999a233bd1d68a5177",
+    "tool_end_without_retire.labels.jsonl": "57c246dfa4fa049f64aba6f0c3ebe44b93209ee385b627178df7c894eccff8e9"
+  }
+}

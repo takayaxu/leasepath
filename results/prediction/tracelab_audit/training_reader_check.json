@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "checks": {
+    "train": {
+      "episodes": 582621,
+      "snapshots": 934791,
+      "all_episode_weights_sum_to_one": true
+    },
+    "validation": {
+      "episodes": 74122,
+      "snapshots": 114274,
+      "all_episode_weights_sum_to_one": true
+    },
+    "test": {
+      "episodes": 74062,
+      "snapshots": 115842,
+      "all_episode_weights_sum_to_one": true
+    }
+  },
+  "mode": "full_streaming_read_using_iter_training_samples",
+  "model_trained": false,
+  "summary_sha256": "4d20d0a5eb3a60d3be1ea460c2e1a37edce01a3b641a909fdf4c8420373890d4",
+  "adapter_sha256": "03ade77101228a5dbbbb31d5afd9c23dd4d13e7619bcac3a2b9d66310954e016",
+  "source_sha256": "11ce51ec0a25e3d1d95b025bca2f7d1647e47571eb7cc968acd5fc64d4b4fb65"
+}

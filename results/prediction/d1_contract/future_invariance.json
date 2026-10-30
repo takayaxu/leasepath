@@ -1,0 +1,152 @@
+[
+  {
+    "variant": "future_U",
+    "snapshot": {
+      "run_id": "d2",
+      "idle_episode_id": "idle-1",
+      "snapshot_ns": 9,
+      "features": {
+        "elapsed_idle_s": 4e-09,
+        "compatibility_id": "model-v1",
+        "prefix_tokens": 2,
+        "tool_name": "search",
+        "tool_elapsed_s": 3e-09,
+        "phase": "waiting_tool",
+        "retry_count": null,
+        "is_queued": null,
+        "queue_length": 0
+      }
+    },
+    "label": {
+      "run_id": "d2",
+      "idle_episode_id": "idle-1",
+      "evidence_kind": "synthetic",
+      "start_ns": 5,
+      "end_ns": 14,
+      "duration_ns": 9,
+      "outcome": "legal_demand",
+      "reason": null,
+      "demand_request_id": "resume"
+    }
+  },
+  {
+    "variant": "future_D",
+    "snapshot": {
+      "run_id": "d2",
+      "idle_episode_id": "idle-1",
+      "snapshot_ns": 9,
+      "features": {
+        "elapsed_idle_s": 4e-09,
+        "compatibility_id": "model-v1",
+        "prefix_tokens": 2,
+        "tool_name": "search",
+        "tool_elapsed_s": 3e-09,
+        "phase": "waiting_tool",
+        "retry_count": null,
+        "is_queued": null,
+        "queue_length": 0
+      }
+    },
+    "label": {
+      "run_id": "d2",
+      "idle_episode_id": "idle-1",
+      "evidence_kind": "synthetic",
+      "start_ns": 5,
+      "end_ns": 16,
+      "duration_ns": 11,
+      "outcome": "retire",
+      "reason": "explicit_abandonment",
+      "demand_request_id": null
+    }
+  },
+  {
+    "variant": "future_C",
+    "snapshot": {
+      "run_id": "d2",
+      "idle_episode_id": "idle-1",
+      "snapshot_ns": 9,
+      "features": {
+        "elapsed_idle_s": 4e-09,
+        "compatibility_id": "model-v1",
+        "prefix_tokens": 2,
+        "tool_name": "search",
+        "tool_elapsed_s": 3e-09,
+        "phase": "waiting_tool",
+        "retry_count": null,
+        "is_queued": null,
+        "queue_length": 0
+      }
+    },
+    "label": {
+      "run_id": "d2",
+      "idle_episode_id": "idle-1",
+      "evidence_kind": "synthetic",
+      "start_ns": 5,
+      "end_ns": 20,
+      "duration_ns": 15,
+      "outcome": "right_censored",
+      "reason": null,
+      "demand_request_id": null
+    }
+  },
+  {
+    "variant": "future_tool_and_lookup_delayed",
+    "snapshot": {
+      "run_id": "d2",
+      "idle_episode_id": "idle-1",
+      "snapshot_ns": 9,
+      "features": {
+        "elapsed_idle_s": 4e-09,
+        "compatibility_id": "model-v1",
+        "prefix_tokens": 2,
+        "tool_name": "search",
+        "tool_elapsed_s": 3e-09,
+        "phase": "waiting_tool",
+        "retry_count": null,
+        "is_queued": null,
+        "queue_length": 0
+      }
+    },
+    "label": {
+      "run_id": "d2",
+      "idle_episode_id": "idle-1",
+      "evidence_kind": "synthetic",
+      "start_ns": 5,
+      "end_ns": 19,
+      "duration_ns": 14,
+      "outcome": "legal_demand",
+      "reason": null,
+      "demand_request_id": "resume"
+    }
+  },
+  {
+    "variant": "future_observation_extended",
+    "snapshot": {
+      "run_id": "d2",
+      "idle_episode_id": "idle-1",
+      "snapshot_ns": 9,
+      "features": {
+        "elapsed_idle_s": 4e-09,
+        "compatibility_id": "model-v1",
+        "prefix_tokens": 2,
+        "tool_name": "search",
+        "tool_elapsed_s": 3e-09,
+        "phase": "waiting_tool",
+        "retry_count": null,
+        "is_queued": null,
+        "queue_length": 0
+      }
+    },
+    "label": {
+      "run_id": "d2",
+      "idle_episode_id": "idle-1",
+      "evidence_kind": "synthetic",
+      "start_ns": 5,
+      "end_ns": 14,
+      "duration_ns": 9,
+      "outcome": "legal_demand",
+      "reason": null,
+      "demand_request_id": "resume"
+    }
+  }
+]

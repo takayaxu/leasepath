@@ -1,0 +1,115 @@
+--- a/tools/server/server.cpp
++++ b/tools/server/server.cpp
+@@ -128,6 +128,7 @@
+     std::vector<std::string> antiprompt;
+     std::vector<std::string> response_fields;
+     bool timings_per_token = false;
++    bool leasepath_timing = false; // opt-in measurement, no cache-policy change
+     bool post_sampling_probs = false;
+ 
+     struct common_params_sampling sampling;
+@@ -261,6 +262,8 @@
+ };
+ 
+ struct server_task {
++    int64_t leasepath_enqueue_us = 0;
++    int64_t leasepath_dispatch_us = 0;
+     int id    = -1; // to be filled by server_queue
+     int index = -1; // used when there are multiple prompts (batch request)
+ 
+@@ -316,6 +319,7 @@
+         // enabling this will output extra debug information in the HTTP responses from the server
+         params.verbose           = params_base.verbosity > 9;
+         params.timings_per_token = json_value(data, "timings_per_token", false);
++        params.leasepath_timing = json_value(data, "leasepath_timing", false);
+ 
+         params.stream           = json_value(data,       "stream",             false);
+         auto stream_opt         = json_value(data,       "stream_options",     json::object());
+@@ -619,6 +623,7 @@
+ };
+ 
+ struct result_timings {
++    json leasepath = nullptr;
+     int32_t cache_n = -1;
+ 
+     int32_t prompt_n = -1;
+@@ -649,6 +654,10 @@
+             {"predicted_per_token_ms", predicted_per_token_ms},
+             {"predicted_per_second",   predicted_per_second},
+         };
++
++        if (!leasepath.is_null()) {
++            base["leasepath"] = leasepath;
++        }
+ 
+         if (draft_n > 0) {
+             base["draft_n"] = draft_n;
+@@ -1712,6 +1721,7 @@
+     // stats
+     size_t n_sent_text = 0; // number of sent text character
+ 
++    int64_t leasepath_last_sample_us = 0;
+     int64_t t_start_process_prompt;
+     int64_t t_start_generation;
+ 
+@@ -1845,6 +1855,19 @@
+         timings.predicted_ms           = t_token_generation;
+         timings.predicted_per_token_ms = t_token_generation / n_decoded;
+         timings.predicted_per_second   = 1e3 / t_token_generation * n_decoded;
++
++        if (task && task->params.leasepath_timing) {
++            timings.leasepath = {
++                {"clock", "ggml_time_us_monotonic"},
++                {"task_id", task->id},
++                {"enqueue_us", task->leasepath_enqueue_us},
++                {"dispatch_us", task->leasepath_dispatch_us},
++                {"prompt_start_us", t_start_process_prompt},
++                {"first_sample_us", t_start_generation},
++                {"last_sample_us", leasepath_last_sample_us},
++                {"response_ready_us", ggml_time_us()},
++            };
++        }
+ 
+         // Add speculative metrics
+         if (n_draft_total > 0) {
+@@ -2043,6 +2066,9 @@
+         if (task.type == SERVER_TASK_TYPE_CANCEL) {
+             cleanup_pending_task(task.id_target);
+         }
++        if (task.params.leasepath_timing && task.leasepath_enqueue_us == 0) {
++            task.leasepath_enqueue_us = ggml_time_us();
++        }
+         const int task_id = task.id;
+         QUE_DBG("new task, id = %d, front = %d\n", task_id, front);
+         if (front) {
+@@ -2064,6 +2090,9 @@
+             // if this is cancel task make sure to clean up pending tasks
+             if (task.type == SERVER_TASK_TYPE_CANCEL) {
+                 cleanup_pending_task(task.id_target);
++            }
++            if (task.params.leasepath_timing && task.leasepath_enqueue_us == 0) {
++                task.leasepath_enqueue_us = ggml_time_us();
+             }
+             QUE_DBG("new task, id = %d/%d, front = %d\n", task.id, (int) tasks.size(), front);
+             if (front) {
+@@ -2746,6 +2775,10 @@
+     }
+ 
+     bool launch_slot_with_task(server_slot & slot, server_task && task) {
++        if (task.params.leasepath_timing) {
++            task.leasepath_dispatch_us = ggml_time_us();
++        }
++        slot.leasepath_last_sample_us = 0;
+         slot.reset();
+ 
+         if (!are_lora_equal(task.params.lora, slot.lora)) {
+@@ -4270,6 +4303,9 @@
+                 slot.n_decoded += 1;
+ 
+                 const int64_t t_current = ggml_time_us();
++                if (slot.task->params.leasepath_timing) {
++                    slot.leasepath_last_sample_us = t_current;
++                }
+ 
+                 if (slot.n_decoded == 1) {
+                     slot.t_start_generation = t_current;
