@@ -1,6 +1,8 @@
 # 项目架构
 
-项目分为事件与样本、预测模型、缓存验证三层。当前 D1 仅验证人工事件契约；TraceLab 是单独的工具等待代理，不能进入主任务训练。主任务真实 U/D/C 样本数为 0，必须先建设可观测真实 lookup 与兼容前缀身份的采集链。
+项目分为事件与样本、预测模型、缓存验证三层。D1 验证人工事件契约；D2 已接入 mini-swe-agent、Qwen2.5-Coder-7B-Instruct 和 vLLM-Ascend，提供真实 lookup、固定兼容前缀、U/D 标签与快照，C 另由受控真实推理检查覆盖。首轮 issue 执行质量不足；后续 [MBPP 派生执行轮](d2_mbpp_round.md) 增加独立测试、执行质量筛选和风险区间导出，同时保留失败。运行与范围见 [D2 部署](d2_first_round.md)、[首轮报告](../reports/d2_first_round_acceptance.md) 和 [本轮报告](../reports/d2_mbpp_round_acceptance.md)。TraceLab 是单独的工具等待代理，不能进入主任务训练。
+
+当前跨轮的数据规模、文件结构、特征版本及母题分组统一见 [数据集说明](dataset_card.md)。[训练 v2](../reports/prediction_v2_50parents_review.md) 已按冻结清单合并四轮最小输入，进行 50 母题固定分组的经验基线/GBDT 对照及独立核验；增强字段暂用于分层，原轮数据和旧模型保持原版本。
 
 ## 数据流
 
@@ -9,10 +11,10 @@ flowchart TD
     A["工具与模型事件 / 人工验收事件"] --> B["trace.py：结构与语义校验"]
     B --> C["未来 U/D/C 标签"]
     B --> D["prediction_state.py：截至快照时刻的特征"]
-    C --> E["待实现：prediction_dataset.py，关联样本与独立标签"]
+    C --> E["已有：d2_dataset.py / d2_hazards.py，开发样本与独立标签"]
     D --> E
-    E --> F["待实现：开发集训练，来源/时间独立测试"]
-    F --> G["待实现：经验分布与共享 GBDT"]
+    E --> F["已有：母题分组开发训练；来源/时间独立测试待完成"]
+    F --> G["已有：经验风险基线与共享 GBDT"]
     H["source_replay.py：环境推进器"] --> I["待实现：当前状态回调"]
     I --> G
     G --> J["待实现：复用概率与固定评分器"]
@@ -30,6 +32,14 @@ flowchart TD
 | `tracelab.py` | 校验固定 TraceLab release，连接共享项目/session 的匿名用户后切分；分离输入、未来标签和质量文件，按固定 elapsed 点流式生成剩余工具日志跨度样本。单独核验哈希、对齐、特征白名单和切分隔离；不生成精确 KV 标签。 |
 | `trace.py` | 输入 JSONL 事件，校验时间、请求阶段、兼容前缀和结局引用，导出从空闲开始计时的 episode 标签；不能证明采集器没有漏事件。 |
 | `prediction_state.py` | 输入事件前缀和快照时间，输出关联 ID 与 `features` 白名单；模型只能接收 `features`。无归属信息保持未知，队列长度需服务事件完整性保证。 |
+| `d2_raw.py`、`d2_probe.py` | 可选 vLLM general plugin；记录同主机单调时钟、进程序号、实际 tokens、lookup、调度 prefill 与请求释放时块快照；不改变缓存决策。 |
+| `d2_dataset.py` | 审计实测事件与运行配置，导出事件、episode 标签、最小白名单快照和独立 targets；拒绝证据缺失，不补造 C。 |
+| `d2_expansion.py` | 在明确 episode 工具关联下，只投影快照前已知命令、规模和已完成工具历史；单独 `expansion-v1` 文件，不改变现有预测器白名单。 |
+| `d2_repair.py`、`d2_repair_guidance.py`、`d2_repair_audit.py` | 受控修复协议、编辑/测试命令分离、显式失败引用与源码修改审计；只投影已观测的尝试、失败和重测状态，保存独立 `repair-v2`。 |
+| `d2_hazards.py` | 从快照和离线 targets 导出 U/D/waiting 风险区间；屏蔽真实删失的未知部分，行政截断视图单独保存。 |
+| `reuse_predictor.py`、`gbdt_predictor.py` | 全局/条件经验风险及共享多分类 GBDT，输出区间 hazard 和累计概率，保存为 JSON；推理只接收特征白名单。 |
+| `prediction_training.py` | 后端证据完整的开发数据校验、workflow 权重、按母题分组和可观测结局评分；未知删失窗口不当负例。 |
+| `prediction_merged.py` | 按固定 inventory 校验四轮输入/分组/时间起点，合并 workflow 权重快照；评测元数据与模型特征隔离，缺失历史保持 unknown。 |
 | `contract_fixtures.py` | 展开 JSON 人工样例，按手写预期比对标签或拒绝原因；只服务验收，不生成真实训练数据。 |
 | `cache.py` | 管理兼容前缀块、active/pin owner、保护期限、容量和 LRU 淘汰；共享容量按物理并集核算。 |
 | `source_replay.py` | 单服务器 FCFS，按依赖和工具延迟推进工作流；缓存策略改变服务完成、后继 ready 和排队时间。支持固定基线及明确标记的离线脚本；还没有预测回调。 |
@@ -42,7 +52,7 @@ flowchart TD
 | 目录 | 放什么 |
 |---|---|
 | `src/leasepath/` | 可导入的业务和实验模块；不把命令行脚本当作核心库。 |
-| `scripts/` | 薄命令行入口；当前有 9 个有明确用途的入口。 |
+| `scripts/` | 命令行入口，包含契约验收、公开来源审计及 D2 部署、采集、评测与导出。 |
 | `tests/` | 当前模块的自动化测试；旧阶段实验测试已移出。 |
 | `data/fixtures/` | 人工验收输入和预期。合成数据不能冒充真实训练样本。 |
 | `data/sources/` | 固定来源、许可状态、来源哈希和现有本地模拟器；不混入运行结果。`cachewise/upstream/` 原样保留，派生结果放到 `results/prediction/cachewise_audit/`。 |
@@ -54,9 +64,17 @@ flowchart TD
 | `models/` | 已下载的推理模型资源；未来复用预测器应明确单独命名。 |
 | `patches/`、`.artifacts/` | 原生 bridge 源码与后端补丁，以及本地 llama.cpp 源码、构建和动态库。 |
 
-尚未有预测配置，因此不保留空 `configs/`；后续需要时新增 `configs/prediction/`。不要在预测实验中恢复旧 `configs/w1/` 的阶段入口。
+`configs/prediction/d2_first_round.json` 保存首轮采集配置，`configs/prediction/d2_mbpp_round.json` 保存 MBPP 派生任务、最终贪心/采样对照和质量条件；`configs/prediction/empirical_risk_baseline.json` 保存第一部分经验基线配置。`configs/prediction/gbdt_review_2.json` 保存第二部分固定 GBDT 与分组配置。不要在预测实验中恢复旧 `configs/w1/` 的阶段入口。
 
 TraceLab 的独立辅助通路是：固定来源压缩包 → 来源哈希核验 → 用户/共享项目/session 连通组切分 → 分离的工具等待代理文件。它与上图真实 lookup 的 U/D/C 主任务通路分开。`prepare_tracelab.py` 不是 D2–D3 或模型验收。
+
+最新 [D2 扩展 v1](d2_expansion_v1.md) 使用 `configs/prediction/d2_expansion_v1.json`，新增六类文件处理母题和实际秒级测试。原最小快照旁保存增强特征文件；真实标签、质量过滤和状态覆盖分别报告。该轮未重新训练，完整集为 6 条执行，5 条通过冻结质量条件。
+
+随后 [修复扩展 v2](d2_repair_v2.md) 使用 `configs/prediction/d2_repair_v2.json`，复用其中三个母题的两档工作量，补上 3–10 秒和失败后重测。6 条主执行后端可审计，4 条通过独立测试；原诊断循环单独保留。`workflow-groups.json` 将两个规模与 v1 原母题同组；采集阶段未训练，后续由训练 v2 入口导入这一分组映射。
+
+[母题扩展 v3](d2_diversity_v3.md) 使用 `configs/prediction/d2_diversity_v3.json`，新增 34 个 MBPP 任务定义，每题一次真实 Agent 执行。`prepare_d2_diversity.py` 固定输入域及独立期望值，`check_d2_diversity_tasks.py` 验证参考实现与空函数负对照；采集、独立复测和快照前缀重建分别由 run/finalize/verify 脚本完成。数据保存于 `.artifacts/d2-diversity-v3/`，使用原九字段及 `expansion-v1` sidecar。跨轮清点由 `inventory_d2_datasets.py` 按记录身份、哈希和母题去重，输出逻辑清单。最终数量与质量边界见 [统一说明](dataset_card.md) 和 [v3 Review](../reports/d2_diversity_v3_review.md)。
+
+`configs/prediction/prediction_v2_50parents.json` 固定合并输入哈希、50 母题分组规则及旧模型参数。`train_prediction_v2.py` 在训练前冻结来源/配置/划分，分别产生主集和质量子集的 5 折 OOF、分层指标及全量重拟合模型；`verify_prediction_v2.py` 重建训练折风险计数、加载折内模型并复现预测与评分。最终时长/质量只进入 `evaluation-metadata-only.jsonl`，不作为学习特征。详细输出和支持范围见 [训练 v2 Review](../reports/prediction_v2_50parents_review.md)。
 
 ## 后续扩展位置
 
@@ -75,9 +93,9 @@ TraceLab 的独立辅助通路是：固定来源压缩包 → 来源哈希核验
 
 策略收益验证需要让请求、真实工具依赖和服务队列随环境推进。更换缓存策略会影响服务和后续 lookup 时间，不能把一次采集的固定 lookup 时间无条件套给另一策略。固定外部工作负载、模型与容量等对照条件，分别运行策略，并记录各自真实 lookup、miss 与 JCT。现有原生 bridge 和 CPU 回放只能复用部分基础设施，尚未实现这条采集与预测回调闭环。
 
-- `src/leasepath/prediction_dataset.py`：真实事件到快照，转换快照剩余时间标签、记录缺失、按完整来源分组切分。
-- `src/leasepath/reuse_predictor.py`：统一 `predict(features, horizons)`，实现经验基线与共享 GBDT。
-- `scripts/train_reuse_predictor.py`、`scripts/evaluate_reuse_prediction.py`：训练冻结、校准、独立测试；文件目前不存在。
+- `src/leasepath/d2_dataset.py` 已提供真实事件到最小快照及剩余时间标签；`d2_hazards.py` 导出离线风险区间和独立的行政删失视图。MBPP 轮同时保存完整执行与合格子集，全部标记 pilot development；按同一题目聚合各配置，不能按快照随机切分。扩大特征和按多个独立来源建立训练/验证/测试切分仍待实现。
+- `reuse_predictor.py` 与 `gbdt_predictor.py` 已提供 `predict(features, horizons)`；固定共享树与基线的开发对照见 [第二部分](../reports/gbdt_review_2.md)。
+- `scripts/train_reuse_predictor.py` 保留旧十题协议，`train_prediction_v2.py` 已实现四轮合并开发训练，`verify_prediction_v2.py` 复播保存的折内模型与评分。评测后校准及独立来源测试仍待实现。
 - `source_replay.py` 的 observer/policy callback：只暴露当前状态，接入固定评分器；目前不存在。
 
 ## 可选后端资源

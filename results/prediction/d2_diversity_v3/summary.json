@@ -1,0 +1,21 @@
+{
+  "status": "completed",
+  "unique_new_parents": 34,
+  "executions": 34,
+  "correct_executions": 31,
+  "qualified_executions": 31,
+  "auditable_executions": 34,
+  "raw_sha256": "ba91d6539cd8c8de843035bfc634950bafb3f02d4e6bc5a8e7e78af28be92d48",
+  "data_root": "/home/ma-user/takaya/leasepath/.artifacts/d2-diversity-v3",
+  "dataset_scope": "34 new MBPP-derived parents, real measured agent tools and backend lookups",
+  "feature_schema": "expansion-v1 sidecar; frozen predictor interface unchanged",
+  "limitations": [
+    "34 new MBPP parents; same public source, not independent production projects",
+    "new tasks are mostly subsecond; earlier file/repair rounds retain long-tool coverage",
+    "explicit context close yields D; no artificial natural C",
+    "same-host LocalEnvironment; hashes and command review, no OS isolation",
+    "qualified subset conditions on success; all-observed is primary",
+    "failed tests count is historical failures, not proof of retry intent",
+    "no forced failures, artificial sleep, new training or policy benefit claim"
+  ]
+}

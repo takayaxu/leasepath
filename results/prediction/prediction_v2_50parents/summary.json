@@ -1,0 +1,518 @@
+{
+  "status": "passed",
+  "stage": "prediction_v2_50parents",
+  "scope": "multi_round_parent_task_grouped_development_cross_validation",
+  "primary_metric": "macro_parent_task_multiclass_cumulative_brier_at_0.1_seconds",
+  "datasets": {
+    "all-observed": {
+      "workflows": 65,
+      "parent_tasks": 50,
+      "episodes": 472,
+      "snapshots": 2414,
+      "risk_rows": 7051,
+      "outcomes": {
+        "legal_demand": 407,
+        "retire": 65
+      },
+      "decision_states": {
+        "idle_start": 472,
+        "queued": 407,
+        "waiting_tool": 947,
+        "other_observed": 588
+      },
+      "primary_oof_macro_parent_task_brier3_at_0.1s": {
+        "global": 0.4986019133545142,
+        "conditional": 0.3889416832576055,
+        "gbdt": 0.43165139206125175
+      },
+      "full_development_risk_support": [
+        {
+          "right_s": 0.01,
+          "risk_rows": 2414,
+          "workflows": 65,
+          "parent_tasks": 50,
+          "weighted_labels": {
+            "U": 11.578449374699375,
+            "D": 3.0229497354497354,
+            "waiting": 50.39860088985089
+          }
+        },
+        {
+          "right_s": 0.03,
+          "risk_rows": 1947,
+          "workflows": 65,
+          "parent_tasks": 50,
+          "weighted_labels": {
+            "U": 16.351587602212604,
+            "D": 8.14133597883598,
+            "waiting": 25.905677308802307
+          }
+        },
+        {
+          "right_s": 0.1,
+          "risk_rows": 1302,
+          "workflows": 65,
+          "parent_tasks": 50,
+          "weighted_labels": {
+            "U": 15.613105158730159,
+            "D": 0.15416666666666667,
+            "waiting": 10.138405483405483
+          }
+        },
+        {
+          "right_s": 0.3,
+          "risk_rows": 568,
+          "workflows": 65,
+          "parent_tasks": 50,
+          "weighted_labels": {
+            "U": 0.949404761904762,
+            "D": 0,
+            "waiting": 9.189000721500722
+          }
+        },
+        {
+          "right_s": 1,
+          "risk_rows": 516,
+          "workflows": 65,
+          "parent_tasks": 50,
+          "weighted_labels": {
+            "U": 6.947106782106783,
+            "D": 0,
+            "waiting": 2.241893939393939
+          }
+        },
+        {
+          "right_s": 3,
+          "risk_rows": 186,
+          "workflows": 12,
+          "parent_tasks": 6,
+          "weighted_labels": {
+            "U": 1.1256421356421356,
+            "D": 0,
+            "waiting": 1.1162518037518037
+          }
+        },
+        {
+          "right_s": 10,
+          "risk_rows": 118,
+          "workflows": 6,
+          "parent_tasks": 3,
+          "weighted_labels": {
+            "U": 1.1162518037518037,
+            "D": 0,
+            "waiting": 0
+          }
+        },
+        {
+          "right_s": 30,
+          "risk_rows": 0,
+          "workflows": 0,
+          "parent_tasks": 0,
+          "weighted_labels": {
+            "U": 0,
+            "D": 0,
+            "waiting": 0
+          }
+        },
+        {
+          "right_s": 60,
+          "risk_rows": 0,
+          "workflows": 0,
+          "parent_tasks": 0,
+          "weighted_labels": {
+            "U": 0,
+            "D": 0,
+            "waiting": 0
+          }
+        },
+        {
+          "right_s": 120,
+          "risk_rows": 0,
+          "workflows": 0,
+          "parent_tasks": 0,
+          "weighted_labels": {
+            "U": 0,
+            "D": 0,
+            "waiting": 0
+          }
+        },
+        {
+          "right_s": 300,
+          "risk_rows": 0,
+          "workflows": 0,
+          "parent_tasks": 0,
+          "weighted_labels": {
+            "U": 0,
+            "D": 0,
+            "waiting": 0
+          }
+        },
+        {
+          "right_s": 600,
+          "risk_rows": 0,
+          "workflows": 0,
+          "parent_tasks": 0,
+          "weighted_labels": {
+            "U": 0,
+            "D": 0,
+            "waiting": 0
+          }
+        }
+      ],
+      "final_development_models": {
+        "global": {
+          "fitted_groups": 0,
+          "supported_right_edges": [
+            0.01,
+            0.03,
+            0.1,
+            0.3,
+            1,
+            3,
+            10
+          ],
+          "model_sha256": "68be56af636c930325b01c88396b4383ff45f0c00292b28e0cfce6920446ba79",
+          "save_load_identical": true,
+          "api_predict_ms_median": 0.060365,
+          "api_predict_ms_p95": 0.06238055,
+          "timing_calls": 100
+        },
+        "conditional": {
+          "fitted_groups": 19,
+          "supported_right_edges": [
+            0.01,
+            0.03,
+            0.1,
+            0.3,
+            1,
+            3,
+            10
+          ],
+          "model_sha256": "7e100137e9f27f2a5339606a99c5f49e02ac39739c070575162df4e16225e255",
+          "save_load_identical": true,
+          "api_predict_ms_median": 0.07542599999999999,
+          "api_predict_ms_p95": 0.07880345,
+          "timing_calls": 100
+        },
+        "gbdt": {
+          "training_risk_rows": 7051,
+          "boosting_iterations": 40,
+          "trees": 120,
+          "maximum_leaves": 4,
+          "vocabularies": {
+            "tool_name": [
+              null,
+              "bash"
+            ],
+            "phase": [
+              null,
+              "queued",
+              "waiting_tool"
+            ]
+          },
+          "elapsed_bins": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "supported_right_edges": [
+            0.01,
+            0.03,
+            0.1,
+            0.3,
+            1,
+            3,
+            10
+          ],
+          "model_sha256": "b16b407860f0cccc7da605b598fd9c7c9b176b32c186c5d3939a650678b78532",
+          "save_load_identical": true,
+          "api_predict_ms_median": 0.516914,
+          "api_predict_ms_p95": 0.535579,
+          "timing_calls": 100
+        }
+      },
+      "oof_sha256": "8ec7bb5f5e5a632fe0e144de38f39745c9c6e8da052d0a6081b560b4958671e2",
+      "merged_files_sha256": {
+        "evaluation-metadata-only.jsonl": "7632a3353a016c726fdd45b5cbb7126985832f345eaa96b575fccef996548bd9",
+        "summary.json": "3bfee4b47e9485ed8cd0a4e2f64e98c3494fd46e2d5cc7e836a5a8cf7a3e1177",
+        "targets.jsonl": "6fd27b3cf7a19c415cf45d6c25511b530963850356e446dc66157f995d399712",
+        "snapshots-workflow-weighted.jsonl": "7bc512a7ea65c2570e6525cf4fa107b6ca10d8dabbdc763054d275a93e1614e2",
+        "episode_labels.jsonl": "29628da4358768616398b9ba28f112869e0aa8cefc29a95cdf7bd2a2fa23f332"
+      }
+    },
+    "qualified": {
+      "workflows": 54,
+      "parent_tasks": 47,
+      "episodes": 296,
+      "snapshots": 1553,
+      "risk_rows": 4560,
+      "outcomes": {
+        "legal_demand": 242,
+        "retire": 54
+      },
+      "decision_states": {
+        "idle_start": 296,
+        "queued": 242,
+        "waiting_tool": 644,
+        "other_observed": 371
+      },
+      "primary_oof_macro_parent_task_brier3_at_0.1s": {
+        "global": 0.5123991662794579,
+        "conditional": 0.4027407663495879,
+        "gbdt": 0.4440139943230125
+      },
+      "full_development_risk_support": [
+        {
+          "right_s": 0.01,
+          "risk_rows": 1553,
+          "workflows": 54,
+          "parent_tasks": 47,
+          "weighted_labels": {
+            "U": 9.442098364598365,
+            "D": 2.7985449735449737,
+            "waiting": 41.759356661856664
+          }
+        },
+        {
+          "right_s": 0.03,
+          "risk_rows": 1257,
+          "workflows": 54,
+          "parent_tasks": 47,
+          "weighted_labels": {
+            "U": 14.323063973063974,
+            "D": 7.4752645502645505,
+            "waiting": 19.96102813852814
+          }
+        },
+        {
+          "right_s": 0.1,
+          "risk_rows": 748,
+          "workflows": 54,
+          "parent_tasks": 47,
+          "weighted_labels": {
+            "U": 11.487420634920635,
+            "D": 0,
+            "waiting": 8.473607503607504
+          }
+        },
+        {
+          "right_s": 0.3,
+          "risk_rows": 408,
+          "workflows": 54,
+          "parent_tasks": 47,
+          "weighted_labels": {
+            "U": 0.8511904761904762,
+            "D": 0,
+            "waiting": 7.622417027417027
+          }
+        },
+        {
+          "right_s": 1,
+          "risk_rows": 368,
+          "workflows": 54,
+          "parent_tasks": 47,
+          "weighted_labels": {
+            "U": 5.950220057720058,
+            "D": 0,
+            "waiting": 1.6721969696969696
+          }
+        },
+        {
+          "right_s": 3,
+          "risk_rows": 140,
+          "workflows": 9,
+          "parent_tasks": 6,
+          "weighted_labels": {
+            "U": 0.9022655122655122,
+            "D": 0,
+            "waiting": 0.7699314574314574
+          }
+        },
+        {
+          "right_s": 10,
+          "risk_rows": 86,
+          "workflows": 4,
+          "parent_tasks": 2,
+          "weighted_labels": {
+            "U": 0.7699314574314574,
+            "D": 0,
+            "waiting": 0
+          }
+        },
+        {
+          "right_s": 30,
+          "risk_rows": 0,
+          "workflows": 0,
+          "parent_tasks": 0,
+          "weighted_labels": {
+            "U": 0,
+            "D": 0,
+            "waiting": 0
+          }
+        },
+        {
+          "right_s": 60,
+          "risk_rows": 0,
+          "workflows": 0,
+          "parent_tasks": 0,
+          "weighted_labels": {
+            "U": 0,
+            "D": 0,
+            "waiting": 0
+          }
+        },
+        {
+          "right_s": 120,
+          "risk_rows": 0,
+          "workflows": 0,
+          "parent_tasks": 0,
+          "weighted_labels": {
+            "U": 0,
+            "D": 0,
+            "waiting": 0
+          }
+        },
+        {
+          "right_s": 300,
+          "risk_rows": 0,
+          "workflows": 0,
+          "parent_tasks": 0,
+          "weighted_labels": {
+            "U": 0,
+            "D": 0,
+            "waiting": 0
+          }
+        },
+        {
+          "right_s": 600,
+          "risk_rows": 0,
+          "workflows": 0,
+          "parent_tasks": 0,
+          "weighted_labels": {
+            "U": 0,
+            "D": 0,
+            "waiting": 0
+          }
+        }
+      ],
+      "final_development_models": {
+        "global": {
+          "fitted_groups": 0,
+          "supported_right_edges": [
+            0.01,
+            0.03,
+            0.1,
+            0.3,
+            1,
+            3,
+            10
+          ],
+          "model_sha256": "f9030ffc9a3530eeb6f7196d017b5619f84d72029292383c93340a907839a044",
+          "save_load_identical": true,
+          "api_predict_ms_median": 0.060755,
+          "api_predict_ms_p95": 0.062669,
+          "timing_calls": 100
+        },
+        "conditional": {
+          "fitted_groups": 16,
+          "supported_right_edges": [
+            0.01,
+            0.03,
+            0.1,
+            0.3,
+            1,
+            3,
+            10
+          ],
+          "model_sha256": "7cfb48722afda683e1ddb48bf82655bb26a9065f54fd8ff450d85c9075cc63a3",
+          "save_load_identical": true,
+          "api_predict_ms_median": 0.0752655,
+          "api_predict_ms_p95": 0.07757455,
+          "timing_calls": 100
+        },
+        "gbdt": {
+          "training_risk_rows": 4560,
+          "boosting_iterations": 40,
+          "trees": 120,
+          "maximum_leaves": 4,
+          "vocabularies": {
+            "tool_name": [
+              null,
+              "bash"
+            ],
+            "phase": [
+              null,
+              "queued",
+              "waiting_tool"
+            ]
+          },
+          "elapsed_bins": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "supported_right_edges": [
+            0.01,
+            0.03,
+            0.1,
+            0.3,
+            1,
+            3,
+            10
+          ],
+          "model_sha256": "4b8cfe99f2d797ae631036ee07ed406e5780de6f91b008dc58e5901a87945b7d",
+          "save_load_identical": true,
+          "api_predict_ms_median": 0.5126245,
+          "api_predict_ms_p95": 0.5311335,
+          "timing_calls": 100
+        }
+      },
+      "oof_sha256": "c53cd83a60741157e6ae0a0b9e57ea5ae5f1d78cca62f65d5a4c90ff6a08c73a",
+      "merged_files_sha256": {
+        "evaluation-metadata-only.jsonl": "e818b0ce2cb01929fdb3fa6c0591e87d75570eea0c768ae59327de4c0117575c",
+        "summary.json": "6f14c8c6f62eca0932a17a277cdfe4b36029f27244b358e39b3c406052864a3a",
+        "targets.jsonl": "b4210c56e733eeac4ae073019c7fb5ddd83addb49e2ca9153f2fed4ea270a0e2",
+        "snapshots-workflow-weighted.jsonl": "fcc17a79439fd55c906d7d9c4fc2ab1d0db618263c54a1a2d049192711e9da64",
+        "episode_labels.jsonl": "1ee42789057407a39b57102535a7ce0422e218413cc426ff643b53955da1754f"
+      }
+    }
+  },
+  "feature_information": [
+    "tool_name",
+    "phase",
+    "elapsed_idle_bin",
+    "interval_index"
+  ],
+  "checks": {
+    "same_parent_fold_across_rounds_profiles_scales_and_views": true,
+    "one_oof_prediction_per_sample": true,
+    "same_model_inputs_and_parameters_as_previous": true,
+    "workflow_weights_normalized": true,
+    "input_source_hashes_frozen_before_fitting": true,
+    "future_evaluation_metadata_excluded_from_model_features": true,
+    "probability_recursion_and_roundtrip_verified": true,
+    "historical_results_unchanged": true
+  },
+  "metric_definitions": {
+    "brier3": "sum of squared errors for cumulative [F_U,F_D,S], range [0,2]",
+    "macro_parent_task": "weighted within workflow, mean workflows within parent, equal mean parents",
+    "risk_row_nll": "conditional interval log loss, not whole-path likelihood; floor=1e-15",
+    "censoring": "cumulative observable cases only, no IPCW; unknown cases counted, not negatives",
+    "calibration": "descriptive bins weighted by workflow-balanced snapshot weights; no post-fit calibration"
+  },
+  "limitations": [
+    "50 parent tasks from two development source families; 44 are public MBPP",
+    "only 6 file parent tasks; 3 parents supply the 3-10 second repair episodes",
+    "no natural C, >=10 second episodes, independent source/time test or online policy experiment",
+    "qualified filters on eventual success and covers 47 parents",
+    "same coarse tool/phase/elapsed information; enhancement sidecars used only for evaluation strata",
+    "same parameters, no search or early stopping; old/new metric differences also reflect data and fold changes",
+    "bootstrap is descriptive; development OOF folds share training data",
+    "CPU prediction API timing excludes state collection and scheduling"
+  ],
+  "artifacts": "/home/ma-user/takaya/leasepath/.artifacts/prediction/prediction_v2_50parents"
+}

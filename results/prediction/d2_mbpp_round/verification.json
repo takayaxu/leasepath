@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "checks": {
+    "frozen_raw_sha256": true,
+    "frozen_and_current_source_sha256": 20,
+    "fixed_source_and_independent_tests": true,
+    "independently_evaluated_candidate_hashes": 20,
+    "qualified_record_commands_match_raw": 14,
+    "qualified_commands_manual_review": "14 workflows inspected; no outside evaluation, reference or network-answer access observed",
+    "dataset_output_hashes": 6,
+    "all-main_causal_snapshot_replay": 729,
+    "qualified_causal_snapshot_replay": 285,
+    "feature_allowlist_no_future_labels_and_episode_weights": true,
+    "hazard_input_output_hashes": true,
+    "quality_membership_and_quarantine": true,
+    "published_summary_hashes": true,
+    "pytest_passed": 81,
+    "d1_checks_passed": 50,
+    "event_contract_accepted": 8,
+    "event_contract_rejected": 16,
+    "cpu_and_agent_pip_check": "passed",
+    "service_health": "healthy, API PID 177052",
+    "markdown_local_links_checked": 74,
+    "markdown_missing_links": 0,
+    "git_diff_check": "passed"
+  }
+}

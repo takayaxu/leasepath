@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "checks": {
+    "source_configuration_and_input_hashes": true,
+    "published_hashes": true,
+    "fold_models_replayed_sample_predictions": 3042,
+    "training_only_vocabularies": true,
+    "parent_task_separation_and_complete_oof": true,
+    "primary_brier_independently_recomputed": true,
+    "workflow_weight_sums": true,
+    "unsupported_long_horizon_mask": true,
+    "full_development_empirical_models_identical_to_part_1": true,
+    "unchanged_results_after_comment_cleanup": true,
+    "pytest_passed": 102,
+    "pip_check": "passed",
+    "git_diff_check": "passed",
+    "local_markdown_links": 89,
+    "missing_markdown_links": 0
+  },
+  "verification_source_sha256": "e9c9ca15bff26a32c57633bcce8d3ff3b54acdb1c8ba64fce03b3017d26017a2"
+}

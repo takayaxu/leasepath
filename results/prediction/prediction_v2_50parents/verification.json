@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "views": {
+    "all-observed": {
+      "snapshots": 2414,
+      "parents": 50,
+      "fold_models": 15,
+      "OOF_scores_reproduced": true
+    },
+    "qualified": {
+      "snapshots": 1553,
+      "parents": 47,
+      "fold_models": 15,
+      "OOF_scores_reproduced": true
+    }
+  },
+  "fold_models_checked": 30,
+  "OOF_model_distributions_replayed": 11901,
+  "input_source_and_result_hashes_verified": true,
+  "training_only_empirical_counts_and_gbdt_support_verified": true,
+  "shared_parent_folds_across_rounds_and_views_verified": true,
+  "workflow_balanced_merged_inputs_reproduced": true,
+  "old_results_unchanged": true,
+  "verifier_sha256": "1950c5fe0f5626c6a7e60611b7175224d3e8b5fa2bf3a9a299822b5cbbcca07b"
+}

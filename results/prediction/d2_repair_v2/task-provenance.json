@@ -1,0 +1,235 @@
+{
+  "dataset": "controlled-repair-v2",
+  "unique_parents": 3,
+  "executions": 6,
+  "new_parent_tasks": 0,
+  "selection": "three v1 parents at two predeclared scales; no agent outcome selection",
+  "calibration_rule": "first predeclared size in band; fail if band not reached or overshot",
+  "source_sha256": "cf2f87a3d6244867a42947fb5a36eaf3905c4d7ec9a79ae423e5cef32c629a87",
+  "configuration_sha256": "9732ff1eaa810d2a5adfee2e9478a763bc14f2016400fd56ef151adec3a387c5",
+  "dependency_sha256": {
+    "scripts/prepare_d2_expansion.py": "dcef664fec33ff44a6c453035576dc164064ea1efc4417f44ba3352d712d9cf6",
+    "scripts/prepare_d2_repair.py": "be0b1f91bc4a9728e10e9212eb97be7a062efaae9ada89cedb016bf6b6e312c9"
+  },
+  "tasks": [
+    {
+      "instance_id": "repair-csv-ledger-medium",
+      "parent_task_id": "designed-csv-ledger",
+      "group_id": "leasepath/designed-file-tasks-v1:designed-csv-ledger",
+      "source_group": "leasepath/designed-file-tasks-v1",
+      "problem_statement": "Read a UTF-8 CSV with header tenant,cents using the csv module (quoted tenant names are valid). Return a dict mapping each tenant string to the sum of its signed integer cents. Empty data returns {}. Do not modify the file.\nRepair the existing defective implementation; preserve the API. This is a controlled test-first repair collection, not a production incident. First inspect ALL four files using exactly `cat README.md solution.py test_visible.py test_workload.py`. Before changing any source, run exactly `python -m pytest -q test_visible.py test_workload.py` to reproduce the defect. Use the actual failure to fix solution.py, then rerun the same full suite. The integration test processes 750000 rows; it must run in full, with no sleeps or skipped work. Only solution.py may be changed. Do not access other directories, reference solutions or independent tests. Submit with the standalone command `echo COMPLETE_TASK_AND_SUBMIT_FINAL_OUTPUT` after success.",
+      "function_signature": "def summarize_csv(path):",
+      "evidence_scope": "controlled_test_first_repair_real_compute",
+      "split": "pilot_development_only",
+      "scale_band": "medium",
+      "target_reference_wall_s": [
+        3.2,
+        5.8
+      ],
+      "workload_family": "csv_aggregation",
+      "work_units": 750000,
+      "work_unit": "rows",
+      "visible_tests": 2,
+      "independent_tests": 1,
+      "visible_test_sha256": "cdb062ceccd2673acc7d7a9f1c6671ea243b73cdfe3a4a8ffe75ab42f5b310c7",
+      "independent_test_sha256": "552a56eaa4c3ade7d92a9f0ecf108d4aec2d9cb0b1c636c32f20d321cd7e0368",
+      "protected_sha256": {
+        "README.md": "d9cd1ccb233460ee6e0303ddd05032c8b4d90d176c72dc2c507c332606375d15",
+        "test_visible.py": "cdb062ceccd2673acc7d7a9f1c6671ea243b73cdfe3a4a8ffe75ab42f5b310c7",
+        "test_workload.py": "aa8487685410ded3f7dda916a4d86895156e616b189ec036d2259721a8af8f32",
+        ".gitignore": "a51104264729e7b362ea8c739de0ada29ba6e4f6047580ec3a3fd330ad20fd47"
+      },
+      "reference_sha256": "13c764a3dbf3345aabf14e1af59e92777a0cd1a2ca60518cf209ba84cdaabca2",
+      "reference_validated": true,
+      "initial_source_sha256": "4c6f2dcdbb642e131998c2c747b852826dadfc8d456cecdc8f0480b2ca502a01",
+      "defect_origin": {
+        "kind": "explicitly_seeded_overwrite_instead_of_accumulate",
+        "sha256": "4c6f2dcdbb642e131998c2c747b852826dadfc8d456cecdc8f0480b2ca502a01"
+      }
+    },
+    {
+      "instance_id": "repair-csv-ledger-large",
+      "parent_task_id": "designed-csv-ledger",
+      "group_id": "leasepath/designed-file-tasks-v1:designed-csv-ledger",
+      "source_group": "leasepath/designed-file-tasks-v1",
+      "problem_statement": "Read a UTF-8 CSV with header tenant,cents using the csv module (quoted tenant names are valid). Return a dict mapping each tenant string to the sum of its signed integer cents. Empty data returns {}. Do not modify the file.\nRepair the existing defective implementation; preserve the API. This is a controlled test-first repair collection, not a production incident. First inspect ALL four files using exactly `cat README.md solution.py test_visible.py test_workload.py`. Before changing any source, run exactly `python -m pytest -q test_visible.py test_workload.py` to reproduce the defect. Use the actual failure to fix solution.py, then rerun the same full suite. The integration test processes 1650000 rows; it must run in full, with no sleeps or skipped work. Only solution.py may be changed. Do not access other directories, reference solutions or independent tests. Submit with the standalone command `echo COMPLETE_TASK_AND_SUBMIT_FINAL_OUTPUT` after success.",
+      "function_signature": "def summarize_csv(path):",
+      "evidence_scope": "controlled_test_first_repair_real_compute",
+      "split": "pilot_development_only",
+      "scale_band": "large",
+      "target_reference_wall_s": [
+        6.8,
+        9.5
+      ],
+      "workload_family": "csv_aggregation",
+      "work_units": 1650000,
+      "work_unit": "rows",
+      "visible_tests": 2,
+      "independent_tests": 1,
+      "visible_test_sha256": "cdb062ceccd2673acc7d7a9f1c6671ea243b73cdfe3a4a8ffe75ab42f5b310c7",
+      "independent_test_sha256": "552a56eaa4c3ade7d92a9f0ecf108d4aec2d9cb0b1c636c32f20d321cd7e0368",
+      "protected_sha256": {
+        "README.md": "b81493dbaf4306a3d37a2854a12986d680c6898bf4af5658875d47bdd13a4b4b",
+        "test_visible.py": "cdb062ceccd2673acc7d7a9f1c6671ea243b73cdfe3a4a8ffe75ab42f5b310c7",
+        "test_workload.py": "134d8f53fdde789051996d198af9e0de5ef857659f49352427b0fc7c94b06d14",
+        ".gitignore": "a51104264729e7b362ea8c739de0ada29ba6e4f6047580ec3a3fd330ad20fd47"
+      },
+      "reference_sha256": "13c764a3dbf3345aabf14e1af59e92777a0cd1a2ca60518cf209ba84cdaabca2",
+      "reference_validated": true,
+      "initial_source_sha256": "4c6f2dcdbb642e131998c2c747b852826dadfc8d456cecdc8f0480b2ca502a01",
+      "defect_origin": {
+        "kind": "explicitly_seeded_overwrite_instead_of_accumulate",
+        "sha256": "4c6f2dcdbb642e131998c2c747b852826dadfc8d456cecdc8f0480b2ca502a01"
+      }
+    },
+    {
+      "instance_id": "repair-jsonl-status-medium",
+      "parent_task_id": "designed-jsonl-status",
+      "group_id": "leasepath/designed-file-tasks-v1:designed-jsonl-status",
+      "source_group": "leasepath/designed-file-tasks-v1",
+      "problem_statement": "Read a UTF-8 JSON Lines log. Ignore blank/whitespace lines. Every other line is a valid JSON object with a string status field and optional other fields. Return a dict mapping each status to its record count. Empty data returns {}. Do not modify the file.\nRepair the existing defective implementation; preserve the API. This is a controlled test-first repair collection, not a production incident. First inspect ALL four files using exactly `cat README.md solution.py test_visible.py test_workload.py`. Before changing any source, run exactly `python -m pytest -q test_visible.py test_workload.py` to reproduce the defect. Use the actual failure to fix solution.py, then rerun the same full suite. The integration test processes 300000 records; it must run in full, with no sleeps or skipped work. Only solution.py may be changed. Do not access other directories, reference solutions or independent tests. Submit with the standalone command `echo COMPLETE_TASK_AND_SUBMIT_FINAL_OUTPUT` after success.",
+      "function_signature": "def count_statuses(path):",
+      "evidence_scope": "controlled_test_first_repair_real_compute",
+      "split": "pilot_development_only",
+      "scale_band": "medium",
+      "target_reference_wall_s": [
+        3.2,
+        5.8
+      ],
+      "workload_family": "jsonl_parsing",
+      "work_units": 300000,
+      "work_unit": "records",
+      "visible_tests": 2,
+      "independent_tests": 1,
+      "visible_test_sha256": "8973f824fe5d12c7ecd7ea954374f62608ffaa888e77762b3682f74d2dcbee27",
+      "independent_test_sha256": "6b9ee5756922aa375217db064cf7d140cca1d1bae370b0f853ddd273bbfff6ea",
+      "protected_sha256": {
+        "README.md": "4abcc481f06cd5934c3b0274c1771bab0b8e66c5eea4b661fafebdeeb50c3d03",
+        "test_visible.py": "8973f824fe5d12c7ecd7ea954374f62608ffaa888e77762b3682f74d2dcbee27",
+        "test_workload.py": "bc673313dc245190c7d4a788b1bc45440d4afe5844b1ac0dbff522388ffad83a",
+        ".gitignore": "a51104264729e7b362ea8c739de0ada29ba6e4f6047580ec3a3fd330ad20fd47"
+      },
+      "reference_sha256": "5f6cae12c61ce20a3cccfc942be75824369a04b071b6d146a27b1b40678d91ef",
+      "reference_validated": true,
+      "initial_source_sha256": "d0429d5af423be24d38c43c566b70c3aeacb1e140e27769c8dd08ec8f9b38f69",
+      "defect_origin": {
+        "kind": "explicitly_seeded_overwrite_instead_of_accumulate",
+        "sha256": "d0429d5af423be24d38c43c566b70c3aeacb1e140e27769c8dd08ec8f9b38f69"
+      }
+    },
+    {
+      "instance_id": "repair-jsonl-status-large",
+      "parent_task_id": "designed-jsonl-status",
+      "group_id": "leasepath/designed-file-tasks-v1:designed-jsonl-status",
+      "source_group": "leasepath/designed-file-tasks-v1",
+      "problem_statement": "Read a UTF-8 JSON Lines log. Ignore blank/whitespace lines. Every other line is a valid JSON object with a string status field and optional other fields. Return a dict mapping each status to its record count. Empty data returns {}. Do not modify the file.\nRepair the existing defective implementation; preserve the API. This is a controlled test-first repair collection, not a production incident. First inspect ALL four files using exactly `cat README.md solution.py test_visible.py test_workload.py`. Before changing any source, run exactly `python -m pytest -q test_visible.py test_workload.py` to reproduce the defect. Use the actual failure to fix solution.py, then rerun the same full suite. The integration test processes 720000 records; it must run in full, with no sleeps or skipped work. Only solution.py may be changed. Do not access other directories, reference solutions or independent tests. Submit with the standalone command `echo COMPLETE_TASK_AND_SUBMIT_FINAL_OUTPUT` after success.",
+      "function_signature": "def count_statuses(path):",
+      "evidence_scope": "controlled_test_first_repair_real_compute",
+      "split": "pilot_development_only",
+      "scale_band": "large",
+      "target_reference_wall_s": [
+        6.8,
+        9.5
+      ],
+      "workload_family": "jsonl_parsing",
+      "work_units": 720000,
+      "work_unit": "records",
+      "visible_tests": 2,
+      "independent_tests": 1,
+      "visible_test_sha256": "8973f824fe5d12c7ecd7ea954374f62608ffaa888e77762b3682f74d2dcbee27",
+      "independent_test_sha256": "6b9ee5756922aa375217db064cf7d140cca1d1bae370b0f853ddd273bbfff6ea",
+      "protected_sha256": {
+        "README.md": "bd92cafe6ae711caa65a1c64d26e814c47f409c43ffe702712b3a2b18ff0c5f1",
+        "test_visible.py": "8973f824fe5d12c7ecd7ea954374f62608ffaa888e77762b3682f74d2dcbee27",
+        "test_workload.py": "a523b254b6576397ad981cb42537dd06b0886faaab78cedacf44b5e82a4bc0f6",
+        ".gitignore": "a51104264729e7b362ea8c739de0ada29ba6e4f6047580ec3a3fd330ad20fd47"
+      },
+      "reference_sha256": "5f6cae12c61ce20a3cccfc942be75824369a04b071b6d146a27b1b40678d91ef",
+      "reference_validated": true,
+      "initial_source_sha256": "d0429d5af423be24d38c43c566b70c3aeacb1e140e27769c8dd08ec8f9b38f69",
+      "defect_origin": {
+        "kind": "explicitly_seeded_overwrite_instead_of_accumulate",
+        "sha256": "d0429d5af423be24d38c43c566b70c3aeacb1e140e27769c8dd08ec8f9b38f69"
+      }
+    },
+    {
+      "instance_id": "repair-graph-distance-medium",
+      "parent_task_id": "designed-graph-distance",
+      "group_id": "leasepath/designed-file-tasks-v1:designed-graph-distance",
+      "source_group": "leasepath/designed-file-tasks-v1",
+      "problem_statement": "Read an undirected unweighted graph from a UTF-8 edge-list file path: each nonblank line has two integer vertex IDs separated by whitespace. Duplicates and self-loops are valid. Return the minimum edge count from integer start to target, or None if unreachable. Return 0 when start == target even if absent. Do not modify the file.\nRepair the existing defective implementation; preserve the API. This is a controlled test-first repair collection, not a production incident. First inspect ALL four files using exactly `cat README.md solution.py test_visible.py test_workload.py`. Before changing any source, run exactly `python -m pytest -q test_visible.py test_workload.py` to reproduce the defect. Use the actual failure to fix solution.py, then rerun the same full suite. The integration test processes 750000 edges; it must run in full, with no sleeps or skipped work. Only solution.py may be changed. Do not access other directories, reference solutions or independent tests. Submit with the standalone command `echo COMPLETE_TASK_AND_SUBMIT_FINAL_OUTPUT` after success.",
+      "function_signature": "def shortest_distance(path, start, target):",
+      "evidence_scope": "controlled_test_first_repair_real_compute",
+      "split": "pilot_development_only",
+      "scale_band": "medium",
+      "target_reference_wall_s": [
+        3.2,
+        5.8
+      ],
+      "workload_family": "graph_bfs",
+      "work_units": 750000,
+      "work_unit": "edges",
+      "visible_tests": 2,
+      "independent_tests": 1,
+      "visible_test_sha256": "aa40fa7ad7116f4a4827bc59b8a7f05caeceaebad373278232d4366b434b9cb4",
+      "independent_test_sha256": "148f17c12a4b964b348e739f8ea13d6400006eb5a2a1eb23f01bafb3a053f1e6",
+      "protected_sha256": {
+        "README.md": "90ea50ea9508e707b9b5bd39bd4ce07a0a4da496071366be7367b8e6b0bf6537",
+        "test_visible.py": "aa40fa7ad7116f4a4827bc59b8a7f05caeceaebad373278232d4366b434b9cb4",
+        "test_workload.py": "78a553de2a1e51c7efb5c2447813f188e58b5b085d979d4469def41c2c52fb1b",
+        ".gitignore": "a51104264729e7b362ea8c739de0ada29ba6e4f6047580ec3a3fd330ad20fd47"
+      },
+      "reference_sha256": "a1e28ac90fd39ffb2147902def4446b3d4d1e5dd4f7d37c717468ee0ea3eb3cd",
+      "reference_validated": true,
+      "initial_source_sha256": "453d057d37af131f70483a0227b8924af2215f850b737cccad527af5a5729869",
+      "defect_origin": {
+        "kind": "previous_agent_failure",
+        "path": ".artifacts/d2-expansion-v1/runs/greedy-guided/designed-graph-distance/solution.py",
+        "workflow_id": "designed-graph-distance-greedy-guided-0816dbb0",
+        "sha256": "453d057d37af131f70483a0227b8924af2215f850b737cccad527af5a5729869"
+      }
+    },
+    {
+      "instance_id": "repair-graph-distance-large",
+      "parent_task_id": "designed-graph-distance",
+      "group_id": "leasepath/designed-file-tasks-v1:designed-graph-distance",
+      "source_group": "leasepath/designed-file-tasks-v1",
+      "problem_statement": "Read an undirected unweighted graph from a UTF-8 edge-list file path: each nonblank line has two integer vertex IDs separated by whitespace. Duplicates and self-loops are valid. Return the minimum edge count from integer start to target, or None if unreachable. Return 0 when start == target even if absent. Do not modify the file.\nRepair the existing defective implementation; preserve the API. This is a controlled test-first repair collection, not a production incident. First inspect ALL four files using exactly `cat README.md solution.py test_visible.py test_workload.py`. Before changing any source, run exactly `python -m pytest -q test_visible.py test_workload.py` to reproduce the defect. Use the actual failure to fix solution.py, then rerun the same full suite. The integration test processes 1500000 edges; it must run in full, with no sleeps or skipped work. Only solution.py may be changed. Do not access other directories, reference solutions or independent tests. Submit with the standalone command `echo COMPLETE_TASK_AND_SUBMIT_FINAL_OUTPUT` after success.",
+      "function_signature": "def shortest_distance(path, start, target):",
+      "evidence_scope": "controlled_test_first_repair_real_compute",
+      "split": "pilot_development_only",
+      "scale_band": "large",
+      "target_reference_wall_s": [
+        6.8,
+        9.5
+      ],
+      "workload_family": "graph_bfs",
+      "work_units": 1500000,
+      "work_unit": "edges",
+      "visible_tests": 2,
+      "independent_tests": 1,
+      "visible_test_sha256": "aa40fa7ad7116f4a4827bc59b8a7f05caeceaebad373278232d4366b434b9cb4",
+      "independent_test_sha256": "148f17c12a4b964b348e739f8ea13d6400006eb5a2a1eb23f01bafb3a053f1e6",
+      "protected_sha256": {
+        "README.md": "f4237b22f2640260e673bf5c71c50151c62d21561aa13c319305c7af4e324674",
+        "test_visible.py": "aa40fa7ad7116f4a4827bc59b8a7f05caeceaebad373278232d4366b434b9cb4",
+        "test_workload.py": "0b2ae2fcab43fdfb9f46958dafbc80b832fff25c9e8d4c695f08f82ad523e2ba",
+        ".gitignore": "a51104264729e7b362ea8c739de0ada29ba6e4f6047580ec3a3fd330ad20fd47"
+      },
+      "reference_sha256": "a1e28ac90fd39ffb2147902def4446b3d4d1e5dd4f7d37c717468ee0ea3eb3cd",
+      "reference_validated": true,
+      "initial_source_sha256": "453d057d37af131f70483a0227b8924af2215f850b737cccad527af5a5729869",
+      "defect_origin": {
+        "kind": "previous_agent_failure",
+        "path": ".artifacts/d2-expansion-v1/runs/greedy-guided/designed-graph-distance/solution.py",
+        "workflow_id": "designed-graph-distance-greedy-guided-0816dbb0",
+        "sha256": "453d057d37af131f70483a0227b8924af2215f850b737cccad527af5a5729869"
+      }
+    }
+  ],
+  "derived_from": {
+    "path": "/home/ma-user/takaya/leasepath/.artifacts/d2-repair-v2/tasks.json",
+    "sha256": "b024c16ff0808b7728e8907749f47d8fc9b7c1ba690bd5ad455da980959031a5",
+    "reason": "first runner entered shell-quoting loops; preserve diagnostic; whole-file edit guidance only"
+  }
+}

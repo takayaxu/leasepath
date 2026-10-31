@@ -1,0 +1,21 @@
+{
+  "status": "completed",
+  "unique_new_parents": 6,
+  "executions": 6,
+  "correct_executions": 5,
+  "qualified_executions": 5,
+  "auditable_executions": 6,
+  "raw_sha256": "96cc5836c938396cd085429205221a2ebb614064a446a0c49f14327f0fa322b0",
+  "data_root": "/home/ma-user/takaya/leasepath/.artifacts/d2-expansion-v1",
+  "dataset_scope": "designed tasks, real measured agent tools and backend lookups",
+  "feature_schema": "expansion-v1 sidecar; frozen predictor interface unchanged",
+  "limitations": [
+    "six new development parents, not enough for independent generalization claims",
+    "seconds include test fixture construction and validation, not function runtime alone",
+    "explicit context close yields D; no artificial natural C",
+    "same-host LocalEnvironment; hashes and command review, no OS isolation",
+    "qualified subset conditions on success; all-observed is primary",
+    "failed tests count is historical failures, not proof of retry intent",
+    "no forced failures, artificial sleep, new training or policy benefit claim"
+  ]
+}

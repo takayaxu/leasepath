@@ -1,0 +1,383 @@
+{
+  "definition": "cumulative status by horizon H measured from each specified t0; known waiting is observed survival, not right censoring",
+  "event_boundary": "U/D at exactly H counts as observed event; a censor exactly at H establishes survival through H",
+  "source_sha256": {
+    "episode_labels.jsonl": "857bde838a639bc9bd6a600aa8c5e8c329aaf69df70e92aa701c8b0526911efe",
+    "snapshots.jsonl": "e76421a741a4c9b97461f959806c55bbc0bfe015a3cb3c0f1f4b51d8eb39fae7"
+  },
+  "episodes": 100,
+  "snapshots": 456,
+  "episode_outcomes": {
+    "legal_demand": 95,
+    "retire": 5
+  },
+  "from_idle_start": [
+    {
+      "horizon_s": 0.01,
+      "counts": {
+        "legal_demand": 0,
+        "retire": 0,
+        "known_waiting": 100,
+        "unknown_after_censoring": 0
+      },
+      "episode_weighted_counts": {
+        "legal_demand": 0,
+        "retire": 0,
+        "known_waiting": 100,
+        "unknown_after_censoring": 0
+      }
+    },
+    {
+      "horizon_s": 0.03,
+      "counts": {
+        "legal_demand": 1,
+        "retire": 0,
+        "known_waiting": 99,
+        "unknown_after_censoring": 0
+      },
+      "episode_weighted_counts": {
+        "legal_demand": 1,
+        "retire": 0,
+        "known_waiting": 99,
+        "unknown_after_censoring": 0
+      }
+    },
+    {
+      "horizon_s": 0.1,
+      "counts": {
+        "legal_demand": 56,
+        "retire": 3,
+        "known_waiting": 41,
+        "unknown_after_censoring": 0
+      },
+      "episode_weighted_counts": {
+        "legal_demand": 56,
+        "retire": 3,
+        "known_waiting": 41,
+        "unknown_after_censoring": 0
+      }
+    },
+    {
+      "horizon_s": 0.3,
+      "counts": {
+        "legal_demand": 56,
+        "retire": 3,
+        "known_waiting": 41,
+        "unknown_after_censoring": 0
+      },
+      "episode_weighted_counts": {
+        "legal_demand": 56,
+        "retire": 3,
+        "known_waiting": 41,
+        "unknown_after_censoring": 0
+      }
+    },
+    {
+      "horizon_s": 1,
+      "counts": {
+        "legal_demand": 74,
+        "retire": 4,
+        "known_waiting": 22,
+        "unknown_after_censoring": 0
+      },
+      "episode_weighted_counts": {
+        "legal_demand": 74,
+        "retire": 4,
+        "known_waiting": 22,
+        "unknown_after_censoring": 0
+      }
+    },
+    {
+      "horizon_s": 3,
+      "counts": {
+        "legal_demand": 76,
+        "retire": 4,
+        "known_waiting": 20,
+        "unknown_after_censoring": 0
+      },
+      "episode_weighted_counts": {
+        "legal_demand": 76,
+        "retire": 4,
+        "known_waiting": 20,
+        "unknown_after_censoring": 0
+      }
+    },
+    {
+      "horizon_s": 10,
+      "counts": {
+        "legal_demand": 95,
+        "retire": 5,
+        "known_waiting": 0,
+        "unknown_after_censoring": 0
+      },
+      "episode_weighted_counts": {
+        "legal_demand": 95,
+        "retire": 5,
+        "known_waiting": 0,
+        "unknown_after_censoring": 0
+      }
+    },
+    {
+      "horizon_s": 30,
+      "counts": {
+        "legal_demand": 95,
+        "retire": 5,
+        "known_waiting": 0,
+        "unknown_after_censoring": 0
+      },
+      "episode_weighted_counts": {
+        "legal_demand": 95,
+        "retire": 5,
+        "known_waiting": 0,
+        "unknown_after_censoring": 0
+      }
+    },
+    {
+      "horizon_s": 60,
+      "counts": {
+        "legal_demand": 95,
+        "retire": 5,
+        "known_waiting": 0,
+        "unknown_after_censoring": 0
+      },
+      "episode_weighted_counts": {
+        "legal_demand": 95,
+        "retire": 5,
+        "known_waiting": 0,
+        "unknown_after_censoring": 0
+      }
+    },
+    {
+      "horizon_s": 120,
+      "counts": {
+        "legal_demand": 95,
+        "retire": 5,
+        "known_waiting": 0,
+        "unknown_after_censoring": 0
+      },
+      "episode_weighted_counts": {
+        "legal_demand": 95,
+        "retire": 5,
+        "known_waiting": 0,
+        "unknown_after_censoring": 0
+      }
+    },
+    {
+      "horizon_s": 300,
+      "counts": {
+        "legal_demand": 95,
+        "retire": 5,
+        "known_waiting": 0,
+        "unknown_after_censoring": 0
+      },
+      "episode_weighted_counts": {
+        "legal_demand": 95,
+        "retire": 5,
+        "known_waiting": 0,
+        "unknown_after_censoring": 0
+      }
+    },
+    {
+      "horizon_s": 600,
+      "counts": {
+        "legal_demand": 95,
+        "retire": 5,
+        "known_waiting": 0,
+        "unknown_after_censoring": 0
+      },
+      "episode_weighted_counts": {
+        "legal_demand": 95,
+        "retire": 5,
+        "known_waiting": 0,
+        "unknown_after_censoring": 0
+      }
+    }
+  ],
+  "from_each_snapshot": [
+    {
+      "horizon_s": 0.01,
+      "counts": {
+        "legal_demand": 95,
+        "retire": 4,
+        "known_waiting": 357,
+        "unknown_after_censoring": 0
+      },
+      "episode_weighted_counts": {
+        "legal_demand": 21.35,
+        "retire": 1.25,
+        "known_waiting": 77.4,
+        "unknown_after_censoring": 0
+      }
+    },
+    {
+      "horizon_s": 0.03,
+      "counts": {
+        "legal_demand": 178,
+        "retire": 6,
+        "known_waiting": 272,
+        "unknown_after_censoring": 0
+      },
+      "episode_weighted_counts": {
+        "legal_demand": 40.683333,
+        "retire": 1.783333,
+        "known_waiting": 57.533333,
+        "unknown_after_censoring": 0
+      }
+    },
+    {
+      "horizon_s": 0.1,
+      "counts": {
+        "legal_demand": 300,
+        "retire": 11,
+        "known_waiting": 145,
+        "unknown_after_censoring": 0
+      },
+      "episode_weighted_counts": {
+        "legal_demand": 70.2,
+        "retire": 3.45,
+        "known_waiting": 26.35,
+        "unknown_after_censoring": 0
+      }
+    },
+    {
+      "horizon_s": 0.3,
+      "counts": {
+        "legal_demand": 302,
+        "retire": 11,
+        "known_waiting": 143,
+        "unknown_after_censoring": 0
+      },
+      "episode_weighted_counts": {
+        "legal_demand": 70.533333,
+        "retire": 3.45,
+        "known_waiting": 26.016667,
+        "unknown_after_censoring": 0
+      }
+    },
+    {
+      "horizon_s": 1,
+      "counts": {
+        "legal_demand": 356,
+        "retire": 14,
+        "known_waiting": 86,
+        "unknown_after_censoring": 0
+      },
+      "episode_weighted_counts": {
+        "legal_demand": 81.333333,
+        "retire": 4.2,
+        "known_waiting": 14.466667,
+        "unknown_after_censoring": 0
+      }
+    },
+    {
+      "horizon_s": 3,
+      "counts": {
+        "legal_demand": 381,
+        "retire": 15,
+        "known_waiting": 60,
+        "unknown_after_censoring": 0
+      },
+      "episode_weighted_counts": {
+        "legal_demand": 85.5,
+        "retire": 4.4,
+        "known_waiting": 10.1,
+        "unknown_after_censoring": 0
+      }
+    },
+    {
+      "horizon_s": 10,
+      "counts": {
+        "legal_demand": 438,
+        "retire": 18,
+        "known_waiting": 0,
+        "unknown_after_censoring": 0
+      },
+      "episode_weighted_counts": {
+        "legal_demand": 95.0,
+        "retire": 5.0,
+        "known_waiting": 0,
+        "unknown_after_censoring": 0
+      }
+    },
+    {
+      "horizon_s": 30,
+      "counts": {
+        "legal_demand": 438,
+        "retire": 18,
+        "known_waiting": 0,
+        "unknown_after_censoring": 0
+      },
+      "episode_weighted_counts": {
+        "legal_demand": 95.0,
+        "retire": 5.0,
+        "known_waiting": 0,
+        "unknown_after_censoring": 0
+      }
+    },
+    {
+      "horizon_s": 60,
+      "counts": {
+        "legal_demand": 438,
+        "retire": 18,
+        "known_waiting": 0,
+        "unknown_after_censoring": 0
+      },
+      "episode_weighted_counts": {
+        "legal_demand": 95.0,
+        "retire": 5.0,
+        "known_waiting": 0,
+        "unknown_after_censoring": 0
+      }
+    },
+    {
+      "horizon_s": 120,
+      "counts": {
+        "legal_demand": 438,
+        "retire": 18,
+        "known_waiting": 0,
+        "unknown_after_censoring": 0
+      },
+      "episode_weighted_counts": {
+        "legal_demand": 95.0,
+        "retire": 5.0,
+        "known_waiting": 0,
+        "unknown_after_censoring": 0
+      }
+    },
+    {
+      "horizon_s": 300,
+      "counts": {
+        "legal_demand": 438,
+        "retire": 18,
+        "known_waiting": 0,
+        "unknown_after_censoring": 0
+      },
+      "episode_weighted_counts": {
+        "legal_demand": 95.0,
+        "retire": 5.0,
+        "known_waiting": 0,
+        "unknown_after_censoring": 0
+      }
+    },
+    {
+      "horizon_s": 600,
+      "counts": {
+        "legal_demand": 438,
+        "retire": 18,
+        "known_waiting": 0,
+        "unknown_after_censoring": 0
+      },
+      "episode_weighted_counts": {
+        "legal_demand": 95.0,
+        "retire": 5.0,
+        "known_waiting": 0,
+        "unknown_after_censoring": 0
+      }
+    }
+  ],
+  "limitations": [
+    "snapshots from one episode are dependent",
+    "fixed-horizon administrative censoring is an optional separate derived view; it does not change original outcomes",
+    "these counts summarize this repeated-command development pilot, not target production workload"
+  ]
+}

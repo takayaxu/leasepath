@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "workflow_id": "controlled-2f4c06a836ed40459bded13b3b1b03fa",
+  "cold_cached_tokens": 0,
+  "warm_cached_tokens": 1024,
+  "reset_cached_tokens": 0,
+  "miss_is_legal_demand": true,
+  "open_relation_is_censored_at_complete_boundary": true,
+  "scope": "controlled real inference; excluded from autonomous pilot"
+}

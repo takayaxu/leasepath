@@ -1,0 +1,79 @@
+{
+  "stage": "prediction_v2_50parents",
+  "scope": "multi_round_parent_task_grouped_development_cross_validation",
+  "baseline_config": "configs/prediction/empirical_risk_baseline.json",
+  "folds": 5,
+  "seed": 23,
+  "feature_protocol": "same_tool_phase_elapsed_bucket_information_as_conditional_baseline",
+  "models": [
+    "global",
+    "conditional",
+    "gbdt"
+  ],
+  "calibration_edges": [
+    0,
+    0.2,
+    0.4,
+    0.6,
+    0.8,
+    1
+  ],
+  "gbdt": {
+    "num_boost_round": 40,
+    "learning_rate": 0.05,
+    "num_leaves": 4,
+    "max_depth": 2,
+    "min_data_in_leaf": 20,
+    "min_sum_hessian_in_leaf": 0.1,
+    "lambda_l1": 0.1,
+    "lambda_l2": 10.0,
+    "min_gain_to_split": 0.01
+  },
+  "selection_policy": "single_predeclared_configuration_no_search_no_early_stopping",
+  "primary_metric": "macro_parent_task_multiclass_cumulative_brier_at_0.1_seconds",
+  "previous_training_config": "configs/prediction/gbdt_review_2.json",
+  "inventory": "results/prediction/dataset_inventory_50parents_2026-10-31.json",
+  "inventory_sha256": "826c89a11d86b1e7d1a0b2909c0ff017749ab93960495c92372453610262cb96",
+  "round_result_manifest_sha256": {
+    "mbpp": "a12afe7fd769681b9c062694c81f680f37cd5c6bed1a563cbc01b23ac8f4f9af",
+    "file-v1": "41642e520ed50b7cc87121328c52acdcdbc56a5f3e4afdc399ef2774330303ec",
+    "repair-v2": "d4fdc8773a0342e78f000c844fdf97d288a68f273337a790a9c86a996f82b0eb",
+    "diversity-v3": "69f3c271719b472e9afa939d425a0a3cf010c9289b0ab72c156aa1358f8df0a5"
+  },
+  "historical_result_manifest_sha256": {
+    "results/prediction/gbdt_review_2": "124656864fd0790cb0ce560c7bde7798127e6786c4b5df02f6f684f9f763e7cd",
+    "results/prediction/empirical_baseline_review_1": "d2e180251bd518851998e2ef371ce12001b4c974a8b25e028a3d7c33897d9249"
+  },
+  "reference_configuration_sha256": {
+    "configs/prediction/gbdt_review_2.json": "258861d5ece7c64ebc75b0b16f9b397123ab32aad7928b0dc10b1293270c3699",
+    "configs/prediction/empirical_risk_baseline.json": "51e9d06d35681642ef659872761a3638528421fdd0ff51c111cf0c6ebfb06949"
+  },
+  "expected_views": {
+    "all-observed": {
+      "workflows": 65,
+      "parent_tasks": 50,
+      "episodes": 472,
+      "snapshots": 2414,
+      "risk_rows": 7051
+    },
+    "qualified": {
+      "workflows": 54,
+      "parent_tasks": 47,
+      "episodes": 296,
+      "snapshots": 1553,
+      "risk_rows": 4560
+    }
+  },
+  "paired_bootstrap_draws": 2000,
+  "weighting": "each workflow total 1, equal episodes within workflow; score macro parent",
+  "evaluation_strata": [
+    "acquisition_round",
+    "eventual_episode_duration",
+    "eventual_execution_quality",
+    "observed_prior_failure",
+    "observed_current_retry",
+    "elapsed_idle_ge_1s"
+  ],
+  "enhancement_protocol": "same base information as prior comparison; sidecars supply evaluation metadata only",
+  "validation_scope": "development only; no independent source or time holdout"
+}

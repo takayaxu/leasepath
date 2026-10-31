@@ -1,0 +1,17 @@
+{
+  "records": 1000,
+  "prompt_tokens_per_record": 4096,
+  "emit_call": {
+    "p50_us": 3.14,
+    "p95_us": 4.731,
+    "max_us": 156.461
+  },
+  "background_first_encoding": {
+    "p50_us": 601.444,
+    "p95_us": 623.865,
+    "max_us": 1118.509
+  },
+  "emit_plus_full_flush_s": 1.256074567,
+  "raw_bytes": 19503086,
+  "scope": "isolated CPU writer microbenchmark during pilot; excludes token/block copying, probe hooks, second encoding, backend end-to-end and device overhead"
+}

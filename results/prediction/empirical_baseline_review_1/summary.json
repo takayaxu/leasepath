@@ -1,0 +1,131 @@
+{
+  "status": "passed",
+  "stage": "empirical_baseline_review_1",
+  "scope": "development_fit_and_training_preview_only",
+  "models": {
+    "all-main-global": {
+      "workflows": 19,
+      "tasks": 10,
+      "episodes": 185,
+      "snapshots": 729,
+      "outcomes": {
+        "legal_demand": 166,
+        "retire": 19
+      },
+      "workflow_weight": 1.0,
+      "total_sample_weight": 19.0,
+      "fitted_groups": 0,
+      "supported_right_edges": [
+        0.01,
+        0.03,
+        0.1,
+        0.3,
+        1
+      ],
+      "estimate_sources_over_preview_intervals": {
+        "global": 3645,
+        "unsupported_risk_set": 5103
+      },
+      "model_sha256": "3d83ca6083eacfd37c9155ed56f7dab781f41a9da757091506040db805a6b0a6",
+      "training_preview_sha256": "3cd125b758749aaad40296ad016e06e95bee6a1db99565033883604af48f7455",
+      "save_load_identical": true,
+      "probability_checks_passed": true
+    },
+    "all-main-conditional": {
+      "workflows": 19,
+      "tasks": 10,
+      "episodes": 185,
+      "snapshots": 729,
+      "outcomes": {
+        "legal_demand": 166,
+        "retire": 19
+      },
+      "workflow_weight": 1.0,
+      "total_sample_weight": 19.0,
+      "fitted_groups": 10,
+      "supported_right_edges": [
+        0.01,
+        0.03,
+        0.1,
+        0.3,
+        1
+      ],
+      "estimate_sources_over_preview_intervals": {
+        "group_shrunk_to_global": 2637,
+        "unsupported_risk_set": 5103,
+        "global_fallback": 1008
+      },
+      "model_sha256": "829cb75643ac772b106b69b0502704ea8ee57dae5708862469cb6af9685aff69",
+      "training_preview_sha256": "fdd13e64c3a8d48b3525f68ded555feecc257c086ecd8616a124cd212744cec2",
+      "save_load_identical": true,
+      "probability_checks_passed": true
+    },
+    "qualified-global": {
+      "workflows": 14,
+      "tasks": 10,
+      "episodes": 76,
+      "snapshots": 285,
+      "outcomes": {
+        "legal_demand": 62,
+        "retire": 14
+      },
+      "workflow_weight": 1.0,
+      "total_sample_weight": 14.000000000000004,
+      "fitted_groups": 0,
+      "supported_right_edges": [
+        0.01,
+        0.03,
+        0.1,
+        0.3,
+        1
+      ],
+      "estimate_sources_over_preview_intervals": {
+        "global": 1425,
+        "unsupported_risk_set": 1995
+      },
+      "model_sha256": "f3123e8ed7ef9186ddd1411f2b5acc255282970bfe23dfdfe0110127ea615c95",
+      "training_preview_sha256": "5d0530e36c9b34a2bab8f2baee7d761233d8b5ded536de41cc61de3647dedadd",
+      "save_load_identical": true,
+      "probability_checks_passed": true
+    },
+    "qualified-conditional": {
+      "workflows": 14,
+      "tasks": 10,
+      "episodes": 76,
+      "snapshots": 285,
+      "outcomes": {
+        "legal_demand": 62,
+        "retire": 14
+      },
+      "workflow_weight": 1.0,
+      "total_sample_weight": 14.000000000000004,
+      "fitted_groups": 10,
+      "supported_right_edges": [
+        0.01,
+        0.03,
+        0.1,
+        0.3,
+        1
+      ],
+      "estimate_sources_over_preview_intervals": {
+        "group_shrunk_to_global": 979,
+        "unsupported_risk_set": 1995,
+        "global_fallback": 446
+      },
+      "model_sha256": "00527eb434eb3334ed02d14a4e2aee5bb84036e41e5940e82fcf39a7a0f75aad",
+      "training_preview_sha256": "3c6a1826dc3ae8bf8ceb07d23f391aa409fc4866622aed95dd7133991e4e5979",
+      "save_load_identical": true,
+      "probability_checks_passed": true
+    }
+  },
+  "held_out_evaluation": "not implemented in review part 1",
+  "gbdt": "not implemented; awaiting review",
+  "limitations": [
+    "ten parent tasks from one public source; development data only",
+    "previews use the fitting data and measure no generalization",
+    "all observed episodes below one second; no long-horizon extrapolation",
+    "conditional baseline uses tool/phase/elapsed buckets; not a full CacheWise reproduction",
+    "qualified subset conditions on eventual task success"
+  ],
+  "artifacts": "/home/ma-user/takaya/leasepath/.artifacts/prediction/empirical_baseline_review_1"
+}

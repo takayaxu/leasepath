@@ -1,0 +1,214 @@
+{
+  "workflow_count": 5,
+  "unique_parents": 5,
+  "tool_duration_s": {
+    "n": 20,
+    "min": 0.016100433,
+    "median": 0.020090384,
+    "p95": 2.573875296,
+    "max": 2.573875296,
+    "ge_1s": 5,
+    "ge_3s": 0,
+    "ge_5s": 0
+  },
+  "idle_duration_s": {
+    "n": 25,
+    "min": 0.023735292,
+    "median": 0.047132731,
+    "p95": 2.345323543,
+    "max": 2.60950763,
+    "ge_1s": 5,
+    "ge_3s": 0,
+    "ge_5s": 0
+  },
+  "second_scale_tools": [
+    {
+      "workflow_id": "designed-csv-ledger-greedy-guided-814b288d",
+      "command_category": "test",
+      "workload_family": "csv_aggregation",
+      "duration_s": 2.573875296,
+      "returncode": 0
+    },
+    {
+      "workflow_id": "designed-jsonl-status-greedy-guided-586d372d",
+      "command_category": "test",
+      "workload_family": "jsonl_parsing",
+      "duration_s": 2.035013098,
+      "returncode": 0
+    },
+    {
+      "workflow_id": "designed-sqlite-sales-greedy-guided-2c939b71",
+      "command_category": "test",
+      "workload_family": "sqlite_query",
+      "duration_s": 1.874268653,
+      "returncode": 0
+    },
+    {
+      "workflow_id": "designed-gzip-digest-greedy-guided-f093ab0d",
+      "command_category": "test",
+      "workload_family": "gzip_hashing",
+      "duration_s": 2.060643465,
+      "returncode": 0
+    },
+    {
+      "workflow_id": "designed-integer-sort-greedy-guided-df373430",
+      "command_category": "test",
+      "workload_family": "integer_sorting",
+      "duration_s": 2.31615885,
+      "returncode": 0
+    }
+  ],
+  "feature_coverage": {
+    "command_category": {
+      "known": 63,
+      "total": 145
+    },
+    "completed_tool_count": {
+      "known": 145,
+      "total": 145
+    },
+    "last_completed_returncode": {
+      "known": 120,
+      "total": 145
+    },
+    "last_completed_tool_s": {
+      "known": 120,
+      "total": 145
+    },
+    "prior_failed_tests": {
+      "known": 145,
+      "total": 145
+    },
+    "tool_state": {
+      "known": 108,
+      "total": 145
+    },
+    "tool_timeout_s": {
+      "known": 63,
+      "total": 145
+    },
+    "work_unit": {
+      "known": 33,
+      "total": 145
+    },
+    "work_units": {
+      "known": 33,
+      "total": 145
+    },
+    "workload_family": {
+      "known": 33,
+      "total": 145
+    }
+  },
+  "snapshot_elapsed_ge_1s": 19,
+  "command_categories": {
+    "inspect": 5,
+    "edit": 5,
+    "test": 5,
+    "shell": 5
+  },
+  "workload_families": {
+    "csv_aggregation": 1,
+    "jsonl_parsing": 1,
+    "sqlite_query": 1,
+    "gzip_hashing": 1,
+    "integer_sorting": 1
+  },
+  "tool_states": {
+    "None": 37,
+    "running": 63,
+    "completed": 45
+  },
+  "phases": {
+    "None": 62,
+    "queued": 20,
+    "waiting_tool": 63
+  },
+  "prior_failed_tests": {
+    "0": 145
+  },
+  "queued_snapshots": 20,
+  "features_sidecar_sha256": "ebde0165903843c45900816396d7a0cd30acca03edd979332cce816b73993483",
+  "dataset_summary": {
+    "status": "passed",
+    "evidence_kind": "measured",
+    "events": 230,
+    "runs": 5,
+    "idle_episodes": 25,
+    "snapshot_schedule": {
+      "elapsed_points_s": [
+        0,
+        0.01,
+        0.03,
+        0.1,
+        0.3,
+        1,
+        2,
+        3,
+        5,
+        10,
+        30,
+        120
+      ],
+      "max_per_episode": 20
+    },
+    "source_groups": {
+      "leasepath/designed-file-tasks-v1": 5
+    },
+    "evidence_scopes": {
+      "designed_real_compute_agent_execution": 5
+    },
+    "snapshots": 145,
+    "outcomes": {
+      "legal_demand": 20,
+      "retire": 5
+    },
+    "requests": 25,
+    "cache_hit_requests": 20,
+    "cached_tokens": 30720,
+    "prompt_tokens": 39917,
+    "all_request_stages_observed": true,
+    "observer_sequence_gaps": 0,
+    "lookup_duration_ns": [
+      2859682,
+      72000,
+      78020,
+      79691,
+      112771,
+      38841,
+      70101,
+      73640,
+      80120,
+      85981,
+      113851,
+      38160,
+      73740,
+      85771,
+      111491,
+      38750,
+      74500,
+      88211,
+      107781,
+      37631,
+      70171,
+      97161,
+      82641,
+      87320,
+      114981
+    ],
+    "raw_sha256": "96cc5836c938396cd085429205221a2ebb614064a446a0c49f14327f0fa322b0",
+    "output_sha256": {
+      "targets.jsonl": "564eb277638b77a934e4a1c077717a8e95f871758461eb8bfbc74711e34af74e",
+      "snapshots.jsonl": "7f52a8fe8e231cb2d9e995581c75bf664abfef4bb0243f6239676b522a2b2474",
+      "events.jsonl": "5aa76db850b5d558825d1936af1a435086f5a4bda298d39060235f528869399e",
+      "episode_labels.jsonl": "c73f7ea6dc3221ff73e38610769ebc688d10ada74669cf389a060a4fbd0f21e4"
+    },
+    "limitations": [
+      "development pilot; source grouping and evidence scopes must be retained",
+      "scheduler prefill counts; no device-kernel timing claim",
+      "request-boundary block snapshots; no complete allocation/eviction lifecycle",
+      "queue_length remains unknown; no global empty-queue assertion",
+      "no independent test split or policy benefit claim"
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "stage": "pre-agent selection validation",
+  "excluded_task_id": 71,
+  "reason": "public comb_sort reference failed an independently generated integer sorting assertion",
+  "replacement_task_id": 106,
+  "agent_outcomes_used_for_selection": false,
+  "prior_partial_preparation_retained": ".artifacts/d2-diversity-v3-preparation-rejected-reference71",
+  "note": "final34 IDs and all test checks frozen before agent execution; single guided run per new parent"
+}

@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "pytest_regression": {
+    "passed": 121,
+    "log": ".artifacts/prediction/prediction_v2_50parents/pytest-regression.log",
+    "sha256": "28bb570e0516ad6431f72ea001519cfc055b292cf21406453ed6b46c5721fec8"
+  },
+  "pytest_targeted": {
+    "passed": 18,
+    "log": ".artifacts/prediction/prediction_v2_50parents/pytest-targeted.log",
+    "sha256": "4a5c5f4215ae1e7a8d1120929b9d12932dc0006fb5c059f06a5783ffa85d786b"
+  },
+  "verification_sha256": "2e9ddf14bf23b8ee273cb629a84542692c04a9538a99802d175993f123afee44",
+  "verifier_source_sha256": "1950c5fe0f5626c6a7e60611b7175224d3e8b5fa2bf3a9a299822b5cbbcca07b",
+  "logs_sha256": {
+    "training.log": "59c9bb1f3c2844849d848b9c3c82273524f53103e63c190cfd5fc5dcaffbba33",
+    "verification.log": "2e9ddf14bf23b8ee273cb629a84542692c04a9538a99802d175993f123afee44"
+  },
+  "note": "test counts are source regression checks; candidate task correctness remains in input quality records"
+}

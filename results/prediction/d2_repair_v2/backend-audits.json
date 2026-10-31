@@ -1,0 +1,20 @@
+{
+  "repair-csv-ledger-medium-greedy-guided-92cb7b3e": {
+    "passed": true
+  },
+  "repair-csv-ledger-large-greedy-guided-38e69c1f": {
+    "passed": true
+  },
+  "repair-jsonl-status-medium-greedy-guided-b1ca593a": {
+    "passed": true
+  },
+  "repair-jsonl-status-large-greedy-guided-fbc7d10a": {
+    "passed": true
+  },
+  "repair-graph-distance-medium-greedy-guided-b6c0a537": {
+    "passed": true
+  },
+  "repair-graph-distance-large-greedy-guided-57560c5d": {
+    "passed": true
+  }
+}

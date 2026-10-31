@@ -1,0 +1,450 @@
+{
+  "scope": "parent-task grouped development CV; same assignment for all models and both views",
+  "assignment_rule": "sort SHA256(seed:parent_group), round-robin folds",
+  "seed": 23,
+  "folds": 5,
+  "assignments": {
+    "google-research/mbpp:mbpp-0080": 0,
+    "google-research/mbpp:mbpp-0074": 1,
+    "google-research/mbpp:mbpp-0091": 2,
+    "google-research/mbpp:mbpp-0087": 3,
+    "google-research/mbpp:mbpp-0067": 4,
+    "google-research/mbpp:mbpp-0090": 0,
+    "google-research/mbpp:mbpp-0105": 1,
+    "google-research/mbpp:mbpp-0096": 2,
+    "leasepath/designed-file-tasks-v1:designed-gzip-digest": 3,
+    "leasepath/designed-file-tasks-v1:designed-sqlite-sales": 4,
+    "google-research/mbpp:mbpp-0095": 0,
+    "google-research/mbpp:mbpp-0059": 1,
+    "google-research/mbpp:mbpp-0016": 2,
+    "leasepath/designed-file-tasks-v1:designed-graph-distance": 3,
+    "google-research/mbpp:mbpp-0108": 4,
+    "google-research/mbpp:mbpp-0062": 0,
+    "google-research/mbpp:mbpp-0077": 1,
+    "google-research/mbpp:mbpp-0014": 2,
+    "google-research/mbpp:mbpp-0103": 3,
+    "google-research/mbpp:mbpp-0057": 4,
+    "google-research/mbpp:mbpp-0063": 0,
+    "google-research/mbpp:mbpp-0097": 1,
+    "google-research/mbpp:mbpp-0102": 2,
+    "google-research/mbpp:mbpp-0086": 3,
+    "leasepath/designed-file-tasks-v1:designed-jsonl-status": 4,
+    "google-research/mbpp:mbpp-0011": 0,
+    "google-research/mbpp:mbpp-0003": 1,
+    "google-research/mbpp:mbpp-0061": 2,
+    "leasepath/designed-file-tasks-v1:designed-integer-sort": 3,
+    "google-research/mbpp:mbpp-0093": 4,
+    "google-research/mbpp:mbpp-0065": 0,
+    "google-research/mbpp:mbpp-0012": 1,
+    "google-research/mbpp:mbpp-0009": 2,
+    "google-research/mbpp:mbpp-0094": 3,
+    "google-research/mbpp:mbpp-0002": 4,
+    "google-research/mbpp:mbpp-0072": 0,
+    "google-research/mbpp:mbpp-0075": 1,
+    "google-research/mbpp:mbpp-0106": 2,
+    "google-research/mbpp:mbpp-0099": 3,
+    "google-research/mbpp:mbpp-0088": 4,
+    "google-research/mbpp:mbpp-0008": 0,
+    "google-research/mbpp:mbpp-0019": 1,
+    "google-research/mbpp:mbpp-0058": 2,
+    "leasepath/designed-file-tasks-v1:designed-csv-ledger": 3,
+    "google-research/mbpp:mbpp-0064": 4,
+    "google-research/mbpp:mbpp-0004": 0,
+    "google-research/mbpp:mbpp-0092": 1,
+    "google-research/mbpp:mbpp-0084": 2,
+    "google-research/mbpp:mbpp-0007": 3,
+    "google-research/mbpp:mbpp-0068": 4
+  },
+  "workflows": {
+    "mbpp-0002-greedy-guided-4e61fb0d": {
+      "round": "mbpp",
+      "quality_passed": true,
+      "group_id": "google-research/mbpp:mbpp-0002",
+      "fold": 4
+    },
+    "mbpp-0002-sampled-97502092": {
+      "round": "mbpp",
+      "quality_passed": false,
+      "group_id": "google-research/mbpp:mbpp-0002",
+      "fold": 4
+    },
+    "mbpp-0003-greedy-guided-f52d05df": {
+      "round": "mbpp",
+      "quality_passed": true,
+      "group_id": "google-research/mbpp:mbpp-0003",
+      "fold": 1
+    },
+    "mbpp-0003-sampled-6de1cae0": {
+      "round": "mbpp",
+      "quality_passed": true,
+      "group_id": "google-research/mbpp:mbpp-0003",
+      "fold": 1
+    },
+    "mbpp-0004-greedy-guided-09fe16df": {
+      "round": "mbpp",
+      "quality_passed": true,
+      "group_id": "google-research/mbpp:mbpp-0004",
+      "fold": 0
+    },
+    "mbpp-0004-sampled-b8b6a27c": {
+      "round": "mbpp",
+      "quality_passed": false,
+      "group_id": "google-research/mbpp:mbpp-0004",
+      "fold": 0
+    },
+    "mbpp-0007-greedy-guided-47fc5fe6": {
+      "round": "mbpp",
+      "quality_passed": false,
+      "group_id": "google-research/mbpp:mbpp-0007",
+      "fold": 3
+    },
+    "mbpp-0007-sampled-54e97ffc": {
+      "round": "mbpp",
+      "quality_passed": true,
+      "group_id": "google-research/mbpp:mbpp-0007",
+      "fold": 3
+    },
+    "mbpp-0008-greedy-guided-e467155f": {
+      "round": "mbpp",
+      "quality_passed": true,
+      "group_id": "google-research/mbpp:mbpp-0008",
+      "fold": 0
+    },
+    "mbpp-0008-sampled-dcda2764": {
+      "round": "mbpp",
+      "quality_passed": true,
+      "group_id": "google-research/mbpp:mbpp-0008",
+      "fold": 0
+    },
+    "mbpp-0009-greedy-guided-da836fac": {
+      "round": "mbpp",
+      "quality_passed": false,
+      "group_id": "google-research/mbpp:mbpp-0009",
+      "fold": 2
+    },
+    "mbpp-0009-sampled-673ad9fb": {
+      "round": "mbpp",
+      "quality_passed": true,
+      "group_id": "google-research/mbpp:mbpp-0009",
+      "fold": 2
+    },
+    "mbpp-0011-greedy-guided-4f316238": {
+      "round": "mbpp",
+      "quality_passed": true,
+      "group_id": "google-research/mbpp:mbpp-0011",
+      "fold": 0
+    },
+    "mbpp-0011-sampled-5f5032d6": {
+      "round": "mbpp",
+      "quality_passed": true,
+      "group_id": "google-research/mbpp:mbpp-0011",
+      "fold": 0
+    },
+    "mbpp-0012-greedy-guided-06dffde2": {
+      "round": "mbpp",
+      "quality_passed": true,
+      "group_id": "google-research/mbpp:mbpp-0012",
+      "fold": 1
+    },
+    "mbpp-0012-sampled-5129c504": {
+      "round": "mbpp",
+      "quality_passed": false,
+      "group_id": "google-research/mbpp:mbpp-0012",
+      "fold": 1
+    },
+    "mbpp-0014-greedy-guided-38035589": {
+      "round": "mbpp",
+      "quality_passed": true,
+      "group_id": "google-research/mbpp:mbpp-0014",
+      "fold": 2
+    },
+    "mbpp-0016-greedy-guided-70820671": {
+      "round": "mbpp",
+      "quality_passed": true,
+      "group_id": "google-research/mbpp:mbpp-0016",
+      "fold": 2
+    },
+    "mbpp-0016-sampled-650ad310": {
+      "round": "mbpp",
+      "quality_passed": true,
+      "group_id": "google-research/mbpp:mbpp-0016",
+      "fold": 2
+    },
+    "designed-csv-ledger-greedy-guided-814b288d": {
+      "round": "file-v1",
+      "quality_passed": true,
+      "group_id": "leasepath/designed-file-tasks-v1:designed-csv-ledger",
+      "fold": 3
+    },
+    "designed-graph-distance-greedy-guided-0816dbb0": {
+      "round": "file-v1",
+      "quality_passed": false,
+      "group_id": "leasepath/designed-file-tasks-v1:designed-graph-distance",
+      "fold": 3
+    },
+    "designed-gzip-digest-greedy-guided-f093ab0d": {
+      "round": "file-v1",
+      "quality_passed": true,
+      "group_id": "leasepath/designed-file-tasks-v1:designed-gzip-digest",
+      "fold": 3
+    },
+    "designed-integer-sort-greedy-guided-df373430": {
+      "round": "file-v1",
+      "quality_passed": true,
+      "group_id": "leasepath/designed-file-tasks-v1:designed-integer-sort",
+      "fold": 3
+    },
+    "designed-jsonl-status-greedy-guided-586d372d": {
+      "round": "file-v1",
+      "quality_passed": true,
+      "group_id": "leasepath/designed-file-tasks-v1:designed-jsonl-status",
+      "fold": 4
+    },
+    "designed-sqlite-sales-greedy-guided-2c939b71": {
+      "round": "file-v1",
+      "quality_passed": true,
+      "group_id": "leasepath/designed-file-tasks-v1:designed-sqlite-sales",
+      "fold": 4
+    },
+    "repair-csv-ledger-large-greedy-guided-38e69c1f": {
+      "round": "repair-v2",
+      "quality_passed": true,
+      "group_id": "leasepath/designed-file-tasks-v1:designed-csv-ledger",
+      "fold": 3
+    },
+    "repair-csv-ledger-medium-greedy-guided-92cb7b3e": {
+      "round": "repair-v2",
+      "quality_passed": true,
+      "group_id": "leasepath/designed-file-tasks-v1:designed-csv-ledger",
+      "fold": 3
+    },
+    "repair-graph-distance-large-greedy-guided-57560c5d": {
+      "round": "repair-v2",
+      "quality_passed": true,
+      "group_id": "leasepath/designed-file-tasks-v1:designed-graph-distance",
+      "fold": 3
+    },
+    "repair-graph-distance-medium-greedy-guided-b6c0a537": {
+      "round": "repair-v2",
+      "quality_passed": true,
+      "group_id": "leasepath/designed-file-tasks-v1:designed-graph-distance",
+      "fold": 3
+    },
+    "repair-jsonl-status-large-greedy-guided-fbc7d10a": {
+      "round": "repair-v2",
+      "quality_passed": false,
+      "group_id": "leasepath/designed-file-tasks-v1:designed-jsonl-status",
+      "fold": 4
+    },
+    "repair-jsonl-status-medium-greedy-guided-b1ca593a": {
+      "round": "repair-v2",
+      "quality_passed": false,
+      "group_id": "leasepath/designed-file-tasks-v1:designed-jsonl-status",
+      "fold": 4
+    },
+    "mbpp-0019-greedy-guided-f5252ee5": {
+      "round": "diversity-v3",
+      "quality_passed": true,
+      "group_id": "google-research/mbpp:mbpp-0019",
+      "fold": 1
+    },
+    "mbpp-0057-greedy-guided-bdc17eb1": {
+      "round": "diversity-v3",
+      "quality_passed": true,
+      "group_id": "google-research/mbpp:mbpp-0057",
+      "fold": 4
+    },
+    "mbpp-0058-greedy-guided-75853f2c": {
+      "round": "diversity-v3",
+      "quality_passed": true,
+      "group_id": "google-research/mbpp:mbpp-0058",
+      "fold": 2
+    },
+    "mbpp-0059-greedy-guided-e10afc3e": {
+      "round": "diversity-v3",
+      "quality_passed": true,
+      "group_id": "google-research/mbpp:mbpp-0059",
+      "fold": 1
+    },
+    "mbpp-0061-greedy-guided-4653d05e": {
+      "round": "diversity-v3",
+      "quality_passed": true,
+      "group_id": "google-research/mbpp:mbpp-0061",
+      "fold": 2
+    },
+    "mbpp-0062-greedy-guided-272c43de": {
+      "round": "diversity-v3",
+      "quality_passed": true,
+      "group_id": "google-research/mbpp:mbpp-0062",
+      "fold": 0
+    },
+    "mbpp-0063-greedy-guided-4c66ef57": {
+      "round": "diversity-v3",
+      "quality_passed": true,
+      "group_id": "google-research/mbpp:mbpp-0063",
+      "fold": 0
+    },
+    "mbpp-0064-greedy-guided-e8c50669": {
+      "round": "diversity-v3",
+      "quality_passed": true,
+      "group_id": "google-research/mbpp:mbpp-0064",
+      "fold": 4
+    },
+    "mbpp-0065-greedy-guided-424a7056": {
+      "round": "diversity-v3",
+      "quality_passed": true,
+      "group_id": "google-research/mbpp:mbpp-0065",
+      "fold": 0
+    },
+    "mbpp-0067-greedy-guided-7ac72b19": {
+      "round": "diversity-v3",
+      "quality_passed": false,
+      "group_id": "google-research/mbpp:mbpp-0067",
+      "fold": 4
+    },
+    "mbpp-0068-greedy-guided-3b2fbd2a": {
+      "round": "diversity-v3",
+      "quality_passed": true,
+      "group_id": "google-research/mbpp:mbpp-0068",
+      "fold": 4
+    },
+    "mbpp-0072-greedy-guided-05b28167": {
+      "round": "diversity-v3",
+      "quality_passed": true,
+      "group_id": "google-research/mbpp:mbpp-0072",
+      "fold": 0
+    },
+    "mbpp-0074-greedy-guided-d20d86ed": {
+      "round": "diversity-v3",
+      "quality_passed": true,
+      "group_id": "google-research/mbpp:mbpp-0074",
+      "fold": 1
+    },
+    "mbpp-0075-greedy-guided-74170644": {
+      "round": "diversity-v3",
+      "quality_passed": true,
+      "group_id": "google-research/mbpp:mbpp-0075",
+      "fold": 1
+    },
+    "mbpp-0077-greedy-guided-b345f4c0": {
+      "round": "diversity-v3",
+      "quality_passed": true,
+      "group_id": "google-research/mbpp:mbpp-0077",
+      "fold": 1
+    },
+    "mbpp-0080-greedy-guided-53590a4e": {
+      "round": "diversity-v3",
+      "quality_passed": true,
+      "group_id": "google-research/mbpp:mbpp-0080",
+      "fold": 0
+    },
+    "mbpp-0084-greedy-guided-a6e7c7e0": {
+      "round": "diversity-v3",
+      "quality_passed": true,
+      "group_id": "google-research/mbpp:mbpp-0084",
+      "fold": 2
+    },
+    "mbpp-0086-greedy-guided-71293071": {
+      "round": "diversity-v3",
+      "quality_passed": true,
+      "group_id": "google-research/mbpp:mbpp-0086",
+      "fold": 3
+    },
+    "mbpp-0087-greedy-guided-2aff3d42": {
+      "round": "diversity-v3",
+      "quality_passed": true,
+      "group_id": "google-research/mbpp:mbpp-0087",
+      "fold": 3
+    },
+    "mbpp-0088-greedy-guided-2ebf52fe": {
+      "round": "diversity-v3",
+      "quality_passed": true,
+      "group_id": "google-research/mbpp:mbpp-0088",
+      "fold": 4
+    },
+    "mbpp-0090-greedy-guided-b8980c17": {
+      "round": "diversity-v3",
+      "quality_passed": true,
+      "group_id": "google-research/mbpp:mbpp-0090",
+      "fold": 0
+    },
+    "mbpp-0091-greedy-guided-ded01593": {
+      "round": "diversity-v3",
+      "quality_passed": true,
+      "group_id": "google-research/mbpp:mbpp-0091",
+      "fold": 2
+    },
+    "mbpp-0092-greedy-guided-41543d95": {
+      "round": "diversity-v3",
+      "quality_passed": false,
+      "group_id": "google-research/mbpp:mbpp-0092",
+      "fold": 1
+    },
+    "mbpp-0093-greedy-guided-b0fbe675": {
+      "round": "diversity-v3",
+      "quality_passed": true,
+      "group_id": "google-research/mbpp:mbpp-0093",
+      "fold": 4
+    },
+    "mbpp-0094-greedy-guided-7db9a0af": {
+      "round": "diversity-v3",
+      "quality_passed": true,
+      "group_id": "google-research/mbpp:mbpp-0094",
+      "fold": 3
+    },
+    "mbpp-0095-greedy-guided-31dbfe13": {
+      "round": "diversity-v3",
+      "quality_passed": true,
+      "group_id": "google-research/mbpp:mbpp-0095",
+      "fold": 0
+    },
+    "mbpp-0096-greedy-guided-aa85b048": {
+      "round": "diversity-v3",
+      "quality_passed": true,
+      "group_id": "google-research/mbpp:mbpp-0096",
+      "fold": 2
+    },
+    "mbpp-0097-greedy-guided-fe880d1b": {
+      "round": "diversity-v3",
+      "quality_passed": true,
+      "group_id": "google-research/mbpp:mbpp-0097",
+      "fold": 1
+    },
+    "mbpp-0099-greedy-guided-2341b92e": {
+      "round": "diversity-v3",
+      "quality_passed": true,
+      "group_id": "google-research/mbpp:mbpp-0099",
+      "fold": 3
+    },
+    "mbpp-0102-greedy-guided-7881a024": {
+      "round": "diversity-v3",
+      "quality_passed": false,
+      "group_id": "google-research/mbpp:mbpp-0102",
+      "fold": 2
+    },
+    "mbpp-0103-greedy-guided-03f142e7": {
+      "round": "diversity-v3",
+      "quality_passed": true,
+      "group_id": "google-research/mbpp:mbpp-0103",
+      "fold": 3
+    },
+    "mbpp-0105-greedy-guided-c19ec19d": {
+      "round": "diversity-v3",
+      "quality_passed": true,
+      "group_id": "google-research/mbpp:mbpp-0105",
+      "fold": 1
+    },
+    "mbpp-0106-greedy-guided-21744d31": {
+      "round": "diversity-v3",
+      "quality_passed": true,
+      "group_id": "google-research/mbpp:mbpp-0106",
+      "fold": 2
+    },
+    "mbpp-0108-greedy-guided-352b4d7f": {
+      "round": "diversity-v3",
+      "quality_passed": true,
+      "group_id": "google-research/mbpp:mbpp-0108",
+      "fold": 4
+    }
+  }
+}

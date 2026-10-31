@@ -1,0 +1,45 @@
+{
+  "review_scope": "executed shell structure, embedded Python imports and protected-file hashes; no OS isolation claim",
+  "model_calls": 211,
+  "actual_tool_commands": 175,
+  "command_categories": {
+    "inspect": 34,
+    "edit": 68,
+    "test": 42,
+    "shell": 31
+  },
+  "pytest_returncodes": {
+    "0": 31,
+    "1": 11
+  },
+  "whole_file_solution_edits": 68,
+  "embedded_imports": {
+    "math": 61,
+    "solution": 61,
+    "collections": 1
+  },
+  "protocol_rejections": 34,
+  "format_error_count": 2,
+  "format_errors": [
+    {
+      "task_id": "mbpp-0072",
+      "message": "Format error:\n\n<error>\nExpected exactly 1 action, found 2.\n</error>\n\nHere is general guidance on how to format your response:\n\nPlease always provide EXACTLY ONE action in triple backticks, found 2 actions.\n\nPlease format your action in triple backticks as shown in <response_example>.\n\n<response_example>\nHere are some thoughts about why you want to perform the action.\n\n```mswea_bash_command\n<action>\n```\n</response_example>\n\nIf you have completed your assignment, please consult the first message about how to\nsubmit your solution (you will not be able to continue working on this task after that)."
+    },
+    {
+      "task_id": "mbpp-0072",
+      "message": "Format error:\n\n<error>\nExpected exactly 1 action, found 2.\n</error>\n\nHere is general guidance on how to format your response:\n\nPlease always provide EXACTLY ONE action in triple backticks, found 2 actions.\n\nPlease format your action in triple backticks as shown in <response_example>.\n\n<response_example>\nHere are some thoughts about why you want to perform the action.\n\n```mswea_bash_command\n<action>\n```\n</response_example>\n\nIf you have completed your assignment, please consult the first message about how to\nsubmit your solution (you will not be able to continue working on this task after that)."
+    }
+  ],
+  "actual_tool_commands_match_local_task_protocol": true,
+  "candidate_sensitive_builtin_calls_found": 0,
+  "pytest_regression": {
+    "passed": 114,
+    "log": ".artifacts/d2-diversity-v3/pytest-regression.log",
+    "sha256": "d8e30a0ec974ca699c585a80194d3add9b90da5a0953c4f3e01e2a2bd658a39e"
+  },
+  "execution_log_sha256": {
+    "agent-execution.log": "754f454ec582dcc7d7ad19adb985451e7f11eecce97fac8d4c37be83c7995e16",
+    "finalize.log": "38be7bc604425ebfd22cacb75ef91adc145178606173e1d3bd6be1100e838aaf",
+    "verify.log": "88b483b2f977fea2cdddeb8e02f9896016f57e0db9aee0a1771d543add238d13"
+  }
+}

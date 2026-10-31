@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "kind": "empirical_competing_risk",
+  "labels": [
+    "U",
+    "D",
+    "waiting"
+  ],
+  "configuration": {
+    "right_edges": [
+      0.01,
+      0.03,
+      0.1,
+      0.3,
+      1,
+      3,
+      10,
+      30,
+      60,
+      120,
+      300,
+      600
+    ],
+    "conditional": false,
+    "elapsed_edges": [
+      0.03,
+      0.1,
+      0.3,
+      1
+    ],
+    "min_group_workflows": 3,
+    "prior_weight": 1.0
+  },
+  "compatibilities": [
+    "8c2c272c9e4510c4dae33537bbe75970e56a8e7dfdbfdf213b7283f07c994dfe"
+  ],
+  "global_counts": [
+    {
+      "counts": [
+        9.442098364598356,
+        2.798544973544972,
+        41.759356661856586
+      ],
+      "workflows": 54
+    },
+    {
+      "counts": [
+        14.323063973063942,
+        7.475264550264532,
+        19.961028138528185
+      ],
+      "workflows": 54
+    },
+    {
+      "counts": [
+        11.487420634920602,
+        0.0,
+        8.473607503607573
+      ],
+      "workflows": 54
+    },
+    {
+      "counts": [
+        0.8511904761904767,
+        0.0,
+        7.622417027417084
+      ],
+      "workflows": 54
+    },
+    {
+      "counts": [
+        5.950220057720081,
+        0.0,
+        1.6721969696969696
+      ],
+      "workflows": 54
+    },
+    {
+      "counts": [
+        0.9022655122655128,
+        0.0,
+        0.7699314574314567
+      ],
+      "workflows": 9
+    },
+    {
+      "counts": [
+        0.7699314574314567,
+        0.0,
+        0.0
+      ],
+      "workflows": 4
+    },
+    {
+      "counts": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "workflows": 0
+    },
+    {
+      "counts": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "workflows": 0
+    },
+    {
+      "counts": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "workflows": 0
+    },
+    {
+      "counts": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "workflows": 0
+    },
+    {
+      "counts": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "workflows": 0
+    }
+  ],
+  "groups": {}
+}

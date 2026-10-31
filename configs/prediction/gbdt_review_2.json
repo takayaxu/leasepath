@@ -1,0 +1,24 @@
+{
+  "stage": "gbdt_review_2",
+  "scope": "parent_task_grouped_development_cross_validation",
+  "baseline_config": "configs/prediction/empirical_risk_baseline.json",
+  "baseline_provenance": "results/prediction/empirical_baseline_review_1/run-manifest.json",
+  "folds": 5,
+  "seed": 23,
+  "feature_protocol": "same_tool_phase_elapsed_bucket_information_as_conditional_baseline",
+  "models": ["global", "conditional", "gbdt"],
+  "calibration_edges": [0, 0.2, 0.4, 0.6, 0.8, 1],
+  "gbdt": {
+    "num_boost_round": 40,
+    "learning_rate": 0.05,
+    "num_leaves": 4,
+    "max_depth": 2,
+    "min_data_in_leaf": 20,
+    "min_sum_hessian_in_leaf": 0.1,
+    "lambda_l1": 0.1,
+    "lambda_l2": 10.0,
+    "min_gain_to_split": 0.01
+  },
+  "selection_policy": "single_predeclared_configuration_no_search_no_early_stopping",
+  "primary_metric": "macro_parent_task_multiclass_cumulative_brier_at_0.1_seconds"
+}

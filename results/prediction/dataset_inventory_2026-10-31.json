@@ -1,0 +1,435 @@
+{
+  "as_of": "2026-10-31",
+  "timezone": "Asia/Shanghai",
+  "scope": "logical inventory of existing development datasets; not a merged training dataset",
+  "rounds": [
+    {
+      "round": "mbpp",
+      "declared_main_executions": 20,
+      "artifact_root": ".artifacts/d2-next",
+      "result_root": "results/prediction/d2_mbpp_round",
+      "views": {
+        "all-observed": {
+          "dataset_path": ".artifacts/d2-next/datasets/all-main",
+          "hazards_path": ".artifacts/d2-next/hazards/all-main",
+          "workflows": 19,
+          "parent_tasks": 10,
+          "episodes": 185,
+          "snapshots": 729,
+          "risk_rows": 1899,
+          "outcomes": {
+            "legal_demand": 166,
+            "retire": 19
+          },
+          "feature_files": [
+            "snapshots.jsonl"
+          ],
+          "idle_duration_s": {
+            "max": 0.750993,
+            "ge_1s": 0,
+            "ge_3s": 0,
+            "ge_5s": 0
+          },
+          "parent_group_ids": [
+            "google-research/mbpp:mbpp-0002",
+            "google-research/mbpp:mbpp-0003",
+            "google-research/mbpp:mbpp-0004",
+            "google-research/mbpp:mbpp-0007",
+            "google-research/mbpp:mbpp-0008",
+            "google-research/mbpp:mbpp-0009",
+            "google-research/mbpp:mbpp-0011",
+            "google-research/mbpp:mbpp-0012",
+            "google-research/mbpp:mbpp-0014",
+            "google-research/mbpp:mbpp-0016"
+          ],
+          "workflow_ids": [
+            "mbpp-0002-greedy-guided-4e61fb0d",
+            "mbpp-0002-sampled-97502092",
+            "mbpp-0003-greedy-guided-f52d05df",
+            "mbpp-0003-sampled-6de1cae0",
+            "mbpp-0004-greedy-guided-09fe16df",
+            "mbpp-0004-sampled-b8b6a27c",
+            "mbpp-0007-greedy-guided-47fc5fe6",
+            "mbpp-0007-sampled-54e97ffc",
+            "mbpp-0008-greedy-guided-e467155f",
+            "mbpp-0008-sampled-dcda2764",
+            "mbpp-0009-greedy-guided-da836fac",
+            "mbpp-0009-sampled-673ad9fb",
+            "mbpp-0011-greedy-guided-4f316238",
+            "mbpp-0011-sampled-5f5032d6",
+            "mbpp-0012-greedy-guided-06dffde2",
+            "mbpp-0012-sampled-5129c504",
+            "mbpp-0014-greedy-guided-38035589",
+            "mbpp-0016-greedy-guided-70820671",
+            "mbpp-0016-sampled-650ad310"
+          ],
+          "summary_sha256": "4374044b7d85d9f8f66b61383e50b9bb3bc62f05c210d1451f1abeb96474d77c",
+          "file_sha256": {
+            "episode_labels.jsonl": "4ed519a58652fc01e7754c0ee2f94823a8f2dc38c481f2d31c8a383e6ad908ea",
+            "events.jsonl": "cbcacd8d656551a423da0307012af67448af68d86c553b84f65e7abd8701e0ce",
+            "snapshots.jsonl": "add85c3bd4ca175408c2c2ee8df54293954d6c1f43e4cb8e8b4bc30f6b4385c1",
+            "targets.jsonl": "4e40654b0b09571cd8dc6db416bfe24f5b7f616e1c36f7361dbd4e152e4b6852"
+          },
+          "hazard_summary_sha256": "fadcdd29de35668c2b08eb0f1c8f9dda89e40a333df2cf2fb82524433673c661"
+        },
+        "qualified": {
+          "dataset_path": ".artifacts/d2-next/datasets/qualified",
+          "hazards_path": ".artifacts/d2-next/hazards/qualified",
+          "workflows": 14,
+          "parent_tasks": 10,
+          "episodes": 76,
+          "snapshots": 285,
+          "risk_rows": 717,
+          "outcomes": {
+            "legal_demand": 62,
+            "retire": 14
+          },
+          "feature_files": [
+            "snapshots.jsonl"
+          ],
+          "idle_duration_s": {
+            "max": 0.545467239,
+            "ge_1s": 0,
+            "ge_3s": 0,
+            "ge_5s": 0
+          },
+          "parent_group_ids": [
+            "google-research/mbpp:mbpp-0002",
+            "google-research/mbpp:mbpp-0003",
+            "google-research/mbpp:mbpp-0004",
+            "google-research/mbpp:mbpp-0007",
+            "google-research/mbpp:mbpp-0008",
+            "google-research/mbpp:mbpp-0009",
+            "google-research/mbpp:mbpp-0011",
+            "google-research/mbpp:mbpp-0012",
+            "google-research/mbpp:mbpp-0014",
+            "google-research/mbpp:mbpp-0016"
+          ],
+          "workflow_ids": [
+            "mbpp-0002-greedy-guided-4e61fb0d",
+            "mbpp-0003-greedy-guided-f52d05df",
+            "mbpp-0003-sampled-6de1cae0",
+            "mbpp-0004-greedy-guided-09fe16df",
+            "mbpp-0007-sampled-54e97ffc",
+            "mbpp-0008-greedy-guided-e467155f",
+            "mbpp-0008-sampled-dcda2764",
+            "mbpp-0009-sampled-673ad9fb",
+            "mbpp-0011-greedy-guided-4f316238",
+            "mbpp-0011-sampled-5f5032d6",
+            "mbpp-0012-greedy-guided-06dffde2",
+            "mbpp-0014-greedy-guided-38035589",
+            "mbpp-0016-greedy-guided-70820671",
+            "mbpp-0016-sampled-650ad310"
+          ],
+          "summary_sha256": "33e145bccdd5e5638915d62ed7814311fbf1728ce128af5373f4d02181701ac5",
+          "file_sha256": {
+            "episode_labels.jsonl": "e1cb2afba2e514c45fe8580a6bb632eadba05b3eb85a6ede425b42e0bfbc094a",
+            "events.jsonl": "dded92f3e0d18c5c2d8b3f0c4b9229fd33661d629eb9c63ad177b2bde1e91413",
+            "snapshots.jsonl": "a68b70aec606d32b8f6a8633679f0712c71d645c36a384147750178224472616",
+            "targets.jsonl": "5fcca1e8da40256d1a4a2b793f484223597e0c81fff61cfcc9bbbe4dd05cb528"
+          },
+          "hazard_summary_sha256": "099fe9fa45f82c8373f4cf664c36871bcc4fd81ec3a0b8b612c207423595542a"
+        }
+      }
+    },
+    {
+      "round": "file-v1",
+      "declared_main_executions": 6,
+      "artifact_root": ".artifacts/d2-expansion-v1",
+      "result_root": "results/prediction/d2_expansion_v1",
+      "views": {
+        "all-observed": {
+          "dataset_path": ".artifacts/d2-expansion-v1/datasets/all-observed",
+          "hazards_path": ".artifacts/d2-expansion-v1/hazards/all-observed",
+          "workflows": 6,
+          "parent_tasks": 6,
+          "episodes": 30,
+          "snapshots": 173,
+          "risk_rows": 528,
+          "outcomes": {
+            "legal_demand": 24,
+            "retire": 6
+          },
+          "feature_files": [
+            "snapshots.jsonl",
+            "features-expansion-v1.jsonl"
+          ],
+          "idle_duration_s": {
+            "max": 2.60950763,
+            "ge_1s": 6,
+            "ge_3s": 0,
+            "ge_5s": 0
+          },
+          "parent_group_ids": [
+            "leasepath/designed-file-tasks-v1:designed-csv-ledger",
+            "leasepath/designed-file-tasks-v1:designed-graph-distance",
+            "leasepath/designed-file-tasks-v1:designed-gzip-digest",
+            "leasepath/designed-file-tasks-v1:designed-integer-sort",
+            "leasepath/designed-file-tasks-v1:designed-jsonl-status",
+            "leasepath/designed-file-tasks-v1:designed-sqlite-sales"
+          ],
+          "workflow_ids": [
+            "designed-csv-ledger-greedy-guided-814b288d",
+            "designed-graph-distance-greedy-guided-0816dbb0",
+            "designed-gzip-digest-greedy-guided-f093ab0d",
+            "designed-integer-sort-greedy-guided-df373430",
+            "designed-jsonl-status-greedy-guided-586d372d",
+            "designed-sqlite-sales-greedy-guided-2c939b71"
+          ],
+          "summary_sha256": "2cbcfa00e6e5be08e67e195e2969e3436f3c5fa8586ea34a4ddee500929beca8",
+          "file_sha256": {
+            "episode_labels.jsonl": "0a0ac37eb3c8c2a23b0e48380a760ed1efcc49c59b4e23d903c30a20d4a21da2",
+            "events.jsonl": "c11ac3c2ad611cfd9850f58b361d6ad7b24e10ee0f39fbb181fc6003f3193b0d",
+            "features-expansion-v1.jsonl": "3eaed2f70e07573ccdf928d8e4ec2c87bfb0091032b8c0eb1adfd91b5cf90a69",
+            "snapshots.jsonl": "47c2055ca05d13f1d6bf94a1163e14d07bec2d6b6c29dbf2c255e8cea39c20df",
+            "targets.jsonl": "9936623989d1625d27d2c25a05d59e6f0d380f018fc77fdeacd261e498cc8878"
+          },
+          "hazard_summary_sha256": "59ed5fc6733752973b4b07f48fbca03b552bea037e2063dab0d8b737e364314d"
+        },
+        "qualified": {
+          "dataset_path": ".artifacts/d2-expansion-v1/datasets/qualified",
+          "hazards_path": ".artifacts/d2-expansion-v1/hazards/qualified",
+          "workflows": 5,
+          "parent_tasks": 5,
+          "episodes": 25,
+          "snapshots": 145,
+          "risk_rows": 444,
+          "outcomes": {
+            "legal_demand": 20,
+            "retire": 5
+          },
+          "feature_files": [
+            "snapshots.jsonl",
+            "features-expansion-v1.jsonl"
+          ],
+          "idle_duration_s": {
+            "max": 2.60950763,
+            "ge_1s": 5,
+            "ge_3s": 0,
+            "ge_5s": 0
+          },
+          "parent_group_ids": [
+            "leasepath/designed-file-tasks-v1:designed-csv-ledger",
+            "leasepath/designed-file-tasks-v1:designed-gzip-digest",
+            "leasepath/designed-file-tasks-v1:designed-integer-sort",
+            "leasepath/designed-file-tasks-v1:designed-jsonl-status",
+            "leasepath/designed-file-tasks-v1:designed-sqlite-sales"
+          ],
+          "workflow_ids": [
+            "designed-csv-ledger-greedy-guided-814b288d",
+            "designed-gzip-digest-greedy-guided-f093ab0d",
+            "designed-integer-sort-greedy-guided-df373430",
+            "designed-jsonl-status-greedy-guided-586d372d",
+            "designed-sqlite-sales-greedy-guided-2c939b71"
+          ],
+          "summary_sha256": "d2e0072a1064f28fd4dce8c155aa3b23e9666ea4859feb7af035fae3d0f41840",
+          "file_sha256": {
+            "episode_labels.jsonl": "c73f7ea6dc3221ff73e38610769ebc688d10ada74669cf389a060a4fbd0f21e4",
+            "events.jsonl": "5aa76db850b5d558825d1936af1a435086f5a4bda298d39060235f528869399e",
+            "features-expansion-v1.jsonl": "ebde0165903843c45900816396d7a0cd30acca03edd979332cce816b73993483",
+            "snapshots.jsonl": "7f52a8fe8e231cb2d9e995581c75bf664abfef4bb0243f6239676b522a2b2474",
+            "targets.jsonl": "564eb277638b77a934e4a1c077717a8e95f871758461eb8bfbc74711e34af74e"
+          },
+          "hazard_summary_sha256": "7b02d3cb882be5f638b337e5b51b5ede74bd38874ce28a442bfeb8e5a112d203"
+        }
+      }
+    },
+    {
+      "round": "repair-v2",
+      "declared_main_executions": 6,
+      "artifact_root": ".artifacts/d2-repair-v2-guided",
+      "result_root": "results/prediction/d2_repair_v2",
+      "views": {
+        "all-observed": {
+          "dataset_path": ".artifacts/d2-repair-v2-guided/datasets/all-observed",
+          "hazards_path": ".artifacts/d2-repair-v2-guided/hazards/all-observed",
+          "workflows": 6,
+          "parent_tasks": 3,
+          "episodes": 46,
+          "snapshots": 333,
+          "risk_rows": 1405,
+          "outcomes": {
+            "legal_demand": 40,
+            "retire": 6
+          },
+          "feature_files": [
+            "snapshots.jsonl",
+            "features-repair-v2.jsonl"
+          ],
+          "idle_duration_s": {
+            "max": 8.985627757,
+            "ge_1s": 14,
+            "ge_3s": 14,
+            "ge_5s": 7
+          },
+          "parent_group_ids": [
+            "leasepath/designed-file-tasks-v1:designed-csv-ledger",
+            "leasepath/designed-file-tasks-v1:designed-graph-distance",
+            "leasepath/designed-file-tasks-v1:designed-jsonl-status"
+          ],
+          "workflow_ids": [
+            "repair-csv-ledger-large-greedy-guided-38e69c1f",
+            "repair-csv-ledger-medium-greedy-guided-92cb7b3e",
+            "repair-graph-distance-large-greedy-guided-57560c5d",
+            "repair-graph-distance-medium-greedy-guided-b6c0a537",
+            "repair-jsonl-status-large-greedy-guided-fbc7d10a",
+            "repair-jsonl-status-medium-greedy-guided-b1ca593a"
+          ],
+          "summary_sha256": "2d9420c68a24be24050478770aaa14d8e5e1a5646a66eabc98192993470fe042",
+          "file_sha256": {
+            "episode_labels.jsonl": "bc0eb2a145b96ed18dcac8e81f11177b206d2f347432dec38b8e881aa7f98325",
+            "events.jsonl": "7d5d012082a0b739b70a65e8ee5548b80f43a08174b0e807410c4fb119c29415",
+            "features-repair-v2.jsonl": "723c8c3f8ed9384e7b8b9af42084fa020f550102f9e14a01bf4633ab551b7a55",
+            "snapshots.jsonl": "4a4a10e514f9be7cf2fbee2233c091501724f27c37d6b957852de261b2d01753",
+            "targets.jsonl": "48c1d14649e2c946b0a1394317399ac0dd7e797cae3f52205b60963e2579778a"
+          },
+          "hazard_summary_sha256": "08aab8e088fa614f9e07dbba93038f25fb8fd8efb3d3e58c98bd256b0906e9da"
+        },
+        "qualified": {
+          "dataset_path": ".artifacts/d2-repair-v2-guided/datasets/qualified",
+          "hazards_path": ".artifacts/d2-repair-v2-guided/hazards/qualified",
+          "workflows": 4,
+          "parent_tasks": 2,
+          "episodes": 32,
+          "snapshots": 237,
+          "risk_rows": 1011,
+          "outcomes": {
+            "legal_demand": 28,
+            "retire": 4
+          },
+          "feature_files": [
+            "snapshots.jsonl",
+            "features-repair-v2.jsonl"
+          ],
+          "idle_duration_s": {
+            "max": 8.985627757,
+            "ge_1s": 10,
+            "ge_3s": 10,
+            "ge_5s": 5
+          },
+          "parent_group_ids": [
+            "leasepath/designed-file-tasks-v1:designed-csv-ledger",
+            "leasepath/designed-file-tasks-v1:designed-graph-distance"
+          ],
+          "workflow_ids": [
+            "repair-csv-ledger-large-greedy-guided-38e69c1f",
+            "repair-csv-ledger-medium-greedy-guided-92cb7b3e",
+            "repair-graph-distance-large-greedy-guided-57560c5d",
+            "repair-graph-distance-medium-greedy-guided-b6c0a537"
+          ],
+          "summary_sha256": "9300a5d031f95b0c5b41a50778726f57e3dac907fbd854d8e55f98e14ce945e4",
+          "file_sha256": {
+            "episode_labels.jsonl": "bbb75eeda991eed4a2d0af27d367b1c17000cc0101c03fb9234efb6e5ef74878",
+            "events.jsonl": "c516c6405bc287183ef0687b136077b463494432c87795a211596f728daee0d2",
+            "features-repair-v2.jsonl": "6a0056aaba098bcf50945c173b1b5af5c091388dad225e5b59771bed9b345842",
+            "snapshots.jsonl": "f46e3457d55af35f2e7fc23de9a123a9be03ad7360236d9ff87014ff01f42199",
+            "targets.jsonl": "1cbfb13a8d741e4b4c8cd6e813e4e51f88abcda8f498b8d067ce6ce50deb5c0a"
+          },
+          "hazard_summary_sha256": "aaf0204b90abdd6c0bed889f580c0288dfbe819a071ac3e6fec1311c2511fb4e"
+        }
+      }
+    }
+  ],
+  "combined_views": {
+    "all-observed": {
+      "workflows": 31,
+      "parent_tasks": 16,
+      "source_families": [
+        "google-research/mbpp",
+        "leasepath/designed-file-tasks-v1"
+      ],
+      "episodes": 261,
+      "snapshots": 1235,
+      "risk_rows": 3832,
+      "outcomes": {
+        "legal_demand": 230,
+        "retire": 31
+      },
+      "parent_group_ids": [
+        "google-research/mbpp:mbpp-0002",
+        "google-research/mbpp:mbpp-0003",
+        "google-research/mbpp:mbpp-0004",
+        "google-research/mbpp:mbpp-0007",
+        "google-research/mbpp:mbpp-0008",
+        "google-research/mbpp:mbpp-0009",
+        "google-research/mbpp:mbpp-0011",
+        "google-research/mbpp:mbpp-0012",
+        "google-research/mbpp:mbpp-0014",
+        "google-research/mbpp:mbpp-0016",
+        "leasepath/designed-file-tasks-v1:designed-csv-ledger",
+        "leasepath/designed-file-tasks-v1:designed-graph-distance",
+        "leasepath/designed-file-tasks-v1:designed-gzip-digest",
+        "leasepath/designed-file-tasks-v1:designed-integer-sort",
+        "leasepath/designed-file-tasks-v1:designed-jsonl-status",
+        "leasepath/designed-file-tasks-v1:designed-sqlite-sales"
+      ]
+    },
+    "qualified": {
+      "workflows": 23,
+      "parent_tasks": 16,
+      "source_families": [
+        "google-research/mbpp",
+        "leasepath/designed-file-tasks-v1"
+      ],
+      "episodes": 133,
+      "snapshots": 667,
+      "risk_rows": 2172,
+      "outcomes": {
+        "legal_demand": 110,
+        "retire": 23
+      },
+      "parent_group_ids": [
+        "google-research/mbpp:mbpp-0002",
+        "google-research/mbpp:mbpp-0003",
+        "google-research/mbpp:mbpp-0004",
+        "google-research/mbpp:mbpp-0007",
+        "google-research/mbpp:mbpp-0008",
+        "google-research/mbpp:mbpp-0009",
+        "google-research/mbpp:mbpp-0011",
+        "google-research/mbpp:mbpp-0012",
+        "google-research/mbpp:mbpp-0014",
+        "google-research/mbpp:mbpp-0016",
+        "leasepath/designed-file-tasks-v1:designed-csv-ledger",
+        "leasepath/designed-file-tasks-v1:designed-graph-distance",
+        "leasepath/designed-file-tasks-v1:designed-gzip-digest",
+        "leasepath/designed-file-tasks-v1:designed-integer-sort",
+        "leasepath/designed-file-tasks-v1:designed-jsonl-status",
+        "leasepath/designed-file-tasks-v1:designed-sqlite-sales"
+      ]
+    }
+  },
+  "validation": {
+    "dataset_content_hashes_matched": true,
+    "cross_round_workflow_episode_sample_duplicates": 0,
+    "qualified_is_subset_of_all_observed": true,
+    "snapshot_target_ids_aligned": true,
+    "declared_main_executions": 32,
+    "backend_quarantined_executions": 1,
+    "attempts_do_not_count_first_round_or_diagnostics": true
+  },
+  "excluded": [
+    {
+      "scope": "first issue round",
+      "path": ".artifacts/d2/pilot-dataset",
+      "reason": "5/5 failed task-quality gate; diagnostic history only"
+    },
+    {
+      "scope": "repair initial diagnostic",
+      "path": ".artifacts/d2-repair-v2",
+      "reason": "two complete failed loops and one interrupted workflow; separate from guided main execution"
+    },
+    {
+      "scope": "other MBPP direct/greedy-mini and stopped variants",
+      "path": ".artifacts/d2-next",
+      "reason": "protocol diagnostics; not selected main profiles"
+    },
+    {
+      "scope": "controlled backend checks and D1 fixtures",
+      "reason": "mechanism/contract validation; separate distributions"
+    },
+    {
+      "scope": "TraceLab and CacheWise",
+      "reason": "tool-time proxies do not expose main-task legal prefix U/D/C"
+    }
+  ]
+}

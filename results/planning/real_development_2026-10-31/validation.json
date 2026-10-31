@@ -1,0 +1,11 @@
+{
+  "pytest": {
+    "status": "passed",
+    "count": 121,
+    "log": "pytest.log"
+  },
+  "scope": "existing collection/training implementation and new planning documentation; no new agent collection or fitting",
+  "credential_pattern_scan": "passed for changed/addable files; no credentials or local artifacts selected",
+  "historical_results": "125 manifest-listed files verified unchanged; see document_and_hash_checks.json",
+  "new_experiments_executed": false
+}

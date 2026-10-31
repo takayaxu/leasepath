@@ -1,0 +1,206 @@
+{
+  "status": "passed",
+  "started_at_utc": "2026-10-31T10:47:52.868368+00:00",
+  "configuration": {
+    "stage": "prediction_v2_50parents",
+    "scope": "multi_round_parent_task_grouped_development_cross_validation",
+    "baseline_config": "configs/prediction/empirical_risk_baseline.json",
+    "folds": 5,
+    "seed": 23,
+    "feature_protocol": "same_tool_phase_elapsed_bucket_information_as_conditional_baseline",
+    "models": [
+      "global",
+      "conditional",
+      "gbdt"
+    ],
+    "calibration_edges": [
+      0,
+      0.2,
+      0.4,
+      0.6,
+      0.8,
+      1
+    ],
+    "gbdt": {
+      "num_boost_round": 40,
+      "learning_rate": 0.05,
+      "num_leaves": 4,
+      "max_depth": 2,
+      "min_data_in_leaf": 20,
+      "min_sum_hessian_in_leaf": 0.1,
+      "lambda_l1": 0.1,
+      "lambda_l2": 10.0,
+      "min_gain_to_split": 0.01
+    },
+    "selection_policy": "single_predeclared_configuration_no_search_no_early_stopping",
+    "primary_metric": "macro_parent_task_multiclass_cumulative_brier_at_0.1_seconds",
+    "previous_training_config": "configs/prediction/gbdt_review_2.json",
+    "inventory": "results/prediction/dataset_inventory_50parents_2026-10-31.json",
+    "inventory_sha256": "826c89a11d86b1e7d1a0b2909c0ff017749ab93960495c92372453610262cb96",
+    "round_result_manifest_sha256": {
+      "mbpp": "a12afe7fd769681b9c062694c81f680f37cd5c6bed1a563cbc01b23ac8f4f9af",
+      "file-v1": "41642e520ed50b7cc87121328c52acdcdbc56a5f3e4afdc399ef2774330303ec",
+      "repair-v2": "d4fdc8773a0342e78f000c844fdf97d288a68f273337a790a9c86a996f82b0eb",
+      "diversity-v3": "69f3c271719b472e9afa939d425a0a3cf010c9289b0ab72c156aa1358f8df0a5"
+    },
+    "historical_result_manifest_sha256": {
+      "results/prediction/gbdt_review_2": "124656864fd0790cb0ce560c7bde7798127e6786c4b5df02f6f684f9f763e7cd",
+      "results/prediction/empirical_baseline_review_1": "d2e180251bd518851998e2ef371ce12001b4c974a8b25e028a3d7c33897d9249"
+    },
+    "reference_configuration_sha256": {
+      "configs/prediction/gbdt_review_2.json": "258861d5ece7c64ebc75b0b16f9b397123ab32aad7928b0dc10b1293270c3699",
+      "configs/prediction/empirical_risk_baseline.json": "51e9d06d35681642ef659872761a3638528421fdd0ff51c111cf0c6ebfb06949"
+    },
+    "expected_views": {
+      "all-observed": {
+        "workflows": 65,
+        "parent_tasks": 50,
+        "episodes": 472,
+        "snapshots": 2414,
+        "risk_rows": 7051
+      },
+      "qualified": {
+        "workflows": 54,
+        "parent_tasks": 47,
+        "episodes": 296,
+        "snapshots": 1553,
+        "risk_rows": 4560
+      }
+    },
+    "paired_bootstrap_draws": 2000,
+    "weighting": "each workflow total 1, equal episodes within workflow; score macro parent",
+    "evaluation_strata": [
+      "acquisition_round",
+      "eventual_episode_duration",
+      "eventual_execution_quality",
+      "observed_prior_failure",
+      "observed_current_retry",
+      "elapsed_idle_ge_1s"
+    ],
+    "enhancement_protocol": "same base information as prior comparison; sidecars supply evaluation metadata only",
+    "validation_scope": "development only; no independent source or time holdout"
+  },
+  "baseline_configuration": {
+    "stage": "empirical_baseline_review_1",
+    "scope": "development_fit_and_training_preview_only",
+    "datasets": {
+      "all-main": ".artifacts/d2-next/datasets/all-main",
+      "qualified": ".artifacts/d2-next/datasets/qualified"
+    },
+    "execution_quality": "results/prediction/d2_mbpp_round/execution-quality.json",
+    "right_edges": [
+      0.01,
+      0.03,
+      0.1,
+      0.3,
+      1,
+      3,
+      10,
+      30,
+      60,
+      120,
+      300,
+      600
+    ],
+    "elapsed_edges": [
+      0.03,
+      0.1,
+      0.3,
+      1
+    ],
+    "min_group_workflows": 3,
+    "prior_weight": 1.0,
+    "weighting": "each_workflow_total_1_each_episode_equal_within_workflow",
+    "conditioning_features": [
+      "tool_name",
+      "phase",
+      "elapsed_idle_s"
+    ],
+    "variants": [
+      "global",
+      "conditional"
+    ]
+  },
+  "configuration_sha256": "36ccb2c36d0b983275a24f6e2d3da9003f7332798214101be8034322c0fa7580",
+  "input_sha256": {
+    "results/prediction/dataset_inventory_50parents_2026-10-31.json": "826c89a11d86b1e7d1a0b2909c0ff017749ab93960495c92372453610262cb96",
+    "results/prediction/d2_mbpp_round/SHA256SUMS.json": "a12afe7fd769681b9c062694c81f680f37cd5c6bed1a563cbc01b23ac8f4f9af",
+    "results/prediction/d2_mbpp_round/execution-quality.json": "e091d877f3b2d000f6abf994bca135d1f13032c909fa7b05789061db63827f9c",
+    ".artifacts/d2-next/datasets/all-main/summary.json": "4374044b7d85d9f8f66b61383e50b9bb3bc62f05c210d1451f1abeb96474d77c",
+    ".artifacts/d2-next/datasets/all-main/episode_labels.jsonl": "4ed519a58652fc01e7754c0ee2f94823a8f2dc38c481f2d31c8a383e6ad908ea",
+    ".artifacts/d2-next/datasets/all-main/events.jsonl": "cbcacd8d656551a423da0307012af67448af68d86c553b84f65e7abd8701e0ce",
+    ".artifacts/d2-next/datasets/all-main/snapshots.jsonl": "add85c3bd4ca175408c2c2ee8df54293954d6c1f43e4cb8e8b4bc30f6b4385c1",
+    ".artifacts/d2-next/datasets/all-main/targets.jsonl": "4e40654b0b09571cd8dc6db416bfe24f5b7f616e1c36f7361dbd4e152e4b6852",
+    ".artifacts/d2-next/datasets/qualified/summary.json": "33e145bccdd5e5638915d62ed7814311fbf1728ce128af5373f4d02181701ac5",
+    ".artifacts/d2-next/datasets/qualified/episode_labels.jsonl": "e1cb2afba2e514c45fe8580a6bb632eadba05b3eb85a6ede425b42e0bfbc094a",
+    ".artifacts/d2-next/datasets/qualified/events.jsonl": "dded92f3e0d18c5c2d8b3f0c4b9229fd33661d629eb9c63ad177b2bde1e91413",
+    ".artifacts/d2-next/datasets/qualified/snapshots.jsonl": "a68b70aec606d32b8f6a8633679f0712c71d645c36a384147750178224472616",
+    ".artifacts/d2-next/datasets/qualified/targets.jsonl": "5fcca1e8da40256d1a4a2b793f484223597e0c81fff61cfcc9bbbe4dd05cb528",
+    "results/prediction/d2_expansion_v1/SHA256SUMS.json": "41642e520ed50b7cc87121328c52acdcdbc56a5f3e4afdc399ef2774330303ec",
+    "results/prediction/d2_expansion_v1/execution-quality.json": "09cb2360e6d88e75357de5ba877bfc5e4e147b99d7727f8e1d223d092a190ae5",
+    ".artifacts/d2-expansion-v1/datasets/all-observed/summary.json": "2cbcfa00e6e5be08e67e195e2969e3436f3c5fa8586ea34a4ddee500929beca8",
+    ".artifacts/d2-expansion-v1/datasets/all-observed/episode_labels.jsonl": "0a0ac37eb3c8c2a23b0e48380a760ed1efcc49c59b4e23d903c30a20d4a21da2",
+    ".artifacts/d2-expansion-v1/datasets/all-observed/events.jsonl": "c11ac3c2ad611cfd9850f58b361d6ad7b24e10ee0f39fbb181fc6003f3193b0d",
+    ".artifacts/d2-expansion-v1/datasets/all-observed/features-expansion-v1.jsonl": "3eaed2f70e07573ccdf928d8e4ec2c87bfb0091032b8c0eb1adfd91b5cf90a69",
+    ".artifacts/d2-expansion-v1/datasets/all-observed/snapshots.jsonl": "47c2055ca05d13f1d6bf94a1163e14d07bec2d6b6c29dbf2c255e8cea39c20df",
+    ".artifacts/d2-expansion-v1/datasets/all-observed/targets.jsonl": "9936623989d1625d27d2c25a05d59e6f0d380f018fc77fdeacd261e498cc8878",
+    ".artifacts/d2-expansion-v1/datasets/qualified/summary.json": "d2e0072a1064f28fd4dce8c155aa3b23e9666ea4859feb7af035fae3d0f41840",
+    ".artifacts/d2-expansion-v1/datasets/qualified/episode_labels.jsonl": "c73f7ea6dc3221ff73e38610769ebc688d10ada74669cf389a060a4fbd0f21e4",
+    ".artifacts/d2-expansion-v1/datasets/qualified/events.jsonl": "5aa76db850b5d558825d1936af1a435086f5a4bda298d39060235f528869399e",
+    ".artifacts/d2-expansion-v1/datasets/qualified/features-expansion-v1.jsonl": "ebde0165903843c45900816396d7a0cd30acca03edd979332cce816b73993483",
+    ".artifacts/d2-expansion-v1/datasets/qualified/snapshots.jsonl": "7f52a8fe8e231cb2d9e995581c75bf664abfef4bb0243f6239676b522a2b2474",
+    ".artifacts/d2-expansion-v1/datasets/qualified/targets.jsonl": "564eb277638b77a934e4a1c077717a8e95f871758461eb8bfbc74711e34af74e",
+    "results/prediction/d2_repair_v2/SHA256SUMS.json": "d4fdc8773a0342e78f000c844fdf97d288a68f273337a790a9c86a996f82b0eb",
+    "results/prediction/d2_repair_v2/execution-quality.json": "1e334d812ceb08c4c98a727a05c04f198f3c92aefa8b08db3ddbd4fdb5261a99",
+    "results/prediction/d2_repair_v2/workflow-groups.json": "028124a8ed7ac41094d2b951f1629c55e347e5c2d86544724ae6514150f091ab",
+    ".artifacts/d2-repair-v2-guided/datasets/all-observed/summary.json": "2d9420c68a24be24050478770aaa14d8e5e1a5646a66eabc98192993470fe042",
+    ".artifacts/d2-repair-v2-guided/datasets/all-observed/episode_labels.jsonl": "bc0eb2a145b96ed18dcac8e81f11177b206d2f347432dec38b8e881aa7f98325",
+    ".artifacts/d2-repair-v2-guided/datasets/all-observed/events.jsonl": "7d5d012082a0b739b70a65e8ee5548b80f43a08174b0e807410c4fb119c29415",
+    ".artifacts/d2-repair-v2-guided/datasets/all-observed/features-repair-v2.jsonl": "723c8c3f8ed9384e7b8b9af42084fa020f550102f9e14a01bf4633ab551b7a55",
+    ".artifacts/d2-repair-v2-guided/datasets/all-observed/snapshots.jsonl": "4a4a10e514f9be7cf2fbee2233c091501724f27c37d6b957852de261b2d01753",
+    ".artifacts/d2-repair-v2-guided/datasets/all-observed/targets.jsonl": "48c1d14649e2c946b0a1394317399ac0dd7e797cae3f52205b60963e2579778a",
+    ".artifacts/d2-repair-v2-guided/datasets/qualified/summary.json": "9300a5d031f95b0c5b41a50778726f57e3dac907fbd854d8e55f98e14ce945e4",
+    ".artifacts/d2-repair-v2-guided/datasets/qualified/episode_labels.jsonl": "bbb75eeda991eed4a2d0af27d367b1c17000cc0101c03fb9234efb6e5ef74878",
+    ".artifacts/d2-repair-v2-guided/datasets/qualified/events.jsonl": "c516c6405bc287183ef0687b136077b463494432c87795a211596f728daee0d2",
+    ".artifacts/d2-repair-v2-guided/datasets/qualified/features-repair-v2.jsonl": "6a0056aaba098bcf50945c173b1b5af5c091388dad225e5b59771bed9b345842",
+    ".artifacts/d2-repair-v2-guided/datasets/qualified/snapshots.jsonl": "f46e3457d55af35f2e7fc23de9a123a9be03ad7360236d9ff87014ff01f42199",
+    ".artifacts/d2-repair-v2-guided/datasets/qualified/targets.jsonl": "1cbfb13a8d741e4b4c8cd6e813e4e51f88abcda8f498b8d067ce6ce50deb5c0a",
+    "results/prediction/d2_diversity_v3/SHA256SUMS.json": "69f3c271719b472e9afa939d425a0a3cf010c9289b0ab72c156aa1358f8df0a5",
+    "results/prediction/d2_diversity_v3/execution-quality.json": "a5c77cf358f1cf4c12448f0e1f3236c4890505c1b99c5bb3113360c1ecb02a96",
+    "results/prediction/d2_diversity_v3/workflow-groups.json": "f73e140b94b0e6ea2cafe6cd012a5affaf2c8ceb4fdeb3f53bc788cc8a71c3eb",
+    ".artifacts/d2-diversity-v3/datasets/all-observed/summary.json": "7c07db893bc08b9d03a7029e269ce1eb7b60bbff96a1d682758fcba75340b290",
+    ".artifacts/d2-diversity-v3/datasets/all-observed/episode_labels.jsonl": "d9aec0a8114dfc400e0670e1cd31d09b409b11bfcf58a75c44b647b1ee3e7626",
+    ".artifacts/d2-diversity-v3/datasets/all-observed/events.jsonl": "a063886750ea890e2f9724b7daea2aae42339d5e3644b3706bd40176f6281c04",
+    ".artifacts/d2-diversity-v3/datasets/all-observed/features-expansion-v1.jsonl": "1c1bc3047cf84a2ef7373fb827ffeced8a16deea9bada7021c30ea15ca1230ab",
+    ".artifacts/d2-diversity-v3/datasets/all-observed/snapshots.jsonl": "dd687d7c71a19eb79b887df10eccbcb051330e180edf5612fe95b2148c7ea345",
+    ".artifacts/d2-diversity-v3/datasets/all-observed/targets.jsonl": "11687b52652e2f91b66fe85a3cff20cb4feebe777b618a44c0bc31c37281efcc",
+    ".artifacts/d2-diversity-v3/datasets/qualified/summary.json": "e65d4589b6b81cddd89e387a64bb3a8a35af6a8972e77a4ea2478541e48d71b8",
+    ".artifacts/d2-diversity-v3/datasets/qualified/episode_labels.jsonl": "e8344fb8d5912286406fcc4db71c44c58db011da9f6d67bb82e59858831597b8",
+    ".artifacts/d2-diversity-v3/datasets/qualified/events.jsonl": "a5301556bded1ff93f73af4ca88cd34fc049e2c7099d351a328a04091674ab2c",
+    ".artifacts/d2-diversity-v3/datasets/qualified/features-expansion-v1.jsonl": "1b297b3cd09cabfde1a5ad423466aec7b11adc0171e41d57277fad5225c907e4",
+    ".artifacts/d2-diversity-v3/datasets/qualified/snapshots.jsonl": "a5a5f4b8ddd6f87c6df648a0ab6d2fcf34d99fa002f39cc6365f7487f2ecf170",
+    ".artifacts/d2-diversity-v3/datasets/qualified/targets.jsonl": "486c06cec2b80408b560d42b9efda2b46d64ac7989bd64357b0c7949899dbdaf"
+  },
+  "source_sha256": {
+    "scripts/train_prediction_v2.py": "7c28eb53cfcfebb0e1faa4e7c730ed6d587f4f22c922b124d5d67822ced9ad45",
+    "scripts/train_reuse_predictor.py": "8bdcca888b327618d446ef136af700b256e7f7642331d3e9a5c02b662d299083",
+    "src/leasepath/prediction_merged.py": "ef1041e342af9c7181a8c3a4f70c0be55a3881749e267c795604caae14c9f135",
+    "src/leasepath/prediction_training.py": "3d9a04d3c11f906b412af0610d4ee04d7b9569a3869b23b546865b95a14377f0",
+    "src/leasepath/gbdt_predictor.py": "df8645870c255c70f2edee7ec288c1bdf7d6fd8c5bddc0335d3fae7d460d440c",
+    "src/leasepath/reuse_predictor.py": "24773e363c9fb77e3008cdf7672a4136a4cd2ebb95c85cdc5752126137b67729",
+    "src/leasepath/d2_hazards.py": "0feaa2ec2ec327ff5e5feedb9d5018dcd61ce95f9041b5d47a6d63b6ffe535b2",
+    "src/leasepath/prediction_state.py": "513acd885ad7bf490a52c1f3be004429489ed682920b26b3213e17378ce6d30f",
+    "tests/test_prediction_merged.py": "62d76e76f5bae318430a659e6bccf3999e8d0960de011247cff0a724d68c928a",
+    "tests/test_prediction_training.py": "d2d46476d397531e2ff0c3a13f040da070c93de2a065adb0e8fac6a2122173f8",
+    "tests/test_gbdt_predictor.py": "2535f68af4fbf7934e6185abedfd3cadd0b65c967f36fcced568a48dfea77cff",
+    "pyproject.toml": "aa906d0087e274b0eaa41c2aed295ee69089575cb6052ec1b72eb1b8599457c3"
+  },
+  "versions": {
+    "python": "3.12.0",
+    "lightgbm": "4.6.0",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "machine": "aarch64"
+  },
+  "completed_at_utc": "2026-10-31T10:48:25.242537+00:00"
+}

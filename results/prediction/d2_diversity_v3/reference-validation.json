@@ -1,0 +1,206 @@
+[
+  {
+    "task_id": "mbpp-0019",
+    "reference_returncode": 0,
+    "stub_returncode": 1,
+    "stub_rejected": true
+  },
+  {
+    "task_id": "mbpp-0057",
+    "reference_returncode": 0,
+    "stub_returncode": 1,
+    "stub_rejected": true
+  },
+  {
+    "task_id": "mbpp-0058",
+    "reference_returncode": 0,
+    "stub_returncode": 1,
+    "stub_rejected": true
+  },
+  {
+    "task_id": "mbpp-0059",
+    "reference_returncode": 0,
+    "stub_returncode": 1,
+    "stub_rejected": true
+  },
+  {
+    "task_id": "mbpp-0061",
+    "reference_returncode": 0,
+    "stub_returncode": 1,
+    "stub_rejected": true
+  },
+  {
+    "task_id": "mbpp-0062",
+    "reference_returncode": 0,
+    "stub_returncode": 1,
+    "stub_rejected": true
+  },
+  {
+    "task_id": "mbpp-0063",
+    "reference_returncode": 0,
+    "stub_returncode": 1,
+    "stub_rejected": true
+  },
+  {
+    "task_id": "mbpp-0064",
+    "reference_returncode": 0,
+    "stub_returncode": 1,
+    "stub_rejected": true
+  },
+  {
+    "task_id": "mbpp-0065",
+    "reference_returncode": 0,
+    "stub_returncode": 1,
+    "stub_rejected": true
+  },
+  {
+    "task_id": "mbpp-0067",
+    "reference_returncode": 0,
+    "stub_returncode": 1,
+    "stub_rejected": true
+  },
+  {
+    "task_id": "mbpp-0068",
+    "reference_returncode": 0,
+    "stub_returncode": 1,
+    "stub_rejected": true
+  },
+  {
+    "task_id": "mbpp-0106",
+    "reference_returncode": 0,
+    "stub_returncode": 1,
+    "stub_rejected": true
+  },
+  {
+    "task_id": "mbpp-0072",
+    "reference_returncode": 0,
+    "stub_returncode": 1,
+    "stub_rejected": true
+  },
+  {
+    "task_id": "mbpp-0074",
+    "reference_returncode": 0,
+    "stub_returncode": 1,
+    "stub_rejected": true
+  },
+  {
+    "task_id": "mbpp-0075",
+    "reference_returncode": 0,
+    "stub_returncode": 1,
+    "stub_rejected": true
+  },
+  {
+    "task_id": "mbpp-0077",
+    "reference_returncode": 0,
+    "stub_returncode": 1,
+    "stub_rejected": true
+  },
+  {
+    "task_id": "mbpp-0080",
+    "reference_returncode": 0,
+    "stub_returncode": 1,
+    "stub_rejected": true
+  },
+  {
+    "task_id": "mbpp-0084",
+    "reference_returncode": 0,
+    "stub_returncode": 1,
+    "stub_rejected": true
+  },
+  {
+    "task_id": "mbpp-0086",
+    "reference_returncode": 0,
+    "stub_returncode": 1,
+    "stub_rejected": true
+  },
+  {
+    "task_id": "mbpp-0087",
+    "reference_returncode": 0,
+    "stub_returncode": 1,
+    "stub_rejected": true
+  },
+  {
+    "task_id": "mbpp-0088",
+    "reference_returncode": 0,
+    "stub_returncode": 1,
+    "stub_rejected": true
+  },
+  {
+    "task_id": "mbpp-0090",
+    "reference_returncode": 0,
+    "stub_returncode": 1,
+    "stub_rejected": true
+  },
+  {
+    "task_id": "mbpp-0091",
+    "reference_returncode": 0,
+    "stub_returncode": 1,
+    "stub_rejected": true
+  },
+  {
+    "task_id": "mbpp-0092",
+    "reference_returncode": 0,
+    "stub_returncode": 1,
+    "stub_rejected": true
+  },
+  {
+    "task_id": "mbpp-0093",
+    "reference_returncode": 0,
+    "stub_returncode": 1,
+    "stub_rejected": true
+  },
+  {
+    "task_id": "mbpp-0094",
+    "reference_returncode": 0,
+    "stub_returncode": 1,
+    "stub_rejected": true
+  },
+  {
+    "task_id": "mbpp-0095",
+    "reference_returncode": 0,
+    "stub_returncode": 1,
+    "stub_rejected": true
+  },
+  {
+    "task_id": "mbpp-0096",
+    "reference_returncode": 0,
+    "stub_returncode": 1,
+    "stub_rejected": true
+  },
+  {
+    "task_id": "mbpp-0097",
+    "reference_returncode": 0,
+    "stub_returncode": 1,
+    "stub_rejected": true
+  },
+  {
+    "task_id": "mbpp-0099",
+    "reference_returncode": 0,
+    "stub_returncode": 1,
+    "stub_rejected": true
+  },
+  {
+    "task_id": "mbpp-0102",
+    "reference_returncode": 0,
+    "stub_returncode": 1,
+    "stub_rejected": true
+  },
+  {
+    "task_id": "mbpp-0103",
+    "reference_returncode": 0,
+    "stub_returncode": 1,
+    "stub_rejected": true
+  },
+  {
+    "task_id": "mbpp-0105",
+    "reference_returncode": 0,
+    "stub_returncode": 1,
+    "stub_rejected": true
+  },
+  {
+    "task_id": "mbpp-0108",
+    "reference_returncode": 0,
+    "stub_returncode": 1,
+    "stub_rejected": true
+  }
+]

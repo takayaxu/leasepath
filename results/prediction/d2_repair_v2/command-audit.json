@@ -1,0 +1,206 @@
+[
+  {
+    "workflow_id": "repair-csv-ledger-medium-greedy-guided-92cb7b3e",
+    "tool_id": "8d8c77d969954357aab4b3b5abc9ec33",
+    "command": "cat README.md solution.py test_visible.py test_workload.py",
+    "category": "inspect"
+  },
+  {
+    "workflow_id": "repair-csv-ledger-medium-greedy-guided-92cb7b3e",
+    "tool_id": "7104a0ccda114220ac1a987ced85f0c7",
+    "command": "python -m pytest -q test_visible.py test_workload.py",
+    "category": "test"
+  },
+  {
+    "workflow_id": "repair-csv-ledger-medium-greedy-guided-92cb7b3e",
+    "tool_id": "b23c5549d6bb4f8c8cfbd6f99d9166c0",
+    "command": "cat <<'PY' > solution.py\nimport csv\n\ndef summarize_csv(path):\n    totals = {}\n    with open(path, newline='', encoding='utf-8') as f:\n        reader = csv.DictReader(f)\n        for row in reader:\n            tenant = row['tenant']\n            cents = int(row['cents'])\n            if tenant in totals:\n                totals[tenant] += cents\n            else:\n                totals[tenant] = cents\n    return totals\nPY",
+    "category": "edit"
+  },
+  {
+    "workflow_id": "repair-csv-ledger-medium-greedy-guided-92cb7b3e",
+    "tool_id": "fc20f64b129f469281374663a2cd1e50",
+    "command": "python -m pytest -q test_visible.py test_workload.py",
+    "category": "test"
+  },
+  {
+    "workflow_id": "repair-csv-ledger-medium-greedy-guided-92cb7b3e",
+    "tool_id": "bfa65b1f84c9446fb0753c78f6c41040",
+    "command": "echo COMPLETE_TASK_AND_SUBMIT_FINAL_OUTPUT",
+    "category": "shell"
+  },
+  {
+    "workflow_id": "repair-csv-ledger-large-greedy-guided-38e69c1f",
+    "tool_id": "d3d7513befe64028883ac5cde6667eb5",
+    "command": "cat README.md solution.py test_visible.py test_workload.py",
+    "category": "inspect"
+  },
+  {
+    "workflow_id": "repair-csv-ledger-large-greedy-guided-38e69c1f",
+    "tool_id": "2e5faef6f78c4bfc8decb4154994d145",
+    "command": "python -m pytest -q test_visible.py test_workload.py",
+    "category": "test"
+  },
+  {
+    "workflow_id": "repair-csv-ledger-large-greedy-guided-38e69c1f",
+    "tool_id": "dfeb7cb12abd49c6ae24dcd4619e5f3b",
+    "command": "cat <<'PY' > solution.py\nimport csv\n\ndef summarize_csv(path):\n    totals = {}\n    with open(path, newline='', encoding='utf-8') as f:\n        reader = csv.DictReader(f)\n        for row in reader:\n            tenant = row['tenant']\n            cents = int(row['cents'])\n            if tenant in totals:\n                totals[tenant] += cents\n            else:\n                totals[tenant] = cents\n    return totals\nPY",
+    "category": "edit"
+  },
+  {
+    "workflow_id": "repair-csv-ledger-large-greedy-guided-38e69c1f",
+    "tool_id": "c673729aac7d47d6ab6a33312adcc347",
+    "command": "python -m pytest -q test_visible.py test_workload.py",
+    "category": "test"
+  },
+  {
+    "workflow_id": "repair-csv-ledger-large-greedy-guided-38e69c1f",
+    "tool_id": "37c0fac63801446580702b9f5357f612",
+    "command": "echo COMPLETE_TASK_AND_SUBMIT_FINAL_OUTPUT",
+    "category": "shell"
+  },
+  {
+    "workflow_id": "repair-jsonl-status-medium-greedy-guided-b1ca593a",
+    "tool_id": "81f13d1e55f849ae98f86318bfa4bbe6",
+    "command": "cat README.md solution.py test_visible.py test_workload.py",
+    "category": "inspect"
+  },
+  {
+    "workflow_id": "repair-jsonl-status-medium-greedy-guided-b1ca593a",
+    "tool_id": "52db5b4dc773438fafce8b300b2f34bf",
+    "command": "python -m pytest -q test_visible.py test_workload.py",
+    "category": "test"
+  },
+  {
+    "workflow_id": "repair-jsonl-status-medium-greedy-guided-b1ca593a",
+    "tool_id": "a9cc9984c07b48dbbf2793ac2230dabb",
+    "command": "cat <<'PY' > solution.py\nimport json\n\ndef count_statuses(path):\n    counts = {}\n    with open(path, encoding='utf-8') as f:\n        for line in f:\n            if line.strip():\n                data = json.loads(line)\n                status = data.get('status')\n                if status:\n                    counts[status] = counts.get(status, 0) + 1\n    return counts\nPY",
+    "category": "edit"
+  },
+  {
+    "workflow_id": "repair-jsonl-status-medium-greedy-guided-b1ca593a",
+    "tool_id": "0808418cdad3445b94e9286b6d20f5cb",
+    "command": "python -m pytest -q test_visible.py test_workload.py",
+    "category": "test"
+  },
+  {
+    "workflow_id": "repair-jsonl-status-medium-greedy-guided-b1ca593a",
+    "tool_id": "9b004f2daf7443bfbdaf122a65d13b0e",
+    "command": "echo COMPLETE_TASK_AND_SUBMIT_FINAL_OUTPUT",
+    "category": "shell"
+  },
+  {
+    "workflow_id": "repair-jsonl-status-large-greedy-guided-fbc7d10a",
+    "tool_id": "b0494c5555bf47ceb2446ff6ae1d416b",
+    "command": "cat README.md solution.py test_visible.py test_workload.py",
+    "category": "inspect"
+  },
+  {
+    "workflow_id": "repair-jsonl-status-large-greedy-guided-fbc7d10a",
+    "tool_id": "bd4dec2a37254b0090f6e8fbafdd43c8",
+    "command": "python -m pytest -q test_visible.py test_workload.py",
+    "category": "test"
+  },
+  {
+    "workflow_id": "repair-jsonl-status-large-greedy-guided-fbc7d10a",
+    "tool_id": "0c41b9dad4d74abbbeec893d2b226182",
+    "command": "cat <<'PY' > solution.py\nimport json\n\ndef count_statuses(path):\n    counts = {}\n    with open(path, encoding='utf-8') as f:\n        for line in f:\n            line = line.strip()\n            if line:\n                try:\n                    data = json.loads(line)\n                    status = data.get('status')\n                    if status:\n                        counts[status] = counts.get(status, 0) + 1\n                except json.JSONDecodeError:\n                    continue\n    return counts\nPY",
+    "category": "edit"
+  },
+  {
+    "workflow_id": "repair-jsonl-status-large-greedy-guided-fbc7d10a",
+    "tool_id": "b46e1553bb37448494fa7fdd66e6c4ac",
+    "command": "python -m pytest -q test_visible.py test_workload.py",
+    "category": "test"
+  },
+  {
+    "workflow_id": "repair-jsonl-status-large-greedy-guided-fbc7d10a",
+    "tool_id": "2c6ff39b0d6f42a18a2df9334e922149",
+    "command": "echo COMPLETE_TASK_AND_SUBMIT_FINAL_OUTPUT",
+    "category": "shell"
+  },
+  {
+    "workflow_id": "repair-graph-distance-medium-greedy-guided-b6c0a537",
+    "tool_id": "c3ffa1eac19840d88bb6e46d116b8297",
+    "command": "cat README.md solution.py test_visible.py test_workload.py",
+    "category": "inspect"
+  },
+  {
+    "workflow_id": "repair-graph-distance-medium-greedy-guided-b6c0a537",
+    "tool_id": "d7d58f48b3c84ffcaef78303e2dabf59",
+    "command": "python -m pytest -q test_visible.py test_workload.py",
+    "category": "test"
+  },
+  {
+    "workflow_id": "repair-graph-distance-medium-greedy-guided-b6c0a537",
+    "tool_id": "1bb14782a600411888a62b51c8dc20fa",
+    "command": "# Replace the entire solution.py using cat <<'PY' > solution.py with your complete Python module\ncat <<'PY' > solution.py\nfrom collections import deque\n\ndef shortest_distance(path, start, target):\n    if start == target:\n        return 0\n\n    graph = {}\n    with open(path, 'r') as file:\n        for line in file:\n            u, v = map(int, line.strip().split())\n            if u not in graph:\n                graph[u] = []\n            if v not in graph:\n                graph[v] = []\n            graph[u].append(v)\n            graph[v].append(u)\n\n    visited = set()\n    queue = deque([(start, 0)])\n\n    while queue:\n        current, distance = queue.popleft()\n        if current == target:\n            return distance\n        if current not in visited:\n            visited.add(current)\n            if current in graph:\n                for neighbor in graph[current]:\n                    if neighbor not in visited:\n                        queue.append((neighbor, distance + 1))\n\n    return None\nPY",
+    "category": "edit"
+  },
+  {
+    "workflow_id": "repair-graph-distance-medium-greedy-guided-b6c0a537",
+    "tool_id": "234a7e906a464200a8d04165d07bbb46",
+    "command": "python -m pytest -q test_visible.py test_workload.py",
+    "category": "test"
+  },
+  {
+    "workflow_id": "repair-graph-distance-medium-greedy-guided-b6c0a537",
+    "tool_id": "06e0056d09ce462b8caafb669d4b38ca",
+    "command": "# Replace the entire solution.py using cat <<'PY' > solution.py with your complete Python module\ncat <<'PY' > solution.py\nfrom collections import deque\n\ndef shortest_distance(path, start, target):\n    if start == target:\n        return 0\n\n    graph = {}\n    with open(path, 'r') as file:\n        for line in file:\n            line = line.strip()\n            if line:\n                u, v = map(int, line.split())\n                if u not in graph:\n                    graph[u] = []\n                if v not in graph:\n                    graph[v] = []\n                graph[u].append(v)\n                graph[v].append(u)\n\n    visited = set()\n    queue = deque([(start, 0)])\n\n    while queue:\n        current, distance = queue.popleft()\n        if current == target:\n            return distance\n        if current not in visited:\n            visited.add(current)\n            if current in graph:\n                for neighbor in graph[current]:\n                    if neighbor not in visited:\n                        queue.append((neighbor, distance + 1))\n\n    return None\nPY",
+    "category": "edit"
+  },
+  {
+    "workflow_id": "repair-graph-distance-medium-greedy-guided-b6c0a537",
+    "tool_id": "0fd8138f80b24e3ba053610d6aedbde4",
+    "command": "python -m pytest -q test_visible.py test_workload.py",
+    "category": "test"
+  },
+  {
+    "workflow_id": "repair-graph-distance-medium-greedy-guided-b6c0a537",
+    "tool_id": "42e15f9bcdcb433ea547fe65a80178d8",
+    "command": "echo COMPLETE_TASK_AND_SUBMIT_FINAL_OUTPUT",
+    "category": "shell"
+  },
+  {
+    "workflow_id": "repair-graph-distance-large-greedy-guided-57560c5d",
+    "tool_id": "b396ad71c7384074bf14649a7752f2f4",
+    "command": "cat README.md solution.py test_visible.py test_workload.py",
+    "category": "inspect"
+  },
+  {
+    "workflow_id": "repair-graph-distance-large-greedy-guided-57560c5d",
+    "tool_id": "eabb9b4ca880408dbfec30a01312b942",
+    "command": "python -m pytest -q test_visible.py test_workload.py",
+    "category": "test"
+  },
+  {
+    "workflow_id": "repair-graph-distance-large-greedy-guided-57560c5d",
+    "tool_id": "dc89c3ae8508472dbb353b307b6a4deb",
+    "command": "# Replace the entire solution.py using cat <<'PY' > solution.py with your complete Python module\ncat <<'PY' > solution.py\nfrom collections import deque\n\ndef shortest_distance(path, start, target):\n    if start == target:\n        return 0\n\n    graph = {}\n    with open(path, 'r') as file:\n        for line in file:\n            u, v = map(int, line.strip().split())\n            if u not in graph:\n                graph[u] = []\n            if v not in graph:\n                graph[v] = []\n            graph[u].append(v)\n            graph[v].append(u)\n\n    visited = set()\n    queue = deque([(start, 0)])\n\n    while queue:\n        current, distance = queue.popleft()\n        if current == target:\n            return distance\n        if current not in visited:\n            visited.add(current)\n            if current in graph:\n                for neighbor in graph[current]:\n                    if neighbor not in visited:\n                        queue.append((neighbor, distance + 1))\n\n    return None\nPY",
+    "category": "edit"
+  },
+  {
+    "workflow_id": "repair-graph-distance-large-greedy-guided-57560c5d",
+    "tool_id": "72e1f6ef1b38486b8ae1234774fab132",
+    "command": "python -m pytest -q test_visible.py test_workload.py",
+    "category": "test"
+  },
+  {
+    "workflow_id": "repair-graph-distance-large-greedy-guided-57560c5d",
+    "tool_id": "2fd916ffd41e4b358045ab18c8927130",
+    "command": "# Replace the entire solution.py using cat <<'PY' > solution.py with your complete Python module\ncat <<'PY' > solution.py\nfrom collections import deque\n\ndef shortest_distance(path, start, target):\n    if start == target:\n        return 0\n\n    graph = {}\n    with open(path, 'r') as file:\n        for line in file:\n            line = line.strip()\n            if not line:\n                continue\n            u, v = map(int, line.split())\n            if u not in graph:\n                graph[u] = []\n            if v not in graph:\n                graph[v] = []\n            graph[u].append(v)\n            graph[v].append(u)\n\n    visited = set()\n    queue = deque([(start, 0)])\n\n    while queue:\n        current, distance = queue.popleft()\n        if current == target:\n            return distance\n        if current not in visited:\n            visited.add(current)\n            if current in graph:\n                for neighbor in graph[current]:\n                    if neighbor not in visited:\n                        queue.append((neighbor, distance + 1))\n\n    return None\nPY",
+    "category": "edit"
+  },
+  {
+    "workflow_id": "repair-graph-distance-large-greedy-guided-57560c5d",
+    "tool_id": "e04a6518f858429d9c351421608c4233",
+    "command": "python -m pytest -q test_visible.py test_workload.py",
+    "category": "test"
+  },
+  {
+    "workflow_id": "repair-graph-distance-large-greedy-guided-57560c5d",
+    "tool_id": "84d117823a6943babb1e72c873911df9",
+    "command": "echo COMPLETE_TASK_AND_SUBMIT_FINAL_OUTPUT",
+    "category": "shell"
+  }
+]

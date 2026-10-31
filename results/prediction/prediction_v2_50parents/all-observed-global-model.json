@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "kind": "empirical_competing_risk",
+  "labels": [
+    "U",
+    "D",
+    "waiting"
+  ],
+  "configuration": {
+    "right_edges": [
+      0.01,
+      0.03,
+      0.1,
+      0.3,
+      1,
+      3,
+      10,
+      30,
+      60,
+      120,
+      300,
+      600
+    ],
+    "conditional": false,
+    "elapsed_edges": [
+      0.03,
+      0.1,
+      0.3,
+      1
+    ],
+    "min_group_workflows": 3,
+    "prior_weight": 1.0
+  },
+  "compatibilities": [
+    "8c2c272c9e4510c4dae33537bbe75970e56a8e7dfdbfdf213b7283f07c994dfe"
+  ],
+  "global_counts": [
+    {
+      "counts": [
+        11.578449374699352,
+        3.0229497354497328,
+        50.398600889850506
+      ],
+      "workflows": 65
+    },
+    {
+      "counts": [
+        16.351587602212565,
+        8.141335978835961,
+        25.905677308802638
+      ],
+      "workflows": 65
+    },
+    {
+      "counts": [
+        15.613105158730047,
+        0.15416666666666667,
+        10.138405483405558
+      ],
+      "workflows": 65
+    },
+    {
+      "counts": [
+        0.9494047619047623,
+        0.0,
+        9.189000721500795
+      ],
+      "workflows": 65
+    },
+    {
+      "counts": [
+        6.947106782106819,
+        0.0,
+        2.241893939393944
+      ],
+      "workflows": 65
+    },
+    {
+      "counts": [
+        1.1256421356421362,
+        0.0,
+        1.1162518037518034
+      ],
+      "workflows": 12
+    },
+    {
+      "counts": [
+        1.1162518037518034,
+        0.0,
+        0.0
+      ],
+      "workflows": 6
+    },
+    {
+      "counts": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "workflows": 0
+    },
+    {
+      "counts": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "workflows": 0
+    },
+    {
+      "counts": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "workflows": 0
+    },
+    {
+      "counts": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "workflows": 0
+    },
+    {
+      "counts": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "workflows": 0
+    }
+  ],
+  "groups": {}
+}

@@ -1,0 +1,278 @@
+{
+  "variant": "baseline",
+  "tasks": 10,
+  "tests_passed_tasks": 0,
+  "execution_quality_passed_tasks": 0,
+  "results": [
+    {
+      "task_id": "mbpp-0002",
+      "variant": "baseline",
+      "workflow_id": null,
+      "returncode": 1,
+      "tests_observed": true,
+      "test_counts": {
+        "passed": 0,
+        "failed": 43,
+        "error": 0,
+        "skipped": 0
+      },
+      "tests_passed": false,
+      "quality_criteria": {
+        "independent_and_visible_tests_passed": false,
+        "submitted": false,
+        "source_edited": false,
+        "protected_files_unchanged": false,
+        "real_inspection": false,
+        "real_source_edit": false,
+        "successful_visible_pytest": false,
+        "no_excess_identical_loop": true
+      },
+      "execution_quality_passed": false,
+      "source_sha256": "f2c1ceb113e1998c2b52c14b1a162dbaa06d9a1aa35bda3da5e62f1d75d8eb98",
+      "evaluation_scope": "MBPP-derived local protocol; independent additional tests, not official MBPP pass@1"
+    },
+    {
+      "task_id": "mbpp-0003",
+      "variant": "baseline",
+      "workflow_id": null,
+      "returncode": 1,
+      "tests_observed": true,
+      "test_counts": {
+        "passed": 0,
+        "failed": 54,
+        "error": 0,
+        "skipped": 0
+      },
+      "tests_passed": false,
+      "quality_criteria": {
+        "independent_and_visible_tests_passed": false,
+        "submitted": false,
+        "source_edited": false,
+        "protected_files_unchanged": false,
+        "real_inspection": false,
+        "real_source_edit": false,
+        "successful_visible_pytest": false,
+        "no_excess_identical_loop": true
+      },
+      "execution_quality_passed": false,
+      "source_sha256": "8c7fa59a54d30cebff82725b13d75ee49e9a1c709ba39dcd8e2e6c2eb041f76a",
+      "evaluation_scope": "MBPP-derived local protocol; independent additional tests, not official MBPP pass@1"
+    },
+    {
+      "task_id": "mbpp-0004",
+      "variant": "baseline",
+      "workflow_id": null,
+      "returncode": 1,
+      "tests_observed": true,
+      "test_counts": {
+        "passed": 0,
+        "failed": 43,
+        "error": 0,
+        "skipped": 0
+      },
+      "tests_passed": false,
+      "quality_criteria": {
+        "independent_and_visible_tests_passed": false,
+        "submitted": false,
+        "source_edited": false,
+        "protected_files_unchanged": false,
+        "real_inspection": false,
+        "real_source_edit": false,
+        "successful_visible_pytest": false,
+        "no_excess_identical_loop": true
+      },
+      "execution_quality_passed": false,
+      "source_sha256": "83260ca4d16dede43821a8131746dc02ed9539f1b3f2dc523d71dafd3a68d8cb",
+      "evaluation_scope": "MBPP-derived local protocol; independent additional tests, not official MBPP pass@1"
+    },
+    {
+      "task_id": "mbpp-0007",
+      "variant": "baseline",
+      "workflow_id": null,
+      "returncode": 1,
+      "tests_observed": true,
+      "test_counts": {
+        "passed": 0,
+        "failed": 43,
+        "error": 0,
+        "skipped": 0
+      },
+      "tests_passed": false,
+      "quality_criteria": {
+        "independent_and_visible_tests_passed": false,
+        "submitted": false,
+        "source_edited": false,
+        "protected_files_unchanged": false,
+        "real_inspection": false,
+        "real_source_edit": false,
+        "successful_visible_pytest": false,
+        "no_excess_identical_loop": true
+      },
+      "execution_quality_passed": false,
+      "source_sha256": "5ca4a949b809c30bd949ec8e3b043eeb41404fcea770d18702c45c144b2c71f2",
+      "evaluation_scope": "MBPP-derived local protocol; independent additional tests, not official MBPP pass@1"
+    },
+    {
+      "task_id": "mbpp-0008",
+      "variant": "baseline",
+      "workflow_id": null,
+      "returncode": 1,
+      "tests_observed": true,
+      "test_counts": {
+        "passed": 0,
+        "failed": 43,
+        "error": 0,
+        "skipped": 0
+      },
+      "tests_passed": false,
+      "quality_criteria": {
+        "independent_and_visible_tests_passed": false,
+        "submitted": false,
+        "source_edited": false,
+        "protected_files_unchanged": false,
+        "real_inspection": false,
+        "real_source_edit": false,
+        "successful_visible_pytest": false,
+        "no_excess_identical_loop": true
+      },
+      "execution_quality_passed": false,
+      "source_sha256": "9ea75285288d14cfdcc46d6db3b660b9d1ba68978c41e170c10368e23ddbcaa0",
+      "evaluation_scope": "MBPP-derived local protocol; independent additional tests, not official MBPP pass@1"
+    },
+    {
+      "task_id": "mbpp-0009",
+      "variant": "baseline",
+      "workflow_id": null,
+      "returncode": 1,
+      "tests_observed": true,
+      "test_counts": {
+        "passed": 0,
+        "failed": 70,
+        "error": 0,
+        "skipped": 0
+      },
+      "tests_passed": false,
+      "quality_criteria": {
+        "independent_and_visible_tests_passed": false,
+        "submitted": false,
+        "source_edited": false,
+        "protected_files_unchanged": false,
+        "real_inspection": false,
+        "real_source_edit": false,
+        "successful_visible_pytest": false,
+        "no_excess_identical_loop": true
+      },
+      "execution_quality_passed": false,
+      "source_sha256": "6e709c4515bead7a55e8f60f6f0a62ff9ed994450d9e1a50145a54b264e145e8",
+      "evaluation_scope": "MBPP-derived local protocol; independent additional tests, not official MBPP pass@1"
+    },
+    {
+      "task_id": "mbpp-0011",
+      "variant": "baseline",
+      "workflow_id": null,
+      "returncode": 1,
+      "tests_observed": true,
+      "test_counts": {
+        "passed": 0,
+        "failed": 43,
+        "error": 0,
+        "skipped": 0
+      },
+      "tests_passed": false,
+      "quality_criteria": {
+        "independent_and_visible_tests_passed": false,
+        "submitted": false,
+        "source_edited": false,
+        "protected_files_unchanged": false,
+        "real_inspection": false,
+        "real_source_edit": false,
+        "successful_visible_pytest": false,
+        "no_excess_identical_loop": true
+      },
+      "execution_quality_passed": false,
+      "source_sha256": "34cb8959fa7cfd68e0a2b7f58ca9bad18528caf00a0eaf0c6af0058755154dfa",
+      "evaluation_scope": "MBPP-derived local protocol; independent additional tests, not official MBPP pass@1"
+    },
+    {
+      "task_id": "mbpp-0012",
+      "variant": "baseline",
+      "workflow_id": null,
+      "returncode": 1,
+      "tests_observed": true,
+      "test_counts": {
+        "passed": 0,
+        "failed": 43,
+        "error": 0,
+        "skipped": 0
+      },
+      "tests_passed": false,
+      "quality_criteria": {
+        "independent_and_visible_tests_passed": false,
+        "submitted": false,
+        "source_edited": false,
+        "protected_files_unchanged": false,
+        "real_inspection": false,
+        "real_source_edit": false,
+        "successful_visible_pytest": false,
+        "no_excess_identical_loop": true
+      },
+      "execution_quality_passed": false,
+      "source_sha256": "baaa09596d4ed50a6a6959141c5abc26fd42f8e0a8804943981f2c84e858ed6d",
+      "evaluation_scope": "MBPP-derived local protocol; independent additional tests, not official MBPP pass@1"
+    },
+    {
+      "task_id": "mbpp-0014",
+      "variant": "baseline",
+      "workflow_id": null,
+      "returncode": 1,
+      "tests_observed": true,
+      "test_counts": {
+        "passed": 0,
+        "failed": 43,
+        "error": 0,
+        "skipped": 0
+      },
+      "tests_passed": false,
+      "quality_criteria": {
+        "independent_and_visible_tests_passed": false,
+        "submitted": false,
+        "source_edited": false,
+        "protected_files_unchanged": false,
+        "real_inspection": false,
+        "real_source_edit": false,
+        "successful_visible_pytest": false,
+        "no_excess_identical_loop": true
+      },
+      "execution_quality_passed": false,
+      "source_sha256": "a2b1fc238cbf1b39897e3243a3fe7645d46dbe1122f7e83069970ce31708323f",
+      "evaluation_scope": "MBPP-derived local protocol; independent additional tests, not official MBPP pass@1"
+    },
+    {
+      "task_id": "mbpp-0016",
+      "variant": "baseline",
+      "workflow_id": null,
+      "returncode": 1,
+      "tests_observed": true,
+      "test_counts": {
+        "passed": 0,
+        "failed": 43,
+        "error": 0,
+        "skipped": 0
+      },
+      "tests_passed": false,
+      "quality_criteria": {
+        "independent_and_visible_tests_passed": false,
+        "submitted": false,
+        "source_edited": false,
+        "protected_files_unchanged": false,
+        "real_inspection": false,
+        "real_source_edit": false,
+        "successful_visible_pytest": false,
+        "no_excess_identical_loop": true
+      },
+      "execution_quality_passed": false,
+      "source_sha256": "e8aaa1a1c5e637bb0dea1ed4d72798a3d27ec17eb92c0cdca5189976a8aa339e",
+      "evaluation_scope": "MBPP-derived local protocol; independent additional tests, not official MBPP pass@1"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "model_repository": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "model_revision": "c03e6d358207e414f1eca0bb1891e29f1db0e242",
+  "mini_swe_agent_commit": "04d809ceab9df28f9adaed044884180159172930",
+  "host": "127.0.0.1",
+  "port": 8201,
+  "served_model_name": "leasepath-qwen25-coder7b",
+  "backend_manifest": ".artifacts/d2/run-manifest.json",
+  "raw_log": ".artifacts/d2/raw.jsonl",
+  "upstream_prompt": ".artifacts/mini-swe-agent/src/minisweagent/config/mini_textbased.yaml",
+  "generation_profiles": {
+    "greedy": {
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "max_tokens": 2048,
+      "seed": 23
+    },
+    "sampled": {
+      "temperature": 0.7,
+      "top_p": 0.8,
+      "top_k": 20,
+      "repetition_penalty": 1.1,
+      "max_tokens": 2048,
+      "seed": 23
+    }
+  },
+  "agent_step_limit": 24,
+  "tool_timeout_s": 60,
+  "task_wall_time_limit_s": 420,
+  "repeat_feedback_after": 2,
+  "task_dataset": "controlled-repair-v2",
+  "task_ids": [
+    "repair-csv-ledger-medium",
+    "repair-csv-ledger-large",
+    "repair-jsonl-status-medium",
+    "repair-jsonl-status-large",
+    "repair-graph-distance-medium",
+    "repair-graph-distance-large"
+  ],
+  "variants": [
+    "greedy-guided"
+  ],
+  "explicit_task_contract_variants": [
+    "sampled",
+    "greedy-explicit",
+    "greedy-mini",
+    "greedy-guided"
+  ],
+  "guided_protocol_variants": [
+    "sampled",
+    "greedy-guided"
+  ],
+  "guided_submission_requires_current_source_test": true,
+  "shell_errexit": true,
+  "reject_interactive_editors": true,
+  "quality_gate": "independent tests, protected hashes, actual initial failure then source edit and successful rerun, submission, backend completeness, command review",
+  "split": "pilot_development_only",
+  "calibration": "reference full pytest wall time in medium[3.2,5.8] or large[6.8,9.5] before agent outcomes",
+  "projection": "repair-v2 sidecar; preserves expansion-v1 and frozen predictor interfaces",
+  "protocol": "mandatory unmodified initial defect reproduction, source repair, exact full-suite rerun"
+}

@@ -1,0 +1,140 @@
+[
+  {
+    "task_id": "repair-csv-ledger-medium",
+    "workflow_id": "repair-csv-ledger-medium-greedy-guided-92cb7b3e",
+    "group_id": "leasepath/designed-file-tasks-v1:designed-csv-ledger",
+    "candidate_sha256": "d1a49cda1c2c73fa01d9d2394d8139bbf2b7fd578f602c8486af4ee6d0471e82",
+    "tests_passed": true,
+    "tests_observed": 3,
+    "returncode": 0,
+    "criteria": {
+      "independent_visible_workload_tests_passed": true,
+      "submitted": true,
+      "source_edited": true,
+      "protected_files_unchanged": true,
+      "real_inspection": true,
+      "real_edit": true,
+      "successful_full_visible_suite": true,
+      "no_excess_identical_loop": true,
+      "backend_audit": true,
+      "initial_unchanged_defect_reproduced": true,
+      "source_repair_then_successful_retry": true
+    },
+    "quality_passed": true
+  },
+  {
+    "task_id": "repair-csv-ledger-large",
+    "workflow_id": "repair-csv-ledger-large-greedy-guided-38e69c1f",
+    "group_id": "leasepath/designed-file-tasks-v1:designed-csv-ledger",
+    "candidate_sha256": "d1a49cda1c2c73fa01d9d2394d8139bbf2b7fd578f602c8486af4ee6d0471e82",
+    "tests_passed": true,
+    "tests_observed": 3,
+    "returncode": 0,
+    "criteria": {
+      "independent_visible_workload_tests_passed": true,
+      "submitted": true,
+      "source_edited": true,
+      "protected_files_unchanged": true,
+      "real_inspection": true,
+      "real_edit": true,
+      "successful_full_visible_suite": true,
+      "no_excess_identical_loop": true,
+      "backend_audit": true,
+      "initial_unchanged_defect_reproduced": true,
+      "source_repair_then_successful_retry": true
+    },
+    "quality_passed": true
+  },
+  {
+    "task_id": "repair-jsonl-status-medium",
+    "workflow_id": "repair-jsonl-status-medium-greedy-guided-b1ca593a",
+    "group_id": "leasepath/designed-file-tasks-v1:designed-jsonl-status",
+    "candidate_sha256": "2e163dfde030f9eec3b73774ebc13a503bcb1d4be8f1ec002866681617e7fb77",
+    "tests_passed": false,
+    "tests_observed": 3,
+    "returncode": 1,
+    "criteria": {
+      "independent_visible_workload_tests_passed": false,
+      "submitted": true,
+      "source_edited": true,
+      "protected_files_unchanged": true,
+      "real_inspection": true,
+      "real_edit": true,
+      "successful_full_visible_suite": true,
+      "no_excess_identical_loop": true,
+      "backend_audit": true,
+      "initial_unchanged_defect_reproduced": true,
+      "source_repair_then_successful_retry": true
+    },
+    "quality_passed": false
+  },
+  {
+    "task_id": "repair-jsonl-status-large",
+    "workflow_id": "repair-jsonl-status-large-greedy-guided-fbc7d10a",
+    "group_id": "leasepath/designed-file-tasks-v1:designed-jsonl-status",
+    "candidate_sha256": "eb663c98709dc1609c7300652bb236e06b9eba45da883b2e305af190644845d2",
+    "tests_passed": false,
+    "tests_observed": 3,
+    "returncode": 1,
+    "criteria": {
+      "independent_visible_workload_tests_passed": false,
+      "submitted": true,
+      "source_edited": true,
+      "protected_files_unchanged": true,
+      "real_inspection": true,
+      "real_edit": true,
+      "successful_full_visible_suite": true,
+      "no_excess_identical_loop": true,
+      "backend_audit": true,
+      "initial_unchanged_defect_reproduced": true,
+      "source_repair_then_successful_retry": true
+    },
+    "quality_passed": false
+  },
+  {
+    "task_id": "repair-graph-distance-medium",
+    "workflow_id": "repair-graph-distance-medium-greedy-guided-b6c0a537",
+    "group_id": "leasepath/designed-file-tasks-v1:designed-graph-distance",
+    "candidate_sha256": "c1e8bf5b89d2a694deced1b298dcbf83528ffdc7136d334c2a79e49045524a00",
+    "tests_passed": true,
+    "tests_observed": 3,
+    "returncode": 0,
+    "criteria": {
+      "independent_visible_workload_tests_passed": true,
+      "submitted": true,
+      "source_edited": true,
+      "protected_files_unchanged": true,
+      "real_inspection": true,
+      "real_edit": true,
+      "successful_full_visible_suite": true,
+      "no_excess_identical_loop": true,
+      "backend_audit": true,
+      "initial_unchanged_defect_reproduced": true,
+      "source_repair_then_successful_retry": true
+    },
+    "quality_passed": true
+  },
+  {
+    "task_id": "repair-graph-distance-large",
+    "workflow_id": "repair-graph-distance-large-greedy-guided-57560c5d",
+    "group_id": "leasepath/designed-file-tasks-v1:designed-graph-distance",
+    "candidate_sha256": "3c9db77654416494898d41ad001357124a22d90fd5d08564527e49fd73f0e3b6",
+    "tests_passed": true,
+    "tests_observed": 3,
+    "returncode": 0,
+    "criteria": {
+      "independent_visible_workload_tests_passed": true,
+      "submitted": true,
+      "source_edited": true,
+      "protected_files_unchanged": true,
+      "real_inspection": true,
+      "real_edit": true,
+      "successful_full_visible_suite": true,
+      "no_excess_identical_loop": true,
+      "backend_audit": true,
+      "initial_unchanged_defect_reproduced": true,
+      "source_repair_then_successful_retry": true
+    },
+    "quality_passed": true
+  }
+]

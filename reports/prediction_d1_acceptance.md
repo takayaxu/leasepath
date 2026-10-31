@@ -41,7 +41,7 @@
 
 ## 如何复现
 
-在仓库根目录运行；均为 CPU 检查，不需要 GPU 或推理模型：
+在仓库根目录运行；均为 CPU 检查，不需要 GPU 或推理模型。本机项目根目录为 `/home/ma-user/takaya/leasepath`；先按 [部署说明](../docs/deployment.md) 激活 `.venv` 并清除 Ascend 的 `PYTHONPATH` 注入：
 
 ```bash
 python3 -m pip install -e '.[test,measurement]'

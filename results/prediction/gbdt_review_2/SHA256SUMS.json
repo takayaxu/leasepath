@@ -1,0 +1,15 @@
+{
+  "all-main-conditional-model.json": "829cb75643ac772b106b69b0502704ea8ee57dae5708862469cb6af9685aff69",
+  "all-main-gbdt-model.json": "7a11ca304c107be2978ba59ac279ee0b11e8d88f5ac78786dc7674c6eb4910ac",
+  "all-main-global-model.json": "3d83ca6083eacfd37c9155ed56f7dab781f41a9da757091506040db805a6b0a6",
+  "cv-models.json": "77e043fd4490403392edb5d8accd763a1ec8fb5fd9cf8efca0d4926bc4fca64c",
+  "metrics.json": "4470b79c538babdb513391012bdd5cb72298ec098af76cd2c5d1b68ebfeaa468",
+  "prediction-examples.json": "5575c59fa0eb552c6c813d3bb3f165d07d7b0860b66a6c17b53f6c97192ea154",
+  "qualified-conditional-model.json": "00527eb434eb3334ed02d14a4e2aee5bb84036e41e5940e82fcf39a7a0f75aad",
+  "qualified-gbdt-model.json": "67f376142700cd43293d89219825d063278e5cc27895579d3886e1cd01f21abf",
+  "qualified-global-model.json": "f3123e8ed7ef9186ddd1411f2b5acc255282970bfe23dfdfe0110127ea615c95",
+  "run-manifest.json": "efbd319e307cdf6c38fd52831c9db182a9a58e491a3b3e9a93588d4aba8d5314",
+  "split-manifest.json": "017571eb0cc0b84eec4526b20f2a0370b19c0690e44905ae3de2543e2c232f83",
+  "summary.json": "5111211a97045f3a611fc08c11ccc2c92063ebf9455852b8f1045004893311e6",
+  "verification.json": "6f811e7b06e6baf59a861831522955baa610fa65c29ab9815e9b56154e1fd517"
+}

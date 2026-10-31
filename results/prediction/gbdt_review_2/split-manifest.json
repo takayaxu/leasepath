@@ -1,0 +1,96 @@
+{
+  "scope": "development_parent_task_grouped_cv_not_independent_source_test",
+  "assignment_rule": "sort SHA256(seed:parent_group), round-robin folds",
+  "seed": 23,
+  "folds": 5,
+  "assignments": {
+    "google-research/mbpp:mbpp-0016": 0,
+    "google-research/mbpp:mbpp-0014": 1,
+    "google-research/mbpp:mbpp-0011": 2,
+    "google-research/mbpp:mbpp-0003": 3,
+    "google-research/mbpp:mbpp-0012": 4,
+    "google-research/mbpp:mbpp-0009": 0,
+    "google-research/mbpp:mbpp-0002": 1,
+    "google-research/mbpp:mbpp-0008": 2,
+    "google-research/mbpp:mbpp-0004": 3,
+    "google-research/mbpp:mbpp-0007": 4
+  },
+  "workflows": {
+    "mbpp-0002-greedy-guided-4e61fb0d": {
+      "group_id": "google-research/mbpp:mbpp-0002",
+      "fold": 1
+    },
+    "mbpp-0003-greedy-guided-f52d05df": {
+      "group_id": "google-research/mbpp:mbpp-0003",
+      "fold": 3
+    },
+    "mbpp-0004-greedy-guided-09fe16df": {
+      "group_id": "google-research/mbpp:mbpp-0004",
+      "fold": 3
+    },
+    "mbpp-0007-greedy-guided-47fc5fe6": {
+      "group_id": "google-research/mbpp:mbpp-0007",
+      "fold": 4
+    },
+    "mbpp-0008-greedy-guided-e467155f": {
+      "group_id": "google-research/mbpp:mbpp-0008",
+      "fold": 2
+    },
+    "mbpp-0009-greedy-guided-da836fac": {
+      "group_id": "google-research/mbpp:mbpp-0009",
+      "fold": 0
+    },
+    "mbpp-0011-greedy-guided-4f316238": {
+      "group_id": "google-research/mbpp:mbpp-0011",
+      "fold": 2
+    },
+    "mbpp-0012-greedy-guided-06dffde2": {
+      "group_id": "google-research/mbpp:mbpp-0012",
+      "fold": 4
+    },
+    "mbpp-0014-greedy-guided-38035589": {
+      "group_id": "google-research/mbpp:mbpp-0014",
+      "fold": 1
+    },
+    "mbpp-0016-greedy-guided-70820671": {
+      "group_id": "google-research/mbpp:mbpp-0016",
+      "fold": 0
+    },
+    "mbpp-0002-sampled-97502092": {
+      "group_id": "google-research/mbpp:mbpp-0002",
+      "fold": 1
+    },
+    "mbpp-0003-sampled-6de1cae0": {
+      "group_id": "google-research/mbpp:mbpp-0003",
+      "fold": 3
+    },
+    "mbpp-0004-sampled-b8b6a27c": {
+      "group_id": "google-research/mbpp:mbpp-0004",
+      "fold": 3
+    },
+    "mbpp-0007-sampled-54e97ffc": {
+      "group_id": "google-research/mbpp:mbpp-0007",
+      "fold": 4
+    },
+    "mbpp-0008-sampled-dcda2764": {
+      "group_id": "google-research/mbpp:mbpp-0008",
+      "fold": 2
+    },
+    "mbpp-0009-sampled-673ad9fb": {
+      "group_id": "google-research/mbpp:mbpp-0009",
+      "fold": 0
+    },
+    "mbpp-0011-sampled-5f5032d6": {
+      "group_id": "google-research/mbpp:mbpp-0011",
+      "fold": 2
+    },
+    "mbpp-0012-sampled-5129c504": {
+      "group_id": "google-research/mbpp:mbpp-0012",
+      "fold": 4
+    },
+    "mbpp-0016-sampled-650ad310": {
+      "group_id": "google-research/mbpp:mbpp-0016",
+      "fold": 0
+    }
+  }
+}

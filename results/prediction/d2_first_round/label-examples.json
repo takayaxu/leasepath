@@ -1,0 +1,50 @@
+[
+  {
+    "scope": "autonomous_agent_pilot",
+    "run_id": "sympy__sympy-20590-8519bf1d",
+    "idle_episode_id": "idle-59ab12cf1c564bde91c10de5b32e9b0b",
+    "evidence_kind": "measured",
+    "start_ns": 755267637269159,
+    "end_ns": 755267699193536,
+    "duration_ns": 61924377,
+    "outcome": "legal_demand",
+    "reason": null,
+    "demand_request_id": "52dcdee2b4c44d4793767ba04c7b533e"
+  },
+  {
+    "scope": "autonomous_agent_pilot",
+    "run_id": "sympy__sympy-20590-8519bf1d",
+    "idle_episode_id": "idle-4cae74f824f848a89f85314a12fed4ea",
+    "evidence_kind": "measured",
+    "start_ns": 755323776366304,
+    "end_ns": 755323815668330,
+    "duration_ns": 39302026,
+    "outcome": "retire",
+    "reason": "runner_closed_context",
+    "demand_request_id": null
+  },
+  {
+    "scope": "controlled_real_inference",
+    "run_id": "controlled-2f4c06a836ed40459bded13b3b1b03fa",
+    "idle_episode_id": "idle-60462e2f1a764a6c9d45b52bc014f743",
+    "evidence_kind": "measured",
+    "start_ns": 755230551246222,
+    "end_ns": 755230565267592,
+    "duration_ns": 14021370,
+    "outcome": "legal_demand",
+    "reason": null,
+    "demand_request_id": "30f31c8e73a34741995b56f9f22722b0"
+  },
+  {
+    "scope": "controlled_real_inference",
+    "run_id": "controlled-2f4c06a836ed40459bded13b3b1b03fa",
+    "idle_episode_id": "idle-be227a52a5104cfca492a32b454c379e",
+    "evidence_kind": "measured",
+    "start_ns": 755233383751066,
+    "end_ns": 755233386034744,
+    "duration_ns": 2283678,
+    "outcome": "right_censored",
+    "reason": "workflow_observation_end",
+    "demand_request_id": null
+  }
+]

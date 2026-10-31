@@ -1,0 +1,296 @@
+{
+  "workflow_count": 4,
+  "unique_parents": 2,
+  "tool_duration_s": {
+    "n": 24,
+    "min": 0.015881166,
+    "median": 0.020990775,
+    "p95": 8.244509343,
+    "max": 8.947518967,
+    "ge_1s": 10,
+    "ge_3s": 10,
+    "ge_5s": 5
+  },
+  "idle_duration_s": {
+    "n": 32,
+    "min": 0.02409179,
+    "median": 0.050806491,
+    "p95": 8.277359711,
+    "max": 8.985627757,
+    "ge_1s": 10,
+    "ge_3s": 10,
+    "ge_5s": 5
+  },
+  "second_scale_tools": [
+    {
+      "workflow_id": "repair-csv-ledger-medium-greedy-guided-92cb7b3e",
+      "command_category": "test",
+      "workload_family": "csv_aggregation",
+      "duration_s": 3.539643747,
+      "returncode": 1
+    },
+    {
+      "workflow_id": "repair-csv-ledger-medium-greedy-guided-92cb7b3e",
+      "command_category": "test",
+      "workload_family": "csv_aggregation",
+      "duration_s": 3.585508369,
+      "returncode": 0
+    },
+    {
+      "workflow_id": "repair-csv-ledger-large-greedy-guided-38e69c1f",
+      "command_category": "test",
+      "workload_family": "csv_aggregation",
+      "duration_s": 7.086057377,
+      "returncode": 1
+    },
+    {
+      "workflow_id": "repair-csv-ledger-large-greedy-guided-38e69c1f",
+      "command_category": "test",
+      "workload_family": "csv_aggregation",
+      "duration_s": 7.318172759,
+      "returncode": 0
+    },
+    {
+      "workflow_id": "repair-graph-distance-medium-greedy-guided-b6c0a537",
+      "command_category": "test",
+      "workload_family": "graph_bfs",
+      "duration_s": 4.174441948,
+      "returncode": 1
+    },
+    {
+      "workflow_id": "repair-graph-distance-medium-greedy-guided-b6c0a537",
+      "command_category": "test",
+      "workload_family": "graph_bfs",
+      "duration_s": 4.208521577,
+      "returncode": 1
+    },
+    {
+      "workflow_id": "repair-graph-distance-medium-greedy-guided-b6c0a537",
+      "command_category": "test",
+      "workload_family": "graph_bfs",
+      "duration_s": 4.210810005,
+      "returncode": 0
+    },
+    {
+      "workflow_id": "repair-graph-distance-large-greedy-guided-57560c5d",
+      "command_category": "test",
+      "workload_family": "graph_bfs",
+      "duration_s": 8.244509343,
+      "returncode": 1
+    },
+    {
+      "workflow_id": "repair-graph-distance-large-greedy-guided-57560c5d",
+      "command_category": "test",
+      "workload_family": "graph_bfs",
+      "duration_s": 8.947518967,
+      "returncode": 1
+    },
+    {
+      "workflow_id": "repair-graph-distance-large-greedy-guided-57560c5d",
+      "command_category": "test",
+      "workload_family": "graph_bfs",
+      "duration_s": 8.203383948,
+      "returncode": 0
+    }
+  ],
+  "feature_coverage": {
+    "command_category": {
+      "known": 134,
+      "total": 237
+    },
+    "completed_tool_count": {
+      "known": 237,
+      "total": 237
+    },
+    "current_source_changed_since_failure": {
+      "known": 64,
+      "total": 237
+    },
+    "current_suite_attempt": {
+      "known": 106,
+      "total": 237
+    },
+    "current_suite_is_retry": {
+      "known": 106,
+      "total": 237
+    },
+    "failed_full_suites": {
+      "known": 237,
+      "total": 237
+    },
+    "last_completed_returncode": {
+      "known": 212,
+      "total": 237
+    },
+    "last_completed_tool_s": {
+      "known": 212,
+      "total": 237
+    },
+    "last_full_suite_passed": {
+      "known": 142,
+      "total": 237
+    },
+    "prior_failed_tests": {
+      "known": 237,
+      "total": 237
+    },
+    "suite_retries_started": {
+      "known": 237,
+      "total": 237
+    },
+    "tool_state": {
+      "known": 187,
+      "total": 237
+    },
+    "tool_timeout_s": {
+      "known": 134,
+      "total": 237
+    },
+    "work_unit": {
+      "known": 106,
+      "total": 237
+    },
+    "work_units": {
+      "known": 106,
+      "total": 237
+    },
+    "workload_family": {
+      "known": 106,
+      "total": 237
+    }
+  },
+  "snapshot_elapsed_ge_1s": 76,
+  "snapshot_elapsed_ge_3s": 56,
+  "snapshot_elapsed_ge_5s": 28,
+  "current_suite_is_retry": {
+    "None": 131,
+    "False": 42,
+    "True": 64
+  },
+  "failed_full_suites": {
+    "0": 95,
+    "1": 90,
+    "2": 52
+  },
+  "command_categories": {
+    "inspect": 4,
+    "test": 10,
+    "edit": 6,
+    "shell": 4
+  },
+  "workload_families": {
+    "csv_aggregation": 4,
+    "graph_bfs": 6
+  },
+  "tool_states": {
+    "None": 50,
+    "running": 134,
+    "completed": 53
+  },
+  "phases": {
+    "None": 75,
+    "queued": 28,
+    "waiting_tool": 134
+  },
+  "prior_failed_tests": {
+    "0": 95,
+    "1": 90,
+    "2": 52
+  },
+  "queued_snapshots": 28,
+  "features_sidecar_sha256": "6a0056aaba098bcf50945c173b1b5af5c091388dad225e5b59771bed9b345842",
+  "dataset_summary": {
+    "status": "passed",
+    "evidence_kind": "measured",
+    "events": 284,
+    "runs": 4,
+    "idle_episodes": 32,
+    "snapshot_schedule": {
+      "elapsed_points_s": [
+        0,
+        0.01,
+        0.03,
+        0.1,
+        0.3,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        30,
+        120
+      ],
+      "max_per_episode": 24
+    },
+    "source_groups": {
+      "leasepath/designed-file-tasks-v1": 4
+    },
+    "evidence_scopes": {
+      "controlled_test_first_repair_real_compute": 4
+    },
+    "snapshots": 237,
+    "outcomes": {
+      "legal_demand": 28,
+      "retire": 4
+    },
+    "requests": 32,
+    "cache_hit_requests": 32,
+    "cached_tokens": 64768,
+    "prompt_tokens": 74942,
+    "all_request_stages_observed": true,
+    "observer_sequence_gaps": 0,
+    "lookup_duration_ns": [
+      89531,
+      64140,
+      71521,
+      84971,
+      119401,
+      109781,
+      136721,
+      64961,
+      66660,
+      70391,
+      86990,
+      121741,
+      105631,
+      137591,
+      44370,
+      65800,
+      74191,
+      93581,
+      127741,
+      116241,
+      147961,
+      135081,
+      168462,
+      51160,
+      66040,
+      72641,
+      94841,
+      124641,
+      120681,
+      149591,
+      135841,
+      165042
+    ],
+    "raw_sha256": "2052ed67172853edef65cb09067cc3fab688c443d5dc5932fef6f33343b8ed3c",
+    "output_sha256": {
+      "targets.jsonl": "1cbfb13a8d741e4b4c8cd6e813e4e51f88abcda8f498b8d067ce6ce50deb5c0a",
+      "snapshots.jsonl": "f46e3457d55af35f2e7fc23de9a123a9be03ad7360236d9ff87014ff01f42199",
+      "events.jsonl": "c516c6405bc287183ef0687b136077b463494432c87795a211596f728daee0d2",
+      "episode_labels.jsonl": "bbb75eeda991eed4a2d0af27d367b1c17000cc0101c03fb9234efb6e5ef74878"
+    },
+    "limitations": [
+      "development pilot; source grouping and evidence scopes must be retained",
+      "scheduler prefill counts; no device-kernel timing claim",
+      "request-boundary block snapshots; no complete allocation/eviction lifecycle",
+      "queue_length remains unknown; no global empty-queue assertion",
+      "no independent test split or policy benefit claim"
+    ]
+  }
+}

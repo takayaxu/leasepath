@@ -1,0 +1,118 @@
+{
+  "status": "passed",
+  "started_at_utc": "2026-10-31T02:18:35.721904+00:00",
+  "configuration": {
+    "stage": "gbdt_review_2",
+    "scope": "parent_task_grouped_development_cross_validation",
+    "baseline_config": "configs/prediction/empirical_risk_baseline.json",
+    "baseline_provenance": "results/prediction/empirical_baseline_review_1/run-manifest.json",
+    "folds": 5,
+    "seed": 23,
+    "feature_protocol": "same_tool_phase_elapsed_bucket_information_as_conditional_baseline",
+    "models": [
+      "global",
+      "conditional",
+      "gbdt"
+    ],
+    "calibration_edges": [
+      0,
+      0.2,
+      0.4,
+      0.6,
+      0.8,
+      1
+    ],
+    "gbdt": {
+      "num_boost_round": 40,
+      "learning_rate": 0.05,
+      "num_leaves": 4,
+      "max_depth": 2,
+      "min_data_in_leaf": 20,
+      "min_sum_hessian_in_leaf": 0.1,
+      "lambda_l1": 0.1,
+      "lambda_l2": 10.0,
+      "min_gain_to_split": 0.01
+    },
+    "selection_policy": "single_predeclared_configuration_no_search_no_early_stopping",
+    "primary_metric": "macro_parent_task_multiclass_cumulative_brier_at_0.1_seconds"
+  },
+  "baseline_configuration": {
+    "stage": "empirical_baseline_review_1",
+    "scope": "development_fit_and_training_preview_only",
+    "datasets": {
+      "all-main": ".artifacts/d2-next/datasets/all-main",
+      "qualified": ".artifacts/d2-next/datasets/qualified"
+    },
+    "execution_quality": "results/prediction/d2_mbpp_round/execution-quality.json",
+    "right_edges": [
+      0.01,
+      0.03,
+      0.1,
+      0.3,
+      1,
+      3,
+      10,
+      30,
+      60,
+      120,
+      300,
+      600
+    ],
+    "elapsed_edges": [
+      0.03,
+      0.1,
+      0.3,
+      1
+    ],
+    "min_group_workflows": 3,
+    "prior_weight": 1.0,
+    "weighting": "each_workflow_total_1_each_episode_equal_within_workflow",
+    "conditioning_features": [
+      "tool_name",
+      "phase",
+      "elapsed_idle_s"
+    ],
+    "variants": [
+      "global",
+      "conditional"
+    ]
+  },
+  "config_sha256": "258861d5ece7c64ebc75b0b16f9b397123ab32aad7928b0dc10b1293270c3699",
+  "baseline_provenance_sha256": "4ae6ce3b2405517e96359e03f1daf783695edc5f3aaeb6b21f5b52ce4fde0a2a",
+  "quality_sha256": "e091d877f3b2d000f6abf994bca135d1f13032c909fa7b05789061db63827f9c",
+  "input_sha256": {
+    "all-main": {
+      "summary.json": "4374044b7d85d9f8f66b61383e50b9bb3bc62f05c210d1451f1abeb96474d77c",
+      "events.jsonl": "cbcacd8d656551a423da0307012af67448af68d86c553b84f65e7abd8701e0ce",
+      "episode_labels.jsonl": "4ed519a58652fc01e7754c0ee2f94823a8f2dc38c481f2d31c8a383e6ad908ea",
+      "snapshots.jsonl": "add85c3bd4ca175408c2c2ee8df54293954d6c1f43e4cb8e8b4bc30f6b4385c1",
+      "targets.jsonl": "4e40654b0b09571cd8dc6db416bfe24f5b7f616e1c36f7361dbd4e152e4b6852"
+    },
+    "qualified": {
+      "summary.json": "33e145bccdd5e5638915d62ed7814311fbf1728ce128af5373f4d02181701ac5",
+      "events.jsonl": "dded92f3e0d18c5c2d8b3f0c4b9229fd33661d629eb9c63ad177b2bde1e91413",
+      "episode_labels.jsonl": "e1cb2afba2e514c45fe8580a6bb632eadba05b3eb85a6ede425b42e0bfbc094a",
+      "snapshots.jsonl": "a68b70aec606d32b8f6a8633679f0712c71d645c36a384147750178224472616",
+      "targets.jsonl": "5fcca1e8da40256d1a4a2b793f484223597e0c81fff61cfcc9bbbe4dd05cb528"
+    }
+  },
+  "source_sha256": {
+    "src/leasepath/gbdt_predictor.py": "df8645870c255c70f2edee7ec288c1bdf7d6fd8c5bddc0335d3fae7d460d440c",
+    "src/leasepath/prediction_training.py": "3d9a04d3c11f906b412af0610d4ee04d7b9569a3869b23b546865b95a14377f0",
+    "src/leasepath/reuse_predictor.py": "24773e363c9fb77e3008cdf7672a4136a4cd2ebb95c85cdc5752126137b67729",
+    "src/leasepath/d2_hazards.py": "0feaa2ec2ec327ff5e5feedb9d5018dcd61ce95f9041b5d47a6d63b6ffe535b2",
+    "src/leasepath/prediction_state.py": "513acd885ad7bf490a52c1f3be004429489ed682920b26b3213e17378ce6d30f",
+    "scripts/train_reuse_predictor.py": "8bdcca888b327618d446ef136af700b256e7f7642331d3e9a5c02b662d299083",
+    "tests/test_gbdt_predictor.py": "2535f68af4fbf7934e6185abedfd3cadd0b65c967f36fcced568a48dfea77cff",
+    "tests/test_prediction_training.py": "d2d46476d397531e2ff0c3a13f040da070c93de2a065adb0e8fac6a2122173f8",
+    "pyproject.toml": "aa906d0087e274b0eaa41c2aed295ee69089575cb6052ec1b72eb1b8599457c3"
+  },
+  "versions": {
+    "python": "3.12.0",
+    "lightgbm": "4.6.0",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "machine": "aarch64"
+  },
+  "completed_at_utc": "2026-10-31T02:18:40.346963+00:00"
+}

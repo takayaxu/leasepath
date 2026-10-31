@@ -1,0 +1,146 @@
+{
+  "dataset": "designed-file-tasks-v1",
+  "selection": "six predeclared different operations; deterministic real workloads; no outcome selection",
+  "calibration_rule": "first predeclared size with reference pytest wall time >=1.5s, else largest; cap60s",
+  "source_sha256": "dcef664fec33ff44a6c453035576dc164064ea1efc4417f44ba3352d712d9cf6",
+  "tasks": [
+    {
+      "instance_id": "designed-csv-ledger",
+      "problem_statement": "Read a UTF-8 CSV with header tenant,cents using the csv module (quoted tenant names are valid). Return a dict mapping each tenant string to the sum of its signed integer cents. Empty data returns {}. Do not modify the file.\nThis is a designed data-processing development task, not a benchmark or production trace. Read test_workload.py as well as the visible example. The workload is a real csv_aggregation integration test with 500000 rows. Run exactly `python -m pytest -q test_visible.py test_workload.py` before submitting. Do not modify either test or skip its workload. Only solution.py is submitted.",
+      "function_signature": "def summarize_csv(path):",
+      "source_group": "leasepath/designed-file-tasks-v1",
+      "split": "pilot_development_only",
+      "evidence_scope": "designed_real_compute_agent_execution",
+      "workload_family": "csv_aggregation",
+      "work_units": 500000,
+      "work_unit": "rows",
+      "visible_tests": 2,
+      "independent_tests": 1,
+      "visible_test_sha256": "cdb062ceccd2673acc7d7a9f1c6671ea243b73cdfe3a4a8ffe75ab42f5b310c7",
+      "independent_test_sha256": "552a56eaa4c3ade7d92a9f0ecf108d4aec2d9cb0b1c636c32f20d321cd7e0368",
+      "protected_sha256": {
+        "README.md": "27098b259f37ef01e85512aca0e556fa7eda38c121183ae65fd7edf576e25d0c",
+        "test_visible.py": "cdb062ceccd2673acc7d7a9f1c6671ea243b73cdfe3a4a8ffe75ab42f5b310c7",
+        "test_workload.py": "dd94be555e6d7c50e74eb932466c0cd961f1ca9e04157f554f2cc9e68650a351",
+        ".gitignore": "a51104264729e7b362ea8c739de0ada29ba6e4f6047580ec3a3fd330ad20fd47"
+      },
+      "reference_sha256": "13c764a3dbf3345aabf14e1af59e92777a0cd1a2ca60518cf209ba84cdaabca2",
+      "reference_validated": true
+    },
+    {
+      "instance_id": "designed-jsonl-status",
+      "problem_statement": "Read a UTF-8 JSON Lines log. Ignore blank/whitespace lines. Every other line is a valid JSON object with a string status field and optional other fields. Return a dict mapping each status to its record count. Empty data returns {}. Do not modify the file.\nThis is a designed data-processing development task, not a benchmark or production trace. Read test_workload.py as well as the visible example. The workload is a real jsonl_parsing integration test with 150000 records. Run exactly `python -m pytest -q test_visible.py test_workload.py` before submitting. Do not modify either test or skip its workload. Only solution.py is submitted.",
+      "function_signature": "def count_statuses(path):",
+      "source_group": "leasepath/designed-file-tasks-v1",
+      "split": "pilot_development_only",
+      "evidence_scope": "designed_real_compute_agent_execution",
+      "workload_family": "jsonl_parsing",
+      "work_units": 150000,
+      "work_unit": "records",
+      "visible_tests": 2,
+      "independent_tests": 1,
+      "visible_test_sha256": "8973f824fe5d12c7ecd7ea954374f62608ffaa888e77762b3682f74d2dcbee27",
+      "independent_test_sha256": "6b9ee5756922aa375217db064cf7d140cca1d1bae370b0f853ddd273bbfff6ea",
+      "protected_sha256": {
+        "README.md": "8d5a0d20a317e6852701e19e685818b28616b1ceed651ed4b9d4a52d2d54009b",
+        "test_visible.py": "8973f824fe5d12c7ecd7ea954374f62608ffaa888e77762b3682f74d2dcbee27",
+        "test_workload.py": "ce7106243d01e4c256f1bf47dd4ca12d0ea11c582183a3449437d7f844a47d57",
+        ".gitignore": "a51104264729e7b362ea8c739de0ada29ba6e4f6047580ec3a3fd330ad20fd47"
+      },
+      "reference_sha256": "5f6cae12c61ce20a3cccfc942be75824369a04b071b6d146a27b1b40678d91ef",
+      "reference_validated": true
+    },
+    {
+      "instance_id": "designed-sqlite-sales",
+      "problem_statement": "Open the existing SQLite database at path. Its table sales(region TEXT NOT NULL, cents INTEGER NOT NULL) holds signed integer amounts. Return a dict of summed cents per region (region strings, integer totals). Empty table returns {}. Close your connection; do not modify the database.\nThis is a designed data-processing development task, not a benchmark or production trace. Read test_workload.py as well as the visible example. The workload is a real sqlite_query integration test with 500000 rows. Run exactly `python -m pytest -q test_visible.py test_workload.py` before submitting. Do not modify either test or skip its workload. Only solution.py is submitted.",
+      "function_signature": "def sales_totals(path):",
+      "source_group": "leasepath/designed-file-tasks-v1",
+      "split": "pilot_development_only",
+      "evidence_scope": "designed_real_compute_agent_execution",
+      "workload_family": "sqlite_query",
+      "work_units": 500000,
+      "work_unit": "rows",
+      "visible_tests": 2,
+      "independent_tests": 1,
+      "visible_test_sha256": "4bc17c26059715eba12868f53b1a92e1032dc0bb527847ed612391ab2b12c506",
+      "independent_test_sha256": "076289196c8be660b22b2a33cc0a31168fa5cf62f4888db34a40411a90a30632",
+      "protected_sha256": {
+        "README.md": "d07de8b265921bac01bcf9df368d56a337458ff57ce23c4a47b82551d44333d7",
+        "test_visible.py": "4bc17c26059715eba12868f53b1a92e1032dc0bb527847ed612391ab2b12c506",
+        "test_workload.py": "9813af15b438afe1ebbad3ff025fe87b7081e0ca2ddba4a1fc715897a03ac93f",
+        ".gitignore": "a51104264729e7b362ea8c739de0ada29ba6e4f6047580ec3a3fd330ad20fd47"
+      },
+      "reference_sha256": "bd7f5f6c611a5a1ed97980a79fa905234d295975ac6078e003e04f24d6a301a8",
+      "reference_validated": true
+    },
+    {
+      "instance_id": "designed-gzip-digest",
+      "problem_statement": "Return the lowercase hexadecimal SHA-256 digest of the DECOMPRESSED contents of an existing gzip file at path. Binary data and empty contents are valid. Use the standard library and do not modify the file.\nThis is a designed data-processing development task, not a benchmark or production trace. Read test_workload.py as well as the visible example. The workload is a real gzip_hashing integration test with 33554432 bytes. Run exactly `python -m pytest -q test_visible.py test_workload.py` before submitting. Do not modify either test or skip its workload. Only solution.py is submitted.",
+      "function_signature": "def gzip_sha256(path):",
+      "source_group": "leasepath/designed-file-tasks-v1",
+      "split": "pilot_development_only",
+      "evidence_scope": "designed_real_compute_agent_execution",
+      "workload_family": "gzip_hashing",
+      "work_units": 33554432,
+      "work_unit": "bytes",
+      "visible_tests": 2,
+      "independent_tests": 1,
+      "visible_test_sha256": "547a706bb823502e7fcf4c4a87d27fc31b644817dff0b8bb5ef334325ada9156",
+      "independent_test_sha256": "70f155fe66169161c70fd344adf8f94be977edd37e52e8336253ba02acb624d9",
+      "protected_sha256": {
+        "README.md": "b1979c1fd6d5c60db62dd0daa4569043df58cadb26c0f3083f1157c9bbac0f13",
+        "test_visible.py": "547a706bb823502e7fcf4c4a87d27fc31b644817dff0b8bb5ef334325ada9156",
+        "test_workload.py": "122c1a620d877b50ada12fb1a8e7d2f73e04da77bd29581347742ff979dbd687",
+        ".gitignore": "a51104264729e7b362ea8c739de0ada29ba6e4f6047580ec3a3fd330ad20fd47"
+      },
+      "reference_sha256": "3554fa2744891da51e8bf77dde0b58e2006fb572876a365c5e55c01c8709f9cb",
+      "reference_validated": true
+    },
+    {
+      "instance_id": "designed-integer-sort",
+      "problem_statement": "Read a UTF-8 text file source containing one signed integer per nonblank line. Ignore blank lines. Write these integers in numeric ascending order to destination, normalized as decimal integers, one per line with a trailing newline. Preserve duplicates; for empty input write an empty file. Return the number written. Do not modify source; inputs fit in memory.\nThis is a designed data-processing development task, not a benchmark or production trace. Read test_workload.py as well as the visible example. The workload is a real integer_sorting integration test with 1000000 lines. Run exactly `python -m pytest -q test_visible.py test_workload.py` before submitting. Do not modify either test or skip its workload. Only solution.py is submitted.",
+      "function_signature": "def sort_integer_file(source, destination):",
+      "source_group": "leasepath/designed-file-tasks-v1",
+      "split": "pilot_development_only",
+      "evidence_scope": "designed_real_compute_agent_execution",
+      "workload_family": "integer_sorting",
+      "work_units": 1000000,
+      "work_unit": "lines",
+      "visible_tests": 2,
+      "independent_tests": 1,
+      "visible_test_sha256": "bf77ed5554b083a4b28fab3f80e03920ef48de8ef8ffc55b38f3ba93c5bd4985",
+      "independent_test_sha256": "82b1f301c53bfd930ee92a3620d98ba9649a512102ccc13b7eca32f6693f654e",
+      "protected_sha256": {
+        "README.md": "98236a12d32b73b6f7f9034dc1617c703eec80db156368b19c95ece0af0b3a6c",
+        "test_visible.py": "bf77ed5554b083a4b28fab3f80e03920ef48de8ef8ffc55b38f3ba93c5bd4985",
+        "test_workload.py": "b6b271af91a32e8b34f9c39d9e5b79554feb06b0cc941717b0ea3604538c7155",
+        ".gitignore": "a51104264729e7b362ea8c739de0ada29ba6e4f6047580ec3a3fd330ad20fd47"
+      },
+      "reference_sha256": "0ddd8db202d1b528df7ffd042690957d054f8c086ed00697339b6b47ae49048b",
+      "reference_validated": true
+    },
+    {
+      "instance_id": "designed-graph-distance",
+      "problem_statement": "Read an undirected unweighted graph from a UTF-8 edge-list file path: each nonblank line has two integer vertex IDs separated by whitespace. Duplicates and self-loops are valid. Return the minimum edge count from integer start to target, or None if unreachable. Return 0 when start == target even if absent. Do not modify the file.\nThis is a designed data-processing development task, not a benchmark or production trace. Read test_workload.py as well as the visible example. The workload is a real graph_bfs integration test with 300000 edges. Run exactly `python -m pytest -q test_visible.py test_workload.py` before submitting. Do not modify either test or skip its workload. Only solution.py is submitted.",
+      "function_signature": "def shortest_distance(path, start, target):",
+      "source_group": "leasepath/designed-file-tasks-v1",
+      "split": "pilot_development_only",
+      "evidence_scope": "designed_real_compute_agent_execution",
+      "workload_family": "graph_bfs",
+      "work_units": 300000,
+      "work_unit": "edges",
+      "visible_tests": 2,
+      "independent_tests": 1,
+      "visible_test_sha256": "466ba5193921d50350e8645e657bc78fbb86b89f4f310af398f1980b7d09e9e6",
+      "independent_test_sha256": "148f17c12a4b964b348e739f8ea13d6400006eb5a2a1eb23f01bafb3a053f1e6",
+      "protected_sha256": {
+        "README.md": "9ef9f8d33f5207f66389380b7a0982680817e3b13702554f00bffcacfbbc3dd8",
+        "test_visible.py": "466ba5193921d50350e8645e657bc78fbb86b89f4f310af398f1980b7d09e9e6",
+        "test_workload.py": "3c36d9573735ffac15e97326c7c566255f6a0bd2f2ca4843cc405a2d34869330",
+        ".gitignore": "a51104264729e7b362ea8c739de0ada29ba6e4f6047580ec3a3fd330ad20fd47"
+      },
+      "reference_sha256": "a1e28ac90fd39ffb2147902def4446b3d4d1e5dd4f7d37c717468ee0ea3eb3cd",
+      "reference_validated": true
+    }
+  ]
+}

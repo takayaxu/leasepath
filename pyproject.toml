@@ -13,6 +13,10 @@ dependencies = ["jsonschema>=4.18,<5", "numpy>=1.24,<3"]
 test = ["pytest>=8,<10", "mpmath>=1.3,<2"]
 measurement = ["matplotlib>=3.7,<4"]
 source = ["mpmath>=1.3,<2"]
+prediction = ["lightgbm>=4.6,<5"]
+
+[project.entry-points."vllm.general_plugins"]
+leasepath_d2 = "leasepath.d2_probe:register"
 
 [tool.setuptools.packages.find]
 where = ["src"]

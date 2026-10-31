@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "kind": "empirical_competing_risk",
+  "labels": [
+    "U",
+    "D",
+    "waiting"
+  ],
+  "configuration": {
+    "right_edges": [
+      0.01,
+      0.03,
+      0.1,
+      0.3,
+      1,
+      3,
+      10,
+      30,
+      60,
+      120,
+      300,
+      600
+    ],
+    "conditional": false,
+    "elapsed_edges": [
+      0.03,
+      0.1,
+      0.3,
+      1
+    ],
+    "min_group_workflows": 3,
+    "prior_weight": 1.0
+  },
+  "compatibilities": [
+    "8c2c272c9e4510c4dae33537bbe75970e56a8e7dfdbfdf213b7283f07c994dfe"
+  ],
+  "global_counts": [
+    {
+      "counts": [
+        4.334047619047617,
+        1.0108465608465609,
+        13.655105820105803
+      ],
+      "workflows": 19
+    },
+    {
+      "counts": [
+        3.672380952380951,
+        2.0550264550264545,
+        7.927698412698454
+      ],
+      "workflows": 19
+    },
+    {
+      "counts": [
+        5.400555555555556,
+        0.06666666666666667,
+        2.460476190476188
+      ],
+      "workflows": 19
+    },
+    {
+      "counts": [
+        0.0,
+        0.0,
+        2.460476190476188
+      ],
+      "workflows": 19
+    },
+    {
+      "counts": [
+        2.460476190476188,
+        0.0,
+        0.0
+      ],
+      "workflows": 19
+    },
+    {
+      "counts": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "workflows": 0
+    },
+    {
+      "counts": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "workflows": 0
+    },
+    {
+      "counts": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "workflows": 0
+    },
+    {
+      "counts": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "workflows": 0
+    },
+    {
+      "counts": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "workflows": 0
+    },
+    {
+      "counts": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "workflows": 0
+    },
+    {
+      "counts": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "workflows": 0
+    }
+  ],
+  "groups": {}
+}

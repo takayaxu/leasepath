@@ -1,0 +1,100 @@
+[
+  {
+    "task_id": "designed-csv-ledger",
+    "attempts": [
+      {
+        "units": 250000,
+        "elapsed_s": 1.4970946069806814,
+        "returncode": 0
+      },
+      {
+        "units": 500000,
+        "elapsed_s": 2.5423995041055605,
+        "returncode": 0
+      }
+    ],
+    "selected_units": 500000,
+    "reference_checks_passed": true,
+    "stub_rejected": true
+  },
+  {
+    "task_id": "designed-jsonl-status",
+    "attempts": [
+      {
+        "units": 150000,
+        "elapsed_s": 1.9949338110163808,
+        "returncode": 0
+      }
+    ],
+    "selected_units": 150000,
+    "reference_checks_passed": true,
+    "stub_rejected": true
+  },
+  {
+    "task_id": "designed-sqlite-sales",
+    "attempts": [
+      {
+        "units": 250000,
+        "elapsed_s": 1.1531301260692999,
+        "returncode": 0
+      },
+      {
+        "units": 500000,
+        "elapsed_s": 1.912824789993465,
+        "returncode": 0
+      }
+    ],
+    "selected_units": 500000,
+    "reference_checks_passed": true,
+    "stub_rejected": true
+  },
+  {
+    "task_id": "designed-gzip-digest",
+    "attempts": [
+      {
+        "units": 33554432,
+        "elapsed_s": 1.9863118840148672,
+        "returncode": 0
+      }
+    ],
+    "selected_units": 33554432,
+    "reference_checks_passed": true,
+    "stub_rejected": true
+  },
+  {
+    "task_id": "designed-integer-sort",
+    "attempts": [
+      {
+        "units": 500000,
+        "elapsed_s": 1.3848286849679425,
+        "returncode": 0
+      },
+      {
+        "units": 1000000,
+        "elapsed_s": 2.2741942750290036,
+        "returncode": 0
+      }
+    ],
+    "selected_units": 1000000,
+    "reference_checks_passed": true,
+    "stub_rejected": true
+  },
+  {
+    "task_id": "designed-graph-distance",
+    "attempts": [
+      {
+        "units": 150000,
+        "elapsed_s": 1.0859304890036583,
+        "returncode": 0
+      },
+      {
+        "units": 300000,
+        "elapsed_s": 1.7075378729496151,
+        "returncode": 0
+      }
+    ],
+    "selected_units": 300000,
+    "reference_checks_passed": true,
+    "stub_rejected": true
+  }
+]

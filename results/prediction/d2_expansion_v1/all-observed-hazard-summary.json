@@ -1,0 +1,137 @@
+{
+  "snapshots": 173,
+  "risk_interval_rows": 528,
+  "trainable_labels": {
+    "waiting": 355,
+    "U": 149,
+    "D": 24
+  },
+  "masked_partial_intervals": 0,
+  "cumulative_horizons": [
+    {
+      "horizon_s": 0.01,
+      "counts": {
+        "legal_demand": 24,
+        "retire": 6,
+        "known_waiting": 143,
+        "unknown_after_censoring": 0
+      }
+    },
+    {
+      "horizon_s": 0.03,
+      "counts": {
+        "legal_demand": 65,
+        "retire": 24,
+        "known_waiting": 84,
+        "unknown_after_censoring": 0
+      }
+    },
+    {
+      "horizon_s": 0.1,
+      "counts": {
+        "legal_demand": 105,
+        "retire": 24,
+        "known_waiting": 44,
+        "unknown_after_censoring": 0
+      }
+    },
+    {
+      "horizon_s": 0.3,
+      "counts": {
+        "legal_demand": 105,
+        "retire": 24,
+        "known_waiting": 44,
+        "unknown_after_censoring": 0
+      }
+    },
+    {
+      "horizon_s": 1,
+      "counts": {
+        "legal_demand": 109,
+        "retire": 24,
+        "known_waiting": 40,
+        "unknown_after_censoring": 0
+      }
+    },
+    {
+      "horizon_s": 3,
+      "counts": {
+        "legal_demand": 149,
+        "retire": 24,
+        "known_waiting": 0,
+        "unknown_after_censoring": 0
+      }
+    },
+    {
+      "horizon_s": 10,
+      "counts": {
+        "legal_demand": 149,
+        "retire": 24,
+        "known_waiting": 0,
+        "unknown_after_censoring": 0
+      }
+    },
+    {
+      "horizon_s": 30,
+      "counts": {
+        "legal_demand": 149,
+        "retire": 24,
+        "known_waiting": 0,
+        "unknown_after_censoring": 0
+      }
+    },
+    {
+      "horizon_s": 60,
+      "counts": {
+        "legal_demand": 149,
+        "retire": 24,
+        "known_waiting": 0,
+        "unknown_after_censoring": 0
+      }
+    },
+    {
+      "horizon_s": 120,
+      "counts": {
+        "legal_demand": 149,
+        "retire": 24,
+        "known_waiting": 0,
+        "unknown_after_censoring": 0
+      }
+    },
+    {
+      "horizon_s": 300,
+      "counts": {
+        "legal_demand": 149,
+        "retire": 24,
+        "known_waiting": 0,
+        "unknown_after_censoring": 0
+      }
+    },
+    {
+      "horizon_s": 600,
+      "counts": {
+        "legal_demand": 149,
+        "retire": 24,
+        "known_waiting": 0,
+        "unknown_after_censoring": 0
+      }
+    }
+  ],
+  "administrative_views": {
+    "rows": 692,
+    "outcomes": {
+      "right_censored": 227,
+      "legal_demand": 387,
+      "retire": 78
+    },
+    "scope": "separate fixed-horizon derived labels, not natural censoring"
+  },
+  "source_sha256": {
+    "snapshots.jsonl": "47c2055ca05d13f1d6bf94a1163e14d07bec2d6b6c29dbf2c255e8cea39c20df",
+    "targets.jsonl": "9936623989d1625d27d2c25a05d59e6f0d380f018fc77fdeacd261e498cc8878"
+  },
+  "output_sha256": {
+    "administrative_views.jsonl": "769d89435c9c99be759c74292b11cdc34e0101310035922f2987e6f87242a109",
+    "risk_intervals.jsonl": "2a113e636be71adedaff3c899a0a0474dacc49040262331c848e9973353b5624"
+  }
+}

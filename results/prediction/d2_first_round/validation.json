@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-30",
+  "pytest": {
+    "passed": 76,
+    "failed": 0
+  },
+  "pip_check": {
+    "core": "passed",
+    "agent": "passed"
+  },
+  "d1_checks_passed": 50,
+  "event_contract": {
+    "accepted": 8,
+    "rejected": 16
+  },
+  "frozen_raw_sha256_verified": true,
+  "all_dataset_file_hashes_verified": true,
+  "reexport_with_explicit_frozen_manifest_identical": true,
+  "evaluation_with_explicit_relative_paths_identical": true,
+  "local_document_links": "passed",
+  "git_diff_check": "passed",
+  "service_health": "passed"
+}

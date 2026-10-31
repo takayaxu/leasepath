@@ -1,0 +1,37 @@
+{
+  "status": "passed",
+  "evidence_kind": "measured",
+  "events": 22,
+  "runs": 1,
+  "idle_episodes": 3,
+  "snapshots": 5,
+  "outcomes": {
+    "legal_demand": 2,
+    "right_censored": 1
+  },
+  "requests": 3,
+  "cache_hit_requests": 1,
+  "cached_tokens": 1024,
+  "prompt_tokens": 3402,
+  "all_request_stages_observed": true,
+  "observer_sequence_gaps": 0,
+  "lookup_duration_ns": [
+    115201,
+    143591,
+    52860
+  ],
+  "raw_sha256": "b7199087f3071d64b678daec5e9db0b23e4f16c8fda593fb2897b08239464460",
+  "output_sha256": {
+    "targets.jsonl": "8758dbf1ee4d0196ae1a664bffe3e7c30161dd763c28f9f45c44197c923dfda6",
+    "snapshots.jsonl": "b15c725c0c227dbcf3f70148bb88de4801d571f9db0c5c3cce84972a982024b6",
+    "events.jsonl": "377a9d02a73a6fb5e842b764a733daff3bbd9eb172919857e2eae0c12c8b8907",
+    "episode_labels.jsonl": "9919ba7ca99b58d4884f6230f71434016f9cd36350cb9b630d489b79245a860e"
+  },
+  "limitations": [
+    "single source project for autonomous pilot",
+    "scheduler prefill counts; no device-kernel timing claim",
+    "request-boundary block snapshots; no complete allocation/eviction lifecycle",
+    "queue_length remains unknown; no global empty-queue assertion",
+    "no independent test split or policy benefit claim"
+  ]
+}

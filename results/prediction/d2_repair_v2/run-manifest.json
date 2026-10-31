@@ -1,0 +1,81 @@
+{
+  "variant": "greedy-guided",
+  "configuration": {
+    "model_repository": "Qwen/Qwen2.5-Coder-7B-Instruct",
+    "model_revision": "c03e6d358207e414f1eca0bb1891e29f1db0e242",
+    "mini_swe_agent_commit": "04d809ceab9df28f9adaed044884180159172930",
+    "host": "127.0.0.1",
+    "port": 8201,
+    "served_model_name": "leasepath-qwen25-coder7b",
+    "backend_manifest": ".artifacts/d2/run-manifest.json",
+    "raw_log": ".artifacts/d2/raw.jsonl",
+    "upstream_prompt": ".artifacts/mini-swe-agent/src/minisweagent/config/mini_textbased.yaml",
+    "generation_profiles": {
+      "greedy": {
+        "temperature": 0.0,
+        "top_p": 1.0,
+        "max_tokens": 2048,
+        "seed": 23
+      },
+      "sampled": {
+        "temperature": 0.7,
+        "top_p": 0.8,
+        "top_k": 20,
+        "repetition_penalty": 1.1,
+        "max_tokens": 2048,
+        "seed": 23
+      }
+    },
+    "agent_step_limit": 24,
+    "tool_timeout_s": 60,
+    "task_wall_time_limit_s": 420,
+    "repeat_feedback_after": 2,
+    "task_dataset": "controlled-repair-v2",
+    "task_ids": [
+      "repair-csv-ledger-medium",
+      "repair-csv-ledger-large",
+      "repair-jsonl-status-medium",
+      "repair-jsonl-status-large",
+      "repair-graph-distance-medium",
+      "repair-graph-distance-large"
+    ],
+    "variants": [
+      "greedy-guided"
+    ],
+    "explicit_task_contract_variants": [
+      "sampled",
+      "greedy-explicit",
+      "greedy-mini",
+      "greedy-guided"
+    ],
+    "guided_protocol_variants": [
+      "sampled",
+      "greedy-guided"
+    ],
+    "guided_submission_requires_current_source_test": true,
+    "shell_errexit": true,
+    "reject_interactive_editors": true,
+    "quality_gate": "independent tests, protected hashes, actual initial failure then source edit and successful rerun, submission, backend completeness, command review",
+    "split": "pilot_development_only",
+    "calibration": "reference full pytest wall time in medium[3.2,5.8] or large[6.8,9.5] before agent outcomes",
+    "projection": "repair-v2 sidecar; preserves expansion-v1 and frozen predictor interfaces",
+    "protocol": "mandatory unmodified initial defect reproduction, source repair, exact full-suite rerun"
+  },
+  "generation": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 2048,
+    "seed": 23
+  },
+  "backend_compatibility_id": "8c2c272c9e4510c4dae33537bbe75970e56a8e7dfdbfdf213b7283f07c994dfe",
+  "runner_sha256": "0851530b2f24c51b02c5cd23a44bbc926c160f161de5bb39e9edc28b89067dbe",
+  "dependency_sha256": {
+    "src/leasepath/d2_repair.py": "4ad5a4205abdcbba61472e435488c72ac9111a5e6c2a9a8e587d9c80ebedc8ee",
+    "src/leasepath/d2_repair_guidance.py": "a17ba7e4e7b6c3faf24e01ee172585a75f3dfd7004182e42ee0f6abdcba77e7b"
+  },
+  "tasks_sha256": "a4748b10a422e53a8c880dac84ff0af9d1ee3772bedc693ebc89604252a23854",
+  "upstream_prompt_sha256": "a8c19b95fba2af792b22b4fa58b7ce70357b721a877fd713852abedb650216cf",
+  "system_template": "You are a helpful assistant that can interact with a computer.\n\nYour response must contain exactly ONE bash code block with ONE command (or commands connected with && or ||).\nInclude a THOUGHT section before your command where you explain your reasoning process.\nFormat your response as shown in <format_example>.\n\n<format_example>\nYour reasoning and analysis here. Explain why you want to perform the action.\n\n```mswea_bash_command\nyour_command_here\n```\n</format_example>\n\nFailure to follow these rules will cause your response to be rejected.\n",
+  "instance_template": "Please solve this issue: {{task}}\n\nYou can execute bash commands and edit files to implement the necessary changes.\n\n## Recommended Workflow\n\nThis workflow should be done step-by-step so that you can iterate on your changes and any possible problems.\n\n1. Analyze the codebase by finding and reading relevant files\n2. Create a script to reproduce the issue\n3. Edit the source code to resolve the issue\n4. Verify your fix works by running your script again\n5. Test edge cases to ensure your fix is robust\n6. Submit your changes and finish your work by issuing the following command: `echo COMPLETE_TASK_AND_SUBMIT_FINAL_OUTPUT`.\n   Do not combine it with any other command. <important>After this command, you cannot continue working on this task.</important>\n\n## Important Rules\n\n1. Every response must contain exactly one action\n2. The action must be enclosed in triple backticks\n3. Directory or environment variable changes are not persistent. Every action is executed in a new subshell.\n   However, you can prefix any action with `MY_ENV_VAR=MY_VALUE cd /path/to/working/dir && ...` or write/load environment variables from files\n\n<system_information>\n{{system}} {{release}} {{version}} {{machine}}\n</system_information>\n\n## Formatting your response\n\nHere is an example of a correct response:\n\n<example_response>\nTHOUGHT: I need to understand the structure of the repository first. Let me check what files are in the current directory to get a better understanding of the codebase.\n\n```mswea_bash_command\nls -la\n```\n</example_response>\n\n## Useful command examples\n\n### Create a new file:\n\n```mswea_bash_command\ncat <<'EOF' > newfile.py\nimport numpy as np\nhello = \"world\"\nprint(hello)\nEOF\n```\n\n### Edit files with sed:\n\n{%- if system == \"Darwin\" -%}\n<important>\nYou are on MacOS. For all the below examples, you need to use `sed -i ''` instead of `sed -i`.\n</important>\n{%- endif -%}\n\n```mswea_bash_command\n# Replace all occurrences\nsed -i 's/old_string/new_string/g' filename.py\n\n# Replace only first occurrence\nsed -i 's/old_string/new_string/' filename.py\n\n# Replace first occurrence on line 1\nsed -i '1s/old_string/new_string/' filename.py\n\n# Replace all occurrences in lines 1-10\nsed -i '1,10s/old_string/new_string/g' filename.py\n```\n\n### View file content:\n\n```mswea_bash_command\n# View specific lines with numbers\nnl -ba filename.py | sed -n '10,20p'\n```\n\n### Any other command you want to run\n\n```mswea_bash_command\nanything\n```\n## Repair protocol\nThis task starts with an actual defective implementation. Inspect all four files, run the original full suite before editing, repair solution.py, then rerun the full suite. Do not modify tests/README, skip work, use network or access other directories. Use noninteractive file edits. Python, pytest and standard library are available.\nAfter reproducing, replace the entire solution.py using cat <<'PY' > solution.py with your complete Python module. Do not use sed -i. Make editing and pytest separate actions. Never combine them in one action.\nFirst command: cat README.md solution.py test_visible.py test_workload.py\nSecond command: python -m pytest -q test_visible.py test_workload.py\nAfter the current source passes, submit with exactly: echo COMPLETE_TASK_AND_SUBMIT_FINAL_OUTPUT\n",
+  "raw_log": "/home/ma-user/takaya/leasepath/.artifacts/d2/raw.jsonl"
+}

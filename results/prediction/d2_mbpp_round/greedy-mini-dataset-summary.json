@@ -1,0 +1,70 @@
+{
+  "status": "passed",
+  "evidence_kind": "measured",
+  "events": 298,
+  "runs": 10,
+  "idle_episodes": 30,
+  "source_groups": {
+    "google-research/mbpp": 10
+  },
+  "evidence_scopes": {
+    "mbpp_derived_agent_development": 10
+  },
+  "snapshots": 117,
+  "outcomes": {
+    "legal_demand": 20,
+    "retire": 10
+  },
+  "requests": 30,
+  "cache_hit_requests": 22,
+  "cached_tokens": 22528,
+  "prompt_tokens": 34666,
+  "all_request_stages_observed": true,
+  "observer_sequence_gaps": 0,
+  "lookup_duration_ns": [
+    66401,
+    68110,
+    85871,
+    80041,
+    79101,
+    111310,
+    64281,
+    78910,
+    103351,
+    48761,
+    76531,
+    82391,
+    53940,
+    83981,
+    102061,
+    51160,
+    84191,
+    94360,
+    49111,
+    74501,
+    90021,
+    100601,
+    58891,
+    76561,
+    55281,
+    76430,
+    83400,
+    40380,
+    70010,
+    97611
+  ],
+  "raw_sha256": "dfc5197ddee4b8ba34fd178493411e3f02c4620a038c9aa67921d4c3881fe318",
+  "output_sha256": {
+    "targets.jsonl": "737d4def91736f8974c0e88090b7f8719c91a92bd6c08e183dd15160534b32ee",
+    "snapshots.jsonl": "517b54668a2e7debcded9f401c287f97e9ac7d044b8ce2fe04428771af4b7697",
+    "events.jsonl": "ab57367bebd4ab9484d7badff97af8ed55ae5f872665ae48ff0cd38d5cd0d87f",
+    "episode_labels.jsonl": "16d403b975d77dad143a6c3473e51beb4382e79e7aded3d4b9be58f89c795280"
+  },
+  "limitations": [
+    "development pilot; source grouping and evidence scopes must be retained",
+    "scheduler prefill counts; no device-kernel timing claim",
+    "request-boundary block snapshots; no complete allocation/eviction lifecycle",
+    "queue_length remains unknown; no global empty-queue assertion",
+    "no independent test split or policy benefit claim"
+  ]
+}

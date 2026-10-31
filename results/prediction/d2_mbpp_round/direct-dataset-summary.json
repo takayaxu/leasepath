@@ -1,0 +1,49 @@
+{
+  "status": "passed",
+  "evidence_kind": "measured",
+  "events": 100,
+  "runs": 10,
+  "idle_episodes": 10,
+  "source_groups": {
+    "google-research/mbpp": 10
+  },
+  "evidence_scopes": {
+    "function_generation_diagnostic": 10
+  },
+  "snapshots": 10,
+  "outcomes": {
+    "retire": 10
+  },
+  "requests": 10,
+  "cache_hit_requests": 9,
+  "cached_tokens": 1152,
+  "prompt_tokens": 2330,
+  "all_request_stages_observed": true,
+  "observer_sequence_gaps": 0,
+  "lookup_duration_ns": [
+    108171,
+    45370,
+    47400,
+    42990,
+    46431,
+    49280,
+    46490,
+    49740,
+    45430,
+    47660
+  ],
+  "raw_sha256": "dfc5197ddee4b8ba34fd178493411e3f02c4620a038c9aa67921d4c3881fe318",
+  "output_sha256": {
+    "targets.jsonl": "91becc7bb24aa03488295510609250a750dd95db2eb251228289a62c4b88d921",
+    "snapshots.jsonl": "7b582596833fa742c78c088c940835740182bfe277df1accdb58d523b7811c95",
+    "events.jsonl": "004802e03ec4e0a8964dabfb91e62d2ded4c029fe2a799bb7be8523315e4a510",
+    "episode_labels.jsonl": "844091ae045610595a90c51d30d3ab3dc76617b7f5b81d30963bc1f35aa5fed4"
+  },
+  "limitations": [
+    "development pilot; source grouping and evidence scopes must be retained",
+    "scheduler prefill counts; no device-kernel timing claim",
+    "request-boundary block snapshots; no complete allocation/eviction lifecycle",
+    "queue_length remains unknown; no global empty-queue assertion",
+    "no independent test split or policy benefit claim"
+  ]
+}

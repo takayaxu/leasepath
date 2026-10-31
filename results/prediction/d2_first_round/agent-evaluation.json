@@ -1,0 +1,102 @@
+[
+  {
+    "task_id": "sympy__sympy-20590",
+    "mode": "agent",
+    "returncode": 1,
+    "issue_tests_observed": true,
+    "target_tests": [
+      {
+        "name": "test_immutable",
+        "status": "failed"
+      }
+    ],
+    "test_counts": {
+      "passed": 21,
+      "failed": 1,
+      "error": 0,
+      "skipped": 0
+    },
+    "issue_tests_passed": false,
+    "evaluation_scope": "published SWE-bench test patch and named tests; local Python 3.12, not official container harness"
+  },
+  {
+    "task_id": "sympy__sympy-21614",
+    "mode": "agent",
+    "returncode": 1,
+    "issue_tests_observed": true,
+    "target_tests": [
+      {
+        "name": "test_Derivative_kind",
+        "status": "failed"
+      }
+    ],
+    "test_counts": {
+      "passed": 6,
+      "failed": 1,
+      "error": 0,
+      "skipped": 0
+    },
+    "issue_tests_passed": false,
+    "evaluation_scope": "published SWE-bench test patch and named tests; local Python 3.12, not official container harness"
+  },
+  {
+    "task_id": "sympy__sympy-21847",
+    "mode": "agent",
+    "returncode": 1,
+    "issue_tests_observed": true,
+    "target_tests": [
+      {
+        "name": "test_monomials",
+        "status": "failed"
+      }
+    ],
+    "test_counts": {
+      "passed": 10,
+      "failed": 1,
+      "error": 0,
+      "skipped": 0
+    },
+    "issue_tests_passed": false,
+    "evaluation_scope": "published SWE-bench test patch and named tests; local Python 3.12, not official container harness"
+  },
+  {
+    "task_id": "sympy__sympy-23262",
+    "mode": "agent",
+    "returncode": 1,
+    "issue_tests_observed": true,
+    "target_tests": [
+      {
+        "name": "test_issue_14941",
+        "status": "failed"
+      }
+    ],
+    "test_counts": {
+      "passed": 60,
+      "failed": 3,
+      "error": 0,
+      "skipped": 0
+    },
+    "issue_tests_passed": false,
+    "evaluation_scope": "published SWE-bench test patch and named tests; local Python 3.12, not official container harness"
+  },
+  {
+    "task_id": "sympy__sympy-24909",
+    "mode": "agent",
+    "returncode": 1,
+    "issue_tests_observed": true,
+    "target_tests": [
+      {
+        "name": "test_prefix_operations",
+        "status": "failed"
+      }
+    ],
+    "test_counts": {
+      "passed": 2,
+      "failed": 1,
+      "error": 0,
+      "skipped": 0
+    },
+    "issue_tests_passed": false,
+    "evaluation_scope": "published SWE-bench test patch and named tests; local Python 3.12, not official container harness"
+  }
+]

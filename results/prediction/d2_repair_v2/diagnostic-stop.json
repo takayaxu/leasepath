@@ -1,0 +1,36 @@
+{
+  "status": "stopped_diagnostic_preserved",
+  "reason": "two CSV repair attempts hit 24 steps through nonworking sed replacements; stopped third workflow with SIGINT; guided profile uses fresh identical initial sources/tests/scales",
+  "completed_workflows": [
+    {
+      "task_id": "repair-csv-ledger-medium",
+      "workflow_id": "repair-csv-ledger-medium-greedy-guided-d9812f57",
+      "exit_status": "LimitsExceeded",
+      "calls": 24,
+      "source_edited": false,
+      "failed_tests": 2,
+      "full_suite_attempts": 2,
+      "full_suite_retries": 1,
+      "loop_feedback_count": 17
+    },
+    {
+      "task_id": "repair-csv-ledger-large",
+      "workflow_id": "repair-csv-ledger-large-greedy-guided-90af121b",
+      "exit_status": "LimitsExceeded",
+      "calls": 24,
+      "source_edited": false,
+      "failed_tests": 2,
+      "full_suite_attempts": 2,
+      "full_suite_retries": 1,
+      "loop_feedback_count": 17
+    }
+  ],
+  "interrupted_workflows": [
+    {
+      "workflow_id": "repair-jsonl-status-medium-greedy-guided-fd9a0026",
+      "task_id": "repair-jsonl-status-medium"
+    }
+  ],
+  "main_dataset_handling": "all diagnostic workflows retained separately; excluded from guided main dataset; no task rerun overwrites original",
+  "raw_snapshot_sha256": "933c8afe6b690a58825309ab1300a2800937ed905048e5506b32520e2ca5ce8e"
+}

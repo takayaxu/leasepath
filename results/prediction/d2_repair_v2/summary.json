@@ -1,0 +1,24 @@
+{
+  "status": "completed",
+  "new_parents": 0,
+  "unique_parents": 3,
+  "executions": 6,
+  "correct_executions": 4,
+  "qualified_executions": 4,
+  "auditable_executions": 6,
+  "raw_sha256": "2052ed67172853edef65cb09067cc3fab688c443d5dc5932fef6f33343b8ed3c",
+  "workflows_with_repair_and_successful_retry": 6,
+  "full_suite_retries": 8,
+  "data_root": "/home/ma-user/takaya/leasepath/.artifacts/d2-repair-v2-guided",
+  "dataset_scope": "controlled test-first defect repair; real tools and backend lookups",
+  "feature_schema": "repair-v2 sidecar; frozen predictor interface unchanged",
+  "limitations": [
+    "three prior parents with two scales; variants and v1 executions must share groups",
+    "seconds include test fixture construction and validation, not function runtime alone",
+    "explicit context close yields D; no artificial natural C",
+    "same-host LocalEnvironment; hashes and command review, no OS isolation",
+    "qualified subset conditions on success; all-observed is primary",
+    "retry means explicit rerun of the same suite after observed failure; source edit audited separately",
+    "guided test-first repair; two explicitly seeded bugs and one previous agent defect; no artificial sleep or training"
+  ]
+}

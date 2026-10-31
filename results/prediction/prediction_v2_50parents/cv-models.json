@@ -1,0 +1,2558 @@
+{
+  "all-observed": [
+    {
+      "fold": 0,
+      "training_groups": [
+        "google-research/mbpp:mbpp-0002",
+        "google-research/mbpp:mbpp-0003",
+        "google-research/mbpp:mbpp-0007",
+        "google-research/mbpp:mbpp-0009",
+        "google-research/mbpp:mbpp-0012",
+        "google-research/mbpp:mbpp-0014",
+        "google-research/mbpp:mbpp-0016",
+        "google-research/mbpp:mbpp-0019",
+        "google-research/mbpp:mbpp-0057",
+        "google-research/mbpp:mbpp-0058",
+        "google-research/mbpp:mbpp-0059",
+        "google-research/mbpp:mbpp-0061",
+        "google-research/mbpp:mbpp-0064",
+        "google-research/mbpp:mbpp-0067",
+        "google-research/mbpp:mbpp-0068",
+        "google-research/mbpp:mbpp-0074",
+        "google-research/mbpp:mbpp-0075",
+        "google-research/mbpp:mbpp-0077",
+        "google-research/mbpp:mbpp-0084",
+        "google-research/mbpp:mbpp-0086",
+        "google-research/mbpp:mbpp-0087",
+        "google-research/mbpp:mbpp-0088",
+        "google-research/mbpp:mbpp-0091",
+        "google-research/mbpp:mbpp-0092",
+        "google-research/mbpp:mbpp-0093",
+        "google-research/mbpp:mbpp-0094",
+        "google-research/mbpp:mbpp-0096",
+        "google-research/mbpp:mbpp-0097",
+        "google-research/mbpp:mbpp-0099",
+        "google-research/mbpp:mbpp-0102",
+        "google-research/mbpp:mbpp-0103",
+        "google-research/mbpp:mbpp-0105",
+        "google-research/mbpp:mbpp-0106",
+        "google-research/mbpp:mbpp-0108",
+        "leasepath/designed-file-tasks-v1:designed-csv-ledger",
+        "leasepath/designed-file-tasks-v1:designed-graph-distance",
+        "leasepath/designed-file-tasks-v1:designed-gzip-digest",
+        "leasepath/designed-file-tasks-v1:designed-integer-sort",
+        "leasepath/designed-file-tasks-v1:designed-jsonl-status",
+        "leasepath/designed-file-tasks-v1:designed-sqlite-sales"
+      ],
+      "validation_groups": [
+        "google-research/mbpp:mbpp-0004",
+        "google-research/mbpp:mbpp-0008",
+        "google-research/mbpp:mbpp-0011",
+        "google-research/mbpp:mbpp-0062",
+        "google-research/mbpp:mbpp-0063",
+        "google-research/mbpp:mbpp-0065",
+        "google-research/mbpp:mbpp-0072",
+        "google-research/mbpp:mbpp-0080",
+        "google-research/mbpp:mbpp-0090",
+        "google-research/mbpp:mbpp-0095"
+      ],
+      "training_workflows": 52,
+      "validation_workflows": 13,
+      "training_snapshots": 2006,
+      "validation_snapshots": 408,
+      "training_risk_support": [
+        {
+          "right_s": 0.01,
+          "risk_rows": 2006,
+          "workflows": 52,
+          "parent_tasks": 40,
+          "weighted_labels": {
+            "U": 9.053449374699374,
+            "D": 2.33723544973545,
+            "waiting": 40.60931517556518
+          }
+        },
+        {
+          "right_s": 0.03,
+          "risk_rows": 1629,
+          "workflows": 52,
+          "parent_tasks": 40,
+          "weighted_labels": {
+            "U": 12.991111411736412,
+            "D": 6.423082010582011,
+            "waiting": 21.195121753246752
+          }
+        },
+        {
+          "right_s": 0.1,
+          "risk_rows": 1098,
+          "workflows": 52,
+          "parent_tasks": 40,
+          "weighted_labels": {
+            "U": 12.681914682539682,
+            "D": 0.13194444444444445,
+            "waiting": 8.381262626262627
+          }
+        },
+        {
+          "right_s": 0.3,
+          "risk_rows": 493,
+          "workflows": 52,
+          "parent_tasks": 40,
+          "weighted_labels": {
+            "U": 0.781547619047619,
+            "D": 0,
+            "waiting": 7.599715007215007
+          }
+        },
+        {
+          "right_s": 1,
+          "risk_rows": 448,
+          "workflows": 52,
+          "parent_tasks": 40,
+          "weighted_labels": {
+            "U": 5.357821067821068,
+            "D": 0,
+            "waiting": 2.241893939393939
+          }
+        },
+        {
+          "right_s": 3,
+          "risk_rows": 186,
+          "workflows": 12,
+          "parent_tasks": 6,
+          "weighted_labels": {
+            "U": 1.1256421356421356,
+            "D": 0,
+            "waiting": 1.1162518037518037
+          }
+        },
+        {
+          "right_s": 10,
+          "risk_rows": 118,
+          "workflows": 6,
+          "parent_tasks": 3,
+          "weighted_labels": {
+            "U": 1.1162518037518037,
+            "D": 0,
+            "waiting": 0
+          }
+        },
+        {
+          "right_s": 30,
+          "risk_rows": 0,
+          "workflows": 0,
+          "parent_tasks": 0,
+          "weighted_labels": {
+            "U": 0,
+            "D": 0,
+            "waiting": 0
+          }
+        },
+        {
+          "right_s": 60,
+          "risk_rows": 0,
+          "workflows": 0,
+          "parent_tasks": 0,
+          "weighted_labels": {
+            "U": 0,
+            "D": 0,
+            "waiting": 0
+          }
+        },
+        {
+          "right_s": 120,
+          "risk_rows": 0,
+          "workflows": 0,
+          "parent_tasks": 0,
+          "weighted_labels": {
+            "U": 0,
+            "D": 0,
+            "waiting": 0
+          }
+        },
+        {
+          "right_s": 300,
+          "risk_rows": 0,
+          "workflows": 0,
+          "parent_tasks": 0,
+          "weighted_labels": {
+            "U": 0,
+            "D": 0,
+            "waiting": 0
+          }
+        },
+        {
+          "right_s": 600,
+          "risk_rows": 0,
+          "workflows": 0,
+          "parent_tasks": 0,
+          "weighted_labels": {
+            "U": 0,
+            "D": 0,
+            "waiting": 0
+          }
+        }
+      ],
+      "models": {
+        "global": {
+          "fitted_groups": 0,
+          "supported_right_edges": [
+            0.01,
+            0.03,
+            0.1,
+            0.3,
+            1,
+            3,
+            10
+          ],
+          "sha256": "f3600e0dd272dc33f4c027f6b74b70b45412795d6b40b72e83b24d47f0d826e1"
+        },
+        "conditional": {
+          "fitted_groups": 19,
+          "supported_right_edges": [
+            0.01,
+            0.03,
+            0.1,
+            0.3,
+            1,
+            3,
+            10
+          ],
+          "sha256": "b7e15759ea8b7be518d0ee362daf9264dfd327ebc9d88019b9ab907178701ec6"
+        },
+        "gbdt": {
+          "training_risk_rows": 5978,
+          "boosting_iterations": 40,
+          "trees": 120,
+          "maximum_leaves": 4,
+          "vocabularies": {
+            "tool_name": [
+              null,
+              "bash"
+            ],
+            "phase": [
+              null,
+              "queued",
+              "waiting_tool"
+            ]
+          },
+          "elapsed_bins": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "supported_right_edges": [
+            0.01,
+            0.03,
+            0.1,
+            0.3,
+            1,
+            3,
+            10
+          ],
+          "sha256": "6a6001b6a1d506ed27250e578c9b7c15b0d220aa21e6291710f92ef2eeb03496"
+        }
+      }
+    },
+    {
+      "fold": 1,
+      "training_groups": [
+        "google-research/mbpp:mbpp-0002",
+        "google-research/mbpp:mbpp-0004",
+        "google-research/mbpp:mbpp-0007",
+        "google-research/mbpp:mbpp-0008",
+        "google-research/mbpp:mbpp-0009",
+        "google-research/mbpp:mbpp-0011",
+        "google-research/mbpp:mbpp-0014",
+        "google-research/mbpp:mbpp-0016",
+        "google-research/mbpp:mbpp-0057",
+        "google-research/mbpp:mbpp-0058",
+        "google-research/mbpp:mbpp-0061",
+        "google-research/mbpp:mbpp-0062",
+        "google-research/mbpp:mbpp-0063",
+        "google-research/mbpp:mbpp-0064",
+        "google-research/mbpp:mbpp-0065",
+        "google-research/mbpp:mbpp-0067",
+        "google-research/mbpp:mbpp-0068",
+        "google-research/mbpp:mbpp-0072",
+        "google-research/mbpp:mbpp-0080",
+        "google-research/mbpp:mbpp-0084",
+        "google-research/mbpp:mbpp-0086",
+        "google-research/mbpp:mbpp-0087",
+        "google-research/mbpp:mbpp-0088",
+        "google-research/mbpp:mbpp-0090",
+        "google-research/mbpp:mbpp-0091",
+        "google-research/mbpp:mbpp-0093",
+        "google-research/mbpp:mbpp-0094",
+        "google-research/mbpp:mbpp-0095",
+        "google-research/mbpp:mbpp-0096",
+        "google-research/mbpp:mbpp-0099",
+        "google-research/mbpp:mbpp-0102",
+        "google-research/mbpp:mbpp-0103",
+        "google-research/mbpp:mbpp-0106",
+        "google-research/mbpp:mbpp-0108",
+        "leasepath/designed-file-tasks-v1:designed-csv-ledger",
+        "leasepath/designed-file-tasks-v1:designed-graph-distance",
+        "leasepath/designed-file-tasks-v1:designed-gzip-digest",
+        "leasepath/designed-file-tasks-v1:designed-integer-sort",
+        "leasepath/designed-file-tasks-v1:designed-jsonl-status",
+        "leasepath/designed-file-tasks-v1:designed-sqlite-sales"
+      ],
+      "validation_groups": [
+        "google-research/mbpp:mbpp-0003",
+        "google-research/mbpp:mbpp-0012",
+        "google-research/mbpp:mbpp-0019",
+        "google-research/mbpp:mbpp-0059",
+        "google-research/mbpp:mbpp-0074",
+        "google-research/mbpp:mbpp-0075",
+        "google-research/mbpp:mbpp-0077",
+        "google-research/mbpp:mbpp-0092",
+        "google-research/mbpp:mbpp-0097",
+        "google-research/mbpp:mbpp-0105"
+      ],
+      "training_workflows": 53,
+      "validation_workflows": 12,
+      "training_snapshots": 2014,
+      "validation_snapshots": 400,
+      "training_risk_support": [
+        {
+          "right_s": 0.01,
+          "risk_rows": 2014,
+          "workflows": 53,
+          "parent_tasks": 40,
+          "weighted_labels": {
+            "U": 9.461098184223184,
+            "D": 2.419973544973545,
+            "waiting": 41.11892827080327
+          }
+        },
+        {
+          "right_s": 0.03,
+          "risk_rows": 1626,
+          "workflows": 53,
+          "parent_tasks": 40,
+          "weighted_labels": {
+            "U": 13.457569745069744,
+            "D": 6.572883597883598,
+            "waiting": 21.088474927849926
+          }
+        },
+        {
+          "right_s": 0.1,
+          "risk_rows": 1095,
+          "workflows": 53,
+          "parent_tasks": 40,
+          "weighted_labels": {
+            "U": 12.63500992063492,
+            "D": 0.14166666666666666,
+            "waiting": 8.311798340548341
+          }
+        },
+        {
+          "right_s": 0.3,
+          "risk_rows": 483,
+          "workflows": 53,
+          "parent_tasks": 40,
+          "weighted_labels": {
+            "U": 0.7230654761904762,
+            "D": 0,
+            "waiting": 7.588732864357865
+          }
+        },
+        {
+          "right_s": 1,
+          "risk_rows": 444,
+          "workflows": 53,
+          "parent_tasks": 40,
+          "weighted_labels": {
+            "U": 5.346838924963925,
+            "D": 0,
+            "waiting": 2.241893939393939
+          }
+        },
+        {
+          "right_s": 3,
+          "risk_rows": 186,
+          "workflows": 12,
+          "parent_tasks": 6,
+          "weighted_labels": {
+            "U": 1.1256421356421356,
+            "D": 0,
+            "waiting": 1.1162518037518037
+          }
+        },
+        {
+          "right_s": 10,
+          "risk_rows": 118,
+          "workflows": 6,
+          "parent_tasks": 3,
+          "weighted_labels": {
+            "U": 1.1162518037518037,
+            "D": 0,
+            "waiting": 0
+          }
+        },
+        {
+          "right_s": 30,
+          "risk_rows": 0,
+          "workflows": 0,
+          "parent_tasks": 0,
+          "weighted_labels": {
+            "U": 0,
+            "D": 0,
+            "waiting": 0
+          }
+        },
+        {
+          "right_s": 60,
+          "risk_rows": 0,
+          "workflows": 0,
+          "parent_tasks": 0,
+          "weighted_labels": {
+            "U": 0,
+            "D": 0,
+            "waiting": 0
+          }
+        },
+        {
+          "right_s": 120,
+          "risk_rows": 0,
+          "workflows": 0,
+          "parent_tasks": 0,
+          "weighted_labels": {
+            "U": 0,
+            "D": 0,
+            "waiting": 0
+          }
+        },
+        {
+          "right_s": 300,
+          "risk_rows": 0,
+          "workflows": 0,
+          "parent_tasks": 0,
+          "weighted_labels": {
+            "U": 0,
+            "D": 0,
+            "waiting": 0
+          }
+        },
+        {
+          "right_s": 600,
+          "risk_rows": 0,
+          "workflows": 0,
+          "parent_tasks": 0,
+          "weighted_labels": {
+            "U": 0,
+            "D": 0,
+            "waiting": 0
+          }
+        }
+      ],
+      "models": {
+        "global": {
+          "fitted_groups": 0,
+          "supported_right_edges": [
+            0.01,
+            0.03,
+            0.1,
+            0.3,
+            1,
+            3,
+            10
+          ],
+          "sha256": "080abaac6b969424edc3570b7cf5fa6d869e9ac178badf8a96a52376f72847e0"
+        },
+        "conditional": {
+          "fitted_groups": 16,
+          "supported_right_edges": [
+            0.01,
+            0.03,
+            0.1,
+            0.3,
+            1,
+            3,
+            10
+          ],
+          "sha256": "a48c6dc6644fd9cb913997d7e1afc2c5c491bd12c51de692b898c32d851c0af1"
+        },
+        "gbdt": {
+          "training_risk_rows": 5966,
+          "boosting_iterations": 40,
+          "trees": 120,
+          "maximum_leaves": 4,
+          "vocabularies": {
+            "tool_name": [
+              null,
+              "bash"
+            ],
+            "phase": [
+              null,
+              "queued",
+              "waiting_tool"
+            ]
+          },
+          "elapsed_bins": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "supported_right_edges": [
+            0.01,
+            0.03,
+            0.1,
+            0.3,
+            1,
+            3,
+            10
+          ],
+          "sha256": "4426c0419b24376dfc5cc6d47a33c0b706fe09c0602555c6650a225f60d51674"
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "training_groups": [
+        "google-research/mbpp:mbpp-0002",
+        "google-research/mbpp:mbpp-0003",
+        "google-research/mbpp:mbpp-0004",
+        "google-research/mbpp:mbpp-0007",
+        "google-research/mbpp:mbpp-0008",
+        "google-research/mbpp:mbpp-0011",
+        "google-research/mbpp:mbpp-0012",
+        "google-research/mbpp:mbpp-0019",
+        "google-research/mbpp:mbpp-0057",
+        "google-research/mbpp:mbpp-0059",
+        "google-research/mbpp:mbpp-0062",
+        "google-research/mbpp:mbpp-0063",
+        "google-research/mbpp:mbpp-0064",
+        "google-research/mbpp:mbpp-0065",
+        "google-research/mbpp:mbpp-0067",
+        "google-research/mbpp:mbpp-0068",
+        "google-research/mbpp:mbpp-0072",
+        "google-research/mbpp:mbpp-0074",
+        "google-research/mbpp:mbpp-0075",
+        "google-research/mbpp:mbpp-0077",
+        "google-research/mbpp:mbpp-0080",
+        "google-research/mbpp:mbpp-0086",
+        "google-research/mbpp:mbpp-0087",
+        "google-research/mbpp:mbpp-0088",
+        "google-research/mbpp:mbpp-0090",
+        "google-research/mbpp:mbpp-0092",
+        "google-research/mbpp:mbpp-0093",
+        "google-research/mbpp:mbpp-0094",
+        "google-research/mbpp:mbpp-0095",
+        "google-research/mbpp:mbpp-0097",
+        "google-research/mbpp:mbpp-0099",
+        "google-research/mbpp:mbpp-0103",
+        "google-research/mbpp:mbpp-0105",
+        "google-research/mbpp:mbpp-0108",
+        "leasepath/designed-file-tasks-v1:designed-csv-ledger",
+        "leasepath/designed-file-tasks-v1:designed-graph-distance",
+        "leasepath/designed-file-tasks-v1:designed-gzip-digest",
+        "leasepath/designed-file-tasks-v1:designed-integer-sort",
+        "leasepath/designed-file-tasks-v1:designed-jsonl-status",
+        "leasepath/designed-file-tasks-v1:designed-sqlite-sales"
+      ],
+      "validation_groups": [
+        "google-research/mbpp:mbpp-0009",
+        "google-research/mbpp:mbpp-0014",
+        "google-research/mbpp:mbpp-0016",
+        "google-research/mbpp:mbpp-0058",
+        "google-research/mbpp:mbpp-0061",
+        "google-research/mbpp:mbpp-0084",
+        "google-research/mbpp:mbpp-0091",
+        "google-research/mbpp:mbpp-0096",
+        "google-research/mbpp:mbpp-0102",
+        "google-research/mbpp:mbpp-0106"
+      ],
+      "training_workflows": 53,
+      "validation_workflows": 12,
+      "training_snapshots": 2023,
+      "validation_snapshots": 391,
+      "training_risk_support": [
+        {
+          "right_s": 0.01,
+          "risk_rows": 2023,
+          "workflows": 53,
+          "parent_tasks": 40,
+          "weighted_labels": {
+            "U": 9.315071398508898,
+            "D": 2.4311507936507937,
+            "waiting": 41.25377780784031
+          }
+        },
+        {
+          "right_s": 0.03,
+          "risk_rows": 1633,
+          "workflows": 53,
+          "parent_tasks": 40,
+          "weighted_labels": {
+            "U": 13.348403078403079,
+            "D": 6.661309523809524,
+            "waiting": 21.244065205627706
+          }
+        },
+        {
+          "right_s": 0.1,
+          "risk_rows": 1101,
+          "workflows": 53,
+          "parent_tasks": 40,
+          "weighted_labels": {
+            "U": 12.801522817460317,
+            "D": 0.11666666666666667,
+            "waiting": 8.325875721500722
+          }
+        },
+        {
+          "right_s": 0.3,
+          "risk_rows": 484,
+          "workflows": 53,
+          "parent_tasks": 40,
+          "weighted_labels": {
+            "U": 0.7545386904761905,
+            "D": 0,
+            "waiting": 7.571337031024531
+          }
+        },
+        {
+          "right_s": 1,
+          "risk_rows": 443,
+          "workflows": 53,
+          "parent_tasks": 40,
+          "weighted_labels": {
+            "U": 5.3294430916305915,
+            "D": 0,
+            "waiting": 2.241893939393939
+          }
+        },
+        {
+          "right_s": 3,
+          "risk_rows": 186,
+          "workflows": 12,
+          "parent_tasks": 6,
+          "weighted_labels": {
+            "U": 1.1256421356421356,
+            "D": 0,
+            "waiting": 1.1162518037518037
+          }
+        },
+        {
+          "right_s": 10,
+          "risk_rows": 118,
+          "workflows": 6,
+          "parent_tasks": 3,
+          "weighted_labels": {
+            "U": 1.1162518037518037,
+            "D": 0,
+            "waiting": 0
+          }
+        },
+        {
+          "right_s": 30,
+          "risk_rows": 0,
+          "workflows": 0,
+          "parent_tasks": 0,
+          "weighted_labels": {
+            "U": 0,
+            "D": 0,
+            "waiting": 0
+          }
+        },
+        {
+          "right_s": 60,
+          "risk_rows": 0,
+          "workflows": 0,
+          "parent_tasks": 0,
+          "weighted_labels": {
+            "U": 0,
+            "D": 0,
+            "waiting": 0
+          }
+        },
+        {
+          "right_s": 120,
+          "risk_rows": 0,
+          "workflows": 0,
+          "parent_tasks": 0,
+          "weighted_labels": {
+            "U": 0,
+            "D": 0,
+            "waiting": 0
+          }
+        },
+        {
+          "right_s": 300,
+          "risk_rows": 0,
+          "workflows": 0,
+          "parent_tasks": 0,
+          "weighted_labels": {
+            "U": 0,
+            "D": 0,
+            "waiting": 0
+          }
+        },
+        {
+          "right_s": 600,
+          "risk_rows": 0,
+          "workflows": 0,
+          "parent_tasks": 0,
+          "weighted_labels": {
+            "U": 0,
+            "D": 0,
+            "waiting": 0
+          }
+        }
+      ],
+      "models": {
+        "global": {
+          "fitted_groups": 0,
+          "supported_right_edges": [
+            0.01,
+            0.03,
+            0.1,
+            0.3,
+            1,
+            3,
+            10
+          ],
+          "sha256": "4500ac8baac6abe3b4e609481814be98fee36fe762f44821df6ee9f5f5ec3624"
+        },
+        "conditional": {
+          "fitted_groups": 19,
+          "supported_right_edges": [
+            0.01,
+            0.03,
+            0.1,
+            0.3,
+            1,
+            3,
+            10
+          ],
+          "sha256": "742d2e3807d816139d60cf2a203a02940ea89e93d87281e0d490c94027d60a26"
+        },
+        "gbdt": {
+          "training_risk_rows": 5988,
+          "boosting_iterations": 40,
+          "trees": 120,
+          "maximum_leaves": 4,
+          "vocabularies": {
+            "tool_name": [
+              null,
+              "bash"
+            ],
+            "phase": [
+              null,
+              "queued",
+              "waiting_tool"
+            ]
+          },
+          "elapsed_bins": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "supported_right_edges": [
+            0.01,
+            0.03,
+            0.1,
+            0.3,
+            1,
+            3,
+            10
+          ],
+          "sha256": "1090ae5a53d79f3eff3afe9b02d8fc887553f808ce14763b57f008f3fec68f11"
+        }
+      }
+    },
+    {
+      "fold": 3,
+      "training_groups": [
+        "google-research/mbpp:mbpp-0002",
+        "google-research/mbpp:mbpp-0003",
+        "google-research/mbpp:mbpp-0004",
+        "google-research/mbpp:mbpp-0008",
+        "google-research/mbpp:mbpp-0009",
+        "google-research/mbpp:mbpp-0011",
+        "google-research/mbpp:mbpp-0012",
+        "google-research/mbpp:mbpp-0014",
+        "google-research/mbpp:mbpp-0016",
+        "google-research/mbpp:mbpp-0019",
+        "google-research/mbpp:mbpp-0057",
+        "google-research/mbpp:mbpp-0058",
+        "google-research/mbpp:mbpp-0059",
+        "google-research/mbpp:mbpp-0061",
+        "google-research/mbpp:mbpp-0062",
+        "google-research/mbpp:mbpp-0063",
+        "google-research/mbpp:mbpp-0064",
+        "google-research/mbpp:mbpp-0065",
+        "google-research/mbpp:mbpp-0067",
+        "google-research/mbpp:mbpp-0068",
+        "google-research/mbpp:mbpp-0072",
+        "google-research/mbpp:mbpp-0074",
+        "google-research/mbpp:mbpp-0075",
+        "google-research/mbpp:mbpp-0077",
+        "google-research/mbpp:mbpp-0080",
+        "google-research/mbpp:mbpp-0084",
+        "google-research/mbpp:mbpp-0088",
+        "google-research/mbpp:mbpp-0090",
+        "google-research/mbpp:mbpp-0091",
+        "google-research/mbpp:mbpp-0092",
+        "google-research/mbpp:mbpp-0093",
+        "google-research/mbpp:mbpp-0095",
+        "google-research/mbpp:mbpp-0096",
+        "google-research/mbpp:mbpp-0097",
+        "google-research/mbpp:mbpp-0102",
+        "google-research/mbpp:mbpp-0105",
+        "google-research/mbpp:mbpp-0106",
+        "google-research/mbpp:mbpp-0108",
+        "leasepath/designed-file-tasks-v1:designed-jsonl-status",
+        "leasepath/designed-file-tasks-v1:designed-sqlite-sales"
+      ],
+      "validation_groups": [
+        "google-research/mbpp:mbpp-0007",
+        "google-research/mbpp:mbpp-0086",
+        "google-research/mbpp:mbpp-0087",
+        "google-research/mbpp:mbpp-0094",
+        "google-research/mbpp:mbpp-0099",
+        "google-research/mbpp:mbpp-0103",
+        "leasepath/designed-file-tasks-v1:designed-csv-ledger",
+        "leasepath/designed-file-tasks-v1:designed-graph-distance",
+        "leasepath/designed-file-tasks-v1:designed-gzip-digest",
+        "leasepath/designed-file-tasks-v1:designed-integer-sort"
+      ],
+      "training_workflows": 50,
+      "validation_workflows": 15,
+      "training_snapshots": 1750,
+      "validation_snapshots": 664,
+      "training_risk_support": [
+        {
+          "right_s": 0.01,
+          "risk_rows": 1750,
+          "workflows": 50,
+          "parent_tasks": 40,
+          "weighted_labels": {
+            "U": 9.124763708513708,
+            "D": 2.422751322751323,
+            "waiting": 38.45248496873497
+          }
+        },
+        {
+          "right_s": 0.03,
+          "risk_rows": 1401,
+          "workflows": 50,
+          "parent_tasks": 40,
+          "weighted_labels": {
+            "U": 12.531698232323233,
+            "D": 6.362962962962963,
+            "waiting": 19.557823773448774
+          }
+        },
+        {
+          "right_s": 0.1,
+          "risk_rows": 924,
+          "workflows": 50,
+          "parent_tasks": 40,
+          "weighted_labels": {
+            "U": 12.016478174603174,
+            "D": 0.13194444444444445,
+            "waiting": 7.409401154401155
+          }
+        },
+        {
+          "right_s": 0.3,
+          "risk_rows": 368,
+          "workflows": 50,
+          "parent_tasks": 40,
+          "weighted_labels": {
+            "U": 0.7625000000000001,
+            "D": 0,
+            "waiting": 6.646901154401155
+          }
+        },
+        {
+          "right_s": 1,
+          "risk_rows": 328,
+          "workflows": 50,
+          "parent_tasks": 40,
+          "weighted_labels": {
+            "U": 5.927204184704185,
+            "D": 0,
+            "waiting": 0.7196969696969697
+          }
+        },
+        {
+          "right_s": 3,
+          "risk_rows": 53,
+          "workflows": 4,
+          "parent_tasks": 2,
+          "weighted_labels": {
+            "U": 0.37337662337662336,
+            "D": 0,
+            "waiting": 0.3463203463203463
+          }
+        },
+        {
+          "right_s": 10,
+          "risk_rows": 32,
+          "workflows": 2,
+          "parent_tasks": 1,
+          "weighted_labels": {
+            "U": 0.3463203463203463,
+            "D": 0,
+            "waiting": 0
+          }
+        },
+        {
+          "right_s": 30,
+          "risk_rows": 0,
+          "workflows": 0,
+          "parent_tasks": 0,
+          "weighted_labels": {
+            "U": 0,
+            "D": 0,
+            "waiting": 0
+          }
+        },
+        {
+          "right_s": 60,
+          "risk_rows": 0,
+          "workflows": 0,
+          "parent_tasks": 0,
+          "weighted_labels": {
+            "U": 0,
+            "D": 0,
+            "waiting": 0
+          }
+        },
+        {
+          "right_s": 120,
+          "risk_rows": 0,
+          "workflows": 0,
+          "parent_tasks": 0,
+          "weighted_labels": {
+            "U": 0,
+            "D": 0,
+            "waiting": 0
+          }
+        },
+        {
+          "right_s": 300,
+          "risk_rows": 0,
+          "workflows": 0,
+          "parent_tasks": 0,
+          "weighted_labels": {
+            "U": 0,
+            "D": 0,
+            "waiting": 0
+          }
+        },
+        {
+          "right_s": 600,
+          "risk_rows": 0,
+          "workflows": 0,
+          "parent_tasks": 0,
+          "weighted_labels": {
+            "U": 0,
+            "D": 0,
+            "waiting": 0
+          }
+        }
+      ],
+      "models": {
+        "global": {
+          "fitted_groups": 0,
+          "supported_right_edges": [
+            0.01,
+            0.03,
+            0.1,
+            0.3,
+            1,
+            3,
+            10
+          ],
+          "sha256": "dbb5a1527874b847db7a8ea2fab984ec946f18f0d173526f1598afefe709b2f9"
+        },
+        "conditional": {
+          "fitted_groups": 19,
+          "supported_right_edges": [
+            0.01,
+            0.03,
+            0.1,
+            0.3,
+            1,
+            3,
+            10
+          ],
+          "sha256": "a290f9c972c64fa30becfb94c08ad45e5de91ea9639cb6c51d842eff829a44e4"
+        },
+        "gbdt": {
+          "training_risk_rows": 4856,
+          "boosting_iterations": 40,
+          "trees": 120,
+          "maximum_leaves": 4,
+          "vocabularies": {
+            "tool_name": [
+              null,
+              "bash"
+            ],
+            "phase": [
+              null,
+              "queued",
+              "waiting_tool"
+            ]
+          },
+          "elapsed_bins": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "supported_right_edges": [
+            0.01,
+            0.03,
+            0.1,
+            0.3,
+            1,
+            3,
+            10
+          ],
+          "sha256": "8d95caaae95ce01802cdbd969ac73248d7ef0508e2592d284fbed76c42bfa157"
+        }
+      }
+    },
+    {
+      "fold": 4,
+      "training_groups": [
+        "google-research/mbpp:mbpp-0003",
+        "google-research/mbpp:mbpp-0004",
+        "google-research/mbpp:mbpp-0007",
+        "google-research/mbpp:mbpp-0008",
+        "google-research/mbpp:mbpp-0009",
+        "google-research/mbpp:mbpp-0011",
+        "google-research/mbpp:mbpp-0012",
+        "google-research/mbpp:mbpp-0014",
+        "google-research/mbpp:mbpp-0016",
+        "google-research/mbpp:mbpp-0019",
+        "google-research/mbpp:mbpp-0058",
+        "google-research/mbpp:mbpp-0059",
+        "google-research/mbpp:mbpp-0061",
+        "google-research/mbpp:mbpp-0062",
+        "google-research/mbpp:mbpp-0063",
+        "google-research/mbpp:mbpp-0065",
+        "google-research/mbpp:mbpp-0072",
+        "google-research/mbpp:mbpp-0074",
+        "google-research/mbpp:mbpp-0075",
+        "google-research/mbpp:mbpp-0077",
+        "google-research/mbpp:mbpp-0080",
+        "google-research/mbpp:mbpp-0084",
+        "google-research/mbpp:mbpp-0086",
+        "google-research/mbpp:mbpp-0087",
+        "google-research/mbpp:mbpp-0090",
+        "google-research/mbpp:mbpp-0091",
+        "google-research/mbpp:mbpp-0092",
+        "google-research/mbpp:mbpp-0094",
+        "google-research/mbpp:mbpp-0095",
+        "google-research/mbpp:mbpp-0096",
+        "google-research/mbpp:mbpp-0097",
+        "google-research/mbpp:mbpp-0099",
+        "google-research/mbpp:mbpp-0102",
+        "google-research/mbpp:mbpp-0103",
+        "google-research/mbpp:mbpp-0105",
+        "google-research/mbpp:mbpp-0106",
+        "leasepath/designed-file-tasks-v1:designed-csv-ledger",
+        "leasepath/designed-file-tasks-v1:designed-graph-distance",
+        "leasepath/designed-file-tasks-v1:designed-gzip-digest",
+        "leasepath/designed-file-tasks-v1:designed-integer-sort"
+      ],
+      "validation_groups": [
+        "google-research/mbpp:mbpp-0002",
+        "google-research/mbpp:mbpp-0057",
+        "google-research/mbpp:mbpp-0064",
+        "google-research/mbpp:mbpp-0067",
+        "google-research/mbpp:mbpp-0068",
+        "google-research/mbpp:mbpp-0088",
+        "google-research/mbpp:mbpp-0093",
+        "google-research/mbpp:mbpp-0108",
+        "leasepath/designed-file-tasks-v1:designed-jsonl-status",
+        "leasepath/designed-file-tasks-v1:designed-sqlite-sales"
+      ],
+      "training_workflows": 52,
+      "validation_workflows": 13,
+      "training_snapshots": 1863,
+      "validation_snapshots": 551,
+      "training_risk_support": [
+        {
+          "right_s": 0.01,
+          "risk_rows": 1863,
+          "workflows": 52,
+          "parent_tasks": 40,
+          "weighted_labels": {
+            "U": 9.359414832852332,
+            "D": 2.4806878306878306,
+            "waiting": 40.159897336459835
+          }
+        },
+        {
+          "right_s": 0.03,
+          "risk_rows": 1499,
+          "workflows": 52,
+          "parent_tasks": 40,
+          "weighted_labels": {
+            "U": 13.077567941317941,
+            "D": 6.54510582010582,
+            "waiting": 20.537223575036077
+          }
+        },
+        {
+          "right_s": 0.1,
+          "risk_rows": 990,
+          "workflows": 52,
+          "parent_tasks": 40,
+          "weighted_labels": {
+            "U": 12.31749503968254,
+            "D": 0.09444444444444444,
+            "waiting": 8.12528409090909
+          }
+        },
+        {
+          "right_s": 0.3,
+          "risk_rows": 444,
+          "workflows": 52,
+          "parent_tasks": 40,
+          "weighted_labels": {
+            "U": 0.775967261904762,
+            "D": 0,
+            "waiting": 7.349316829004329
+          }
+        },
+        {
+          "right_s": 1,
+          "risk_rows": 401,
+          "workflows": 52,
+          "parent_tasks": 40,
+          "weighted_labels": {
+            "U": 5.827119859307359,
+            "D": 0,
+            "waiting": 1.5221969696969697
+          }
+        },
+        {
+          "right_s": 3,
+          "risk_rows": 133,
+          "workflows": 8,
+          "parent_tasks": 4,
+          "weighted_labels": {
+            "U": 0.7522655122655123,
+            "D": 0,
+            "waiting": 0.7699314574314574
+          }
+        },
+        {
+          "right_s": 10,
+          "risk_rows": 86,
+          "workflows": 4,
+          "parent_tasks": 2,
+          "weighted_labels": {
+            "U": 0.7699314574314574,
+            "D": 0,
+            "waiting": 0
+          }
+        },
+        {
+          "right_s": 30,
+          "risk_rows": 0,
+          "workflows": 0,
+          "parent_tasks": 0,
+          "weighted_labels": {
+            "U": 0,
+            "D": 0,
+            "waiting": 0
+          }
+        },
+        {
+          "right_s": 60,
+          "risk_rows": 0,
+          "workflows": 0,
+          "parent_tasks": 0,
+          "weighted_labels": {
+            "U": 0,
+            "D": 0,
+            "waiting": 0
+          }
+        },
+        {
+          "right_s": 120,
+          "risk_rows": 0,
+          "workflows": 0,
+          "parent_tasks": 0,
+          "weighted_labels": {
+            "U": 0,
+            "D": 0,
+            "waiting": 0
+          }
+        },
+        {
+          "right_s": 300,
+          "risk_rows": 0,
+          "workflows": 0,
+          "parent_tasks": 0,
+          "weighted_labels": {
+            "U": 0,
+            "D": 0,
+            "waiting": 0
+          }
+        },
+        {
+          "right_s": 600,
+          "risk_rows": 0,
+          "workflows": 0,
+          "parent_tasks": 0,
+          "weighted_labels": {
+            "U": 0,
+            "D": 0,
+            "waiting": 0
+          }
+        }
+      ],
+      "models": {
+        "global": {
+          "fitted_groups": 0,
+          "supported_right_edges": [
+            0.01,
+            0.03,
+            0.1,
+            0.3,
+            1,
+            3,
+            10
+          ],
+          "sha256": "6d271eea17b5e019d0725d94522403f3a0bf8dd67c99799e9d48e425b7b8d66a"
+        },
+        "conditional": {
+          "fitted_groups": 19,
+          "supported_right_edges": [
+            0.01,
+            0.03,
+            0.1,
+            0.3,
+            1,
+            3,
+            10
+          ],
+          "sha256": "5ef048afe50cb91d3534a655a1c1ef9e87fd9fdc546972fa69fe9f0acb027a41"
+        },
+        "gbdt": {
+          "training_risk_rows": 5416,
+          "boosting_iterations": 40,
+          "trees": 120,
+          "maximum_leaves": 4,
+          "vocabularies": {
+            "tool_name": [
+              null,
+              "bash"
+            ],
+            "phase": [
+              null,
+              "queued",
+              "waiting_tool"
+            ]
+          },
+          "elapsed_bins": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "supported_right_edges": [
+            0.01,
+            0.03,
+            0.1,
+            0.3,
+            1,
+            3,
+            10
+          ],
+          "sha256": "6f540fe4910cdb9ec4952d47d97bcf372116b604938a16874746149e6a68d261"
+        }
+      }
+    }
+  ],
+  "qualified": [
+    {
+      "fold": 0,
+      "training_groups": [
+        "google-research/mbpp:mbpp-0002",
+        "google-research/mbpp:mbpp-0003",
+        "google-research/mbpp:mbpp-0007",
+        "google-research/mbpp:mbpp-0009",
+        "google-research/mbpp:mbpp-0012",
+        "google-research/mbpp:mbpp-0014",
+        "google-research/mbpp:mbpp-0016",
+        "google-research/mbpp:mbpp-0019",
+        "google-research/mbpp:mbpp-0057",
+        "google-research/mbpp:mbpp-0058",
+        "google-research/mbpp:mbpp-0059",
+        "google-research/mbpp:mbpp-0061",
+        "google-research/mbpp:mbpp-0064",
+        "google-research/mbpp:mbpp-0068",
+        "google-research/mbpp:mbpp-0074",
+        "google-research/mbpp:mbpp-0075",
+        "google-research/mbpp:mbpp-0077",
+        "google-research/mbpp:mbpp-0084",
+        "google-research/mbpp:mbpp-0086",
+        "google-research/mbpp:mbpp-0087",
+        "google-research/mbpp:mbpp-0088",
+        "google-research/mbpp:mbpp-0091",
+        "google-research/mbpp:mbpp-0093",
+        "google-research/mbpp:mbpp-0094",
+        "google-research/mbpp:mbpp-0096",
+        "google-research/mbpp:mbpp-0097",
+        "google-research/mbpp:mbpp-0099",
+        "google-research/mbpp:mbpp-0103",
+        "google-research/mbpp:mbpp-0105",
+        "google-research/mbpp:mbpp-0106",
+        "google-research/mbpp:mbpp-0108",
+        "leasepath/designed-file-tasks-v1:designed-csv-ledger",
+        "leasepath/designed-file-tasks-v1:designed-graph-distance",
+        "leasepath/designed-file-tasks-v1:designed-gzip-digest",
+        "leasepath/designed-file-tasks-v1:designed-integer-sort",
+        "leasepath/designed-file-tasks-v1:designed-jsonl-status",
+        "leasepath/designed-file-tasks-v1:designed-sqlite-sales"
+      ],
+      "validation_groups": [
+        "google-research/mbpp:mbpp-0004",
+        "google-research/mbpp:mbpp-0008",
+        "google-research/mbpp:mbpp-0011",
+        "google-research/mbpp:mbpp-0062",
+        "google-research/mbpp:mbpp-0063",
+        "google-research/mbpp:mbpp-0065",
+        "google-research/mbpp:mbpp-0072",
+        "google-research/mbpp:mbpp-0080",
+        "google-research/mbpp:mbpp-0090",
+        "google-research/mbpp:mbpp-0095"
+      ],
+      "training_workflows": 42,
+      "validation_workflows": 12,
+      "training_snapshots": 1270,
+      "validation_snapshots": 283,
+      "training_risk_support": [
+        {
+          "right_s": 0.01,
+          "risk_rows": 1270,
+          "workflows": 42,
+          "parent_tasks": 37,
+          "weighted_labels": {
+            "U": 7.1487650312650315,
+            "D": 2.1128306878306877,
+            "waiting": 32.738404280904284
+          }
+        },
+        {
+          "right_s": 0.03,
+          "risk_rows": 1035,
+          "workflows": 42,
+          "parent_tasks": 37,
+          "weighted_labels": {
+            "U": 11.039254449254448,
+            "D": 5.768121693121693,
+            "waiting": 15.931028138528138
+          }
+        },
+        {
+          "right_s": 0.1,
+          "risk_rows": 629,
+          "workflows": 42,
+          "parent_tasks": 37,
+          "weighted_labels": {
+            "U": 9.094563492063491,
+            "D": 0,
+            "waiting": 6.836464646464647
+          }
+        },
+        {
+          "right_s": 0.3,
+          "risk_rows": 351,
+          "workflows": 42,
+          "parent_tasks": 37,
+          "weighted_labels": {
+            "U": 0.6833333333333333,
+            "D": 0,
+            "waiting": 6.153131313131313
+          }
+        },
+        {
+          "right_s": 1,
+          "risk_rows": 318,
+          "workflows": 42,
+          "parent_tasks": 37,
+          "weighted_labels": {
+            "U": 4.480934343434344,
+            "D": 0,
+            "waiting": 1.6721969696969696
+          }
+        },
+        {
+          "right_s": 3,
+          "risk_rows": 140,
+          "workflows": 9,
+          "parent_tasks": 6,
+          "weighted_labels": {
+            "U": 0.9022655122655122,
+            "D": 0,
+            "waiting": 0.7699314574314574
+          }
+        },
+        {
+          "right_s": 10,
+          "risk_rows": 86,
+          "workflows": 4,
+          "parent_tasks": 2,
+          "weighted_labels": {
+            "U": 0.7699314574314574,
+            "D": 0,
+            "waiting": 0
+          }
+        },
+        {
+          "right_s": 30,
+          "risk_rows": 0,
+          "workflows": 0,
+          "parent_tasks": 0,
+          "weighted_labels": {
+            "U": 0,
+            "D": 0,
+            "waiting": 0
+          }
+        },
+        {
+          "right_s": 60,
+          "risk_rows": 0,
+          "workflows": 0,
+          "parent_tasks": 0,
+          "weighted_labels": {
+            "U": 0,
+            "D": 0,
+            "waiting": 0
+          }
+        },
+        {
+          "right_s": 120,
+          "risk_rows": 0,
+          "workflows": 0,
+          "parent_tasks": 0,
+          "weighted_labels": {
+            "U": 0,
+            "D": 0,
+            "waiting": 0
+          }
+        },
+        {
+          "right_s": 300,
+          "risk_rows": 0,
+          "workflows": 0,
+          "parent_tasks": 0,
+          "weighted_labels": {
+            "U": 0,
+            "D": 0,
+            "waiting": 0
+          }
+        },
+        {
+          "right_s": 600,
+          "risk_rows": 0,
+          "workflows": 0,
+          "parent_tasks": 0,
+          "weighted_labels": {
+            "U": 0,
+            "D": 0,
+            "waiting": 0
+          }
+        }
+      ],
+      "models": {
+        "global": {
+          "fitted_groups": 0,
+          "supported_right_edges": [
+            0.01,
+            0.03,
+            0.1,
+            0.3,
+            1,
+            3,
+            10
+          ],
+          "sha256": "f643615ae05fc4a1e034fc818393151b0e7e77a02043eb9c650ec3772941fd1d"
+        },
+        "conditional": {
+          "fitted_groups": 16,
+          "supported_right_edges": [
+            0.01,
+            0.03,
+            0.1,
+            0.3,
+            1,
+            3,
+            10
+          ],
+          "sha256": "8c5e22783d961a651ae5c697d9fece90afe3cea71abb15f35c8557c5d3b1fb1d"
+        },
+        "gbdt": {
+          "training_risk_rows": 3829,
+          "boosting_iterations": 40,
+          "trees": 120,
+          "maximum_leaves": 4,
+          "vocabularies": {
+            "tool_name": [
+              null,
+              "bash"
+            ],
+            "phase": [
+              null,
+              "queued",
+              "waiting_tool"
+            ]
+          },
+          "elapsed_bins": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "supported_right_edges": [
+            0.01,
+            0.03,
+            0.1,
+            0.3,
+            1,
+            3,
+            10
+          ],
+          "sha256": "dea18d3046a8034b70087bd2f45f322c100fa96ecbf7840aee4482d0b7fa7c88"
+        }
+      }
+    },
+    {
+      "fold": 1,
+      "training_groups": [
+        "google-research/mbpp:mbpp-0002",
+        "google-research/mbpp:mbpp-0004",
+        "google-research/mbpp:mbpp-0007",
+        "google-research/mbpp:mbpp-0008",
+        "google-research/mbpp:mbpp-0009",
+        "google-research/mbpp:mbpp-0011",
+        "google-research/mbpp:mbpp-0014",
+        "google-research/mbpp:mbpp-0016",
+        "google-research/mbpp:mbpp-0057",
+        "google-research/mbpp:mbpp-0058",
+        "google-research/mbpp:mbpp-0061",
+        "google-research/mbpp:mbpp-0062",
+        "google-research/mbpp:mbpp-0063",
+        "google-research/mbpp:mbpp-0064",
+        "google-research/mbpp:mbpp-0065",
+        "google-research/mbpp:mbpp-0068",
+        "google-research/mbpp:mbpp-0072",
+        "google-research/mbpp:mbpp-0080",
+        "google-research/mbpp:mbpp-0084",
+        "google-research/mbpp:mbpp-0086",
+        "google-research/mbpp:mbpp-0087",
+        "google-research/mbpp:mbpp-0088",
+        "google-research/mbpp:mbpp-0090",
+        "google-research/mbpp:mbpp-0091",
+        "google-research/mbpp:mbpp-0093",
+        "google-research/mbpp:mbpp-0094",
+        "google-research/mbpp:mbpp-0095",
+        "google-research/mbpp:mbpp-0096",
+        "google-research/mbpp:mbpp-0099",
+        "google-research/mbpp:mbpp-0103",
+        "google-research/mbpp:mbpp-0106",
+        "google-research/mbpp:mbpp-0108",
+        "leasepath/designed-file-tasks-v1:designed-csv-ledger",
+        "leasepath/designed-file-tasks-v1:designed-graph-distance",
+        "leasepath/designed-file-tasks-v1:designed-gzip-digest",
+        "leasepath/designed-file-tasks-v1:designed-integer-sort",
+        "leasepath/designed-file-tasks-v1:designed-jsonl-status",
+        "leasepath/designed-file-tasks-v1:designed-sqlite-sales"
+      ],
+      "validation_groups": [
+        "google-research/mbpp:mbpp-0003",
+        "google-research/mbpp:mbpp-0012",
+        "google-research/mbpp:mbpp-0019",
+        "google-research/mbpp:mbpp-0059",
+        "google-research/mbpp:mbpp-0074",
+        "google-research/mbpp:mbpp-0075",
+        "google-research/mbpp:mbpp-0077",
+        "google-research/mbpp:mbpp-0097",
+        "google-research/mbpp:mbpp-0105"
+      ],
+      "training_workflows": 44,
+      "validation_workflows": 10,
+      "training_snapshots": 1311,
+      "validation_snapshots": 242,
+      "training_risk_support": [
+        {
+          "right_s": 0.01,
+          "risk_rows": 1311,
+          "workflows": 44,
+          "parent_tasks": 38,
+          "weighted_labels": {
+            "U": 7.695431697931698,
+            "D": 2.231878306878307,
+            "waiting": 34.07268999519
+          }
+        },
+        {
+          "right_s": 0.03,
+          "risk_rows": 1064,
+          "workflows": 44,
+          "parent_tasks": 38,
+          "weighted_labels": {
+            "U": 11.74973063973064,
+            "D": 5.991931216931217,
+            "waiting": 16.33102813852814
+          }
+        },
+        {
+          "right_s": 0.1,
+          "risk_rows": 640,
+          "workflows": 44,
+          "parent_tasks": 38,
+          "weighted_labels": {
+            "U": 9.297420634920634,
+            "D": 0,
+            "waiting": 7.033607503607504
+          }
+        },
+        {
+          "right_s": 0.3,
+          "risk_rows": 357,
+          "workflows": 44,
+          "parent_tasks": 38,
+          "weighted_labels": {
+            "U": 0.6761904761904762,
+            "D": 0,
+            "waiting": 6.357417027417028
+          }
+        },
+        {
+          "right_s": 1,
+          "risk_rows": 324,
+          "workflows": 44,
+          "parent_tasks": 38,
+          "weighted_labels": {
+            "U": 4.685220057720058,
+            "D": 0,
+            "waiting": 1.6721969696969696
+          }
+        },
+        {
+          "right_s": 3,
+          "risk_rows": 140,
+          "workflows": 9,
+          "parent_tasks": 6,
+          "weighted_labels": {
+            "U": 0.9022655122655122,
+            "D": 0,
+            "waiting": 0.7699314574314574
+          }
+        },
+        {
+          "right_s": 10,
+          "risk_rows": 86,
+          "workflows": 4,
+          "parent_tasks": 2,
+          "weighted_labels": {
+            "U": 0.7699314574314574,
+            "D": 0,
+            "waiting": 0
+          }
+        },
+        {
+          "right_s": 30,
+          "risk_rows": 0,
+          "workflows": 0,
+          "parent_tasks": 0,
+          "weighted_labels": {
+            "U": 0,
+            "D": 0,
+            "waiting": 0
+          }
+        },
+        {
+          "right_s": 60,
+          "risk_rows": 0,
+          "workflows": 0,
+          "parent_tasks": 0,
+          "weighted_labels": {
+            "U": 0,
+            "D": 0,
+            "waiting": 0
+          }
+        },
+        {
+          "right_s": 120,
+          "risk_rows": 0,
+          "workflows": 0,
+          "parent_tasks": 0,
+          "weighted_labels": {
+            "U": 0,
+            "D": 0,
+            "waiting": 0
+          }
+        },
+        {
+          "right_s": 300,
+          "risk_rows": 0,
+          "workflows": 0,
+          "parent_tasks": 0,
+          "weighted_labels": {
+            "U": 0,
+            "D": 0,
+            "waiting": 0
+          }
+        },
+        {
+          "right_s": 600,
+          "risk_rows": 0,
+          "workflows": 0,
+          "parent_tasks": 0,
+          "weighted_labels": {
+            "U": 0,
+            "D": 0,
+            "waiting": 0
+          }
+        }
+      ],
+      "models": {
+        "global": {
+          "fitted_groups": 0,
+          "supported_right_edges": [
+            0.01,
+            0.03,
+            0.1,
+            0.3,
+            1,
+            3,
+            10
+          ],
+          "sha256": "914307ae974bb9093ae3ab123e167e1c6fbf0033636adf5781eb4a3134a58764"
+        },
+        "conditional": {
+          "fitted_groups": 16,
+          "supported_right_edges": [
+            0.01,
+            0.03,
+            0.1,
+            0.3,
+            1,
+            3,
+            10
+          ],
+          "sha256": "64dd0164b454cc78970672c9596609f18dc0392517f4f3e8aa0b55c2ba74d4f8"
+        },
+        "gbdt": {
+          "training_risk_rows": 3922,
+          "boosting_iterations": 40,
+          "trees": 120,
+          "maximum_leaves": 4,
+          "vocabularies": {
+            "tool_name": [
+              null,
+              "bash"
+            ],
+            "phase": [
+              null,
+              "queued",
+              "waiting_tool"
+            ]
+          },
+          "elapsed_bins": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "supported_right_edges": [
+            0.01,
+            0.03,
+            0.1,
+            0.3,
+            1,
+            3,
+            10
+          ],
+          "sha256": "38cf95bd64fe4aba50a176e0b7cd6283487fc1300ad4f684410f6d0790713d4d"
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "training_groups": [
+        "google-research/mbpp:mbpp-0002",
+        "google-research/mbpp:mbpp-0003",
+        "google-research/mbpp:mbpp-0004",
+        "google-research/mbpp:mbpp-0007",
+        "google-research/mbpp:mbpp-0008",
+        "google-research/mbpp:mbpp-0011",
+        "google-research/mbpp:mbpp-0012",
+        "google-research/mbpp:mbpp-0019",
+        "google-research/mbpp:mbpp-0057",
+        "google-research/mbpp:mbpp-0059",
+        "google-research/mbpp:mbpp-0062",
+        "google-research/mbpp:mbpp-0063",
+        "google-research/mbpp:mbpp-0064",
+        "google-research/mbpp:mbpp-0065",
+        "google-research/mbpp:mbpp-0068",
+        "google-research/mbpp:mbpp-0072",
+        "google-research/mbpp:mbpp-0074",
+        "google-research/mbpp:mbpp-0075",
+        "google-research/mbpp:mbpp-0077",
+        "google-research/mbpp:mbpp-0080",
+        "google-research/mbpp:mbpp-0086",
+        "google-research/mbpp:mbpp-0087",
+        "google-research/mbpp:mbpp-0088",
+        "google-research/mbpp:mbpp-0090",
+        "google-research/mbpp:mbpp-0093",
+        "google-research/mbpp:mbpp-0094",
+        "google-research/mbpp:mbpp-0095",
+        "google-research/mbpp:mbpp-0097",
+        "google-research/mbpp:mbpp-0099",
+        "google-research/mbpp:mbpp-0103",
+        "google-research/mbpp:mbpp-0105",
+        "google-research/mbpp:mbpp-0108",
+        "leasepath/designed-file-tasks-v1:designed-csv-ledger",
+        "leasepath/designed-file-tasks-v1:designed-graph-distance",
+        "leasepath/designed-file-tasks-v1:designed-gzip-digest",
+        "leasepath/designed-file-tasks-v1:designed-integer-sort",
+        "leasepath/designed-file-tasks-v1:designed-jsonl-status",
+        "leasepath/designed-file-tasks-v1:designed-sqlite-sales"
+      ],
+      "validation_groups": [
+        "google-research/mbpp:mbpp-0009",
+        "google-research/mbpp:mbpp-0014",
+        "google-research/mbpp:mbpp-0016",
+        "google-research/mbpp:mbpp-0058",
+        "google-research/mbpp:mbpp-0061",
+        "google-research/mbpp:mbpp-0084",
+        "google-research/mbpp:mbpp-0091",
+        "google-research/mbpp:mbpp-0096",
+        "google-research/mbpp:mbpp-0106"
+      ],
+      "training_workflows": 44,
+      "validation_workflows": 10,
+      "training_snapshots": 1278,
+      "validation_snapshots": 275,
+      "training_risk_support": [
+        {
+          "right_s": 0.01,
+          "risk_rows": 1278,
+          "workflows": 44,
+          "parent_tasks": 38,
+          "weighted_labels": {
+            "U": 7.5775745550745555,
+            "D": 2.2734126984126983,
+            "waiting": 34.149012746512746
+          }
+        },
+        {
+          "right_s": 0.03,
+          "risk_rows": 1039,
+          "workflows": 44,
+          "parent_tasks": 38,
+          "weighted_labels": {
+            "U": 11.710921115921115,
+            "D": 6.1535714285714285,
+            "waiting": 16.284520202020204
+          }
+        },
+        {
+          "right_s": 0.1,
+          "risk_rows": 622,
+          "workflows": 44,
+          "parent_tasks": 38,
+          "weighted_labels": {
+            "U": 9.36281746031746,
+            "D": 0,
+            "waiting": 6.921702741702742
+          }
+        },
+        {
+          "right_s": 0.3,
+          "risk_rows": 345,
+          "workflows": 44,
+          "parent_tasks": 38,
+          "weighted_labels": {
+            "U": 0.6797619047619048,
+            "D": 0,
+            "waiting": 6.241940836940837
+          }
+        },
+        {
+          "right_s": 1,
+          "risk_rows": 313,
+          "workflows": 44,
+          "parent_tasks": 38,
+          "weighted_labels": {
+            "U": 4.569743867243868,
+            "D": 0,
+            "waiting": 1.6721969696969696
+          }
+        },
+        {
+          "right_s": 3,
+          "risk_rows": 140,
+          "workflows": 9,
+          "parent_tasks": 6,
+          "weighted_labels": {
+            "U": 0.9022655122655122,
+            "D": 0,
+            "waiting": 0.7699314574314574
+          }
+        },
+        {
+          "right_s": 10,
+          "risk_rows": 86,
+          "workflows": 4,
+          "parent_tasks": 2,
+          "weighted_labels": {
+            "U": 0.7699314574314574,
+            "D": 0,
+            "waiting": 0
+          }
+        },
+        {
+          "right_s": 30,
+          "risk_rows": 0,
+          "workflows": 0,
+          "parent_tasks": 0,
+          "weighted_labels": {
+            "U": 0,
+            "D": 0,
+            "waiting": 0
+          }
+        },
+        {
+          "right_s": 60,
+          "risk_rows": 0,
+          "workflows": 0,
+          "parent_tasks": 0,
+          "weighted_labels": {
+            "U": 0,
+            "D": 0,
+            "waiting": 0
+          }
+        },
+        {
+          "right_s": 120,
+          "risk_rows": 0,
+          "workflows": 0,
+          "parent_tasks": 0,
+          "weighted_labels": {
+            "U": 0,
+            "D": 0,
+            "waiting": 0
+          }
+        },
+        {
+          "right_s": 300,
+          "risk_rows": 0,
+          "workflows": 0,
+          "parent_tasks": 0,
+          "weighted_labels": {
+            "U": 0,
+            "D": 0,
+            "waiting": 0
+          }
+        },
+        {
+          "right_s": 600,
+          "risk_rows": 0,
+          "workflows": 0,
+          "parent_tasks": 0,
+          "weighted_labels": {
+            "U": 0,
+            "D": 0,
+            "waiting": 0
+          }
+        }
+      ],
+      "models": {
+        "global": {
+          "fitted_groups": 0,
+          "supported_right_edges": [
+            0.01,
+            0.03,
+            0.1,
+            0.3,
+            1,
+            3,
+            10
+          ],
+          "sha256": "43fecc34bd7b209627a07efac20a2db4615bca3563224648dbab18aead02d937"
+        },
+        "conditional": {
+          "fitted_groups": 16,
+          "supported_right_edges": [
+            0.01,
+            0.03,
+            0.1,
+            0.3,
+            1,
+            3,
+            10
+          ],
+          "sha256": "0012f88e97ebf6b1f075847a1e852f6b97582978fb59b4c992d6089babef80c9"
+        },
+        "gbdt": {
+          "training_risk_rows": 3823,
+          "boosting_iterations": 40,
+          "trees": 120,
+          "maximum_leaves": 4,
+          "vocabularies": {
+            "tool_name": [
+              null,
+              "bash"
+            ],
+            "phase": [
+              null,
+              "queued",
+              "waiting_tool"
+            ]
+          },
+          "elapsed_bins": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "supported_right_edges": [
+            0.01,
+            0.03,
+            0.1,
+            0.3,
+            1,
+            3,
+            10
+          ],
+          "sha256": "36f0d08976b2441135a543bf97db989696b4fc05c592de167b87c7aafee5d3cc"
+        }
+      }
+    },
+    {
+      "fold": 3,
+      "training_groups": [
+        "google-research/mbpp:mbpp-0002",
+        "google-research/mbpp:mbpp-0003",
+        "google-research/mbpp:mbpp-0004",
+        "google-research/mbpp:mbpp-0008",
+        "google-research/mbpp:mbpp-0009",
+        "google-research/mbpp:mbpp-0011",
+        "google-research/mbpp:mbpp-0012",
+        "google-research/mbpp:mbpp-0014",
+        "google-research/mbpp:mbpp-0016",
+        "google-research/mbpp:mbpp-0019",
+        "google-research/mbpp:mbpp-0057",
+        "google-research/mbpp:mbpp-0058",
+        "google-research/mbpp:mbpp-0059",
+        "google-research/mbpp:mbpp-0061",
+        "google-research/mbpp:mbpp-0062",
+        "google-research/mbpp:mbpp-0063",
+        "google-research/mbpp:mbpp-0064",
+        "google-research/mbpp:mbpp-0065",
+        "google-research/mbpp:mbpp-0068",
+        "google-research/mbpp:mbpp-0072",
+        "google-research/mbpp:mbpp-0074",
+        "google-research/mbpp:mbpp-0075",
+        "google-research/mbpp:mbpp-0077",
+        "google-research/mbpp:mbpp-0080",
+        "google-research/mbpp:mbpp-0084",
+        "google-research/mbpp:mbpp-0088",
+        "google-research/mbpp:mbpp-0090",
+        "google-research/mbpp:mbpp-0091",
+        "google-research/mbpp:mbpp-0093",
+        "google-research/mbpp:mbpp-0095",
+        "google-research/mbpp:mbpp-0096",
+        "google-research/mbpp:mbpp-0097",
+        "google-research/mbpp:mbpp-0105",
+        "google-research/mbpp:mbpp-0106",
+        "google-research/mbpp:mbpp-0108",
+        "leasepath/designed-file-tasks-v1:designed-jsonl-status",
+        "leasepath/designed-file-tasks-v1:designed-sqlite-sales"
+      ],
+      "validation_groups": [
+        "google-research/mbpp:mbpp-0007",
+        "google-research/mbpp:mbpp-0086",
+        "google-research/mbpp:mbpp-0087",
+        "google-research/mbpp:mbpp-0094",
+        "google-research/mbpp:mbpp-0099",
+        "google-research/mbpp:mbpp-0103",
+        "leasepath/designed-file-tasks-v1:designed-csv-ledger",
+        "leasepath/designed-file-tasks-v1:designed-graph-distance",
+        "leasepath/designed-file-tasks-v1:designed-gzip-digest",
+        "leasepath/designed-file-tasks-v1:designed-integer-sort"
+      ],
+      "training_workflows": 41,
+      "validation_workflows": 13,
+      "training_snapshots": 1037,
+      "validation_snapshots": 516,
+      "training_risk_support": [
+        {
+          "right_s": 0.01,
+          "risk_rows": 1037,
+          "workflows": 41,
+          "parent_tasks": 37,
+          "weighted_labels": {
+            "U": 7.388968253968254,
+            "D": 2.248346560846561,
+            "waiting": 31.362685185185185
+          }
+        },
+        {
+          "right_s": 0.03,
+          "risk_rows": 825,
+          "workflows": 41,
+          "parent_tasks": 37,
+          "weighted_labels": {
+            "U": 10.90373015873016,
+            "D": 5.858002645502646,
+            "waiting": 14.600952380952382
+          }
+        },
+        {
+          "right_s": 0.1,
+          "risk_rows": 460,
+          "workflows": 41,
+          "parent_tasks": 37,
+          "weighted_labels": {
+            "U": 8.64079365079365,
+            "D": 0,
+            "waiting": 5.960158730158731
+          }
+        },
+        {
+          "right_s": 0.3,
+          "risk_rows": 224,
+          "workflows": 41,
+          "parent_tasks": 37,
+          "weighted_labels": {
+            "U": 0.6642857142857144,
+            "D": 0,
+            "waiting": 5.295873015873016
+          }
+        },
+        {
+          "right_s": 1,
+          "risk_rows": 196,
+          "workflows": 41,
+          "parent_tasks": 37,
+          "weighted_labels": {
+            "U": 5.012539682539683,
+            "D": 0,
+            "waiting": 0.2833333333333333
+          }
+        },
+        {
+          "right_s": 3,
+          "risk_rows": 13,
+          "workflows": 2,
+          "parent_tasks": 2,
+          "weighted_labels": {
+            "U": 0.2833333333333333,
+            "D": 0,
+            "waiting": 0
+          }
+        },
+        {
+          "right_s": 10,
+          "risk_rows": 0,
+          "workflows": 0,
+          "parent_tasks": 0,
+          "weighted_labels": {
+            "U": 0,
+            "D": 0,
+            "waiting": 0
+          }
+        },
+        {
+          "right_s": 30,
+          "risk_rows": 0,
+          "workflows": 0,
+          "parent_tasks": 0,
+          "weighted_labels": {
+            "U": 0,
+            "D": 0,
+            "waiting": 0
+          }
+        },
+        {
+          "right_s": 60,
+          "risk_rows": 0,
+          "workflows": 0,
+          "parent_tasks": 0,
+          "weighted_labels": {
+            "U": 0,
+            "D": 0,
+            "waiting": 0
+          }
+        },
+        {
+          "right_s": 120,
+          "risk_rows": 0,
+          "workflows": 0,
+          "parent_tasks": 0,
+          "weighted_labels": {
+            "U": 0,
+            "D": 0,
+            "waiting": 0
+          }
+        },
+        {
+          "right_s": 300,
+          "risk_rows": 0,
+          "workflows": 0,
+          "parent_tasks": 0,
+          "weighted_labels": {
+            "U": 0,
+            "D": 0,
+            "waiting": 0
+          }
+        },
+        {
+          "right_s": 600,
+          "risk_rows": 0,
+          "workflows": 0,
+          "parent_tasks": 0,
+          "weighted_labels": {
+            "U": 0,
+            "D": 0,
+            "waiting": 0
+          }
+        }
+      ],
+      "models": {
+        "global": {
+          "fitted_groups": 0,
+          "supported_right_edges": [
+            0.01,
+            0.03,
+            0.1,
+            0.3,
+            1,
+            3
+          ],
+          "sha256": "ab53b770620bdb2d9e496deb977ff6cbf7aff517ac284d5cd3371298c409aed4"
+        },
+        "conditional": {
+          "fitted_groups": 16,
+          "supported_right_edges": [
+            0.01,
+            0.03,
+            0.1,
+            0.3,
+            1,
+            3
+          ],
+          "sha256": "9a9b1e1f5364214093aa8b6f149b46a05239c5357d110e064e9cab6ac001cfa8"
+        },
+        "gbdt": {
+          "training_risk_rows": 2755,
+          "boosting_iterations": 40,
+          "trees": 120,
+          "maximum_leaves": 4,
+          "vocabularies": {
+            "tool_name": [
+              null,
+              "bash"
+            ],
+            "phase": [
+              null,
+              "queued",
+              "waiting_tool"
+            ]
+          },
+          "elapsed_bins": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "supported_right_edges": [
+            0.01,
+            0.03,
+            0.1,
+            0.3,
+            1,
+            3
+          ],
+          "sha256": "a676997ecb09c9b5eab63869d438a4b4dd6f088d27e40bf3a5ded032ed710948"
+        }
+      }
+    },
+    {
+      "fold": 4,
+      "training_groups": [
+        "google-research/mbpp:mbpp-0003",
+        "google-research/mbpp:mbpp-0004",
+        "google-research/mbpp:mbpp-0007",
+        "google-research/mbpp:mbpp-0008",
+        "google-research/mbpp:mbpp-0009",
+        "google-research/mbpp:mbpp-0011",
+        "google-research/mbpp:mbpp-0012",
+        "google-research/mbpp:mbpp-0014",
+        "google-research/mbpp:mbpp-0016",
+        "google-research/mbpp:mbpp-0019",
+        "google-research/mbpp:mbpp-0058",
+        "google-research/mbpp:mbpp-0059",
+        "google-research/mbpp:mbpp-0061",
+        "google-research/mbpp:mbpp-0062",
+        "google-research/mbpp:mbpp-0063",
+        "google-research/mbpp:mbpp-0065",
+        "google-research/mbpp:mbpp-0072",
+        "google-research/mbpp:mbpp-0074",
+        "google-research/mbpp:mbpp-0075",
+        "google-research/mbpp:mbpp-0077",
+        "google-research/mbpp:mbpp-0080",
+        "google-research/mbpp:mbpp-0084",
+        "google-research/mbpp:mbpp-0086",
+        "google-research/mbpp:mbpp-0087",
+        "google-research/mbpp:mbpp-0090",
+        "google-research/mbpp:mbpp-0091",
+        "google-research/mbpp:mbpp-0094",
+        "google-research/mbpp:mbpp-0095",
+        "google-research/mbpp:mbpp-0096",
+        "google-research/mbpp:mbpp-0097",
+        "google-research/mbpp:mbpp-0099",
+        "google-research/mbpp:mbpp-0103",
+        "google-research/mbpp:mbpp-0105",
+        "google-research/mbpp:mbpp-0106",
+        "leasepath/designed-file-tasks-v1:designed-csv-ledger",
+        "leasepath/designed-file-tasks-v1:designed-graph-distance",
+        "leasepath/designed-file-tasks-v1:designed-gzip-digest",
+        "leasepath/designed-file-tasks-v1:designed-integer-sort"
+      ],
+      "validation_groups": [
+        "google-research/mbpp:mbpp-0002",
+        "google-research/mbpp:mbpp-0057",
+        "google-research/mbpp:mbpp-0064",
+        "google-research/mbpp:mbpp-0068",
+        "google-research/mbpp:mbpp-0088",
+        "google-research/mbpp:mbpp-0093",
+        "google-research/mbpp:mbpp-0108",
+        "leasepath/designed-file-tasks-v1:designed-jsonl-status",
+        "leasepath/designed-file-tasks-v1:designed-sqlite-sales"
+      ],
+      "training_workflows": 45,
+      "validation_workflows": 9,
+      "training_snapshots": 1316,
+      "validation_snapshots": 237,
+      "training_risk_support": [
+        {
+          "right_s": 0.01,
+          "risk_rows": 1316,
+          "workflows": 45,
+          "parent_tasks": 38,
+          "weighted_labels": {
+            "U": 7.95765392015392,
+            "D": 2.32771164021164,
+            "waiting": 34.71463443963444
+          }
+        },
+        {
+          "right_s": 0.03,
+          "risk_rows": 1065,
+          "workflows": 45,
+          "parent_tasks": 38,
+          "weighted_labels": {
+            "U": 11.888619528619529,
+            "D": 6.129431216931217,
+            "waiting": 16.696583694083696
+          }
+        },
+        {
+          "right_s": 0.1,
+          "risk_rows": 641,
+          "workflows": 45,
+          "parent_tasks": 38,
+          "weighted_labels": {
+            "U": 9.554087301587302,
+            "D": 0,
+            "waiting": 7.142496392496392
+          }
+        },
+        {
+          "right_s": 0.3,
+          "risk_rows": 355,
+          "workflows": 45,
+          "parent_tasks": 38,
+          "weighted_labels": {
+            "U": 0.7011904761904763,
+            "D": 0,
+            "waiting": 6.441305916305916
+          }
+        },
+        {
+          "right_s": 1,
+          "risk_rows": 321,
+          "workflows": 45,
+          "parent_tasks": 38,
+          "weighted_labels": {
+            "U": 5.05244227994228,
+            "D": 0,
+            "waiting": 1.3888636363636364
+          }
+        },
+        {
+          "right_s": 3,
+          "risk_rows": 127,
+          "workflows": 7,
+          "parent_tasks": 4,
+          "weighted_labels": {
+            "U": 0.6189321789321789,
+            "D": 0,
+            "waiting": 0.7699314574314574
+          }
+        },
+        {
+          "right_s": 10,
+          "risk_rows": 86,
+          "workflows": 4,
+          "parent_tasks": 2,
+          "weighted_labels": {
+            "U": 0.7699314574314574,
+            "D": 0,
+            "waiting": 0
+          }
+        },
+        {
+          "right_s": 30,
+          "risk_rows": 0,
+          "workflows": 0,
+          "parent_tasks": 0,
+          "weighted_labels": {
+            "U": 0,
+            "D": 0,
+            "waiting": 0
+          }
+        },
+        {
+          "right_s": 60,
+          "risk_rows": 0,
+          "workflows": 0,
+          "parent_tasks": 0,
+          "weighted_labels": {
+            "U": 0,
+            "D": 0,
+            "waiting": 0
+          }
+        },
+        {
+          "right_s": 120,
+          "risk_rows": 0,
+          "workflows": 0,
+          "parent_tasks": 0,
+          "weighted_labels": {
+            "U": 0,
+            "D": 0,
+            "waiting": 0
+          }
+        },
+        {
+          "right_s": 300,
+          "risk_rows": 0,
+          "workflows": 0,
+          "parent_tasks": 0,
+          "weighted_labels": {
+            "U": 0,
+            "D": 0,
+            "waiting": 0
+          }
+        },
+        {
+          "right_s": 600,
+          "risk_rows": 0,
+          "workflows": 0,
+          "parent_tasks": 0,
+          "weighted_labels": {
+            "U": 0,
+            "D": 0,
+            "waiting": 0
+          }
+        }
+      ],
+      "models": {
+        "global": {
+          "fitted_groups": 0,
+          "supported_right_edges": [
+            0.01,
+            0.03,
+            0.1,
+            0.3,
+            1,
+            3,
+            10
+          ],
+          "sha256": "95820e5bbdc0662e97e7742aaa8cb0cb56f35b93894035dbf0263e3626dfbf04"
+        },
+        "conditional": {
+          "fitted_groups": 16,
+          "supported_right_edges": [
+            0.01,
+            0.03,
+            0.1,
+            0.3,
+            1,
+            3,
+            10
+          ],
+          "sha256": "00e0d60a765ddae5f06b137636313d6fa2be8521f6d5a9bb0add726ba36c180b"
+        },
+        "gbdt": {
+          "training_risk_rows": 3911,
+          "boosting_iterations": 40,
+          "trees": 120,
+          "maximum_leaves": 4,
+          "vocabularies": {
+            "tool_name": [
+              null,
+              "bash"
+            ],
+            "phase": [
+              null,
+              "queued",
+              "waiting_tool"
+            ]
+          },
+          "elapsed_bins": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "supported_right_edges": [
+            0.01,
+            0.03,
+            0.1,
+            0.3,
+            1,
+            3,
+            10
+          ],
+          "sha256": "09fb4b05657dbf826b601cbcdd111373f3214c93c586d6eaab816127cd9b80fb"
+        }
+      }
+    }
+  ]
+}

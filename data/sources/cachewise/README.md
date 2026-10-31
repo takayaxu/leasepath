@@ -22,7 +22,7 @@
 
 ## 复现
 
-从项目根目录运行：
+从项目根目录、激活 `.venv` 后运行。首次 Git 克隆仅含说明和 provenance，不含 `upstream/`；须先按 [部署说明](../../../docs/deployment.md#恢复-cachewise-固定快照) 恢复快照。以下默认命令仅适用于快照已完整恢复的目录：
 
 ```bash
 python3 scripts/collect_cachewise.py

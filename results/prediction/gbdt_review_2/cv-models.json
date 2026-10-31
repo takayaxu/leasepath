@@ -1,0 +1,766 @@
+{
+  "all-main": [
+    {
+      "fold": 0,
+      "training_groups": [
+        "google-research/mbpp:mbpp-0002",
+        "google-research/mbpp:mbpp-0003",
+        "google-research/mbpp:mbpp-0004",
+        "google-research/mbpp:mbpp-0007",
+        "google-research/mbpp:mbpp-0008",
+        "google-research/mbpp:mbpp-0011",
+        "google-research/mbpp:mbpp-0012",
+        "google-research/mbpp:mbpp-0014"
+      ],
+      "validation_groups": [
+        "google-research/mbpp:mbpp-0009",
+        "google-research/mbpp:mbpp-0016"
+      ],
+      "training_workflows": 15,
+      "validation_workflows": 4,
+      "training_snapshots": 644,
+      "validation_snapshots": 85,
+      "models": {
+        "global": {
+          "fitted_groups": 0,
+          "supported_right_edges": [
+            0.01,
+            0.03,
+            0.1,
+            0.3,
+            1
+          ],
+          "sha256": "4d5d7ff7be9ca56f5bc30b6c5fe3b3b0a582955bf9ae05864e3204fe23116b99"
+        },
+        "conditional": {
+          "fitted_groups": 10,
+          "supported_right_edges": [
+            0.01,
+            0.03,
+            0.1,
+            0.3,
+            1
+          ],
+          "sha256": "37e3d075011086fe2e36bdc0363e5901950ef23acc2a83f8bf5818262cee9531"
+        },
+        "gbdt": {
+          "training_risk_rows": 1687,
+          "boosting_iterations": 40,
+          "trees": 120,
+          "maximum_leaves": 4,
+          "vocabularies": {
+            "tool_name": [
+              null,
+              "bash"
+            ],
+            "phase": [
+              null,
+              "queued",
+              "waiting_tool"
+            ]
+          },
+          "elapsed_bins": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "supported_right_edges": [
+            0.01,
+            0.03,
+            0.1,
+            0.3,
+            1
+          ],
+          "sha256": "b6f97f737c7b4b4556516009999a79c7a0f3160ef583b717d51805e08f743b52"
+        }
+      }
+    },
+    {
+      "fold": 1,
+      "training_groups": [
+        "google-research/mbpp:mbpp-0003",
+        "google-research/mbpp:mbpp-0004",
+        "google-research/mbpp:mbpp-0007",
+        "google-research/mbpp:mbpp-0008",
+        "google-research/mbpp:mbpp-0009",
+        "google-research/mbpp:mbpp-0011",
+        "google-research/mbpp:mbpp-0012",
+        "google-research/mbpp:mbpp-0016"
+      ],
+      "validation_groups": [
+        "google-research/mbpp:mbpp-0002",
+        "google-research/mbpp:mbpp-0014"
+      ],
+      "training_workflows": 16,
+      "validation_workflows": 3,
+      "training_snapshots": 573,
+      "validation_snapshots": 156,
+      "models": {
+        "global": {
+          "fitted_groups": 0,
+          "supported_right_edges": [
+            0.01,
+            0.03,
+            0.1,
+            0.3,
+            1
+          ],
+          "sha256": "92cacfc0f7aff4dda33549d315e8b0dd31598ac2e7548641016125239e4654bc"
+        },
+        "conditional": {
+          "fitted_groups": 9,
+          "supported_right_edges": [
+            0.01,
+            0.03,
+            0.1,
+            0.3,
+            1
+          ],
+          "sha256": "71f925c9afe0b7ea972278fb77e1a5fc603254ac92256ba6b456de405ae4c1ef"
+        },
+        "gbdt": {
+          "training_risk_rows": 1499,
+          "boosting_iterations": 40,
+          "trees": 120,
+          "maximum_leaves": 4,
+          "vocabularies": {
+            "tool_name": [
+              null,
+              "bash"
+            ],
+            "phase": [
+              null,
+              "queued",
+              "waiting_tool"
+            ]
+          },
+          "elapsed_bins": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "supported_right_edges": [
+            0.01,
+            0.03,
+            0.1,
+            0.3,
+            1
+          ],
+          "sha256": "3d117730ee35ebe44dc96e1aefd4b3014c66512ad46fdb1b51755772ba7a1cf0"
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "training_groups": [
+        "google-research/mbpp:mbpp-0002",
+        "google-research/mbpp:mbpp-0003",
+        "google-research/mbpp:mbpp-0004",
+        "google-research/mbpp:mbpp-0007",
+        "google-research/mbpp:mbpp-0009",
+        "google-research/mbpp:mbpp-0012",
+        "google-research/mbpp:mbpp-0014",
+        "google-research/mbpp:mbpp-0016"
+      ],
+      "validation_groups": [
+        "google-research/mbpp:mbpp-0008",
+        "google-research/mbpp:mbpp-0011"
+      ],
+      "training_workflows": 15,
+      "validation_workflows": 4,
+      "training_snapshots": 659,
+      "validation_snapshots": 70,
+      "models": {
+        "global": {
+          "fitted_groups": 0,
+          "supported_right_edges": [
+            0.01,
+            0.03,
+            0.1,
+            0.3,
+            1
+          ],
+          "sha256": "ebbf4f8c1d30762463f2821bf85e4f5271bee372c32bd7d9c7109d938c7e44cc"
+        },
+        "conditional": {
+          "fitted_groups": 10,
+          "supported_right_edges": [
+            0.01,
+            0.03,
+            0.1,
+            0.3,
+            1
+          ],
+          "sha256": "02282c85a754e1987febf66807ab5f1a588dff41db559939a277781b2cb739b9"
+        },
+        "gbdt": {
+          "training_risk_rows": 1726,
+          "boosting_iterations": 40,
+          "trees": 120,
+          "maximum_leaves": 4,
+          "vocabularies": {
+            "tool_name": [
+              null,
+              "bash"
+            ],
+            "phase": [
+              null,
+              "queued",
+              "waiting_tool"
+            ]
+          },
+          "elapsed_bins": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "supported_right_edges": [
+            0.01,
+            0.03,
+            0.1,
+            0.3,
+            1
+          ],
+          "sha256": "ebc9d8d049060b35e491ff8ce2af102af5c8729883cd17a48b55e86366f8eda6"
+        }
+      }
+    },
+    {
+      "fold": 3,
+      "training_groups": [
+        "google-research/mbpp:mbpp-0002",
+        "google-research/mbpp:mbpp-0007",
+        "google-research/mbpp:mbpp-0008",
+        "google-research/mbpp:mbpp-0009",
+        "google-research/mbpp:mbpp-0011",
+        "google-research/mbpp:mbpp-0012",
+        "google-research/mbpp:mbpp-0014",
+        "google-research/mbpp:mbpp-0016"
+      ],
+      "validation_groups": [
+        "google-research/mbpp:mbpp-0003",
+        "google-research/mbpp:mbpp-0004"
+      ],
+      "training_workflows": 15,
+      "validation_workflows": 4,
+      "training_snapshots": 552,
+      "validation_snapshots": 177,
+      "models": {
+        "global": {
+          "fitted_groups": 0,
+          "supported_right_edges": [
+            0.01,
+            0.03,
+            0.1,
+            0.3,
+            1
+          ],
+          "sha256": "444325e9570e91204cd89ea13f8eca501701dbbb5df62f9d8541a4888bd5c801"
+        },
+        "conditional": {
+          "fitted_groups": 10,
+          "supported_right_edges": [
+            0.01,
+            0.03,
+            0.1,
+            0.3,
+            1
+          ],
+          "sha256": "f35ad89e51d7ffd546fcf8df9e033de9130ed02cbf86850a5d0572611533e524"
+        },
+        "gbdt": {
+          "training_risk_rows": 1428,
+          "boosting_iterations": 40,
+          "trees": 120,
+          "maximum_leaves": 4,
+          "vocabularies": {
+            "tool_name": [
+              null,
+              "bash"
+            ],
+            "phase": [
+              null,
+              "queued",
+              "waiting_tool"
+            ]
+          },
+          "elapsed_bins": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "supported_right_edges": [
+            0.01,
+            0.03,
+            0.1,
+            0.3,
+            1
+          ],
+          "sha256": "cb54666ee611eb0827a6cb00d17fb648ecf04247243eee8f7862cc365affc76c"
+        }
+      }
+    },
+    {
+      "fold": 4,
+      "training_groups": [
+        "google-research/mbpp:mbpp-0002",
+        "google-research/mbpp:mbpp-0003",
+        "google-research/mbpp:mbpp-0004",
+        "google-research/mbpp:mbpp-0008",
+        "google-research/mbpp:mbpp-0009",
+        "google-research/mbpp:mbpp-0011",
+        "google-research/mbpp:mbpp-0014",
+        "google-research/mbpp:mbpp-0016"
+      ],
+      "validation_groups": [
+        "google-research/mbpp:mbpp-0007",
+        "google-research/mbpp:mbpp-0012"
+      ],
+      "training_workflows": 15,
+      "validation_workflows": 4,
+      "training_snapshots": 488,
+      "validation_snapshots": 241,
+      "models": {
+        "global": {
+          "fitted_groups": 0,
+          "supported_right_edges": [
+            0.01,
+            0.03,
+            0.1,
+            0.3,
+            1
+          ],
+          "sha256": "9a7644b5ede05437c02212015a14315cbd51bba2ac77527f92837ff4a6198460"
+        },
+        "conditional": {
+          "fitted_groups": 10,
+          "supported_right_edges": [
+            0.01,
+            0.03,
+            0.1,
+            0.3,
+            1
+          ],
+          "sha256": "25de152040ab1e0ff4a5de10a269b8c1d0adf3b8210f2edc981c3df15ddca5e6"
+        },
+        "gbdt": {
+          "training_risk_rows": 1256,
+          "boosting_iterations": 40,
+          "trees": 120,
+          "maximum_leaves": 4,
+          "vocabularies": {
+            "tool_name": [
+              null,
+              "bash"
+            ],
+            "phase": [
+              null,
+              "queued",
+              "waiting_tool"
+            ]
+          },
+          "elapsed_bins": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "supported_right_edges": [
+            0.01,
+            0.03,
+            0.1,
+            0.3,
+            1
+          ],
+          "sha256": "5341db2ed1599fc8d5ffc0d7d2e0f51afd5069731d3b2f2240589fd5ce96371f"
+        }
+      }
+    }
+  ],
+  "qualified": [
+    {
+      "fold": 0,
+      "training_groups": [
+        "google-research/mbpp:mbpp-0002",
+        "google-research/mbpp:mbpp-0003",
+        "google-research/mbpp:mbpp-0004",
+        "google-research/mbpp:mbpp-0007",
+        "google-research/mbpp:mbpp-0008",
+        "google-research/mbpp:mbpp-0011",
+        "google-research/mbpp:mbpp-0012",
+        "google-research/mbpp:mbpp-0014"
+      ],
+      "validation_groups": [
+        "google-research/mbpp:mbpp-0009",
+        "google-research/mbpp:mbpp-0016"
+      ],
+      "training_workflows": 11,
+      "validation_workflows": 3,
+      "training_snapshots": 218,
+      "validation_snapshots": 67,
+      "models": {
+        "global": {
+          "fitted_groups": 0,
+          "supported_right_edges": [
+            0.01,
+            0.03,
+            0.1,
+            0.3,
+            1
+          ],
+          "sha256": "19bd67be13ee03a2c3e2e2d5383be417e9bd941501632d26df6202a9d25990ce"
+        },
+        "conditional": {
+          "fitted_groups": 10,
+          "supported_right_edges": [
+            0.01,
+            0.03,
+            0.1,
+            0.3,
+            1
+          ],
+          "sha256": "7350d3d4627210a29047cc145962785a4b02a3857a5388286af1427fdefd69b5"
+        },
+        "gbdt": {
+          "training_risk_rows": 549,
+          "boosting_iterations": 40,
+          "trees": 120,
+          "maximum_leaves": 4,
+          "vocabularies": {
+            "tool_name": [
+              null,
+              "bash"
+            ],
+            "phase": [
+              null,
+              "queued",
+              "waiting_tool"
+            ]
+          },
+          "elapsed_bins": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "supported_right_edges": [
+            0.01,
+            0.03,
+            0.1,
+            0.3,
+            1
+          ],
+          "sha256": "7eacf1e1f86443fe830151a5165da9f6ea4e25e64324d9784fe88b6ee1f4648c"
+        }
+      }
+    },
+    {
+      "fold": 1,
+      "training_groups": [
+        "google-research/mbpp:mbpp-0003",
+        "google-research/mbpp:mbpp-0004",
+        "google-research/mbpp:mbpp-0007",
+        "google-research/mbpp:mbpp-0008",
+        "google-research/mbpp:mbpp-0009",
+        "google-research/mbpp:mbpp-0011",
+        "google-research/mbpp:mbpp-0012",
+        "google-research/mbpp:mbpp-0016"
+      ],
+      "validation_groups": [
+        "google-research/mbpp:mbpp-0002",
+        "google-research/mbpp:mbpp-0014"
+      ],
+      "training_workflows": 12,
+      "validation_workflows": 2,
+      "training_snapshots": 249,
+      "validation_snapshots": 36,
+      "models": {
+        "global": {
+          "fitted_groups": 0,
+          "supported_right_edges": [
+            0.01,
+            0.03,
+            0.1,
+            0.3,
+            1
+          ],
+          "sha256": "5e4c6f4c27507c7b9fa3d90daa8dfc165a689369b431c79cf843963f86ec270c"
+        },
+        "conditional": {
+          "fitted_groups": 9,
+          "supported_right_edges": [
+            0.01,
+            0.03,
+            0.1,
+            0.3,
+            1
+          ],
+          "sha256": "442a6505a49ce501d1b857df091d1681147d9d9c1da07b195d8c8da8c06d5b5f"
+        },
+        "gbdt": {
+          "training_risk_rows": 628,
+          "boosting_iterations": 40,
+          "trees": 120,
+          "maximum_leaves": 4,
+          "vocabularies": {
+            "tool_name": [
+              null,
+              "bash"
+            ],
+            "phase": [
+              null,
+              "queued",
+              "waiting_tool"
+            ]
+          },
+          "elapsed_bins": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "supported_right_edges": [
+            0.01,
+            0.03,
+            0.1,
+            0.3,
+            1
+          ],
+          "sha256": "5273f17c0b1df9918fdbb0839895f4c4783bc3b2582095f122415e48725e455a"
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "training_groups": [
+        "google-research/mbpp:mbpp-0002",
+        "google-research/mbpp:mbpp-0003",
+        "google-research/mbpp:mbpp-0004",
+        "google-research/mbpp:mbpp-0007",
+        "google-research/mbpp:mbpp-0009",
+        "google-research/mbpp:mbpp-0012",
+        "google-research/mbpp:mbpp-0014",
+        "google-research/mbpp:mbpp-0016"
+      ],
+      "validation_groups": [
+        "google-research/mbpp:mbpp-0008",
+        "google-research/mbpp:mbpp-0011"
+      ],
+      "training_workflows": 10,
+      "validation_workflows": 4,
+      "training_snapshots": 215,
+      "validation_snapshots": 70,
+      "models": {
+        "global": {
+          "fitted_groups": 0,
+          "supported_right_edges": [
+            0.01,
+            0.03,
+            0.1,
+            0.3,
+            1
+          ],
+          "sha256": "f0d76ffcd76a692fddd90bf200175033d3009774f3c378a2b98e10c120d04adc"
+        },
+        "conditional": {
+          "fitted_groups": 9,
+          "supported_right_edges": [
+            0.01,
+            0.03,
+            0.1,
+            0.3,
+            1
+          ],
+          "sha256": "b113b3e697a83f9937be9f345f7e7ff72390a09ab0f26acaa1339f9b9438cd84"
+        },
+        "gbdt": {
+          "training_risk_rows": 544,
+          "boosting_iterations": 40,
+          "trees": 120,
+          "maximum_leaves": 4,
+          "vocabularies": {
+            "tool_name": [
+              null,
+              "bash"
+            ],
+            "phase": [
+              null,
+              "queued",
+              "waiting_tool"
+            ]
+          },
+          "elapsed_bins": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "supported_right_edges": [
+            0.01,
+            0.03,
+            0.1,
+            0.3,
+            1
+          ],
+          "sha256": "be91a3c40c6d734a95b9ef28bb58c7a141ff168b365f8b91186adf2d982256bb"
+        }
+      }
+    },
+    {
+      "fold": 3,
+      "training_groups": [
+        "google-research/mbpp:mbpp-0002",
+        "google-research/mbpp:mbpp-0007",
+        "google-research/mbpp:mbpp-0008",
+        "google-research/mbpp:mbpp-0009",
+        "google-research/mbpp:mbpp-0011",
+        "google-research/mbpp:mbpp-0012",
+        "google-research/mbpp:mbpp-0014",
+        "google-research/mbpp:mbpp-0016"
+      ],
+      "validation_groups": [
+        "google-research/mbpp:mbpp-0003",
+        "google-research/mbpp:mbpp-0004"
+      ],
+      "training_workflows": 11,
+      "validation_workflows": 3,
+      "training_snapshots": 233,
+      "validation_snapshots": 52,
+      "models": {
+        "global": {
+          "fitted_groups": 0,
+          "supported_right_edges": [
+            0.01,
+            0.03,
+            0.1,
+            0.3,
+            1
+          ],
+          "sha256": "2d246f4c88288fa6b09755fbaaccce95949cbd6c561e1f7c93e945abbc33f2b2"
+        },
+        "conditional": {
+          "fitted_groups": 10,
+          "supported_right_edges": [
+            0.01,
+            0.03,
+            0.1,
+            0.3,
+            1
+          ],
+          "sha256": "83349afff2ae30c6dcfa6efc606436f5ca5ba694b037bbf29bf95833360eed1a"
+        },
+        "gbdt": {
+          "training_risk_rows": 588,
+          "boosting_iterations": 40,
+          "trees": 120,
+          "maximum_leaves": 4,
+          "vocabularies": {
+            "tool_name": [
+              null,
+              "bash"
+            ],
+            "phase": [
+              null,
+              "queued",
+              "waiting_tool"
+            ]
+          },
+          "elapsed_bins": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "supported_right_edges": [
+            0.01,
+            0.03,
+            0.1,
+            0.3,
+            1
+          ],
+          "sha256": "10adb193669e40d8225b83bd0cccee7acfdc2636cbce853a284d3a3277227cb2"
+        }
+      }
+    },
+    {
+      "fold": 4,
+      "training_groups": [
+        "google-research/mbpp:mbpp-0002",
+        "google-research/mbpp:mbpp-0003",
+        "google-research/mbpp:mbpp-0004",
+        "google-research/mbpp:mbpp-0008",
+        "google-research/mbpp:mbpp-0009",
+        "google-research/mbpp:mbpp-0011",
+        "google-research/mbpp:mbpp-0014",
+        "google-research/mbpp:mbpp-0016"
+      ],
+      "validation_groups": [
+        "google-research/mbpp:mbpp-0007",
+        "google-research/mbpp:mbpp-0012"
+      ],
+      "training_workflows": 12,
+      "validation_workflows": 2,
+      "training_snapshots": 225,
+      "validation_snapshots": 60,
+      "models": {
+        "global": {
+          "fitted_groups": 0,
+          "supported_right_edges": [
+            0.01,
+            0.03,
+            0.1,
+            0.3,
+            1
+          ],
+          "sha256": "ff35d4ec9bfed9d1952f23d28ddb885de78dc121700b7c14bcee3c387e5b4ede"
+        },
+        "conditional": {
+          "fitted_groups": 10,
+          "supported_right_edges": [
+            0.01,
+            0.03,
+            0.1,
+            0.3,
+            1
+          ],
+          "sha256": "558ec0947dbbbf87dea6fb6967374f778572817d4f1c06174632e61b4af5b2f2"
+        },
+        "gbdt": {
+          "training_risk_rows": 559,
+          "boosting_iterations": 40,
+          "trees": 120,
+          "maximum_leaves": 4,
+          "vocabularies": {
+            "tool_name": [
+              null,
+              "bash"
+            ],
+            "phase": [
+              null,
+              "queued",
+              "waiting_tool"
+            ]
+          },
+          "elapsed_bins": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "supported_right_edges": [
+            0.01,
+            0.03,
+            0.1,
+            0.3,
+            1
+          ],
+          "sha256": "d02b30f29f98e1f0753e31d2ce30a7450da3950428bab1d22a5cef1a79885997"
+        }
+      }
+    }
+  ]
+}

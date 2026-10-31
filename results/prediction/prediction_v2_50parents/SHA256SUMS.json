@@ -1,0 +1,19 @@
+{
+  "all-observed-conditional-model.json": "7e100137e9f27f2a5339606a99c5f49e02ac39739c070575162df4e16225e255",
+  "all-observed-gbdt-model.json": "b16b407860f0cccc7da605b598fd9c7c9b176b32c186c5d3939a650678b78532",
+  "all-observed-global-model.json": "68be56af636c930325b01c88396b4383ff45f0c00292b28e0cfce6920446ba79",
+  "cv-models.json": "4a88252bfd6bce2b5f5da45a2e16824683a74038d5a229dd89ce66f532248c5f",
+  "input-inventory.json": "826c89a11d86b1e7d1a0b2909c0ff017749ab93960495c92372453610262cb96",
+  "metrics.json": "e016a105c9fb0d117849370871369266d418dde89d710b3283c77a009d07ea35",
+  "paired-parent-comparison.json": "312c2fe01b0c53742394c4ea074033114b497f685434a216d05918c32a0acb55",
+  "prediction-examples.json": "18ba50b7da7ab563f84757b591e3583ddbc3f3bd32d300c047049bd75b5d7ab8",
+  "qualified-conditional-model.json": "7cfb48722afda683e1ddb48bf82655bb26a9065f54fd8ff450d85c9075cc63a3",
+  "qualified-gbdt-model.json": "4b8cfe99f2d797ae631036ee07ed406e5780de6f91b008dc58e5901a87945b7d",
+  "qualified-global-model.json": "f9030ffc9a3530eeb6f7196d017b5619f84d72029292383c93340a907839a044",
+  "run-manifest.json": "f669bc773f6b1d8608b9091150e70318f9704183ed662f151fa514a7d76333e0",
+  "split-manifest.json": "774d9f5c3a4a0e0a410fad8036839c8243d517c13a1ae8745f02f6c66b4ed775",
+  "stratified-metrics.json": "8138f507f1feca4e90b6a7b5cac4cf3bc3470c74dec5a0859d5aab74803f5524",
+  "summary.json": "2c37b3649d12a99f9f20c730fbcb9a1653bd65e8c57296375314eb83971e30f8",
+  "validation.json": "82dc48fb94a7ae748c53cc0e0f4caf50cb96b6e9d5e57b348c5275c8885eb048",
+  "verification.json": "2e9ddf14bf23b8ee273cb629a84542692c04a9538a99802d175993f123afee44"
+}

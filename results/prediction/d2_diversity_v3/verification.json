@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "new_distinct_parents": 34,
+  "overlap_with_old_mbpp": 0,
+  "reference_pytest_passed": 34,
+  "stub_negative_controls_rejected": 34,
+  "causal_prefix_replays": 2065,
+  "tool_start_end_pairs": 175,
+  "source_input_and_output_hashes_verified": true,
+  "previous_results_unchanged": {
+    "d2_mbpp_round": true,
+    "d2_expansion_v1": true,
+    "d2_repair_v2": true,
+    "gbdt_review_2": true
+  },
+  "no_new_predictor_training": true
+}

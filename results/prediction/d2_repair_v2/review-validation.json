@@ -1,0 +1,18 @@
+{
+  "regression": {
+    "passed": 114,
+    "duration_s": 8.14,
+    "log_sha256": "162d8b6597a4764a7dbc4246f8151255eeef749fefcfc1c35cb7bb505fa54976"
+  },
+  "command_review": {
+    "executed_commands": 34,
+    "inspect": 6,
+    "source_rewrites": 8,
+    "full_pytest": 14,
+    "submit": 6,
+    "outside_workspace_reference_or_test_modification_observed": false,
+    "os_isolation": false
+  },
+  "diagnostic_completed_and_stopped_workflows_retained": true,
+  "newly_trained_predictors": 0
+}

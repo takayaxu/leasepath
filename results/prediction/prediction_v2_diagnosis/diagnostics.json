@@ -1,0 +1,405 @@
+{
+  "status": "completed",
+  "scope": "descriptive diagnosis of existing frozen models; no fitting or parameter selection",
+  "input_sha256": {
+    "results/prediction/prediction_v2_50parents/SHA256SUMS.json": "c655da75a5b2185c742c4d286a862e069b7aec2b32fa98da2b84fb942f20793a",
+    ".artifacts/prediction/prediction_v2_50parents/merged/all-observed/evaluation-metadata-only.jsonl": "7632a3353a016c726fdd45b5cbb7126985832f345eaa96b575fccef996548bd9",
+    ".artifacts/prediction/prediction_v2_50parents/merged/all-observed/summary.json": "3bfee4b47e9485ed8cd0a4e2f64e98c3494fd46e2d5cc7e836a5a8cf7a3e1177",
+    ".artifacts/prediction/prediction_v2_50parents/merged/all-observed/targets.jsonl": "6fd27b3cf7a19c415cf45d6c25511b530963850356e446dc66157f995d399712",
+    ".artifacts/prediction/prediction_v2_50parents/merged/all-observed/snapshots-workflow-weighted.jsonl": "7bc512a7ea65c2570e6525cf4fa107b6ca10d8dabbdc763054d275a93e1614e2",
+    ".artifacts/prediction/prediction_v2_50parents/merged/all-observed/episode_labels.jsonl": "29628da4358768616398b9ba28f112869e0aa8cefc29a95cdf7bd2a2fa23f332",
+    ".artifacts/prediction/prediction_v2_50parents/all-observed-oof-predictions.jsonl": "8ec7bb5f5e5a632fe0e144de38f39745c9c6e8da052d0a6081b560b4958671e2",
+    ".artifacts/prediction/prediction_v2_50parents/merged/qualified/evaluation-metadata-only.jsonl": "e818b0ce2cb01929fdb3fa6c0591e87d75570eea0c768ae59327de4c0117575c",
+    ".artifacts/prediction/prediction_v2_50parents/merged/qualified/summary.json": "6f14c8c6f62eca0932a17a277cdfe4b36029f27244b358e39b3c406052864a3a",
+    ".artifacts/prediction/prediction_v2_50parents/merged/qualified/targets.jsonl": "b4210c56e733eeac4ae073019c7fb5ddd83addb49e2ca9153f2fed4ea270a0e2",
+    ".artifacts/prediction/prediction_v2_50parents/merged/qualified/snapshots-workflow-weighted.jsonl": "fcc17a79439fd55c906d7d9c4fc2ab1d0db618263c54a1a2d049192711e9da64",
+    ".artifacts/prediction/prediction_v2_50parents/merged/qualified/episode_labels.jsonl": "1ee42789057407a39b57102535a7ce0422e218413cc426ff643b53955da1754f",
+    ".artifacts/prediction/prediction_v2_50parents/qualified-oof-predictions.jsonl": "c53cd83a60741157e6ae0a0b9e57ea5ae5f1d78cca62f65d5a4c90ff6a08c73a"
+  },
+  "script_sha256": "65e1509cab18c7ec201cc0861eeb2781672c90461482be7333c5b2a3048687da",
+  "datasets": {
+    "all-observed": {
+      "unique_encoded_snapshot_states": 19,
+      "observed_state_interval_cells": 70,
+      "idle_start_unique_encoded_states": 1,
+      "episode_duration_counts": {
+        "lt1s": 452,
+        "1to3s": 6,
+        "3to10s": 14
+      },
+      "categorical_values": {
+        "tool_name": {
+          "None": 608,
+          "bash": 1806
+        },
+        "phase": {
+          "None": 1060,
+          "queued": 407,
+          "waiting_tool": 947
+        }
+      },
+      "scores": {
+        "all": {
+          "global": {
+            "in_sample_brier_0.1": 0.49844464682875445,
+            "oof_brier_0.1": 0.4986019133545142,
+            "in_sample_conditional_nll": 0.7390429407889699,
+            "oof_conditional_nll": 0.7445891813885495
+          },
+          "conditional": {
+            "in_sample_brier_0.1": 0.38040437855156684,
+            "oof_brier_0.1": 0.3889416832576055,
+            "in_sample_conditional_nll": 0.3972070111739269,
+            "oof_conditional_nll": 0.4137128675339776
+          },
+          "gbdt": {
+            "in_sample_brier_0.1": 0.43000412154307627,
+            "oof_brier_0.1": 0.43165139206125175,
+            "in_sample_conditional_nll": 0.6421100086571627,
+            "oof_conditional_nll": 0.6539537998758007
+          }
+        },
+        "idle_start": {
+          "global": {
+            "in_sample_brier_0.1": 0.5135673956077934,
+            "oof_brier_0.1": 0.5136056736538805,
+            "in_sample_conditional_nll": 0.6128234983164901,
+            "oof_conditional_nll": 0.6166794228000171
+          },
+          "conditional": {
+            "in_sample_brier_0.1": 0.5159364620067423,
+            "oof_brier_0.1": 0.5158966043704512,
+            "in_sample_conditional_nll": 0.5179053432160129,
+            "oof_conditional_nll": 0.5232888987974479
+          },
+          "gbdt": {
+            "in_sample_brier_0.1": 0.5130210756193351,
+            "oof_brier_0.1": 0.5129538872351859,
+            "in_sample_conditional_nll": 0.6904294668320138,
+            "oof_conditional_nll": 0.6953077079727547
+          }
+        },
+        "waiting_tool": {
+          "global": {
+            "in_sample_brier_0.1": 0.7657425286127695,
+            "oof_brier_0.1": 0.7660053012861642,
+            "in_sample_conditional_nll": 0.5924703742980888,
+            "oof_conditional_nll": 0.6005767746752292
+          },
+          "conditional": {
+            "in_sample_brier_0.1": 0.5648941224649314,
+            "oof_brier_0.1": 0.5844517562227439,
+            "in_sample_conditional_nll": 0.340371005563472,
+            "oof_conditional_nll": 0.3580228570879159
+          },
+          "gbdt": {
+            "in_sample_brier_0.1": 0.6618224013694954,
+            "oof_brier_0.1": 0.6604319340108813,
+            "in_sample_conditional_nll": 0.6119655462076181,
+            "oof_conditional_nll": 0.619928075913435
+          }
+        },
+        "queued": {
+          "global": {
+            "in_sample_brier_0.1": 0.16361926140996325,
+            "oof_brier_0.1": 0.16362339539001394,
+            "in_sample_conditional_nll": 1.7252417121832964,
+            "oof_conditional_nll": 1.725150306199673
+          },
+          "conditional": {
+            "in_sample_brier_0.1": 0.011412309710905844,
+            "oof_brier_0.1": 0.015124521479526405,
+            "in_sample_conditional_nll": 0.22096270356235473,
+            "oof_conditional_nll": 0.266727904242137
+          },
+          "gbdt": {
+            "in_sample_brier_0.1": 0.021714876978008352,
+            "oof_brier_0.1": 0.02840508427649664,
+            "in_sample_conditional_nll": 0.4928800345277813,
+            "oof_conditional_nll": 0.5464494438548352
+          }
+        },
+        "other_observed": {
+          "global": {
+            "in_sample_brier_0.1": 0.35108940887198237,
+            "oof_brier_0.1": 0.3511203817966888,
+            "in_sample_conditional_nll": 0.9163689760606811,
+            "oof_conditional_nll": 0.9170777206717198
+          },
+          "conditional": {
+            "in_sample_brier_0.1": 0.26741953030639737,
+            "oof_brier_0.1": 0.2705025419391303,
+            "in_sample_conditional_nll": 0.43584458822708233,
+            "oof_conditional_nll": 0.45096926918036717
+          },
+          "gbdt": {
+            "in_sample_brier_0.1": 0.3236484586818842,
+            "oof_brier_0.1": 0.32737500899784266,
+            "in_sample_conditional_nll": 0.7139392801949239,
+            "oof_conditional_nll": 0.7293356890788985
+          }
+        }
+      },
+      "in_sample_weighted_risk_cross_entropy_data_term": {
+        "global": 0.7352857287724537,
+        "conditional": 0.40369154586196926,
+        "gbdt": 0.6380577958424141
+      },
+      "training_risk_weight_sum": 163.98983014670515,
+      "leaf_hessian_quantiles": {
+        "min": 2.3035923892748533,
+        "p25": 4.234457022626884,
+        "median": 10.427140511223115,
+        "p75": 15.648029282107016,
+        "max": 36.126175495330244
+      },
+      "lambda_l2": 10.0,
+      "split_counts": {
+        "interval_index": 131,
+        "phase": 93,
+        "elapsed_idle_bin": 40,
+        "tool_name": 20
+      },
+      "command_signal_within_identical_encoded_state": {
+        "inspect": {
+          "snapshots": 92,
+          "workflows": 46,
+          "parents": 40,
+          "median_remaining_s": 0.039763082,
+          "still_waiting_at_0.1s": 0
+        },
+        "edit": {
+          "snapshots": 155,
+          "workflows": 46,
+          "parents": 40,
+          "median_remaining_s": 0.043349628,
+          "still_waiting_at_0.1s": 0
+        },
+        "test": {
+          "snapshots": 123,
+          "workflows": 46,
+          "parents": 40,
+          "median_remaining_s": 0.535268216,
+          "still_waiting_at_0.1s": 123
+        },
+        "shell": {
+          "snapshots": 86,
+          "workflows": 43,
+          "parents": 37,
+          "median_remaining_s": 0.0174329735,
+          "still_waiting_at_0.1s": 0
+        }
+      },
+      "oof_0.1s_estimate_sources": {
+        "global": {
+          "global": 2414
+        },
+        "conditional": {
+          "group_shrunk_to_global": 1981,
+          "global_fallback": 433
+        },
+        "gbdt": {
+          "gbdt_shared_multiclass": 2414
+        }
+      },
+      "retire_duration_s": {
+        "max": 0.044056344
+      }
+    },
+    "qualified": {
+      "unique_encoded_snapshot_states": 16,
+      "observed_state_interval_cells": 61,
+      "idle_start_unique_encoded_states": 1,
+      "episode_duration_counts": {
+        "lt1s": 281,
+        "1to3s": 5,
+        "3to10s": 10
+      },
+      "categorical_values": {
+        "tool_name": {
+          "None": 405,
+          "bash": 1148
+        },
+        "phase": {
+          "None": 667,
+          "queued": 242,
+          "waiting_tool": 644
+        }
+      },
+      "scores": {
+        "all": {
+          "global": {
+            "in_sample_brier_0.1": 0.5120405317961815,
+            "oof_brier_0.1": 0.5123991662794579,
+            "in_sample_conditional_nll": 0.7453262311853032,
+            "oof_conditional_nll": 0.8318999350021988
+          },
+          "conditional": {
+            "in_sample_brier_0.1": 0.3922296355599108,
+            "oof_brier_0.1": 0.4027407663495879,
+            "in_sample_conditional_nll": 0.39272981442990557,
+            "oof_conditional_nll": 0.4936429602366408
+          },
+          "gbdt": {
+            "in_sample_brier_0.1": 0.4403348616526111,
+            "oof_brier_0.1": 0.4440139943230125,
+            "in_sample_conditional_nll": 0.658744001156173,
+            "oof_conditional_nll": 0.6710017361432037
+          }
+        },
+        "idle_start": {
+          "global": {
+            "in_sample_brier_0.1": 0.526023458303618,
+            "oof_brier_0.1": 0.5261920677047931,
+            "in_sample_conditional_nll": 0.6154333605819584,
+            "oof_conditional_nll": 0.6746191281916629
+          },
+          "conditional": {
+            "in_sample_brier_0.1": 0.5289196639386888,
+            "oof_brier_0.1": 0.5288024324657543,
+            "in_sample_conditional_nll": 0.5188824461352608,
+            "oof_conditional_nll": 0.579378389121426
+          },
+          "gbdt": {
+            "in_sample_brier_0.1": 0.5248635014681645,
+            "oof_brier_0.1": 0.5250705039488941,
+            "in_sample_conditional_nll": 0.7086080728301082,
+            "oof_conditional_nll": 0.7123481100754766
+          }
+        },
+        "waiting_tool": {
+          "global": {
+            "in_sample_brier_0.1": 0.7774208783084663,
+            "oof_brier_0.1": 0.7780409860972451,
+            "in_sample_conditional_nll": 0.5993180007842958,
+            "oof_conditional_nll": 0.7230818153426233
+          },
+          "conditional": {
+            "in_sample_brier_0.1": 0.5819770715240267,
+            "oof_brier_0.1": 0.6054180307233983,
+            "in_sample_conditional_nll": 0.34484233188169017,
+            "oof_conditional_nll": 0.4821122330204857
+          },
+          "gbdt": {
+            "in_sample_brier_0.1": 0.6717837717476843,
+            "oof_brier_0.1": 0.6738502773198032,
+            "in_sample_conditional_nll": 0.6287239565220807,
+            "oof_conditional_nll": 0.6378650116739528
+          }
+        },
+        "queued": {
+          "global": {
+            "in_sample_brier_0.1": 0.18135076524574817,
+            "oof_brier_0.1": 0.18138312284621044,
+            "in_sample_conditional_nll": 1.743805806722958,
+            "oof_conditional_nll": 1.7438069582770943
+          },
+          "conditional": {
+            "in_sample_brier_0.1": 0.01609432383617806,
+            "oof_brier_0.1": 0.021506435044344237,
+            "in_sample_conditional_nll": 0.2618833801236139,
+            "oof_conditional_nll": 0.31922050845819966
+          },
+          "gbdt": {
+            "in_sample_brier_0.1": 0.03070085433456733,
+            "oof_brier_0.1": 0.039374572331468544,
+            "in_sample_conditional_nll": 0.5498932527458175,
+            "oof_conditional_nll": 0.5991832069773387
+          }
+        },
+        "other_observed": {
+          "global": {
+            "in_sample_brier_0.1": 0.3691770270459834,
+            "oof_brier_0.1": 0.36921840933787775,
+            "in_sample_conditional_nll": 0.9186732988074439,
+            "oof_conditional_nll": 0.9193529556085317
+          },
+          "conditional": {
+            "in_sample_brier_0.1": 0.27673623925926005,
+            "oof_brier_0.1": 0.2806886131408062,
+            "in_sample_conditional_nll": 0.39245726148490834,
+            "oof_conditional_nll": 0.4106279140106433
+          },
+          "gbdt": {
+            "in_sample_brier_0.1": 0.3361209860942608,
+            "oof_brier_0.1": 0.3411219183140741,
+            "in_sample_conditional_nll": 0.715605206242719,
+            "oof_conditional_nll": 0.7329551175927884
+          }
+        }
+      },
+      "in_sample_weighted_risk_cross_entropy_data_term": {
+        "global": 0.7443722404895335,
+        "conditional": 0.39867186501943463,
+        "gbdt": 0.656548692598224
+      },
+      "training_risk_weight_sum": 134.25853775853776,
+      "leaf_hessian_quantiles": {
+        "min": 2.0023899153457014,
+        "p25": 3.489421283826232,
+        "median": 8.7130027966341,
+        "p75": 13.436936669109853,
+        "max": 29.116774898255244
+      },
+      "lambda_l2": 10.0,
+      "split_counts": {
+        "interval_index": 137,
+        "phase": 96,
+        "elapsed_idle_bin": 38,
+        "tool_name": 17
+      },
+      "command_signal_within_identical_encoded_state": {
+        "inspect": {
+          "snapshots": 80,
+          "workflows": 40,
+          "parents": 37,
+          "median_remaining_s": 0.0397291505,
+          "still_waiting_at_0.1s": 0
+        },
+        "edit": {
+          "snapshots": 88,
+          "workflows": 40,
+          "parents": 37,
+          "median_remaining_s": 0.04169772,
+          "still_waiting_at_0.1s": 0
+        },
+        "test": {
+          "snapshots": 97,
+          "workflows": 40,
+          "parents": 37,
+          "median_remaining_s": 0.52385566,
+          "still_waiting_at_0.1s": 97
+        },
+        "shell": {
+          "snapshots": 80,
+          "workflows": 40,
+          "parents": 37,
+          "median_remaining_s": 0.0174329735,
+          "still_waiting_at_0.1s": 0
+        }
+      },
+      "oof_0.1s_estimate_sources": {
+        "global": {
+          "global": 1553
+        },
+        "conditional": {
+          "group_shrunk_to_global": 927,
+          "global_fallback": 626
+        },
+        "gbdt": {
+          "gbdt_shared_multiclass": 1553
+        }
+      },
+      "retire_duration_s": {
+        "max": 0.029819027
+      }
+    }
+  },
+  "interpretation_limits": [
+    "in-sample scores do not estimate generalization and full fits use more training parents than CV fits",
+    "train/OOF Brier at 0.1s has full support in both; qualified risk NLL has different support and is not a clean train/test-gap comparison",
+    "command comparisons are descriptive correlated snapshots, not held-out evidence of an enhanced model",
+    "risk weight sum is a normalization scale, not independent sample count",
+    "leaf Hessian scale indicates regularization magnitude; no isolated causal attribution without an ablation"
+  ]
+}

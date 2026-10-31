@@ -1,0 +1,251 @@
+{
+  "completed_original_interface_failures": [
+    {
+      "task_id": "mbpp-0002",
+      "workflow_id": "mbpp-0002-greedy-6a27c389",
+      "variant": "greedy",
+      "evidence_scope": "mbpp_derived_agent_development",
+      "exit_status": "LimitsExceeded",
+      "submission": "",
+      "calls": 30,
+      "agent_calls": 30,
+      "elapsed_s": 121.721872422,
+      "patch_bytes": 302,
+      "source_edited": true,
+      "protected_files_unchanged": true,
+      "tool_stats": [
+        {
+          "command": "ls -la",
+          "returncode": 0,
+          "source_changed": false,
+          "category": "inspect",
+          "duration_ns": 20455529
+        },
+        {
+          "command": "echo \"def find_shared_elements(list1, list2):\" >> solution.py\necho \"    return list(set(list1) & set(list2))\" >> solution.py",
+          "returncode": 0,
+          "source_changed": true,
+          "category": "edit",
+          "duration_ns": 20516190
+        },
+        {
+          "command": "python -m pytest -q test_visible.py",
+          "returncode": 1,
+          "source_changed": false,
+          "category": "test",
+          "duration_ns": 481189028
+        },
+        {
+          "command": "sed -i 's/similar_elements/find_shared_elements/g' solution.py\necho \"def find_shared_elements(list1, list2):\" > solution.py\necho \"    return list(set(list1) & set(list2))\" >> solution.py",
+          "returncode": 0,
+          "source_changed": true,
+          "category": "edit",
+          "duration_ns": 20726561
+        },
+        {
+          "command": "python -m pytest -q test_visible.py",
+          "returncode": 1,
+          "source_changed": false,
+          "category": "test",
+          "duration_ns": 470353743
+        },
+        {
+          "command": "sed -i 's/similar_elements/find_shared_elements/g' solution.py\necho \"def find_shared_elements(list1, list2):\" > solution.py\necho \"    return list(set(list1) & set(list2))\" >> solution.py",
+          "returncode": 0,
+          "source_changed": false,
+          "category": "inspect",
+          "duration_ns": 20732271
+        },
+        {
+          "command": "python -m pytest -q test_visible.py",
+          "returncode": 1,
+          "source_changed": false,
+          "category": "test",
+          "duration_ns": 461727134
+        },
+        {
+          "command": "sed -i 's/similar_elements/find_shared_elements/g' solution.py\necho \"def find_shared_elements(list1, list2):\" > solution.py\necho \"    return list(set(list1) & set(list2))\" >> solution.py",
+          "returncode": 0,
+          "source_changed": false,
+          "category": "inspect",
+          "duration_ns": 20345358
+        },
+        {
+          "command": "python -m pytest -q test_visible.py",
+          "returncode": 1,
+          "source_changed": false,
+          "category": "test",
+          "duration_ns": 458238027
+        },
+        {
+          "command": "sed -i 's/similar_elements/find_shared_elements/g' solution.py\necho \"def find_shared_elements(list1, list2):\" > solution.py\necho \"    return list(set(list1) & set(list2))\" >> solution.py",
+          "returncode": 0,
+          "source_changed": false,
+          "category": "inspect",
+          "duration_ns": 20092607
+        },
+        {
+          "command": "python -m pytest -q test_visible.py",
+          "returncode": 1,
+          "source_changed": false,
+          "category": "test",
+          "duration_ns": 477784549
+        },
+        {
+          "command": "sed -i 's/similar_elements/find_shared_elements/g' solution.py\necho \"def find_shared_elements(list1, list2):\" > solution.py\necho \"    return list(set(list1) & set(list2))\" >> solution.py",
+          "returncode": 0,
+          "source_changed": false,
+          "category": "inspect",
+          "duration_ns": 21577188
+        },
+        {
+          "command": "python -m pytest -q test_visible.py",
+          "returncode": 1,
+          "source_changed": false,
+          "category": "test",
+          "duration_ns": 477794839
+        },
+        {
+          "command": "sed -i 's/similar_elements/find_shared_elements/g' solution.py\necho \"def find_shared_elements(list1, list2):\" > solution.py\necho \"    return list(set(list1) & set(list2))\" >> solution.py",
+          "returncode": 0,
+          "source_changed": false,
+          "category": "inspect",
+          "duration_ns": 20397949
+        },
+        {
+          "command": "python -m pytest -q test_visible.py",
+          "returncode": 1,
+          "source_changed": false,
+          "category": "test",
+          "duration_ns": 460300393
+        },
+        {
+          "command": "sed -i 's/similar_elements/find_shared_elements/g' solution.py\necho \"def find_shared_elements(list1, list2):\" > solution.py\necho \"    return list(set(list1) & set(list2))\" >> solution.py",
+          "returncode": 0,
+          "source_changed": false,
+          "category": "inspect",
+          "duration_ns": 19908015
+        },
+        {
+          "command": "python -m pytest -q test_visible.py",
+          "returncode": 1,
+          "source_changed": false,
+          "category": "test",
+          "duration_ns": 482639947
+        },
+        {
+          "command": "sed -i 's/similar_elements/find_shared_elements/g' solution.py\necho \"def find_shared_elements(list1, list2):\" > solution.py\necho \"    return list(set(list1) & set(list2))\" >> solution.py",
+          "returncode": 0,
+          "source_changed": false,
+          "category": "inspect",
+          "duration_ns": 19942045
+        },
+        {
+          "command": "python -m pytest -q test_visible.py",
+          "returncode": 1,
+          "source_changed": false,
+          "category": "test",
+          "duration_ns": 472157785
+        },
+        {
+          "command": "sed -i 's/similar_elements/find_shared_elements/g' solution.py\necho \"def find_shared_elements(list1, list2):\" > solution.py\necho \"    return list(set(list1) & set(list2))\" >> solution.py",
+          "returncode": 0,
+          "source_changed": false,
+          "category": "inspect",
+          "duration_ns": 23421812
+        },
+        {
+          "command": "python -m pytest -q test_visible.py",
+          "returncode": 1,
+          "source_changed": false,
+          "category": "test",
+          "duration_ns": 482169463
+        },
+        {
+          "command": "sed -i 's/similar_elements/find_shared_elements/g' solution.py\necho \"def find_shared_elements(list1, list2):\" > solution.py\necho \"    return list(set(list1) & set(list2))\" >> solution.py",
+          "returncode": 0,
+          "source_changed": false,
+          "category": "inspect",
+          "duration_ns": 20067896
+        },
+        {
+          "command": "python -m pytest -q test_visible.py",
+          "returncode": 1,
+          "source_changed": false,
+          "category": "test",
+          "duration_ns": 463747290
+        },
+        {
+          "command": "sed -i 's/similar_elements/find_shared_elements/g' solution.py\necho \"def find_shared_elements(list1, list2):\" > solution.py\necho \"    return list(set(list1) & set(list2))\" >> solution.py",
+          "returncode": 0,
+          "source_changed": false,
+          "category": "inspect",
+          "duration_ns": 20102697
+        },
+        {
+          "command": "python -m pytest -q test_visible.py",
+          "returncode": 1,
+          "source_changed": false,
+          "category": "test",
+          "duration_ns": 485298227
+        },
+        {
+          "command": "sed -i 's/similar_elements/find_shared_elements/g' solution.py\necho \"def find_shared_elements(list1, list2):\" > solution.py\necho \"    return list(set(list1) & set(list2))\" >> solution.py",
+          "returncode": 0,
+          "source_changed": false,
+          "category": "inspect",
+          "duration_ns": 20892672
+        },
+        {
+          "command": "python -m pytest -q test_visible.py",
+          "returncode": 1,
+          "source_changed": false,
+          "category": "test",
+          "duration_ns": 462613461
+        },
+        {
+          "command": "sed -i 's/similar_elements/find_shared_elements/g' solution.py\necho \"def find_shared_elements(list1, list2):\" > solution.py\necho \"    return list(set(list1) & set(list2))\" >> solution.py",
+          "returncode": 0,
+          "source_changed": false,
+          "category": "inspect",
+          "duration_ns": 22504196
+        },
+        {
+          "command": "python -m pytest -q test_visible.py",
+          "returncode": 1,
+          "source_changed": false,
+          "category": "test",
+          "duration_ns": 478833287
+        },
+        {
+          "command": "sed -i 's/similar_elements/find_shared_elements/g' solution.py\necho \"def find_shared_elements(list1, list2):\" > solution.py\necho \"    return list(set(list1) & set(list2))\" >> solution.py",
+          "returncode": 0,
+          "source_changed": false,
+          "category": "inspect",
+          "duration_ns": 20662731
+        }
+      ],
+      "loop_feedback_count": 24,
+      "evaluation_status": "pending_independent_tests"
+    }
+  ],
+  "original_interface_stop": {
+    "pid": 282206,
+    "workflow_id": "mbpp-0003-greedy-bcdfbfa4",
+    "reason": "stopped repetitive interface diagnostic after one completed failure and repeated second-task failures; continuing with explicit required API contract",
+    "ts_ns": 759051862664231,
+    "all_submitted_requests_released_before_interrupt": true,
+    "completed_request_count": 15
+  },
+  "explicit_interface_stop": {
+    "workflow_id": "mbpp-0002-greedy-explicit-042d8358",
+    "reason": "stopped interactive-editor loop; no candidate qualified; replacing prompt with upstream mini text template and explicit noninteractive command feedback",
+    "completed_request_count": 11,
+    "all_submitted_requests_released_before_interrupt": true,
+    "terminated_tool_process_groups": [
+      "293879"
+    ],
+    "ts_ns": 759278121568527
+  },
+  "note": "Stopped diagnostic traces are retained in raw/trajectories and never relabeled as successful executions."
+}

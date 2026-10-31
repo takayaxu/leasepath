@@ -113,6 +113,8 @@ def validate_events(events):
             d = e['data']
             if d['cached_tokens'] + d['executed_prefill_tokens'] != d['prompt_tokens']:
                 raise ValueError('cache counters do not sum to prompt tokens')
+            if 'backend_lookup' in d and len(d['backend_lookup']['prompt_token_ids']) != d['prompt_tokens']:
+                raise ValueError('measured lookup token count differs from prompt counter')
             lookups[(run, e['request_id'])] = e
             scoped = 'physical_trace_scope' in d
             if run in lookup_scopes and lookup_scopes[run] != scoped:
@@ -173,6 +175,11 @@ def validate_events(events):
                 e['data']['request_token_ids'] != lookup['data']['prompt_token_ids'] or
                 e['data']['compatibility_id'] != lookup['data']['compatibility_id']):
             raise ValueError('legal demand differs from referenced lookup tokens or compatibility')
+        backend = lookup['data'].get('backend_lookup')
+        if backend is not None and (
+                e['data']['request_token_ids'] != backend['prompt_token_ids'] or
+                e['data']['compatibility_id'] != backend['compatibility_id']):
+            raise ValueError('legal demand differs from measured backend lookup')
     if any('physical_trace_scope' not in e['data'] for (run, _), e in lookups.items() if run in physical_runs):
         raise ValueError('complete physical trace is missing a lookup snapshot')
     ready_by_id = {(e['run_id'], e['request_id']): e for e in readies}

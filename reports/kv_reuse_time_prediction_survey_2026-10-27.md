@@ -491,6 +491,6 @@ KVFlow/PBKV/CacheScout 在多 agent 场景中提供结构对照。MORI 在 CPU o
 
 **[R15]** *Tool Waiting and Re-arrival in Compile-Time-Static LLM Serving: Cost Mechanisms and Configuration Selection*. arXiv:2609.34663v1, 2026。[原文](https://arxiv.org/html/2609.34663v1)。补充阅读：工具等待改变 re-arrival、并发与缓存命中的闭环；本报告不采用其中不同 TraceLab release 的数字替代 [R9]。
 
-**[L1]** LeasePath 历史材料（已移至项目外归档）： [D6 验收报告](../../LeasePath-archive/2026-10-28-before-prediction-cleanup/reports/d6_acceptance.md)，2026-10-27；[问题定义](../../LeasePath-archive/2026-10-28-before-prediction-cleanup/docs/problem_definition.md)；[现有研究路线](../../LeasePath-archive/2026-10-28-before-prediction-cleanup/leasepath_research_roadmap.md)。本文使用 D6 最新验收口径，未将早期工程 fixture 或旧阶段“待验收”的记录混作当前结论。
+**[L1]** LeasePath 历史材料（2026-10-27，已移至原主机的项目外归档，本机未恢复）：`LeasePath-archive/2026-10-28-before-prediction-cleanup/` 下的 `reports/d6_acceptance.md`（D6 验收报告）、`docs/problem_definition.md`（问题定义）和 `leasepath_research_roadmap.md`（现有研究路线）。归档范围见 [清理记录](../docs/project_cleanup.md)。本文使用 D6 最新验收口径，未将早期工程 fixture 或旧阶段“待验收”的记录混作当前结论。
 
 **调研未覆盖的验证：** 未复现上述论文的整套服务系统，未对新方案进行模型训练或性能测量；对“竞争风险＋阶段分解＋决策校准”的贡献空间只提出候选，不能据此次检索断言没有其他相同工作。进入投稿准备前，应围绕最终收敛机制再次做定向查新。

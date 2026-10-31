@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "causal_prefix_replays": 570,
+  "retry_running_snapshots_replayed": 148,
+  "tool_pairs_and_output_hashes_verified": 34,
+  "parent_groups": 3,
+  "group_members": {
+    "leasepath/designed-file-tasks-v1:designed-csv-ledger": 2,
+    "leasepath/designed-file-tasks-v1:designed-jsonl-status": 2,
+    "leasepath/designed-file-tasks-v1:designed-graph-distance": 2
+  },
+  "input_and_output_hashes_verified": true,
+  "feature_allowlists_verified": true,
+  "episode_weights_verified": true,
+  "previous_results_unchanged": {
+    "d2_expansion_v1": true,
+    "d2_mbpp_round": true,
+    "gbdt_review_2": true
+  },
+  "previous_frozen_raw_unchanged": true,
+  "no_predictor_retraining": true
+}

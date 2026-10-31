@@ -1,0 +1,126 @@
+[
+  {
+    "task_id": "repair-csv-ledger-medium",
+    "group_id": "leasepath/designed-file-tasks-v1:designed-csv-ledger",
+    "band": "medium",
+    "target_s": [
+      3.2,
+      5.8
+    ],
+    "attempts": [
+      {
+        "units": 750000,
+        "reference_elapsed_s": 3.602297915960662,
+        "returncode": 0
+      }
+    ],
+    "selected_units": 750000,
+    "defect_pytest_returncode": 1,
+    "defect_pytest_elapsed_s": 3.4811846589436755
+  },
+  {
+    "task_id": "repair-csv-ledger-large",
+    "group_id": "leasepath/designed-file-tasks-v1:designed-csv-ledger",
+    "band": "large",
+    "target_s": [
+      6.8,
+      9.5
+    ],
+    "attempts": [
+      {
+        "units": 1500000,
+        "reference_elapsed_s": 6.688746989006177,
+        "returncode": 0
+      },
+      {
+        "units": 1650000,
+        "reference_elapsed_s": 7.357230769935995,
+        "returncode": 0
+      }
+    ],
+    "selected_units": 1650000,
+    "defect_pytest_returncode": 1,
+    "defect_pytest_elapsed_s": 7.040111834998243
+  },
+  {
+    "task_id": "repair-jsonl-status-medium",
+    "group_id": "leasepath/designed-file-tasks-v1:designed-jsonl-status",
+    "band": "medium",
+    "target_s": [
+      3.2,
+      5.8
+    ],
+    "attempts": [
+      {
+        "units": 300000,
+        "reference_elapsed_s": 3.538154221023433,
+        "returncode": 0
+      }
+    ],
+    "selected_units": 300000,
+    "defect_pytest_returncode": 1,
+    "defect_pytest_elapsed_s": 3.5729146259836853
+  },
+  {
+    "task_id": "repair-jsonl-status-large",
+    "group_id": "leasepath/designed-file-tasks-v1:designed-jsonl-status",
+    "band": "large",
+    "target_s": [
+      6.8,
+      9.5
+    ],
+    "attempts": [
+      {
+        "units": 600000,
+        "reference_elapsed_s": 6.680438632029109,
+        "returncode": 0
+      },
+      {
+        "units": 720000,
+        "reference_elapsed_s": 7.881832201033831,
+        "returncode": 0
+      }
+    ],
+    "selected_units": 720000,
+    "defect_pytest_returncode": 1,
+    "defect_pytest_elapsed_s": 7.712284545996226
+  },
+  {
+    "task_id": "repair-graph-distance-medium",
+    "group_id": "leasepath/designed-file-tasks-v1:designed-graph-distance",
+    "band": "medium",
+    "target_s": [
+      3.2,
+      5.8
+    ],
+    "attempts": [
+      {
+        "units": 750000,
+        "reference_elapsed_s": 4.427898937952705,
+        "returncode": 0
+      }
+    ],
+    "selected_units": 750000,
+    "defect_pytest_returncode": 1,
+    "defect_pytest_elapsed_s": 4.2955136969685555
+  },
+  {
+    "task_id": "repair-graph-distance-large",
+    "group_id": "leasepath/designed-file-tasks-v1:designed-graph-distance",
+    "band": "large",
+    "target_s": [
+      6.8,
+      9.5
+    ],
+    "attempts": [
+      {
+        "units": 1500000,
+        "reference_elapsed_s": 9.037539407028817,
+        "returncode": 0
+      }
+    ],
+    "selected_units": 1500000,
+    "defect_pytest_returncode": 1,
+    "defect_pytest_elapsed_s": 8.847356667974964
+  }
+]

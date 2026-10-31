@@ -1,0 +1,14 @@
+{
+  "versions": {
+    "vllm": "0.23.0+empty",
+    "vllm-ascend": "0.1.dev4229+g7495e9d69",
+    "torch": "2.10.0+cpu",
+    "torch-npu": "2.10.0.post4",
+    "transformers": "5.5.4"
+  },
+  "source_sha256": {
+    "/home/ma-user/work/qwen-services/runtime-root/vllm-workspace/vllm/vllm/v1/core/kv_cache_manager.py": "a69aa08062714b40b149648bbec031a42d22e422fbf9543cd10fbd12d2496edb",
+    "/home/ma-user/work/qwen-services/runtime-root/vllm-workspace/vllm/vllm/v1/core/sched/scheduler.py": "9ae1491f57a6294e32416b93ef2ea68107fa0d65c3a4d7f745f1261012f735e9",
+    "/home/ma-user/work/qwen-services/runtime-root/vllm-workspace/vllm-ascend/vllm_ascend/platform.py": "30c75952f784c4d047d7202dd7f68c8fc7c22bb975853a5048fb51ffcbe1f2a8"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "configuration": {
+    "stage": "empirical_baseline_review_1",
+    "scope": "development_fit_and_training_preview_only",
+    "datasets": {
+      "all-main": ".artifacts/d2-next/datasets/all-main",
+      "qualified": ".artifacts/d2-next/datasets/qualified"
+    },
+    "execution_quality": "results/prediction/d2_mbpp_round/execution-quality.json",
+    "right_edges": [
+      0.01,
+      0.03,
+      0.1,
+      0.3,
+      1,
+      3,
+      10,
+      30,
+      60,
+      120,
+      300,
+      600
+    ],
+    "elapsed_edges": [
+      0.03,
+      0.1,
+      0.3,
+      1
+    ],
+    "min_group_workflows": 3,
+    "prior_weight": 1.0,
+    "weighting": "each_workflow_total_1_each_episode_equal_within_workflow",
+    "conditioning_features": [
+      "tool_name",
+      "phase",
+      "elapsed_idle_s"
+    ],
+    "variants": [
+      "global",
+      "conditional"
+    ]
+  },
+  "input_sha256": {
+    "all-main": {
+      "summary.json": "4374044b7d85d9f8f66b61383e50b9bb3bc62f05c210d1451f1abeb96474d77c",
+      "snapshots.jsonl": "add85c3bd4ca175408c2c2ee8df54293954d6c1f43e4cb8e8b4bc30f6b4385c1",
+      "targets.jsonl": "4e40654b0b09571cd8dc6db416bfe24f5b7f616e1c36f7361dbd4e152e4b6852"
+    },
+    "qualified": {
+      "summary.json": "33e145bccdd5e5638915d62ed7814311fbf1728ce128af5373f4d02181701ac5",
+      "snapshots.jsonl": "a68b70aec606d32b8f6a8633679f0712c71d645c36a384147750178224472616",
+      "targets.jsonl": "5fcca1e8da40256d1a4a2b793f484223597e0c81fff61cfcc9bbbe4dd05cb528"
+    }
+  },
+  "execution_quality_sha256": "e091d877f3b2d000f6abf994bca135d1f13032c909fa7b05789061db63827f9c",
+  "source_sha256": {
+    "src/leasepath/reuse_predictor.py": "24773e363c9fb77e3008cdf7672a4136a4cd2ebb95c85cdc5752126137b67729",
+    "src/leasepath/d2_hazards.py": "0feaa2ec2ec327ff5e5feedb9d5018dcd61ce95f9041b5d47a6d63b6ffe535b2",
+    "src/leasepath/prediction_state.py": "513acd885ad7bf490a52c1f3be004429489ed682920b26b3213e17378ce6d30f",
+    "scripts/fit_empirical_risk.py": "e4ac55eea9ddd56449fe94ad39135628524204f677ea31d13fcfc69709b18760"
+  }
+}

@@ -1,0 +1,342 @@
+[
+  {
+    "task_id": "mbpp-0019",
+    "expected_test_count": 37,
+    "files": {
+      "reference-validation/mbpp-0019/negative-control.log": "049399f6f2b1ccf82b6908877af0c61333b0c218edc8347eb2186b646b1bc5f0",
+      "reference-validation/mbpp-0019/pytest.log": "ff437331410eb55a3e0c3fff4ad5b4da04564d1d67a8a6b820f7ad38aa89ed72",
+      "evaluation-runs/mbpp-0019/pytest.log": "f1d02f578784ae26c484a53402bfb6126c32b1346d44e349b68aa969fa8e59f0",
+      "evaluation-runs/mbpp-0019/junit.xml": "a7b90a53fa16f4d262a5425728f7002966619ffe437733ffe146dd47b6ebbfd7"
+    }
+  },
+  {
+    "task_id": "mbpp-0057",
+    "expected_test_count": 36,
+    "files": {
+      "reference-validation/mbpp-0057/negative-control.log": "d7931e6349306d8c9c2eada4952e9dc08bd72b48764128d6862bef92e5deab3c",
+      "reference-validation/mbpp-0057/pytest.log": "22a4a46fce2bd09cfd8b12d3613d6c944f051d97936c8a64d501a2b79c42458e",
+      "evaluation-runs/mbpp-0057/pytest.log": "f1065c68778db83f472be326cc73b2af86b772a6fc7c8fa013368c97ba387926",
+      "evaluation-runs/mbpp-0057/junit.xml": "1da45f32bb8ed1d55e99b156ce2e7f28906aa230e817a477814c85cefff91b36"
+    }
+  },
+  {
+    "task_id": "mbpp-0058",
+    "expected_test_count": 53,
+    "files": {
+      "reference-validation/mbpp-0058/negative-control.log": "eb86ef38afa8dba2d8fb706465eb59964be3cba6e115ae53e52f292903c2f052",
+      "reference-validation/mbpp-0058/pytest.log": "0c0b5f78cb6720e919f59940fca8866a3ae40a5b981a374da8ceb8236ca5fd4b",
+      "evaluation-runs/mbpp-0058/pytest.log": "fc14ac483852ed8ef571eabbba2bf2f1ec793be67cc6b2e8d664250b84175393",
+      "evaluation-runs/mbpp-0058/junit.xml": "e0c4254c53a5a54067f46c850e139b08ce2b3bf08312f3af39f877cf15ddc39e"
+    }
+  },
+  {
+    "task_id": "mbpp-0059",
+    "expected_test_count": 38,
+    "files": {
+      "reference-validation/mbpp-0059/negative-control.log": "2015442bd23ff85ae80c1e2bdb1c9038ba50976997eec702785b5340497e93e2",
+      "reference-validation/mbpp-0059/pytest.log": "5820660ec3010de64a702de867f5df2cf30c67130e042248a991f9440cddf42b",
+      "evaluation-runs/mbpp-0059/pytest.log": "90404b5bae9f26f980a43c5ba32c7e8d1785aa2ec4d32fd7d23144d4cade2639",
+      "evaluation-runs/mbpp-0059/junit.xml": "7a1d53bd8898b7da372d4bcb5a457b139af22910756504a24c95ed44daa57940"
+    }
+  },
+  {
+    "task_id": "mbpp-0061",
+    "expected_test_count": 37,
+    "files": {
+      "reference-validation/mbpp-0061/negative-control.log": "11f3fadb0bed7a3c7b6e5e89d17cdb05d355ec2592db4eaf338bcf5f6752da01",
+      "reference-validation/mbpp-0061/pytest.log": "3e62137b8331e5093c598c5984f07ba7ebd335dbd23ed78b8568e911f7ffd001",
+      "evaluation-runs/mbpp-0061/pytest.log": "9a340df7b528adb468182723e1619e9cabd095b22bb399376957fda62b00337f",
+      "evaluation-runs/mbpp-0061/junit.xml": "283cdd771baed73739ba2ccbe65a0624d18562b8ac19f2c575c61f1e86921efa"
+    }
+  },
+  {
+    "task_id": "mbpp-0062",
+    "expected_test_count": 36,
+    "files": {
+      "reference-validation/mbpp-0062/negative-control.log": "e1b3c30afe7994cca626149ab47d38cd89186b850a316165ba4a261f163fce0f",
+      "reference-validation/mbpp-0062/pytest.log": "22a4a46fce2bd09cfd8b12d3613d6c944f051d97936c8a64d501a2b79c42458e",
+      "evaluation-runs/mbpp-0062/pytest.log": "f1065c68778db83f472be326cc73b2af86b772a6fc7c8fa013368c97ba387926",
+      "evaluation-runs/mbpp-0062/junit.xml": "75830bde8c2e04c5145e0ebcffe710c8f46f08a39636d6799baa18e97c98f01d"
+    }
+  },
+  {
+    "task_id": "mbpp-0063",
+    "expected_test_count": 38,
+    "files": {
+      "reference-validation/mbpp-0063/negative-control.log": "a154bd90304bb76224cfb65d4a3b18bdc64757e099340ab4ca11950c11ececa2",
+      "reference-validation/mbpp-0063/pytest.log": "90404b5bae9f26f980a43c5ba32c7e8d1785aa2ec4d32fd7d23144d4cade2639",
+      "evaluation-runs/mbpp-0063/pytest.log": "a3db4d27122711e4952c14b0a65925f8db713d3e19123089194bc87b7fec0af9",
+      "evaluation-runs/mbpp-0063/junit.xml": "6087344b1ef4a2398eafdf55e6a6087cff4d8c56ba21d6cf1241dea696fa92c7"
+    }
+  },
+  {
+    "task_id": "mbpp-0064",
+    "expected_test_count": 39,
+    "files": {
+      "reference-validation/mbpp-0064/negative-control.log": "5b50bf9aa1e0466e3da89b2c61848abf6d967f40ac3bf0de93151a37cd23672d",
+      "reference-validation/mbpp-0064/pytest.log": "5a13227c06cffd106d2776b489a51a04645ec66ad9a4c8a39b195731ec21bc5c",
+      "evaluation-runs/mbpp-0064/pytest.log": "d778a28c4a18354de41afd1be90799ad171f6f13aed1d1327b66dccdbd117849",
+      "evaluation-runs/mbpp-0064/junit.xml": "380441ea9e65905cf2d30e432610e4253b5b02ec89c6ec604c31449e881ffccb"
+    }
+  },
+  {
+    "task_id": "mbpp-0065",
+    "expected_test_count": 39,
+    "files": {
+      "reference-validation/mbpp-0065/negative-control.log": "8dde9374a71499d253d1e68b01accac3b48eb008f4f6dab6d354078e7e4db244",
+      "reference-validation/mbpp-0065/pytest.log": "aee76b0b5300ee35ace9c6cbd995b88ca286c5bb05105ce3429be4c4ae946913",
+      "evaluation-runs/mbpp-0065/pytest.log": "0920fa3e8fffd6a917aee56d29e9da73a41a9ba71faa6b5a6de7fe26f4f6cea2",
+      "evaluation-runs/mbpp-0065/junit.xml": "24336977defd54bb63019e1c1dd6096eefafecbc3e83ec360176914b3380867f"
+    }
+  },
+  {
+    "task_id": "mbpp-0067",
+    "expected_test_count": 23,
+    "files": {
+      "reference-validation/mbpp-0067/negative-control.log": "7374c99d51f5e9315ef886eb3d8df3fd8b980884b23d0305bba81130554af10a",
+      "reference-validation/mbpp-0067/pytest.log": "27a8f69d8de78603a09a636d83fc3e73cfbace01b895cce544979726c6a18a82",
+      "evaluation-runs/mbpp-0067/pytest.log": "dc00ab53f9e0ab10e805e46a43a738e61b4fb07790b13c794f9f8f48fe2d524b",
+      "evaluation-runs/mbpp-0067/junit.xml": "5aa0fcce49647557878ce897599a6cf1a089fe1c3cb0da9f71be06d44107f457"
+    }
+  },
+  {
+    "task_id": "mbpp-0068",
+    "expected_test_count": 37,
+    "files": {
+      "reference-validation/mbpp-0068/negative-control.log": "f7fb2ace69f4eef3456ba734f0baa9d4df54557a1177e83bd33ba7322cee4d79",
+      "reference-validation/mbpp-0068/pytest.log": "ff437331410eb55a3e0c3fff4ad5b4da04564d1d67a8a6b820f7ad38aa89ed72",
+      "evaluation-runs/mbpp-0068/pytest.log": "9a340df7b528adb468182723e1619e9cabd095b22bb399376957fda62b00337f",
+      "evaluation-runs/mbpp-0068/junit.xml": "5934a76cddffef43941605c2ccb39e25e17f61d58789e325f498ee9c21150882"
+    }
+  },
+  {
+    "task_id": "mbpp-0106",
+    "expected_test_count": 39,
+    "files": {
+      "reference-validation/mbpp-0106/negative-control.log": "8b0515f9abfc0a6446f15bfc6f50d5358aed5fac2fb31522b0f9562b45573c3d",
+      "reference-validation/mbpp-0106/pytest.log": "ff3e3a0adf735ad9ff28af84012120def84aadb71d71d3476d532220cdad2771",
+      "evaluation-runs/mbpp-0106/pytest.log": "0920fa3e8fffd6a917aee56d29e9da73a41a9ba71faa6b5a6de7fe26f4f6cea2",
+      "evaluation-runs/mbpp-0106/junit.xml": "229f03ca91b431b13eba54912728dd7e195d0b068a614ea58c270d1e9559ce2b"
+    }
+  },
+  {
+    "task_id": "mbpp-0072",
+    "expected_test_count": 103,
+    "files": {
+      "reference-validation/mbpp-0072/negative-control.log": "07361f48140e29c18db6193997b83613390804f2e87169bc16937ea99e2d6ea2",
+      "reference-validation/mbpp-0072/pytest.log": "cf012c084af8512be0fe797e63995ff8be99ea49c25a11313c344f97051de2fc",
+      "evaluation-runs/mbpp-0072/pytest.log": "8082f24bd1ec7f9d555af2a9a9c4b78f79f1ece782e5e2fe136c04df59d00656",
+      "evaluation-runs/mbpp-0072/junit.xml": "45a6c2220b04dc1a113592b558733fbfc11257a38040be139d0b26f6ce9a2a3b"
+    }
+  },
+  {
+    "task_id": "mbpp-0074",
+    "expected_test_count": 40,
+    "files": {
+      "reference-validation/mbpp-0074/negative-control.log": "28f831d21f2857cc1140ffb486c80206e819763e75afad716de647855825d0a5",
+      "reference-validation/mbpp-0074/pytest.log": "c31d969a7c1cf00bc287f5bba1ff0d22db462b6b6fa4b05e8792c989b4e312b9",
+      "evaluation-runs/mbpp-0074/pytest.log": "52ca591da4434ddb373d3ab04bb06dd81bd0d0e1d61dfe1ac1987f51641297b6",
+      "evaluation-runs/mbpp-0074/junit.xml": "b01adf39e4db2fb856d4ba5f66281ef390b7409ea27519c78126eb791f2dc2da"
+    }
+  },
+  {
+    "task_id": "mbpp-0075",
+    "expected_test_count": 39,
+    "files": {
+      "reference-validation/mbpp-0075/negative-control.log": "028a19aec016eb7b0e0129aa37e2c08b6505c0e84611f70e51dec04b2db38d5d",
+      "reference-validation/mbpp-0075/pytest.log": "aee76b0b5300ee35ace9c6cbd995b88ca286c5bb05105ce3429be4c4ae946913",
+      "evaluation-runs/mbpp-0075/pytest.log": "0920fa3e8fffd6a917aee56d29e9da73a41a9ba71faa6b5a6de7fe26f4f6cea2",
+      "evaluation-runs/mbpp-0075/junit.xml": "7e3cfb3937ee20e79849114dfa9064ff96a4ded7cf0e65884d398c019d1c7209"
+    }
+  },
+  {
+    "task_id": "mbpp-0077",
+    "expected_test_count": 68,
+    "files": {
+      "reference-validation/mbpp-0077/negative-control.log": "57116a57b94e7df79f0aeb559c74305ce1b0a071487e2c752bf9d5700e27262f",
+      "reference-validation/mbpp-0077/pytest.log": "ce2d00094e8a7ebbbb877b7ae6ff457856dc3f9d94d2cf7b98d88d14e8a2a3f3",
+      "evaluation-runs/mbpp-0077/pytest.log": "725222ea40ee1f18eb0f403359dfab07d2e20dff8f8252584fd641a478999394",
+      "evaluation-runs/mbpp-0077/junit.xml": "cca37f72ccadcd55a06cbf0e9034b2acb282ed6d42028b205984dfa36d7a8387"
+    }
+  },
+  {
+    "task_id": "mbpp-0080",
+    "expected_test_count": 39,
+    "files": {
+      "reference-validation/mbpp-0080/negative-control.log": "b7839312ff95fb9090a89b8ece03da0dd3bc7fc791ec48641fcb26ed109721e6",
+      "reference-validation/mbpp-0080/pytest.log": "ff3e3a0adf735ad9ff28af84012120def84aadb71d71d3476d532220cdad2771",
+      "evaluation-runs/mbpp-0080/pytest.log": "89ff155359335f355ac7833fd1c4256d9867b2fcd9ba1db7da793115e10fc917",
+      "evaluation-runs/mbpp-0080/junit.xml": "058e4c032fa58705782a63c080f9eafca3309676ee6efe9a69b79e4358283924"
+    }
+  },
+  {
+    "task_id": "mbpp-0084",
+    "expected_test_count": 19,
+    "files": {
+      "reference-validation/mbpp-0084/negative-control.log": "e48d819be71648ee81a754eee7303bd366909fd19573f57e2f189be021a71a01",
+      "reference-validation/mbpp-0084/pytest.log": "aefec41ff0671ec93dd0bddac11947a25858df8b32aa2336eb3cde41393dc583",
+      "evaluation-runs/mbpp-0084/pytest.log": "78bab5f9b6415dfa73573a0379a7b3c95c9bc9c67acdeb7f6838f12facfa8ea0",
+      "evaluation-runs/mbpp-0084/junit.xml": "3535846b7034da7ee1101a4d0fc9637486c594896e77a14ba2a6df541aae74f6"
+    }
+  },
+  {
+    "task_id": "mbpp-0086",
+    "expected_test_count": 38,
+    "files": {
+      "reference-validation/mbpp-0086/negative-control.log": "cd6b0d69317d5b2bd8c5fe287c289e06776b8c9f5af179a09a10a0ff6b831197",
+      "reference-validation/mbpp-0086/pytest.log": "f657c77aa5bcb72b55f91333cac16a801dab85f893cc5a0a90f6d849f9652e3e",
+      "evaluation-runs/mbpp-0086/pytest.log": "48d9cdf85c64d1545ff8cd79d30fe6fd7bc1dbb3b2fe37d407184b0fc77913d5",
+      "evaluation-runs/mbpp-0086/junit.xml": "b378802e748f2149f55f3901a2228fe5127822911a8b527c43e53a43b3ee7870"
+    }
+  },
+  {
+    "task_id": "mbpp-0087",
+    "expected_test_count": 39,
+    "files": {
+      "reference-validation/mbpp-0087/negative-control.log": "ae60cec4889f605d65781823e242e44feb295bfe730dfe83e5e1f199b51f541c",
+      "reference-validation/mbpp-0087/pytest.log": "89ff155359335f355ac7833fd1c4256d9867b2fcd9ba1db7da793115e10fc917",
+      "evaluation-runs/mbpp-0087/pytest.log": "5a13227c06cffd106d2776b489a51a04645ec66ad9a4c8a39b195731ec21bc5c",
+      "evaluation-runs/mbpp-0087/junit.xml": "617b83c753828f575ed2177a6b286b801f301a695d35eda8ef9baad397e4bf4a"
+    }
+  },
+  {
+    "task_id": "mbpp-0088",
+    "expected_test_count": 39,
+    "files": {
+      "reference-validation/mbpp-0088/negative-control.log": "663a689fb9c9edbc06316fc9ccd3083a2164b62a33338bf7f0b00becc15c5616",
+      "reference-validation/mbpp-0088/pytest.log": "aee76b0b5300ee35ace9c6cbd995b88ca286c5bb05105ce3429be4c4ae946913",
+      "evaluation-runs/mbpp-0088/pytest.log": "5a13227c06cffd106d2776b489a51a04645ec66ad9a4c8a39b195731ec21bc5c",
+      "evaluation-runs/mbpp-0088/junit.xml": "a4bc4e30ab7ad14ade8af13fa9ec1c0a67ff9bbe791c1c67ad7e352d0c8f266f"
+    }
+  },
+  {
+    "task_id": "mbpp-0090",
+    "expected_test_count": 39,
+    "files": {
+      "reference-validation/mbpp-0090/negative-control.log": "d3a098c60a12c3ab1d8e8195b0d21d3c46be4aeaeda935830a65a40bc15a67d6",
+      "reference-validation/mbpp-0090/pytest.log": "aee76b0b5300ee35ace9c6cbd995b88ca286c5bb05105ce3429be4c4ae946913",
+      "evaluation-runs/mbpp-0090/pytest.log": "0920fa3e8fffd6a917aee56d29e9da73a41a9ba71faa6b5a6de7fe26f4f6cea2",
+      "evaluation-runs/mbpp-0090/junit.xml": "e50658726b8fda3ff7774cef344ee464e789018302a8b4587f627c5e892e5908"
+    }
+  },
+  {
+    "task_id": "mbpp-0091",
+    "expected_test_count": 39,
+    "files": {
+      "reference-validation/mbpp-0091/negative-control.log": "292cd864700d525abc3b8bb4496b80e7b56ce9797bcbf483701e660e4cb7254e",
+      "reference-validation/mbpp-0091/pytest.log": "ff3e3a0adf735ad9ff28af84012120def84aadb71d71d3476d532220cdad2771",
+      "evaluation-runs/mbpp-0091/pytest.log": "0920fa3e8fffd6a917aee56d29e9da73a41a9ba71faa6b5a6de7fe26f4f6cea2",
+      "evaluation-runs/mbpp-0091/junit.xml": "12dcc0438e75ccfb669ba2f99e44bec14d7f21a3775bb734d026665fbb8e60d5"
+    }
+  },
+  {
+    "task_id": "mbpp-0092",
+    "expected_test_count": 41,
+    "files": {
+      "reference-validation/mbpp-0092/negative-control.log": "a9d1901187610846f321938a33f0c867e527b8b579f7ce4639cfa2f089fbdf08",
+      "reference-validation/mbpp-0092/pytest.log": "9b1313cb25793db354216293e19ab0d6dddd3c94213bcd8d91d19fea9e29ad19",
+      "evaluation-runs/mbpp-0092/pytest.log": "144cf22dffd32fef6f37130fdef7180f98d5aa19e20a32936a19da48e47c7ae6",
+      "evaluation-runs/mbpp-0092/junit.xml": "a344af67934a8f64d96d132b026e1fb63c381f4b3acde7ffd1e00469a2c12dfb"
+    }
+  },
+  {
+    "task_id": "mbpp-0093",
+    "expected_test_count": 75,
+    "files": {
+      "reference-validation/mbpp-0093/negative-control.log": "d897056aa3c979ffb623072e661d833d4078f644bed86b218d9cf1d6e35d8d6d",
+      "reference-validation/mbpp-0093/pytest.log": "a982d8e6c16698172562c29b53b1b6a5828bbf09638187c4d0f020e4a421c71e",
+      "evaluation-runs/mbpp-0093/pytest.log": "0260be9f8cb41c092c6d0b1dc67a66de76ef461451ef8f5ba18bcab14c1f2edf",
+      "evaluation-runs/mbpp-0093/junit.xml": "6508ffd4e246ac1f587b691bac707b99e0639ae7553050ecad15e2b873e0e13b"
+    }
+  },
+  {
+    "task_id": "mbpp-0094",
+    "expected_test_count": 39,
+    "files": {
+      "reference-validation/mbpp-0094/negative-control.log": "78e8dd323231aa74ca598ea3fc4cebeee56f6a032fb2fcf3826fe1dccc857cff",
+      "reference-validation/mbpp-0094/pytest.log": "0920fa3e8fffd6a917aee56d29e9da73a41a9ba71faa6b5a6de7fe26f4f6cea2",
+      "evaluation-runs/mbpp-0094/pytest.log": "290ae19a3637aeb3952fbef4152827042ca990b62c417403d63972930b52498d",
+      "evaluation-runs/mbpp-0094/junit.xml": "1f94f7c3643d670bb57bee098872d3dbd29d3fd8899b2fb61b732ab1465d272e"
+    }
+  },
+  {
+    "task_id": "mbpp-0095",
+    "expected_test_count": 39,
+    "files": {
+      "reference-validation/mbpp-0095/negative-control.log": "f485e94449031bb3433d7f6608555139132901d299f2a4d6776cfb7401df9115",
+      "reference-validation/mbpp-0095/pytest.log": "d778a28c4a18354de41afd1be90799ad171f6f13aed1d1327b66dccdbd117849",
+      "evaluation-runs/mbpp-0095/pytest.log": "6d8462dfa8b3122512d44be07cde4d465eed94a2d5915370fdd97395a6a44160",
+      "evaluation-runs/mbpp-0095/junit.xml": "7021ec47e8b5e2e9ad54932befcbe3402ce65188ee9a30ad8f2885ff7b7d0864"
+    }
+  },
+  {
+    "task_id": "mbpp-0096",
+    "expected_test_count": 53,
+    "files": {
+      "reference-validation/mbpp-0096/negative-control.log": "a95c30a3845073b97a5cc716a784f03a4327057a17b4356261aee08804b44f6d",
+      "reference-validation/mbpp-0096/pytest.log": "0c0b5f78cb6720e919f59940fca8866a3ae40a5b981a374da8ceb8236ca5fd4b",
+      "evaluation-runs/mbpp-0096/pytest.log": "c6b206228132f75ccf890e0997fb6835b4ae259d92c363b495724d546c156dcf",
+      "evaluation-runs/mbpp-0096/junit.xml": "569d529dc98f1be949037a3527b0b5533802903b5f1b3f37a408af3f23453467"
+    }
+  },
+  {
+    "task_id": "mbpp-0097",
+    "expected_test_count": 39,
+    "files": {
+      "reference-validation/mbpp-0097/negative-control.log": "e8eec4e09d47f52eba4371ce03f14f7225a0478407f5b5b2a58345a43fd37e49",
+      "reference-validation/mbpp-0097/pytest.log": "89ff155359335f355ac7833fd1c4256d9867b2fcd9ba1db7da793115e10fc917",
+      "evaluation-runs/mbpp-0097/pytest.log": "290ae19a3637aeb3952fbef4152827042ca990b62c417403d63972930b52498d",
+      "evaluation-runs/mbpp-0097/junit.xml": "7250d81d60ace02bf2352652381b15a8aad570586d140b5723d4174b34d60a0c"
+    }
+  },
+  {
+    "task_id": "mbpp-0099",
+    "expected_test_count": 39,
+    "files": {
+      "reference-validation/mbpp-0099/negative-control.log": "b6e8aae193eee36fbe3ca4667ff15e2363cbbb75cfa6e503277ffd55b4c2b9d1",
+      "reference-validation/mbpp-0099/pytest.log": "aee76b0b5300ee35ace9c6cbd995b88ca286c5bb05105ce3429be4c4ae946913",
+      "evaluation-runs/mbpp-0099/pytest.log": "89ff155359335f355ac7833fd1c4256d9867b2fcd9ba1db7da793115e10fc917",
+      "evaluation-runs/mbpp-0099/junit.xml": "75950721c543277e222a267370b7926c1cf417babb6b17df0a826f6dcc7e3358"
+    }
+  },
+  {
+    "task_id": "mbpp-0102",
+    "expected_test_count": 40,
+    "files": {
+      "reference-validation/mbpp-0102/negative-control.log": "f056bbaacee017c94d9179851bd8c5894300e9eeebb8ea3868ad36de94b6f1ae",
+      "reference-validation/mbpp-0102/pytest.log": "c31d969a7c1cf00bc287f5bba1ff0d22db462b6b6fa4b05e8792c989b4e312b9",
+      "evaluation-runs/mbpp-0102/pytest.log": "496847e75d5fac7d6fd73a4d24baaf5172aca5bebcd279380c49610db47f9857",
+      "evaluation-runs/mbpp-0102/junit.xml": "fe6fa929cfbb21e7ff8c75e4c8f545575338e90bb77c4fe08c8b0f0f1a90ecd3"
+    }
+  },
+  {
+    "task_id": "mbpp-0103",
+    "expected_test_count": 31,
+    "files": {
+      "reference-validation/mbpp-0103/negative-control.log": "a20bb9f205734c3fa431c214640f03edbd1da30fc2990b03df2f49e55c3b321d",
+      "reference-validation/mbpp-0103/pytest.log": "78dff73741d365bd0897cedb81fd08c0979c17f1bf90778c1a32ca1ce02b5007",
+      "evaluation-runs/mbpp-0103/pytest.log": "f250aac6151ef795ce5df55435f999098bab7ff335806f54d5f64c73d41949fe",
+      "evaluation-runs/mbpp-0103/junit.xml": "a592ac646b32384f33b692d3c8516d6e425a75de7a908c0e0039857da36cd3c5"
+    }
+  },
+  {
+    "task_id": "mbpp-0105",
+    "expected_test_count": 39,
+    "files": {
+      "reference-validation/mbpp-0105/negative-control.log": "5ffffd6b6ecef035759a24c98d7af56194f8cb9ece8787050567f1237766cb57",
+      "reference-validation/mbpp-0105/pytest.log": "aee76b0b5300ee35ace9c6cbd995b88ca286c5bb05105ce3429be4c4ae946913",
+      "evaluation-runs/mbpp-0105/pytest.log": "0920fa3e8fffd6a917aee56d29e9da73a41a9ba71faa6b5a6de7fe26f4f6cea2",
+      "evaluation-runs/mbpp-0105/junit.xml": "27daeb727e6dfe2724214fd5899a3116166a633c77cc155e1b3d2a23ce9ae182"
+    }
+  },
+  {
+    "task_id": "mbpp-0108",
+    "expected_test_count": 39,
+    "files": {
+      "reference-validation/mbpp-0108/negative-control.log": "61efa33777e296810c497aeb6984f5b578df2df7d43fd370ea5f0f88a9dfd19d",
+      "reference-validation/mbpp-0108/pytest.log": "0920fa3e8fffd6a917aee56d29e9da73a41a9ba71faa6b5a6de7fe26f4f6cea2",
+      "evaluation-runs/mbpp-0108/pytest.log": "ed4975b3c8edeb6e3592fb82fc1137468d34be217468ff1cf739f55481dd7b6d",
+      "evaluation-runs/mbpp-0108/junit.xml": "ded0e3941e3c0e546b07c062fef27e055d62082e6e6aa6d6eec467ee89889d17"
+    }
+  }
+]

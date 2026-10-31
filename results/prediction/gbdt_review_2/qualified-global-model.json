@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "kind": "empirical_competing_risk",
+  "labels": [
+    "U",
+    "D",
+    "waiting"
+  ],
+  "configuration": {
+    "right_edges": [
+      0.01,
+      0.03,
+      0.1,
+      0.3,
+      1,
+      3,
+      10,
+      30,
+      60,
+      120,
+      300,
+      600
+    ],
+    "conditional": false,
+    "elapsed_edges": [
+      0.03,
+      0.1,
+      0.3,
+      1
+    ],
+    "min_group_workflows": 3,
+    "prior_weight": 1.0
+  },
+  "compatibilities": [
+    "8c2c272c9e4510c4dae33537bbe75970e56a8e7dfdbfdf213b7283f07c994dfe"
+  ],
+  "global_counts": [
+    {
+      "counts": [
+        3.1616666666666653,
+        0.9203703703703705,
+        9.917962962962967
+      ],
+      "workflows": 14
+    },
+    {
+      "counts": [
+        3.0216666666666656,
+        1.8407407407407403,
+        5.055555555555551
+      ],
+      "workflows": 14
+    },
+    {
+      "counts": [
+        3.2122222222222208,
+        0.0,
+        1.8433333333333337
+      ],
+      "workflows": 14
+    },
+    {
+      "counts": [
+        0.0,
+        0.0,
+        1.8433333333333337
+      ],
+      "workflows": 14
+    },
+    {
+      "counts": [
+        1.8433333333333337,
+        0.0,
+        0.0
+      ],
+      "workflows": 14
+    },
+    {
+      "counts": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "workflows": 0
+    },
+    {
+      "counts": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "workflows": 0
+    },
+    {
+      "counts": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "workflows": 0
+    },
+    {
+      "counts": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "workflows": 0
+    },
+    {
+      "counts": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "workflows": 0
+    },
+    {
+      "counts": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "workflows": 0
+    },
+    {
+      "counts": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "workflows": 0
+    }
+  ],
+  "groups": {}
+}

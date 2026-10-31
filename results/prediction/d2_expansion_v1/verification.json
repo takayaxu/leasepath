@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "metadata_and_frozen_source_hashes_verified": true,
+  "old_mbpp_frozen_raw_unchanged": true,
+  "distinct_new_parents": 6,
+  "tool_start_end_pairs": 24,
+  "causal_prefix_sidecar_replays": 318,
+  "feature_allowlists_match": true,
+  "sample_target_alignment": true,
+  "per_episode_weight_normalized": true,
+  "command_review": {
+    "commands": 24,
+    "observed_actions": [
+      "inspect current task files",
+      "edit solution.py",
+      "run protected pytest suite",
+      "submit"
+    ],
+    "outside_workspace_or_reference_access_observed": false,
+    "os_isolation": false
+  },
+  "regression_test_result": {
+    "command": "PYTHONPATH=src .venv/bin/python -m pytest -q",
+    "passed": 105,
+    "duration_s": 7.9
+  },
+  "no_predictor_training_in_this_round": true
+}

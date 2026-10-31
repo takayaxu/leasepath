@@ -1,0 +1,30 @@
+{
+  "model_repository": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "model_revision": "c03e6d358207e414f1eca0bb1891e29f1db0e242",
+  "mini_swe_agent_commit": "04d809ceab9df28f9adaed044884180159172930",
+  "host": "127.0.0.1",
+  "port": 8201,
+  "served_model_name": "leasepath-qwen25-coder7b",
+  "backend_manifest": ".artifacts/d2/run-manifest.json",
+  "raw_log": ".artifacts/d2/raw.jsonl",
+  "upstream_prompt": ".artifacts/mini-swe-agent/src/minisweagent/config/mini_textbased.yaml",
+  "generation_profiles": {
+    "greedy": {"temperature": 0.0, "top_p": 1.0, "max_tokens": 2048, "seed": 23},
+    "sampled": {"temperature": 0.7, "top_p": 0.8, "top_k": 20, "repetition_penalty": 1.1, "max_tokens": 2048, "seed": 23}
+  },
+  "agent_step_limit": 30,
+  "tool_timeout_s": 60,
+  "task_wall_time_limit_s": 600,
+  "repeat_feedback_after": 2,
+  "task_dataset": "google-research/mbpp sanitized",
+  "task_source_revision": "f82046ba5aabbbb427dbfd38a254d26bff08b533",
+  "task_ids": [2, 3, 4, 7, 8, 9, 11, 12, 14, 16],
+  "variants": ["direct", "greedy", "sampled", "greedy-explicit", "greedy-mini", "greedy-guided"],
+  "explicit_task_contract_variants": ["sampled", "greedy-explicit", "greedy-mini", "greedy-guided"],
+  "guided_protocol_variants": ["sampled", "greedy-guided"],
+  "guided_submission_requires_current_source_test": true,
+  "shell_errexit": true,
+  "reject_interactive_editors": true,
+  "quality_gate": "independent tests pass, source edited, protected files unchanged, submitted, real inspect/edit/pytest tools, backend audit passes, no excess identical command/output loop",
+  "split": "pilot_development_only"
+}

@@ -1,0 +1,51 @@
+{
+  "scope": "pre-execution protocol feedback, not executed tool failures",
+  "counts": {
+    "initial_workspace_inspection_required": 4,
+    "interactive_editor_unavailable": 2
+  },
+  "records": [
+    {
+      "workflow_id": "designed-csv-ledger-greedy-guided-814b288d",
+      "request_id": "276158ed3713420896495fb1b2291a5c",
+      "ts_ns": 823897597893406,
+      "reason": "initial_workspace_inspection_required",
+      "command": "ls -la"
+    },
+    {
+      "workflow_id": "designed-jsonl-status-greedy-guided-586d372d",
+      "request_id": "0afdb3e4694b401e9e79ebaf668c8dbe",
+      "ts_ns": 823916146952214,
+      "reason": "initial_workspace_inspection_required",
+      "command": "ls -la"
+    },
+    {
+      "workflow_id": "designed-jsonl-status-greedy-guided-586d372d",
+      "request_id": "0c5633a968374fee99ecddcdb92d4985",
+      "ts_ns": 823920622988008,
+      "reason": "interactive_editor_unavailable",
+      "command": "nano solution.py"
+    },
+    {
+      "workflow_id": "designed-integer-sort-greedy-guided-df373430",
+      "request_id": "5b9ee5119caf4216b69ec0e5c8ac5cad",
+      "ts_ns": 823967000759741,
+      "reason": "initial_workspace_inspection_required",
+      "command": "ls -la"
+    },
+    {
+      "workflow_id": "designed-integer-sort-greedy-guided-df373430",
+      "request_id": "89a5347eb1ed4bdea63ee54fe9fad8ed",
+      "ts_ns": 823972576519668,
+      "reason": "interactive_editor_unavailable",
+      "command": "nano solution.py"
+    },
+    {
+      "workflow_id": "designed-graph-distance-greedy-guided-0816dbb0",
+      "request_id": "3b7bb1368d1246a9a1384ff75b73a4aa",
+      "ts_ns": 823988343558936,
+      "reason": "initial_workspace_inspection_required",
+      "command": "ls -la"
+    }
+  ]
+}

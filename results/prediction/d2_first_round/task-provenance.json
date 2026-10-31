@@ -1,0 +1,69 @@
+{
+  "dataset": "princeton-nlp/SWE-bench_Lite",
+  "split": "test",
+  "parquet_sha256": "7a21f37b8bc179c7db5beeb14e88ac538ba283455c776e6b2535bbfb6e3551b4",
+  "selection_rule": "five fixed Python-only SymPy issues; not selected by model outcomes",
+  "limitation": "single source project; no independent train/test split or generalization claim",
+  "tasks": [
+    {
+      "instance_id": "sympy__sympy-20590",
+      "repo": "sympy/sympy",
+      "base_commit": "cffd4e0f86fefd4802349a9f9b19ed70934ea354",
+      "FAIL_TO_PASS": "[\"test_immutable\"]",
+      "PASS_TO_PASS": "[\"test__aresame\", \"test_structure\", \"test_equality\", \"test_matches_basic\", \"test_has\", \"test_subs\", \"test_subs_with_unicode_symbols\", \"test_atoms\", \"test_free_symbols_empty\", \"test_doit\", \"test_S\", \"test_xreplace\", \"test_preorder_traversal\", \"test_sorted_args\", \"test_call\", \"test_rewrite\", \"test_literal_evalf_is_number_is_zero_is_comparable\", \"test_as_Basic\", \"test_atomic\", \"test_as_dummy\", \"test_canonical_variables\"]",
+      "archive_url": "https://codeload.github.com/sympy/sympy/tar.gz/cffd4e0f86fefd4802349a9f9b19ed70934ea354",
+      "archive_sha256": "932ba79e0521f1076e0e14ff134ea1a93d970b3a839b867f11039b4f0a6babda",
+      "test_patch_sha256": "6d707e09c191585bacc8cde388d740f9539228ff19e7feab87221b6527f147f2",
+      "source_group": "sympy/sympy",
+      "split": "pilot_development_only"
+    },
+    {
+      "instance_id": "sympy__sympy-21614",
+      "repo": "sympy/sympy",
+      "base_commit": "b4777fdcef467b7132c055f8ac2c9a5059e6a145",
+      "FAIL_TO_PASS": "[\"test_Derivative_kind\"]",
+      "PASS_TO_PASS": "[\"test_NumberKind\", \"test_Add_kind\", \"test_mul_kind\", \"test_Symbol_kind\", \"test_Integral_kind\", \"test_Matrix_kind\"]",
+      "archive_url": "https://codeload.github.com/sympy/sympy/tar.gz/b4777fdcef467b7132c055f8ac2c9a5059e6a145",
+      "archive_sha256": "53eb66f2ccc6ac153d71ea07d4b4ca286e4253570fa48da7b0f23290125e875a",
+      "test_patch_sha256": "55d2672c66a3ddce4236b7cfe912c730232657a7008d7ab26ec50c40ad4a1ee7",
+      "source_group": "sympy/sympy",
+      "split": "pilot_development_only"
+    },
+    {
+      "instance_id": "sympy__sympy-21847",
+      "repo": "sympy/sympy",
+      "base_commit": "d9b18c518d64d0ebe8e35a98c2fb519938b9b151",
+      "FAIL_TO_PASS": "[\"test_monomials\"]",
+      "PASS_TO_PASS": "[\"test_monomial_count\", \"test_monomial_mul\", \"test_monomial_div\", \"test_monomial_gcd\", \"test_monomial_lcm\", \"test_monomial_max\", \"test_monomial_pow\", \"test_monomial_min\", \"test_monomial_divides\"]",
+      "archive_url": "https://codeload.github.com/sympy/sympy/tar.gz/d9b18c518d64d0ebe8e35a98c2fb519938b9b151",
+      "archive_sha256": "6d4a03aff91e6aa7f1ab5b7094d4eba873efc6500ee8180db4375cedc3a7fa67",
+      "test_patch_sha256": "5b7f4777d3758f017525597a935d95a0516f90b653bd21ccdcc9a92e681d16e6",
+      "source_group": "sympy/sympy",
+      "split": "pilot_development_only"
+    },
+    {
+      "instance_id": "sympy__sympy-23262",
+      "repo": "sympy/sympy",
+      "base_commit": "fdc707f73a65a429935c01532cd3970d3355eab6",
+      "FAIL_TO_PASS": "[\"test_issue_14941\"]",
+      "PASS_TO_PASS": "[\"test_no_args\", \"test_single_arg\", \"test_list_args\", \"test_nested_args\", \"test_str_args\", \"test_own_namespace_1\", \"test_own_namespace_2\", \"test_own_module\", \"test_bad_args\", \"test_atoms\", \"test_sympy_lambda\", \"test_math_lambda\", \"test_mpmath_lambda\", \"test_number_precision\", \"test_mpmath_precision\", \"test_math_transl\", \"test_mpmath_transl\", \"test_empty_modules\", \"test_exponentiation\", \"test_sqrt\", \"test_trig\", \"test_integral\", \"test_double_integral\", \"test_vector_simple\", \"test_vector_discontinuous\", \"test_trig_symbolic\", \"test_trig_float\", \"test_docs\", \"test_math\", \"test_sin\", \"test_matrix\", \"test_issue9474\", \"test_sym_single_arg\", \"test_sym_list_args\", \"test_sym_integral\", \"test_namespace_order\", \"test_imps\", \"test_imps_errors\", \"test_imps_wrong_args\", \"test_lambdify_imps\", \"test_dummification\", \"test_curly_matrix_symbol\", \"test_python_keywords\", \"test_lambdify_docstring\", \"test_special_printers\", \"test_true_false\", \"test_issue_2790\", \"test_issue_12092\", \"test_issue_14911\", \"test_ITE\", \"test_Min_Max\", \"test_issue_12173\", \"test_sinc_mpmath\", \"test_lambdify_dummy_arg\", \"test_lambdify_mixed_symbol_dummy_args\", \"test_lambdify_inspect\", \"test_lambdify_Derivative_arg_issue_16468\", \"test_imag_real\", \"test_single_e\", \"test_beta_math\", \"test_lambdify_cse\"]",
+      "archive_url": "https://codeload.github.com/sympy/sympy/tar.gz/fdc707f73a65a429935c01532cd3970d3355eab6",
+      "archive_sha256": "8fcabc126d4e862f7d49ec61dbc45b955ea8af867a431a6d4a300f063cb83d80",
+      "test_patch_sha256": "93364bb4634aab816f68f82f2b017708ccd412a98de15f602670027914db6089",
+      "source_group": "sympy/sympy",
+      "split": "pilot_development_only"
+    },
+    {
+      "instance_id": "sympy__sympy-24909",
+      "repo": "sympy/sympy",
+      "base_commit": "d3b4158dea271485e3daa11bf82e69b8dab348ce",
+      "FAIL_TO_PASS": "[\"test_prefix_operations\"]",
+      "PASS_TO_PASS": "[\"test_prefix_unit\", \"test_bases\"]",
+      "archive_url": "https://codeload.github.com/sympy/sympy/tar.gz/d3b4158dea271485e3daa11bf82e69b8dab348ce",
+      "archive_sha256": "2063da1ef28eda24a34c03d3b11161803d3c7864e4996d0c7e0b9a132323ae2d",
+      "test_patch_sha256": "2337eacab354d4dff2b0085a67f74b17d4ffae49f1e6510a16016c1f13b7572e",
+      "source_group": "sympy/sympy",
+      "split": "pilot_development_only"
+    }
+  ]
+}

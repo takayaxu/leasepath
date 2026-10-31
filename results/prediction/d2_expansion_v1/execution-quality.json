@@ -1,0 +1,128 @@
+[
+  {
+    "task_id": "designed-csv-ledger",
+    "workflow_id": "designed-csv-ledger-greedy-guided-814b288d",
+    "group_id": "leasepath/designed-file-tasks-v1:designed-csv-ledger",
+    "candidate_sha256": "a8dfb98b04d77a3603a804bfd3d704df07e084d10ddbfa3c276021f0f9c8bde4",
+    "tests_passed": true,
+    "tests_observed": 3,
+    "returncode": 0,
+    "criteria": {
+      "independent_visible_workload_tests_passed": true,
+      "submitted": true,
+      "source_edited": true,
+      "protected_files_unchanged": true,
+      "real_inspection": true,
+      "real_edit": true,
+      "successful_full_visible_suite": true,
+      "no_excess_identical_loop": true,
+      "backend_audit": true
+    },
+    "quality_passed": true
+  },
+  {
+    "task_id": "designed-jsonl-status",
+    "workflow_id": "designed-jsonl-status-greedy-guided-586d372d",
+    "group_id": "leasepath/designed-file-tasks-v1:designed-jsonl-status",
+    "candidate_sha256": "f567f3174f61ca8477ba26a0e9fca405368c3b94a840d5477675d1e38a20c286",
+    "tests_passed": true,
+    "tests_observed": 3,
+    "returncode": 0,
+    "criteria": {
+      "independent_visible_workload_tests_passed": true,
+      "submitted": true,
+      "source_edited": true,
+      "protected_files_unchanged": true,
+      "real_inspection": true,
+      "real_edit": true,
+      "successful_full_visible_suite": true,
+      "no_excess_identical_loop": true,
+      "backend_audit": true
+    },
+    "quality_passed": true
+  },
+  {
+    "task_id": "designed-sqlite-sales",
+    "workflow_id": "designed-sqlite-sales-greedy-guided-2c939b71",
+    "group_id": "leasepath/designed-file-tasks-v1:designed-sqlite-sales",
+    "candidate_sha256": "69e1c6bfbfdd54c443f767d7c69b415f860ce44db7a51d9e4ea733291f4c1777",
+    "tests_passed": true,
+    "tests_observed": 3,
+    "returncode": 0,
+    "criteria": {
+      "independent_visible_workload_tests_passed": true,
+      "submitted": true,
+      "source_edited": true,
+      "protected_files_unchanged": true,
+      "real_inspection": true,
+      "real_edit": true,
+      "successful_full_visible_suite": true,
+      "no_excess_identical_loop": true,
+      "backend_audit": true
+    },
+    "quality_passed": true
+  },
+  {
+    "task_id": "designed-gzip-digest",
+    "workflow_id": "designed-gzip-digest-greedy-guided-f093ab0d",
+    "group_id": "leasepath/designed-file-tasks-v1:designed-gzip-digest",
+    "candidate_sha256": "c7566309c6cd4d27c446d5a6c35a67e921b7dcca21036b13ca95b050e4ba1433",
+    "tests_passed": true,
+    "tests_observed": 3,
+    "returncode": 0,
+    "criteria": {
+      "independent_visible_workload_tests_passed": true,
+      "submitted": true,
+      "source_edited": true,
+      "protected_files_unchanged": true,
+      "real_inspection": true,
+      "real_edit": true,
+      "successful_full_visible_suite": true,
+      "no_excess_identical_loop": true,
+      "backend_audit": true
+    },
+    "quality_passed": true
+  },
+  {
+    "task_id": "designed-integer-sort",
+    "workflow_id": "designed-integer-sort-greedy-guided-df373430",
+    "group_id": "leasepath/designed-file-tasks-v1:designed-integer-sort",
+    "candidate_sha256": "5a7ec44228cf3702e85f47342bb90692280cb6f97b494a40ed56d0d38894411e",
+    "tests_passed": true,
+    "tests_observed": 3,
+    "returncode": 0,
+    "criteria": {
+      "independent_visible_workload_tests_passed": true,
+      "submitted": true,
+      "source_edited": true,
+      "protected_files_unchanged": true,
+      "real_inspection": true,
+      "real_edit": true,
+      "successful_full_visible_suite": true,
+      "no_excess_identical_loop": true,
+      "backend_audit": true
+    },
+    "quality_passed": true
+  },
+  {
+    "task_id": "designed-graph-distance",
+    "workflow_id": "designed-graph-distance-greedy-guided-0816dbb0",
+    "group_id": "leasepath/designed-file-tasks-v1:designed-graph-distance",
+    "candidate_sha256": "453d057d37af131f70483a0227b8924af2215f850b737cccad527af5a5729869",
+    "tests_passed": false,
+    "tests_observed": 3,
+    "returncode": 1,
+    "criteria": {
+      "independent_visible_workload_tests_passed": false,
+      "submitted": true,
+      "source_edited": true,
+      "protected_files_unchanged": true,
+      "real_inspection": true,
+      "real_edit": true,
+      "successful_full_visible_suite": true,
+      "no_excess_identical_loop": true,
+      "backend_audit": true
+    },
+    "quality_passed": false
+  }
+]

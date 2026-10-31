@@ -1,0 +1,521 @@
+{
+  "all-observed": {
+    "scope": "descriptive paired parent resampling of development OOF scores; not independent-test inference",
+    "horizon_s": 0.1,
+    "comparison": "GBDT minus conditional empirical; negative favors GBDT",
+    "parent_scores": {
+      "google-research/mbpp:mbpp-0002": {
+        "global": 0.3723687309334272,
+        "conditional": 0.3225256985999176,
+        "gbdt": 0.3331125566836733
+      },
+      "google-research/mbpp:mbpp-0003": {
+        "global": 0.5257485913448395,
+        "conditional": 0.4259271111443217,
+        "gbdt": 0.46355259259024983
+      },
+      "google-research/mbpp:mbpp-0004": {
+        "global": 0.4030828090138151,
+        "conditional": 0.32905122871632975,
+        "gbdt": 0.3535149245467908
+      },
+      "google-research/mbpp:mbpp-0007": {
+        "global": 0.35247776957444,
+        "conditional": 0.30041170783121757,
+        "gbdt": 0.3125188287443471
+      },
+      "google-research/mbpp:mbpp-0008": {
+        "global": 0.5259245267867819,
+        "conditional": 0.4198010294889704,
+        "gbdt": 0.46100277959283187
+      },
+      "google-research/mbpp:mbpp-0009": {
+        "global": 0.5255136642339496,
+        "conditional": 0.42580062165752236,
+        "gbdt": 0.4623231258089066
+      },
+      "google-research/mbpp:mbpp-0011": {
+        "global": 0.48588477556578086,
+        "conditional": 0.38630514188058956,
+        "gbdt": 0.4242291244195681
+      },
+      "google-research/mbpp:mbpp-0012": {
+        "global": 0.4918064540982886,
+        "conditional": 0.38898526132057387,
+        "gbdt": 0.4144552585142933
+      },
+      "google-research/mbpp:mbpp-0014": {
+        "global": 0.4853822083339797,
+        "conditional": 0.38606969418509374,
+        "gbdt": 0.42397597315645175
+      },
+      "google-research/mbpp:mbpp-0016": {
+        "global": 0.4481746576852341,
+        "conditional": 0.3558442588579728,
+        "gbdt": 0.38723354870404525
+      },
+      "google-research/mbpp:mbpp-0019": {
+        "global": 0.5162447929158053,
+        "conditional": 0.4028142646268318,
+        "gbdt": 0.44855909519875337
+      },
+      "google-research/mbpp:mbpp-0057": {
+        "global": 0.5159817411870619,
+        "conditional": 0.3951496589154563,
+        "gbdt": 0.44640675854813383
+      },
+      "google-research/mbpp:mbpp-0058": {
+        "global": 0.5161057421900606,
+        "conditional": 0.3940316949409678,
+        "gbdt": 0.44800192952705664
+      },
+      "google-research/mbpp:mbpp-0059": {
+        "global": 0.5162447929158053,
+        "conditional": 0.39382163497517975,
+        "gbdt": 0.4491404657865672
+      },
+      "google-research/mbpp:mbpp-0061": {
+        "global": 0.5161057421900606,
+        "conditional": 0.3940316949409678,
+        "gbdt": 0.44800192952705664
+      },
+      "google-research/mbpp:mbpp-0062": {
+        "global": 0.5162830980766032,
+        "conditional": 0.3937791600709388,
+        "gbdt": 0.44773218182097835
+      },
+      "google-research/mbpp:mbpp-0063": {
+        "global": 0.5162830980766032,
+        "conditional": 0.3937791600709388,
+        "gbdt": 0.44773218182097835
+      },
+      "google-research/mbpp:mbpp-0064": {
+        "global": 0.5159817411870619,
+        "conditional": 0.3951496589154563,
+        "gbdt": 0.44640675854813383
+      },
+      "google-research/mbpp:mbpp-0065": {
+        "global": 0.5162830980766032,
+        "conditional": 0.3937791600709388,
+        "gbdt": 0.44773218182097835
+      },
+      "google-research/mbpp:mbpp-0067": {
+        "global": 0.3708141776308271,
+        "conditional": 0.3187189917427704,
+        "gbdt": 0.3300858615930908
+      },
+      "google-research/mbpp:mbpp-0068": {
+        "global": 0.5159817411870619,
+        "conditional": 0.3951496589154563,
+        "gbdt": 0.44640675854813383
+      },
+      "google-research/mbpp:mbpp-0072": {
+        "global": 0.4160784317112228,
+        "conditional": 0.30681634130509267,
+        "gbdt": 0.3604682762226307
+      },
+      "google-research/mbpp:mbpp-0074": {
+        "global": 0.5162447929158053,
+        "conditional": 0.39382163497517975,
+        "gbdt": 0.4491404657865672
+      },
+      "google-research/mbpp:mbpp-0075": {
+        "global": 0.5162447929158053,
+        "conditional": 0.39382163497517975,
+        "gbdt": 0.4491404657865672
+      },
+      "google-research/mbpp:mbpp-0077": {
+        "global": 0.5162447929158053,
+        "conditional": 0.39382163497517975,
+        "gbdt": 0.4491404657865672
+      },
+      "google-research/mbpp:mbpp-0080": {
+        "global": 0.5162830980766032,
+        "conditional": 0.3937791600709388,
+        "gbdt": 0.44773218182097835
+      },
+      "google-research/mbpp:mbpp-0084": {
+        "global": 0.5161057421900606,
+        "conditional": 0.3940316949409678,
+        "gbdt": 0.44800192952705664
+      },
+      "google-research/mbpp:mbpp-0086": {
+        "global": 0.5160221837158535,
+        "conditional": 0.3977545640852668,
+        "gbdt": 0.44778667828504537
+      },
+      "google-research/mbpp:mbpp-0087": {
+        "global": 0.5269734978778814,
+        "conditional": 0.40294105476482,
+        "gbdt": 0.4432025100666444
+      },
+      "google-research/mbpp:mbpp-0088": {
+        "global": 0.5159817411870619,
+        "conditional": 0.40066856749609914,
+        "gbdt": 0.4523083398212684
+      },
+      "google-research/mbpp:mbpp-0090": {
+        "global": 0.5162830980766032,
+        "conditional": 0.3937791600709388,
+        "gbdt": 0.44773218182097835
+      },
+      "google-research/mbpp:mbpp-0091": {
+        "global": 0.5253254542315375,
+        "conditional": 0.38978256773393755,
+        "gbdt": 0.4321676449634834
+      },
+      "google-research/mbpp:mbpp-0092": {
+        "global": 0.3580536557548244,
+        "conditional": 0.3294976649546477,
+        "gbdt": 0.3405870609614224
+      },
+      "google-research/mbpp:mbpp-0093": {
+        "global": 0.5159817411870619,
+        "conditional": 0.3951496589154563,
+        "gbdt": 0.44640675854813383
+      },
+      "google-research/mbpp:mbpp-0094": {
+        "global": 0.5160221837158535,
+        "conditional": 0.3977545640852668,
+        "gbdt": 0.44778667828504537
+      },
+      "google-research/mbpp:mbpp-0095": {
+        "global": 0.5162830980766032,
+        "conditional": 0.4009940694092958,
+        "gbdt": 0.45407836330555323
+      },
+      "google-research/mbpp:mbpp-0096": {
+        "global": 0.5161057421900606,
+        "conditional": 0.3940316949409678,
+        "gbdt": 0.44800192952705664
+      },
+      "google-research/mbpp:mbpp-0097": {
+        "global": 0.5162447929158053,
+        "conditional": 0.4005024845983959,
+        "gbdt": 0.45518916118680214
+      },
+      "google-research/mbpp:mbpp-0099": {
+        "global": 0.5160221837158535,
+        "conditional": 0.3977545640852668,
+        "gbdt": 0.44778667828504537
+      },
+      "google-research/mbpp:mbpp-0102": {
+        "global": 0.37027134851442317,
+        "conditional": 0.32467761886211755,
+        "gbdt": 0.33962741061717877
+      },
+      "google-research/mbpp:mbpp-0103": {
+        "global": 0.5160221837158535,
+        "conditional": 0.3977545640852668,
+        "gbdt": 0.44778667828504537
+      },
+      "google-research/mbpp:mbpp-0105": {
+        "global": 0.5162447929158053,
+        "conditional": 0.39382163497517975,
+        "gbdt": 0.4491404657865672
+      },
+      "google-research/mbpp:mbpp-0106": {
+        "global": 0.5253254542315375,
+        "conditional": 0.39518119344121944,
+        "gbdt": 0.4364523644300975
+      },
+      "google-research/mbpp:mbpp-0108": {
+        "global": 0.5159817411870619,
+        "conditional": 0.3951496589154563,
+        "gbdt": 0.44640675854813383
+      },
+      "leasepath/designed-file-tasks-v1:designed-csv-ledger": {
+        "global": 0.5453192474328002,
+        "conditional": 0.4287305811372639,
+        "gbdt": 0.446343419433003
+      },
+      "leasepath/designed-file-tasks-v1:designed-graph-distance": {
+        "global": 0.553642641067144,
+        "conditional": 0.42997733876766886,
+        "gbdt": 0.4437527552047054
+      },
+      "leasepath/designed-file-tasks-v1:designed-gzip-digest": {
+        "global": 0.5917962854474551,
+        "conditional": 0.47767321441148375,
+        "gbdt": 0.5203169166644417
+      },
+      "leasepath/designed-file-tasks-v1:designed-integer-sort": {
+        "global": 0.4655061158947854,
+        "conditional": 0.36173650231012544,
+        "gbdt": 0.39897892697273935
+      },
+      "leasepath/designed-file-tasks-v1:designed-jsonl-status": {
+        "global": 0.518012535443911,
+        "conditional": 0.37743768209283074,
+        "gbdt": 0.4207962392368083
+      },
+      "leasepath/designed-file-tasks-v1:designed-sqlite-sales": {
+        "global": 0.6107983453005406,
+        "conditional": 0.4773149656303493,
+        "gbdt": 0.5241850823960035
+      }
+    },
+    "mean_delta": 0.04270970880364635,
+    "bootstrap_percentile_95": [
+      0.03859227195230821,
+      0.046507165045519314
+    ],
+    "bootstrap_draws": 2000,
+    "seed": 23,
+    "gbdt_better_parents": 0,
+    "conditional_better_parents": 50,
+    "tied_parents": 0
+  },
+  "qualified": {
+    "scope": "descriptive paired parent resampling of development OOF scores; not independent-test inference",
+    "horizon_s": 0.1,
+    "comparison": "GBDT minus conditional empirical; negative favors GBDT",
+    "parent_scores": {
+      "google-research/mbpp:mbpp-0002": {
+        "global": 0.4855556157455254,
+        "conditional": 0.39960551022721785,
+        "gbdt": 0.42174791792135635
+      },
+      "google-research/mbpp:mbpp-0003": {
+        "global": 0.5237943154981207,
+        "conditional": 0.42700210499451097,
+        "gbdt": 0.4613198938523031
+      },
+      "google-research/mbpp:mbpp-0004": {
+        "global": 0.4861073072101879,
+        "conditional": 0.38935969896001066,
+        "gbdt": 0.42496481575701406
+      },
+      "google-research/mbpp:mbpp-0007": {
+        "global": 0.45392742801926084,
+        "conditional": 0.38670019340702344,
+        "gbdt": 0.39321799850380657
+      },
+      "google-research/mbpp:mbpp-0008": {
+        "global": 0.5238088567188801,
+        "conditional": 0.42102000804994216,
+        "gbdt": 0.4608338669721845
+      },
+      "google-research/mbpp:mbpp-0009": {
+        "global": 0.5610910713595213,
+        "conditional": 0.46694769638327793,
+        "gbdt": 0.49833739721631753
+      },
+      "google-research/mbpp:mbpp-0011": {
+        "global": 0.4861073072101879,
+        "conditional": 0.38935969896001066,
+        "gbdt": 0.42496481575701406
+      },
+      "google-research/mbpp:mbpp-0012": {
+        "global": 0.48567595330475866,
+        "conditional": 0.38798095731899146,
+        "gbdt": 0.42394537099255875
+      },
+      "google-research/mbpp:mbpp-0014": {
+        "global": 0.4854954003638505,
+        "conditional": 0.38888052562433845,
+        "gbdt": 0.42366076223316207
+      },
+      "google-research/mbpp:mbpp-0016": {
+        "global": 0.4512229004731688,
+        "conditional": 0.3623856818417722,
+        "gbdt": 0.38850707923829675
+      },
+      "google-research/mbpp:mbpp-0019": {
+        "global": 0.5152791016715433,
+        "conditional": 0.40656232330753783,
+        "gbdt": 0.44581741517150886
+      },
+      "google-research/mbpp:mbpp-0057": {
+        "global": 0.5152327682226779,
+        "conditional": 0.39672262653635476,
+        "gbdt": 0.4486594766963394
+      },
+      "google-research/mbpp:mbpp-0058": {
+        "global": 0.5151266872587738,
+        "conditional": 0.39719994950134424,
+        "gbdt": 0.4463406572259558
+      },
+      "google-research/mbpp:mbpp-0059": {
+        "global": 0.5152791016715433,
+        "conditional": 0.39656038068756505,
+        "gbdt": 0.4474345012616655
+      },
+      "google-research/mbpp:mbpp-0061": {
+        "global": 0.5151266872587738,
+        "conditional": 0.39719994950134424,
+        "gbdt": 0.4463406572259558
+      },
+      "google-research/mbpp:mbpp-0062": {
+        "global": 0.515316047676071,
+        "conditional": 0.39720877163005125,
+        "gbdt": 0.44769083061526455
+      },
+      "google-research/mbpp:mbpp-0063": {
+        "global": 0.515316047676071,
+        "conditional": 0.39720877163005125,
+        "gbdt": 0.44769083061526455
+      },
+      "google-research/mbpp:mbpp-0064": {
+        "global": 0.5152327682226779,
+        "conditional": 0.39672262653635476,
+        "gbdt": 0.4486594766963394
+      },
+      "google-research/mbpp:mbpp-0065": {
+        "global": 0.515316047676071,
+        "conditional": 0.39720877163005125,
+        "gbdt": 0.44769083061526455
+      },
+      "google-research/mbpp:mbpp-0068": {
+        "global": 0.5152327682226779,
+        "conditional": 0.39672262653635476,
+        "gbdt": 0.4486594766963394
+      },
+      "google-research/mbpp:mbpp-0072": {
+        "global": 0.42079572295166495,
+        "conditional": 0.3122839488369591,
+        "gbdt": 0.36203467220427543
+      },
+      "google-research/mbpp:mbpp-0074": {
+        "global": 0.5152791016715433,
+        "conditional": 0.39656038068756505,
+        "gbdt": 0.4474345012616655
+      },
+      "google-research/mbpp:mbpp-0075": {
+        "global": 0.5152791016715433,
+        "conditional": 0.39656038068756505,
+        "gbdt": 0.4474345012616655
+      },
+      "google-research/mbpp:mbpp-0077": {
+        "global": 0.5152791016715433,
+        "conditional": 0.39656038068756505,
+        "gbdt": 0.4474345012616655
+      },
+      "google-research/mbpp:mbpp-0080": {
+        "global": 0.515316047676071,
+        "conditional": 0.39720877163005125,
+        "gbdt": 0.44769083061526455
+      },
+      "google-research/mbpp:mbpp-0084": {
+        "global": 0.5151266872587738,
+        "conditional": 0.39719994950134424,
+        "gbdt": 0.4463406572259558
+      },
+      "google-research/mbpp:mbpp-0086": {
+        "global": 0.5150744663467871,
+        "conditional": 0.4015618313972213,
+        "gbdt": 0.45023869049633625
+      },
+      "google-research/mbpp:mbpp-0087": {
+        "global": 0.5283646604732177,
+        "conditional": 0.41066606520084104,
+        "gbdt": 0.45013044820196524
+      },
+      "google-research/mbpp:mbpp-0088": {
+        "global": 0.5152327682226779,
+        "conditional": 0.4008709957791024,
+        "gbdt": 0.4537775192860388
+      },
+      "google-research/mbpp:mbpp-0090": {
+        "global": 0.515316047676071,
+        "conditional": 0.39720877163005125,
+        "gbdt": 0.44769083061526455
+      },
+      "google-research/mbpp:mbpp-0091": {
+        "global": 0.5260915773470398,
+        "conditional": 0.39731070483868874,
+        "gbdt": 0.43341954660291515
+      },
+      "google-research/mbpp:mbpp-0093": {
+        "global": 0.5152327682226779,
+        "conditional": 0.39672262653635476,
+        "gbdt": 0.4486594766963394
+      },
+      "google-research/mbpp:mbpp-0094": {
+        "global": 0.5150744663467871,
+        "conditional": 0.4015618313972213,
+        "gbdt": 0.45023869049633625
+      },
+      "google-research/mbpp:mbpp-0095": {
+        "global": 0.515316047676071,
+        "conditional": 0.4020585358413172,
+        "gbdt": 0.4533628755140811
+      },
+      "google-research/mbpp:mbpp-0096": {
+        "global": 0.5151266872587738,
+        "conditional": 0.39719994950134424,
+        "gbdt": 0.4463406572259558
+      },
+      "google-research/mbpp:mbpp-0097": {
+        "global": 0.5152791016715433,
+        "conditional": 0.4009736955894624,
+        "gbdt": 0.45302239106283027
+      },
+      "google-research/mbpp:mbpp-0099": {
+        "global": 0.5150744663467871,
+        "conditional": 0.4015618313972213,
+        "gbdt": 0.45023869049633625
+      },
+      "google-research/mbpp:mbpp-0103": {
+        "global": 0.5150744663467871,
+        "conditional": 0.4015618313972213,
+        "gbdt": 0.45023869049633625
+      },
+      "google-research/mbpp:mbpp-0105": {
+        "global": 0.5152791016715433,
+        "conditional": 0.39656038068756505,
+        "gbdt": 0.4474345012616655
+      },
+      "google-research/mbpp:mbpp-0106": {
+        "global": 0.5260915773470398,
+        "conditional": 0.4034857797056235,
+        "gbdt": 0.43774060222961164
+      },
+      "google-research/mbpp:mbpp-0108": {
+        "global": 0.5152327682226779,
+        "conditional": 0.39672262653635476,
+        "gbdt": 0.4486594766963394
+      },
+      "leasepath/designed-file-tasks-v1:designed-csv-ledger": {
+        "global": 0.5453559920736091,
+        "conditional": 0.4574592270929745,
+        "gbdt": 0.45346908917146983
+      },
+      "leasepath/designed-file-tasks-v1:designed-graph-distance": {
+        "global": 0.5712720402272877,
+        "conditional": 0.48383566599097616,
+        "gbdt": 0.4539957301937105
+      },
+      "leasepath/designed-file-tasks-v1:designed-gzip-digest": {
+        "global": 0.5865715627463224,
+        "conditional": 0.48512655696620477,
+        "gbdt": 0.5210775213483774
+      },
+      "leasepath/designed-file-tasks-v1:designed-integer-sort": {
+        "global": 0.46740973541376346,
+        "conditional": 0.3753729788509083,
+        "gbdt": 0.40267153537904893
+      },
+      "leasepath/designed-file-tasks-v1:designed-jsonl-status": {
+        "global": 0.4512311648877412,
+        "conditional": 0.3479925133008337,
+        "gbdt": 0.3955179382606267
+      },
+      "leasepath/designed-file-tasks-v1:designed-sqlite-sales": {
+        "global": 0.6057394042478321,
+        "conditional": 0.4780689334979883,
+        "gbdt": 0.5258790963555984
+      }
+    },
+    "mean_delta": 0.0412732279734246,
+    "bootstrap_percentile_95": [
+      0.036186659462859795,
+      0.04573076357133348
+    ],
+    "bootstrap_draws": 2000,
+    "seed": 23,
+    "gbdt_better_parents": 2,
+    "conditional_better_parents": 45,
+    "tied_parents": 0
+  }
+}

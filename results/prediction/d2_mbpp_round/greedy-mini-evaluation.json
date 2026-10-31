@@ -1,0 +1,278 @@
+{
+  "variant": "greedy-mini",
+  "tasks": 10,
+  "tests_passed_tasks": 10,
+  "execution_quality_passed_tasks": 0,
+  "results": [
+    {
+      "task_id": "mbpp-0002",
+      "variant": "greedy-mini",
+      "workflow_id": "mbpp-0002-greedy-mini-684a0838",
+      "returncode": 0,
+      "tests_observed": true,
+      "test_counts": {
+        "passed": 43,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "tests_passed": true,
+      "quality_criteria": {
+        "independent_and_visible_tests_passed": true,
+        "submitted": true,
+        "source_edited": true,
+        "protected_files_unchanged": true,
+        "real_inspection": false,
+        "real_source_edit": true,
+        "successful_visible_pytest": true,
+        "no_excess_identical_loop": true
+      },
+      "execution_quality_passed": false,
+      "source_sha256": "9b6f0e3b509bb56873ed30c12106f705f7803a83995a328914219b7ba464d78d",
+      "evaluation_scope": "MBPP-derived local protocol; independent additional tests, not official MBPP pass@1"
+    },
+    {
+      "task_id": "mbpp-0003",
+      "variant": "greedy-mini",
+      "workflow_id": "mbpp-0003-greedy-mini-f2e0ea9a",
+      "returncode": 0,
+      "tests_observed": true,
+      "test_counts": {
+        "passed": 54,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "tests_passed": true,
+      "quality_criteria": {
+        "independent_and_visible_tests_passed": true,
+        "submitted": true,
+        "source_edited": true,
+        "protected_files_unchanged": true,
+        "real_inspection": false,
+        "real_source_edit": true,
+        "successful_visible_pytest": true,
+        "no_excess_identical_loop": true
+      },
+      "execution_quality_passed": false,
+      "source_sha256": "e9e772cae1023520659626296d6d93290c342ba2a51b28ed74e2d42967063906",
+      "evaluation_scope": "MBPP-derived local protocol; independent additional tests, not official MBPP pass@1"
+    },
+    {
+      "task_id": "mbpp-0004",
+      "variant": "greedy-mini",
+      "workflow_id": "mbpp-0004-greedy-mini-0dfa81fa",
+      "returncode": 0,
+      "tests_observed": true,
+      "test_counts": {
+        "passed": 43,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "tests_passed": true,
+      "quality_criteria": {
+        "independent_and_visible_tests_passed": true,
+        "submitted": true,
+        "source_edited": true,
+        "protected_files_unchanged": true,
+        "real_inspection": false,
+        "real_source_edit": true,
+        "successful_visible_pytest": true,
+        "no_excess_identical_loop": true
+      },
+      "execution_quality_passed": false,
+      "source_sha256": "3e3e9af8f844a6be00d1c62708510d9d712fa451c027d3290d341c7ee24adeeb",
+      "evaluation_scope": "MBPP-derived local protocol; independent additional tests, not official MBPP pass@1"
+    },
+    {
+      "task_id": "mbpp-0007",
+      "variant": "greedy-mini",
+      "workflow_id": "mbpp-0007-greedy-mini-9d8fc427",
+      "returncode": 0,
+      "tests_observed": true,
+      "test_counts": {
+        "passed": 43,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "tests_passed": true,
+      "quality_criteria": {
+        "independent_and_visible_tests_passed": true,
+        "submitted": true,
+        "source_edited": true,
+        "protected_files_unchanged": true,
+        "real_inspection": false,
+        "real_source_edit": true,
+        "successful_visible_pytest": true,
+        "no_excess_identical_loop": true
+      },
+      "execution_quality_passed": false,
+      "source_sha256": "971480795f84c12c70d2c614fe241a8605b2d96ce2c931bc9aab4642e31946f5",
+      "evaluation_scope": "MBPP-derived local protocol; independent additional tests, not official MBPP pass@1"
+    },
+    {
+      "task_id": "mbpp-0008",
+      "variant": "greedy-mini",
+      "workflow_id": "mbpp-0008-greedy-mini-7e3d060b",
+      "returncode": 0,
+      "tests_observed": true,
+      "test_counts": {
+        "passed": 43,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "tests_passed": true,
+      "quality_criteria": {
+        "independent_and_visible_tests_passed": true,
+        "submitted": true,
+        "source_edited": true,
+        "protected_files_unchanged": true,
+        "real_inspection": false,
+        "real_source_edit": true,
+        "successful_visible_pytest": true,
+        "no_excess_identical_loop": true
+      },
+      "execution_quality_passed": false,
+      "source_sha256": "e930a13da95e7a6ea204d097fbe24c3eedfb840c936d06d09a24f52a1a583533",
+      "evaluation_scope": "MBPP-derived local protocol; independent additional tests, not official MBPP pass@1"
+    },
+    {
+      "task_id": "mbpp-0009",
+      "variant": "greedy-mini",
+      "workflow_id": "mbpp-0009-greedy-mini-5a2685a6",
+      "returncode": 0,
+      "tests_observed": true,
+      "test_counts": {
+        "passed": 70,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "tests_passed": true,
+      "quality_criteria": {
+        "independent_and_visible_tests_passed": true,
+        "submitted": true,
+        "source_edited": true,
+        "protected_files_unchanged": true,
+        "real_inspection": false,
+        "real_source_edit": true,
+        "successful_visible_pytest": true,
+        "no_excess_identical_loop": true
+      },
+      "execution_quality_passed": false,
+      "source_sha256": "634632ffa814d492c544fd7ab61d007276bb5a66e9022d9a5a7f1e2ec1807c3d",
+      "evaluation_scope": "MBPP-derived local protocol; independent additional tests, not official MBPP pass@1"
+    },
+    {
+      "task_id": "mbpp-0011",
+      "variant": "greedy-mini",
+      "workflow_id": "mbpp-0011-greedy-mini-7a9c2bcc",
+      "returncode": 0,
+      "tests_observed": true,
+      "test_counts": {
+        "passed": 43,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "tests_passed": true,
+      "quality_criteria": {
+        "independent_and_visible_tests_passed": true,
+        "submitted": true,
+        "source_edited": true,
+        "protected_files_unchanged": true,
+        "real_inspection": false,
+        "real_source_edit": true,
+        "successful_visible_pytest": true,
+        "no_excess_identical_loop": true
+      },
+      "execution_quality_passed": false,
+      "source_sha256": "e305189a4dba8bc41bb6653f4986fad6003032dda1b2193c52f798f1dcfd9872",
+      "evaluation_scope": "MBPP-derived local protocol; independent additional tests, not official MBPP pass@1"
+    },
+    {
+      "task_id": "mbpp-0012",
+      "variant": "greedy-mini",
+      "workflow_id": "mbpp-0012-greedy-mini-cec84622",
+      "returncode": 0,
+      "tests_observed": true,
+      "test_counts": {
+        "passed": 43,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "tests_passed": true,
+      "quality_criteria": {
+        "independent_and_visible_tests_passed": true,
+        "submitted": true,
+        "source_edited": true,
+        "protected_files_unchanged": true,
+        "real_inspection": false,
+        "real_source_edit": true,
+        "successful_visible_pytest": false,
+        "no_excess_identical_loop": true
+      },
+      "execution_quality_passed": false,
+      "source_sha256": "af2d256468bb1df6d9e2ddad40d7e8617f33d5061ab7df69b146a5d21b0017a4",
+      "evaluation_scope": "MBPP-derived local protocol; independent additional tests, not official MBPP pass@1"
+    },
+    {
+      "task_id": "mbpp-0014",
+      "variant": "greedy-mini",
+      "workflow_id": "mbpp-0014-greedy-mini-273a5256",
+      "returncode": 0,
+      "tests_observed": true,
+      "test_counts": {
+        "passed": 43,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "tests_passed": true,
+      "quality_criteria": {
+        "independent_and_visible_tests_passed": true,
+        "submitted": true,
+        "source_edited": true,
+        "protected_files_unchanged": true,
+        "real_inspection": false,
+        "real_source_edit": true,
+        "successful_visible_pytest": true,
+        "no_excess_identical_loop": true
+      },
+      "execution_quality_passed": false,
+      "source_sha256": "82ed03457d27fcb8cd678709371e5de01300026a405f2f102b275f0d9f6ad291",
+      "evaluation_scope": "MBPP-derived local protocol; independent additional tests, not official MBPP pass@1"
+    },
+    {
+      "task_id": "mbpp-0016",
+      "variant": "greedy-mini",
+      "workflow_id": "mbpp-0016-greedy-mini-40465186",
+      "returncode": 0,
+      "tests_observed": true,
+      "test_counts": {
+        "passed": 43,
+        "failed": 0,
+        "error": 0,
+        "skipped": 0
+      },
+      "tests_passed": true,
+      "quality_criteria": {
+        "independent_and_visible_tests_passed": true,
+        "submitted": true,
+        "source_edited": true,
+        "protected_files_unchanged": true,
+        "real_inspection": false,
+        "real_source_edit": true,
+        "successful_visible_pytest": true,
+        "no_excess_identical_loop": true
+      },
+      "execution_quality_passed": false,
+      "source_sha256": "21171704b05f6054a8886657a00d2d7c2aadbe0ef066bfd32ddd69b249284505",
+      "evaluation_scope": "MBPP-derived local protocol; independent additional tests, not official MBPP pass@1"
+    }
+  ]
+}

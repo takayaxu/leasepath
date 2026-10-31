@@ -1,0 +1,339 @@
+{
+  "workflow_count": 6,
+  "unique_parents": 3,
+  "tool_duration_s": {
+    "n": 34,
+    "min": 0.015881166,
+    "median": 0.020924245,
+    "p95": 8.244509343,
+    "max": 8.947518967,
+    "ge_1s": 14,
+    "ge_3s": 14,
+    "ge_5s": 7
+  },
+  "idle_duration_s": {
+    "n": 46,
+    "min": 0.02409179,
+    "median": 0.049387149,
+    "p95": 8.243731056,
+    "max": 8.985627757,
+    "ge_1s": 14,
+    "ge_3s": 14,
+    "ge_5s": 7
+  },
+  "second_scale_tools": [
+    {
+      "workflow_id": "repair-csv-ledger-medium-greedy-guided-92cb7b3e",
+      "command_category": "test",
+      "workload_family": "csv_aggregation",
+      "duration_s": 3.539643747,
+      "returncode": 1
+    },
+    {
+      "workflow_id": "repair-csv-ledger-medium-greedy-guided-92cb7b3e",
+      "command_category": "test",
+      "workload_family": "csv_aggregation",
+      "duration_s": 3.585508369,
+      "returncode": 0
+    },
+    {
+      "workflow_id": "repair-csv-ledger-large-greedy-guided-38e69c1f",
+      "command_category": "test",
+      "workload_family": "csv_aggregation",
+      "duration_s": 7.086057377,
+      "returncode": 1
+    },
+    {
+      "workflow_id": "repair-csv-ledger-large-greedy-guided-38e69c1f",
+      "command_category": "test",
+      "workload_family": "csv_aggregation",
+      "duration_s": 7.318172759,
+      "returncode": 0
+    },
+    {
+      "workflow_id": "repair-jsonl-status-medium-greedy-guided-b1ca593a",
+      "command_category": "test",
+      "workload_family": "jsonl_parsing",
+      "duration_s": 3.56413801,
+      "returncode": 1
+    },
+    {
+      "workflow_id": "repair-jsonl-status-medium-greedy-guided-b1ca593a",
+      "command_category": "test",
+      "workload_family": "jsonl_parsing",
+      "duration_s": 3.608326809,
+      "returncode": 0
+    },
+    {
+      "workflow_id": "repair-jsonl-status-large-greedy-guided-fbc7d10a",
+      "command_category": "test",
+      "workload_family": "jsonl_parsing",
+      "duration_s": 7.799820114,
+      "returncode": 1
+    },
+    {
+      "workflow_id": "repair-jsonl-status-large-greedy-guided-fbc7d10a",
+      "command_category": "test",
+      "workload_family": "jsonl_parsing",
+      "duration_s": 7.85611123,
+      "returncode": 0
+    },
+    {
+      "workflow_id": "repair-graph-distance-medium-greedy-guided-b6c0a537",
+      "command_category": "test",
+      "workload_family": "graph_bfs",
+      "duration_s": 4.174441948,
+      "returncode": 1
+    },
+    {
+      "workflow_id": "repair-graph-distance-medium-greedy-guided-b6c0a537",
+      "command_category": "test",
+      "workload_family": "graph_bfs",
+      "duration_s": 4.208521577,
+      "returncode": 1
+    },
+    {
+      "workflow_id": "repair-graph-distance-medium-greedy-guided-b6c0a537",
+      "command_category": "test",
+      "workload_family": "graph_bfs",
+      "duration_s": 4.210810005,
+      "returncode": 0
+    },
+    {
+      "workflow_id": "repair-graph-distance-large-greedy-guided-57560c5d",
+      "command_category": "test",
+      "workload_family": "graph_bfs",
+      "duration_s": 8.244509343,
+      "returncode": 1
+    },
+    {
+      "workflow_id": "repair-graph-distance-large-greedy-guided-57560c5d",
+      "command_category": "test",
+      "workload_family": "graph_bfs",
+      "duration_s": 8.947518967,
+      "returncode": 1
+    },
+    {
+      "workflow_id": "repair-graph-distance-large-greedy-guided-57560c5d",
+      "command_category": "test",
+      "workload_family": "graph_bfs",
+      "duration_s": 8.203383948,
+      "returncode": 0
+    }
+  ],
+  "feature_coverage": {
+    "command_category": {
+      "known": 186,
+      "total": 333
+    },
+    "completed_tool_count": {
+      "known": 333,
+      "total": 333
+    },
+    "current_source_changed_since_failure": {
+      "known": 84,
+      "total": 333
+    },
+    "current_suite_attempt": {
+      "known": 146,
+      "total": 333
+    },
+    "current_suite_is_retry": {
+      "known": 146,
+      "total": 333
+    },
+    "failed_full_suites": {
+      "known": 333,
+      "total": 333
+    },
+    "last_completed_returncode": {
+      "known": 296,
+      "total": 333
+    },
+    "last_completed_tool_s": {
+      "known": 296,
+      "total": 333
+    },
+    "last_full_suite_passed": {
+      "known": 192,
+      "total": 333
+    },
+    "prior_failed_tests": {
+      "known": 333,
+      "total": 333
+    },
+    "suite_retries_started": {
+      "known": 333,
+      "total": 333
+    },
+    "tool_state": {
+      "known": 261,
+      "total": 333
+    },
+    "tool_timeout_s": {
+      "known": 186,
+      "total": 333
+    },
+    "work_unit": {
+      "known": 146,
+      "total": 333
+    },
+    "work_units": {
+      "known": 146,
+      "total": 333
+    },
+    "workload_family": {
+      "known": 146,
+      "total": 333
+    }
+  },
+  "snapshot_elapsed_ge_1s": 104,
+  "snapshot_elapsed_ge_3s": 76,
+  "snapshot_elapsed_ge_5s": 38,
+  "current_suite_is_retry": {
+    "None": 187,
+    "False": 62,
+    "True": 84
+  },
+  "failed_full_suites": {
+    "0": 141,
+    "1": 140,
+    "2": 52
+  },
+  "command_categories": {
+    "inspect": 6,
+    "test": 14,
+    "edit": 8,
+    "shell": 6
+  },
+  "workload_families": {
+    "csv_aggregation": 4,
+    "jsonl_parsing": 4,
+    "graph_bfs": 6
+  },
+  "tool_states": {
+    "None": 72,
+    "running": 186,
+    "completed": 75
+  },
+  "phases": {
+    "None": 107,
+    "queued": 40,
+    "waiting_tool": 186
+  },
+  "prior_failed_tests": {
+    "0": 141,
+    "1": 140,
+    "2": 52
+  },
+  "queued_snapshots": 40,
+  "features_sidecar_sha256": "723c8c3f8ed9384e7b8b9af42084fa020f550102f9e14a01bf4633ab551b7a55",
+  "dataset_summary": {
+    "status": "passed",
+    "evidence_kind": "measured",
+    "events": 408,
+    "runs": 6,
+    "idle_episodes": 46,
+    "snapshot_schedule": {
+      "elapsed_points_s": [
+        0,
+        0.01,
+        0.03,
+        0.1,
+        0.3,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        30,
+        120
+      ],
+      "max_per_episode": 24
+    },
+    "source_groups": {
+      "leasepath/designed-file-tasks-v1": 6
+    },
+    "evidence_scopes": {
+      "controlled_test_first_repair_real_compute": 6
+    },
+    "snapshots": 333,
+    "outcomes": {
+      "legal_demand": 40,
+      "retire": 6
+    },
+    "requests": 46,
+    "cache_hit_requests": 46,
+    "cached_tokens": 88576,
+    "prompt_tokens": 103250,
+    "all_request_stages_observed": true,
+    "observer_sequence_gaps": 0,
+    "lookup_duration_ns": [
+      89531,
+      64140,
+      71521,
+      84971,
+      119401,
+      109781,
+      136721,
+      64961,
+      66660,
+      70391,
+      86990,
+      121741,
+      105631,
+      137591,
+      62511,
+      65841,
+      74181,
+      85481,
+      119001,
+      105700,
+      137801,
+      50140,
+      64750,
+      71110,
+      86221,
+      120551,
+      113981,
+      138601,
+      44370,
+      65800,
+      74191,
+      93581,
+      127741,
+      116241,
+      147961,
+      135081,
+      168462,
+      51160,
+      66040,
+      72641,
+      94841,
+      124641,
+      120681,
+      149591,
+      135841,
+      165042
+    ],
+    "raw_sha256": "2052ed67172853edef65cb09067cc3fab688c443d5dc5932fef6f33343b8ed3c",
+    "output_sha256": {
+      "targets.jsonl": "48c1d14649e2c946b0a1394317399ac0dd7e797cae3f52205b60963e2579778a",
+      "snapshots.jsonl": "4a4a10e514f9be7cf2fbee2233c091501724f27c37d6b957852de261b2d01753",
+      "events.jsonl": "7d5d012082a0b739b70a65e8ee5548b80f43a08174b0e807410c4fb119c29415",
+      "episode_labels.jsonl": "bc0eb2a145b96ed18dcac8e81f11177b206d2f347432dec38b8e881aa7f98325"
+    },
+    "limitations": [
+      "development pilot; source grouping and evidence scopes must be retained",
+      "scheduler prefill counts; no device-kernel timing claim",
+      "request-boundary block snapshots; no complete allocation/eviction lifecycle",
+      "queue_length remains unknown; no global empty-queue assertion",
+      "no independent test split or policy benefit claim"
+    ]
+  }
+}

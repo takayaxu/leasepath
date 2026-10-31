@@ -1,0 +1,146 @@
+[
+  {
+    "workflow_id": "designed-csv-ledger-greedy-guided-814b288d",
+    "tool_id": "38b69ef7399f470e8d6f2e140fbe08b0",
+    "command": "cat README.md solution.py test_visible.py",
+    "category": "inspect"
+  },
+  {
+    "workflow_id": "designed-csv-ledger-greedy-guided-814b288d",
+    "tool_id": "6429ab0db87f46049af0dbcdb8a1134a",
+    "command": "cat <<'EOF' > solution.py\nimport csv\n\ndef summarize_csv(path):\n    result = {}\n    with open(path, newline='', encoding='utf-8') as csvfile:\n        reader = csv.DictReader(csvfile)\n        for row in reader:\n            tenant = row['tenant']\n            cents = int(row['cents'])\n            if tenant in result:\n                result[tenant] += cents\n            else:\n                result[tenant] = cents\n    return result\nEOF",
+    "category": "edit"
+  },
+  {
+    "workflow_id": "designed-csv-ledger-greedy-guided-814b288d",
+    "tool_id": "81c3645409fa4cdc92089d0fe1eab425",
+    "command": "python -m pytest -q test_visible.py test_workload.py",
+    "category": "test"
+  },
+  {
+    "workflow_id": "designed-csv-ledger-greedy-guided-814b288d",
+    "tool_id": "3bfb0bfb0c964c9c9004babdac02ba64",
+    "command": "echo COMPLETE_TASK_AND_SUBMIT_FINAL_OUTPUT",
+    "category": "shell"
+  },
+  {
+    "workflow_id": "designed-jsonl-status-greedy-guided-586d372d",
+    "tool_id": "51fcd3600d6b49088f1bc691e75d9717",
+    "command": "cat README.md solution.py test_visible.py",
+    "category": "inspect"
+  },
+  {
+    "workflow_id": "designed-jsonl-status-greedy-guided-586d372d",
+    "tool_id": "b7cb50f0b4c342f08bbe9ef71853bfeb",
+    "command": "cat <<'PY' > solution.py\ndef count_statuses(path):\n    import json\n    from collections import defaultdict\n\n    status_count = defaultdict(int)\n\n    with open(path, 'r', encoding='utf-8') as file:\n        for line in file:\n            line = line.strip()\n            if line:\n                try:\n                    data = json.loads(line)\n                    if 'status' in data:\n                        status_count[data['status']] += 1\n                except json.JSONDecodeError:\n                    pass\n\n    return dict(status_count)\nPY",
+    "category": "edit"
+  },
+  {
+    "workflow_id": "designed-jsonl-status-greedy-guided-586d372d",
+    "tool_id": "364c2442207d49e29f473c7fd92c021e",
+    "command": "python -m pytest -q test_visible.py test_workload.py",
+    "category": "test"
+  },
+  {
+    "workflow_id": "designed-jsonl-status-greedy-guided-586d372d",
+    "tool_id": "7a61e478410543d7a06dfdacdc774955",
+    "command": "echo COMPLETE_TASK_AND_SUBMIT_FINAL_OUTPUT",
+    "category": "shell"
+  },
+  {
+    "workflow_id": "designed-sqlite-sales-greedy-guided-2c939b71",
+    "tool_id": "6ef8a1b1e5b44a658f221e5b9bde0848",
+    "command": "cat README.md solution.py test_visible.py",
+    "category": "inspect"
+  },
+  {
+    "workflow_id": "designed-sqlite-sales-greedy-guided-2c939b71",
+    "tool_id": "909435dab6c04ea9bf33c53103f7f97c",
+    "command": "cat <<'EOF' >> solution.py\nimport sqlite3\n\ndef sales_totals(path):\n    result = {}\n    with sqlite3.connect(path) as conn:\n        cursor = conn.cursor()\n        cursor.execute('SELECT region, SUM(cents) FROM sales GROUP BY region')\n        for row in cursor:\n            result[row[0]] = row[1]\n    return result\nEOF",
+    "category": "edit"
+  },
+  {
+    "workflow_id": "designed-sqlite-sales-greedy-guided-2c939b71",
+    "tool_id": "691dbe295e8d474ea8d91875ecb69d45",
+    "command": "python -m pytest -q test_visible.py test_workload.py",
+    "category": "test"
+  },
+  {
+    "workflow_id": "designed-sqlite-sales-greedy-guided-2c939b71",
+    "tool_id": "181a8644403a46fcad48d57d353b857c",
+    "command": "echo COMPLETE_TASK_AND_SUBMIT_FINAL_OUTPUT",
+    "category": "shell"
+  },
+  {
+    "workflow_id": "designed-gzip-digest-greedy-guided-f093ab0d",
+    "tool_id": "045be7267efc4b44a2bd46abb9ba1d44",
+    "command": "cat README.md solution.py test_visible.py",
+    "category": "inspect"
+  },
+  {
+    "workflow_id": "designed-gzip-digest-greedy-guided-f093ab0d",
+    "tool_id": "f2504b096cac4a2db30daec3d82d6757",
+    "command": "cat <<'EOF' >> solution.py\ndef gzip_sha256(path):\n    import gzip\n    import hashlib\n    with gzip.open(path, 'rb') as f:\n        content = f.read()\n    return hashlib.sha256(content).hexdigest()\nEOF",
+    "category": "edit"
+  },
+  {
+    "workflow_id": "designed-gzip-digest-greedy-guided-f093ab0d",
+    "tool_id": "821b7a01475d46be9abc46e66eefecea",
+    "command": "python -m pytest -q test_visible.py test_workload.py",
+    "category": "test"
+  },
+  {
+    "workflow_id": "designed-gzip-digest-greedy-guided-f093ab0d",
+    "tool_id": "32d3d040bbbf4047bf7e5ef10a0cbbc6",
+    "command": "echo COMPLETE_TASK_AND_SUBMIT_FINAL_OUTPUT",
+    "category": "shell"
+  },
+  {
+    "workflow_id": "designed-integer-sort-greedy-guided-df373430",
+    "tool_id": "1d3a4666083447bc83cde8e170811d89",
+    "command": "cat README.md solution.py test_visible.py",
+    "category": "inspect"
+  },
+  {
+    "workflow_id": "designed-integer-sort-greedy-guided-df373430",
+    "tool_id": "53b280727db04b19a4bc7985b0615b2b",
+    "command": "cat <<'PY' > solution.py\ndef sort_integer_file(source, destination):\n    with open(source, 'r', encoding='utf-8') as src_file:\n        integers = [int(line.strip()) for line in src_file if line.strip()]\n    \n    integers.sort()\n    \n    with open(destination, 'w', encoding='utf-8') as dest_file:\n        for number in integers:\n            dest_file.write(f\"{number}\\n\")\n    \n    return len(integers)\nPY",
+    "category": "edit"
+  },
+  {
+    "workflow_id": "designed-integer-sort-greedy-guided-df373430",
+    "tool_id": "3be405fd41f340c78f430e7c8f3a72be",
+    "command": "python -m pytest -q test_visible.py test_workload.py",
+    "category": "test"
+  },
+  {
+    "workflow_id": "designed-integer-sort-greedy-guided-df373430",
+    "tool_id": "edd215b63da14a819cc11ef691b01936",
+    "command": "echo COMPLETE_TASK_AND_SUBMIT_FINAL_OUTPUT",
+    "category": "shell"
+  },
+  {
+    "workflow_id": "designed-graph-distance-greedy-guided-0816dbb0",
+    "tool_id": "3cb0588f9f6e4290abf8b6dc6ccc3a8a",
+    "command": "cat README.md solution.py test_visible.py",
+    "category": "inspect"
+  },
+  {
+    "workflow_id": "designed-graph-distance-greedy-guided-0816dbb0",
+    "tool_id": "143ce72871514fe2b074d0e03e75be14",
+    "command": "cat <<'EOF' > solution.py\nfrom collections import deque\n\ndef shortest_distance(path, start, target):\n    if start == target:\n        return 0\n\n    graph = {}\n    with open(path, 'r') as file:\n        for line in file:\n            u, v = map(int, line.strip().split())\n            if u not in graph:\n                graph[u] = []\n            if v not in graph:\n                graph[v] = []\n            graph[u].append(v)\n            graph[v].append(u)\n\n    visited = set()\n    queue = deque([(start, 0)])\n\n    while queue:\n        current, distance = queue.popleft()\n        if current == target:\n            return distance\n        if current not in visited:\n            visited.add(current)\n            for neighbor in graph[current]:\n                if neighbor not in visited:\n                    queue.append((neighbor, distance + 1))\n\n    return None\nEOF",
+    "category": "edit"
+  },
+  {
+    "workflow_id": "designed-graph-distance-greedy-guided-0816dbb0",
+    "tool_id": "020bd43387e649c99e08777f4ed23fcf",
+    "command": "python -m pytest -q test_visible.py test_workload.py",
+    "category": "test"
+  },
+  {
+    "workflow_id": "designed-graph-distance-greedy-guided-0816dbb0",
+    "tool_id": "9b1dcc4fd4d84343970b82347e2a7b3f",
+    "command": "echo COMPLETE_TASK_AND_SUBMIT_FINAL_OUTPUT",
+    "category": "shell"
+  }
+]

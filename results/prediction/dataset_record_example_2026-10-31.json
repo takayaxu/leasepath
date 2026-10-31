@@ -1,0 +1,60 @@
+{
+  "scope": "exact existing record; features and future target intentionally separate",
+  "snapshot": {
+    "run_id": "repair-csv-ledger-medium-greedy-guided-92cb7b3e",
+    "idle_episode_id": "idle-b61ddcefd0ff4db9907cb35a4782c944",
+    "snapshot_ns": 836241567568879,
+    "features": {
+      "elapsed_idle_s": 3.0,
+      "compatibility_id": "8c2c272c9e4510c4dae33537bbe75970e56a8e7dfdbfdf213b7283f07c994dfe",
+      "prefix_tokens": 2688,
+      "tool_name": "bash",
+      "tool_elapsed_s": 2.994211674,
+      "phase": "waiting_tool",
+      "retry_count": null,
+      "is_queued": null,
+      "queue_length": null
+    },
+    "sample_id": "repair-csv-ledger-medium-greedy-guided-92cb7b3e:idle-b61ddcefd0ff4db9907cb35a4782c944:836241567568879",
+    "source_group": "leasepath/designed-file-tasks-v1",
+    "split": "pilot_development_only",
+    "sample_weight": 0.09090909090909091
+  },
+  "enhanced": {
+    "sample_id": "repair-csv-ledger-medium-greedy-guided-92cb7b3e:idle-b61ddcefd0ff4db9907cb35a4782c944:836241567568879",
+    "feature_schema": "repair-v2",
+    "group_id": "leasepath/designed-file-tasks-v1:designed-csv-ledger",
+    "features": {
+      "elapsed_idle_s": 3.0,
+      "compatibility_id": "8c2c272c9e4510c4dae33537bbe75970e56a8e7dfdbfdf213b7283f07c994dfe",
+      "prefix_tokens": 2688,
+      "tool_name": "bash",
+      "tool_elapsed_s": 2.994211674,
+      "phase": "waiting_tool",
+      "retry_count": null,
+      "is_queued": null,
+      "queue_length": null,
+      "command_category": "test",
+      "workload_family": "csv_aggregation",
+      "work_units": 750000,
+      "work_unit": "rows",
+      "tool_timeout_s": 60,
+      "prior_failed_tests": 1,
+      "completed_tool_count": 3,
+      "last_completed_tool_s": 0.0201751,
+      "last_completed_returncode": 0,
+      "tool_state": "running",
+      "current_suite_attempt": 2,
+      "current_suite_is_retry": true,
+      "current_source_changed_since_failure": true,
+      "suite_retries_started": 1,
+      "failed_full_suites": 1,
+      "last_full_suite_passed": false
+    }
+  },
+  "target": {
+    "sample_id": "repair-csv-ledger-medium-greedy-guided-92cb7b3e:idle-b61ddcefd0ff4db9907cb35a4782c944:836241567568879",
+    "outcome": "legal_demand",
+    "remaining_s": 0.617508912
+  }
+}

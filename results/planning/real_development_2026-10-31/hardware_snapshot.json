@@ -1,0 +1,77 @@
+{
+  "observed_at": "2026-10-31T21:39:10.005997+08:00",
+  "purpose": "read-only planning snapshot; not a runtime benchmark or resource reservation",
+  "architecture": "aarch64",
+  "logical_cpus": 192,
+  "cpu_model": "Kunpeng-920",
+  "memory": {
+    "MemTotal_kib": 1584474056,
+    "MemAvailable_kib": 1297274352
+  },
+  "accelerators": {
+    "model": "Ascend 910B2",
+    "device_count": 8,
+    "hbm_by_device": [
+      {
+        "used_mib": 46117,
+        "total_mib": 65536
+      },
+      {
+        "used_mib": 45875,
+        "total_mib": 65536
+      },
+      {
+        "used_mib": 45875,
+        "total_mib": 65536
+      },
+      {
+        "used_mib": 45877,
+        "total_mib": 65536
+      },
+      {
+        "used_mib": 45873,
+        "total_mib": 65536
+      },
+      {
+        "used_mib": 45881,
+        "total_mib": 65536
+      },
+      {
+        "used_mib": 45880,
+        "total_mib": 65536
+      },
+      {
+        "used_mib": 45881,
+        "total_mib": 65536
+      }
+    ],
+    "all_devices_have_existing_workloads": true,
+    "free_memory_is_not_reserved_capacity": true
+  },
+  "disks": {
+    "/home/ma-user/takaya/leasepath": {
+      "total_bytes": 53687091200,
+      "used_bytes": 6372864000,
+      "free_bytes": 47314227200
+    },
+    "/home/ma-user/work": {
+      "total_bytes": 4362206093312,
+      "used_bytes": 432871596032,
+      "free_bytes": 3929317720064
+    }
+  },
+  "validated_collection_stack": {
+    "agent": "mini-swe-agent 2.4.6",
+    "model": "Qwen2.5-Coder-7B-Instruct BF16",
+    "vllm": "0.23.0+empty",
+    "vllm_ascend": "0.1.dev4229+g7495e9d69",
+    "source": "docs/d2_first_round.md; historical verified configuration, not a claim that service is currently running"
+  },
+  "candidate_not_validated": {
+    "agent": "Codex CLI 0.166.0",
+    "model": "Qwen2.5-Coder-32B-Instruct BF16",
+    "tensor_parallel_size": 2,
+    "requires": "dedicated device window; model download and hashes; protocol/tool-loop and multi-device probe validation"
+  },
+  "codex_version": "codex-cli 0.166.0"
+}

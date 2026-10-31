@@ -1,0 +1,124 @@
+{
+  "mbpp-0002-direct-42ecf436": {
+    "passed": true
+  },
+  "mbpp-0003-direct-ae16ce59": {
+    "passed": true
+  },
+  "mbpp-0004-direct-3be4ef04": {
+    "passed": true
+  },
+  "mbpp-0007-direct-609b85ea": {
+    "passed": true
+  },
+  "mbpp-0008-direct-9e93c46b": {
+    "passed": true
+  },
+  "mbpp-0009-direct-17f28e39": {
+    "passed": true
+  },
+  "mbpp-0011-direct-71d63f5d": {
+    "passed": true
+  },
+  "mbpp-0012-direct-6e0c8c4e": {
+    "passed": true
+  },
+  "mbpp-0014-direct-a860f8f3": {
+    "passed": true
+  },
+  "mbpp-0016-direct-9e1c3b16": {
+    "passed": true
+  },
+  "mbpp-0002-greedy-mini-684a0838": {
+    "passed": true
+  },
+  "mbpp-0003-greedy-mini-f2e0ea9a": {
+    "passed": true
+  },
+  "mbpp-0004-greedy-mini-0dfa81fa": {
+    "passed": true
+  },
+  "mbpp-0007-greedy-mini-9d8fc427": {
+    "passed": true
+  },
+  "mbpp-0008-greedy-mini-7e3d060b": {
+    "passed": true
+  },
+  "mbpp-0009-greedy-mini-5a2685a6": {
+    "passed": true
+  },
+  "mbpp-0011-greedy-mini-7a9c2bcc": {
+    "passed": true
+  },
+  "mbpp-0012-greedy-mini-cec84622": {
+    "passed": true
+  },
+  "mbpp-0014-greedy-mini-273a5256": {
+    "passed": true
+  },
+  "mbpp-0016-greedy-mini-40465186": {
+    "passed": true
+  },
+  "mbpp-0002-greedy-guided-4e61fb0d": {
+    "passed": true
+  },
+  "mbpp-0003-greedy-guided-f52d05df": {
+    "passed": true
+  },
+  "mbpp-0004-greedy-guided-09fe16df": {
+    "passed": true
+  },
+  "mbpp-0007-greedy-guided-47fc5fe6": {
+    "passed": true
+  },
+  "mbpp-0008-greedy-guided-e467155f": {
+    "passed": true
+  },
+  "mbpp-0009-greedy-guided-da836fac": {
+    "passed": true
+  },
+  "mbpp-0011-greedy-guided-4f316238": {
+    "passed": true
+  },
+  "mbpp-0012-greedy-guided-06dffde2": {
+    "passed": true
+  },
+  "mbpp-0014-greedy-guided-38035589": {
+    "passed": true
+  },
+  "mbpp-0016-greedy-guided-70820671": {
+    "passed": true
+  },
+  "mbpp-0002-sampled-97502092": {
+    "passed": true
+  },
+  "mbpp-0003-sampled-6de1cae0": {
+    "passed": true
+  },
+  "mbpp-0004-sampled-b8b6a27c": {
+    "passed": true
+  },
+  "mbpp-0007-sampled-54e97ffc": {
+    "passed": true
+  },
+  "mbpp-0008-sampled-dcda2764": {
+    "passed": true
+  },
+  "mbpp-0009-sampled-673ad9fb": {
+    "passed": true
+  },
+  "mbpp-0011-sampled-5f5032d6": {
+    "passed": true
+  },
+  "mbpp-0012-sampled-5129c504": {
+    "passed": true
+  },
+  "mbpp-0014-sampled-ef33be50": {
+    "passed": false,
+    "reason": "missing/duplicate backend stage 89d7aedbe4b546a59b8d0b1e132d1ea4: Counter()",
+    "handling": "entire workflow quarantined from derived labels; raw and trajectory retained"
+  },
+  "mbpp-0016-sampled-650ad310": {
+    "passed": true
+  }
+}

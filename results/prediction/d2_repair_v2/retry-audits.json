@@ -1,0 +1,146 @@
+{
+  "repair-csv-ledger-medium-greedy-guided-92cb7b3e": {
+    "tool_pairs": 5,
+    "full_suite_attempts": 2,
+    "suite_retries": 1,
+    "failed_test_calls": 1,
+    "initial_unchanged_defect_reproduced": true,
+    "source_repair_then_successful_retry": true,
+    "chains": [
+      {
+        "failed_tool_id": "7104a0ccda114220ac1a987ced85f0c7",
+        "retry_tool_id": "fc20f64b129f469281374663a2cd1e50",
+        "failed_source_sha256": "4c6f2dcdbb642e131998c2c747b852826dadfc8d456cecdc8f0480b2ca502a01",
+        "repaired_source_sha256": "d1a49cda1c2c73fa01d9d2394d8139bbf2b7fd578f602c8486af4ee6d0471e82",
+        "failure_end_ns": 836228549944502,
+        "retry_start_ns": 836238573357205,
+        "retry_end_ns": 836242159134316,
+        "source_edit_tool_ids": [
+          "b23c5549d6bb4f8c8cfbd6f99d9166c0"
+        ],
+        "failed_duration_s": 3.539643747,
+        "retry_duration_s": 3.585508369
+      }
+    ]
+  },
+  "repair-csv-ledger-large-greedy-guided-38e69c1f": {
+    "tool_pairs": 5,
+    "full_suite_attempts": 2,
+    "suite_retries": 1,
+    "failed_test_calls": 1,
+    "initial_unchanged_defect_reproduced": true,
+    "source_repair_then_successful_retry": true,
+    "chains": [
+      {
+        "failed_tool_id": "2e5faef6f78c4bfc8decb4154994d145",
+        "retry_tool_id": "c673729aac7d47d6ab6a33312adcc347",
+        "failed_source_sha256": "4c6f2dcdbb642e131998c2c747b852826dadfc8d456cecdc8f0480b2ca502a01",
+        "repaired_source_sha256": "d1a49cda1c2c73fa01d9d2394d8139bbf2b7fd578f602c8486af4ee6d0471e82",
+        "failure_end_ns": 836265597383269,
+        "retry_start_ns": 836275310620604,
+        "retry_end_ns": 836282629128405,
+        "source_edit_tool_ids": [
+          "dfeb7cb12abd49c6ae24dcd4619e5f3b"
+        ],
+        "failed_duration_s": 7.086057377,
+        "retry_duration_s": 7.318172759
+      }
+    ]
+  },
+  "repair-jsonl-status-medium-greedy-guided-b1ca593a": {
+    "tool_pairs": 5,
+    "full_suite_attempts": 2,
+    "suite_retries": 1,
+    "failed_test_calls": 1,
+    "initial_unchanged_defect_reproduced": true,
+    "source_repair_then_successful_retry": true,
+    "chains": [
+      {
+        "failed_tool_id": "52db5b4dc773438fafce8b300b2f34bf",
+        "retry_tool_id": "0808418cdad3445b94e9286b6d20f5cb",
+        "failed_source_sha256": "d0429d5af423be24d38c43c566b70c3aeacb1e140e27769c8dd08ec8f9b38f69",
+        "repaired_source_sha256": "2e163dfde030f9eec3b73774ebc13a503bcb1d4be8f1ec002866681617e7fb77",
+        "failure_end_ns": 836301210221746,
+        "retry_start_ns": 836309160279560,
+        "retry_end_ns": 836312768902152,
+        "source_edit_tool_ids": [
+          "a9cc9984c07b48dbbf2793ac2230dabb"
+        ],
+        "failed_duration_s": 3.56413801,
+        "retry_duration_s": 3.608326809
+      }
+    ]
+  },
+  "repair-jsonl-status-large-greedy-guided-fbc7d10a": {
+    "tool_pairs": 5,
+    "full_suite_attempts": 2,
+    "suite_retries": 1,
+    "failed_test_calls": 1,
+    "initial_unchanged_defect_reproduced": true,
+    "source_repair_then_successful_retry": true,
+    "chains": [
+      {
+        "failed_tool_id": "bd4dec2a37254b0090f6e8fbafdd43c8",
+        "retry_tool_id": "b46e1553bb37448494fa7fdd66e6c4ac",
+        "failed_source_sha256": "d0429d5af423be24d38c43c566b70c3aeacb1e140e27769c8dd08ec8f9b38f69",
+        "repaired_source_sha256": "eb663c98709dc1609c7300652bb236e06b9eba45da883b2e305af190644845d2",
+        "failure_end_ns": 836338218899572,
+        "retry_start_ns": 836348073105148,
+        "retry_end_ns": 836355929497411,
+        "source_edit_tool_ids": [
+          "0c41b9dad4d74abbbeec893d2b226182"
+        ],
+        "failed_duration_s": 7.799820114,
+        "retry_duration_s": 7.85611123
+      }
+    ]
+  },
+  "repair-graph-distance-medium-greedy-guided-b6c0a537": {
+    "tool_pairs": 7,
+    "full_suite_attempts": 3,
+    "suite_retries": 2,
+    "failed_test_calls": 2,
+    "initial_unchanged_defect_reproduced": true,
+    "source_repair_then_successful_retry": true,
+    "chains": [
+      {
+        "failed_tool_id": "234a7e906a464200a8d04165d07bbb46",
+        "retry_tool_id": "0fd8138f80b24e3ba053610d6aedbde4",
+        "failed_source_sha256": "4b26f34538e1be2b238d26c0a77c8c2818f17a3964c97f204bb78718d8c37b1f",
+        "repaired_source_sha256": "c1e8bf5b89d2a694deced1b298dcbf83528ffdc7136d334c2a79e49045524a00",
+        "failure_end_ns": 836399799785553,
+        "retry_start_ns": 836413865455219,
+        "retry_end_ns": 836418076547896,
+        "source_edit_tool_ids": [
+          "06e0056d09ce462b8caafb669d4b38ca"
+        ],
+        "failed_duration_s": 4.208521577,
+        "retry_duration_s": 4.210810005
+      }
+    ]
+  },
+  "repair-graph-distance-large-greedy-guided-57560c5d": {
+    "tool_pairs": 7,
+    "full_suite_attempts": 3,
+    "suite_retries": 2,
+    "failed_test_calls": 2,
+    "initial_unchanged_defect_reproduced": true,
+    "source_repair_then_successful_retry": true,
+    "chains": [
+      {
+        "failed_tool_id": "72e1f6ef1b38486b8ae1234774fab132",
+        "retry_tool_id": "e04a6518f858429d9c351421608c4233",
+        "failed_source_sha256": "4b26f34538e1be2b238d26c0a77c8c2818f17a3964c97f204bb78718d8c37b1f",
+        "repaired_source_sha256": "3c9db77654416494898d41ad001357124a22d90fd5d08564527e49fd73f0e3b6",
+        "failure_end_ns": 836472704792461,
+        "retry_start_ns": 836487319564097,
+        "retry_end_ns": 836495523235067,
+        "source_edit_tool_ids": [
+          "2fd916ffd41e4b358045ab18c8927130"
+        ],
+        "failed_duration_s": 8.947518967,
+        "retry_duration_s": 8.203383948
+      }
+    ]
+  }
+}
