@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "counts": {
+    "allocations": 962,
+    "block_cache_insert": 872,
+    "block_free": 2555,
+    "block_touch": 1593
+  },
+  "capacity_evictions": 321,
+  "max_refcount": 2,
+  "allocation_candidate_checks": 204,
+  "active_slots_at_end": 0,
+  "max_generation": 8,
+  "scope": "logical_slot_lifecycle; rank_physical_bytes_accounted_separately"
+}

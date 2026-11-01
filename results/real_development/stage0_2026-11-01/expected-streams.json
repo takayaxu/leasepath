@@ -1,0 +1,57 @@
+{
+  "scope": "controller_inventory_after_TP_startup_before_shutdown",
+  "captured_monotonic_ns": 900661015348359,
+  "stream_ids": [
+    "063b07f58ef84f8cb922dbe90ca46dcd",
+    "d6911fb7afb345bebc44d8029b4fc3b9",
+    "2a21fc9591ff4ef8a791185aada04447",
+    "873d31f71b9b4a27a799c0ef833040b6",
+    "0d143842f2fb4327803b7417cd526890",
+    "9387ec7eb2804c71acf0abefec90d491",
+    "ef9bdbd3a11c4a079a385c638dcb0cb3"
+  ],
+  "producers": [
+    {
+      "stream_id": "063b07f58ef84f8cb922dbe90ca46dcd",
+      "pid": 884072,
+      "source": "engine",
+      "rank": null
+    },
+    {
+      "stream_id": "d6911fb7afb345bebc44d8029b4fc3b9",
+      "pid": 884676,
+      "source": "engine",
+      "rank": null
+    },
+    {
+      "stream_id": "2a21fc9591ff4ef8a791185aada04447",
+      "pid": 887456,
+      "source": "engine",
+      "rank": null
+    },
+    {
+      "stream_id": "873d31f71b9b4a27a799c0ef833040b6",
+      "pid": 888710,
+      "source": "engine",
+      "rank": null
+    },
+    {
+      "stream_id": "0d143842f2fb4327803b7417cd526890",
+      "pid": 888712,
+      "source": "engine",
+      "rank": null
+    },
+    {
+      "stream_id": "9387ec7eb2804c71acf0abefec90d491",
+      "pid": 888710,
+      "source": "rank",
+      "rank": 0
+    },
+    {
+      "stream_id": "ef9bdbd3a11c4a079a385c638dcb0cb3",
+      "pid": 888712,
+      "source": "rank",
+      "rank": 1
+    }
+  ]
+}

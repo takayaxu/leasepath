@@ -1,0 +1,6 @@
+{
+  "missing_producer_rejected": "missing, duplicate, or unexpected stream",
+  "missing_terminal_rejected": "no complete boundary; cannot support C",
+  "reordered_allocation_candidates_rejected": "allocation differs from actual candidate queue order",
+  "mixed_runner_boot_rejected": "runner and backend boot/clock domains differ"
+}

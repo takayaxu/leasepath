@@ -1,0 +1,404 @@
+[
+  {
+    "condition": "current32b",
+    "task_id": "pallets__flask-4992",
+    "evidence": {
+      "cwd": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-32b-a/L1/pallets__flask-4992/workspace",
+      "shell": "/bin/bash -c",
+      "resolved_entries": {
+        "python": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-32b-a/L1/pallets__flask-4992/tool-bin/python",
+        "pytest": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-32b-a/L1/pallets__flask-4992/tool-bin/pytest",
+        "flask": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-32b-a/L1/pallets__flask-4992/tool-bin/flask"
+      },
+      "executable": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-32b-a/L1/pallets__flask-4992/environment/bin/python",
+      "prefix": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-32b-a/L1/pallets__flask-4992/environment",
+      "source": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-32b-a/L1/pallets__flask-4992/workspace/src/flask/__init__.py",
+      "python_version": "3.12.0 | packaged by Anaconda, Inc. | (main, Oct  2 2023, 17:19:42) [GCC 11.2.0]",
+      "dependencies": {
+        "iniconfig": "2.3.1",
+        "pip": "23.2.1",
+        "pluggy": "1.7.0",
+        "toml": "0.10.2",
+        "python-dotenv": "1.0.1",
+        "itsdangerous": "2.1.2",
+        "Werkzeug": "2.3.8",
+        "MarkupSafe": "2.1.5",
+        "packaging": "24.2",
+        "asgiref": "3.7.2",
+        "Jinja2": "3.1.6",
+        "pytest": "7.4.4",
+        "blinker": "1.6.3",
+        "click": "8.1.7"
+      },
+      "dependency_imports": {
+        "click": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-32b-a/L1/pallets__flask-4992/environment/lib/python3.12/site-packages/click/__init__.py",
+        "werkzeug": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-32b-a/L1/pallets__flask-4992/environment/lib/python3.12/site-packages/werkzeug/__init__.py",
+        "jinja2": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-32b-a/L1/pallets__flask-4992/environment/lib/python3.12/site-packages/jinja2/__init__.py"
+      },
+      "PATH": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-32b-a/L1/pallets__flask-4992/tool-bin:/usr/bin:/bin",
+      "PYTHONPATH": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-32b-a/L1/pallets__flask-4992/workspace/src",
+      "cpu_affinity": [
+        188,
+        189,
+        190,
+        191
+      ],
+      "wrapper_sha256": {
+        "pip": "0c3f8ed53888af04cdf5de408fe9041341fc9adaabd8f0094cf9eeb1fde09f61",
+        "python3": "8f9e0ff0aa1d9e14a0b5e3e22424c7188a5cbda2398aab8ec278188f7a48f115",
+        "flask": "40605736d1533e03e7f39eb22a4340e727c25bac57dc911238d67067e6adffe4",
+        "py.test": "8d6a449d252326ed9e702507be6ae22e680c9bc8863a754a0ae24793baa10cbb",
+        "python": "8f9e0ff0aa1d9e14a0b5e3e22424c7188a5cbda2398aab8ec278188f7a48f115",
+        "pytest": "8d6a449d252326ed9e702507be6ae22e680c9bc8863a754a0ae24793baa10cbb"
+      },
+      "offline": true,
+      "system_tools": {
+        "git": "/usr/bin/git",
+        "sed": "/usr/bin/sed",
+        "rg": null,
+        "find": "/usr/bin/find",
+        "bash": "/usr/bin/bash",
+        "taskset": "/usr/bin/taskset"
+      }
+    }
+  },
+  {
+    "condition": "current32b",
+    "task_id": "pallets__flask-5063",
+    "evidence": {
+      "cwd": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-32b-a/L1/pallets__flask-5063/workspace",
+      "shell": "/bin/bash -c",
+      "resolved_entries": {
+        "python": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-32b-a/L1/pallets__flask-5063/tool-bin/python",
+        "pytest": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-32b-a/L1/pallets__flask-5063/tool-bin/pytest",
+        "flask": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-32b-a/L1/pallets__flask-5063/tool-bin/flask"
+      },
+      "executable": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-32b-a/L1/pallets__flask-5063/environment/bin/python",
+      "prefix": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-32b-a/L1/pallets__flask-5063/environment",
+      "source": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-32b-a/L1/pallets__flask-5063/workspace/src/flask/__init__.py",
+      "python_version": "3.12.0 | packaged by Anaconda, Inc. | (main, Oct  2 2023, 17:19:42) [GCC 11.2.0]",
+      "dependencies": {
+        "iniconfig": "2.3.1",
+        "pip": "23.2.1",
+        "pluggy": "1.7.0",
+        "toml": "0.10.2",
+        "python-dotenv": "1.0.1",
+        "itsdangerous": "2.1.2",
+        "Werkzeug": "2.3.8",
+        "MarkupSafe": "2.1.5",
+        "packaging": "24.2",
+        "asgiref": "3.7.2",
+        "Jinja2": "3.1.6",
+        "pytest": "7.4.4",
+        "blinker": "1.6.3",
+        "click": "8.1.7"
+      },
+      "dependency_imports": {
+        "click": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-32b-a/L1/pallets__flask-5063/environment/lib/python3.12/site-packages/click/__init__.py",
+        "werkzeug": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-32b-a/L1/pallets__flask-5063/environment/lib/python3.12/site-packages/werkzeug/__init__.py",
+        "jinja2": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-32b-a/L1/pallets__flask-5063/environment/lib/python3.12/site-packages/jinja2/__init__.py"
+      },
+      "PATH": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-32b-a/L1/pallets__flask-5063/tool-bin:/usr/bin:/bin",
+      "PYTHONPATH": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-32b-a/L1/pallets__flask-5063/workspace/src",
+      "cpu_affinity": [
+        188,
+        189,
+        190,
+        191
+      ],
+      "wrapper_sha256": {
+        "pip": "04f546f66c5d6f029fd85e500458bfe1c2b2aed87622bc27b395c29fe471511e",
+        "python3": "4020982a59aa959920ecaa2720bea88ae340f6001ef074a179b059ef298c6a47",
+        "flask": "6a6f2cb8360e9b5d17c4244340e8af0f4e6a5ddb9332467bb69d1fe2931ae682",
+        "py.test": "315c6229254aa70a3f857fe6f0971b798d374330b885a42de3433731b38a2c6b",
+        "python": "4020982a59aa959920ecaa2720bea88ae340f6001ef074a179b059ef298c6a47",
+        "pytest": "315c6229254aa70a3f857fe6f0971b798d374330b885a42de3433731b38a2c6b"
+      },
+      "offline": true,
+      "system_tools": {
+        "git": "/usr/bin/git",
+        "sed": "/usr/bin/sed",
+        "rg": null,
+        "find": "/usr/bin/find",
+        "bash": "/usr/bin/bash",
+        "taskset": "/usr/bin/taskset"
+      }
+    }
+  },
+  {
+    "condition": "current32b",
+    "task_id": "pytest-dev__pytest-9359",
+    "evidence": {
+      "cwd": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-32b-a/L1/pytest-dev__pytest-9359/workspace",
+      "shell": "/bin/bash -c",
+      "resolved_entries": {
+        "python": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-32b-a/L1/pytest-dev__pytest-9359/tool-bin/python",
+        "pytest": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-32b-a/L1/pytest-dev__pytest-9359/tool-bin/pytest",
+        "flask": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-32b-a/L1/pytest-dev__pytest-9359/tool-bin/flask"
+      },
+      "executable": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-32b-a/L1/pytest-dev__pytest-9359/environment/bin/python",
+      "prefix": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-32b-a/L1/pytest-dev__pytest-9359/environment",
+      "source": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-32b-a/L1/pytest-dev__pytest-9359/workspace/src/_pytest/__init__.py",
+      "python_version": "3.9.9 (main, Dec 20 2025, 13:00:24) \n[GCC 10.3.1]",
+      "dependencies": {
+        "pytest": "6.3.0.dev0",
+        "sortedcontainers": "2.4.0",
+        "py": "1.11.0",
+        "nose": "1.3.7",
+        "urllib3": "2.6.3",
+        "typing_extensions": "4.16.0",
+        "tomli": "2.2.1",
+        "exceptiongroup": "1.3.1",
+        "toml": "0.10.2",
+        "certifi": "2026.10.23",
+        "mock": "5.1.0",
+        "charset-normalizer": "3.5.2",
+        "iniconfig": "2.0.0",
+        "packaging": "24.2",
+        "requests": "2.32.3",
+        "pluggy": "1.0.0",
+        "hypothesis": "6.100.0",
+        "pip": "21.3.1",
+        "setuptools-scm": "8.2.0",
+        "attrs": "23.2.0",
+        "wheel": "0.45.1",
+        "Pygments": "2.18.0",
+        "xmlschema": "3.4.3",
+        "idna": "3.20",
+        "elementpath": "4.8.0",
+        "argcomplete": "3.5.3",
+        "setuptools": "75.8.0"
+      },
+      "dependency_imports": {
+        "pluggy": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-32b-a/L1/pytest-dev__pytest-9359/environment/lib64/python3.9/site-packages/pluggy/__init__.py",
+        "packaging": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-32b-a/L1/pytest-dev__pytest-9359/environment/lib64/python3.9/site-packages/packaging/__init__.py"
+      },
+      "PATH": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-32b-a/L1/pytest-dev__pytest-9359/tool-bin:/usr/bin:/bin",
+      "PYTHONPATH": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-32b-a/L1/pytest-dev__pytest-9359/workspace/src",
+      "cpu_affinity": [
+        188,
+        189,
+        190,
+        191
+      ],
+      "wrapper_sha256": {
+        "pip": "0fce24c8d8c6e240df646c3fe2f120beafb6b4cf4707b9f55f6225599c208109",
+        "python3": "a219f79d5a2831b4085facef471be9ff9645ec64ccd98c7f76e119db09b972bf",
+        "flask": "ac13b3f7f2e9c9443ac1c805fb6b1de21bf58b8bd83536e7d1a5471e5ad473a2",
+        "py.test": "f1f37b71430f5dafdfdd8f95d79c3abb123b08121dfc3f0c890b03442c808025",
+        "python": "a219f79d5a2831b4085facef471be9ff9645ec64ccd98c7f76e119db09b972bf",
+        "pytest": "f1f37b71430f5dafdfdd8f95d79c3abb123b08121dfc3f0c890b03442c808025"
+      },
+      "offline": true,
+      "system_tools": {
+        "git": "/usr/bin/git",
+        "sed": "/usr/bin/sed",
+        "rg": null,
+        "find": "/usr/bin/find",
+        "bash": "/usr/bin/bash",
+        "taskset": "/usr/bin/taskset"
+      }
+    }
+  },
+  {
+    "condition": "alternative",
+    "task_id": "pallets__flask-4992",
+    "evidence": {
+      "cwd": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-alternative-a/L1/pallets__flask-4992/workspace",
+      "shell": "/bin/bash -c",
+      "resolved_entries": {
+        "python": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-alternative-a/L1/pallets__flask-4992/tool-bin/python",
+        "pytest": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-alternative-a/L1/pallets__flask-4992/tool-bin/pytest",
+        "flask": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-alternative-a/L1/pallets__flask-4992/tool-bin/flask"
+      },
+      "executable": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-alternative-a/L1/pallets__flask-4992/environment/bin/python",
+      "prefix": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-alternative-a/L1/pallets__flask-4992/environment",
+      "source": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-alternative-a/L1/pallets__flask-4992/workspace/src/flask/__init__.py",
+      "python_version": "3.12.0 | packaged by Anaconda, Inc. | (main, Oct  2 2023, 17:19:42) [GCC 11.2.0]",
+      "dependencies": {
+        "iniconfig": "2.3.1",
+        "pip": "23.2.1",
+        "pluggy": "1.7.0",
+        "toml": "0.10.2",
+        "python-dotenv": "1.0.1",
+        "itsdangerous": "2.1.2",
+        "Werkzeug": "2.3.8",
+        "MarkupSafe": "2.1.5",
+        "packaging": "24.2",
+        "asgiref": "3.7.2",
+        "Jinja2": "3.1.6",
+        "pytest": "7.4.4",
+        "blinker": "1.6.3",
+        "click": "8.1.7"
+      },
+      "dependency_imports": {
+        "click": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-alternative-a/L1/pallets__flask-4992/environment/lib/python3.12/site-packages/click/__init__.py",
+        "werkzeug": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-alternative-a/L1/pallets__flask-4992/environment/lib/python3.12/site-packages/werkzeug/__init__.py",
+        "jinja2": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-alternative-a/L1/pallets__flask-4992/environment/lib/python3.12/site-packages/jinja2/__init__.py"
+      },
+      "PATH": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-alternative-a/L1/pallets__flask-4992/tool-bin:/usr/bin:/bin",
+      "PYTHONPATH": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-alternative-a/L1/pallets__flask-4992/workspace/src",
+      "cpu_affinity": [
+        188,
+        189,
+        190,
+        191
+      ],
+      "wrapper_sha256": {
+        "pip": "a3f3c9c8242d28ea6d7ce7f1f00dbd219863cc5b794417b9ca9f1da7ee28f8db",
+        "python3": "a63da51261da45c253374dc33e71b59f68d92c0d33e1a183a61e874be4dace45",
+        "flask": "197e184baf2f43630112092150b5d02bd3667500f1cb86a8727cf228d6658b78",
+        "py.test": "ba99778e8b7f80c4a4c39a601206592130b615cfd7f0c91acc6a0e392b666f5a",
+        "python": "a63da51261da45c253374dc33e71b59f68d92c0d33e1a183a61e874be4dace45",
+        "pytest": "ba99778e8b7f80c4a4c39a601206592130b615cfd7f0c91acc6a0e392b666f5a"
+      },
+      "offline": true,
+      "system_tools": {
+        "git": "/usr/bin/git",
+        "sed": "/usr/bin/sed",
+        "rg": null,
+        "find": "/usr/bin/find",
+        "bash": "/usr/bin/bash",
+        "taskset": "/usr/bin/taskset"
+      }
+    }
+  },
+  {
+    "condition": "alternative",
+    "task_id": "pallets__flask-5063",
+    "evidence": {
+      "cwd": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-alternative-a/L1/pallets__flask-5063/workspace",
+      "shell": "/bin/bash -c",
+      "resolved_entries": {
+        "python": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-alternative-a/L1/pallets__flask-5063/tool-bin/python",
+        "pytest": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-alternative-a/L1/pallets__flask-5063/tool-bin/pytest",
+        "flask": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-alternative-a/L1/pallets__flask-5063/tool-bin/flask"
+      },
+      "executable": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-alternative-a/L1/pallets__flask-5063/environment/bin/python",
+      "prefix": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-alternative-a/L1/pallets__flask-5063/environment",
+      "source": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-alternative-a/L1/pallets__flask-5063/workspace/src/flask/__init__.py",
+      "python_version": "3.12.0 | packaged by Anaconda, Inc. | (main, Oct  2 2023, 17:19:42) [GCC 11.2.0]",
+      "dependencies": {
+        "iniconfig": "2.3.1",
+        "pip": "23.2.1",
+        "pluggy": "1.7.0",
+        "toml": "0.10.2",
+        "python-dotenv": "1.0.1",
+        "itsdangerous": "2.1.2",
+        "Werkzeug": "2.3.8",
+        "MarkupSafe": "2.1.5",
+        "packaging": "24.2",
+        "asgiref": "3.7.2",
+        "Jinja2": "3.1.6",
+        "pytest": "7.4.4",
+        "blinker": "1.6.3",
+        "click": "8.1.7"
+      },
+      "dependency_imports": {
+        "click": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-alternative-a/L1/pallets__flask-5063/environment/lib/python3.12/site-packages/click/__init__.py",
+        "werkzeug": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-alternative-a/L1/pallets__flask-5063/environment/lib/python3.12/site-packages/werkzeug/__init__.py",
+        "jinja2": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-alternative-a/L1/pallets__flask-5063/environment/lib/python3.12/site-packages/jinja2/__init__.py"
+      },
+      "PATH": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-alternative-a/L1/pallets__flask-5063/tool-bin:/usr/bin:/bin",
+      "PYTHONPATH": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-alternative-a/L1/pallets__flask-5063/workspace/src",
+      "cpu_affinity": [
+        188,
+        189,
+        190,
+        191
+      ],
+      "wrapper_sha256": {
+        "pip": "8cc825b41783af242c9513f75d6fbb4427ad5cf6c07fd16318c8a7561fc31d1b",
+        "python3": "f16dd7036b526fe83b1c2706413b8cd7b4025087172fbcd01849320b04eab07d",
+        "flask": "f70257f6377ec724a558685a35d641ec3389bf6215411a2c726df0bf52a6f3ca",
+        "py.test": "6599495cf6bb7e7d3129c48e488778fa6f7e36cf5146906c84605b22326c0f8a",
+        "python": "f16dd7036b526fe83b1c2706413b8cd7b4025087172fbcd01849320b04eab07d",
+        "pytest": "6599495cf6bb7e7d3129c48e488778fa6f7e36cf5146906c84605b22326c0f8a"
+      },
+      "offline": true,
+      "system_tools": {
+        "git": "/usr/bin/git",
+        "sed": "/usr/bin/sed",
+        "rg": null,
+        "find": "/usr/bin/find",
+        "bash": "/usr/bin/bash",
+        "taskset": "/usr/bin/taskset"
+      }
+    }
+  },
+  {
+    "condition": "alternative",
+    "task_id": "pytest-dev__pytest-9359",
+    "evidence": {
+      "cwd": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-alternative-a/L1/pytest-dev__pytest-9359/workspace",
+      "shell": "/bin/bash -c",
+      "resolved_entries": {
+        "python": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-alternative-a/L1/pytest-dev__pytest-9359/tool-bin/python",
+        "pytest": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-alternative-a/L1/pytest-dev__pytest-9359/tool-bin/pytest",
+        "flask": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-alternative-a/L1/pytest-dev__pytest-9359/tool-bin/flask"
+      },
+      "executable": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-alternative-a/L1/pytest-dev__pytest-9359/environment/bin/python",
+      "prefix": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-alternative-a/L1/pytest-dev__pytest-9359/environment",
+      "source": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-alternative-a/L1/pytest-dev__pytest-9359/workspace/src/_pytest/__init__.py",
+      "python_version": "3.9.9 (main, Dec 20 2025, 13:00:24) \n[GCC 10.3.1]",
+      "dependencies": {
+        "pytest": "6.3.0.dev0",
+        "sortedcontainers": "2.4.0",
+        "py": "1.11.0",
+        "nose": "1.3.7",
+        "urllib3": "2.6.3",
+        "typing_extensions": "4.16.0",
+        "tomli": "2.2.1",
+        "exceptiongroup": "1.3.1",
+        "toml": "0.10.2",
+        "certifi": "2026.10.23",
+        "mock": "5.1.0",
+        "charset-normalizer": "3.5.2",
+        "iniconfig": "2.0.0",
+        "packaging": "24.2",
+        "requests": "2.32.3",
+        "pluggy": "1.0.0",
+        "hypothesis": "6.100.0",
+        "pip": "21.3.1",
+        "setuptools-scm": "8.2.0",
+        "attrs": "23.2.0",
+        "wheel": "0.45.1",
+        "Pygments": "2.18.0",
+        "xmlschema": "3.4.3",
+        "idna": "3.20",
+        "elementpath": "4.8.0",
+        "argcomplete": "3.5.3",
+        "setuptools": "75.8.0"
+      },
+      "dependency_imports": {
+        "pluggy": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-alternative-a/L1/pytest-dev__pytest-9359/environment/lib64/python3.9/site-packages/pluggy/__init__.py",
+        "packaging": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-alternative-a/L1/pytest-dev__pytest-9359/environment/lib64/python3.9/site-packages/packaging/__init__.py"
+      },
+      "PATH": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-alternative-a/L1/pytest-dev__pytest-9359/tool-bin:/usr/bin:/bin",
+      "PYTHONPATH": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-alternative-a/L1/pytest-dev__pytest-9359/workspace/src",
+      "cpu_affinity": [
+        188,
+        189,
+        190,
+        191
+      ],
+      "wrapper_sha256": {
+        "pip": "5fad1e1f5771387581f8913e6df84145c93e087ff4fb84a49c6021aef31a189a",
+        "python3": "df3636d0a87cffe1eb1d48240f30be69be64deece146d54936ea36c9231cb742",
+        "flask": "9c4ea83690f1f9ce8a79447557f040f9eb9959a04c70706271f56f16d53e99a2",
+        "py.test": "e9d30eef727e00170d8807a6fc32d8662b4bd954942138b4a9a0e1761572f59e",
+        "python": "df3636d0a87cffe1eb1d48240f30be69be64deece146d54936ea36c9231cb742",
+        "pytest": "e9d30eef727e00170d8807a6fc32d8662b4bd954942138b4a9a0e1761572f59e"
+      },
+      "offline": true,
+      "system_tools": {
+        "git": "/usr/bin/git",
+        "sed": "/usr/bin/sed",
+        "rg": null,
+        "find": "/usr/bin/find",
+        "bash": "/usr/bin/bash",
+        "taskset": "/usr/bin/taskset"
+      }
+    }
+  }
+]

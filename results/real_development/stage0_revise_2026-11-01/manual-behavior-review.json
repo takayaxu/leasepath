@@ -1,0 +1,68 @@
+[
+  {
+    "round": 1,
+    "task_id": "pallets__flask-4992",
+    "relevant_implementation_located_and_read": true,
+    "production_patch_present": true,
+    "closed_repair_and_validation": false,
+    "review": "Related pytest attempted; repeated SyntaxError, no closure",
+    "runner_path": "/home/ma-user/work/leasepath/real-development-v1/stage0-revise-20261101-service-a/debug-round1/pallets__flask-4992/runner.jsonl",
+    "trajectory_path": "/home/ma-user/work/leasepath/real-development-v1/stage0-revise-20261101-service-a/debug-round1/pallets__flask-4992/trajectory.json",
+    "full_patch_sha256": "4806468033d33a0a47b084b02da484d7690bb8e01107965f27818529df25cfe0"
+  },
+  {
+    "round": 1,
+    "task_id": "pallets__flask-5063",
+    "relevant_implementation_located_and_read": false,
+    "production_patch_present": false,
+    "closed_repair_and_validation": false,
+    "review": "Guessed symbols/directories; no implementation repair or validation",
+    "runner_path": "/home/ma-user/work/leasepath/real-development-v1/stage0-revise-20261101-service-a/debug-round1/pallets__flask-5063/runner.jsonl",
+    "trajectory_path": "/home/ma-user/work/leasepath/real-development-v1/stage0-revise-20261101-service-a/debug-round1/pallets__flask-5063/trajectory.json",
+    "full_patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "round": 1,
+    "task_id": "pytest-dev__pytest-9359",
+    "relevant_implementation_located_and_read": false,
+    "production_patch_present": false,
+    "closed_repair_and_validation": false,
+    "review": "Searches plus broad/unrelated tests; context overflow and inherited HTTP retries",
+    "runner_path": "/home/ma-user/work/leasepath/real-development-v1/stage0-revise-20261101-service-a/debug-round1/pytest-dev__pytest-9359/runner.jsonl",
+    "trajectory_path": "/home/ma-user/work/leasepath/real-development-v1/stage0-revise-20261101-service-a/debug-round1/pytest-dev__pytest-9359/trajectory.json",
+    "full_patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "round": 2,
+    "task_id": "pallets__flask-4992",
+    "relevant_implementation_located_and_read": true,
+    "production_patch_present": true,
+    "closed_repair_and_validation": false,
+    "review": "Repeated mode parameters; string-presence script does not validate behavior; SyntaxError",
+    "runner_path": "/home/ma-user/work/leasepath/real-development-v1/stage0-revise-20261101-service-a/debug-round2/pallets__flask-4992/runner.jsonl",
+    "trajectory_path": "/home/ma-user/work/leasepath/real-development-v1/stage0-revise-20261101-service-a/debug-round2/pallets__flask-4992/trajectory.json",
+    "full_patch_sha256": "a3ad44a92ddb4b3b57dd5425e81886168f3012db71377045b91d21cdaf7e8c9c"
+  },
+  {
+    "round": 2,
+    "task_id": "pallets__flask-5063",
+    "relevant_implementation_located_and_read": true,
+    "production_patch_present": true,
+    "closed_repair_and_validation": false,
+    "review": "Runnable app reproducer, then repeated output code inserted among decorators; SyntaxError",
+    "runner_path": "/home/ma-user/work/leasepath/real-development-v1/stage0-revise-20261101-service-a/debug-round2/pallets__flask-5063/runner.jsonl",
+    "trajectory_path": "/home/ma-user/work/leasepath/real-development-v1/stage0-revise-20261101-service-a/debug-round2/pallets__flask-5063/trajectory.json",
+    "full_patch_sha256": "0286480e494295c77b409946149b82f0c7f2294b94655f0bfef07a4cd842f41a"
+  },
+  {
+    "round": 2,
+    "task_id": "pytest-dev__pytest-9359",
+    "relevant_implementation_located_and_read": true,
+    "production_patch_present": true,
+    "closed_repair_and_validation": false,
+    "review": "Reproducer indentation loop, then malformed debug-print insertion; SyntaxError, no fix",
+    "runner_path": "/home/ma-user/work/leasepath/real-development-v1/stage0-revise-20261101-service-a/debug-round2/pytest-dev__pytest-9359/runner.jsonl",
+    "trajectory_path": "/home/ma-user/work/leasepath/real-development-v1/stage0-revise-20261101-service-a/debug-round2/pytest-dev__pytest-9359/trajectory.json",
+    "full_patch_sha256": "4b85aba0c1d5c2f3ddd89be07f0ded5f9eee14c637851a7e112927f4f68fa67b"
+  }
+]

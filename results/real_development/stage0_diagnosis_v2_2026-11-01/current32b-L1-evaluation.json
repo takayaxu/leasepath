@@ -1,0 +1,130 @@
+{
+  "scope": "independent_local_issue_file_tests_not_official_SWE_bench_harness",
+  "reference_fix_used": false,
+  "cpu_affinity": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "results": [
+    {
+      "task_id": "pallets__flask-4992",
+      "patch_sha256": "bcb38fde74a3aadc5223fd6943731a413377c451d73b1613d0232e5534066d59",
+      "candidate_apply_returncode": 0,
+      "test_apply_returncode": 0,
+      "apply_errors": "",
+      "candidate_test_changes_excluded": [],
+      "build_returncode": 0,
+      "test_returncode": 1,
+      "targets": {
+        "tests/test_config.py::test_config_from_file_toml": [
+          "failed"
+        ]
+      },
+      "counts": {
+        "passed": 16,
+        "failed": 3,
+        "error": 0,
+        "skipped": 0
+      },
+      "command": [
+        "taskset",
+        "-c",
+        "0,1,2,3",
+        "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-32b-a/L1-evaluation/pallets__flask-4992/environment/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "tests/test_config.py",
+        "--junitxml",
+        "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-32b-a/L1-evaluation/pallets__flask-4992/workspace/issue-check.xml",
+        "-W",
+        "ignore:'pkgutil.get_loader' is deprecated:DeprecationWarning",
+        "-W",
+        "ignore:'pkgutil.find_loader' is deprecated:DeprecationWarning"
+      ],
+      "elapsed_s": 0.7686388080473989,
+      "passed": false
+    },
+    {
+      "task_id": "pallets__flask-5063",
+      "patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "candidate_apply_returncode": 0,
+      "test_apply_returncode": 0,
+      "apply_errors": "",
+      "candidate_test_changes_excluded": [],
+      "build_returncode": 0,
+      "test_returncode": 1,
+      "targets": {
+        "tests/test_cli.py::TestRoutes::test_subdomain": [
+          "failed"
+        ],
+        "tests/test_cli.py::TestRoutes::test_host": [
+          "failed"
+        ]
+      },
+      "counts": {
+        "passed": 55,
+        "failed": 2,
+        "error": 0,
+        "skipped": 0
+      },
+      "command": [
+        "taskset",
+        "-c",
+        "0,1,2,3",
+        "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-32b-a/L1-evaluation/pallets__flask-5063/environment/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "tests/test_cli.py",
+        "--junitxml",
+        "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-32b-a/L1-evaluation/pallets__flask-5063/workspace/issue-check.xml",
+        "-W",
+        "ignore:'pkgutil.get_loader' is deprecated:DeprecationWarning",
+        "-W",
+        "ignore:'pkgutil.find_loader' is deprecated:DeprecationWarning"
+      ],
+      "elapsed_s": 1.0870148009853438,
+      "passed": false
+    },
+    {
+      "task_id": "pytest-dev__pytest-9359",
+      "patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "candidate_apply_returncode": 0,
+      "test_apply_returncode": 0,
+      "apply_errors": "",
+      "candidate_test_changes_excluded": [],
+      "build_returncode": 0,
+      "test_returncode": 1,
+      "targets": {
+        "testing/code/test_source.py::test_decorator": [
+          "failed"
+        ]
+      },
+      "counts": {
+        "passed": 54,
+        "failed": 1,
+        "error": 0,
+        "skipped": 0
+      },
+      "command": [
+        "taskset",
+        "-c",
+        "0,1,2,3",
+        "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-32b-a/L1-evaluation/pytest-dev__pytest-9359/environment/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "testing/code/test_source.py",
+        "--junitxml",
+        "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-32b-a/L1-evaluation/pytest-dev__pytest-9359/workspace/issue-check.xml"
+      ],
+      "elapsed_s": 0.8010443790117279,
+      "passed": false
+    }
+  ],
+  "passed": 0,
+  "total": 3
+}

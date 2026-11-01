@@ -1,0 +1,120 @@
+{
+  "status": "codex32b_protocol_passed_development_gate_failed_round_stopped_not_accepted",
+  "model_repository": "Qwen/Qwen2.5-Coder-32B-Instruct",
+  "model_revision": "381fc969f78efac66bc87ff7ddeadb7e73c218a7",
+  "model_directory": "/home/ma-user/work/leasepath/real-development-v1/models/Qwen2.5-Coder-32B-Instruct-381fc969",
+  "raw_data_root": "/home/ma-user/work/leasepath/real-development-v1/",
+  "agent": "Codex CLI 0.166.0",
+  "wire_api_candidate": "responses",
+  "dtype": "bfloat16",
+  "tensor_parallel_size_candidate": 2,
+  "max_model_len_candidate": 16384,
+  "initial_max_num_seqs_candidate": 1,
+  "concurrency_ladder_requires_previous_pass": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "dedicated_devices": null,
+  "dedicated_window": "authorized pool; own Codex/32B service stopped and 8 cards idle at 2026-11-01 17:13 Asia/Shanghai; recheck before a new run",
+  "last_validated_devices": [
+    0,
+    1
+  ],
+  "runtime_validation": "TP2 BF16 16K; prior 2/4/8 short requests and new two long controlled requests accepted; both remediation Agent debug configurations 0/3, no stable repair behavior",
+  "user_authorized_device_pool": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "host": "127.0.0.1",
+  "port_candidate": 8202,
+  "startup_requirements": [
+    "explicit dedicated device window",
+    "fresh preflight with reserved devices passes",
+    "all pinned weight files verified",
+    "new probe and ID mapping ready for controlled live validation"
+  ],
+  "stage0_tasks": [
+    "pallets__flask-4992",
+    "pallets__flask-5063",
+    "pytest-dev__pytest-9359"
+  ],
+  "overhead_thresholds_proposed_before_live_measurement": {
+    "probe_paired_median_service_time_increase_fraction": 0.02,
+    "probe_p95_service_time_increase_fraction": 0.05,
+    "net_task_completion_time_noninferiority_fraction": 0.02,
+    "measurement_status": "48 controlled crossover pairs measured: median +0.3367%, paired increase P95 +4.6353%; whole-Agent JCT noninferiority not measured"
+  },
+  "stage1_budget_after_stage0_review": {
+    "initial_independent_tasks": 15,
+    "minimum_projects": 3,
+    "natural_development_days": 5,
+    "task_selection_status": "15 unused issue candidates frozen in real_development_stage1_candidates.json; environments not prechecked; execution set not accepted",
+    "started": false
+  },
+  "stage0_review": "reports/real_development_stage0_codex32b_review_2026-11-01.md",
+  "stage0_summary": "results/real_development/stage0_codex32b_2026-11-01/summary.json",
+  "remediation": {
+    "maximum_debug_configurations": 2,
+    "completed_configurations": 2,
+    "agent": "mini-swe-agent fallback with versioned v1/v2 workflow",
+    "debug_passed": [
+      0,
+      0
+    ],
+    "debug_tasks_per_configuration": 3,
+    "final_five_acceptance": "not_run_prerequisite_failed",
+    "new_tasks_preregistered_but_unused": [
+      "pallets__flask-4045",
+      "pytest-dev__pytest-11143"
+    ],
+    "projection_version": "real-relations-v2.1",
+    "whole_Agent_JCT": "not_measured_prerequisite_failed",
+    "decision": "stop_current_chain; any new Agent/model requires new version and affected-gate validation"
+  },
+  "diagnostic_v2": {
+    "plan": "revise.md",
+    "config": "configs/prediction/real_development_diagnostic_v3.json",
+    "alternative_config": "configs/prediction/real_development_diagnostic_v3_alternative.json",
+    "current_L1_passed": 0,
+    "alternative_L1_passed": 0,
+    "tasks_per_condition": 3,
+    "attempts_consumed": 6,
+    "maximum_attempts": 21,
+    "L2_L3": "not_run_L1_gate_failed",
+    "new_five": "preselected_only_not_run",
+    "alternative": "Qwen/Qwen3.8-27B per-file snapshot; offline reference without backend mapping",
+    "decision": "bounded_round_ended; no automatic third candidate or interface revision",
+    "stage1_started": false,
+    "review": "reports/real_development_stage0_diagnosis_v2_review_2026-11-01.md",
+    "summary": "results/real_development/stage0_diagnosis_v2_2026-11-01/summary.json"
+  },
+  "codex32b": {
+    "guide": "指导.md",
+    "configuration": "configs/prediction/real_development_codex32b_v2.json",
+    "protocol": "strict-json-envelope-v1; Codex CLI executes tools; native function calling not claimed",
+    "B": "two distinct integration fixtures independently passed",
+    "B_attempts": 4,
+    "B_configurations": 2,
+    "C_development_source": "pallets__flask-5063",
+    "C_passed": 0,
+    "C_total": 1,
+    "C_backend_requests": 24,
+    "C_patch_bytes": 0,
+    "C_second_attempt": "not_triggered_no_configuration_or_collection_defect",
+    "D": "not_run_C_gate_failed",
+    "JCT": "not_measured_C_gate_failed",
+    "backend_requests_mapped": 45,
+    "actual_shell_calls": 42,
+    "unique_results_into_backend": 41,
+    "stage1_started": false,
+    "decision": "bounded_round_ended; no third configuration or automatic additional model/task runs"
+  }
+}

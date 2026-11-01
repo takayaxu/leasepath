@@ -1,0 +1,14 @@
+{
+  "round1_review_sha256": "b9f14411d69d782fff60ca2b542eb230606a0629a2b45a68cf103a4484c06c90",
+  "model_unchanged": true,
+  "step_limit": 30,
+  "max_tokens": 768,
+  "wall_seconds": 900,
+  "maximum_configurations_reached": 2,
+  "sha256": {
+    "configs/prediction/real_development_revise_agent_v2.json": "46e64598b3257e6be63f15f67b72461fb029efd72429d21fe137983f462a358d",
+    "scripts/run_real_development_tasks_v2.py": "70f105f06f0556d875328db9950ba222f1169997f0de928c683adf08c9d693b8",
+    "src/leasepath/real_workflow.py": "7c77af4443fe969e8391e9daea7382d6b724b06a0e067af61f0fd234f0fc631f",
+    "src/leasepath/real_environment.py": "437318de21ad1ec08523de4258eb3dfad566c589a6008cd0c6ba1e3398042ccd"
+  }
+}

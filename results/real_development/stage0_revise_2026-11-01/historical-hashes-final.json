@@ -1,0 +1,16 @@
+{
+  "checked": 147,
+  "errors": [],
+  "manifests": [
+    "results/prediction/d2_diversity_v3/SHA256SUMS.json",
+    "results/prediction/d2_expansion_v1/SHA256SUMS.json",
+    "results/prediction/d2_first_round/SHA256SUMS.json",
+    "results/prediction/d2_mbpp_round/SHA256SUMS.json",
+    "results/prediction/d2_repair_v2/SHA256SUMS.json",
+    "results/prediction/empirical_baseline_review_1/SHA256SUMS.json",
+    "results/prediction/gbdt_review_2/SHA256SUMS.json",
+    "results/prediction/prediction_v2_50parents/SHA256SUMS.json",
+    "results/prediction/prediction_v2_diagnosis/SHA256SUMS.json",
+    "results/real_development/stage0_2026-11-01/SHA256SUMS.json"
+  ]
+}

@@ -1,0 +1,4 @@
+{
+  "missing_producer_rejected": "missing, duplicate, or unexpected stream",
+  "missing_terminal_rejected": "no complete boundary; cannot support C"
+}

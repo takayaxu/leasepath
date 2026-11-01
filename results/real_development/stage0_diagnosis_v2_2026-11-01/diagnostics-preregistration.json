@@ -1,0 +1,110 @@
+{
+  "version": "diagnosis-plan-v2-frozen-20261101",
+  "budget_ledger": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-preregistration/diagnostic-ledger.jsonl",
+  "total_diagnostic_attempt_limit": 21,
+  "model_limit": 2,
+  "tool_interface_limit": 2,
+  "attempts_per_condition_source": 1,
+  "progression": {
+    "L1_minimum_passed": 2,
+    "L2_minimum_passed": 2,
+    "L3_minimum_passed": 2,
+    "tasks_per_level": 3
+  },
+  "current_model": {
+    "repository": "Qwen/Qwen2.5-Coder-32B-Instruct",
+    "revision": "381fc969f78efac66bc87ff7ddeadb7e73c218a7"
+  },
+  "conditional_alternative": {
+    "repository": "Qwen/Qwen3.8-27B",
+    "directory": "/home/ma-user/work/qwen-services/models/qwen3.8-27b",
+    "identity": "per-file hashes in existing source-manifest, snapshot verification required before use",
+    "reason": "Already locally deployed BF16 text/code/tool-capable family, previous chat and eight-way concurrency receipts in qwen-services; selected before new scores. Different architecture/template; configuration comparison, not size effect.",
+    "trigger": "current-model L1 <2/3 after pinned-template and full-visible-code checks",
+    "source_evidence": [
+      "/home/ma-user/work/qwen-services/verification-results-qwen3.8-27b.json",
+      "/home/ma-user/work/qwen-services/tool-calling-verification.json",
+      "/home/ma-user/work/qwen-services/model_server.py"
+    ],
+    "backend_mapping": "hybrid architecture must independently validate new probe hooks; no transplantation of Qwen2 accepted coverage"
+  },
+  "old_new_pair": {
+    "enabled": false,
+    "reason": "No single-factor causal claim planned; v3 is a package. Optional extra three are not automatically spent."
+  },
+  "independent_acceptance": "frozen original FAIL_TO_PASS + full related test files in fresh clones; no reference fix sent to model",
+  "tasks": {
+    "pallets__flask-4992": {
+      "production_paths": [
+        "src/flask/config.py"
+      ],
+      "excerpts": [
+        [
+          "src/flask/config.py",
+          1,
+          25
+        ],
+        [
+          "src/flask/config.py",
+          232,
+          306
+        ],
+        [
+          "tests/test_config.py",
+          1,
+          100
+        ]
+      ],
+      "visible_regression": "python -m pytest -q tests/test_config.py",
+      "assistance_reason": "Config.from_file explicitly named by original issue"
+    },
+    "pallets__flask-5063": {
+      "production_paths": [
+        "src/flask/cli.py"
+      ],
+      "excerpts": [
+        [
+          "src/flask/cli.py",
+          1,
+          65
+        ],
+        [
+          "src/flask/cli.py",
+          988,
+          1047
+        ],
+        [
+          "tests/test_cli.py",
+          432,
+          515
+        ]
+      ],
+      "visible_regression": "python -m pytest -q tests/test_cli.py::TestRoutes",
+      "assistance_reason": "CLI routes implementation plus existing route tests; no frozen new tests"
+    },
+    "pytest-dev__pytest-9359": {
+      "production_paths": [
+        "src/_pytest/_code/source.py"
+      ],
+      "excerpts": [
+        [
+          "src/_pytest/_code/source.py",
+          1,
+          260
+        ],
+        [
+          "testing/code/test_source.py",
+          119,
+          219
+        ],
+        [
+          "testing/code/test_source.py",
+          399,
+          425
+        ]
+      ],
+      "visible_regression": "python -m pytest -q testing/code/test_source.py",
+      "assistance_reason": "Source statement-range module; L1 full module and existing public tests, no independent decorator test"
+    }
+  }
+}

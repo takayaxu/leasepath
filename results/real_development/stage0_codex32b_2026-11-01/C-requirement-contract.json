@@ -1,0 +1,10 @@
+{
+  "task": "pallets__flask-5063",
+  "source_group": "pallets__flask-5063",
+  "kind": "development_integration_with_explicit_output_contract_v1",
+  "original_issue_preserved": true,
+  "reason": "Original issue illustrates Domain, but upstream frozen targets assert Subdomain/Host. Disclose required public output vocabulary before candidate generation instead of demanding a hidden unique design.",
+  "visible_contract": "For this development integration the required routes-table output contract is: when rules have nonempty subdomains and host_matching is off, show their values in a column titled Subdomain; with host_matching enabled, show host values in a column titled Host. Ordinary routes without these values must preserve the existing output layout and sorting/method behavior. Do not edit existing tests to weaken them. This supplements the issue output vocabulary; hidden test contents and reference implementation are not supplied.",
+  "scoring": "Report independently frozen original benchmark tests separately; any success is assisted by this explicit behavior contract, not unseen benchmark success.",
+  "frozen_at_ns": 925892117385618
+}

@@ -1,0 +1,18 @@
+{
+  "scope": "Before any new diagnostic model call",
+  "files_sha256": {
+    "revise.md": "b03db93fd8fbb0e4f08072cec21c4430cf3af9dcb28efb3eb9e98ca18fea9f96",
+    "configs/prediction/real_development_diagnostic_v3.json": "fba3abf6244a884a2ac266bfae2f1ac26241c7aba24dd4e0141368e837332d5b",
+    "scripts/run_stage0_diagnostics_v3.py": "5958b6a8b1fcaa7c365f5aa4e0065fb843e1a05761c68786b99f8aa502d4c90c",
+    "scripts/audit_stage0_failure_visibility.py": "b9fbb04c67cbc974efc77245b70911c35fe6ab99f5b587deeb835cc678341b4a",
+    "src/leasepath/real_tools_v3.py": "23f4fc604f7c25633eea9bb5c9cd18ce72e2b61f1c93a0069b196071c7aaad6d",
+    "src/leasepath/real_environment.py": "437318de21ad1ec08523de4258eb3dfad566c589a6008cd0c6ba1e3398042ccd",
+    "src/leasepath/real_patches.py": "a283aa79efc98b715b8f5aee0607956daaab1b59eb80ee3acbd9e42af267fb01",
+    "src/leasepath/real_projection_v2.py": "287cae728148247218da7ea8408e5b76a8b63da24e23eb83b057ae103605fcf4",
+    "tests/test_real_tools_v3.py": "4bdd464fd6c0cce8375f0307122b21e30ecbb08a879169857d8f2eedfb355a23"
+  },
+  "diagnostics_sha256": "990168304f48c72f4dcdf8df26cbc9ce1ebe48f77041fdf01deb86b2da9d72c5",
+  "maximum_attempts": 21,
+  "initial_condition": "current 32B, L1, new interface v3",
+  "model_score_based_selection": false
+}

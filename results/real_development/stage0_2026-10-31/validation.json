@@ -1,0 +1,17 @@
+{
+  "pytest": {
+    "passed": 130,
+    "log": "pytest-regression-130.log"
+  },
+  "D1_synthetic_passed": 50,
+  "event_contract": {
+    "positive": 8,
+    "negative": 16
+  },
+  "post_gate_change_targeted_tests": 2,
+  "local_document_links_checked": 124,
+  "broken_links": [],
+  "legacy_tracked_results_and_collectors_unchanged": true,
+  "bash_syntax": "passed",
+  "stage0_live_backend_accepted": false
+}

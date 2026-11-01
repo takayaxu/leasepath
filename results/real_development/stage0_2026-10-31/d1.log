@@ -1,0 +1,1 @@
+{"status": "passed", "checks_passed": 50, "groups": {"labels": 26, "state": 6, "isolation": 13, "permissions": 5}, "evidence_kind": "synthetic", "runtime_callback_implemented": false}

@@ -1,0 +1,10 @@
+{
+  "status": "completed",
+  "cli": "0.166.0",
+  "official_docs_access": 403,
+  "model_verified_files": 23,
+  "initial_native_breakpoint": "untagged model output, no executed calls; developer missing from pinned template and default native SimpleContext not accepted",
+  "synthetic_tests": "CPU-only; separately stored; excluded from live model/smoke counts",
+  "pytest_passed_final": 180,
+  "protocol_and_shell_regression_cases": 24
+}

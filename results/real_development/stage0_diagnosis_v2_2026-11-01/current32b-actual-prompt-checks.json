@@ -1,0 +1,17 @@
+[
+  {
+    "task_id": "pytest-dev__pytest-9359",
+    "request_id": "1ccb4ac094894290b3a1a3ee5c2def2c",
+    "actual_prompt_equals_preflight_sha256": true
+  },
+  {
+    "task_id": "pallets__flask-5063",
+    "request_id": "2e8f72a9173f4686ba98847f0038b4e5",
+    "actual_prompt_equals_preflight_sha256": true
+  },
+  {
+    "task_id": "pallets__flask-4992",
+    "request_id": "87a92501e3bd420482fa41aba2f90a02",
+    "actual_prompt_equals_preflight_sha256": true
+  }
+]

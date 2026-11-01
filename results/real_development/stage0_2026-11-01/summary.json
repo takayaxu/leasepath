@@ -1,0 +1,51 @@
+{
+  "observed_at": "2026-11-01T10:22:58.978046+08:00",
+  "stage": 0,
+  "status": "reviewed_not_accepted_for_stage1",
+  "decision": "hold_stage1; repair_agent_effectiveness_and_generalized_projection_then_review_again",
+  "model": "Qwen2.5-Coder-32B-Instruct",
+  "model_revision": "381fc969f78efac66bc87ff7ddeadb7e73c218a7",
+  "Codex_tool_loop": "not_accepted_after_two_bounded_configurations",
+  "accepted_agent_scope": "mini-swe-agent text tool execution and backend mapping; not task correctness",
+  "repositories": 2,
+  "tasks": 3,
+  "task_successes": 0,
+  "client_requests": 59,
+  "tool_calls": 56,
+  "episodes": 59,
+  "outcomes": {
+    "legal_demand": 56,
+    "retire": 3
+  },
+  "controlled_outcomes": {
+    "retire": 1,
+    "legal_demand": 1,
+    "right_censored": 1
+  },
+  "backend_requests_audited": 92,
+  "actual_preemptions": 1,
+  "capacity_evictions": 321,
+  "rank_KV_bytes": {
+    "0": 3221225472,
+    "1": 3221225472
+  },
+  "backend_complete_streams": 7,
+  "controlled_checks_passed": true,
+  "overhead_paired_median_increase_fraction": 0.0033668493263399046,
+  "Agent_JCT_noninferiority": "not_measured",
+  "regression_tests_passed": 139,
+  "historical_hashes_checked": 125,
+  "stage1_started": false,
+  "final_NPU_user_processes": 0,
+  "open_gates": [
+    "Agent issue quality 0/3; valid source-inspection/edit/validation behavior insufficient.",
+    "v0.1 projection intentionally rejects multi-lookup/preempted requests; raw probes support auditing them.",
+    "Whole-Agent task completion noninferiority not established.",
+    "Stage1 candidate environments not yet prechecked; no natural development sessions collected."
+  ],
+  "data_root": "/home/ma-user/work/leasepath/real-development-v1",
+  "accepted_main_run": "/home/ma-user/work/leasepath/real-development-v1/stage0-20261101-tp2-b",
+  "historical_incomplete_run": "/home/ma-user/work/leasepath/real-development-v1/stage0-20261101-tp2-a",
+  "allocation_candidate_checks": 204,
+  "active_slots_at_end": 0
+}

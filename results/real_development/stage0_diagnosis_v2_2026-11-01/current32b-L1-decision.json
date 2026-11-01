@@ -1,0 +1,8 @@
+{
+  "condition": "current_32B_L1_new_interface",
+  "independent_passed": 0,
+  "total": 3,
+  "decision": "Stop current-model progression; trigger preselected alternative L1; no current L2/L3.",
+  "reason": "L1 failed frozen >=2/3 gate",
+  "evidence": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-32b-a/L1-evaluation/summary.json"
+}

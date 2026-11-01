@@ -1,0 +1,14 @@
+{
+  "frozen_at_ns": 926077656486392,
+  "B_gate": "two distinct independent checks passed and 21/21 actual prompt/backend mappings; explicit full histories only",
+  "sha256": {
+    "/home/ma-user/work/leasepath/real-development-v1/codex32b-20261101-a/development-preparation/config.json": "c6d5ae7c3c979fa5c2d497113449afe8891c3104c563678dd2a0d271a87a0c63",
+    "/home/ma-user/work/leasepath/real-development-v1/codex32b-20261101-a/development-preparation/prompt.txt": "09696d0cea8f0482fda1c970467066d58402bdf4c71b459e9f2d6b348aae199f",
+    "/home/ma-user/work/leasepath/real-development-v1/codex32b-20261101-a/development-preparation/base.json": "3fe4bc766d9f65d89d71dd18a165d000cd7369743a6a531af04c17c806d5d412",
+    "/home/ma-user/work/leasepath/real-development-v1/codex32b-20261101-a/development-preparation/environment-preflight.json": "1ef3ae58ba70dcc747131f592de2e78b6b2836719ab21852c23a347fb6bae4b4",
+    "/home/ma-user/work/leasepath/real-development-v1/codex32b-20261101-a/preregistration/C-requirement-contract.json": "3cb96bdd06c9297bf62c91de94c5b6cc5649ba21f3cc87cf1e5c54639003d8c0",
+    "src/leasepath/codex_protocol.py": "613c1dcc6a9f7f7931e55085335dc45229678606530bbfb948c2002b6086f20a",
+    "scripts/run_codex32b.py": "e25d3fd4a64ea286bc098a0acad2e2a28f5b6045eff0b272745bba0826f1b6df",
+    "scripts/codex32b_shell.py": "d8c12d6eea403bf547ae74acd6062d74f20773b38ba27e385a00feb064d6b7a3"
+  }
+}

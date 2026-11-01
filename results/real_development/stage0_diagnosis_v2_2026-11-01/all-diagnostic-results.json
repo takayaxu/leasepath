@@ -1,0 +1,224 @@
+[
+  {
+    "condition": "current32b",
+    "task_id": "pallets__flask-4992",
+    "source_group": "pallets__flask-4992",
+    "level": "L1",
+    "assisted_not_autonomous": true,
+    "calls": 1,
+    "JCT_s": 49.97393508802634,
+    "status": "LocalCandidateProduced",
+    "patch_bytes": 832,
+    "finish_reasons": {
+      "stop": 1
+    },
+    "syntax_checks": [
+      {
+        "path": "src/flask/config.py",
+        "returncode": 0
+      }
+    ],
+    "rejection_reasons": [],
+    "independent_passed": false,
+    "independent_test_counts": {
+      "passed": 16,
+      "failed": 3,
+      "error": 0,
+      "skipped": 0
+    },
+    "targets": {
+      "tests/test_config.py::test_config_from_file_toml": [
+        "failed"
+      ]
+    },
+    "patch_sha256": "bcb38fde74a3aadc5223fd6943731a413377c451d73b1613d0232e5534066d59",
+    "prompt_tokens_local_match_reported_usage": true,
+    "response_tokens": 169,
+    "path": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-32b-a/L1/pallets__flask-4992"
+  },
+  {
+    "condition": "current32b",
+    "task_id": "pallets__flask-5063",
+    "source_group": "pallets__flask-5063",
+    "level": "L1",
+    "assisted_not_autonomous": true,
+    "calls": 1,
+    "JCT_s": 54.182464253972284,
+    "status": "LocalCandidateRejected",
+    "patch_bytes": 0,
+    "finish_reasons": {
+      "stop": 1
+    },
+    "syntax_checks": [],
+    "rejection_reasons": [
+      "src/flask/cli.py: old text occurs 0 times, expected exactly one; no writes applied"
+    ],
+    "independent_passed": false,
+    "independent_test_counts": {
+      "passed": 55,
+      "failed": 2,
+      "error": 0,
+      "skipped": 0
+    },
+    "targets": {
+      "tests/test_cli.py::TestRoutes::test_subdomain": [
+        "failed"
+      ],
+      "tests/test_cli.py::TestRoutes::test_host": [
+        "failed"
+      ]
+    },
+    "patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "prompt_tokens_local_match_reported_usage": true,
+    "response_tokens": 382,
+    "path": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-32b-a/L1/pallets__flask-5063"
+  },
+  {
+    "condition": "current32b",
+    "task_id": "pytest-dev__pytest-9359",
+    "source_group": "pytest-dev__pytest-9359",
+    "level": "L1",
+    "assisted_not_autonomous": true,
+    "calls": 1,
+    "JCT_s": 77.34888302301988,
+    "status": "LocalCandidateRejected",
+    "patch_bytes": 0,
+    "finish_reasons": {
+      "stop": 1
+    },
+    "syntax_checks": [],
+    "rejection_reasons": [
+      "src/_pytest/_code/source.py: old text occurs 0 times, expected exactly one; no writes applied"
+    ],
+    "independent_passed": false,
+    "independent_test_counts": {
+      "passed": 54,
+      "failed": 1,
+      "error": 0,
+      "skipped": 0
+    },
+    "targets": {
+      "testing/code/test_source.py::test_decorator": [
+        "failed"
+      ]
+    },
+    "patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "prompt_tokens_local_match_reported_usage": true,
+    "response_tokens": 537,
+    "path": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-32b-a/L1/pytest-dev__pytest-9359"
+  },
+  {
+    "condition": "alternative",
+    "task_id": "pallets__flask-4992",
+    "source_group": "pallets__flask-4992",
+    "level": "L1",
+    "assisted_not_autonomous": true,
+    "calls": 1,
+    "JCT_s": 241.47860601707362,
+    "status": "LocalCandidateProduced",
+    "patch_bytes": 1184,
+    "finish_reasons": {
+      "stop": 1
+    },
+    "syntax_checks": [
+      {
+        "path": "src/flask/config.py",
+        "returncode": 0
+      }
+    ],
+    "rejection_reasons": [],
+    "independent_passed": false,
+    "independent_test_counts": {
+      "passed": 18,
+      "failed": 1,
+      "error": 0,
+      "skipped": 0
+    },
+    "targets": {
+      "tests/test_config.py::test_config_from_file_toml": [
+        "failed"
+      ]
+    },
+    "patch_sha256": "2dee57df78fce7d5cbe546ea941a1b870b0b4340a02da383fd85ea253585c18d",
+    "prompt_tokens_local_match_reported_usage": true,
+    "response_tokens": 788,
+    "path": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-alternative-a/L1/pallets__flask-4992"
+  },
+  {
+    "condition": "alternative",
+    "task_id": "pallets__flask-5063",
+    "source_group": "pallets__flask-5063",
+    "level": "L1",
+    "assisted_not_autonomous": true,
+    "calls": 1,
+    "JCT_s": 100.64182818704285,
+    "status": "LocalCandidateProduced",
+    "patch_bytes": 1140,
+    "finish_reasons": {
+      "stop": 1
+    },
+    "syntax_checks": [
+      {
+        "path": "src/flask/cli.py",
+        "returncode": 0
+      }
+    ],
+    "rejection_reasons": [],
+    "independent_passed": false,
+    "independent_test_counts": {
+      "passed": 53,
+      "failed": 4,
+      "error": 0,
+      "skipped": 0
+    },
+    "targets": {
+      "tests/test_cli.py::TestRoutes::test_subdomain": [
+        "failed"
+      ],
+      "tests/test_cli.py::TestRoutes::test_host": [
+        "failed"
+      ]
+    },
+    "patch_sha256": "586b1ccf92676c68cdb866b1d41ff6626c3fb416af3849f470919181e005d25d",
+    "prompt_tokens_local_match_reported_usage": true,
+    "response_tokens": 480,
+    "path": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-alternative-a/L1/pallets__flask-5063"
+  },
+  {
+    "condition": "alternative",
+    "task_id": "pytest-dev__pytest-9359",
+    "source_group": "pytest-dev__pytest-9359",
+    "level": "L1",
+    "assisted_not_autonomous": true,
+    "calls": 1,
+    "JCT_s": 121.50448169605806,
+    "status": "LocalCandidateProduced",
+    "patch_bytes": 1062,
+    "finish_reasons": {
+      "stop": 1
+    },
+    "syntax_checks": [
+      {
+        "path": "src/_pytest/_code/source.py",
+        "returncode": 0
+      }
+    ],
+    "rejection_reasons": [],
+    "independent_passed": false,
+    "independent_test_counts": {
+      "passed": 54,
+      "failed": 1,
+      "error": 0,
+      "skipped": 0
+    },
+    "targets": {
+      "testing/code/test_source.py::test_decorator": [
+        "failed"
+      ]
+    },
+    "patch_sha256": "b461dd51a79dd0c87e40ebb2cbac62929d218efa6e49b44ff395023fcc477e21",
+    "prompt_tokens_local_match_reported_usage": true,
+    "response_tokens": 547,
+    "path": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-alternative-a/L1/pytest-dev__pytest-9359"
+  }
+]

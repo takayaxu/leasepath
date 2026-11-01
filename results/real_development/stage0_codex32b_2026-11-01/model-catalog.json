@@ -1,0 +1,58 @@
+{
+  "models": [
+    {
+      "slug": "leasepath-qwen25-coder32b",
+      "display_name": "Local Qwen2.5-Coder-32B",
+      "description": "Local protocol integration, capabilities subject to acceptance",
+      "default_reasoning_level": "none",
+      "supported_reasoning_levels": [],
+      "shell_type": "unified_exec",
+      "visibility": "list",
+      "supported_in_api": true,
+      "priority": 13,
+      "additional_speed_tiers": [
+        "fast"
+      ],
+      "service_tiers": [
+        {
+          "id": "priority",
+          "name": "Fast",
+          "description": "1.5x speed, increased usage"
+        }
+      ],
+      "availability_nux": null,
+      "upgrade": {
+        "model": "gpt-6-sol",
+        "migration_markdown": "Meet GPT-6 Sol\n\nOur latest Sol is more intelligent and more efficient so your usage limits go further. This model is a great daily driver for complex tasks, especially coding.\n"
+      },
+      "include_skills_usage_instructions": true,
+      "include_plugin_usage_instructions": true,
+      "include_apps_usage_instructions": true,
+      "default_reasoning_summary": "none",
+      "support_verbosity": false,
+      "default_verbosity": "low",
+      "web_search_tool_type": "text_and_image",
+      "truncation_policy": {
+        "mode": "tokens",
+        "limit": 10000
+      },
+      "supports_image_detail_original": true,
+      "context_window": 16384,
+      "max_context_window": 16384,
+      "comp_hash": "2911",
+      "effective_context_window_percent": 100,
+      "experimental_supported_tools": [],
+      "input_modalities": [
+        "text"
+      ],
+      "supports_search_tool": false,
+      "supports_experimental_context": false,
+      "use_responses_lite": false,
+      "supports_reasoning_effort_updates": false,
+      "node_repl_auto_review_required": false,
+      "node_repl_disabled": false,
+      "base_instructions": "You are a coding agent running in Codex CLI. Use the provided tools to inspect, edit and test files. Tool results are real and must be checked. Do not merely describe commands as text. Use exec_command for shell work; always set login to false to preserve the isolated Python environment. Do not request permissions or user input. Complete the requested work and verify it. Keep terminal output bounded; read source in relevant ranges. Do not use external services or change files outside the working directory. Each shell command must finish within 90 seconds; use timeout 90s for tests. Never start background processes. Tool calls must use the exact supplied function names and schema. When finished, summarize actual results. Use the default bash shell. Commands are observed through an explicit BASH_ENV bootstrap; it executes your exact command and enforces a 90 second deadline.",
+      "supports_reasoning_summary_parameter": false
+    }
+  ]
+}

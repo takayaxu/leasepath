@@ -1,0 +1,206 @@
+[
+  {
+    "task_id": "pallets__flask-4992",
+    "passed": true,
+    "evidence": {
+      "cwd": "/home/ma-user/work/leasepath/real-development-v1/stage0-revise-20261101-cpu-c/pallets__flask-4992/workspace",
+      "shell": "/bin/bash -c",
+      "resolved_entries": {
+        "python": "/home/ma-user/work/leasepath/real-development-v1/stage0-revise-20261101-cpu-c/pallets__flask-4992/tool-bin/python",
+        "pytest": "/home/ma-user/work/leasepath/real-development-v1/stage0-revise-20261101-cpu-c/pallets__flask-4992/tool-bin/pytest",
+        "flask": "/home/ma-user/work/leasepath/real-development-v1/stage0-revise-20261101-cpu-c/pallets__flask-4992/tool-bin/flask"
+      },
+      "executable": "/home/ma-user/work/leasepath/real-development-v1/stage0-revise-20261101-cpu-c/pallets__flask-4992/environment/bin/python",
+      "prefix": "/home/ma-user/work/leasepath/real-development-v1/stage0-revise-20261101-cpu-c/pallets__flask-4992/environment",
+      "source": "/home/ma-user/work/leasepath/real-development-v1/stage0-revise-20261101-cpu-c/pallets__flask-4992/workspace/src/flask/__init__.py",
+      "python_version": "3.12.0 | packaged by Anaconda, Inc. | (main, Oct  2 2023, 17:19:42) [GCC 11.2.0]",
+      "dependencies": {
+        "iniconfig": "2.3.1",
+        "pip": "23.2.1",
+        "pluggy": "1.7.0",
+        "toml": "0.10.2",
+        "python-dotenv": "1.0.1",
+        "itsdangerous": "2.1.2",
+        "Werkzeug": "2.3.8",
+        "MarkupSafe": "2.1.5",
+        "packaging": "24.2",
+        "asgiref": "3.7.2",
+        "Jinja2": "3.1.6",
+        "pytest": "7.4.4",
+        "blinker": "1.6.3",
+        "click": "8.1.7"
+      },
+      "dependency_imports": {
+        "click": "/home/ma-user/work/leasepath/real-development-v1/stage0-revise-20261101-cpu-c/pallets__flask-4992/environment/lib/python3.12/site-packages/click/__init__.py",
+        "werkzeug": "/home/ma-user/work/leasepath/real-development-v1/stage0-revise-20261101-cpu-c/pallets__flask-4992/environment/lib/python3.12/site-packages/werkzeug/__init__.py",
+        "jinja2": "/home/ma-user/work/leasepath/real-development-v1/stage0-revise-20261101-cpu-c/pallets__flask-4992/environment/lib/python3.12/site-packages/jinja2/__init__.py"
+      },
+      "PATH": "/home/ma-user/work/leasepath/real-development-v1/stage0-revise-20261101-cpu-c/pallets__flask-4992/tool-bin:/usr/bin:/bin",
+      "PYTHONPATH": "/home/ma-user/work/leasepath/real-development-v1/stage0-revise-20261101-cpu-c/pallets__flask-4992/workspace/src",
+      "cpu_affinity": [
+        188,
+        189,
+        190,
+        191
+      ],
+      "wrapper_sha256": {
+        "pip": "5b7fa37ed68f1975f8f1dc210f05405a4923def2b482a234e33456254b0832a6",
+        "python3": "f3de3befa2ab7226195824c47d2394a0620294c6aa98888693aa99af72c8a6a8",
+        "rg": "e36d0eb52e70696bdf1781392722e05a21bb91d3b7b762ef5ec20e5df2ec687b",
+        "flask": "9b878bda1fae63b840e1776213f6e5de82118bdc0fab5f7885d2ef3cb2d91bb8",
+        "py.test": "26c285f224dd397583749d48977e571133d06e64cb45971a451bd5e9baf5454a",
+        "python": "f3de3befa2ab7226195824c47d2394a0620294c6aa98888693aa99af72c8a6a8",
+        "pytest": "26c285f224dd397583749d48977e571133d06e64cb45971a451bd5e9baf5454a"
+      },
+      "offline": true,
+      "system_tools": {
+        "git": "/usr/bin/git",
+        "sed": "/usr/bin/sed",
+        "rg": "/home/ma-user/work/leasepath/real-development-v1/stage0-revise-20261101-cpu-c/pallets__flask-4992/tool-bin/rg",
+        "find": "/usr/bin/find",
+        "bash": "/usr/bin/bash",
+        "taskset": "/usr/bin/taskset"
+      }
+    }
+  },
+  {
+    "task_id": "pallets__flask-5063",
+    "passed": true,
+    "evidence": {
+      "cwd": "/home/ma-user/work/leasepath/real-development-v1/stage0-revise-20261101-cpu-c/pallets__flask-5063/workspace",
+      "shell": "/bin/bash -c",
+      "resolved_entries": {
+        "python": "/home/ma-user/work/leasepath/real-development-v1/stage0-revise-20261101-cpu-c/pallets__flask-5063/tool-bin/python",
+        "pytest": "/home/ma-user/work/leasepath/real-development-v1/stage0-revise-20261101-cpu-c/pallets__flask-5063/tool-bin/pytest",
+        "flask": "/home/ma-user/work/leasepath/real-development-v1/stage0-revise-20261101-cpu-c/pallets__flask-5063/tool-bin/flask"
+      },
+      "executable": "/home/ma-user/work/leasepath/real-development-v1/stage0-revise-20261101-cpu-c/pallets__flask-5063/environment/bin/python",
+      "prefix": "/home/ma-user/work/leasepath/real-development-v1/stage0-revise-20261101-cpu-c/pallets__flask-5063/environment",
+      "source": "/home/ma-user/work/leasepath/real-development-v1/stage0-revise-20261101-cpu-c/pallets__flask-5063/workspace/src/flask/__init__.py",
+      "python_version": "3.12.0 | packaged by Anaconda, Inc. | (main, Oct  2 2023, 17:19:42) [GCC 11.2.0]",
+      "dependencies": {
+        "iniconfig": "2.3.1",
+        "pip": "23.2.1",
+        "pluggy": "1.7.0",
+        "toml": "0.10.2",
+        "python-dotenv": "1.0.1",
+        "itsdangerous": "2.1.2",
+        "Werkzeug": "2.3.8",
+        "MarkupSafe": "2.1.5",
+        "packaging": "24.2",
+        "asgiref": "3.7.2",
+        "Jinja2": "3.1.6",
+        "pytest": "7.4.4",
+        "blinker": "1.6.3",
+        "click": "8.1.7"
+      },
+      "dependency_imports": {
+        "click": "/home/ma-user/work/leasepath/real-development-v1/stage0-revise-20261101-cpu-c/pallets__flask-5063/environment/lib/python3.12/site-packages/click/__init__.py",
+        "werkzeug": "/home/ma-user/work/leasepath/real-development-v1/stage0-revise-20261101-cpu-c/pallets__flask-5063/environment/lib/python3.12/site-packages/werkzeug/__init__.py",
+        "jinja2": "/home/ma-user/work/leasepath/real-development-v1/stage0-revise-20261101-cpu-c/pallets__flask-5063/environment/lib/python3.12/site-packages/jinja2/__init__.py"
+      },
+      "PATH": "/home/ma-user/work/leasepath/real-development-v1/stage0-revise-20261101-cpu-c/pallets__flask-5063/tool-bin:/usr/bin:/bin",
+      "PYTHONPATH": "/home/ma-user/work/leasepath/real-development-v1/stage0-revise-20261101-cpu-c/pallets__flask-5063/workspace/src",
+      "cpu_affinity": [
+        188,
+        189,
+        190,
+        191
+      ],
+      "wrapper_sha256": {
+        "pip": "a498e1e3b9232d16c6841ca21b6a966d470162ede91232fc74146b3e4e8a17fa",
+        "python3": "8a28704e821f69667010127458bfc8c63672c30cd1fa327f139a2400715efb29",
+        "rg": "e36d0eb52e70696bdf1781392722e05a21bb91d3b7b762ef5ec20e5df2ec687b",
+        "flask": "4006dd904e93e30358f72ed7099ed040a76b2192b65d6693c23d059b85858130",
+        "py.test": "ded0390ce09c102f89addaf18e0a0502237fbe772189f79880fbd1e2c6f80ebd",
+        "python": "8a28704e821f69667010127458bfc8c63672c30cd1fa327f139a2400715efb29",
+        "pytest": "ded0390ce09c102f89addaf18e0a0502237fbe772189f79880fbd1e2c6f80ebd"
+      },
+      "offline": true,
+      "system_tools": {
+        "git": "/usr/bin/git",
+        "sed": "/usr/bin/sed",
+        "rg": "/home/ma-user/work/leasepath/real-development-v1/stage0-revise-20261101-cpu-c/pallets__flask-5063/tool-bin/rg",
+        "find": "/usr/bin/find",
+        "bash": "/usr/bin/bash",
+        "taskset": "/usr/bin/taskset"
+      }
+    }
+  },
+  {
+    "task_id": "pytest-dev__pytest-9359",
+    "passed": true,
+    "evidence": {
+      "cwd": "/home/ma-user/work/leasepath/real-development-v1/stage0-revise-20261101-cpu-c/pytest-dev__pytest-9359/workspace",
+      "shell": "/bin/bash -c",
+      "resolved_entries": {
+        "python": "/home/ma-user/work/leasepath/real-development-v1/stage0-revise-20261101-cpu-c/pytest-dev__pytest-9359/tool-bin/python",
+        "pytest": "/home/ma-user/work/leasepath/real-development-v1/stage0-revise-20261101-cpu-c/pytest-dev__pytest-9359/tool-bin/pytest",
+        "flask": "/home/ma-user/work/leasepath/real-development-v1/stage0-revise-20261101-cpu-c/pytest-dev__pytest-9359/tool-bin/flask"
+      },
+      "executable": "/home/ma-user/work/leasepath/real-development-v1/stage0-revise-20261101-cpu-c/pytest-dev__pytest-9359/environment/bin/python",
+      "prefix": "/home/ma-user/work/leasepath/real-development-v1/stage0-revise-20261101-cpu-c/pytest-dev__pytest-9359/environment",
+      "source": "/home/ma-user/work/leasepath/real-development-v1/stage0-revise-20261101-cpu-c/pytest-dev__pytest-9359/workspace/src/_pytest/__init__.py",
+      "python_version": "3.9.9 (main, Dec 20 2025, 13:00:24) \n[GCC 10.3.1]",
+      "dependencies": {
+        "pytest": "6.3.0.dev0",
+        "sortedcontainers": "2.4.0",
+        "py": "1.11.0",
+        "nose": "1.3.7",
+        "urllib3": "2.6.3",
+        "typing_extensions": "4.16.0",
+        "tomli": "2.2.1",
+        "exceptiongroup": "1.3.1",
+        "toml": "0.10.2",
+        "certifi": "2026.10.23",
+        "mock": "5.1.0",
+        "charset-normalizer": "3.5.2",
+        "iniconfig": "2.0.0",
+        "packaging": "24.2",
+        "requests": "2.32.3",
+        "pluggy": "1.0.0",
+        "hypothesis": "6.100.0",
+        "pip": "21.3.1",
+        "setuptools-scm": "8.2.0",
+        "attrs": "23.2.0",
+        "wheel": "0.45.1",
+        "Pygments": "2.18.0",
+        "xmlschema": "3.4.3",
+        "idna": "3.20",
+        "elementpath": "4.8.0",
+        "argcomplete": "3.5.3",
+        "setuptools": "75.8.0"
+      },
+      "dependency_imports": {
+        "pluggy": "/home/ma-user/work/leasepath/real-development-v1/stage0-revise-20261101-cpu-c/pytest-dev__pytest-9359/environment/lib64/python3.9/site-packages/pluggy/__init__.py",
+        "packaging": "/home/ma-user/work/leasepath/real-development-v1/stage0-revise-20261101-cpu-c/pytest-dev__pytest-9359/environment/lib64/python3.9/site-packages/packaging/__init__.py"
+      },
+      "PATH": "/home/ma-user/work/leasepath/real-development-v1/stage0-revise-20261101-cpu-c/pytest-dev__pytest-9359/tool-bin:/usr/bin:/bin",
+      "PYTHONPATH": "/home/ma-user/work/leasepath/real-development-v1/stage0-revise-20261101-cpu-c/pytest-dev__pytest-9359/workspace/src",
+      "cpu_affinity": [
+        188,
+        189,
+        190,
+        191
+      ],
+      "wrapper_sha256": {
+        "pip": "2ce4d16ab48a1bac33278512e2eb905f72dbedd4ef3df68b583543e7bd22c127",
+        "python3": "eee99d6cfbf2a64387fa6b88aedef5ef4070c1b31c5e769f693051451ffdf768",
+        "rg": "e36d0eb52e70696bdf1781392722e05a21bb91d3b7b762ef5ec20e5df2ec687b",
+        "flask": "2b76ce22fc701a0ee020ffce2828cd8c629a6e8db2d644d69e976e787230921e",
+        "py.test": "4797608a68d49d67accef8ebd343cada2f1ef352af66d1b071ec7f1b69cd7941",
+        "python": "eee99d6cfbf2a64387fa6b88aedef5ef4070c1b31c5e769f693051451ffdf768",
+        "pytest": "4797608a68d49d67accef8ebd343cada2f1ef352af66d1b071ec7f1b69cd7941"
+      },
+      "offline": true,
+      "system_tools": {
+        "git": "/usr/bin/git",
+        "sed": "/usr/bin/sed",
+        "rg": "/home/ma-user/work/leasepath/real-development-v1/stage0-revise-20261101-cpu-c/pytest-dev__pytest-9359/tool-bin/rg",
+        "find": "/usr/bin/find",
+        "bash": "/usr/bin/bash",
+        "taskset": "/usr/bin/taskset"
+      }
+    }
+  }
+]

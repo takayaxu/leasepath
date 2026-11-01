@@ -1,0 +1,24 @@
+argcomplete==3.5.3
+attrs==23.2.0
+certifi==2026.10.23
+charset-normalizer==3.5.2
+elementpath==4.8.0
+exceptiongroup==1.3.1
+hypothesis==6.100.0
+idna==3.20
+iniconfig==2.0.0
+mock==5.1.0
+nose==1.3.7
+packaging==24.2
+pluggy==1.0.0
+py==1.11.0
+Pygments==2.18.0
+pytest @ file:///home/ma-user/work/leasepath/real-development-v1/stage0-20261031-a/environment-checks-d/pytest-dev__pytest-9359-reference
+requests==2.32.3
+setuptools-scm==8.2.0
+sortedcontainers==2.4.0
+toml==0.10.2
+tomli==2.2.1
+typing_extensions==4.16.0
+urllib3==2.6.3
+xmlschema==3.4.3

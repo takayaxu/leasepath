@@ -6,7 +6,7 @@ LeasePath 研究一个具体问题：**一个 Agent 上下文暂时空闲后，�
 
 当前数据集的统一入口为 [数据集说明](docs/dataset_card.md)：**50 个不同母题、65 条可审计主执行、472 个 idle episode、2,414 张快照**；质量子集为 54 条执行、47 个母题、296 个 episode、1,553 张快照。已在新目录合并并完成 [经验预测/GBDT 训练 v2](reports/prediction_v2_50parents_review.md)，原轮数据保持原版本；逐文件路径、分组与哈希见 [50 母题清单](results/prediction/dataset_inventory_50parents_2026-10-31.json)，[此前 16 母题清单](results/prediction/dataset_inventory_2026-10-31.json) 保留。
 
-研究状态与训练核对日期：2026-10-31；本机部署核对日期：2026-10-30（Asia/Shanghai）。当前工作目录为 `/home/ma-user/takaya/leasepath`，独立 Python 环境为 `.venv/`。部署步骤与本机验收见 [部署说明](docs/deployment.md)；换机器时按实际 checkout 路径运行下列命令。
+研究状态与训练核对日期：2026-10-31；阶段 0 补救与本机资源核对日期：2026-11-01（Asia/Shanghai）。当前工作目录为 `/home/ma-user/takaya/leasepath`，独立 Python 环境为 `.venv/`。部署步骤与本机验收见 [部署说明](docs/deployment.md)；换机器时按实际 checkout 路径运行下列命令。
 
 ## 当前状态
 
@@ -40,7 +40,15 @@ CacheWise 使用“工具参数 TF-IDF/KMeans 聚类＋条件经验时长分布�
 | 3：模型价值 | 同一新数据和因果特征下，增强条件经验 vs 共享 GBDT | GBDT 是否在独立任务/时间上有稳定净增益 |
 | 4：独立确认 | 冻结配置后检查新任务/日期、容量负载、完整开销与任务质量 | 支持哪些结论、何时应停止复杂化 |
 
-本机为 **8×910B2（每卡 64 GiB HBM）、192 CPU、约 1.5 TiB RAM**；[资源快照](results/planning/real_development_2026-10-31/hardware_snapshot.json) 显示所有卡已有其他负载、每卡约占用 45 GiB。32B/TP=2 是待验证的配置，需独占资源窗口，不按空闲机器直接启动。新权重与原始轨迹规划存放 `/home/ma-user/work/leasepath/real-development-v1/` 数据盘。**新计划尚未执行，Codex/32B 未验收，真实 KV 收益尚未证明。**
+本机为 **8×910B2（每卡 64 GiB HBM）、192 CPU、约 1.5 TiB RAM**。用户随后授权释放显存，阶段 0 已实际使用独占卡运行；实验服务已停止，[最新资源快照](results/real_development/stage0_codex32b_2026-11-01/final-resource.json) 显示 8 卡均无运行进程，每卡约 3.3 GiB 为系统保留。新权重与原始证据使用 `/home/ma-user/work/leasepath/real-development-v1/` 数据盘。
+
+**补救前阶段 0 实测（历史结果）：** 同一 32B 的 TP=2、16K、2/4/8 短请求并发及真实共享/淘汰/抢占/取消/重试等受控验收通过。Codex 两种配置未完成工具循环，按计划回退到 mini-swe-agent；3 个真实 issue 共执行 59 次请求、56 次工具，独立任务验收 **0/3**。完整后端流导出仓库 pilot 的 **U=56、D=3、C=0**，独立受控实验另有 U/D/C 各 1；这些不代表自然开发发生率。48 对开关探针请求的配对延迟增幅中位数约 **0.34%**，整项 Agent 完成时间非劣性尚未验收。项目回归 **139 项通过**，旧清单 125 个文件哈希不变。详见 [补救前阶段 0 Review](reports/real_development_stage0_review_2026-11-01.md) 和 [机器摘要](results/real_development/stage0_2026-11-01/summary.json)；[上一轮 CPU 准备 review](reports/real_development_stage0_review_2026-10-31.md) 保留历史含义。**真实 KV 策略收益尚未证明。**
+
+**阶段 0 补救已完成本轮执行与 review，整体仍未通过：** 按 [revise.md](revise.md) 修复了宿主工具回退、加入私有环境与版本化工作流，并完成一般请求投影 v2.1。两轮原三题独立验收均为 **0/3**，按预登记停止条件结束当前链；新两题和最终五题验收未执行，完整 Agent JCT 非劣性未测量，阶段 1 暂缓。新流覆盖 **185/185 后端请求、306 次 lookup**，10 次未进入引擎的 HTTP 失败尝试单列；标签 U=172、D=11、C=1。独立投影/块审计及五项边界负例通过，项目 **151 项测试通过**，147 个历史文件哈希不变。服务已停止、8 卡无运行进程。详见 [补救 Review](reports/real_development_stage0_revise_review_2026-11-01.md)、[机器摘要](results/real_development/stage0_revise_2026-11-01/summary.json)；全部失败与旧结果均保留。
+
+**阶段 0 修订 v2 已执行（2026-11-01）：** 按新版 [revise.md](revise.md) 完成旧失败的模型可见信息/模板核查，新增分页读取、精确编辑、自动语法反馈与请求前 token 预算。当前 32B 和预选 Qwen3.8-27B 的 L1 局部诊断均为 **0/3**；替代模型三份补丁语法通过，但功能与回归门槛仍未过。按每层 ≥2/3 的条件停止两分支，共使用 **6/21 次诊断预算、3 个来源组**，未运行 L2/L3、新五题或完整 Agent JCT，阶段 1 继续暂停。156 项测试通过，181 个历史小产物哈希不变，服务均已停止、8 卡无运行进程。详见 [最新诊断 Review](reports/real_development_stage0_diagnosis_v2_review_2026-11-01.md)、[机器摘要](results/real_development/stage0_diagnosis_v2_2026-11-01/summary.json)。两轮旧补救结果不变，其依据是 [revise v1 存档](revise_v1_2026-11-01.md)。
+
+**当前主线：Codex CLI + 本地 32B（2026-11-01）。** 按 [指导.md](指导.md) 完成新一轮接入：CLI 0.166.0 经严格文本工具协议转换，实际执行 shell 并利用结果反馈，两个不同 fixture 的多轮闭环独立通过。随后 Flask-5063 开发联调用满 24 次模型请求，反复构造错误命令、补丁为空，独立验收 55 passed / 2 failed；按条件停止，未运行新五题或完整 JCT，阶段 0 仍不放行。45/45 后端输入 token IDs 精确对齐，42 次真实 shell，41 个唯一结果进入后续模型输入；最后一个被预算阻断，单列保留。完整回归 **180 项通过**，218 个历史结果文件哈希不变，自有服务已停止、8 卡无运行进程。见 [Codex/32B Review](reports/real_development_stage0_codex32b_review_2026-11-01.md)、[结果摘要](results/real_development/stage0_codex32b_2026-11-01/summary.json)。旧 L1 门槛没有用于阻止本次 Codex Agent 测试，旧失败结论不变。
 
 | 状态 | 已有证据 | 不能据此声称 |
 |---|---|---|
@@ -350,6 +358,13 @@ python scripts/collect_cachewise.py --offline
 | `collect_cachewise.py` | 下载/验证固定 CacheWise 快照并运行辅助数据审计。 |
 | `prepare_tracelab.py` | 下载/验证固定 TraceLab 发布并构建辅助工具等待数据。 |
 | `environment_probe.py` | 用 `--output` 指定环境记录文件；只有传 `--cuda-device` 才运行微型 CUDA 算子检查。 |
+| `preflight_real_development.py`、`prepare_real_development_model.py` | 阶段 0 只读资源门槛、固定 32B 模型下载及哈希核验。 |
+| `prepare_real_development_tasks.py`、`check_real_development_tasks.py` | 固定真实 issue 源码和独立环境预检；参考修复仅在隔离评测副本中使用。 |
+| `preflight_real_development_tools.py`、`run_real_development_tasks_v2.py`、`evaluate_real_development_pilot_v2.py` | 阶段 0 补救：私有工具环境、版本化修复工作流、全新 checkout 独立验收。 |
+| `export_real_development_v2.py`、`check_real_projection_v2.py`、`check_real_projection_v2_boundaries.py` | 一般请求关系 v2.1、全请求覆盖、独立源引用/首次需求核验及损坏边界负例。 |
+| `audit_stage0_failure_visibility.py`、`run_stage0_diagnostics_v3.py`、`preflight_diagnostic_template.py` | 修订 v2：实际可见信息核查、冻结的 L1/L2/L3 条件诊断及前端模板 token 对齐。 |
+| `real_development_boundary.py` | 请求前记录 producer 清单；排空后 TP checkpoint 并停止本轮自有服务。 |
+| `check_real_development_protocol.py` | 在返回 503 的 loopback 捕获端检查 Codex 客户端协议；不做推理或后端验收。 |
 | `fetch_model.py` | 下载可选 Qwen2.5-3B-Instruct 模型文件。 |
 | `build_native.py` | 使用已有 llama.cpp build 编译可选原生 bridge。 |
 
@@ -370,6 +385,7 @@ python scripts/collect_cachewise.py --offline
 | 需要了解 | 阅读位置 |
 |---|---|
 | 下一阶段：真实工具/lookup 差异、缓存价值、模型比较与服务器安排 | [执行计划与 review 节点](reports/real_development_lookup_plan_2026-10-31.md)、[只读硬件快照](results/planning/real_development_2026-10-31/hardware_snapshot.json) |
+| 阶段 0 已执行准备、资源限制、任务环境与未通过项 | [阶段 0 Review](reports/real_development_stage0_review_2026-10-31.md)、[机器摘要](results/real_development/stage0_2026-10-31/summary.json) |
 | 研究主线、模型和 D1–D10 | [预测计划](reports/mixed_workload_reuse_prediction_plan_2026-10-27.md) |
 | 当前数据集组成、数量、字段、路径、质量与使用方式 | [统一数据集说明](docs/dataset_card.md)、[50 母题清单](results/prediction/dataset_inventory_50parents_2026-10-31.json)、[真实样本](results/prediction/dataset_record_example_2026-10-31.json) |
 | D2 新增 34 个母题、固定独立测试与质量复核 | [说明](docs/d2_diversity_v3.md)、[Review](reports/d2_diversity_v3_review.md)、[机器摘要](results/prediction/d2_diversity_v3/summary.json) |

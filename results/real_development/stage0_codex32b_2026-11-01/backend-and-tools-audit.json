@@ -1,0 +1,1203 @@
+{
+  "status": "passed",
+  "backend_requests": 45,
+  "actual_prompt_ids_exact": 45,
+  "unique_model_tool_calls": 42,
+  "actual_shell_executions": 42,
+  "unique_results_attached_by_CLI": 42,
+  "unique_results_forwarded_into_backend": 41,
+  "results_not_forwarded_after_budget_rejection": [
+    "call_5d34e0cf1a7c46d08738dc65aa01e782_0"
+  ],
+  "frontend_rejected": [
+    {
+      "request_id": "9e595832c0b74e07ab3b3a462cd99455",
+      "status": "frontend_rejected_no_backend",
+      "error": "/home/ma-user/work/leasepath/real-development-v1/codex32b-20261101-a/smoke-v2-1/request-9e595832c0b74e07ab3b3a462cd99455/error.json"
+    },
+    {
+      "request_id": "a7412362bc2441dfa1276ed15a0bf0e9",
+      "status": "frontend_rejected_no_backend",
+      "error": "/home/ma-user/work/leasepath/real-development-v1/codex32b-20261101-a/development-C1/request-a7412362bc2441dfa1276ed15a0bf0e9/error.json"
+    }
+  ],
+  "requests": [
+    {
+      "owner": "smoke-v1-1",
+      "request_id": "a1c7f9e437e0432f91277db0c6d4e5ea",
+      "backend_request_id": "chatcmpl-a1c7f9e437e0432f91277db0c6d4e5ea-9b29a67b",
+      "prompt_tokens": 3354,
+      "actual_prompt_ids_exact": true,
+      "schema_transport": "native Chat tools"
+    },
+    {
+      "owner": "smoke-v2-2",
+      "request_id": "384dcf66980f4c438b2147e683655499",
+      "backend_request_id": "chatcmpl-384dcf66980f4c438b2147e683655499-ab59e8b9",
+      "prompt_tokens": 4230,
+      "actual_prompt_ids_exact": true,
+      "schema_transport": "explicit strict JSON"
+    },
+    {
+      "owner": "smoke-v2-2",
+      "request_id": "49886fcbb61d445a993d2daf5ed7f524",
+      "backend_request_id": "chatcmpl-49886fcbb61d445a993d2daf5ed7f524-a93ef4b6",
+      "prompt_tokens": 3435,
+      "actual_prompt_ids_exact": true,
+      "schema_transport": "explicit strict JSON"
+    },
+    {
+      "owner": "smoke-v2-2",
+      "request_id": "7e0da41fa245449ab6555293f41a4289",
+      "backend_request_id": "chatcmpl-7e0da41fa245449ab6555293f41a4289-84541e61",
+      "prompt_tokens": 4378,
+      "actual_prompt_ids_exact": true,
+      "schema_transport": "explicit strict JSON"
+    },
+    {
+      "owner": "smoke-v2-2",
+      "request_id": "8f10f83c43d64ea3b36411e625421cd9",
+      "backend_request_id": "chatcmpl-8f10f83c43d64ea3b36411e625421cd9-9be6492a",
+      "prompt_tokens": 3902,
+      "actual_prompt_ids_exact": true,
+      "schema_transport": "explicit strict JSON"
+    },
+    {
+      "owner": "smoke-v2-2",
+      "request_id": "9cfaf81fbd8e4b76b1d8c4c2be7e525f",
+      "backend_request_id": "chatcmpl-9cfaf81fbd8e4b76b1d8c4c2be7e525f-bc6e0987",
+      "prompt_tokens": 4509,
+      "actual_prompt_ids_exact": true,
+      "schema_transport": "explicit strict JSON"
+    },
+    {
+      "owner": "smoke-v2-2",
+      "request_id": "d959748e72184e65991755f775632a49",
+      "backend_request_id": "chatcmpl-d959748e72184e65991755f775632a49-9431fea8",
+      "prompt_tokens": 4074,
+      "actual_prompt_ids_exact": true,
+      "schema_transport": "explicit strict JSON"
+    },
+    {
+      "owner": "smoke-v2-2",
+      "request_id": "df3e20f4dd854c77aeddc3468b421d67",
+      "backend_request_id": "chatcmpl-df3e20f4dd854c77aeddc3468b421d67-9a6623a7",
+      "prompt_tokens": 4646,
+      "actual_prompt_ids_exact": true,
+      "schema_transport": "explicit strict JSON"
+    },
+    {
+      "owner": "smoke-v2-2",
+      "request_id": "fe1f869260584e5487eb5b8454768ee4",
+      "backend_request_id": "chatcmpl-fe1f869260584e5487eb5b8454768ee4-8c9e09fd",
+      "prompt_tokens": 3685,
+      "actual_prompt_ids_exact": true,
+      "schema_transport": "explicit strict JSON"
+    },
+    {
+      "owner": "smoke-v2-3",
+      "request_id": "07437f459da642f7aa6d33393bd0c358",
+      "backend_request_id": "chatcmpl-07437f459da642f7aa6d33393bd0c358-9bc20f81",
+      "prompt_tokens": 3902,
+      "actual_prompt_ids_exact": true,
+      "schema_transport": "explicit strict JSON"
+    },
+    {
+      "owner": "smoke-v2-3",
+      "request_id": "237673ba0a3744eaa9c567430bb4ee9f",
+      "backend_request_id": "chatcmpl-237673ba0a3744eaa9c567430bb4ee9f-8f393fe3",
+      "prompt_tokens": 5368,
+      "actual_prompt_ids_exact": true,
+      "schema_transport": "explicit strict JSON"
+    },
+    {
+      "owner": "smoke-v2-3",
+      "request_id": "43011cbc143c4484bc3e0ccce0d32672",
+      "backend_request_id": "chatcmpl-43011cbc143c4484bc3e0ccce0d32672-ba1eba23",
+      "prompt_tokens": 6554,
+      "actual_prompt_ids_exact": true,
+      "schema_transport": "explicit strict JSON"
+    },
+    {
+      "owner": "smoke-v2-3",
+      "request_id": "4d588dd3e3c54ff3bc03e562ef82ec65",
+      "backend_request_id": "chatcmpl-4d588dd3e3c54ff3bc03e562ef82ec65-93fe2342",
+      "prompt_tokens": 6165,
+      "actual_prompt_ids_exact": true,
+      "schema_transport": "explicit strict JSON"
+    },
+    {
+      "owner": "smoke-v2-3",
+      "request_id": "50561c839abe4cb48cce4c28e1751601",
+      "backend_request_id": "chatcmpl-50561c839abe4cb48cce4c28e1751601-be28d700",
+      "prompt_tokens": 4719,
+      "actual_prompt_ids_exact": true,
+      "schema_transport": "explicit strict JSON"
+    },
+    {
+      "owner": "smoke-v2-3",
+      "request_id": "60cbc12b135b47e2ae1da0cbf1132a65",
+      "backend_request_id": "chatcmpl-60cbc12b135b47e2ae1da0cbf1132a65-bbadd44c",
+      "prompt_tokens": 3435,
+      "actual_prompt_ids_exact": true,
+      "schema_transport": "explicit strict JSON"
+    },
+    {
+      "owner": "smoke-v2-3",
+      "request_id": "8638053c23d048c99d60c9fbdf526671",
+      "backend_request_id": "chatcmpl-8638053c23d048c99d60c9fbdf526671-9cd88b87",
+      "prompt_tokens": 5515,
+      "actual_prompt_ids_exact": true,
+      "schema_transport": "explicit strict JSON"
+    },
+    {
+      "owner": "smoke-v2-3",
+      "request_id": "8a0e8d9d6c1e4fba9f3778829eaaaafd",
+      "backend_request_id": "chatcmpl-8a0e8d9d6c1e4fba9f3778829eaaaafd-a20196d3",
+      "prompt_tokens": 4079,
+      "actual_prompt_ids_exact": true,
+      "schema_transport": "explicit strict JSON"
+    },
+    {
+      "owner": "smoke-v2-3",
+      "request_id": "8f1af279eaa744f29667e1cd5dacb984",
+      "backend_request_id": "chatcmpl-8f1af279eaa744f29667e1cd5dacb984-9af81df6",
+      "prompt_tokens": 4572,
+      "actual_prompt_ids_exact": true,
+      "schema_transport": "explicit strict JSON"
+    },
+    {
+      "owner": "smoke-v2-3",
+      "request_id": "bc105f413246448a9cd0f48c5140cf67",
+      "backend_request_id": "chatcmpl-bc105f413246448a9cd0f48c5140cf67-8164fbfe",
+      "prompt_tokens": 6312,
+      "actual_prompt_ids_exact": true,
+      "schema_transport": "explicit strict JSON"
+    },
+    {
+      "owner": "smoke-v2-3",
+      "request_id": "d2554b08d9a944f28b1799513a54f52e",
+      "backend_request_id": "chatcmpl-d2554b08d9a944f28b1799513a54f52e-b5a45ab2",
+      "prompt_tokens": 3682,
+      "actual_prompt_ids_exact": true,
+      "schema_transport": "explicit strict JSON"
+    },
+    {
+      "owner": "smoke-v2-3",
+      "request_id": "d60c80092b7a47e2a68179923ea15db3",
+      "backend_request_id": "chatcmpl-d60c80092b7a47e2a68179923ea15db3-b49ebb33",
+      "prompt_tokens": 4429,
+      "actual_prompt_ids_exact": true,
+      "schema_transport": "explicit strict JSON"
+    },
+    {
+      "owner": "development-C1",
+      "request_id": "041fb534a3ef41b3abadd56ecd6d1f59",
+      "backend_request_id": "chatcmpl-041fb534a3ef41b3abadd56ecd6d1f59-bebc94df",
+      "prompt_tokens": 6908,
+      "actual_prompt_ids_exact": true,
+      "schema_transport": "explicit strict JSON"
+    },
+    {
+      "owner": "development-C1",
+      "request_id": "1105098f7aeb4cf7a29f7c3a0e88c5e4",
+      "backend_request_id": "chatcmpl-1105098f7aeb4cf7a29f7c3a0e88c5e4-9b0290b2",
+      "prompt_tokens": 5160,
+      "actual_prompt_ids_exact": true,
+      "schema_transport": "explicit strict JSON"
+    },
+    {
+      "owner": "development-C1",
+      "request_id": "1808811ac94e4ba1a96ba094a02058cb",
+      "backend_request_id": "chatcmpl-1808811ac94e4ba1a96ba094a02058cb-a403c8d9",
+      "prompt_tokens": 7232,
+      "actual_prompt_ids_exact": true,
+      "schema_transport": "explicit strict JSON"
+    },
+    {
+      "owner": "development-C1",
+      "request_id": "31aeb289e1a6419fb8670095eb2c534f",
+      "backend_request_id": "chatcmpl-31aeb289e1a6419fb8670095eb2c534f-9eee2fbe",
+      "prompt_tokens": 6285,
+      "actual_prompt_ids_exact": true,
+      "schema_transport": "explicit strict JSON"
+    },
+    {
+      "owner": "development-C1",
+      "request_id": "38fb79bff39d4e51bfef68a146230727",
+      "backend_request_id": "chatcmpl-38fb79bff39d4e51bfef68a146230727-ab737d43",
+      "prompt_tokens": 4308,
+      "actual_prompt_ids_exact": true,
+      "schema_transport": "explicit strict JSON"
+    },
+    {
+      "owner": "development-C1",
+      "request_id": "3d7f9ba743bf43848190741720ad2af0",
+      "backend_request_id": "chatcmpl-3d7f9ba743bf43848190741720ad2af0-841dacf1",
+      "prompt_tokens": 4841,
+      "actual_prompt_ids_exact": true,
+      "schema_transport": "explicit strict JSON"
+    },
+    {
+      "owner": "development-C1",
+      "request_id": "4d5c266a742e479c99dcf20d7846f68d",
+      "backend_request_id": "chatcmpl-4d5c266a742e479c99dcf20d7846f68d-86417b22",
+      "prompt_tokens": 5956,
+      "actual_prompt_ids_exact": true,
+      "schema_transport": "explicit strict JSON"
+    },
+    {
+      "owner": "development-C1",
+      "request_id": "55f0b714faa44db1bfbc68dc72208629",
+      "backend_request_id": "chatcmpl-55f0b714faa44db1bfbc68dc72208629-882985bb",
+      "prompt_tokens": 6594,
+      "actual_prompt_ids_exact": true,
+      "schema_transport": "explicit strict JSON"
+    },
+    {
+      "owner": "development-C1",
+      "request_id": "5d34e0cf1a7c46d08738dc65aa01e782",
+      "backend_request_id": "chatcmpl-5d34e0cf1a7c46d08738dc65aa01e782-a4964b9d",
+      "prompt_tokens": 7860,
+      "actual_prompt_ids_exact": true,
+      "schema_transport": "explicit strict JSON"
+    },
+    {
+      "owner": "development-C1",
+      "request_id": "5eb12774175440fcb242fa227a1ec4a8",
+      "backend_request_id": "chatcmpl-5eb12774175440fcb242fa227a1ec4a8-94225e3e",
+      "prompt_tokens": 7383,
+      "actual_prompt_ids_exact": true,
+      "schema_transport": "explicit strict JSON"
+    },
+    {
+      "owner": "development-C1",
+      "request_id": "62573cfc11cb4dd6945ecbaa34aaea83",
+      "backend_request_id": "chatcmpl-62573cfc11cb4dd6945ecbaa34aaea83-b013e264",
+      "prompt_tokens": 7066,
+      "actual_prompt_ids_exact": true,
+      "schema_transport": "explicit strict JSON"
+    },
+    {
+      "owner": "development-C1",
+      "request_id": "6fa13ce387b045f8b8ec32c1430f7644",
+      "backend_request_id": "chatcmpl-6fa13ce387b045f8b8ec32c1430f7644-a1c64004",
+      "prompt_tokens": 5000,
+      "actual_prompt_ids_exact": true,
+      "schema_transport": "explicit strict JSON"
+    },
+    {
+      "owner": "development-C1",
+      "request_id": "70e869fe77c344e5b244cb36dfe520b9",
+      "backend_request_id": "chatcmpl-70e869fe77c344e5b244cb36dfe520b9-80059f5c",
+      "prompt_tokens": 4680,
+      "actual_prompt_ids_exact": true,
+      "schema_transport": "explicit strict JSON"
+    },
+    {
+      "owner": "development-C1",
+      "request_id": "77242253edc8407c8d9e8196dac3cefc",
+      "backend_request_id": "chatcmpl-77242253edc8407c8d9e8196dac3cefc-826a9f6a",
+      "prompt_tokens": 5313,
+      "actual_prompt_ids_exact": true,
+      "schema_transport": "explicit strict JSON"
+    },
+    {
+      "owner": "development-C1",
+      "request_id": "80fb877819df431baddb68b0080425ca",
+      "backend_request_id": "chatcmpl-80fb877819df431baddb68b0080425ca-92f2495a",
+      "prompt_tokens": 4508,
+      "actual_prompt_ids_exact": true,
+      "schema_transport": "explicit strict JSON"
+    },
+    {
+      "owner": "development-C1",
+      "request_id": "a0dc2e2d13f74984b5e48a13f95f8e4c",
+      "backend_request_id": "chatcmpl-a0dc2e2d13f74984b5e48a13f95f8e4c-b63a270c",
+      "prompt_tokens": 5476,
+      "actual_prompt_ids_exact": true,
+      "schema_transport": "explicit strict JSON"
+    },
+    {
+      "owner": "development-C1",
+      "request_id": "b385ddc2da6240b6a60e93d3ef6f136b",
+      "backend_request_id": "chatcmpl-b385ddc2da6240b6a60e93d3ef6f136b-87eeb686",
+      "prompt_tokens": 5806,
+      "actual_prompt_ids_exact": true,
+      "schema_transport": "explicit strict JSON"
+    },
+    {
+      "owner": "development-C1",
+      "request_id": "ba7950d17dac4760ae02a43484bbc21a",
+      "backend_request_id": "chatcmpl-ba7950d17dac4760ae02a43484bbc21a-a31e7dad",
+      "prompt_tokens": 6119,
+      "actual_prompt_ids_exact": true,
+      "schema_transport": "explicit strict JSON"
+    },
+    {
+      "owner": "development-C1",
+      "request_id": "c1bb657a261c4fc3bf5d2287b2870f2f",
+      "backend_request_id": "chatcmpl-c1bb657a261c4fc3bf5d2287b2870f2f-a5668249",
+      "prompt_tokens": 3927,
+      "actual_prompt_ids_exact": true,
+      "schema_transport": "explicit strict JSON"
+    },
+    {
+      "owner": "development-C1",
+      "request_id": "c2849dd0d7824f63ab26eda7d0c4e9dc",
+      "backend_request_id": "chatcmpl-c2849dd0d7824f63ab26eda7d0c4e9dc-a6294e7c",
+      "prompt_tokens": 6761,
+      "actual_prompt_ids_exact": true,
+      "schema_transport": "explicit strict JSON"
+    },
+    {
+      "owner": "development-C1",
+      "request_id": "d18d23c148034a638b64b3d004083101",
+      "backend_request_id": "chatcmpl-d18d23c148034a638b64b3d004083101-b0587f21",
+      "prompt_tokens": 7708,
+      "actual_prompt_ids_exact": true,
+      "schema_transport": "explicit strict JSON"
+    },
+    {
+      "owner": "development-C1",
+      "request_id": "d95e0ac4f9c146d8a13abf173fd1cd58",
+      "backend_request_id": "chatcmpl-d95e0ac4f9c146d8a13abf173fd1cd58-934883b1",
+      "prompt_tokens": 5639,
+      "actual_prompt_ids_exact": true,
+      "schema_transport": "explicit strict JSON"
+    },
+    {
+      "owner": "development-C1",
+      "request_id": "dcb2be11ad824c42b72f753f6c5bb00f",
+      "backend_request_id": "chatcmpl-dcb2be11ad824c42b72f753f6c5bb00f-8f4e5dca",
+      "prompt_tokens": 6435,
+      "actual_prompt_ids_exact": true,
+      "schema_transport": "explicit strict JSON"
+    },
+    {
+      "owner": "development-C1",
+      "request_id": "ff51da0fc36546bfbe41bf248f09e64c",
+      "backend_request_id": "chatcmpl-ff51da0fc36546bfbe41bf248f09e64c-b8faf98a",
+      "prompt_tokens": 7544,
+      "actual_prompt_ids_exact": true,
+      "schema_transport": "explicit strict JSON"
+    }
+  ],
+  "executions": [
+    {
+      "owner": "smoke-v2-2",
+      "tool_call_id": "call_384dcf66980f4c438b2147e683655499_0",
+      "command": "echo '{\"label\": \"obs-7bc2e1\", \"total\": 30}' > result.json",
+      "start_ns": 925862358753889,
+      "end_ns": 925862365091049,
+      "returncode": 0,
+      "result_return_request_ids": [
+        "7e0da41fa245449ab6555293f41a4289",
+        "9cfaf81fbd8e4b76b1d8c4c2be7e525f",
+        "df3e20f4dd854c77aeddc3468b421d67"
+      ]
+    },
+    {
+      "owner": "smoke-v2-2",
+      "tool_call_id": "call_49886fcbb61d445a993d2daf5ed7f524_0",
+      "command": "command -v python pytest flask",
+      "start_ns": 925840476966043,
+      "end_ns": 925840483195113,
+      "returncode": 0,
+      "result_return_request_ids": [
+        "384dcf66980f4c438b2147e683655499",
+        "7e0da41fa245449ab6555293f41a4289",
+        "8f10f83c43d64ea3b36411e625421cd9",
+        "9cfaf81fbd8e4b76b1d8c4c2be7e525f",
+        "d959748e72184e65991755f775632a49",
+        "df3e20f4dd854c77aeddc3468b421d67",
+        "fe1f869260584e5487eb5b8454768ee4"
+      ]
+    },
+    {
+      "owner": "smoke-v2-2",
+      "tool_call_id": "call_9cfaf81fbd8e4b76b1d8c4c2be7e525f_0",
+      "command": "cat receipt.txt",
+      "start_ns": 925871016319978,
+      "end_ns": 925871022422336,
+      "returncode": 0,
+      "result_return_request_ids": [
+        "df3e20f4dd854c77aeddc3468b421d67"
+      ]
+    },
+    {
+      "owner": "smoke-v2-2",
+      "tool_call_id": "call_d959748e72184e65991755f775632a49_0",
+      "command": "cat input.json",
+      "start_ns": 925855147395866,
+      "end_ns": 925855153703746,
+      "returncode": 0,
+      "result_return_request_ids": [
+        "384dcf66980f4c438b2147e683655499",
+        "7e0da41fa245449ab6555293f41a4289",
+        "9cfaf81fbd8e4b76b1d8c4c2be7e525f",
+        "df3e20f4dd854c77aeddc3468b421d67"
+      ]
+    },
+    {
+      "owner": "smoke-v2-2",
+      "tool_call_id": "call_8f10f83c43d64ea3b36411e625421cd9_0",
+      "command": "cat TASK.md",
+      "start_ns": 925850869358921,
+      "end_ns": 925850875653101,
+      "returncode": 0,
+      "result_return_request_ids": [
+        "384dcf66980f4c438b2147e683655499",
+        "7e0da41fa245449ab6555293f41a4289",
+        "9cfaf81fbd8e4b76b1d8c4c2be7e525f",
+        "d959748e72184e65991755f775632a49",
+        "df3e20f4dd854c77aeddc3468b421d67"
+      ]
+    },
+    {
+      "owner": "smoke-v2-2",
+      "tool_call_id": "call_fe1f869260584e5487eb5b8454768ee4_0",
+      "command": "python -c \"import sys; print(sys.executable); print(sys.prefix)\"",
+      "start_ns": 925846562206684,
+      "end_ns": 925846596717399,
+      "returncode": 0,
+      "result_return_request_ids": [
+        "384dcf66980f4c438b2147e683655499",
+        "7e0da41fa245449ab6555293f41a4289",
+        "8f10f83c43d64ea3b36411e625421cd9",
+        "9cfaf81fbd8e4b76b1d8c4c2be7e525f",
+        "d959748e72184e65991755f775632a49",
+        "df3e20f4dd854c77aeddc3468b421d67"
+      ]
+    },
+    {
+      "owner": "smoke-v2-2",
+      "tool_call_id": "call_7e0da41fa245449ab6555293f41a4289_0",
+      "command": "python check.py",
+      "start_ns": 925866636791854,
+      "end_ns": 925866703231983,
+      "returncode": 0,
+      "result_return_request_ids": [
+        "9cfaf81fbd8e4b76b1d8c4c2be7e525f",
+        "df3e20f4dd854c77aeddc3468b421d67"
+      ]
+    },
+    {
+      "owner": "smoke-v2-3",
+      "tool_call_id": "call_237673ba0a3744eaa9c567430bb4ee9f_0",
+      "command": "echo 'def clamp(value, lower, upper):\\n    return max(lower, min(value, upper))' > helper.py",
+      "start_ns": 925971058752203,
+      "end_ns": 925971065031333,
+      "returncode": 0,
+      "result_return_request_ids": [
+        "43011cbc143c4484bc3e0ccce0d32672",
+        "4d588dd3e3c54ff3bc03e562ef82ec65",
+        "8638053c23d048c99d60c9fbdf526671",
+        "bc105f413246448a9cd0f48c5140cf67"
+      ]
+    },
+    {
+      "owner": "smoke-v2-3",
+      "tool_call_id": "call_4d588dd3e3c54ff3bc03e562ef82ec65_0",
+      "command": "echo -e 'def clamp(value, lower, upper):\\n    return max(lower, min(value, upper))' > helper.py",
+      "start_ns": 925983402765962,
+      "end_ns": 925983409155693,
+      "returncode": 0,
+      "result_return_request_ids": [
+        "43011cbc143c4484bc3e0ccce0d32672",
+        "bc105f413246448a9cd0f48c5140cf67"
+      ]
+    },
+    {
+      "owner": "smoke-v2-3",
+      "tool_call_id": "call_d2554b08d9a944f28b1799513a54f52e_0",
+      "command": "python -c \"import sys; print(sys.executable); print(sys.prefix)\"",
+      "start_ns": 925938860195128,
+      "end_ns": 925938894581152,
+      "returncode": 0,
+      "result_return_request_ids": [
+        "07437f459da642f7aa6d33393bd0c358",
+        "237673ba0a3744eaa9c567430bb4ee9f",
+        "43011cbc143c4484bc3e0ccce0d32672",
+        "4d588dd3e3c54ff3bc03e562ef82ec65",
+        "50561c839abe4cb48cce4c28e1751601",
+        "8638053c23d048c99d60c9fbdf526671",
+        "8a0e8d9d6c1e4fba9f3778829eaaaafd",
+        "8f1af279eaa744f29667e1cd5dacb984",
+        "bc105f413246448a9cd0f48c5140cf67",
+        "d60c80092b7a47e2a68179923ea15db3"
+      ]
+    },
+    {
+      "owner": "smoke-v2-3",
+      "tool_call_id": "call_bc105f413246448a9cd0f48c5140cf67_0",
+      "command": "pytest",
+      "start_ns": 925987373079854,
+      "end_ns": 925987739881358,
+      "returncode": 0,
+      "result_return_request_ids": [
+        "43011cbc143c4484bc3e0ccce0d32672"
+      ]
+    },
+    {
+      "owner": "smoke-v2-3",
+      "tool_call_id": "call_8f1af279eaa744f29667e1cd5dacb984_0",
+      "command": "echo 'def clamp(value, lower, upper):\\n    return max(lower, min(value, upper))' > helper.py",
+      "start_ns": 925959038371273,
+      "end_ns": 925959044532422,
+      "returncode": 0,
+      "result_return_request_ids": [
+        "237673ba0a3744eaa9c567430bb4ee9f",
+        "43011cbc143c4484bc3e0ccce0d32672",
+        "4d588dd3e3c54ff3bc03e562ef82ec65",
+        "50561c839abe4cb48cce4c28e1751601",
+        "8638053c23d048c99d60c9fbdf526671",
+        "bc105f413246448a9cd0f48c5140cf67"
+      ]
+    },
+    {
+      "owner": "smoke-v2-3",
+      "tool_call_id": "call_8a0e8d9d6c1e4fba9f3778829eaaaafd_0",
+      "command": "pytest",
+      "start_ns": 925946956654045,
+      "end_ns": 925947373518197,
+      "returncode": 1,
+      "result_return_request_ids": [
+        "237673ba0a3744eaa9c567430bb4ee9f",
+        "43011cbc143c4484bc3e0ccce0d32672",
+        "4d588dd3e3c54ff3bc03e562ef82ec65",
+        "50561c839abe4cb48cce4c28e1751601",
+        "8638053c23d048c99d60c9fbdf526671",
+        "8f1af279eaa744f29667e1cd5dacb984",
+        "bc105f413246448a9cd0f48c5140cf67",
+        "d60c80092b7a47e2a68179923ea15db3"
+      ]
+    },
+    {
+      "owner": "smoke-v2-3",
+      "tool_call_id": "call_8638053c23d048c99d60c9fbdf526671_0",
+      "command": "pytest",
+      "start_ns": 925975101057519,
+      "end_ns": 925975668141389,
+      "returncode": 2,
+      "result_return_request_ids": [
+        "43011cbc143c4484bc3e0ccce0d32672",
+        "4d588dd3e3c54ff3bc03e562ef82ec65",
+        "bc105f413246448a9cd0f48c5140cf67"
+      ]
+    },
+    {
+      "owner": "smoke-v2-3",
+      "tool_call_id": "call_d60c80092b7a47e2a68179923ea15db3_0",
+      "command": "cat helper.py",
+      "start_ns": 925951579384337,
+      "end_ns": 925951585962139,
+      "returncode": 0,
+      "result_return_request_ids": [
+        "237673ba0a3744eaa9c567430bb4ee9f",
+        "43011cbc143c4484bc3e0ccce0d32672",
+        "4d588dd3e3c54ff3bc03e562ef82ec65",
+        "50561c839abe4cb48cce4c28e1751601",
+        "8638053c23d048c99d60c9fbdf526671",
+        "8f1af279eaa744f29667e1cd5dacb984",
+        "bc105f413246448a9cd0f48c5140cf67"
+      ]
+    },
+    {
+      "owner": "smoke-v2-3",
+      "tool_call_id": "call_60cbc12b135b47e2ae1da0cbf1132a65_0",
+      "command": "command -v python pytest flask",
+      "start_ns": 925932918699475,
+      "end_ns": 925932925129197,
+      "returncode": 0,
+      "result_return_request_ids": [
+        "07437f459da642f7aa6d33393bd0c358",
+        "237673ba0a3744eaa9c567430bb4ee9f",
+        "43011cbc143c4484bc3e0ccce0d32672",
+        "4d588dd3e3c54ff3bc03e562ef82ec65",
+        "50561c839abe4cb48cce4c28e1751601",
+        "8638053c23d048c99d60c9fbdf526671",
+        "8a0e8d9d6c1e4fba9f3778829eaaaafd",
+        "8f1af279eaa744f29667e1cd5dacb984",
+        "bc105f413246448a9cd0f48c5140cf67",
+        "d2554b08d9a944f28b1799513a54f52e",
+        "d60c80092b7a47e2a68179923ea15db3"
+      ]
+    },
+    {
+      "owner": "smoke-v2-3",
+      "tool_call_id": "call_07437f459da642f7aa6d33393bd0c358_0",
+      "command": "cat TASK.md",
+      "start_ns": 925943052144447,
+      "end_ns": 925943063423206,
+      "returncode": 0,
+      "result_return_request_ids": [
+        "237673ba0a3744eaa9c567430bb4ee9f",
+        "43011cbc143c4484bc3e0ccce0d32672",
+        "4d588dd3e3c54ff3bc03e562ef82ec65",
+        "50561c839abe4cb48cce4c28e1751601",
+        "8638053c23d048c99d60c9fbdf526671",
+        "8a0e8d9d6c1e4fba9f3778829eaaaafd",
+        "8f1af279eaa744f29667e1cd5dacb984",
+        "bc105f413246448a9cd0f48c5140cf67",
+        "d60c80092b7a47e2a68179923ea15db3"
+      ]
+    },
+    {
+      "owner": "smoke-v2-3",
+      "tool_call_id": "call_50561c839abe4cb48cce4c28e1751601_0",
+      "command": "pytest",
+      "start_ns": 925963015995344,
+      "end_ns": 925963583897230,
+      "returncode": 2,
+      "result_return_request_ids": [
+        "237673ba0a3744eaa9c567430bb4ee9f",
+        "43011cbc143c4484bc3e0ccce0d32672",
+        "4d588dd3e3c54ff3bc03e562ef82ec65",
+        "8638053c23d048c99d60c9fbdf526671",
+        "bc105f413246448a9cd0f48c5140cf67"
+      ]
+    },
+    {
+      "owner": "development-C1",
+      "tool_call_id": "call_041fb534a3ef41b3abadd56ecd6d1f59_0",
+      "command": "timeout 90s FLASK_APP=src/app.py flask routes",
+      "start_ns": 926185829278025,
+      "end_ns": 926185835300793,
+      "returncode": 127,
+      "result_return_request_ids": [
+        "1808811ac94e4ba1a96ba094a02058cb",
+        "5d34e0cf1a7c46d08738dc65aa01e782",
+        "5eb12774175440fcb242fa227a1ec4a8",
+        "62573cfc11cb4dd6945ecbaa34aaea83",
+        "a7412362bc2441dfa1276ed15a0bf0e9",
+        "d18d23c148034a638b64b3d004083101",
+        "ff51da0fc36546bfbe41bf248f09e64c"
+      ]
+    },
+    {
+      "owner": "development-C1",
+      "tool_call_id": "call_dcb2be11ad824c42b72f753f6c5bb00f_0",
+      "command": "timeout 90s FLASK_APP=src/app.py flask routes",
+      "start_ns": 926167881769821,
+      "end_ns": 926167887993881,
+      "returncode": 127,
+      "result_return_request_ids": [
+        "041fb534a3ef41b3abadd56ecd6d1f59",
+        "1808811ac94e4ba1a96ba094a02058cb",
+        "55f0b714faa44db1bfbc68dc72208629",
+        "5d34e0cf1a7c46d08738dc65aa01e782",
+        "5eb12774175440fcb242fa227a1ec4a8",
+        "62573cfc11cb4dd6945ecbaa34aaea83",
+        "a7412362bc2441dfa1276ed15a0bf0e9",
+        "c2849dd0d7824f63ab26eda7d0c4e9dc",
+        "d18d23c148034a638b64b3d004083101",
+        "ff51da0fc36546bfbe41bf248f09e64c"
+      ]
+    },
+    {
+      "owner": "development-C1",
+      "tool_call_id": "call_a0dc2e2d13f74984b5e48a13f95f8e4c_0",
+      "command": "timeout 90s FLASK_APP=src/app.py flask routes",
+      "start_ns": 926132239878609,
+      "end_ns": 926132245794276,
+      "returncode": 127,
+      "result_return_request_ids": [
+        "041fb534a3ef41b3abadd56ecd6d1f59",
+        "1808811ac94e4ba1a96ba094a02058cb",
+        "31aeb289e1a6419fb8670095eb2c534f",
+        "4d5c266a742e479c99dcf20d7846f68d",
+        "55f0b714faa44db1bfbc68dc72208629",
+        "5d34e0cf1a7c46d08738dc65aa01e782",
+        "5eb12774175440fcb242fa227a1ec4a8",
+        "62573cfc11cb4dd6945ecbaa34aaea83",
+        "a7412362bc2441dfa1276ed15a0bf0e9",
+        "b385ddc2da6240b6a60e93d3ef6f136b",
+        "ba7950d17dac4760ae02a43484bbc21a",
+        "c2849dd0d7824f63ab26eda7d0c4e9dc",
+        "d18d23c148034a638b64b3d004083101",
+        "d95e0ac4f9c146d8a13abf173fd1cd58",
+        "dcb2be11ad824c42b72f753f6c5bb00f",
+        "ff51da0fc36546bfbe41bf248f09e64c"
+      ]
+    },
+    {
+      "owner": "development-C1",
+      "tool_call_id": "call_4d5c266a742e479c99dcf20d7846f68d_0",
+      "command": "timeout 90s FLASK_APP=src/app.py flask routes",
+      "start_ns": 926150010501504,
+      "end_ns": 926150020808786,
+      "returncode": 127,
+      "result_return_request_ids": [
+        "041fb534a3ef41b3abadd56ecd6d1f59",
+        "1808811ac94e4ba1a96ba094a02058cb",
+        "31aeb289e1a6419fb8670095eb2c534f",
+        "55f0b714faa44db1bfbc68dc72208629",
+        "5d34e0cf1a7c46d08738dc65aa01e782",
+        "5eb12774175440fcb242fa227a1ec4a8",
+        "62573cfc11cb4dd6945ecbaa34aaea83",
+        "a7412362bc2441dfa1276ed15a0bf0e9",
+        "ba7950d17dac4760ae02a43484bbc21a",
+        "c2849dd0d7824f63ab26eda7d0c4e9dc",
+        "d18d23c148034a638b64b3d004083101",
+        "dcb2be11ad824c42b72f753f6c5bb00f",
+        "ff51da0fc36546bfbe41bf248f09e64c"
+      ]
+    },
+    {
+      "owner": "development-C1",
+      "tool_call_id": "call_62573cfc11cb4dd6945ecbaa34aaea83_0",
+      "command": "timeout 90s FLASK_APP=tests/test_apps/cliapp/app.py flask routes",
+      "start_ns": 926192234788590,
+      "end_ns": 926192245353544,
+      "returncode": 127,
+      "result_return_request_ids": [
+        "1808811ac94e4ba1a96ba094a02058cb",
+        "5d34e0cf1a7c46d08738dc65aa01e782",
+        "5eb12774175440fcb242fa227a1ec4a8",
+        "a7412362bc2441dfa1276ed15a0bf0e9",
+        "d18d23c148034a638b64b3d004083101",
+        "ff51da0fc36546bfbe41bf248f09e64c"
+      ]
+    },
+    {
+      "owner": "development-C1",
+      "tool_call_id": "call_b385ddc2da6240b6a60e93d3ef6f136b_0",
+      "command": "timeout 90s find . -name 'app.py'",
+      "start_ns": 926144187471670,
+      "end_ns": 926144197695901,
+      "returncode": 0,
+      "result_return_request_ids": [
+        "041fb534a3ef41b3abadd56ecd6d1f59",
+        "1808811ac94e4ba1a96ba094a02058cb",
+        "31aeb289e1a6419fb8670095eb2c534f",
+        "4d5c266a742e479c99dcf20d7846f68d",
+        "55f0b714faa44db1bfbc68dc72208629",
+        "5d34e0cf1a7c46d08738dc65aa01e782",
+        "5eb12774175440fcb242fa227a1ec4a8",
+        "62573cfc11cb4dd6945ecbaa34aaea83",
+        "a7412362bc2441dfa1276ed15a0bf0e9",
+        "ba7950d17dac4760ae02a43484bbc21a",
+        "c2849dd0d7824f63ab26eda7d0c4e9dc",
+        "d18d23c148034a638b64b3d004083101",
+        "dcb2be11ad824c42b72f753f6c5bb00f",
+        "ff51da0fc36546bfbe41bf248f09e64c"
+      ]
+    },
+    {
+      "owner": "development-C1",
+      "tool_call_id": "call_1105098f7aeb4cf7a29f7c3a0e88c5e4_0",
+      "command": "timeout 90s find . -name 'app.py'",
+      "start_ns": 926120343960500,
+      "end_ns": 926120354092801,
+      "returncode": 0,
+      "result_return_request_ids": [
+        "041fb534a3ef41b3abadd56ecd6d1f59",
+        "1808811ac94e4ba1a96ba094a02058cb",
+        "31aeb289e1a6419fb8670095eb2c534f",
+        "4d5c266a742e479c99dcf20d7846f68d",
+        "55f0b714faa44db1bfbc68dc72208629",
+        "5d34e0cf1a7c46d08738dc65aa01e782",
+        "5eb12774175440fcb242fa227a1ec4a8",
+        "62573cfc11cb4dd6945ecbaa34aaea83",
+        "77242253edc8407c8d9e8196dac3cefc",
+        "a0dc2e2d13f74984b5e48a13f95f8e4c",
+        "a7412362bc2441dfa1276ed15a0bf0e9",
+        "b385ddc2da6240b6a60e93d3ef6f136b",
+        "ba7950d17dac4760ae02a43484bbc21a",
+        "c2849dd0d7824f63ab26eda7d0c4e9dc",
+        "d18d23c148034a638b64b3d004083101",
+        "d95e0ac4f9c146d8a13abf173fd1cd58",
+        "dcb2be11ad824c42b72f753f6c5bb00f",
+        "ff51da0fc36546bfbe41bf248f09e64c"
+      ]
+    },
+    {
+      "owner": "development-C1",
+      "tool_call_id": "call_80fb877819df431baddb68b0080425ca_0",
+      "command": "timeout 90s python -m flask routes --app src/app.py",
+      "start_ns": 926097117229935,
+      "end_ns": 926097484064479,
+      "returncode": 2,
+      "result_return_request_ids": [
+        "041fb534a3ef41b3abadd56ecd6d1f59",
+        "1105098f7aeb4cf7a29f7c3a0e88c5e4",
+        "1808811ac94e4ba1a96ba094a02058cb",
+        "31aeb289e1a6419fb8670095eb2c534f",
+        "3d7f9ba743bf43848190741720ad2af0",
+        "4d5c266a742e479c99dcf20d7846f68d",
+        "55f0b714faa44db1bfbc68dc72208629",
+        "5d34e0cf1a7c46d08738dc65aa01e782",
+        "5eb12774175440fcb242fa227a1ec4a8",
+        "62573cfc11cb4dd6945ecbaa34aaea83",
+        "6fa13ce387b045f8b8ec32c1430f7644",
+        "70e869fe77c344e5b244cb36dfe520b9",
+        "77242253edc8407c8d9e8196dac3cefc",
+        "a0dc2e2d13f74984b5e48a13f95f8e4c",
+        "a7412362bc2441dfa1276ed15a0bf0e9",
+        "b385ddc2da6240b6a60e93d3ef6f136b",
+        "ba7950d17dac4760ae02a43484bbc21a",
+        "c2849dd0d7824f63ab26eda7d0c4e9dc",
+        "d18d23c148034a638b64b3d004083101",
+        "d95e0ac4f9c146d8a13abf173fd1cd58",
+        "dcb2be11ad824c42b72f753f6c5bb00f",
+        "ff51da0fc36546bfbe41bf248f09e64c"
+      ]
+    },
+    {
+      "owner": "development-C1",
+      "tool_call_id": "call_c2849dd0d7824f63ab26eda7d0c4e9dc_0",
+      "command": "timeout 90s find . -name 'app.py'",
+      "start_ns": 926179968924604,
+      "end_ns": 926179979074315,
+      "returncode": 0,
+      "result_return_request_ids": [
+        "041fb534a3ef41b3abadd56ecd6d1f59",
+        "1808811ac94e4ba1a96ba094a02058cb",
+        "5d34e0cf1a7c46d08738dc65aa01e782",
+        "5eb12774175440fcb242fa227a1ec4a8",
+        "62573cfc11cb4dd6945ecbaa34aaea83",
+        "a7412362bc2441dfa1276ed15a0bf0e9",
+        "d18d23c148034a638b64b3d004083101",
+        "ff51da0fc36546bfbe41bf248f09e64c"
+      ]
+    },
+    {
+      "owner": "development-C1",
+      "tool_call_id": "call_d18d23c148034a638b64b3d004083101_0",
+      "command": "timeout 90s find . -name 'app.py'",
+      "start_ns": 926215598856440,
+      "end_ns": 926215608959621,
+      "returncode": 0,
+      "result_return_request_ids": [
+        "5d34e0cf1a7c46d08738dc65aa01e782",
+        "a7412362bc2441dfa1276ed15a0bf0e9"
+      ]
+    },
+    {
+      "owner": "development-C1",
+      "tool_call_id": "call_c1bb657a261c4fc3bf5d2287b2870f2f_0",
+      "command": "command -v python pytest flask && python -c \"import sys,flask; print(sys.executable); print(sys.prefix); print(flask.__file__)\"",
+      "start_ns": 926085605850646,
+      "end_ns": 926085972627420,
+      "returncode": 0,
+      "result_return_request_ids": [
+        "041fb534a3ef41b3abadd56ecd6d1f59",
+        "1105098f7aeb4cf7a29f7c3a0e88c5e4",
+        "1808811ac94e4ba1a96ba094a02058cb",
+        "31aeb289e1a6419fb8670095eb2c534f",
+        "38fb79bff39d4e51bfef68a146230727",
+        "3d7f9ba743bf43848190741720ad2af0",
+        "4d5c266a742e479c99dcf20d7846f68d",
+        "55f0b714faa44db1bfbc68dc72208629",
+        "5d34e0cf1a7c46d08738dc65aa01e782",
+        "5eb12774175440fcb242fa227a1ec4a8",
+        "62573cfc11cb4dd6945ecbaa34aaea83",
+        "6fa13ce387b045f8b8ec32c1430f7644",
+        "70e869fe77c344e5b244cb36dfe520b9",
+        "77242253edc8407c8d9e8196dac3cefc",
+        "80fb877819df431baddb68b0080425ca",
+        "a0dc2e2d13f74984b5e48a13f95f8e4c",
+        "a7412362bc2441dfa1276ed15a0bf0e9",
+        "b385ddc2da6240b6a60e93d3ef6f136b",
+        "ba7950d17dac4760ae02a43484bbc21a",
+        "c2849dd0d7824f63ab26eda7d0c4e9dc",
+        "d18d23c148034a638b64b3d004083101",
+        "d95e0ac4f9c146d8a13abf173fd1cd58",
+        "dcb2be11ad824c42b72f753f6c5bb00f",
+        "ff51da0fc36546bfbe41bf248f09e64c"
+      ]
+    },
+    {
+      "owner": "development-C1",
+      "tool_call_id": "call_31aeb289e1a6419fb8670095eb2c534f_0",
+      "command": "timeout 90s find . -name 'app.py'",
+      "start_ns": 926161982864492,
+      "end_ns": 926161992976953,
+      "returncode": 0,
+      "result_return_request_ids": [
+        "041fb534a3ef41b3abadd56ecd6d1f59",
+        "1808811ac94e4ba1a96ba094a02058cb",
+        "55f0b714faa44db1bfbc68dc72208629",
+        "5d34e0cf1a7c46d08738dc65aa01e782",
+        "5eb12774175440fcb242fa227a1ec4a8",
+        "62573cfc11cb4dd6945ecbaa34aaea83",
+        "a7412362bc2441dfa1276ed15a0bf0e9",
+        "c2849dd0d7824f63ab26eda7d0c4e9dc",
+        "d18d23c148034a638b64b3d004083101",
+        "dcb2be11ad824c42b72f753f6c5bb00f",
+        "ff51da0fc36546bfbe41bf248f09e64c"
+      ]
+    },
+    {
+      "owner": "development-C1",
+      "tool_call_id": "call_5eb12774175440fcb242fa227a1ec4a8_0",
+      "command": "timeout 90s FLASK_APP=src/app.py flask routes",
+      "start_ns": 926203613930982,
+      "end_ns": 926203620229272,
+      "returncode": 127,
+      "result_return_request_ids": [
+        "5d34e0cf1a7c46d08738dc65aa01e782",
+        "a7412362bc2441dfa1276ed15a0bf0e9",
+        "d18d23c148034a638b64b3d004083101",
+        "ff51da0fc36546bfbe41bf248f09e64c"
+      ]
+    },
+    {
+      "owner": "development-C1",
+      "tool_call_id": "call_d95e0ac4f9c146d8a13abf173fd1cd58_0",
+      "command": "timeout 90s FLASK_APP=tests/test_apps/cliapp/app.py flask routes",
+      "start_ns": 926138628382609,
+      "end_ns": 926138634596208,
+      "returncode": 127,
+      "result_return_request_ids": [
+        "041fb534a3ef41b3abadd56ecd6d1f59",
+        "1808811ac94e4ba1a96ba094a02058cb",
+        "31aeb289e1a6419fb8670095eb2c534f",
+        "4d5c266a742e479c99dcf20d7846f68d",
+        "55f0b714faa44db1bfbc68dc72208629",
+        "5d34e0cf1a7c46d08738dc65aa01e782",
+        "5eb12774175440fcb242fa227a1ec4a8",
+        "62573cfc11cb4dd6945ecbaa34aaea83",
+        "a7412362bc2441dfa1276ed15a0bf0e9",
+        "b385ddc2da6240b6a60e93d3ef6f136b",
+        "ba7950d17dac4760ae02a43484bbc21a",
+        "c2849dd0d7824f63ab26eda7d0c4e9dc",
+        "d18d23c148034a638b64b3d004083101",
+        "dcb2be11ad824c42b72f753f6c5bb00f",
+        "ff51da0fc36546bfbe41bf248f09e64c"
+      ]
+    },
+    {
+      "owner": "development-C1",
+      "tool_call_id": "call_38fb79bff39d4e51bfef68a146230727_0",
+      "command": "timeout 90s flask routes",
+      "start_ns": 926090771808998,
+      "end_ns": 926091138620413,
+      "returncode": 2,
+      "result_return_request_ids": [
+        "041fb534a3ef41b3abadd56ecd6d1f59",
+        "1105098f7aeb4cf7a29f7c3a0e88c5e4",
+        "1808811ac94e4ba1a96ba094a02058cb",
+        "31aeb289e1a6419fb8670095eb2c534f",
+        "3d7f9ba743bf43848190741720ad2af0",
+        "4d5c266a742e479c99dcf20d7846f68d",
+        "55f0b714faa44db1bfbc68dc72208629",
+        "5d34e0cf1a7c46d08738dc65aa01e782",
+        "5eb12774175440fcb242fa227a1ec4a8",
+        "62573cfc11cb4dd6945ecbaa34aaea83",
+        "6fa13ce387b045f8b8ec32c1430f7644",
+        "70e869fe77c344e5b244cb36dfe520b9",
+        "77242253edc8407c8d9e8196dac3cefc",
+        "80fb877819df431baddb68b0080425ca",
+        "a0dc2e2d13f74984b5e48a13f95f8e4c",
+        "a7412362bc2441dfa1276ed15a0bf0e9",
+        "b385ddc2da6240b6a60e93d3ef6f136b",
+        "ba7950d17dac4760ae02a43484bbc21a",
+        "c2849dd0d7824f63ab26eda7d0c4e9dc",
+        "d18d23c148034a638b64b3d004083101",
+        "d95e0ac4f9c146d8a13abf173fd1cd58",
+        "dcb2be11ad824c42b72f753f6c5bb00f",
+        "ff51da0fc36546bfbe41bf248f09e64c"
+      ]
+    },
+    {
+      "owner": "development-C1",
+      "tool_call_id": "call_ff51da0fc36546bfbe41bf248f09e64c_0",
+      "command": "timeout 90s FLASK_APP=tests/test_apps/cliapp/app.py flask routes",
+      "start_ns": 926210004042744,
+      "end_ns": 926210010252704,
+      "returncode": 127,
+      "result_return_request_ids": [
+        "5d34e0cf1a7c46d08738dc65aa01e782",
+        "a7412362bc2441dfa1276ed15a0bf0e9",
+        "d18d23c148034a638b64b3d004083101"
+      ]
+    },
+    {
+      "owner": "development-C1",
+      "tool_call_id": "call_5d34e0cf1a7c46d08738dc65aa01e782_0",
+      "command": "timeout 90s FLASK_APP=src/app.py flask routes",
+      "start_ns": 926221522300414,
+      "end_ns": 926221528434533,
+      "returncode": 127,
+      "result_return_request_ids": [
+        "a7412362bc2441dfa1276ed15a0bf0e9"
+      ]
+    },
+    {
+      "owner": "development-C1",
+      "tool_call_id": "call_1808811ac94e4ba1a96ba094a02058cb_0",
+      "command": "timeout 90s find . -name 'app.py'",
+      "start_ns": 926197796136639,
+      "end_ns": 926197806289030,
+      "returncode": 0,
+      "result_return_request_ids": [
+        "5d34e0cf1a7c46d08738dc65aa01e782",
+        "5eb12774175440fcb242fa227a1ec4a8",
+        "a7412362bc2441dfa1276ed15a0bf0e9",
+        "d18d23c148034a638b64b3d004083101",
+        "ff51da0fc36546bfbe41bf248f09e64c"
+      ]
+    },
+    {
+      "owner": "development-C1",
+      "tool_call_id": "call_77242253edc8407c8d9e8196dac3cefc_0",
+      "command": "timeout 90s FLASK_APP=src/flask/app.py flask routes",
+      "start_ns": 926126459077922,
+      "end_ns": 926126465273401,
+      "returncode": 127,
+      "result_return_request_ids": [
+        "041fb534a3ef41b3abadd56ecd6d1f59",
+        "1808811ac94e4ba1a96ba094a02058cb",
+        "31aeb289e1a6419fb8670095eb2c534f",
+        "4d5c266a742e479c99dcf20d7846f68d",
+        "55f0b714faa44db1bfbc68dc72208629",
+        "5d34e0cf1a7c46d08738dc65aa01e782",
+        "5eb12774175440fcb242fa227a1ec4a8",
+        "62573cfc11cb4dd6945ecbaa34aaea83",
+        "a0dc2e2d13f74984b5e48a13f95f8e4c",
+        "a7412362bc2441dfa1276ed15a0bf0e9",
+        "b385ddc2da6240b6a60e93d3ef6f136b",
+        "ba7950d17dac4760ae02a43484bbc21a",
+        "c2849dd0d7824f63ab26eda7d0c4e9dc",
+        "d18d23c148034a638b64b3d004083101",
+        "d95e0ac4f9c146d8a13abf173fd1cd58",
+        "dcb2be11ad824c42b72f753f6c5bb00f",
+        "ff51da0fc36546bfbe41bf248f09e64c"
+      ]
+    },
+    {
+      "owner": "development-C1",
+      "tool_call_id": "call_ba7950d17dac4760ae02a43484bbc21a_0",
+      "command": "timeout 90s FLASK_APP=tests/test_apps/cliapp/app.py flask routes",
+      "start_ns": 926156438698810,
+      "end_ns": 926156444945410,
+      "returncode": 127,
+      "result_return_request_ids": [
+        "041fb534a3ef41b3abadd56ecd6d1f59",
+        "1808811ac94e4ba1a96ba094a02058cb",
+        "31aeb289e1a6419fb8670095eb2c534f",
+        "55f0b714faa44db1bfbc68dc72208629",
+        "5d34e0cf1a7c46d08738dc65aa01e782",
+        "5eb12774175440fcb242fa227a1ec4a8",
+        "62573cfc11cb4dd6945ecbaa34aaea83",
+        "a7412362bc2441dfa1276ed15a0bf0e9",
+        "c2849dd0d7824f63ab26eda7d0c4e9dc",
+        "d18d23c148034a638b64b3d004083101",
+        "dcb2be11ad824c42b72f753f6c5bb00f",
+        "ff51da0fc36546bfbe41bf248f09e64c"
+      ]
+    },
+    {
+      "owner": "development-C1",
+      "tool_call_id": "call_6fa13ce387b045f8b8ec32c1430f7644_0",
+      "command": "timeout 90s FLASK_APP=app.py flask routes",
+      "start_ns": 926114790890137,
+      "end_ns": 926114801135309,
+      "returncode": 127,
+      "result_return_request_ids": [
+        "041fb534a3ef41b3abadd56ecd6d1f59",
+        "1105098f7aeb4cf7a29f7c3a0e88c5e4",
+        "1808811ac94e4ba1a96ba094a02058cb",
+        "31aeb289e1a6419fb8670095eb2c534f",
+        "4d5c266a742e479c99dcf20d7846f68d",
+        "55f0b714faa44db1bfbc68dc72208629",
+        "5d34e0cf1a7c46d08738dc65aa01e782",
+        "5eb12774175440fcb242fa227a1ec4a8",
+        "62573cfc11cb4dd6945ecbaa34aaea83",
+        "77242253edc8407c8d9e8196dac3cefc",
+        "a0dc2e2d13f74984b5e48a13f95f8e4c",
+        "a7412362bc2441dfa1276ed15a0bf0e9",
+        "b385ddc2da6240b6a60e93d3ef6f136b",
+        "ba7950d17dac4760ae02a43484bbc21a",
+        "c2849dd0d7824f63ab26eda7d0c4e9dc",
+        "d18d23c148034a638b64b3d004083101",
+        "d95e0ac4f9c146d8a13abf173fd1cd58",
+        "dcb2be11ad824c42b72f753f6c5bb00f",
+        "ff51da0fc36546bfbe41bf248f09e64c"
+      ]
+    },
+    {
+      "owner": "development-C1",
+      "tool_call_id": "call_70e869fe77c344e5b244cb36dfe520b9_0",
+      "command": "timeout 90s FLASK_APP=src/app.py flask routes",
+      "start_ns": 926103284134758,
+      "end_ns": 926103290309508,
+      "returncode": 127,
+      "result_return_request_ids": [
+        "041fb534a3ef41b3abadd56ecd6d1f59",
+        "1105098f7aeb4cf7a29f7c3a0e88c5e4",
+        "1808811ac94e4ba1a96ba094a02058cb",
+        "31aeb289e1a6419fb8670095eb2c534f",
+        "3d7f9ba743bf43848190741720ad2af0",
+        "4d5c266a742e479c99dcf20d7846f68d",
+        "55f0b714faa44db1bfbc68dc72208629",
+        "5d34e0cf1a7c46d08738dc65aa01e782",
+        "5eb12774175440fcb242fa227a1ec4a8",
+        "62573cfc11cb4dd6945ecbaa34aaea83",
+        "6fa13ce387b045f8b8ec32c1430f7644",
+        "77242253edc8407c8d9e8196dac3cefc",
+        "a0dc2e2d13f74984b5e48a13f95f8e4c",
+        "a7412362bc2441dfa1276ed15a0bf0e9",
+        "b385ddc2da6240b6a60e93d3ef6f136b",
+        "ba7950d17dac4760ae02a43484bbc21a",
+        "c2849dd0d7824f63ab26eda7d0c4e9dc",
+        "d18d23c148034a638b64b3d004083101",
+        "d95e0ac4f9c146d8a13abf173fd1cd58",
+        "dcb2be11ad824c42b72f753f6c5bb00f",
+        "ff51da0fc36546bfbe41bf248f09e64c"
+      ]
+    },
+    {
+      "owner": "development-C1",
+      "tool_call_id": "call_55f0b714faa44db1bfbc68dc72208629_0",
+      "command": "timeout 90s FLASK_APP=tests/test_apps/cliapp/app.py flask routes",
+      "start_ns": 926174354645073,
+      "end_ns": 926174360842022,
+      "returncode": 127,
+      "result_return_request_ids": [
+        "041fb534a3ef41b3abadd56ecd6d1f59",
+        "1808811ac94e4ba1a96ba094a02058cb",
+        "5d34e0cf1a7c46d08738dc65aa01e782",
+        "5eb12774175440fcb242fa227a1ec4a8",
+        "62573cfc11cb4dd6945ecbaa34aaea83",
+        "a7412362bc2441dfa1276ed15a0bf0e9",
+        "c2849dd0d7824f63ab26eda7d0c4e9dc",
+        "d18d23c148034a638b64b3d004083101",
+        "ff51da0fc36546bfbe41bf248f09e64c"
+      ]
+    },
+    {
+      "owner": "development-C1",
+      "tool_call_id": "call_3d7f9ba743bf43848190741720ad2af0_0",
+      "command": "timeout 90s FLASK_APP=src/app.py flask routes",
+      "start_ns": 926109124570041,
+      "end_ns": 926109130619799,
+      "returncode": 127,
+      "result_return_request_ids": [
+        "041fb534a3ef41b3abadd56ecd6d1f59",
+        "1105098f7aeb4cf7a29f7c3a0e88c5e4",
+        "1808811ac94e4ba1a96ba094a02058cb",
+        "31aeb289e1a6419fb8670095eb2c534f",
+        "4d5c266a742e479c99dcf20d7846f68d",
+        "55f0b714faa44db1bfbc68dc72208629",
+        "5d34e0cf1a7c46d08738dc65aa01e782",
+        "5eb12774175440fcb242fa227a1ec4a8",
+        "62573cfc11cb4dd6945ecbaa34aaea83",
+        "6fa13ce387b045f8b8ec32c1430f7644",
+        "77242253edc8407c8d9e8196dac3cefc",
+        "a0dc2e2d13f74984b5e48a13f95f8e4c",
+        "a7412362bc2441dfa1276ed15a0bf0e9",
+        "b385ddc2da6240b6a60e93d3ef6f136b",
+        "ba7950d17dac4760ae02a43484bbc21a",
+        "c2849dd0d7824f63ab26eda7d0c4e9dc",
+        "d18d23c148034a638b64b3d004083101",
+        "d95e0ac4f9c146d8a13abf173fd1cd58",
+        "dcb2be11ad824c42b72f753f6c5bb00f",
+        "ff51da0fc36546bfbe41bf248f09e64c"
+      ]
+    }
+  ],
+  "scope": "new explicit full-history serial Codex sessions; not a universal Codex protocol acceptance"
+}

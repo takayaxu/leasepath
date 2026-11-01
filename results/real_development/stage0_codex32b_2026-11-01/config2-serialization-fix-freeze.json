@@ -1,0 +1,9 @@
+{
+  "reason": "vLLM rejects empty tools array; omit field for declared text protocol. No model generation occurred in invalid attempt1; budget retained. Protocol/prompt unchanged.",
+  "frozen_at_ns": 925835654283297,
+  "files": {
+    "src/leasepath/codex_protocol.py": "613c1dcc6a9f7f7931e55085335dc45229678606530bbfb948c2002b6086f20a",
+    "scripts/run_codex32b.py": "e25d3fd4a64ea286bc098a0acad2e2a28f5b6045eff0b272745bba0826f1b6df",
+    "tests/test_codex_protocol.py": "94c924a36d6fe7ce8ab789779a6efe4595d15f27b378e1f095a189609bf56738"
+  }
+}

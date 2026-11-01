@@ -1,0 +1,132 @@
+{
+  "scope": "independent_local_issue_file_tests_not_official_SWE_bench_harness",
+  "reference_fix_used": false,
+  "cpu_affinity": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "results": [
+    {
+      "task_id": "pallets__flask-4992",
+      "patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "candidate_apply_returncode": 0,
+      "test_apply_returncode": 0,
+      "apply_errors": "",
+      "candidate_test_changes_excluded": [],
+      "build_returncode": null,
+      "test_returncode": 1,
+      "targets": {
+        "tests/test_config.py::test_config_from_file_toml": [
+          "failed"
+        ]
+      },
+      "counts": {
+        "passed": 18,
+        "failed": 1,
+        "error": 0,
+        "skipped": 0
+      },
+      "command": [
+        "taskset",
+        "-c",
+        "0,1,2,3",
+        "/home/ma-user/work/leasepath/real-development-v1/stage0-20261031-a/environments/flask/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "tests/test_config.py",
+        "--junitxml",
+        "/home/ma-user/work/leasepath/real-development-v1/stage0-20261101-tp2-b/pilot-evaluation/pallets__flask-4992/issue-check.xml",
+        "-W",
+        "ignore:'pkgutil.get_loader' is deprecated:DeprecationWarning",
+        "-W",
+        "ignore:'pkgutil.find_loader' is deprecated:DeprecationWarning"
+      ],
+      "elapsed_s": 0.8010320849716663,
+      "passed": false
+    },
+    {
+      "task_id": "pallets__flask-5063",
+      "patch_sha256": "fd2b9e5c24fe3238a408d994d85831cf22ca0049feef1fa0809fe952c53e0c2d",
+      "candidate_apply_returncode": 0,
+      "test_apply_returncode": 0,
+      "apply_errors": "",
+      "candidate_test_changes_excluded": [],
+      "build_returncode": null,
+      "test_returncode": 1,
+      "targets": {
+        "tests/test_cli.py::TestRoutes::test_subdomain": [
+          "failed"
+        ],
+        "tests/test_cli.py::TestRoutes::test_host": [
+          "failed"
+        ]
+      },
+      "counts": {
+        "passed": 55,
+        "failed": 2,
+        "error": 0,
+        "skipped": 0
+      },
+      "command": [
+        "taskset",
+        "-c",
+        "0,1,2,3",
+        "/home/ma-user/work/leasepath/real-development-v1/stage0-20261031-a/environments/flask/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "tests/test_cli.py",
+        "--junitxml",
+        "/home/ma-user/work/leasepath/real-development-v1/stage0-20261101-tp2-b/pilot-evaluation/pallets__flask-5063/issue-check.xml",
+        "-W",
+        "ignore:'pkgutil.get_loader' is deprecated:DeprecationWarning",
+        "-W",
+        "ignore:'pkgutil.find_loader' is deprecated:DeprecationWarning"
+      ],
+      "elapsed_s": 1.1390841340180486,
+      "passed": false
+    },
+    {
+      "task_id": "pytest-dev__pytest-9359",
+      "patch_sha256": "dc5565d6371ed83a610704d87d54c1b3e2e3f0e5aac11f1b3e9a39787609b3e6",
+      "candidate_apply_returncode": 0,
+      "test_apply_returncode": 0,
+      "apply_errors": "",
+      "candidate_test_changes_excluded": [
+        "testing/test_statement.py"
+      ],
+      "build_returncode": 0,
+      "test_returncode": 1,
+      "targets": {
+        "testing/code/test_source.py::test_decorator": [
+          "failed"
+        ]
+      },
+      "counts": {
+        "passed": 54,
+        "failed": 1,
+        "error": 0,
+        "skipped": 0
+      },
+      "command": [
+        "taskset",
+        "-c",
+        "0,1,2,3",
+        "/home/ma-user/work/leasepath/real-development-v1/stage0-20261031-a/environments/pytest-py39/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "testing/code/test_source.py",
+        "--junitxml",
+        "/home/ma-user/work/leasepath/real-development-v1/stage0-20261101-tp2-b/pilot-evaluation/pytest-dev__pytest-9359/issue-check.xml"
+      ],
+      "elapsed_s": 1.0658265730598941,
+      "passed": false
+    }
+  ],
+  "passed": 0,
+  "total": 3
+}

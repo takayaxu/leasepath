@@ -1,0 +1,10 @@
+{
+  "reason": "Before any alternative generation: local tokenizer eos im_end248046 differs from nested model-config endoftext248044; explicitly freeze both supported end tokens. Earlier draft configuration retained.",
+  "model_generation_attempts_so_far": 0,
+  "interface_unchanged": true,
+  "sha256": {
+    "configs/prediction/real_development_diagnostic_v3_alternative.json": "979dcfd0e236cae227492243d1b33a6496799736fcb1f43efe9fb8c47d6d9241",
+    "scripts/run_stage0_diagnostics_v3.py": "5958b6a8b1fcaa7c365f5aa4e0065fb843e1a05761c68786b99f8aa502d4c90c",
+    "src/leasepath/real_tools_v3.py": "23f4fc604f7c25633eea9bb5c9cd18ce72e2b61f1c93a0069b196071c7aaad6d"
+  }
+}

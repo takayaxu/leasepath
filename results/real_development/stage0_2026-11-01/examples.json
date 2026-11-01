@@ -1,0 +1,52 @@
+[
+  {
+    "scope": "repository_pilot_real_executor_boundaries",
+    "outcome": "U",
+    "owner": "pallets__flask-4992-e8ad2080",
+    "idle_episode_id": "idle-d1f9af292d2d4bc396b172b50ae3227a",
+    "prefix_tokens": 384,
+    "prefix_sha256": "e2cf50bdd1561921ee797c9725678a4e1879c0898d264f8cfc6f7454c2b84e68",
+    "idle_ns": 900510856865651,
+    "tool_end_ns": 900510893042205,
+    "request_ready_ns": 900510897981447,
+    "enqueue_ns": 900510907354986,
+    "lookup_ns": 900510907551187,
+    "tool_end_to_lookup_ms": 14.508982,
+    "cached_tokens_at_next_lookup": 384,
+    "raw_runner": "/home/ma-user/work/leasepath/real-development-v1/stage0-20261101-tp2-b/pilot/pallets__flask-4992/runner.jsonl"
+  },
+  {
+    "scope": "dataset",
+    "run_id": "pallets__flask-4992-e8ad2080",
+    "idle_episode_id": "idle-cc0eaa04f3874c319007c07111f00eaa",
+    "evidence_kind": "measured",
+    "start_ns": 900542507518593,
+    "end_ns": 900542538315840,
+    "duration_ns": 30797247,
+    "outcome": "retire",
+    "reason": "runner_explicitly_discards_context",
+    "demand_request_id": null
+  },
+  {
+    "scope": "controlled-dataset",
+    "run_id": "fork-child",
+    "idle_episode_id": "idle-38329e24ef7b48bd9109c0dfbd03e5dc",
+    "evidence_kind": "measured",
+    "start_ns": 901512762780692,
+    "end_ns": 901512765692554,
+    "duration_ns": 2911862,
+    "outcome": "right_censored",
+    "reason": "runner_and_backend_completed_streams",
+    "demand_request_id": null
+  },
+  {
+    "scope": "controlled_real_lookup_partial_miss_compatibility_check_not_natural_occurrence",
+    "outcome_by_prefix_rule": "U",
+    "prefix_tokens": 14080,
+    "next_cached_tokens": 10240,
+    "prior_release_event": "2a21fc9591ff4ef8a791185aada04447:408",
+    "next_enqueue_event": "2a21fc9591ff4ef8a791185aada04447:472",
+    "next_lookup_ns": 900385438551089,
+    "note": "Full selected prefix requested again despite only a shorter cached prefix remaining."
+  }
+]

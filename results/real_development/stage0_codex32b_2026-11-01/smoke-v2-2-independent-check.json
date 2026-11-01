@@ -1,0 +1,12 @@
+{
+  "scenario": "read-edit-check",
+  "passed": true,
+  "correct_result": {
+    "label": "obs-7bc2e1",
+    "total": 30
+  },
+  "receipt": "verified:bfc35c0cd588",
+  "protected_files_unchanged": true,
+  "actual_shell_executions": 7,
+  "scope": "controlled integration fixture, not benchmark or natural workload"
+}

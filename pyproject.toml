@@ -17,6 +17,7 @@ prediction = ["lightgbm>=4.6,<5"]
 
 [project.entry-points."vllm.general_plugins"]
 leasepath_d2 = "leasepath.d2_probe:register"
+leasepath_real = "leasepath.real_probe:register"
 
 [tool.setuptools.packages.find]
 where = ["src"]

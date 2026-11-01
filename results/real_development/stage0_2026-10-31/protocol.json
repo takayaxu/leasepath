@@ -1,0 +1,98 @@
+{
+  "scope": "client_protocol_capture_only_not_agent_or_backend_acceptance",
+  "command": [
+    "codex",
+    "exec",
+    "--ignore-user-config",
+    "--ephemeral",
+    "--json",
+    "--skip-git-repo-check",
+    "-s",
+    "read-only",
+    "-C",
+    "/home/ma-user/work/leasepath/real-development-v1/stage0-20261031-a/protocol/empty-workspace",
+    "-m",
+    "Qwen2.5-Coder-32B-Instruct",
+    "-c",
+    "model_provider=\"leasepath_stage0\"",
+    "-c",
+    "model_providers.leasepath_stage0.name=\"LeasePath stage0 capture\"",
+    "-c",
+    "model_providers.leasepath_stage0.base_url=\"http://127.0.0.1:43637/v1\"",
+    "-c",
+    "model_providers.leasepath_stage0.wire_api=\"responses\"",
+    "-c",
+    "model_providers.leasepath_stage0.requires_openai_auth=false",
+    "-c",
+    "model_providers.leasepath_stage0.request_max_retries=0",
+    "-c",
+    "model_providers.leasepath_stage0.stream_max_retries=0",
+    "Reply with OK. Do not run tools."
+  ],
+  "codex_returncode": 1,
+  "intentional_server_status": 503,
+  "requests": [
+    {
+      "method": "POST",
+      "path": "/v1/responses",
+      "body_sha256": "4e24e3918172396251f2535efc4ab49f4763bae41b99d60a6bc9dc32a5e8377f",
+      "body_bytes": 39556,
+      "keys": [
+        "client_metadata",
+        "include",
+        "input",
+        "model",
+        "parallel_tool_calls",
+        "prompt_cache_key",
+        "reasoning",
+        "store",
+        "stream",
+        "tool_choice",
+        "tools"
+      ],
+      "stream": true,
+      "model": "Qwen2.5-Coder-32B-Instruct",
+      "tools": [
+        {
+          "type": "function",
+          "name": "exec_command"
+        },
+        {
+          "type": "function",
+          "name": "write_stdin"
+        },
+        {
+          "type": "function",
+          "name": "request_user_input"
+        },
+        {
+          "type": "function",
+          "name": "view_image"
+        },
+        {
+          "type": "namespace",
+          "name": "multi_agent_v1"
+        },
+        {
+          "type": "function",
+          "name": "get_goal"
+        },
+        {
+          "type": "function",
+          "name": "create_goal"
+        },
+        {
+          "type": "function",
+          "name": "update_goal"
+        },
+        {
+          "type": "web_search",
+          "name": null
+        }
+      ]
+    }
+  ],
+  "real_inference_requests": 0,
+  "backend_lookup_events": 0,
+  "tool_loop_verified": false
+}

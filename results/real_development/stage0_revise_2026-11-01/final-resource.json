@@ -1,0 +1,29 @@
+{
+  "observed_at": "2026-11-01T13:09:04.134301+08:00",
+  "NPU_user_processes": 0,
+  "idle_devices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "HBM_note": "about 3.3 GiB/device retained by system",
+  "ipc_before": [
+    "CodeStore-7294e7dbd5f2ac23",
+    "psm_183afd85",
+    "psm_3022b4b9",
+    "psm_715eab6d",
+    "psm_d0ee7e59",
+    "sem.loky-1265923-dyfye_5l",
+    "sem.loky-1265939-qn2w45f9"
+  ],
+  "ipc_after": [
+    "CodeStore-7294e7dbd5f2ac23"
+  ],
+  "new_IPC_names": [],
+  "own_service_stopped": true
+}

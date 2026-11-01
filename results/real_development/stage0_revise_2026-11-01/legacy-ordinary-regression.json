@@ -1,0 +1,9 @@
+{
+  "old_labels": 59,
+  "new_labels": 59,
+  "identical_owner_start_end_outcome": true,
+  "outcome_translation": {
+    "legal_demand": "U",
+    "retire": "D"
+  }
+}

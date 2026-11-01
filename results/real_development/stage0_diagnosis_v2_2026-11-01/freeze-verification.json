@@ -1,0 +1,43 @@
+{
+  "files": [
+    {
+      "path": "revise.md",
+      "unchanged": true
+    },
+    {
+      "path": "configs/prediction/real_development_diagnostic_v3.json",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/run_stage0_diagnostics_v3.py",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/audit_stage0_failure_visibility.py",
+      "unchanged": true
+    },
+    {
+      "path": "src/leasepath/real_tools_v3.py",
+      "unchanged": true
+    },
+    {
+      "path": "src/leasepath/real_environment.py",
+      "unchanged": true
+    },
+    {
+      "path": "src/leasepath/real_patches.py",
+      "unchanged": true
+    },
+    {
+      "path": "src/leasepath/real_projection_v2.py",
+      "unchanged": true
+    },
+    {
+      "path": "tests/test_real_tools_v3.py",
+      "unchanged": true
+    }
+  ],
+  "diagnostics_unchanged": true,
+  "ledger_reservations": 6,
+  "unique_conditions": 6
+}

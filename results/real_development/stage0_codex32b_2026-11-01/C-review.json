@@ -1,0 +1,13 @@
+{
+  "status": "not_accepted_stop_C_branch",
+  "requests_generated": 24,
+  "frontend_attempts": 25,
+  "budget_rejected_before_backend": 1,
+  "production_patch_bytes": 0,
+  "actual_commands": 24,
+  "exit_127_commands": 15,
+  "second_attempt": "not_activated; failure is model command construction/recovery, no identified config or collection defect justifying C2",
+  "D": "not_activated",
+  "JCT": "not_activated",
+  "stage1_started": false
+}

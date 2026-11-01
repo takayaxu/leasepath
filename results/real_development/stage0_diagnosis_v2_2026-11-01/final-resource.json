@@ -1,0 +1,23 @@
+{
+  "observed_at": "2026-11-01T16:10:18.282736+08:00",
+  "idle_devices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "NPU_user_processes": 0,
+  "own_services_stopped": {
+    "stage0-diagnosis-v2-20261101-32b-a": true,
+    "stage0-diagnosis-v2-20261101-alternative-a": true
+  },
+  "remaining_shm_names": [
+    "CodeStore-7294e7dbd5f2ac23"
+  ],
+  "HBM_note": "approximately 3.3 GiB/device system reservation remains",
+  "alternative_checkpoint_note": "probe off: no KV/rank observer checkpoint and no U/D/C acceptance claimed"
+}

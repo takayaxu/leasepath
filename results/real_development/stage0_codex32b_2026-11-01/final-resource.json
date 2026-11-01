@@ -1,0 +1,20 @@
+{
+  "observed_at": "2026-11-01T17:13:02.572065+08:00",
+  "NPU_user_processes": 0,
+  "idle_devices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "own_server_stopped": true,
+  "service_pid": 1885634,
+  "shm_names": [
+    "CodeStore-7294e7dbd5f2ac23"
+  ],
+  "scope": "current resource check, not future reservation"
+}

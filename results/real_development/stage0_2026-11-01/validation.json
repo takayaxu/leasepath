@@ -1,0 +1,26 @@
+{
+  "pytest": {
+    "passed": 139,
+    "log": "pytest.log"
+  },
+  "independent_issue_quality": {
+    "passed": 0,
+    "total": 3,
+    "counts": {
+      "passed": 127,
+      "failed": 4,
+      "error": 0
+    }
+  },
+  "controlled_backend_checks_passed": 16,
+  "allocation_candidate_checks": 204,
+  "complete_backend_streams": 7,
+  "negative_cases_rejected": 4,
+  "historical_hashes_checked": 125,
+  "historical_hash_errors": [],
+  "document_link_errors": [],
+  "git_diff_check_returncode": 0,
+  "local_artifact_files_hashed": 233,
+  "frozen_probe_runs_verified": 6,
+  "stage1_started": false
+}

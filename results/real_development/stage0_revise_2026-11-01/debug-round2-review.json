@@ -1,0 +1,52 @@
+{
+  "round": 2,
+  "configuration": "stage0-remediation-agent-v2",
+  "passed": 0,
+  "results": [
+    {
+      "task_id": "pallets__flask-4992",
+      "exit_status": "LimitsExceeded",
+      "calls": 30,
+      "elapsed_s": 497.2887086259434,
+      "patch_bytes": 1318,
+      "successful_responses": 30,
+      "failed_HTTP_attempts": 0,
+      "finish_reasons": {
+        "stop": 30
+      },
+      "independent_passed": false,
+      "test_returncode": 4
+    },
+    {
+      "task_id": "pallets__flask-5063",
+      "exit_status": "LimitsExceeded",
+      "calls": 30,
+      "elapsed_s": 906.6194811229361,
+      "patch_bytes": 5804,
+      "successful_responses": 30,
+      "failed_HTTP_attempts": 0,
+      "finish_reasons": {
+        "stop": 28,
+        "length": 2
+      },
+      "independent_passed": false,
+      "test_returncode": 4
+    },
+    {
+      "task_id": "pytest-dev__pytest-9359",
+      "exit_status": "LimitsExceeded",
+      "calls": 30,
+      "elapsed_s": 645.9117368820589,
+      "patch_bytes": 951,
+      "successful_responses": 30,
+      "failed_HTTP_attempts": 0,
+      "finish_reasons": {
+        "stop": 30
+      },
+      "independent_passed": false,
+      "test_returncode": 1
+    }
+  ],
+  "decision": "Stop current chain under preregistered maximum two configurations: no stable source repair; new two and fresh final-five acceptance not run, no D measurement, no stage 1.",
+  "all_failures_retained": true
+}

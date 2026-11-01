@@ -1,0 +1,6 @@
+{
+  "reason": "Correctness review: auxiliary purpose cannot suppress actual compatible demand; pending abort can drain after retire; ambiguous unmapped compatible lookup must quarantine label. Original draft retained.",
+  "semantics_sha256": "fa31fdc339eea7bdcaf2ca1af659ace5771e4e130f9e902dc513c8827962741e",
+  "implementation_sha256": "287cae728148247218da7ea8408e5b76a8b63da24e23eb83b057ae103605fcf4",
+  "not_a_quality_gate_or_budget_change": true
+}

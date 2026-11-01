@@ -1,0 +1,30 @@
+{
+  "route": "Codex CLI + pinned 32B, Responses to Chat bridge, no mini-swe",
+  "smoke_configs_max": 2,
+  "smokes_per_config_max": 3,
+  "smoke_max_requests": 12,
+  "smoke_wall_seconds": 600,
+  "output_tokens_per_request": 2048,
+  "context_tokens": 16384,
+  "compaction": "unsupported, explicit failure",
+  "retry_policy": "CLI and gateway 0; duplicate body rejected",
+  "config1": "native Chat tools/Hermes with explicit developer->system, buffered validated SSE",
+  "config2_trigger": "identified protocol-format failure of config1, not ordinary task-quality failure",
+  "required_scenarios": [
+    "read-edit-check",
+    "failing-test-recovery"
+  ],
+  "C_development_source": "pallets__flask-5063",
+  "C_requirement_contract": "original issue and frozen original FAIL_TO_PASS; no API supplementation, no reference fix",
+  "C_max_attempts": 2,
+  "C_max_requests": 24,
+  "C_wall_seconds": 900,
+  "D_conditional_only": [
+    "pallets__flask-4045",
+    "pytest-dev__pytest-5227",
+    "pytest-dev__pytest-5221",
+    "pytest-dev__pytest-11148",
+    "pytest-dev__pytest-5692"
+  ],
+  "JCT": "conditional on B,C,D and data gate; not started"
+}

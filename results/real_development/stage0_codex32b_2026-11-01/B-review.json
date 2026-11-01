@@ -1,0 +1,21 @@
+{
+  "status": "passed_final_configuration_two_distinct_scenarios",
+  "configuration_limit": 2,
+  "configurations_used": 2,
+  "attempt_limit_per_configuration": 3,
+  "attempts_used": {
+    "v1": 1,
+    "v2": 3
+  },
+  "total_attempts": 4,
+  "invalid_attempts_counted": 1,
+  "backend_requests": 21,
+  "actual_shell_calls": 18,
+  "independently_passed_scenarios": [
+    "read-edit-check",
+    "failing-test-recovery"
+  ],
+  "final_protocol": "strict-json-envelope-v1, buffered Responses adapter; CLI executes tools",
+  "native_function_calling": "not_accepted",
+  "counts_as_real_repository_task_success": false
+}

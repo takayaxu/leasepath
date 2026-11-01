@@ -1,0 +1,60 @@
+{
+  "cwd": "/home/ma-user/work/leasepath/real-development-v1/codex32b-20261101-a/development-preparation/workspace",
+  "shell": "/bin/bash -c",
+  "resolved_entries": {
+    "python": "/home/ma-user/work/leasepath/real-development-v1/codex32b-20261101-a/development-preparation/tool-bin/python",
+    "pytest": "/home/ma-user/work/leasepath/real-development-v1/codex32b-20261101-a/development-preparation/tool-bin/pytest",
+    "flask": "/home/ma-user/work/leasepath/real-development-v1/codex32b-20261101-a/development-preparation/tool-bin/flask"
+  },
+  "executable": "/home/ma-user/work/leasepath/real-development-v1/codex32b-20261101-a/development-preparation/environment/bin/python",
+  "prefix": "/home/ma-user/work/leasepath/real-development-v1/codex32b-20261101-a/development-preparation/environment",
+  "source": "/home/ma-user/work/leasepath/real-development-v1/codex32b-20261101-a/development-preparation/workspace/src/flask/__init__.py",
+  "python_version": "3.12.0 | packaged by Anaconda, Inc. | (main, Oct  2 2023, 17:19:42) [GCC 11.2.0]",
+  "dependencies": {
+    "iniconfig": "2.3.1",
+    "pip": "23.2.1",
+    "pluggy": "1.7.0",
+    "toml": "0.10.2",
+    "python-dotenv": "1.0.1",
+    "itsdangerous": "2.1.2",
+    "Werkzeug": "2.3.8",
+    "MarkupSafe": "2.1.5",
+    "packaging": "24.2",
+    "asgiref": "3.7.2",
+    "Jinja2": "3.1.6",
+    "pytest": "7.4.4",
+    "blinker": "1.6.3",
+    "click": "8.1.7"
+  },
+  "dependency_imports": {
+    "click": "/home/ma-user/work/leasepath/real-development-v1/codex32b-20261101-a/development-preparation/environment/lib/python3.12/site-packages/click/__init__.py",
+    "werkzeug": "/home/ma-user/work/leasepath/real-development-v1/codex32b-20261101-a/development-preparation/environment/lib/python3.12/site-packages/werkzeug/__init__.py",
+    "jinja2": "/home/ma-user/work/leasepath/real-development-v1/codex32b-20261101-a/development-preparation/environment/lib/python3.12/site-packages/jinja2/__init__.py"
+  },
+  "PATH": "/home/ma-user/work/leasepath/real-development-v1/codex32b-20261101-a/development-preparation/tool-bin:/usr/bin:/bin",
+  "PYTHONPATH": "/home/ma-user/work/leasepath/real-development-v1/codex32b-20261101-a/development-preparation/workspace/src",
+  "cpu_affinity": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "wrapper_sha256": {
+    "pip": "ec79c7e954488ddc942ea999bea4f4026cdb61bde87a92f17f931ca6d2cce699",
+    "python3": "03c31d39a0fcd81a71db1b296eeb946d62afe600199748472dabe44b4875662f",
+    "rg": "e36d0eb52e70696bdf1781392722e05a21bb91d3b7b762ef5ec20e5df2ec687b",
+    "flask": "84e4daceda65ca9f03eaa0bf2b157a67e0d32fb1944bd28ff5627cceb1cd1914",
+    "py.test": "52c70cdf29996dbc342a0372a538da94a9fef633585a329e3b60ab67fb552771",
+    "python": "03c31d39a0fcd81a71db1b296eeb946d62afe600199748472dabe44b4875662f",
+    "pytest": "52c70cdf29996dbc342a0372a538da94a9fef633585a329e3b60ab67fb552771"
+  },
+  "offline": true,
+  "system_tools": {
+    "git": "/usr/bin/git",
+    "sed": "/usr/bin/sed",
+    "rg": "/home/ma-user/work/leasepath/real-development-v1/codex32b-20261101-a/development-preparation/tool-bin/rg",
+    "find": "/usr/bin/find",
+    "bash": "/usr/bin/bash",
+    "taskset": "/usr/bin/taskset"
+  }
+}

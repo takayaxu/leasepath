@@ -1,0 +1,76 @@
+{
+  "observed_at": "2026-11-01T13:11:02.859573+08:00",
+  "stage": 0,
+  "status": "remediation_reviewed_not_accepted",
+  "decision": "Stop current two-configuration chain; no stage 1",
+  "work_packages": {
+    "A1": "passed_private_tool_environment",
+    "A2": "versioned_controls_implemented_but_repair_behavior_failed",
+    "B": "validated_scope_passed; 185 backend projected, 10 failed frontend attempts unsupported; old B 33 unsupported mappings retained",
+    "C": "failed_bounded_debug_stop_condition",
+    "D": "not_measured_C_prerequisite_not_met"
+  },
+  "debug_rounds": {
+    "v1": {
+      "passed": 0,
+      "total": 3
+    },
+    "v2": {
+      "passed": 0,
+      "total": 3
+    }
+  },
+  "final_five_acceptance": "not_run; prerequisite repair behavior failed",
+  "unused_preregistered_new_tasks": [
+    "pallets__flask-4045",
+    "pytest-dev__pytest-11143"
+  ],
+  "stage1_candidate_tasks_still_unused": 15,
+  "stage1_started": false,
+  "client_attempt_records": 195,
+  "backend_requests": 185,
+  "coverage_status": {
+    "projected": 185,
+    "unsupported": 10
+  },
+  "all_lookup_events_retained": 306,
+  "outcomes": {
+    "D": 11,
+    "U": 172,
+    "C": 1
+  },
+  "unresolved_relations": 0,
+  "controlled": {
+    "backend_requests": 11,
+    "lookup_events": 132,
+    "preemptions": 1,
+    "outcomes": {
+      "D": 4,
+      "U": 5,
+      "C": 1
+    },
+    "scope": "controlled actual inference, not occurrence rates"
+  },
+  "complete_producer_streams": 7,
+  "producer_inventory_before_first_enqueue": true,
+  "block_audit_status": "passed",
+  "capacity_evictions": 504,
+  "active_slots_at_end": 0,
+  "regression_tests_passed": 151,
+  "D1_checks_passed": 50,
+  "event_contract_positive": 8,
+  "event_contract_negative": 16,
+  "historical_hashes_checked": 147,
+  "final_NPU_user_processes": 0,
+  "whole_Agent_JCT_noninferiority": "not_measured",
+  "data_run": "/home/ma-user/work/leasepath/real-development-v1/stage0-revise-20261101-service-a",
+  "legacy_projection": "/home/ma-user/work/leasepath/real-development-v1/stage0-revise-20261101-legacy-v21-final",
+  "pre_registration": "/home/ma-user/work/leasepath/real-development-v1/stage0-revise-20261101-preregistration",
+  "limitations": [
+    "Debug round 1 inherited 10 HTTP400 retries contrary to its manifest; no retrospective retry linkage fabricated.",
+    "v2.1 corrected auxiliary-purpose suppression from preserved draft.",
+    "Two v2 Flask-5063 responses length-capped; budget was not expanded.",
+    "All three v2 candidate production patches fail import with SyntaxError.",
+    "Not natural development sessions; no predictor training or KV policy benefit experiment."
+  ]
+}

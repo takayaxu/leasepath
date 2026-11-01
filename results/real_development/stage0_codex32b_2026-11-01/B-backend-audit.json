@@ -1,0 +1,462 @@
+{
+  "status": "passed",
+  "backend_requests": 21,
+  "actual_prompt_ids_exact": 21,
+  "unique_model_tool_calls": 18,
+  "actual_shell_executions": 18,
+  "unique_returned_tool_results": 18,
+  "frontend_rejected": [
+    {
+      "request_id": "9e595832c0b74e07ab3b3a462cd99455",
+      "status": "frontend_rejected_no_backend",
+      "error": "/home/ma-user/work/leasepath/real-development-v1/codex32b-20261101-a/smoke-v2-1/request-9e595832c0b74e07ab3b3a462cd99455/error.json"
+    }
+  ],
+  "requests": [
+    {
+      "owner": "smoke-v1-1",
+      "request_id": "a1c7f9e437e0432f91277db0c6d4e5ea",
+      "backend_request_id": "chatcmpl-a1c7f9e437e0432f91277db0c6d4e5ea-9b29a67b",
+      "prompt_tokens": 3354,
+      "actual_prompt_ids_exact": true,
+      "schema_transport": "native Chat tools"
+    },
+    {
+      "owner": "smoke-v2-2",
+      "request_id": "384dcf66980f4c438b2147e683655499",
+      "backend_request_id": "chatcmpl-384dcf66980f4c438b2147e683655499-ab59e8b9",
+      "prompt_tokens": 4230,
+      "actual_prompt_ids_exact": true,
+      "schema_transport": "explicit strict JSON"
+    },
+    {
+      "owner": "smoke-v2-2",
+      "request_id": "49886fcbb61d445a993d2daf5ed7f524",
+      "backend_request_id": "chatcmpl-49886fcbb61d445a993d2daf5ed7f524-a93ef4b6",
+      "prompt_tokens": 3435,
+      "actual_prompt_ids_exact": true,
+      "schema_transport": "explicit strict JSON"
+    },
+    {
+      "owner": "smoke-v2-2",
+      "request_id": "7e0da41fa245449ab6555293f41a4289",
+      "backend_request_id": "chatcmpl-7e0da41fa245449ab6555293f41a4289-84541e61",
+      "prompt_tokens": 4378,
+      "actual_prompt_ids_exact": true,
+      "schema_transport": "explicit strict JSON"
+    },
+    {
+      "owner": "smoke-v2-2",
+      "request_id": "8f10f83c43d64ea3b36411e625421cd9",
+      "backend_request_id": "chatcmpl-8f10f83c43d64ea3b36411e625421cd9-9be6492a",
+      "prompt_tokens": 3902,
+      "actual_prompt_ids_exact": true,
+      "schema_transport": "explicit strict JSON"
+    },
+    {
+      "owner": "smoke-v2-2",
+      "request_id": "9cfaf81fbd8e4b76b1d8c4c2be7e525f",
+      "backend_request_id": "chatcmpl-9cfaf81fbd8e4b76b1d8c4c2be7e525f-bc6e0987",
+      "prompt_tokens": 4509,
+      "actual_prompt_ids_exact": true,
+      "schema_transport": "explicit strict JSON"
+    },
+    {
+      "owner": "smoke-v2-2",
+      "request_id": "d959748e72184e65991755f775632a49",
+      "backend_request_id": "chatcmpl-d959748e72184e65991755f775632a49-9431fea8",
+      "prompt_tokens": 4074,
+      "actual_prompt_ids_exact": true,
+      "schema_transport": "explicit strict JSON"
+    },
+    {
+      "owner": "smoke-v2-2",
+      "request_id": "df3e20f4dd854c77aeddc3468b421d67",
+      "backend_request_id": "chatcmpl-df3e20f4dd854c77aeddc3468b421d67-9a6623a7",
+      "prompt_tokens": 4646,
+      "actual_prompt_ids_exact": true,
+      "schema_transport": "explicit strict JSON"
+    },
+    {
+      "owner": "smoke-v2-2",
+      "request_id": "fe1f869260584e5487eb5b8454768ee4",
+      "backend_request_id": "chatcmpl-fe1f869260584e5487eb5b8454768ee4-8c9e09fd",
+      "prompt_tokens": 3685,
+      "actual_prompt_ids_exact": true,
+      "schema_transport": "explicit strict JSON"
+    },
+    {
+      "owner": "smoke-v2-3",
+      "request_id": "07437f459da642f7aa6d33393bd0c358",
+      "backend_request_id": "chatcmpl-07437f459da642f7aa6d33393bd0c358-9bc20f81",
+      "prompt_tokens": 3902,
+      "actual_prompt_ids_exact": true,
+      "schema_transport": "explicit strict JSON"
+    },
+    {
+      "owner": "smoke-v2-3",
+      "request_id": "237673ba0a3744eaa9c567430bb4ee9f",
+      "backend_request_id": "chatcmpl-237673ba0a3744eaa9c567430bb4ee9f-8f393fe3",
+      "prompt_tokens": 5368,
+      "actual_prompt_ids_exact": true,
+      "schema_transport": "explicit strict JSON"
+    },
+    {
+      "owner": "smoke-v2-3",
+      "request_id": "43011cbc143c4484bc3e0ccce0d32672",
+      "backend_request_id": "chatcmpl-43011cbc143c4484bc3e0ccce0d32672-ba1eba23",
+      "prompt_tokens": 6554,
+      "actual_prompt_ids_exact": true,
+      "schema_transport": "explicit strict JSON"
+    },
+    {
+      "owner": "smoke-v2-3",
+      "request_id": "4d588dd3e3c54ff3bc03e562ef82ec65",
+      "backend_request_id": "chatcmpl-4d588dd3e3c54ff3bc03e562ef82ec65-93fe2342",
+      "prompt_tokens": 6165,
+      "actual_prompt_ids_exact": true,
+      "schema_transport": "explicit strict JSON"
+    },
+    {
+      "owner": "smoke-v2-3",
+      "request_id": "50561c839abe4cb48cce4c28e1751601",
+      "backend_request_id": "chatcmpl-50561c839abe4cb48cce4c28e1751601-be28d700",
+      "prompt_tokens": 4719,
+      "actual_prompt_ids_exact": true,
+      "schema_transport": "explicit strict JSON"
+    },
+    {
+      "owner": "smoke-v2-3",
+      "request_id": "60cbc12b135b47e2ae1da0cbf1132a65",
+      "backend_request_id": "chatcmpl-60cbc12b135b47e2ae1da0cbf1132a65-bbadd44c",
+      "prompt_tokens": 3435,
+      "actual_prompt_ids_exact": true,
+      "schema_transport": "explicit strict JSON"
+    },
+    {
+      "owner": "smoke-v2-3",
+      "request_id": "8638053c23d048c99d60c9fbdf526671",
+      "backend_request_id": "chatcmpl-8638053c23d048c99d60c9fbdf526671-9cd88b87",
+      "prompt_tokens": 5515,
+      "actual_prompt_ids_exact": true,
+      "schema_transport": "explicit strict JSON"
+    },
+    {
+      "owner": "smoke-v2-3",
+      "request_id": "8a0e8d9d6c1e4fba9f3778829eaaaafd",
+      "backend_request_id": "chatcmpl-8a0e8d9d6c1e4fba9f3778829eaaaafd-a20196d3",
+      "prompt_tokens": 4079,
+      "actual_prompt_ids_exact": true,
+      "schema_transport": "explicit strict JSON"
+    },
+    {
+      "owner": "smoke-v2-3",
+      "request_id": "8f1af279eaa744f29667e1cd5dacb984",
+      "backend_request_id": "chatcmpl-8f1af279eaa744f29667e1cd5dacb984-9af81df6",
+      "prompt_tokens": 4572,
+      "actual_prompt_ids_exact": true,
+      "schema_transport": "explicit strict JSON"
+    },
+    {
+      "owner": "smoke-v2-3",
+      "request_id": "bc105f413246448a9cd0f48c5140cf67",
+      "backend_request_id": "chatcmpl-bc105f413246448a9cd0f48c5140cf67-8164fbfe",
+      "prompt_tokens": 6312,
+      "actual_prompt_ids_exact": true,
+      "schema_transport": "explicit strict JSON"
+    },
+    {
+      "owner": "smoke-v2-3",
+      "request_id": "d2554b08d9a944f28b1799513a54f52e",
+      "backend_request_id": "chatcmpl-d2554b08d9a944f28b1799513a54f52e-b5a45ab2",
+      "prompt_tokens": 3682,
+      "actual_prompt_ids_exact": true,
+      "schema_transport": "explicit strict JSON"
+    },
+    {
+      "owner": "smoke-v2-3",
+      "request_id": "d60c80092b7a47e2a68179923ea15db3",
+      "backend_request_id": "chatcmpl-d60c80092b7a47e2a68179923ea15db3-b49ebb33",
+      "prompt_tokens": 4429,
+      "actual_prompt_ids_exact": true,
+      "schema_transport": "explicit strict JSON"
+    }
+  ],
+  "executions": [
+    {
+      "owner": "smoke-v2-2",
+      "tool_call_id": "call_384dcf66980f4c438b2147e683655499_0",
+      "command": "echo '{\"label\": \"obs-7bc2e1\", \"total\": 30}' > result.json",
+      "start_ns": 925862358753889,
+      "end_ns": 925862365091049,
+      "returncode": 0,
+      "result_return_request_ids": [
+        "7e0da41fa245449ab6555293f41a4289",
+        "9cfaf81fbd8e4b76b1d8c4c2be7e525f",
+        "df3e20f4dd854c77aeddc3468b421d67"
+      ]
+    },
+    {
+      "owner": "smoke-v2-2",
+      "tool_call_id": "call_49886fcbb61d445a993d2daf5ed7f524_0",
+      "command": "command -v python pytest flask",
+      "start_ns": 925840476966043,
+      "end_ns": 925840483195113,
+      "returncode": 0,
+      "result_return_request_ids": [
+        "384dcf66980f4c438b2147e683655499",
+        "7e0da41fa245449ab6555293f41a4289",
+        "8f10f83c43d64ea3b36411e625421cd9",
+        "9cfaf81fbd8e4b76b1d8c4c2be7e525f",
+        "d959748e72184e65991755f775632a49",
+        "df3e20f4dd854c77aeddc3468b421d67",
+        "fe1f869260584e5487eb5b8454768ee4"
+      ]
+    },
+    {
+      "owner": "smoke-v2-2",
+      "tool_call_id": "call_9cfaf81fbd8e4b76b1d8c4c2be7e525f_0",
+      "command": "cat receipt.txt",
+      "start_ns": 925871016319978,
+      "end_ns": 925871022422336,
+      "returncode": 0,
+      "result_return_request_ids": [
+        "df3e20f4dd854c77aeddc3468b421d67"
+      ]
+    },
+    {
+      "owner": "smoke-v2-2",
+      "tool_call_id": "call_d959748e72184e65991755f775632a49_0",
+      "command": "cat input.json",
+      "start_ns": 925855147395866,
+      "end_ns": 925855153703746,
+      "returncode": 0,
+      "result_return_request_ids": [
+        "384dcf66980f4c438b2147e683655499",
+        "7e0da41fa245449ab6555293f41a4289",
+        "9cfaf81fbd8e4b76b1d8c4c2be7e525f",
+        "df3e20f4dd854c77aeddc3468b421d67"
+      ]
+    },
+    {
+      "owner": "smoke-v2-2",
+      "tool_call_id": "call_8f10f83c43d64ea3b36411e625421cd9_0",
+      "command": "cat TASK.md",
+      "start_ns": 925850869358921,
+      "end_ns": 925850875653101,
+      "returncode": 0,
+      "result_return_request_ids": [
+        "384dcf66980f4c438b2147e683655499",
+        "7e0da41fa245449ab6555293f41a4289",
+        "9cfaf81fbd8e4b76b1d8c4c2be7e525f",
+        "d959748e72184e65991755f775632a49",
+        "df3e20f4dd854c77aeddc3468b421d67"
+      ]
+    },
+    {
+      "owner": "smoke-v2-2",
+      "tool_call_id": "call_fe1f869260584e5487eb5b8454768ee4_0",
+      "command": "python -c \"import sys; print(sys.executable); print(sys.prefix)\"",
+      "start_ns": 925846562206684,
+      "end_ns": 925846596717399,
+      "returncode": 0,
+      "result_return_request_ids": [
+        "384dcf66980f4c438b2147e683655499",
+        "7e0da41fa245449ab6555293f41a4289",
+        "8f10f83c43d64ea3b36411e625421cd9",
+        "9cfaf81fbd8e4b76b1d8c4c2be7e525f",
+        "d959748e72184e65991755f775632a49",
+        "df3e20f4dd854c77aeddc3468b421d67"
+      ]
+    },
+    {
+      "owner": "smoke-v2-2",
+      "tool_call_id": "call_7e0da41fa245449ab6555293f41a4289_0",
+      "command": "python check.py",
+      "start_ns": 925866636791854,
+      "end_ns": 925866703231983,
+      "returncode": 0,
+      "result_return_request_ids": [
+        "9cfaf81fbd8e4b76b1d8c4c2be7e525f",
+        "df3e20f4dd854c77aeddc3468b421d67"
+      ]
+    },
+    {
+      "owner": "smoke-v2-3",
+      "tool_call_id": "call_237673ba0a3744eaa9c567430bb4ee9f_0",
+      "command": "echo 'def clamp(value, lower, upper):\\n    return max(lower, min(value, upper))' > helper.py",
+      "start_ns": 925971058752203,
+      "end_ns": 925971065031333,
+      "returncode": 0,
+      "result_return_request_ids": [
+        "43011cbc143c4484bc3e0ccce0d32672",
+        "4d588dd3e3c54ff3bc03e562ef82ec65",
+        "8638053c23d048c99d60c9fbdf526671",
+        "bc105f413246448a9cd0f48c5140cf67"
+      ]
+    },
+    {
+      "owner": "smoke-v2-3",
+      "tool_call_id": "call_4d588dd3e3c54ff3bc03e562ef82ec65_0",
+      "command": "echo -e 'def clamp(value, lower, upper):\\n    return max(lower, min(value, upper))' > helper.py",
+      "start_ns": 925983402765962,
+      "end_ns": 925983409155693,
+      "returncode": 0,
+      "result_return_request_ids": [
+        "43011cbc143c4484bc3e0ccce0d32672",
+        "bc105f413246448a9cd0f48c5140cf67"
+      ]
+    },
+    {
+      "owner": "smoke-v2-3",
+      "tool_call_id": "call_d2554b08d9a944f28b1799513a54f52e_0",
+      "command": "python -c \"import sys; print(sys.executable); print(sys.prefix)\"",
+      "start_ns": 925938860195128,
+      "end_ns": 925938894581152,
+      "returncode": 0,
+      "result_return_request_ids": [
+        "07437f459da642f7aa6d33393bd0c358",
+        "237673ba0a3744eaa9c567430bb4ee9f",
+        "43011cbc143c4484bc3e0ccce0d32672",
+        "4d588dd3e3c54ff3bc03e562ef82ec65",
+        "50561c839abe4cb48cce4c28e1751601",
+        "8638053c23d048c99d60c9fbdf526671",
+        "8a0e8d9d6c1e4fba9f3778829eaaaafd",
+        "8f1af279eaa744f29667e1cd5dacb984",
+        "bc105f413246448a9cd0f48c5140cf67",
+        "d60c80092b7a47e2a68179923ea15db3"
+      ]
+    },
+    {
+      "owner": "smoke-v2-3",
+      "tool_call_id": "call_bc105f413246448a9cd0f48c5140cf67_0",
+      "command": "pytest",
+      "start_ns": 925987373079854,
+      "end_ns": 925987739881358,
+      "returncode": 0,
+      "result_return_request_ids": [
+        "43011cbc143c4484bc3e0ccce0d32672"
+      ]
+    },
+    {
+      "owner": "smoke-v2-3",
+      "tool_call_id": "call_8f1af279eaa744f29667e1cd5dacb984_0",
+      "command": "echo 'def clamp(value, lower, upper):\\n    return max(lower, min(value, upper))' > helper.py",
+      "start_ns": 925959038371273,
+      "end_ns": 925959044532422,
+      "returncode": 0,
+      "result_return_request_ids": [
+        "237673ba0a3744eaa9c567430bb4ee9f",
+        "43011cbc143c4484bc3e0ccce0d32672",
+        "4d588dd3e3c54ff3bc03e562ef82ec65",
+        "50561c839abe4cb48cce4c28e1751601",
+        "8638053c23d048c99d60c9fbdf526671",
+        "bc105f413246448a9cd0f48c5140cf67"
+      ]
+    },
+    {
+      "owner": "smoke-v2-3",
+      "tool_call_id": "call_8a0e8d9d6c1e4fba9f3778829eaaaafd_0",
+      "command": "pytest",
+      "start_ns": 925946956654045,
+      "end_ns": 925947373518197,
+      "returncode": 1,
+      "result_return_request_ids": [
+        "237673ba0a3744eaa9c567430bb4ee9f",
+        "43011cbc143c4484bc3e0ccce0d32672",
+        "4d588dd3e3c54ff3bc03e562ef82ec65",
+        "50561c839abe4cb48cce4c28e1751601",
+        "8638053c23d048c99d60c9fbdf526671",
+        "8f1af279eaa744f29667e1cd5dacb984",
+        "bc105f413246448a9cd0f48c5140cf67",
+        "d60c80092b7a47e2a68179923ea15db3"
+      ]
+    },
+    {
+      "owner": "smoke-v2-3",
+      "tool_call_id": "call_8638053c23d048c99d60c9fbdf526671_0",
+      "command": "pytest",
+      "start_ns": 925975101057519,
+      "end_ns": 925975668141389,
+      "returncode": 2,
+      "result_return_request_ids": [
+        "43011cbc143c4484bc3e0ccce0d32672",
+        "4d588dd3e3c54ff3bc03e562ef82ec65",
+        "bc105f413246448a9cd0f48c5140cf67"
+      ]
+    },
+    {
+      "owner": "smoke-v2-3",
+      "tool_call_id": "call_d60c80092b7a47e2a68179923ea15db3_0",
+      "command": "cat helper.py",
+      "start_ns": 925951579384337,
+      "end_ns": 925951585962139,
+      "returncode": 0,
+      "result_return_request_ids": [
+        "237673ba0a3744eaa9c567430bb4ee9f",
+        "43011cbc143c4484bc3e0ccce0d32672",
+        "4d588dd3e3c54ff3bc03e562ef82ec65",
+        "50561c839abe4cb48cce4c28e1751601",
+        "8638053c23d048c99d60c9fbdf526671",
+        "8f1af279eaa744f29667e1cd5dacb984",
+        "bc105f413246448a9cd0f48c5140cf67"
+      ]
+    },
+    {
+      "owner": "smoke-v2-3",
+      "tool_call_id": "call_60cbc12b135b47e2ae1da0cbf1132a65_0",
+      "command": "command -v python pytest flask",
+      "start_ns": 925932918699475,
+      "end_ns": 925932925129197,
+      "returncode": 0,
+      "result_return_request_ids": [
+        "07437f459da642f7aa6d33393bd0c358",
+        "237673ba0a3744eaa9c567430bb4ee9f",
+        "43011cbc143c4484bc3e0ccce0d32672",
+        "4d588dd3e3c54ff3bc03e562ef82ec65",
+        "50561c839abe4cb48cce4c28e1751601",
+        "8638053c23d048c99d60c9fbdf526671",
+        "8a0e8d9d6c1e4fba9f3778829eaaaafd",
+        "8f1af279eaa744f29667e1cd5dacb984",
+        "bc105f413246448a9cd0f48c5140cf67",
+        "d2554b08d9a944f28b1799513a54f52e",
+        "d60c80092b7a47e2a68179923ea15db3"
+      ]
+    },
+    {
+      "owner": "smoke-v2-3",
+      "tool_call_id": "call_07437f459da642f7aa6d33393bd0c358_0",
+      "command": "cat TASK.md",
+      "start_ns": 925943052144447,
+      "end_ns": 925943063423206,
+      "returncode": 0,
+      "result_return_request_ids": [
+        "237673ba0a3744eaa9c567430bb4ee9f",
+        "43011cbc143c4484bc3e0ccce0d32672",
+        "4d588dd3e3c54ff3bc03e562ef82ec65",
+        "50561c839abe4cb48cce4c28e1751601",
+        "8638053c23d048c99d60c9fbdf526671",
+        "8a0e8d9d6c1e4fba9f3778829eaaaafd",
+        "8f1af279eaa744f29667e1cd5dacb984",
+        "bc105f413246448a9cd0f48c5140cf67",
+        "d60c80092b7a47e2a68179923ea15db3"
+      ]
+    },
+    {
+      "owner": "smoke-v2-3",
+      "tool_call_id": "call_50561c839abe4cb48cce4c28e1751601_0",
+      "command": "pytest",
+      "start_ns": 925963015995344,
+      "end_ns": 925963583897230,
+      "returncode": 2,
+      "result_return_request_ids": [
+        "237673ba0a3744eaa9c567430bb4ee9f",
+        "43011cbc143c4484bc3e0ccce0d32672",
+        "4d588dd3e3c54ff3bc03e562ef82ec65",
+        "8638053c23d048c99d60c9fbdf526671",
+        "bc105f413246448a9cd0f48c5140cf67"
+      ]
+    }
+  ],
+  "scope": "new explicit full-history serial Codex sessions; not a universal Codex protocol acceptance"
+}

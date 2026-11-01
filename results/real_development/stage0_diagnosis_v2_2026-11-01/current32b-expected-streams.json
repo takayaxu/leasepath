@@ -1,0 +1,57 @@
+{
+  "stream_ids": [
+    "764c55eb33f2456e85b00776177be811",
+    "efe8bae0a2814ba4bd9beb93474cb4e7",
+    "5351544c0c7049218ba8cb5408a6b5a4",
+    "3131cab40ba540bfae5dce6c13636ef1",
+    "73e33ddf19244d7c8ec0d7153e9ccd63",
+    "488f589b10d54ced8a0a726935e4a247",
+    "edc706a5318f4b34905cb5b06163f14b"
+  ],
+  "captured_monotonic_ns": 921379408617540,
+  "scope": "after healthy TP startup before requests",
+  "producers": [
+    {
+      "stream_id": "764c55eb33f2456e85b00776177be811",
+      "pid": 1728919,
+      "source": "engine",
+      "rank": null
+    },
+    {
+      "stream_id": "efe8bae0a2814ba4bd9beb93474cb4e7",
+      "pid": 1729611,
+      "source": "engine",
+      "rank": null
+    },
+    {
+      "stream_id": "5351544c0c7049218ba8cb5408a6b5a4",
+      "pid": 1730616,
+      "source": "engine",
+      "rank": null
+    },
+    {
+      "stream_id": "3131cab40ba540bfae5dce6c13636ef1",
+      "pid": 1731275,
+      "source": "engine",
+      "rank": null
+    },
+    {
+      "stream_id": "73e33ddf19244d7c8ec0d7153e9ccd63",
+      "pid": 1731278,
+      "source": "engine",
+      "rank": null
+    },
+    {
+      "stream_id": "488f589b10d54ced8a0a726935e4a247",
+      "pid": 1731275,
+      "source": "rank",
+      "rank": 0
+    },
+    {
+      "stream_id": "edc706a5318f4b34905cb5b06163f14b",
+      "pid": 1731278,
+      "source": "rank",
+      "rank": 1
+    }
+  ]
+}

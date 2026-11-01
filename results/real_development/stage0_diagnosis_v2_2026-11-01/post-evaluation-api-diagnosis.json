@@ -1,0 +1,66 @@
+[
+  {
+    "run": "stage0-diagnosis-v2-20261101-32b-a",
+    "scope": "supplemental post-evaluation API diagnosis; not used to change gate or model prompt",
+    "cases": [
+      {
+        "kwargs": {},
+        "exception": "ValueError",
+        "message": "Must have exactly one of create/read/write/append mode and at most one plus"
+      },
+      {
+        "kwargs": {
+          "mode": "b"
+        },
+        "exception": "ValueError",
+        "message": "Must have exactly one of create/read/write/append mode and at most one plus"
+      },
+      {
+        "kwargs": {
+          "mode": "rb"
+        },
+        "loaded": true,
+        "value": 7
+      },
+      {
+        "kwargs": {
+          "text": false
+        },
+        "exception": "TypeError",
+        "message": "Config.from_file() got an unexpected keyword argument 'text'"
+      }
+    ]
+  },
+  {
+    "run": "stage0-diagnosis-v2-20261101-alternative-a",
+    "scope": "supplemental post-evaluation API diagnosis; not used to change gate or model prompt",
+    "cases": [
+      {
+        "kwargs": {},
+        "exception": "TypeError",
+        "message": "File must be opened in binary mode, e.g. use `open('foo.toml', 'rb')`"
+      },
+      {
+        "kwargs": {
+          "mode": "b"
+        },
+        "exception": "ValueError",
+        "message": "Must have exactly one of create/read/write/append mode and at most one plus"
+      },
+      {
+        "kwargs": {
+          "mode": "rb"
+        },
+        "loaded": true,
+        "value": 7
+      },
+      {
+        "kwargs": {
+          "text": false
+        },
+        "exception": "TypeError",
+        "message": "Config.from_file() got an unexpected keyword argument 'text'"
+      }
+    ]
+  }
+]

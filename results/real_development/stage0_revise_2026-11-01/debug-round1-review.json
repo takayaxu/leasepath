@@ -1,0 +1,53 @@
+{
+  "round": 1,
+  "configuration": "stage0-remediation-agent-v1",
+  "passed": 0,
+  "results": [
+    {
+      "task_id": "pallets__flask-4992",
+      "exit_status": "LimitsExceeded",
+      "calls": 30,
+      "elapsed_s": 206.09326460701413,
+      "patch_bytes": 834,
+      "successful_responses": 30,
+      "error_requests": 0,
+      "finish_reasons": [
+        "stop"
+      ],
+      "independent_passed": false
+    },
+    {
+      "task_id": "pallets__flask-5063",
+      "exit_status": "LimitsExceeded",
+      "calls": 30,
+      "elapsed_s": 95.51852418005001,
+      "patch_bytes": 0,
+      "successful_responses": 30,
+      "error_requests": 0,
+      "finish_reasons": [
+        "stop"
+      ],
+      "independent_passed": false
+    },
+    {
+      "task_id": "pytest-dev__pytest-9359",
+      "exit_status": "HTTPError",
+      "calls": 25,
+      "elapsed_s": 455.64197136298753,
+      "patch_bytes": 0,
+      "successful_responses": 24,
+      "error_requests": 10,
+      "finish_reasons": [
+        "stop"
+      ],
+      "independent_passed": false
+    }
+  ],
+  "decision": "Use second and final bounded configuration adjustment, with unchanged model/step/output budgets. No new validation issues or D measurement yet.",
+  "findings": [
+    "Production syntax failure after blind multi-line sed; no-op retries did not expose zero diff.",
+    "Cycling guessed grep symbols/paths evades consecutive-identical-command guard.",
+    "Broad unrelated test output overflowed context; all successful responses stopped normally, so increasing output tokens is not justified.",
+    "mini-swe inherited retry wrapper made 10 HTTP400 attempts despite manifest no-retry statement; failed attempts retained and not counted as successful engine requests."
+  ]
+}

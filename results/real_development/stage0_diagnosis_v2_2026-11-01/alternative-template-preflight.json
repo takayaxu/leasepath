@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "inference_calls": 0,
+  "templated_token_count": 27,
+  "frontend_tokens_exact_match": true,
+  "template_sha256": "c3cf9e34abf4f9e36c2d72165aa9c132d3e2a725b6c2586aaa3a8af9d7a81041",
+  "rendered_prompt": "<|im_start|>system\nReturn exactly one JSON action.<|im_end|>\n<|im_start|>user\nTemplate boundary check.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+  "tokenizer_eos": 248046,
+  "explicit_stop_token_ids": [
+    248046,
+    248044
+  ],
+  "chat_template_kwargs": {
+    "enable_thinking": false
+  },
+  "config_sha256": "979dcfd0e236cae227492243d1b33a6496799736fcb1f43efe9fb8c47d6d9241",
+  "scope": "input template boundary check, no capability score and no backend request"
+}

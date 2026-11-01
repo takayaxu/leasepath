@@ -1,0 +1,11 @@
+{
+  "reason": "config1 raw whole-response JSON without native tags, no tools executed; switch to declared strict whole-response envelope",
+  "reserved_before_generation_ns": 925731190406357,
+  "files": {
+    "src/leasepath/codex_protocol.py": "36e6051fffe697597e84b108f03a03f0825bd99b31e9785142061b142e101a46",
+    "scripts/run_codex32b.py": "cb560435dcb4043512cd4e383ddbd5d88a5ba825fac90bad72827cc00061b410",
+    "scripts/codex32b_shell.py": "d8c12d6eea403bf547ae74acd6062d74f20773b38ba27e385a00feb064d6b7a3",
+    "tests/test_codex_protocol.py": "74f839672c62327c82a381fb34ea4e32bb5012323c004663b598bdd48ab14dba",
+    "configs/prediction/real_development_codex32b_v2.json": "432dd7209deb1e48065647eb9a92a2bc72611f84d69bb5020490a427c50b80ce"
+  }
+}

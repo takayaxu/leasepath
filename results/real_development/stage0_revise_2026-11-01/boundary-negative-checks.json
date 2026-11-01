@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "results": [
+    {
+      "case": "missing_producer",
+      "rejected": true,
+      "reason": "missing, duplicate, or unexpected stream"
+    },
+    {
+      "case": "missing_terminal",
+      "rejected": true,
+      "reason": "no complete boundary; cannot support C"
+    },
+    {
+      "case": "mixed_boot",
+      "rejected": true,
+      "reason": "missing or mixed run/boot identity"
+    },
+    {
+      "case": "missing_rank_checkpoint",
+      "rejected": true,
+      "reason": "missing drained TP checkpoint"
+    },
+    {
+      "case": "undrained_engine_checkpoint",
+      "rejected": true,
+      "reason": "missing drained TP checkpoint"
+    }
+  ]
+}

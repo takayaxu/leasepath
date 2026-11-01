@@ -1,0 +1,52 @@
+{
+  "observed_at": "2026-11-01T16:11:12.793043+08:00",
+  "stage": 0,
+  "plan": "revise_v2_2026-11-01",
+  "status": "bounded_diagnostic_round_completed_not_accepted",
+  "current_32b_L1": {
+    "passed": 0,
+    "total": 3,
+    "L2": "not_run_L1_gate_failed",
+    "L3": "not_run_L1_gate_failed"
+  },
+  "alternative_27b_L1": {
+    "passed": 0,
+    "total": 3,
+    "syntax_passed": 3,
+    "L2": "not_run_L1_gate_failed",
+    "L3": "not_run_L1_gate_failed"
+  },
+  "attempts_consumed": 6,
+  "maximum_diagnostic_attempts": 21,
+  "independent_source_groups": 3,
+  "decision": "Stop both L1 branches; no further automatic model/interface changes in this round. New five and JCT not activated, stage1 not started.",
+  "old_chain_unchanged": "v1 and v2 debug 0/3 each; old failures preserved",
+  "new_interface": "paged source/output + exact edits + automatic syntax + pre-request token reservation + no HTTP retries + all invalid responses preserved",
+  "template_audit_old_requests": 90,
+  "old_backend_prompt_tokens_exactly_matched": true,
+  "new_current_backend_requests": 3,
+  "new_current_lookup_events": 3,
+  "new_current_outcomes": {
+    "D": 3
+  },
+  "current_projection_independent": "passed",
+  "alternative_backend_projection": "NOT_AVAILABLE; offline local capability reference only, no U/D/C claims",
+  "final_new_five": "preselected only; not prepared or executed",
+  "final_autonomous_quality": "not_measured",
+  "research_load_coverage": "local single-response assisted edits only, sequential; no natural sessions, autonomous tools, long tests or dependencies observed",
+  "Agent_JCT_noninferiority": "not_measured_no_stable_chain",
+  "stage1_started": false,
+  "all_15_stage1_candidates_unexecuted": true,
+  "regression_tests_passed": 156,
+  "historical_artifact_hashes_checked": 181,
+  "own_services_stopped": true,
+  "NPU_user_processes": 0,
+  "limits": [
+    "One-call assisted L1; cannot infer L2/L3 recovery or autonomous ability.",
+    "Model/template/architecture differ; no size-only or interface-only causal claim.",
+    "Flask target also tests canonical text=False API absent from issue example; API mismatch and supplemental mode=rb success reported without changing gate.",
+    "All six responses stopped normally; no output truncation or context-budget stops in these new attempts.",
+    "Original models may have seen public benchmark issues; no generalization or unseen acceptance claim.",
+    "Alternative candidate native-tool receipt was misattributed; evidence audit corrected, only prior chat/concurrency verified. No specialized code/native-tool benchmark established before selection."
+  ]
+}

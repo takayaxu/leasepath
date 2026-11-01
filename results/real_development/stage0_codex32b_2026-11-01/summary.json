@@ -1,0 +1,79 @@
+{
+  "observed_at": "2026-11-01T17:20:24.287412+08:00",
+  "stage": 0,
+  "route": "Codex CLI 0.166.0 + pinned Qwen2.5-Coder-32B-Instruct + local vLLM-Ascend",
+  "status": "bounded_round_completed_protocol_passed_development_failed_not_accepted",
+  "A": "CPU protocol/identity/environment review completed",
+  "B": {
+    "passed": true,
+    "configuration": "v2 strict declared whole-response JSON; not native function calling",
+    "distinct_scenarios_passed": 2,
+    "attempts": 4,
+    "configurations": 2,
+    "invalid_infrastructure_attempts_preserved": 1
+  },
+  "C": {
+    "passed": 0,
+    "total": 1,
+    "source_group": "pallets__flask-5063",
+    "assistance": "explicit output contract disclosed before generation; development source, not unseen acceptance",
+    "attempts": 1,
+    "model_requests": 24,
+    "HTTP_attempts": 25,
+    "patch_bytes": 0,
+    "independent_tests": {
+      "passed": 55,
+      "failed": 2
+    },
+    "exit_127_commands": 15,
+    "decision": "stop; no configuration/collection defect justifying second attempt"
+  },
+  "D_new_five": "not_prepared_or_executed_C_gate_failed",
+  "all_stage1_candidates_unexecuted": true,
+  "whole_Agent_JCT": "not_measured_C_gate_failed",
+  "stage1_started": false,
+  "live_HTTP_attempts": 47,
+  "live_backend_requests": 45,
+  "live_backend_prompt_ids_exact": 45,
+  "actual_shell_calls": 42,
+  "unique_results_attached_by_CLI": 42,
+  "unique_results_into_backend": 41,
+  "last_result_not_forwarded": "C attempted request25 rejected before enqueue due request budget",
+  "frontend_errors_without_backend": 2,
+  "projection_coverage": {
+    "projected": 45,
+    "unsupported": 1
+  },
+  "pre_ready_budget_rejection_separately_preserved": 1,
+  "label_outcomes": {
+    "U": 41,
+    "D": 4,
+    "C": 0
+  },
+  "unresolved_relations": 0,
+  "all_lookup_events": 45,
+  "scope": "serial explicit-full-history integration/development diagnostic only; not natural-workflow prevalence",
+  "unsupported_or_untested": [
+    "native tool calling",
+    "context compression/restore/fork",
+    "auxiliary reasoning requests",
+    "CLI retry/cancel recovery",
+    "long-running/background process polling",
+    "write_stdin and non-shell tools",
+    "shared-owner/concurrent Codex sessions",
+    "whole-Agent JCT and natural sessions"
+  ],
+  "regression_tests_passed": 180,
+  "historical_small_artifact_hashes_verified": 218,
+  "own_service_stopped": true,
+  "NPU_user_processes": 0,
+  "old_chain_and_diagnostic_results_unchanged": true,
+  "committed_or_pushed": false,
+  "evidence_root": "/home/ma-user/work/leasepath/real-development-v1/codex32b-20261101-a",
+  "service_root": "/home/ma-user/work/leasepath/real-development-v1/codex32b-20261101-service-a",
+  "next_round_objects_for_review_only": [
+    "shell command construction and repeated error recovery",
+    "generic prompt/tool-schema suitability versus model configuration; no single-factor attribution",
+    "new bounded preregistration required for any further experimental condition"
+  ]
+}

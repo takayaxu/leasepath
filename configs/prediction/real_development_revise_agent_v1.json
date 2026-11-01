@@ -1,0 +1,23 @@
+{
+  "version": "stage0-remediation-agent-v1",
+  "phase": "original_three_debug_round1",
+  "model": "Qwen2.5-Coder-32B-Instruct",
+  "temperature": 0,
+  "seed": 23,
+  "max_tokens": 768,
+  "step_limit": 30,
+  "wall_seconds": 900,
+  "tool_seconds": 90,
+  "identical_command_no_progress_feedback_at": 3,
+  "identical_command_no_progress_stop_at": 6,
+  "submission_feedback_limit": 1,
+  "maximum_debug_configurations": 2,
+  "quality_gate_frozen_before_runs": {
+    "same_final_config_passed_of_five": 3,
+    "minimum_successful_repositories": 2,
+    "new_two_passed": 1,
+    "all_fail_to_pass_and_related_file_regressions": true
+  },
+  "system_template": "You are fixing the implementation of the library in THIS checkout. The issue describes library behavior, not an application to create. Work only in this repository. Source is in src/, tests in tests/ or testing/. Do not guess filenames: first list/search the repository and READ the relevant implementation with sed or python. Reproduce the reported behavior without changing its preconditions. Then edit the production implementation, run relevant tests with python -m pytest, and inspect git diff. Do not change a reproducer's assertion or inputs to make the bug disappear. Do not replace a library fix with a standalone application. You may add regression tests, but independent tests will decide correctness.\nThe shell has private frozen python, pytest and flask module wrappers; python imports this checkout. No packages need installing. Do not install dependencies, access sibling directories, use network, or delegate. Commands run in fresh shells; cd does not persist. No git commit is needed.\nEvery response MUST contain exactly one command in a fenced block:\n```mswea_bash_command\nyour command here\n```\nAfter a failure, read its actual traceback and relevant source before trying a different change. If the same command makes no progress, change your approach using repository evidence. Before submitting, inspect the full diff, name the production files changed, and summarize actual test commands, return codes and unresolved failures. Submitted means execution ended, not correctness. When finished run only: echo COMPLETE_TASK_AND_SUBMIT_FINAL_OUTPUT",
+  "instance_template": "Fix this real library issue:\n{{task}}\nStart by inspecting the repository and locating the relevant implementation."
+}

@@ -1,0 +1,115 @@
+{
+  "old_native_and_function_only_were_both_function_only": true,
+  "old_results": [
+    {
+      "condition": "native",
+      "request": "/home/ma-user/work/leasepath/real-development-v1/stage0-20261101-tp2-a/gateway-native/resp_lp_3cf02f0a7f10482fa6da6808ecfd95ce/forwarded.json",
+      "tool_types": [
+        "function"
+      ],
+      "input_roles": [
+        "developer",
+        "developer",
+        "user",
+        "user"
+      ],
+      "output": [
+        {
+          "id": "msg_9667b1efa3e12069",
+          "content": [
+            {
+              "annotations": [],
+              "text": "I’ll run the command to create and read `probe.txt`.\n\n{\"name\": \"exec_command\", \"arguments\": {\"cmd\": \"python -c \\\"from pathlib import Path; Path('probe.txt').write_text('stage0-ok\\\\n'); print(Path('probe.txt').read_text())\\\"\", \"justification\": \"Running Python command to create and read probe.txt\", \"shell\": \"bash\", \"workdir\": \"/home/ma-user/work/leasepath/real-development-v1/stage0-20261101-tp2-a/smoke-work\"}}",
+              "type": "output_text",
+              "logprobs": null
+            }
+          ],
+          "role": "assistant",
+          "status": "completed",
+          "type": "message",
+          "phase": null
+        }
+      ],
+      "usage": {
+        "input_tokens": 6319,
+        "input_tokens_details": {
+          "cached_tokens": 0,
+          "input_tokens_per_turn": [],
+          "cached_tokens_per_turn": []
+        },
+        "output_tokens": 120,
+        "output_tokens_details": {
+          "reasoning_tokens": 0,
+          "tool_output_tokens": 0,
+          "output_tokens_per_turn": [],
+          "tool_output_tokens_per_turn": []
+        },
+        "total_tokens": 6439
+      }
+    },
+    {
+      "condition": "greedy",
+      "request": "/home/ma-user/work/leasepath/real-development-v1/stage0-20261101-tp2-a/gateway-greedy/resp_lp_1cb51bb20e154ff094064f1e9e94a299/forwarded.json",
+      "tool_types": [
+        "function"
+      ],
+      "input_roles": [
+        "developer",
+        "developer",
+        "user",
+        "user"
+      ],
+      "output": [
+        {
+          "id": "msg_b53a5443b29faab4",
+          "content": [
+            {
+              "annotations": [],
+              "text": "I’m about to run the command to create and read `probe.txt` for the local tool integration test.\n\n{\"name\":\"exec_command\",\"arguments\":{\"cmd\":\"python -c \\\"from pathlib import Path; Path('probe.txt').write_text('stage0-ok\\\\n'); print(Path('probe.txt').read_text())\\\"\",\"login\":false}}",
+              "type": "output_text",
+              "logprobs": null
+            }
+          ],
+          "role": "assistant",
+          "status": "completed",
+          "type": "message",
+          "phase": null
+        }
+      ],
+      "usage": {
+        "input_tokens": 6381,
+        "input_tokens_details": {
+          "cached_tokens": 0,
+          "input_tokens_per_turn": [],
+          "cached_tokens_per_turn": []
+        },
+        "output_tokens": 71,
+        "output_tokens_details": {
+          "reasoning_tokens": 0,
+          "tool_output_tokens": 0,
+          "output_tokens_per_turn": [],
+          "tool_output_tokens_per_turn": []
+        },
+        "total_tokens": 6452
+      }
+    }
+  ],
+  "source_sha256": {
+    "/home/ma-user/work/qwen-services/runtime-root/vllm-workspace/vllm/vllm/entrypoints/openai/responses/serving.py": "2f04774b26fc0c61fae6776688bd6dd6bfb31740798ad948fe747383db77a21b",
+    "/home/ma-user/work/qwen-services/runtime-root/vllm-workspace/vllm/vllm/entrypoints/openai/responses/context.py": "f13f9a7d43dc8e3f15d5099821a2ef0b523b3e1fb9d178a7c39f969a18178edf",
+    "/home/ma-user/work/qwen-services/runtime-root/vllm-workspace/vllm/vllm/entrypoints/openai/responses/utils.py": "900bb1a739d6f584953720e4f73d1018bbe8901d5002791d8ab7bb50bc10ebb9",
+    "/home/ma-user/work/qwen-services/runtime-root/vllm-workspace/vllm/vllm/tool_parsers/hermes_tool_parser.py": "2b9878212363d82325e059e1f8532ff14b9b20cc8eb9660abb9741bad69d4632",
+    "/home/ma-user/work/qwen-services/runtime-root/vllm-workspace/vllm/vllm/entrypoints/chat_utils.py": "9561cf04c61d3a5910fe24db7db0dbbc88578094e3d0d7692e6abde5ea83ab8e",
+    "/home/ma-user/work/qwen-services/runtime-root/vllm-workspace/vllm/vllm/entrypoints/serve/tokenize/protocol.py": "5cc5cb021b827ae34e5e3ce8fdd72ee0e07b6e6b95de74d3f075f3b3edb8ac21"
+  },
+  "native_default_context": "SimpleContext; ParsableContext gated by VLLM_USE_EXPERIMENTAL_PARSER_CONTEXT, not enabled in old/current service",
+  "pinned_template": "developer role has no rendering branch; explicit system mapping preserves instruction",
+  "choice": "use already-installed Chat Hermes parser with explicit bidirectional Responses adapter; do not enable unvalidated experimental native context",
+  "documentation": "official pages returned 403; no current-web compatibility claim",
+  "CPU_protocol_config_issues": [
+    "initial catalog apply_patch_tool_type=function rejected; field removed before generation",
+    "features.goal/skills unrecognized; removed before generation",
+    "exec_command shell path normalized by CLI; replaced with explicit BASH_ENV observation before generation"
+  ],
+  "scope": "offline protocol audit, not model smoke"
+}

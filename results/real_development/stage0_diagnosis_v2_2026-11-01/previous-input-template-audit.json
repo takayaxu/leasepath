@@ -1,0 +1,365 @@
+{
+  "scope": "offline evidence, no new model calls",
+  "tasks": [
+    {
+      "task_id": "pallets__flask-4992",
+      "first_patch_change_action": 3,
+      "first_syntax_failure_action": 6,
+      "first_syntax_failure_delivered": true,
+      "recovery_actions_after_first_syntax": [
+        {
+          "action": 7,
+          "command": "python -c \"import re; with open('src/flask/config.py', 'r') as file: content = file.read(); assert 'def from_file(' in content and 'filename: str,' in content and 'load: t.Callable[[t.IO[t.Any]], t.Mapping],' in content and 'silent: bool = False,' in content; print('Assertion passed')\"",
+          "returncode": 1,
+          "patch_changed": false
+        },
+        {
+          "action": 8,
+          "command": "python -c \"import re; with open('src/flask/config.py', 'r') as file: content = file.read(); assert 'def from_file(' in content and 'filename: str,' in content and 'load: t.Callable[[t.IO[t.Any]], t.Mapping],' in content and 'silent: bool = False,' in content; print('Assertion passed')\"",
+          "returncode": 1,
+          "patch_changed": false
+        },
+        {
+          "action": 9,
+          "command": "rg -n \"from_file\" src/flask/config.py",
+          "returncode": 0,
+          "patch_changed": false
+        },
+        {
+          "action": 10,
+          "command": "sed -n '232,245p' src/flask/config.py",
+          "returncode": 0,
+          "patch_changed": false
+        },
+        {
+          "action": 11,
+          "command": "sed -i '234d' src/flask/config.py\nsed -i '234i \\ \\ \\ \\ \\ \\ \\ \\ filename: str,' src/flask/config.py\nsed -i '235i \\ \\ \\ \\ \\ \\ \\ \\ mode: str = \"r\",' src/flask/config.py\nsed -i '241s/r/\\mode/' src/flask/config.py",
+          "returncode": 0,
+          "patch_changed": true
+        },
+        {
+          "action": 12,
+          "command": "git diff src/flask/config.py",
+          "returncode": 0,
+          "patch_changed": false
+        },
+        {
+          "action": 13,
+          "command": "sed -i '234d' src/flask/config.py\nsed -i '234i \\ \\ \\ \\ \\ \\ \\ \\ mode: str = \"r\",' src/flask/config.py\nsed -i '241s/r/\\mode/' src/flask/config.py\nsed -i '237s/pamodeameter/parameter/' src/flask/config.py\nsed -i '237s/fmodeom/from/' src/flask/config.py",
+          "returncode": 0,
+          "patch_changed": true
+        },
+        {
+          "action": 14,
+          "command": "git diff src/flask/config.py",
+          "returncode": 0,
+          "patch_changed": false
+        },
+        {
+          "action": 15,
+          "command": "sed -i '234d' src/flask/config.py\nsed -i '234i \\ \\ \\ \\ \\ \\ \\ \\ mode: str = \"r\",' src/flask/config.py\nsed -i '241s/r/\\mode/' src/flask/config.py\nsed -i '237s/pamodeametemode/parameter/' src/flask/config.py\nsed -i '237s/fmodeom/from/' src/flask/config.py",
+          "returncode": 0,
+          "patch_changed": false
+        },
+        {
+          "action": 16,
+          "command": "python -c \"import re; with open('src/flask/config.py', 'r') as file: content = file.read(); assert 'def from_file(' in content and 'filename: str,' in content and 'load: t.Callable[[t.IO[t.Any]], t.Mapping],' in content and 'silent: bool = False,' in content; print('Assertion passed')\"",
+          "returncode": 1,
+          "patch_changed": false
+        },
+        {
+          "action": 17,
+          "command": "python -c \"import re; with open('src/flask/config.py', 'r') as file: content = file.read(); assert 'def from_file(' in content and 'filename: str,' in content and 'load: t.Callable[[t.IO[t.Any]], t.Mapping],' in content and 'silent: bool = False,' in content; print('Assertion passed')\"",
+          "returncode": 1,
+          "patch_changed": false
+        },
+        {
+          "action": 18,
+          "command": "python -c \"import re; with open('src/flask/config.py', 'r') as file: content = file.read(); assert 'def from_file(' in content and 'filename: str,' in content and 'load: t.Callable[[t.IO[t.Any]], t.Mapping],' in content and 'silent: bool = False,' in content; print('Assertion passed')\"",
+          "returncode": 1,
+          "patch_changed": false
+        },
+        {
+          "action": 19,
+          "command": "echo \"import re; with open('src/flask/config.py', 'r') as file: content = file.read(); assert 'def from_file(' in content and 'filename: str,' in content and 'load: t.Callable[[t.IO[t.Any]], t.Mapping],' in content and 'silent: bool = False,' in content; print('Assertion passed')\" > verify_from_file.py",
+          "returncode": 0,
+          "patch_changed": true
+        },
+        {
+          "action": 20,
+          "command": "python verify_from_file.py",
+          "returncode": 1,
+          "patch_changed": false
+        },
+        {
+          "action": 21,
+          "command": "echo \"import re\nwith open('src/flask/config.py', 'r') as file:\n    content = file.read()\n    assert 'def from_file(' in content\n    assert 'filename: str,' in content\n    assert 'load: t.Callable[[t.IO[t.Any]], t.Mapping],' in content\n    assert 'silent: bool = False,' in content\nprint('Assertion passed')\" > verify_from_file.py",
+          "returncode": 0,
+          "patch_changed": true
+        },
+        {
+          "action": 22,
+          "command": "python verify_from_file.py",
+          "returncode": 0,
+          "patch_changed": false
+        },
+        {
+          "action": 23,
+          "command": "sed -i '234i \\ \\ \\ \\ \\ \\ \\ \\ mode: str = \"r\",' src/flask/config.py\nsed -i '241s/r/\\mode/' src/flask/config.py",
+          "returncode": 0,
+          "patch_changed": true
+        },
+        {
+          "action": 24,
+          "command": "git diff src/flask/config.py",
+          "returncode": 0,
+          "patch_changed": false
+        },
+        {
+          "action": 25,
+          "command": "sed -i '234d' src/flask/config.py\nsed -i '234i \\ \\ \\ \\ \\ \\ \\ \\ mode: str = \"r\",' src/flask/config.py\nsed -i '241s/r/\\mode/' src/flask/config.py\nsed -i '237s/pamodeametemode/parameter/' src/flask/config.py\nsed -i '237s/fmodeom/from/' src/flask/config.py",
+          "returncode": 0,
+          "patch_changed": false
+        },
+        {
+          "action": 26,
+          "command": "python verify_from_file.py",
+          "returncode": 0,
+          "patch_changed": false
+        },
+        {
+          "action": 27,
+          "command": "sed -i '234i \\ \\ \\ \\ \\ \\ \\ \\ mode: str = \"r\",' src/flask/config.py\nsed -i '241s/r/\\mode/' src/flask/config.py",
+          "returncode": 0,
+          "patch_changed": true
+        },
+        {
+          "action": 28,
+          "command": "git diff src/flask/config.py",
+          "returncode": 0,
+          "patch_changed": false
+        }
+      ],
+      "truncated_observations": 0,
+      "finish_reasons": {
+        "stop": 30
+      }
+    },
+    {
+      "task_id": "pallets__flask-5063",
+      "first_patch_change_action": 8,
+      "first_syntax_failure_action": 15,
+      "first_syntax_failure_delivered": true,
+      "recovery_actions_after_first_syntax": [
+        {
+          "action": 16,
+          "command": "sed -i '999,1005s/^/    /' src/flask/cli.py",
+          "returncode": 0,
+          "patch_changed": true
+        },
+        {
+          "action": 17,
+          "command": "export FLASK_APP=tests/test_app.py && flask routes",
+          "returncode": 1,
+          "patch_changed": false
+        },
+        {
+          "action": 18,
+          "command": "sed -i '999,1005s/^/    /' src/flask/cli.py\nsed -i '999,1005s/^        //' src/flask/cli.py",
+          "returncode": 0,
+          "patch_changed": true
+        },
+        {
+          "action": 19,
+          "command": "export FLASK_APP=tests/test_app.py && flask routes",
+          "returncode": 1,
+          "patch_changed": false
+        },
+        {
+          "action": 20,
+          "command": "sed -i '999,1005d' src/flask/cli.py\nsed -i '999i\\    headers = (\"Domain\", \"Endpoint\", \"Methods\", \"Rule\")\\n    widths = (max(len(rule.subdomain) for rule in rules) or 6, max(len(rule.endpoint) for rule in rules), max(len(methods) for methods in rule_methods), max(len(rule.rule) for rule in rules))\\n    row = \"{{0:<{0}}}  {{1:<{1}}}  {{2:<{2}}}  {{3:<{3}}}\".format(*widths)\\n\\n    click.echo(row.format(*headers).strip())\\n    click.echo(row.format(*(\"-\" * width for width in widths)))\\n\\n    for rule, methods in zip(rules, rule_methods):\\n        click.echo(row.format(rule.subdomain, rule.endpoint, methods, rule.rule).rstrip())' src/flask/cli.py",
+          "returncode": 0,
+          "patch_changed": true
+        },
+        {
+          "action": 21,
+          "command": "export FLASK_APP=tests/test_app.py && flask routes",
+          "returncode": 1,
+          "patch_changed": false
+        },
+        {
+          "action": 22,
+          "command": "sed -i '999,1005d' src/flask/cli.py\nsed -i '999i\\    headers = (\"Domain\", \"Endpoint\", \"Methods\", \"Rule\")\\n    widths = (max(len(rule.subdomain) for rule in rules) or 6, max(len(rule.endpoint) for rule in rules), max(len(methods) for methods in rule_methods), max(len(rule.rule) for rule in rules))\\n    row = \"{{0:<{0}}}  {{1:<{1}}}  {{2:<{2}}}  {{3:<{3}}}\".format(*widths)\\n\\n    click.echo(row.format(*headers).strip())\\n    click.echo(row.format(*(\"-\" * width for width in widths)))\\n\\n    for rule, methods in zip(rules, rule_methods):\\n        click.echo(row.format(rule.subdomain, rule.endpoint, methods, rule.rule).rstrip())' src/flask/cli.py",
+          "returncode": 0,
+          "patch_changed": true
+        },
+        {
+          "action": 23,
+          "command": "export FLASK_APP=tests/test_app.py && flask routes",
+          "returncode": 1,
+          "patch_changed": false
+        },
+        {
+          "action": 24,
+          "command": "nano src/flask/cli.py",
+          "returncode": 127,
+          "patch_changed": false
+        },
+        {
+          "action": 25,
+          "command": "sed -i '999,1005d' src/flask/cli.py\nsed -i '999i\\    headers = (\"Domain\", \"Endpoint\", \"Methods\", \"Rule\")\\n    widths = (max(len(rule.subdomain) for rule in rules) or 6, max(len(rule.endpoint) for rule in rules), max(len(methods) for methods in rule_methods), max(len(rule.rule) for rule in rules))\\n    row = \"{{0:<{0}}}  {{1:<{1}}}  {{2:<{2}}}  {{3:<{3}}}\".format(*widths)\\n\\n    click.echo(row.format(*headers).strip())\\n    click.echo(row.format(*(\"-\" * width for width in widths)))\\n\\n    for rule, methods in zip(rules, rule_methods):\\n        click.echo(row.format(rule.subdomain, rule.endpoint, methods, rule.rule).rstrip())' src/flask/cli.py",
+          "returncode": 0,
+          "patch_changed": true
+        }
+      ],
+      "truncated_observations": 6,
+      "finish_reasons": {
+        "stop": 28,
+        "length": 2
+      }
+    },
+    {
+      "task_id": "pytest-dev__pytest-9359",
+      "first_patch_change_action": 10,
+      "first_syntax_failure_action": 11,
+      "first_syntax_failure_delivered": true,
+      "recovery_actions_after_first_syntax": [
+        {
+          "action": 12,
+          "command": "echo -e 'def t(foo):\\n    return foo\\n\\n@fixture\\ndef foo():\\n    return 1\\n\\ndef test_right_statement(foo):\\n    assert foo == (3 + 2) * (6 + 9)\\n\\n    @t\\ndef inner():\\n        return 2\\n\\n    assert 2 == inner()\\n' > tests/test_minimal.py",
+          "returncode": 0,
+          "patch_changed": true
+        },
+        {
+          "action": 13,
+          "command": "python -m pytest tests/test_minimal.py",
+          "returncode": 2,
+          "patch_changed": false
+        },
+        {
+          "action": 14,
+          "command": "echo -e 'def t(foo):\\n    return foo\\n\\nfrom pytest import fixture\\n\\n@fixture\\ndef foo():\\n    return 1\\n\\ndef test_right_statement(foo):\\n    assert foo == (3 + 2) * (6 + 9)\\n\\n    @t\\ndef inner():\\n        return 2\\n\\n    assert 2 == inner()\\n' > tests/test_minimal.py",
+          "returncode": 0,
+          "patch_changed": true
+        },
+        {
+          "action": 15,
+          "command": "python -m pytest tests/test_minimal.py",
+          "returncode": 2,
+          "patch_changed": false
+        },
+        {
+          "action": 16,
+          "command": "echo -e 'def t(foo):\\n    return foo\\n\\nfrom pytest import fixture\\n\\n@fixture\\ndef foo():\\n    return 1\\n\\ndef test_right_statement(foo):\\n    assert foo == (3 + 2) * (6 + 9)\\n\\n    @t\\ndef inner():\\n        return 2\\n\\n    assert 2 == inner()\\n' > tests/test_minimal.py",
+          "returncode": 0,
+          "patch_changed": false
+        },
+        {
+          "action": 17,
+          "command": "python -m pytest tests/test_minimal.py",
+          "returncode": 2,
+          "patch_changed": false
+        },
+        {
+          "action": 18,
+          "command": "cat > tests/test_minimal.py <<EOF\ndef t(foo):\n    return foo\n\nfrom pytest import fixture\n\n@fixture\ndef foo():\n    return 1\n\ndef test_right_statement(foo):\n    assert foo == (3 + 2) * (6 + 9)\n\n    @t\n    def inner():\n        return 2\n\n    assert 2 == inner()\nEOF",
+          "returncode": 0,
+          "patch_changed": true
+        },
+        {
+          "action": 19,
+          "command": "python -m pytest tests/test_minimal.py",
+          "returncode": 1,
+          "patch_changed": false
+        },
+        {
+          "action": 20,
+          "command": "sed -n '1190,1220p' src/_pytest/_code/code.py",
+          "returncode": 0,
+          "patch_changed": false
+        },
+        {
+          "action": 21,
+          "command": "sed -n '100,150p' src/_pytest/_code/code.py",
+          "returncode": 0,
+          "patch_changed": false
+        },
+        {
+          "action": 22,
+          "command": "rg -n \"get_real_func\" src/_pytest/_code/code.py",
+          "returncode": 0,
+          "patch_changed": false
+        },
+        {
+          "action": 23,
+          "command": "sed -n '100,150p' src/_pytest/compat.py",
+          "returncode": 0,
+          "patch_changed": false
+        },
+        {
+          "action": 24,
+          "command": "rg -n \"get_real_func\" src/_pytest/compat.py",
+          "returncode": 0,
+          "patch_changed": false
+        },
+        {
+          "action": 25,
+          "command": "sed -n '260,310p' src/_pytest/compat.py",
+          "returncode": 0,
+          "patch_changed": false
+        },
+        {
+          "action": 26,
+          "command": "sed -n '260,310p' src/_pytest/compat.py",
+          "returncode": 0,
+          "patch_changed": false
+        },
+        {
+          "action": 27,
+          "command": "sed -i '/def getfslineno(obj: object) -> Tuple[Union[str, Path], int]:/a\\ \\ \\ \\ import traceback; print(f\"getfslineno called with obj: {obj}, lineno: {getattr(obj, \"lineno\", None)}\"); traceback.print_stack()' src/_pytest/_code/code.py",
+          "returncode": 0,
+          "patch_changed": false
+        },
+        {
+          "action": 28,
+          "command": "sed -i '/def getfslineno(obj: object) -> Tuple\\[Union\\[str, Path\\], int\\]:/a\\ \\ \\ \\ import traceback; print(f\"getfslineno called with obj: {{obj}}, lineno: {{getattr(obj, \"lineno\", None)}}\"); traceback.print_stack()' src/_pytest/_code/code.py",
+          "returncode": 0,
+          "patch_changed": true
+        }
+      ],
+      "truncated_observations": 12,
+      "finish_reasons": {
+        "stop": 30
+      }
+    }
+  ],
+  "requests_checked": 90,
+  "all_backend_prompt_tokens_equal_pinned_tokenizer_template": true,
+  "model_small_files_sha256": {
+    "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+    "config.json": "9fb1473a47db69c00c02f365c7b9e9d84fd2163c687c63b5a31167ebb2b189a6",
+    "generation_config.json": "fdaccbcb02f3e1e7914ccb0f69ebe899071ffd27cf825166d823163e156870f2",
+    "tokenizer_config.json": "959e7f1d9a1b7641a6d6ce05ca97b75c7894fcb66cbe5a040406458fb1128ee4"
+  },
+  "tokenizer_special_tokens": {
+    "eos_token": "<|im_end|>",
+    "pad_token": "<|endoftext|>"
+  },
+  "template_sha256": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+  "effective_generation": {
+    "service_generation_config": "vllm",
+    "temperature": 0,
+    "top_p": 1,
+    "seed": 23,
+    "max_tokens": 768,
+    "eos_token_id_from_model_config": 151645,
+    "tokenizer_eos_id": 151645,
+    "explicit_stop": null,
+    "note": "repository generation_config sampling defaults not loaded because service uses --generation-config vllm"
+  },
+  "limitations": [
+    "Exact prompt token equality verifies historical template/tokenizer input, not model competence.",
+    "Stored raw output is not assumed visible; omitted intervals and delivered content saved per action.",
+    "First patch change is not always first erroneous edit; manual review required."
+  ]
+}

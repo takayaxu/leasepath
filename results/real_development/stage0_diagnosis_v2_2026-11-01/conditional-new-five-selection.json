@@ -1,0 +1,37 @@
+{
+  "status": "conditional_preselection_only_not_prepared_or_executed",
+  "selection_time": "before alternative L1 outcomes",
+  "rule": "Frozen issue-description scope classification, no candidate model scores. Three local behaviors plus two broader repository workflows; no fallback replacement after scores.",
+  "tasks": [
+    {
+      "instance_id": "pallets__flask-4045",
+      "stratum": "local",
+      "reason": "Explicit blueprint-name input validation"
+    },
+    {
+      "instance_id": "pytest-dev__pytest-5227",
+      "stratum": "local",
+      "reason": "Logging format configuration, bounded local behavior"
+    },
+    {
+      "instance_id": "pytest-dev__pytest-5221",
+      "stratum": "local",
+      "reason": "Existing fixture CLI display extension"
+    },
+    {
+      "instance_id": "pytest-dev__pytest-11148",
+      "stratum": "ordinary",
+      "reason": "Import-mode module identity across repository/tests"
+    },
+    {
+      "instance_id": "pytest-dev__pytest-5692",
+      "stratum": "ordinary",
+      "reason": "JUnit metadata lifecycle and generated report output"
+    }
+  ],
+  "minimum_independent_passed": 3,
+  "minimum_successful_repositories": 2,
+  "minimum_ordinary_passed": 1,
+  "activation": "Only after diagnostic L3 gate passed and final chain frozen; environment baseline/reference prechecks before model attempts; otherwise keep all unused",
+  "environment_failure_replacement_rule": "No automatic replacements; retain failure and review, do not choose using model scores"
+}

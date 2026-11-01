@@ -1,0 +1,9 @@
+{
+  "independent_passed": 0,
+  "total": 3,
+  "decision": "Stop alternative L2/L3 progression and this bounded round: neither candidate passed frozen L1 gate. No new five, no JCT, no stage1.",
+  "scope_limit": "No conclusion on L2/L3 or broad simpler-task competence, because those were not run.",
+  "attempts_consumed": 6,
+  "diagnostic_limit": 21,
+  "reason_remaining_budget_not_spent": "conditional progression gates failed, not budget exhaustion"
+}

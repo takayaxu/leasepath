@@ -1,0 +1,39 @@
+{
+  "scope": "before any remediation inference requests",
+  "debug_max_configurations": 2,
+  "round1_tasks": [
+    "pallets__flask-4992",
+    "pallets__flask-5063",
+    "pytest-dev__pytest-9359"
+  ],
+  "budget_unchanged": true,
+  "gate": {
+    "total_pass": 3,
+    "total_tasks": 5,
+    "new_pass": 1,
+    "new_tasks": 2,
+    "minimum_successful_repos": 2
+  },
+  "new_selection_rule": "If valid repair behavior exists, first unused Flask and first lexicographic unused pytest issue; precheck CPU before running; no result-based selection.",
+  "new_ids": [
+    "pallets__flask-4045",
+    "pytest-dev__pytest-11143"
+  ],
+  "D_rule": "Only after stable final configuration and quality/new projection evidence. Freeze per-task paired log JCT geometric mean and one-sided 95% task-cluster upper bound <=2%, timeout/failed whole task retained; no automatic budget expansion.",
+  "sha256": {
+    "revise.md": "5a905f16a740aebbe8e324b7e8ade24a3dc9fdf2b748773119200e9886966694",
+    "docs/real_projection_v2.md": "9b807779b0bc4ba17634792c944ba17160184676339ea8d917560d0e165c532d",
+    "configs/prediction/real_development_revise_agent_v1.json": "3488779f74ae62893bf797073d4b910f24b82c385be5f2f1614d4700f671a122",
+    "scripts/run_real_development_tasks_v2.py": "9f705b5c6007e07f277f489f7bcdeb93acf5dbede67820f96ea590fa670df16f",
+    "src/leasepath/real_environment.py": "4bc698c20001ae75cc81d63b0916748a61d6206dd57a2cb18057d7e113ce01ff",
+    "src/leasepath/real_projection_v2.py": "17777f3180e3e51e63fdf439e0f6d058cb0684efd90954583471dc20fe5cbcc0",
+    "scripts/check_real_development_v2.py": "eabe0fb54006367a4a90ccaaa3f246371f5b5aeb6967364e6556f77c4d500691",
+    "schemas/real_attempt_v2.schema.json": "b32482f9e4ea0b95274868391b9d07b9594c4f7e3ec58bfc47c57c685c2dc62f"
+  },
+  "before_requests_final_schema_validation": {
+    "src/leasepath/real_projection_v2.py": "3ac76baec8267a2132d1c7304242c747db0d042936fd7f08e0d205524b444b02",
+    "schemas/real_attempt_v2.schema.json": "b32482f9e4ea0b95274868391b9d07b9594c4f7e3ec58bfc47c57c685c2dc62f"
+  },
+  "before_quality_runs_final_runner_sha256": "5ead93a03e7d53e1260d83c3febba5e171393661491087c449748e2b511b045e",
+  "final_environment_with_dependency_import_paths_sha256": "437318de21ad1ec08523de4258eb3dfad566c589a6008cd0c6ba1e3398042ccd"
+}

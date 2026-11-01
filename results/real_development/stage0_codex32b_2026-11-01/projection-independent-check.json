@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "backend_requests_accounted": 45,
+  "labels": 45,
+  "outcomes": {
+    "D": 4,
+    "U": 41
+  },
+  "protection_intervals": 45,
+  "scope": "independent_source_reference_first_demand_scope_and_full_coverage_checks"
+}

@@ -1,0 +1,26 @@
+{
+  "observed_at": "2026-11-01T13:13:41.432256+08:00",
+  "status": "verification_checks_passed_stage0_quality_not_accepted",
+  "pytest_passed": 151,
+  "D1_checks": 50,
+  "event_contract": {
+    "positive": 8,
+    "negative": 16
+  },
+  "backend_source_coverage": 185,
+  "independent_label_checks": 184,
+  "boundary_negative_cases_rejected": 5,
+  "legacy_backend_coverage": 92,
+  "legacy_identical_ordinary_labels": 59,
+  "git_diff_check": "passed",
+  "document_links": "passed",
+  "syntax_parse": "passed",
+  "frozen_projection_semantics_and_source_unchanged": true,
+  "round2_configuration_unchanged": true,
+  "historical_hashes_unchanged": 147,
+  "implementation_hash_files": 54,
+  "local_evidence_hash_files": 357,
+  "own_service_stopped": true,
+  "final_NPU_user_processes": 0,
+  "stage1_started": false
+}

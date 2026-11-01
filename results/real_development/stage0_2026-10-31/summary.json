@@ -1,0 +1,109 @@
+{
+  "as_of": "2026-10-31T22:27:19.286843+08:00",
+  "stage": 0,
+  "status": "started_not_accepted_waiting_for_dedicated_devices",
+  "review": "reports/real_development_stage0_review_2026-10-31.md",
+  "run_root": "/home/ma-user/work/leasepath/real-development-v1/stage0-20261031-a",
+  "scope": "CPU preparation and client-protocol discovery; no new backend inference or agent collection",
+  "user_resource_instruction": "Any card may be used after existing workloads exit; do other preparation first. Do not terminate existing services.",
+  "resource_gate": {
+    "ready": false,
+    "reasons": [
+      "fewer_than_two_idle_devices",
+      "need_at_least_two_distinct_reserved_devices"
+    ],
+    "note": "Read-only preflight, not an allocator or authorization to terminate processes."
+  },
+  "model": {
+    "repository": "Qwen/Qwen2.5-Coder-32B-Instruct",
+    "revision": "381fc969f78efac66bc87ff7ddeadb7e73c218a7",
+    "local_directory": "/home/ma-user/work/leasepath/real-development-v1/models/Qwen2.5-Coder-32B-Instruct-381fc969",
+    "weight_shards_verified": 14,
+    "weight_bytes": 65527841688,
+    "small_files_verified": 9,
+    "inference_validated": false,
+    "first_download": "13 shards verified; last response contained only 8 MiB, no completion marker written",
+    "resume": "completed after strict bounded-range handling; original failure log retained"
+  },
+  "codex": {
+    "version": "0.166.0",
+    "captured_path": "/v1/responses",
+    "stream": true,
+    "capture_endpoint_status": 503,
+    "capture_only": true,
+    "tool_loop_verified": false
+  },
+  "task_environment": {
+    "tasks": 3,
+    "repositories": 2,
+    "ready": 3,
+    "baseline_passed": 127,
+    "baseline_issue_failures": 4,
+    "reference_passed": 131,
+    "scope": "Local related-file CPU tests; reference checks do not count as Agent success"
+  },
+  "attempts": [
+    {
+      "attempt": "a",
+      "ready_tasks": 1,
+      "summary_sha256": "f9c9852654ef2dd34f254cc87919f2b3f8ec5c1ceb47818e1358d3dcdbfd317d",
+      "reason": "Archive-import omission and missing generated version module"
+    },
+    {
+      "attempt": "b",
+      "ready_tasks": 2,
+      "summary_sha256": "da26938819153e914c46eeb286578a5c82f4ac63cb1f6853a7c170d5d2f42062",
+      "reason": "Flask ready; old pytest incompatible with Python 3.12 warning policy"
+    },
+    {
+      "attempt": "c",
+      "ready_tasks": 2,
+      "summary_sha256": "5dfe0981ace10704e92b5fec0d27625d94455a9a8b36e86625f48803b0dde971",
+      "reason": "Python 3.9 venv symlink resolved incorrectly; isolated dependencies lost"
+    },
+    {
+      "attempt": "d",
+      "ready_tasks": 3,
+      "summary_sha256": "30b9ed2cb574aac1b4913fd4d44068af8afd336b994e02f8756be72c79eb8541",
+      "reason": "Fixed fixture preservation, per-task interpreter/build setup, venv entry path and clone byte verification"
+    }
+  ],
+  "observer": {
+    "version": "real-development-observer-v1",
+    "transport_unit_checks_passed": true,
+    "live_backend_hooks_installed": false,
+    "semantic_completeness_verified": false
+  },
+  "agent_main_executions": 0,
+  "new_backend_lookup_events": 0,
+  "new_main_dataset": null,
+  "live_cases": {
+    "TP2": "not_run",
+    "context_16K": "not_run",
+    "concurrency_ladder": "not_run",
+    "cold_warm_evicted_miss": "not_run",
+    "shared_prefix": "not_run",
+    "fork_compact_restore": "not_run",
+    "cancel_abort": "not_run",
+    "preempt_resume": "not_run",
+    "retry": "not_run",
+    "complete_open_relation_C": "not_run",
+    "probe_toggle_overhead": "not_run"
+  },
+  "validation": {
+    "pytest": 130,
+    "new_unit_tests": 9,
+    "D1_synthetic": 50,
+    "event_contract_positive": 8,
+    "event_contract_negative": 16
+  },
+  "stage1_started": false,
+  "stage1_task_selection_frozen": false,
+  "next_steps": [
+    "Wait for existing workloads to exit and recheck dedicated capacity.",
+    "Implement and live-validate new protocol ID mapping and backend/TP lifecycle hooks.",
+    "Verify 32B/Codex streaming tool loop and controlled U/D/C cases.",
+    "Measure probe overhead and run the three genuine issues with Agent.",
+    "Complete stage-0 review before expansion."
+  ]
+}

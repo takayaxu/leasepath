@@ -1,0 +1,13 @@
+{
+  "status": "selection_evidence_correction",
+  "original_evidence_path": "/home/ma-user/work/qwen-services/tool-calling-verification.json",
+  "original_sha256": "5b12d0fe696e91275ccb666eead5085cae1d18e8e3d4a933c1f23b5e7587ef8f",
+  "models_actually_in_native_tool_receipts": [
+    "coder390-q4",
+    "qwen3.5-9b"
+  ],
+  "chosen_27b_native_tool_verification_present": false,
+  "valid_prior_evidence": "verification-results-qwen3.8-27b.json chat and eight-way concurrency; local BF16 snapshot identity",
+  "limitations": "Specialized coding/native tool ability was not established before selection. Frozen candidate retained; no third candidate selected after scores. This L1 uses text JSON actions, not native tool calls.",
+  "original_preregistration_not_overwritten": true
+}

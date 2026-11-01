@@ -1,0 +1,32 @@
+[
+  {
+    "task_id": "pallets__flask-4992",
+    "first_erroneous_edit_action": 3,
+    "first_erroneous_production_edit_action": 3,
+    "classification": "Edit placement and text substitution errors; source already visible. First syntax feedback concerns its verification command, not library import.",
+    "first_error_command": "sed -i '234i \\ \\ \\ \\ \\ \\ \\ \\ mode: str = \"r\",' src/flask/config.py\nsed -i '241s/r/\\mode/' src/flask/config.py",
+    "first_production_command": "sed -i '234i \\ \\ \\ \\ \\ \\ \\ \\ mode: str = \"r\",' src/flask/config.py\nsed -i '241s/r/\\mode/' src/flask/config.py",
+    "visible_evidence_path": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-cpu-b/pallets__flask-4992/actions-and-delivered-observations.json",
+    "note": "manual offline analysis; not supplied to any new autonomous prompt"
+  },
+  {
+    "task_id": "pallets__flask-5063",
+    "first_erroneous_edit_action": 8,
+    "first_erroneous_production_edit_action": 14,
+    "classification": "First erroneous app constructor in reproducer; first production write inserts output block repeatedly among decorators. Critical middle of source omitted by prior 1200-char output; subsequent syntax feedback visible.",
+    "first_error_command": "echo \"from flask import Flask, Blueprint\n\napp = Flask(__name__, server_name='test.local')\n\nadmin_blueprint = Blueprint('admin_blueprint', __name__, subdomain='admin')\ntest_subdomain_blueprint = Blueprint('test_subdomain_blueprint', __name__, subdomain='test')\n\n@admin_blueprint.route('/home')\ndef admin_home():\n    return 'Admin Home'\n\n@test_subdomain_blueprint.route('/home')\ndef test_home():\n    return 'Test Home'\n\napp.register_blueprint(admin_blueprint)\napp.register_blueprint(test_subdomain_blueprint)\" > tests/test_app.py",
+    "first_production_command": "sed -i '999,1005s/^/    headers = (\"Domain\", \"Endpoint\", \"Methods\", \"Rule\")\\n    widths = (max(len(rule.subdomain) for rule in rules) or 6, max(len(rule.endpoint) for rule in rules), max(len(methods) for methods in rule_methods), max(len(rule.rule) for rule in rules))\\n    row = \"{{0:<{0}}}  {{1:<{1}}}  {{2:<{2}}}  {{3:<{3}}}\".format(*widths)\\n\\n    click.echo(row.format(*headers).strip())\\n    click.echo(row.format(*(\"-\" * width for width in widths)))\\n\\n    for rule, methods in zip(rules, rule_methods):\\n        click.echo(row.format(rule.subdomain, rule.endpoint, methods, rule.rule).rstrip())\\n/' src/flask/cli.py",
+    "visible_evidence_path": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-cpu-b/pallets__flask-5063/actions-and-delivered-observations.json",
+    "note": "manual offline analysis; not supplied to any new autonomous prompt"
+  },
+  {
+    "task_id": "pytest-dev__pytest-9359",
+    "first_erroneous_edit_action": 10,
+    "first_erroneous_production_edit_action": 28,
+    "classification": "Reproducer indentation corrupted; later production debug-print has invalid quotes. Assertion unchanged but final inner value/call differs from original reproducer. Traceback middle omitted; syntax marker and actual error location still visible.",
+    "first_error_command": "mkdir -p tests && echo -e 'def t(foo):\\n    return foo\\n\\n@fixture\\ndef foo():\\n    return 1\\n\\ndef test_right_statement(foo):\\n    assert foo == (3 + 2) * (6 + 9)\\n\\n    @t\\ndef inner():\\n        return 2\\n\\n    assert 2 == inner\\n' > tests/test_minimal.py",
+    "first_production_command": "sed -i '/def getfslineno(obj: object) -> Tuple\\[Union\\[str, Path\\], int\\]:/a\\ \\ \\ \\ import traceback; print(f\"getfslineno called with obj: {{obj}}, lineno: {{getattr(obj, \"lineno\", None)}}\"); traceback.print_stack()' src/_pytest/_code/code.py",
+    "visible_evidence_path": "/home/ma-user/work/leasepath/real-development-v1/stage0-diagnosis-v2-20261101-cpu-b/pytest-dev__pytest-9359/actions-and-delivered-observations.json",
+    "note": "manual offline analysis; not supplied to any new autonomous prompt"
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "backend_requests": 11,
+  "lookup_events": 132,
+  "preemptions": 1,
+  "outcomes": {
+    "D": 4,
+    "U": 5,
+    "C": 1
+  },
+  "scope": "controlled actual inference, not occurrence rates"
+}

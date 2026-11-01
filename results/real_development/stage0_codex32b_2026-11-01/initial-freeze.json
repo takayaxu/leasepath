@@ -1,0 +1,15 @@
+{
+  "configs/prediction/real_development_codex32b_v1.json": "63f4c13d4bca1edd81c9853a7d4056fa65f6b2abc62de531b54d087ec0929ed7",
+  "src/leasepath/codex_protocol.py": "76546205aa7b360deef40af25a4e3286856e649e81ad78e0e84b11725cf540e0",
+  "scripts/run_codex32b.py": "dc420a71140a208ef56c8bdc0da0f0d161602873b4e8f1a9b35d8b2e501e68ec",
+  "scripts/codex32b_shell.py": "d8c12d6eea403bf547ae74acd6062d74f20773b38ba27e385a00feb064d6b7a3",
+  "tests/test_codex_protocol.py": "6d3cfc800b1622d0f763f4a1d6da23dc2ce119b9106f69e03c8eda69631df0fc",
+  "scripts/real_development_service.py": "00bd1ca775be302ad29cab12e104644474a1885d6b31a261d4ee1deeac39f6b8",
+  "src/leasepath/real_environment.py": "437318de21ad1ec08523de4258eb3dfad566c589a6008cd0c6ba1e3398042ccd",
+  "src/leasepath/real_probe.py": "eeae8cf9b544ee1de1e72a4d56f8b9d1bef2455dd55f714ab5032807f912f301",
+  "src/leasepath/real_projection_v2.py": "287cae728148247218da7ea8408e5b76a8b63da24e23eb83b057ae103605fcf4",
+  "\u6307\u5bfc.md": "730c3577f26cf750675c905e47ed3a94b6c4e4573b7f03eec9e4ced708dbc44b",
+  "/home/ma-user/work/leasepath/real-development-v1/codex32b-20261101-a/preregistration/model-catalog.json": "772f43fdba42d7754dd9b06bc3178b771a9a631984d4d82f4be755cf422a2490",
+  "/home/ma-user/work/leasepath/real-development-v1/codex32b-20261101-a/preregistration/shell-bootstrap.sh": "d59a0bd610a10a4f525cc4d9c6ca49d022f086936cacddcc8dc1a4a8be4fbb98",
+  "/home/ma-user/work/leasepath/real-development-v1/codex32b-20261101-a/preregistration/plan.json": "8d96916cd34e46ab69bf003f5424ba8bdce6e700f44744e386e535d95a0de784"
+}

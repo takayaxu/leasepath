@@ -1,0 +1,52 @@
+{
+  "observed_at": "2026-11-01T17:20:24.487718+08:00",
+  "status": "checks_passed_C_quality_not_accepted_stage0_not_accepted",
+  "pytest_passed": 180,
+  "protocol_regression_tests": 24,
+  "historical_small_artifact_hashes_verified": 218,
+  "final_model_facing_code_unchanged_since_freeze": true,
+  "C_freeze_unchanged": true,
+  "live_model_backend_requests": 45,
+  "actual_token_ids_exact": 45,
+  "actual_shell_executions": 42,
+  "unique_results_into_backend": 41,
+  "backend_and_tools_audit": "passed",
+  "v21_independent_check": "passed",
+  "producer_streams": 7,
+  "rank_checkpoints": [
+    0,
+    1
+  ],
+  "engine_drained": true,
+  "label_outcomes": {
+    "U": 41,
+    "D": 4
+  },
+  "frontend_rejections_without_backend": 2,
+  "pre_ready_rejection_separately_preserved": 1,
+  "invalid_infrastructure_attempt_kept_in_budget": true,
+  "B_distinct_scenarios_passed": 2,
+  "C_independent_passed": 0,
+  "C_independent_total": 1,
+  "D_and_JCT_not_triggered": true,
+  "stage1_started": false,
+  "document_links": "passed",
+  "git_diff_check": "passed",
+  "Python_AST_parse": "passed",
+  "implementation_files_hashed": 22,
+  "local_evidence_files_hashed": 683,
+  "resource_snapshot": "final-resource.json",
+  "NPU_user_processes": 0,
+  "own_service_stopped": true,
+  "local_evidence_exclusions": [
+    ".git",
+    "__pycache__",
+    "environment",
+    "tool-bin",
+    "triton_cache_dir",
+    "vllm_cache_root",
+    "workspace"
+  ],
+  "independent_tests_and_small_fixture_files_explicitly_included": true,
+  "hash_scope": "implementation manifest uses repository-relative paths; local evidence uses absolute paths; SHA256SUMS covers this result directory except itself"
+}

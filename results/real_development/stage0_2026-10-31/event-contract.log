@@ -1,0 +1,1 @@
+{"status": "passed", "scope": "Synthetic event/label contract", "evidence_kind": "synthetic", "performance_claim_allowed": false, "accepted_cases": 8, "rejected_cases": 16, "physical_hit_miss_labels_identical": true}

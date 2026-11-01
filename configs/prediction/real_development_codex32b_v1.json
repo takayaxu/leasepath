@@ -1,0 +1,21 @@
+{
+  "version": "codex32b-responses-chat-buffered-v1",
+  "cli": "/home/ma-user/.local/bin/codex",
+  "model": "leasepath-qwen25-coder32b",
+  "model_catalog": "/home/ma-user/work/leasepath/real-development-v1/codex32b-20261101-a/preregistration/model-catalog.json",
+  "backend_port": 8222,
+  "context_tokens": 16384,
+  "output_tokens": 2048,
+  "max_requests": 12,
+  "wall_seconds": 600,
+  "CLI_retries": 0,
+  "gateway_retries": 0,
+  "streaming": "buffer backend SSE until validated terminal; emit ordered Responses SSE",
+  "developer_mapping": "system, preserves content and position",
+  "unsupported": "non-function tools, non-text content, previous_response_id, compact, reasoning, background",
+  "single_tool_seconds": 90,
+  "single_tool_timeout_enforcement": "explicit BASH_ENV trampoline, command/ID matched, separate child process group, 90s hard timeout",
+  "smoke_configuration_limit": 2,
+  "smokes_per_configuration": 3,
+  "shell_bootstrap": "/home/ma-user/work/leasepath/real-development-v1/codex32b-20261101-a/preregistration/shell-bootstrap.sh"
+}

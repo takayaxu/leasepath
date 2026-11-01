@@ -1,0 +1,23 @@
+{
+  "scenario": "failing-test-recovery",
+  "passed": true,
+  "independent_returncode": 0,
+  "independent_tests": "3 passed",
+  "protected_tests_unchanged": true,
+  "observed_failed_commands": [
+    {
+      "command": "/bin/bash -c pytest",
+      "exit_code": 1
+    },
+    {
+      "command": "/bin/bash -c pytest",
+      "exit_code": 2
+    },
+    {
+      "command": "/bin/bash -c pytest",
+      "exit_code": 2
+    }
+  ],
+  "actual_shell_executions": 11,
+  "scope": "controlled integration fixture; not a real repository task score"
+}

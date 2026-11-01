@@ -1,0 +1,74 @@
+[
+  {
+    "requests": 1,
+    "forwarded": 1,
+    "tool_calls": 0,
+    "returncode": 0,
+    "timed_out": false,
+    "elapsed_s": 51.77593451400753,
+    "name": "smoke-v1-1",
+    "raw_evidence": "/home/ma-user/work/leasepath/real-development-v1/codex32b-20261101-a/smoke-v1-1",
+    "backend_requests": 1,
+    "error_records": []
+  },
+  {
+    "requests": 1,
+    "forwarded": 1,
+    "tool_calls": 0,
+    "returncode": 1,
+    "timed_out": false,
+    "elapsed_s": 0.7299504049587995,
+    "name": "smoke-v2-1",
+    "raw_evidence": "/home/ma-user/work/leasepath/real-development-v1/codex32b-20261101-a/smoke-v2-1",
+    "backend_requests": 0,
+    "error_records": [
+      {
+        "type": "ProtocolError",
+        "request_id": "9e595832c0b74e07ab3b3a462cd99455",
+        "raw_error_file": "/home/ma-user/work/leasepath/real-development-v1/codex32b-20261101-a/smoke-v2-1/request-9e595832c0b74e07ab3b3a462cd99455/error.json"
+      }
+    ]
+  },
+  {
+    "requests": 8,
+    "forwarded": 8,
+    "tool_calls": 7,
+    "returncode": 0,
+    "timed_out": false,
+    "elapsed_s": 38.1907641220605,
+    "name": "smoke-v2-2",
+    "raw_evidence": "/home/ma-user/work/leasepath/real-development-v1/codex32b-20261101-a/smoke-v2-2",
+    "backend_requests": 8,
+    "error_records": []
+  },
+  {
+    "requests": 12,
+    "forwarded": 12,
+    "tool_calls": 11,
+    "returncode": 0,
+    "timed_out": false,
+    "elapsed_s": 70.255676032044,
+    "name": "smoke-v2-3",
+    "raw_evidence": "/home/ma-user/work/leasepath/real-development-v1/codex32b-20261101-a/smoke-v2-3",
+    "backend_requests": 12,
+    "error_records": []
+  },
+  {
+    "requests": 25,
+    "forwarded": 24,
+    "tool_calls": 24,
+    "returncode": 1,
+    "timed_out": false,
+    "elapsed_s": 144.194131767028,
+    "name": "development-C1",
+    "raw_evidence": "/home/ma-user/work/leasepath/real-development-v1/codex32b-20261101-a/development-C1",
+    "backend_requests": 24,
+    "error_records": [
+      {
+        "type": "ProtocolError",
+        "request_id": "a7412362bc2441dfa1276ed15a0bf0e9",
+        "raw_error_file": "/home/ma-user/work/leasepath/real-development-v1/codex32b-20261101-a/development-C1/request-a7412362bc2441dfa1276ed15a0bf0e9/error.json"
+      }
+    ]
+  }
+]

@@ -1,0 +1,170 @@
+{
+  "status": "candidate_list_frozen_before_stage1_not_environment_accepted",
+  "selection_rule": "One unused Flask issue; all six requests issues; first eight lexicographic unused pytest issues. No model outcomes used. Environment failures retained/replaced only with a recorded review.",
+  "dataset_revision": "6ec7bb89b9342f664a54a6e0a6ea6501d3437cc2",
+  "source_parquet_sha256": "7a21f37b8bc179c7db5beeb14e88ac538ba283455c776e6b2535bbfb6e3551b4",
+  "budget": {
+    "independent_repository_tasks": 15,
+    "minimum_repositories": 3,
+    "natural_actual_development_days": 5,
+    "started": false
+  },
+  "tasks": [
+    {
+      "instance_id": "pallets__flask-4045",
+      "repo": "pallets/flask",
+      "base_commit": "d8c37f43724cd9fb0870f77877b7c4c7e38a19e0",
+      "source_group": "pallets__flask-4045",
+      "problem_sha256": "8a196755a30b6e9575830574d9ea5b392bbe7685ffd7fb91acba6d604f198fb0",
+      "test_patch_sha256": "def1da53a3857f67b571f108abde6fcdac61da5c7820c0749fa7c487fe87a62a",
+      "environment_status": "not_prechecked",
+      "agent_execution_status": "not_started"
+    },
+    {
+      "instance_id": "psf__requests-1963",
+      "repo": "psf/requests",
+      "base_commit": "110048f9837f8441ea536804115e80b69f400277",
+      "source_group": "psf__requests-1963",
+      "problem_sha256": "ab31a283ce6fd03aff660d11dda4d5773faa92984ecdd44e97d65c1f8774098c",
+      "test_patch_sha256": "d54962cb131f871dcfb26c9d5b4518da0c701fd998915837bec0b3d80d9492a0",
+      "environment_status": "not_prechecked",
+      "agent_execution_status": "not_started"
+    },
+    {
+      "instance_id": "psf__requests-2148",
+      "repo": "psf/requests",
+      "base_commit": "fe693c492242ae532211e0c173324f09ca8cf227",
+      "source_group": "psf__requests-2148",
+      "problem_sha256": "68364fcb5e168c51619a74fe0026d874a7f62dda4c796e61c9f9a9c808c56a6d",
+      "test_patch_sha256": "ad6a641480a841a4e54349518842cde8e7562813178057e5cd8b44e9e8af8e27",
+      "environment_status": "not_prechecked",
+      "agent_execution_status": "not_started"
+    },
+    {
+      "instance_id": "psf__requests-2317",
+      "repo": "psf/requests",
+      "base_commit": "091991be0da19de9108dbe5e3752917fea3d7fdc",
+      "source_group": "psf__requests-2317",
+      "problem_sha256": "9fdbda259c2e75551a5282e979edf4ca93ba378bee22df393fe02998991cfd1a",
+      "test_patch_sha256": "ff283039874db19ea594bda54c2aa6812eb25fea9881e2517c4a143805cdb552",
+      "environment_status": "not_prechecked",
+      "agent_execution_status": "not_started"
+    },
+    {
+      "instance_id": "psf__requests-2674",
+      "repo": "psf/requests",
+      "base_commit": "0be38a0c37c59c4b66ce908731da15b401655113",
+      "source_group": "psf__requests-2674",
+      "problem_sha256": "37b3690328acc2c93db22c582335e6bc6332a1a08b329670676102073ee110f9",
+      "test_patch_sha256": "ac74744ddcd4a449753944771e99f790e94f07040d7baa82d386ff1f7c4b05ae",
+      "environment_status": "not_prechecked",
+      "agent_execution_status": "not_started"
+    },
+    {
+      "instance_id": "psf__requests-3362",
+      "repo": "psf/requests",
+      "base_commit": "36453b95b13079296776d11b09cab2567ea3e703",
+      "source_group": "psf__requests-3362",
+      "problem_sha256": "c892f19e423f708b6b873b60423fee993d206cb4813a408e3031c8ea494e51d6",
+      "test_patch_sha256": "cbb63761e0d50033c347fb0847126632ba4c8848db8bd7f598e21d3998d5c260",
+      "environment_status": "not_prechecked",
+      "agent_execution_status": "not_started"
+    },
+    {
+      "instance_id": "psf__requests-863",
+      "repo": "psf/requests",
+      "base_commit": "a0df2cbb10419037d11d04352b3175405ab52941",
+      "source_group": "psf__requests-863",
+      "problem_sha256": "d1517326a73157f10f7baad2b292c0e826124f5383d9793813ba76fc8f0a7fba",
+      "test_patch_sha256": "f4434a5d4d12fc75e4a008efc77f14b9f711b2200d4e05a3b5cd3b04deb29bf4",
+      "environment_status": "not_prechecked",
+      "agent_execution_status": "not_started"
+    },
+    {
+      "instance_id": "pytest-dev__pytest-11143",
+      "repo": "pytest-dev/pytest",
+      "base_commit": "6995257cf470d2143ad1683824962de4071c0eb7",
+      "source_group": "pytest-dev__pytest-11143",
+      "problem_sha256": "d9ed54b67e037ab7dd1c4fbd64a530251f98d8eac2cbbd9e41956232e2d1a15c",
+      "test_patch_sha256": "ac7917b3fc8ece1dcdc386e506ca0f85153df928912f15cf264c46b3e08565f6",
+      "environment_status": "not_prechecked",
+      "agent_execution_status": "not_started"
+    },
+    {
+      "instance_id": "pytest-dev__pytest-11148",
+      "repo": "pytest-dev/pytest",
+      "base_commit": "2f7415cfbc4b6ca62f9013f1abd27136f46b9653",
+      "source_group": "pytest-dev__pytest-11148",
+      "problem_sha256": "162b684e380a7530185eade0f4ede569c02e98697a631516fe77fb5f90cdcc40",
+      "test_patch_sha256": "2de425c018454ccdc21c39faab9d52436f7acfbde774b65f5df24354881fd6d6",
+      "environment_status": "not_prechecked",
+      "agent_execution_status": "not_started"
+    },
+    {
+      "instance_id": "pytest-dev__pytest-5103",
+      "repo": "pytest-dev/pytest",
+      "base_commit": "10ca84ffc56c2dd2d9dc4bd71b7b898e083500cd",
+      "source_group": "pytest-dev__pytest-5103",
+      "problem_sha256": "92b5c0a0c415a78c9b42b5cfab6f2137190332221fbce3c857d42d0e196fdb0c",
+      "test_patch_sha256": "89740f6cb7127fc954eb9fa2a84e7b6df26e77f18b76bf96b50db5bfb0ba5c86",
+      "environment_status": "not_prechecked",
+      "agent_execution_status": "not_started"
+    },
+    {
+      "instance_id": "pytest-dev__pytest-5221",
+      "repo": "pytest-dev/pytest",
+      "base_commit": "4a2fdce62b73944030cff9b3e52862868ca9584d",
+      "source_group": "pytest-dev__pytest-5221",
+      "problem_sha256": "7757789a50241137ed7228f2ffefc2eb41894ac79ce25871635a53d05a3caf23",
+      "test_patch_sha256": "2ef78e8e8f6ae6965c52756f15af115a80e980bcb52dfe7147a7d38c6f70de08",
+      "environment_status": "not_prechecked",
+      "agent_execution_status": "not_started"
+    },
+    {
+      "instance_id": "pytest-dev__pytest-5227",
+      "repo": "pytest-dev/pytest",
+      "base_commit": "2051e30b9b596e944524ccb787ed20f9f5be93e3",
+      "source_group": "pytest-dev__pytest-5227",
+      "problem_sha256": "3a2ff514af781d2bbeeba733d6cc9ee99766a5c70718f731e0cd2ea4048ad26c",
+      "test_patch_sha256": "2f0dbf3bd56d91379bef155a0663119a8a7f4e97d5a4501dcd7d8fdc9320d786",
+      "environment_status": "not_prechecked",
+      "agent_execution_status": "not_started"
+    },
+    {
+      "instance_id": "pytest-dev__pytest-5413",
+      "repo": "pytest-dev/pytest",
+      "base_commit": "450d2646233c670654744d3d24330b69895bb9d2",
+      "source_group": "pytest-dev__pytest-5413",
+      "problem_sha256": "d07de38ad8ef1399524db3d22cd5127e01ba3242e1c48cc37d5b397598d1b94d",
+      "test_patch_sha256": "96a694cd889a4b1597e144bc9c0a127960111eab7621b805711b8ebe5ccad8f2",
+      "environment_status": "not_prechecked",
+      "agent_execution_status": "not_started"
+    },
+    {
+      "instance_id": "pytest-dev__pytest-5495",
+      "repo": "pytest-dev/pytest",
+      "base_commit": "1aefb24b37c30fba8fd79a744829ca16e252f340",
+      "source_group": "pytest-dev__pytest-5495",
+      "problem_sha256": "335421f7964c21193a8c352db84c8d1948fac7cb8f870bd2d6f857c91332f733",
+      "test_patch_sha256": "ffed6b9dd4e8e7deb186cd4b1b3d183a92f9cf7003235b0fa3147b010114c4b2",
+      "environment_status": "not_prechecked",
+      "agent_execution_status": "not_started"
+    },
+    {
+      "instance_id": "pytest-dev__pytest-5692",
+      "repo": "pytest-dev/pytest",
+      "base_commit": "29e336bd9bf87eaef8e2683196ee1975f1ad4088",
+      "source_group": "pytest-dev__pytest-5692",
+      "problem_sha256": "e2f0a3010a29eb5938e4284dec328ea3b57e3f6f02b0b16b9f35669440689445",
+      "test_patch_sha256": "4f2c45f495c0adf43ad64a13813f6f0035bbd1263307bcfba9102cb82302f11c",
+      "environment_status": "not_prechecked",
+      "agent_execution_status": "not_started"
+    }
+  ],
+  "limitations": [
+    "Stage 0 tasks excluded from new issue count.",
+    "Candidates are not an environment-ready frozen execution set.",
+    "Public benchmark exposure possible; no final held-out status.",
+    "Stage 1 cannot start before stage 0 review decision."
+  ]
+}
