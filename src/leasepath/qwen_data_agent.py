@@ -18,6 +18,7 @@ class ObservedQwen(BaseFnCallModel):
         self.lane=lane
         self.owner=None
         self.history=[]
+        self.generation_attempts=0
         self.task_deadline=None
         self.pending_tool_results=[]
         self.check_sources=lambda:None
@@ -50,6 +51,7 @@ class ObservedQwen(BaseFnCallModel):
                 raise ValueError('tool result missing from next backend input')
         self.pending_tool_results=[]
         reservation=self.budget.reserve(self.lane,owner=self.owner)
+        self.generation_attempts+=1
         prompt_sha=hashlib.sha256(prompt.encode()).hexdigest()
         request_id='r'+reservation['id']
         self.controller.emit('request_input',owner=self.owner,request_id=request_id,

@@ -26,6 +26,7 @@ def audit(run,*,export=False):
     requests=[r for r in backend if r['kind']=='engine_request']
     opened={}
     retire_times={}
+    running_tools={}
     for record in controller:
         d=record['data']
         if record['kind']=='context_open':
@@ -37,6 +38,13 @@ def audit(run,*,export=False):
             if d['owner'] in retire_times or d['context_version']!='v1':
                 raise ValueError('invalid or duplicate context retire')
             retire_times[d['owner']]=record['ts_ns']
+        if record['kind']=='tool_start':
+            if d['tool_id'] in running_tools:raise ValueError('duplicate running tool')
+            running_tools[d['tool_id']]=(d['owner'],d['tool_name'])
+        if record['kind']=='tool_end':
+            if running_tools.pop(d['tool_id'],None)!=(d['owner'],d['tool_name']):
+                raise ValueError('tool end has no matching start')
+    if running_tools:raise ValueError('complete observation still has unresolved tools')
     client_map={r['data']['request_id']:r for r in client}
     tokenizer=client_tokenizer(plan)
     if len(client)!=len(client_map) or len(client)!=len(requests):

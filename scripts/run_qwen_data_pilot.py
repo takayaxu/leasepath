@@ -135,6 +135,7 @@ def main():
         llm.check_sources=check_sources
         for task in tasks:
             owner=task['id'];llm.owner=owner
+            llm.generation_attempts=0
             llm.task_deadline=time.monotonic()+900
             engine.clear()
             backend.emit('cache_clear',owner=owner)
@@ -151,13 +152,11 @@ def main():
                        "The dataset schema is available from inspect_input."}]
             began=time.monotonic_ns()
             final=None
-            attempts=0
             failure=None
             try:
                 for turn in range(6):
                     if time.monotonic()>=llm.task_deadline:raise TimeoutError('task wall budget')
                     replies=llm.chat(messages,functions=functions,stream=False)
-                    attempts+=1
                     messages.extend(replies)
                     calls=[m for m in replies if m.get('function_call')]
                     if not calls:
@@ -171,10 +170,13 @@ def main():
                     except (TypeError,ValueError):
                         arguments={'invalid_json':call['arguments'][:200]}
                     tool_id='tool'+uuid.uuid4().hex
-                    controller.emit('tool_start',owner=owner,tool_id=tool_id,tool_name=call['name'])
                     protected_start=time.monotonic_ns()
                     check_sources()
                     protected_pre_ns=time.monotonic_ns()-protected_start
+                    remaining=llm.task_deadline-time.monotonic()
+                    if remaining<=0:raise TimeoutError('task wall budget before tool execution')
+                    tools.timeout=min(240,remaining)
+                    controller.emit('tool_start',owner=owner,tool_id=tool_id,tool_name=call['name'])
                     result=tools.call(call['name'],arguments)
                     protected_start=time.monotonic_ns()
                     check_sources()
@@ -186,6 +188,7 @@ def main():
                     messages.append({'role':'function','name':call['name'],'content':result_json})
                     llm.pending_tool_results.append(result_json)
                 if final is None:raise RuntimeError('six-generation task budget')
+                if time.monotonic()>llm.task_deadline:raise TimeoutError('task wall budget before evaluation')
                 if not isinstance(final,dict) or set(final)!={'artifact_id','answer'}:
                     raise ValueError('final answer schema')
                 if final['artifact_id'] not in tools.artifacts:raise ValueError('unknown final artifact')
@@ -200,7 +203,7 @@ def main():
                 controller.emit('context_retire',owner=owner,context_version='v1',
                                 reason='runner_explicitly_discards_completed_or_failed_task')
             quality={'task':owner,'source_group':task['source_group'],'planned_band':task['planned_band'],
-                     'success':failure is None,'failure':failure,'generations':attempts,
+                     'success':failure is None,'failure':failure,'generations':llm.generation_attempts,
                      'wall_s':(time.monotonic_ns()-began)/1e9,'final':final,
                      'tools':[{k:c.get(k) for k in ('call_id','name','started_ns','ended_ns','child_wall_ns','status')}
                               for c in tools.calls]}

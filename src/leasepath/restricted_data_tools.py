@@ -133,6 +133,7 @@ class SessionTools:
 
     def call(self, name, arguments):
         started = time.monotonic_ns()
+        deadline=time.monotonic()+self.timeout
         record = {'call_id': 't'+uuid.uuid4().hex, 'name': name, 'arguments': arguments,
                   'started_ns': started}
         fd = None
@@ -179,13 +180,14 @@ class SessionTools:
                                             text=True, pass_fds=(fd,), env=env, start_new_session=True)
                     record['child_pid'] = proc.pid
                     try:
-                        stdout, stderr = proc.communicate(json.dumps(request), timeout=self.timeout)
+                        stdout, stderr = proc.communicate(json.dumps(request), timeout=max(0,deadline-time.monotonic()))
                     except subprocess.TimeoutExpired:
                         os.killpg(proc.pid, signal.SIGKILL)
                         proc.communicate()
                         raise TimeoutError('tool child process group killed and reaped')
                     record['child_wall_ns'] = time.monotonic_ns()-child_started
                     record['child_stderr'] = stderr[-4000:]
+                    record['child_returncode'] = proc.returncode
                     if proc.returncode:
                         raise ValueError('compute failed: '+stderr[-1000:])
                     envelope = json.loads(stdout)
