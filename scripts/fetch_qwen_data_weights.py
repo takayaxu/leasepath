@@ -27,6 +27,7 @@ def main():
     p.add_argument('--start-index',type=int,default=0)
     p.add_argument('--end-index',type=int,default=14)
     p.add_argument('--source',choices=['hf','modelscope'],default='hf')
+    p.add_argument('--recheck-markers',action='store_true',help='Reread each existing chunk before scheduling; full shard SHA256 is always checked.')
     args = p.parse_args()
     root = args.root.resolve()
     hf = json.loads((root/'metadata/hf.json').read_text())
@@ -61,8 +62,10 @@ def main():
             end = min(start+CHUNK, item['size'])-1
             marker = out/(name+f'.range-{start}-{end}.sha256')
             if marker.exists():
-                old = os.pread(fd, end-start+1, start)
-                assert hashlib.sha256(old).hexdigest() == marker.read_text().strip()
+                # Markers only schedule work; they can never qualify a model.
+                if args.recheck_markers:
+                    old = os.pread(fd, end-start+1, start)
+                    assert hashlib.sha256(old).hexdigest() == marker.read_text().strip()
                 continue
             jobs.append((name, start, end, marker))
     lock = threading.Lock()

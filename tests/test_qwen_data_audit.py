@@ -31,7 +31,7 @@ def build(root,*,miss=False,retire=True,abort=False,missing_result=False,wrong_c
         release=[[x,x] for x in tokens]
         if wrong_cell and index==0:release[0][1]=9999
         reason='cancelled' if abort and index==0 else 'eog'
-        b.emit('engine_request',owner=owner,context_version='v1',request_id=rid,backend_id=index,
+        b.emit('engine_request',owner=owner,context_version='v1',request_id=rid,backend_id=index+1,
                tokens=tokens,prompt_sha256=ph,enqueue_ns=n,dispatch_ns=n,lookup_ns=n,
                release_ns=n+1,hit=0 if miss or index==0 else 32,
                prefill=len(tokens)-(0 if miss or index==0 else 32),
@@ -85,7 +85,7 @@ def test_rejects_unmapped_backend(tmp_path):
     (tmp_path/'raw/backend.jsonl').unlink()
     b=Observer(tmp_path/'raw/backend.jsonl',run_id='synthetic-audit-fixture',source='engine')
     for row in old[1:-1]:b.emit(row['kind'],**row['data'])
-    b.emit('engine_request',**old[1]['data'])
+    b.emit('engine_request',**{**old[1]['data'],'backend_id':3})
     b.finish()
     identity=json.loads((tmp_path/'identity.json').read_text())
     identity['expected_stream_ids'][1]=b.identity['stream_id']

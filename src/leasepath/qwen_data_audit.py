@@ -24,6 +24,8 @@ def audit(run,*,export=False):
     controller,backend=[rows(p) for p in paths]
     client=[r for r in controller if r['kind']=='request_input']
     requests=[r for r in backend if r['kind']=='engine_request']
+    if [r['data']['backend_id'] for r in requests]!=list(range(1,len(requests)+1)):
+        raise ValueError('native backend request sequence is incomplete or duplicated')
     opened={}
     retire_times={}
     running_tools={}
