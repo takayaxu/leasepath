@@ -1,0 +1,10 @@
+{
+  "observed_wall_ns": 1794060616187719404,
+  "reason": "driver and child processes absent; tool session unavailable; exit cause unknown",
+  "oom_events": 0,
+  "protocol_complete": true,
+  "main_requests_reserved": 0,
+  "main_identity_created": false,
+  "raw_streams": "unsealed start records only; not admitted as data",
+  "recovery": "new directory; same frozen contract/tasks and passed protocol"
+}

@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "features": 347,
+  "targets": 347,
+  "aligned_keys": true,
+  "future_target_fields_absent_from_features": true,
+  "protected_collection_sources_unchanged": 18,
+  "merged_file_hashes_match": true
+}

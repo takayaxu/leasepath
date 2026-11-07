@@ -4,6 +4,8 @@ LeasePath 研究一个具体问题：**一个 Agent 上下文暂时空闲后，�
 
 **2026-11-07 新服务器路线：Qwen-Agent＋固定 Qwen2.5-Coder-32B＋受限参数数据工具。** 基线 `66a34c8eb618f4849153cb3c8d72880362e8e387`，工作区 `/home/liuxv/LeasePath-new-server-data`。32B 真实后端边界与两题协议门槛通过；冻结 12 题主试点 **12/12 完整成功**，独立复核通过，**36 episode / 106 snapshots，U=24/D=12/C=0**。本次主要计算实测短中长 4/4/4，其中 2 个成功母题有 ≥60 秒工具；共 86 次新增生成，未训练或运行在线策略/JCT。见 [迁移验收报告](reports/new_server_migration_2026-11-07.md)、[数据卡](results/migration/new_server_2026-11-07/pilot-32b-dataset-card.json)、[未启动的 60 题计划](reports/new_server_scale_plan_2026-11-07.md)。下方旧机器路径、50 母题和 Codex/Flask 阶段均为历史记录，不是本轮成果或前置条件。
 
+**2026-11-07 扩量已完成：50 个成功开发母题。** 原12题加完整重跑通过的38题，独立质量/轨迹与导出重建核验通过；**150 episode、347 snapshots，U=100/D=50/C=0**。主要计算实测短中长35/11/4，≥60秒成功母题2个；首次49/50，整批修正后最终50/50，全部失败和重跑保留。累计331次生成（本次新增245），没有训练或在线实验。见[50题报告](reports/extension50_collection_2026-11-07.md)、[数据卡](results/migration/extension50_2026-11-07/fifty-parent-dataset-card.json)、[母题清单](results/migration/extension50_2026-11-07/fifty-parent-catalog.jsonl)。以下旧50母题/472 episode是旧机器历史，未与本轮合并。
+
 本 README 是新对话或新开发者的项目入口。先看“当前状态”，再按“快速开始”运行现有验收。下一阶段以 [真实开发与决策收益计划](reports/real_development_lookup_plan_2026-10-31.md) 为准；原 [预测计划](reports/mixed_workload_reuse_prediction_plan_2026-10-27.md)、[数据契约](docs/prediction_contract.md) 和 [项目架构](docs/architecture.md) 保留背景与实现说明。
 
 当前数据集的统一入口为 [数据集说明](docs/dataset_card.md)：**50 个不同母题、65 条可审计主执行、472 个 idle episode、2,414 张快照**；质量子集为 54 条执行、47 个母题、296 个 episode、1,553 张快照。已在新目录合并并完成 [经验预测/GBDT 训练 v2](reports/prediction_v2_50parents_review.md)，原轮数据保持原版本；逐文件路径、分组与哈希见 [50 母题清单](results/prediction/dataset_inventory_50parents_2026-10-31.json)，[此前 16 母题清单](results/prediction/dataset_inventory_2026-10-31.json) 保留。

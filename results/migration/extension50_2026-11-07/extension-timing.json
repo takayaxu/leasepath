@@ -1,0 +1,690 @@
+{
+  "run": "/home/liuxv/LeasePath-new-server-data/.artifacts/qwen-data-extension50-c/extension",
+  "clock": "same-host CLOCK_MONOTONIC",
+  "metrics": {
+    "engine_dispatch_to_lookup": {
+      "count": 114,
+      "min_s": 1.101e-06,
+      "median_s": 0.0009017615,
+      "p95_s": 0.0013189885,
+      "max_s": 0.001725898,
+      "sum_s": 0.076972932
+    },
+    "engine_enqueue_to_dispatch": {
+      "count": 114,
+      "min_s": 0.004112125,
+      "median_s": 0.0121774455,
+      "p95_s": 0.01639668955,
+      "max_s": 0.027251675,
+      "sum_s": 1.323411701
+    },
+    "engine_lookup_to_release": {
+      "count": 114,
+      "min_s": 2.882961932,
+      "median_s": 3.452597881,
+      "p95_s": 12.665232381700001,
+      "max_s": 19.91457462,
+      "sum_s": 590.327384644
+    },
+    "engine_result_verification": {
+      "count": 114,
+      "min_s": 0.000182812,
+      "median_s": 0.0003612445,
+      "p95_s": 0.0007157883,
+      "max_s": 0.000946014,
+      "sum_s": 0.044438663
+    },
+    "model_input_source_check": {
+      "count": 114,
+      "min_s": 0.024604345,
+      "median_s": 0.026537782,
+      "p95_s": 0.045617366000000006,
+      "max_s": 0.048589839,
+      "sum_s": 3.71030703
+    },
+    "model_preprocessing_and_reservation": {
+      "count": 114,
+      "min_s": 0.014541243,
+      "median_s": 0.1812475905,
+      "p95_s": 0.7275763666,
+      "max_s": 3.144675801,
+      "sum_s": 31.489616348
+    },
+    "observation_final_fsync_and_close": {
+      "count": 1,
+      "min_s": 2.566306458,
+      "median_s": 2.566306458,
+      "p95_s": 2.566306458,
+      "max_s": 2.566306458,
+      "sum_s": 2.566306458
+    },
+    "observer_serialization_and_write": {
+      "count": 536,
+      "min_s": 2.0835e-05,
+      "median_s": 0.00013592200000000002,
+      "p95_s": 0.022379353,
+      "max_s": 1.032310091,
+      "sum_s": 3.136583387
+    },
+    "protected_sources_after_tool": {
+      "count": 76,
+      "min_s": 0.024660155,
+      "median_s": 0.0357302425,
+      "p95_s": 0.04852680674999999,
+      "max_s": 0.056623709,
+      "sum_s": 2.707840069
+    },
+    "protected_sources_before_tool": {
+      "count": 76,
+      "min_s": 0.023418103,
+      "median_s": 0.0258876365,
+      "p95_s": 0.043953343250000006,
+      "max_s": 0.044310673,
+      "sum_s": 2.185493105
+    },
+    "tool_call_evidence_write": {
+      "count": 76,
+      "min_s": 0.000205179,
+      "median_s": 0.00032407499999999995,
+      "p95_s": 0.014868312500000001,
+      "max_s": 0.196867825,
+      "sum_s": 0.425556146
+    },
+    "tool_call_wall": {
+      "count": 76,
+      "min_s": 0.000777871,
+      "median_s": 0.709068459,
+      "p95_s": 3.17374354675,
+      "max_s": 3.978018523,
+      "sum_s": 81.662932999
+    },
+    "tool_child_wall": {
+      "count": 38,
+      "min_s": 1.246816109,
+      "median_s": 1.4454222905,
+      "p95_s": 2.8873519200500004,
+      "max_s": 3.743095074,
+      "sum_s": 63.680750917
+    },
+    "tool_end_to_next_lookup": {
+      "count": 76,
+      "min_s": 0.056022233,
+      "median_s": 0.2152734215,
+      "p95_s": 0.803168026,
+      "max_s": 3.178831318,
+      "sum_s": 25.178768226
+    },
+    "tool_input_check": {
+      "count": 75,
+      "min_s": 0.00021553,
+      "median_s": 0.005151022,
+      "p95_s": 0.0306540313,
+      "max_s": 0.047157563,
+      "sum_s": 0.635628336
+    },
+    "tool_post_input_check": {
+      "count": 38,
+      "min_s": 0.000280119,
+      "median_s": 0.0061553525,
+      "p95_s": 0.04000543885,
+      "max_s": 0.071957805,
+      "sum_s": 0.437912495
+    },
+    "tool_worker_execute": {
+      "count": 38,
+      "min_s": 1.106913842,
+      "median_s": 1.3063146135,
+      "p95_s": 2.5970923541000004,
+      "max_s": 3.527714642,
+      "sum_s": 57.263637884
+    }
+  },
+  "tool_gaps": [
+    {
+      "owner": "missing_median",
+      "tool_id": "toole5cd2ddfac04469ba009fbdc39a4d30d",
+      "tool_name": "inspect_input",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.741292298
+    },
+    {
+      "owner": "missing_median",
+      "tool_id": "tool6c49f1e879454c1ca4948acbc0864b34",
+      "tool_name": "compute",
+      "tool_status": "error",
+      "tool_end_to_next_lookup_s": 0.409138694
+    },
+    {
+      "owner": "missing_median",
+      "tool_id": "tool1326f4aa48ef486aa9d4f0e5c84a7464",
+      "tool_name": "compute",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.074534793
+    },
+    {
+      "owner": "upper_quantile",
+      "tool_id": "toola4b8a83774aa4452a86348404aa0b3b7",
+      "tool_name": "inspect_input",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.573927695
+    },
+    {
+      "owner": "upper_quantile",
+      "tool_id": "tooldd3c5524770a45fd91823eef78deb170",
+      "tool_name": "compute",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.296265615
+    },
+    {
+      "owner": "weighted_groups",
+      "tool_id": "tool19619a8e983a4dbea68556754af14ad4",
+      "tool_name": "inspect_input",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 3.178831318
+    },
+    {
+      "owner": "weighted_groups",
+      "tool_id": "tool70707a5874a74d5482274d256527a238",
+      "tool_name": "compute",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.302828581
+    },
+    {
+      "owner": "feature_correlation",
+      "tool_id": "tool881c60acbb314c1888206c18581bbd5d",
+      "tool_name": "inspect_input",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.143989248
+    },
+    {
+      "owner": "feature_correlation",
+      "tool_id": "tool9c1691cf1b6a4b2d8820430a3fbfea28",
+      "tool_name": "compute",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.123538603
+    },
+    {
+      "owner": "composite_dedup",
+      "tool_id": "tool54db256141324ea18fcad75598e0fe60",
+      "tool_name": "inspect_input",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.31987857
+    },
+    {
+      "owner": "composite_dedup",
+      "tool_id": "tool085a4ce2f42b42babe431a32f262ffb9",
+      "tool_name": "compute",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.169964717
+    },
+    {
+      "owner": "distribution_bins",
+      "tool_id": "tool7028d80a05c94054b4d9ce267bd2ec45",
+      "tool_name": "inspect_input",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.056022233
+    },
+    {
+      "owner": "distribution_bins",
+      "tool_id": "tool0564479d0f76493487de5639e6e36ba6",
+      "tool_name": "compute",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.122028522
+    },
+    {
+      "owner": "categorical_independence",
+      "tool_id": "tool3987997493cc4bb190b6e0832eb25cd3",
+      "tool_name": "inspect_input",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.568098367
+    },
+    {
+      "owner": "categorical_independence",
+      "tool_id": "tool230f4ac15bab429ba0cedbb78c93d3bf",
+      "tool_name": "compute",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.090061941
+    },
+    {
+      "owner": "bootstrap_interval",
+      "tool_id": "tool0f14082986bc4a8da9d031746db182db",
+      "tool_name": "inspect_input",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.53196545
+    },
+    {
+      "owner": "bootstrap_interval",
+      "tool_id": "tool38874b169212472f9aa2f69741c37a57",
+      "tool_name": "compute",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.51028669
+    },
+    {
+      "owner": "randomization_test",
+      "tool_id": "toole7f303025c294686aa6e4eba8d66fc1e",
+      "tool_name": "inspect_input",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.117102198
+    },
+    {
+      "owner": "randomization_test",
+      "tool_id": "tool52599256f1f141edab0183a2a6f4e67c",
+      "tool_name": "compute",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.594071487
+    },
+    {
+      "owner": "paired_measurements",
+      "tool_id": "tool32153182290a4ef4bd095b61d769b5b5",
+      "tool_name": "inspect_input",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.226617046
+    },
+    {
+      "owner": "paired_measurements",
+      "tool_id": "toole929a735b4ab44e7b374ec2a91412cf1",
+      "tool_name": "compute",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.638217579
+    },
+    {
+      "owner": "multi_group_anova",
+      "tool_id": "toolaa3f9a9b93f14fb5bf20f9fba63a342b",
+      "tool_name": "inspect_input",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.1259679
+    },
+    {
+      "owner": "multi_group_anova",
+      "tool_id": "toolb114eea5fa854b45a73caee635a3933e",
+      "tool_name": "compute",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.163161428
+    },
+    {
+      "owner": "rank_sum_test",
+      "tool_id": "tool016ab3dfd7e54a2786fcb4a9d80bdce8",
+      "tool_name": "inspect_input",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.103895579
+    },
+    {
+      "owner": "rank_sum_test",
+      "tool_id": "toolfd1cea29cb6447c9b74bdb84b04489da",
+      "tool_name": "compute",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.488533575
+    },
+    {
+      "owner": "response_trend",
+      "tool_id": "tool83bc2728dba34fc7a6da9c7284e82064",
+      "tool_name": "inspect_input",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.136840147
+    },
+    {
+      "owner": "response_trend",
+      "tool_id": "tool30a2d951f5fa4be1942d7201e89936bd",
+      "tool_name": "compute",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.167586832
+    },
+    {
+      "owner": "robust_fences",
+      "tool_id": "toolf63e6373534e4444b87a860ab6592bbe",
+      "tool_name": "inspect_input",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.315028304
+    },
+    {
+      "owner": "robust_fences",
+      "tool_id": "tool89ea94a11f274e488d738b0583fa5396",
+      "tool_name": "compute",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.364894598
+    },
+    {
+      "owner": "temporal_asof",
+      "tool_id": "tooldb98396adfeb4e3dad2448d0f03a7f18",
+      "tool_name": "inspect_input",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.292683331
+    },
+    {
+      "owner": "temporal_asof",
+      "tool_id": "tool8c60a7035c114988876606c5e9fbaded",
+      "tool_name": "compute",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.229818881
+    },
+    {
+      "owner": "window_smoothing",
+      "tool_id": "toola802ea80cd5a43c98ff6fb3588d1f9bb",
+      "tool_name": "inspect_input",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.126695454
+    },
+    {
+      "owner": "window_smoothing",
+      "tool_id": "tool761999dfb10e475eb8e2fb37014c8886",
+      "tool_name": "compute",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.15364607
+    },
+    {
+      "owner": "time_buckets",
+      "tool_id": "tool5680eb2ccbe5417eae19289aada1fefb",
+      "tool_name": "inspect_input",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.092752837
+    },
+    {
+      "owner": "time_buckets",
+      "tool_id": "tool084f438dfa714fd997cae75d0de857bc",
+      "tool_name": "compute",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.122441095
+    },
+    {
+      "owner": "activity_sessions",
+      "tool_id": "toolddd58324e0764119b72c01e1d551129a",
+      "tool_name": "inspect_input",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.083237811
+    },
+    {
+      "owner": "activity_sessions",
+      "tool_id": "tool5d58bea552214ee4a9a9c062de03d80f",
+      "tool_name": "compute",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.136652918
+    },
+    {
+      "owner": "gap_interpolation",
+      "tool_id": "tool6c9bec45084d4e89bb1f79181cbaff57",
+      "tool_name": "inspect_input",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.993369614
+    },
+    {
+      "owner": "gap_interpolation",
+      "tool_id": "toolb36663cd12e947189fda21013e6a5281",
+      "tool_name": "compute",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.276996607
+    },
+    {
+      "owner": "dominant_frequency",
+      "tool_id": "tool90ff298353974cf99f9cafc848b78b07",
+      "tool_name": "inspect_input",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.268757409
+    },
+    {
+      "owner": "dominant_frequency",
+      "tool_id": "toolb0b7c5c7507345be9645e5c8da8204bd",
+      "tool_name": "compute",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.217951219
+    },
+    {
+      "owner": "signal_alignment",
+      "tool_id": "tool793808b1698248b9abd769a73cc7feb9",
+      "tool_name": "inspect_input",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.182079528
+    },
+    {
+      "owner": "signal_alignment",
+      "tool_id": "toola3e849d1b6174cbb9b1b010ce6cd721f",
+      "tool_name": "compute",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.382670266
+    },
+    {
+      "owner": "noise_filtering",
+      "tool_id": "toolfa21039ff99d41349195170a905d51ad",
+      "tool_name": "compute",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.207581523
+    },
+    {
+      "owner": "event_peaks",
+      "tool_id": "tool4766deaf40604c79bca1124ab79f6be6",
+      "tool_name": "inspect_input",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.98879521
+    },
+    {
+      "owner": "event_peaks",
+      "tool_id": "tool36d34bb9464d408b81cf831a31f62755",
+      "tool_name": "compute",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.33144318
+    },
+    {
+      "owner": "curve_area",
+      "tool_id": "toole6895547abaf4704b57057b840b36a39",
+      "tool_name": "inspect_input",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.433183975
+    },
+    {
+      "owner": "curve_area",
+      "tool_id": "tool9647ab8fcee443318a4b3959edf97a9a",
+      "tool_name": "compute",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.211693824
+    },
+    {
+      "owner": "bracketed_root",
+      "tool_id": "toold37e5e1e19b249ce8425713b9b2903cd",
+      "tool_name": "inspect_input",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.174517955
+    },
+    {
+      "owner": "bracketed_root",
+      "tool_id": "tool5e3d098b6bfa4e3284d7154edd7fa4e5",
+      "tool_name": "compute",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.574334157
+    },
+    {
+      "owner": "portfolio_allocation",
+      "tool_id": "toold32656b79b0e49209fc4921ce85a1de7",
+      "tool_name": "inspect_input",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.176359914
+    },
+    {
+      "owner": "portfolio_allocation",
+      "tool_id": "toolafeea54830ce46519177c5a2820ddd3b",
+      "tool_name": "compute",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.311684106
+    },
+    {
+      "owner": "tridiagonal_system",
+      "tool_id": "toolc691a473a6864de7a3ecef63b2d8557c",
+      "tool_name": "inspect_input",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.112928503
+    },
+    {
+      "owner": "tridiagonal_system",
+      "tool_id": "toolf163cd3470704212a458181da632163a",
+      "tool_name": "compute",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.136192688
+    },
+    {
+      "owner": "nonnegative_factors",
+      "tool_id": "tooled115b473cae4bcd97544ce4a3ca3dfa",
+      "tool_name": "inspect_input",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 1.405274549
+    },
+    {
+      "owner": "nonnegative_factors",
+      "tool_id": "tool05ded0956d3744ab82cd64dacb3e3039",
+      "tool_name": "compute",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.125730552
+    },
+    {
+      "owner": "independent_sources",
+      "tool_id": "toolc833032e20e2453bab25c5ac23af7af0",
+      "tool_name": "inspect_input",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.109116731
+    },
+    {
+      "owner": "independent_sources",
+      "tool_id": "toola993172f2ecf4f6484d4c5944ddb118b",
+      "tool_name": "compute",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.378437141
+    },
+    {
+      "owner": "density_clusters",
+      "tool_id": "tool5e4a371b7dcd4775a363698c038f0576",
+      "tool_name": "inspect_input",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.212595624
+    },
+    {
+      "owner": "density_clusters",
+      "tool_id": "tool2f2c61bf6e5843f89ddaefbcf6cf8575",
+      "tool_name": "compute",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.252431176
+    },
+    {
+      "owner": "neighbor_retrieval",
+      "tool_id": "toolf19ebb53dd1a49e89bf98768600ea611",
+      "tool_name": "inspect_input",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.173043794
+    },
+    {
+      "owner": "neighbor_retrieval",
+      "tool_id": "tool2e69d7d2687442499915bf62c53e5d90",
+      "tool_name": "compute",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.086203112
+    },
+    {
+      "owner": "anomaly_detection",
+      "tool_id": "toolce03281468b54a47a6ffc5066aea6b76",
+      "tool_name": "inspect_input",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.549175435
+    },
+    {
+      "owner": "anomaly_detection",
+      "tool_id": "toola8e8f42a8e664b1ba2155507874ed71d",
+      "tool_name": "compute",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.09830999
+    },
+    {
+      "owner": "feature_information",
+      "tool_id": "toolfd7c99f880fa40ef94ab74d0deeef86d",
+      "tool_name": "inspect_input",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.277475595
+    },
+    {
+      "owner": "feature_information",
+      "tool_id": "tool86f4d56141e44af4928248e1a75c31c0",
+      "tool_name": "compute",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.350449868
+    },
+    {
+      "owner": "recursive_forecast",
+      "tool_id": "tool5b07c9e5025544ddada8461d8cfd87f9",
+      "tool_name": "inspect_input",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.16120309
+    },
+    {
+      "owner": "recursive_forecast",
+      "tool_id": "tool9ee392e8641e49e9b257dbf72546a797",
+      "tool_name": "compute",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.159095336
+    },
+    {
+      "owner": "censored_survival",
+      "tool_id": "tool372f7aa780ed470fb15de7b5f29ec3ee",
+      "tool_name": "inspect_input",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.10189943
+    },
+    {
+      "owner": "censored_survival",
+      "tool_id": "tool4f196f4cb16944b485a6d42ef8eed35f",
+      "tool_name": "compute",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.123647753
+    },
+    {
+      "owner": "image_regions",
+      "tool_id": "tool49da772403d3488c920e0ab3ed7beaae",
+      "tool_name": "inspect_input",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.315656964
+    },
+    {
+      "owner": "image_regions",
+      "tool_id": "toola96e10da38c84d36a6b26af6e38b65f8",
+      "tool_name": "compute",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.092240157
+    },
+    {
+      "owner": "cost_assignment",
+      "tool_id": "toolf10a722031384486a9eaf7b89b6b443b",
+      "tool_name": "inspect_input",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.246719956
+    },
+    {
+      "owner": "cost_assignment",
+      "tool_id": "tool70f65f50952549dd84e1bb4e23361f53",
+      "tool_name": "compute",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.236397821
+    },
+    {
+      "owner": "distribution_transport",
+      "tool_id": "tooledccabd3f4404edba31e873e958cfd6c",
+      "tool_name": "inspect_input",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.11626259
+    },
+    {
+      "owner": "distribution_transport",
+      "tool_id": "tool6c5f2c22a149423a98917c62f09d876f",
+      "tool_name": "compute",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.734363479
+    }
+  ],
+  "observer_overhead_recorded": true,
+  "missing_measurements": "Absent fields are omitted, never imputed as zero.",
+  "interpretation": [
+    "Durations are nested; sums across categories would double-count.",
+    "worker_execute is inside child_wall, which is inside tool_call_wall.",
+    "Input hashes and artifact persistence are inside tool_call_wall.",
+    "Protected source checks bracket tool calls and are reported separately.",
+    "Model preprocessing includes the durable generation reservation.",
+    "Observer writes include serialization and os.write, not per-row fsync.",
+    "Tool-end to lookup includes intervening checks, preprocessing and writes; it is not a cache benefit.",
+    "Final observation fsync occurs only after producers drained."
+  ],
+  "workspace_hash_1": "not_applicable",
+  "workspace_hash_2": "not_applicable"
+}

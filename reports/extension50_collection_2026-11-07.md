@@ -24,7 +24,7 @@
 
 50 个 source_group 的单位是不同分析意图，不是50个独立数据来源。它们共享库家族与部分计算结构；当前全部为开发集，无验证/测试留出泛化结论。本次用户指定50题，没有为此冒充原60题的42/9/9切分，也不宣称≥10个成功长工具目标已经完成。
 
-后续聚合只接受原12题和新增38题两个完整成功且审计通过的冻结批次。保留各自 run_id、来源任务、实际前缀/KV证据和代码版本，协议/受控/失败记录不混入主集，不能拼接不同版本最佳答案。特征与未来目标文件分离。最终统计、质量和独立审计结果在封口后补充。
+后续聚合只接受原12题和新增38题两个完整成功且审计通过的冻结批次。保留各自 run_id、来源任务、实际前缀/KV证据和代码版本，协议/受控/失败记录不混入主集，不能拼接不同版本最佳答案。特征与未来目标文件分离。最终统计、质量和独立审计结果如下；本报告保留失败版本和恢复过程。
 
 ## 当前运行入口
 
@@ -43,3 +43,54 @@
 修正通用非表格产物分页：完整对象为1项，明确complete_result_returned和分页单位，nested arrays始终保留完整。系统提示说明compute已返回完整结果，仅显式截断时才需view。表格分页保持真实行语义。203 passed/1 skipped/1 deselected；38题compute/view重新与参考解一致。三次原参考计时按相同输入/参数和未变的compute/reference源码SHA继承，不假造新测三次；任务和参考文件hash与v1完全相同，schema/响应版本变化另记v2。
 
 为避免跨版本最佳答案拼接，使用v2完整重跑38题。批次a耗用125次（probe7、主118）封存，其ledger.sealed.json禁止再次预约；剩余127次总额度独立分配probe7、主120，不增加原新增252/累计338上限。v2读取旧账本SHA和125条记录作前置校验。新目录qwen-data-tasks-extension38-v2保留同一任务/参考字节，输入仍指向原不可变v1文件；冻结schema新hash。批次b协议选近邻与相关矩阵，先重新验收再主采集。
+
+## 版本2门槛与加载前中断恢复
+
+版本2近邻/相关矩阵两题各3次生成完整成功、独立审计U=4/D=2且无未消费结果。随后driver与子进程在主采集模型校验阶段消失，原工具session不可用，退出原因未知；cgroup没有OOM记录。batch-b主目录仅有未封口的observer start记录，没有identity.json；账本pilot=0、probe=6。没有把这段当数据或补造exit code。中断目录与driver-interruption.json保留。
+
+使用独立session的驱动在batch-c新目录恢复，继续同一v2冻结合同、ledger、输入/参考和已通过的batch-b两题门槛，不重复协议探针、不覆盖未封口目录。全部真实新增预算继续锁定：第一批125、v2协议6，主采集可用120。
+
+## 最终结果：50 个成功开发母题
+
+最终采用原12题完整成功批次与版本2完整38题重跑，不从37/38的首批中挑题补齐。版本2 **38/38完整成功**，独立质量复核、封口轨迹审计和导出重建通过；输入/参考hash与首批相同，schema/产物查看语义的版本差异保留。first-attempt口径为原12+首批37=**49/50（98%）**；经过一次整个38题重跑后，最终采用两完整批次为**50/50（100%）**。这不是把首次成功率改写为100%。
+
+| 指标 | 原12题 | 最终38题 | 合计 |
+|---|---:|---:|---:|
+| 完整成功母题 | 12 | 38 | 50 |
+| 采用批次实际生成/lookup | 36 | 114 | 150 |
+| 工具结果被后续真实输入消费 | 24 | 76 | 100 |
+| idle episode | 36 | 114 | 150 |
+| 因果快照/目标 | 106 | 241 | 347 |
+| U | 24 | 76 | 100 |
+| D | 12 | 38 | 50 |
+| C | 0 | 0 | 0 |
+
+版本2missing_median用4次生成（参数拒绝后纠错）、noise_filtering用2次（直接compute并消费后回答），其余36题各3次。没有外部单题最佳重试拼接。成功批次未消费工具结果0、unmapped0、unexplained0、轨迹拒绝0。首批失败near-neighbor最终一次view结果未消费后显式discard，单列保留而未补造消费。
+
+50题主要成功compute实际短/中/长为 **35/11/4**；≥60秒成功母题仍为**2个**，均来自初始随机森林/Extra Trees。新增题以广度为目标，未用人为重复或等待补长尾，未声称原计划≥10长题已完成。首批全部失败/成功轨迹、协议和控制探针均另存，不进入这150个主episode。
+
+所有50题都是development；验证0、测试0，无独立来源/时间留出结论。分析意图按source_group归组，仍共享TPC-H/NumPy/SciPy/sklearn来源。初始12和新增38分别保留原run_id、事件、输入与参数能力版本、source hashes，不声称两批完全相同工具schema。模型、权重、tokenizer、F16 KV、native库和上下文配置在聚合中逐项校验相同。
+
+最终数据位于 **.artifacts/qwen-data-extension50-c/fifty-parent-dataset/**：dataset-card.json、catalog.jsonl、events.jsonl、episodes.jsonl、features.jsonl、targets.jsonl、compute-calls.jsonl、provenance.json、SHA256SUMS。features只含当时可见白名单字段，未来结局和剩余时间单独存targets；347行逐键对齐且remaining_ns>0。聚合重新从两批封口raw重建events/episodes/snapshots/coverage，逐字节匹配后才导出；不只相信已有导出统计。原始新主批次在extension/，旧主批次仍在qwen-data-32b-batch-d/pilot。
+
+## 实际用量、计时与资源
+
+本次扩量实际 **245次**：首批125（probe7/main118）、版本2共120（probe6/main114）。连同初始86为 **331次**（probe63、所有main尝试268）；最终采用主批150次。三个账本331个reservation ID唯一，两个新账本已封口，不继续追加。低于本次独立有界计划338，没有拿原432余量静默提高额度。主机已有资源，没有外部推理购买/货币费用估算。
+
+版本2主进程含完整模型核验/加载和采集共1229.120秒，恢复driver含独立检查/导出/聚合共1290.023秒；未知原因的加载前中断另保留，不虚构exit code。版本2已记录的整批计算/工具调用时长合计81.663秒，worker/child/tool/source-check/observer等是嵌套，不可横向相加。工具返回到lookup中位数0.215秒、最大3.179秒，包含源保护/前处理/观测，不是cache收益；observer序列化写入合计3.137秒，seal/fsync2.566秒。workspace_hash仍not_applicable。
+
+GPU5/6/7峰值约22346/22324/21850MiB，自有engine结束后均约4MiB；0–4原任务保持。临时65.54GB运行模型副本已清理，持久GGUF、14原权重和原identity/SHA保留。受共享机械盘与CPU影响，本次没有独占性能或在线收益声明。
+
+## 交付与只读复核
+
+小摘要在results/migration/extension50_2026-11-07/。新旧失败/成功原始证据和冻结v1/v2任务、参考、schema、合同、账本、全部argv/log/exit、license另外归档SHA256；Git bundle不替代原始数据。最终checkpoint在.artifacts/checkpoints/extension50-final/，恢复使用restore_qwen_data_checkpoint.py和metadata.json保留shallow边界。备份仅在同一服务器，未推送、没有异机备份。
+
+只读重验最终新增批次不产生模型请求：
+
+```bash
+PYTHONPATH=src .artifacts/qwen-data-env/bin/python scripts/check_qwen_data_dataset.py \
+  --run .artifacts/qwen-data-extension50-c/extension \
+  --tasks .artifacts/qwen-data-tasks-extension38-v2 --output /tmp/extension38-recheck.json
+```
+
+进一步只读重建50题：用aggregate_qwen_data_fifty.py，initial指向qwen-data-32b-batch-d/pilot，extension指向qwen-data-extension50-c/extension，tasks分别为qwen-data-tasks-v5和qwen-data-tasks-extension38-v2，output必须为新空目录。没有自动启动训练、预测器调参、在线策略或JCT实验。

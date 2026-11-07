@@ -1,0 +1,48 @@
+{
+  "status": "passed",
+  "scope": "single_dense_sequence_no_preemption",
+  "transport": {
+    "observer_version": "real-development-observer-v1",
+    "streams": [
+      {
+        "observer_version": "real-development-observer-v1",
+        "run_id": "extension-dc1e952d",
+        "stream_id": "37a40856e1944e68bb322417e62a06fa",
+        "pid": 2348897,
+        "boot_id": "91b65d19-10fc-4f9a-ae68-2b38e6ad0b40",
+        "source": "qwen_controller",
+        "rank": null,
+        "records": 384,
+        "sha256": "1b9c3a6efc98594d4dc78c5b4ef5cbaa07a681da14bb8faf837f6aaeaa69e531",
+        "complete": true
+      },
+      {
+        "observer_version": "real-development-observer-v1",
+        "run_id": "extension-dc1e952d",
+        "stream_id": "bcdbf13aa7c84638a1537fd4689a4ef9",
+        "pid": 2348897,
+        "boot_id": "91b65d19-10fc-4f9a-ae68-2b38e6ad0b40",
+        "source": "native_cuda_engine",
+        "rank": null,
+        "records": 154,
+        "sha256": "47847c7580e864510899c3ac159ff4d69978c4ac811e578179f0efb8401463a8",
+        "complete": true
+      }
+    ],
+    "complete": true,
+    "semantic_completeness_verified": false,
+    "scope": "transport_integrity_only_not_backend_or_label_acceptance"
+  },
+  "requests": 114,
+  "tool_results_consumed": 76,
+  "tool_results_unconsumed": [],
+  "labels": {
+    "legal_demand": 76,
+    "retire": 38
+  },
+  "episodes": 114,
+  "snapshot_count": 241,
+  "unmapped": 0,
+  "unexplained": 0,
+  "cell_blocks": "analysis groups, not vLLM allocations"
+}

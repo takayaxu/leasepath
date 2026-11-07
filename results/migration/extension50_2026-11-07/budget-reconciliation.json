@@ -1,0 +1,37 @@
+{
+  "status": "passed",
+  "unique_total_generations": 331,
+  "new_extension_generations": 245,
+  "main_all_attempts": 268,
+  "probe_all_stages": 63,
+  "accepted_main_generations": 150,
+  "local_stage_max_including_initial": 338,
+  "stages": [
+    {
+      "stage": "initial",
+      "file": "/home/liuxv/LeasePath-new-server-data/.artifacts/qwen-data-batch-v1/ledger.jsonl",
+      "sha256": "29a0139e1d1801004d7751546129e7aea5e02114ae32e1fab54c062147a79054",
+      "generations": 86,
+      "probe": 50,
+      "main": 36
+    },
+    {
+      "stage": "extension-a",
+      "file": "/home/liuxv/LeasePath-new-server-data/.artifacts/extension50/ledger.jsonl",
+      "sha256": "f963c5f6ef8460bf76998cdeff1d6cb497f4ea6c92cd39517ea894c9fffa096e",
+      "generations": 125,
+      "probe": 7,
+      "main": 118
+    },
+    {
+      "stage": "extension-v2",
+      "file": "/home/liuxv/LeasePath-new-server-data/.artifacts/extension50/ledger-v2.jsonl",
+      "sha256": "d66b0c222f1193eac23d04bda4ba3f10a09ade030dd1b61fc011940a2aea61c1",
+      "generations": 120,
+      "probe": 6,
+      "main": 114
+    }
+  ],
+  "historical_usage": "historical_unreconciled",
+  "external_purchase": false
+}

@@ -1,0 +1,747 @@
+{
+  "scope": "independent sealed evidence and checker revalidation",
+  "status": "passed",
+  "audit": {
+    "status": "passed",
+    "scope": "single_dense_sequence_no_preemption",
+    "transport": {
+      "observer_version": "real-development-observer-v1",
+      "streams": [
+        {
+          "observer_version": "real-development-observer-v1",
+          "run_id": "extension-dc1e952d",
+          "stream_id": "37a40856e1944e68bb322417e62a06fa",
+          "pid": 2348897,
+          "boot_id": "91b65d19-10fc-4f9a-ae68-2b38e6ad0b40",
+          "source": "qwen_controller",
+          "rank": null,
+          "records": 384,
+          "sha256": "1b9c3a6efc98594d4dc78c5b4ef5cbaa07a681da14bb8faf837f6aaeaa69e531",
+          "complete": true
+        },
+        {
+          "observer_version": "real-development-observer-v1",
+          "run_id": "extension-dc1e952d",
+          "stream_id": "bcdbf13aa7c84638a1537fd4689a4ef9",
+          "pid": 2348897,
+          "boot_id": "91b65d19-10fc-4f9a-ae68-2b38e6ad0b40",
+          "source": "native_cuda_engine",
+          "rank": null,
+          "records": 154,
+          "sha256": "47847c7580e864510899c3ac159ff4d69978c4ac811e578179f0efb8401463a8",
+          "complete": true
+        }
+      ],
+      "complete": true,
+      "semantic_completeness_verified": false,
+      "scope": "transport_integrity_only_not_backend_or_label_acceptance"
+    },
+    "requests": 114,
+    "tool_results_consumed": 76,
+    "tool_results_unconsumed": [],
+    "labels": {
+      "legal_demand": 76,
+      "retire": 38
+    },
+    "episodes": 114,
+    "snapshot_count": 241,
+    "unmapped": 0,
+    "unexplained": 0,
+    "cell_blocks": "analysis groups, not vLLM allocations"
+  },
+  "unique_parents": 38,
+  "complete_success": 38,
+  "tool_calls": [
+    {
+      "task": "missing_median",
+      "name": "inspect_input",
+      "status": "ok",
+      "wall_s": 0.007970903,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "extension_missing_median"
+    },
+    {
+      "task": "missing_median",
+      "name": "compute",
+      "status": "error",
+      "wall_s": 0.002674253,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "extension_missing_median"
+    },
+    {
+      "task": "missing_median",
+      "name": "compute",
+      "status": "ok",
+      "wall_s": 3.241568221,
+      "actual_band": "medium",
+      "planned_band": "short",
+      "source_group": "extension_missing_median"
+    },
+    {
+      "task": "upper_quantile",
+      "name": "inspect_input",
+      "status": "ok",
+      "wall_s": 0.011116905,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "extension_upper_quantile"
+    },
+    {
+      "task": "upper_quantile",
+      "name": "compute",
+      "status": "ok",
+      "wall_s": 2.020280075,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "extension_upper_quantile"
+    },
+    {
+      "task": "weighted_groups",
+      "name": "inspect_input",
+      "status": "ok",
+      "wall_s": 0.010866114,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "extension_weighted_groups"
+    },
+    {
+      "task": "weighted_groups",
+      "name": "compute",
+      "status": "ok",
+      "wall_s": 2.146868909,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "extension_weighted_groups"
+    },
+    {
+      "task": "feature_correlation",
+      "name": "inspect_input",
+      "status": "ok",
+      "wall_s": 0.002851104,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "extension_feature_correlation"
+    },
+    {
+      "task": "feature_correlation",
+      "name": "compute",
+      "status": "ok",
+      "wall_s": 1.375991023,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "extension_feature_correlation"
+    },
+    {
+      "task": "composite_dedup",
+      "name": "inspect_input",
+      "status": "ok",
+      "wall_s": 0.018606689,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "extension_composite_dedup"
+    },
+    {
+      "task": "composite_dedup",
+      "name": "compute",
+      "status": "ok",
+      "wall_s": 3.890987006,
+      "actual_band": "medium",
+      "planned_band": "short",
+      "source_group": "extension_composite_dedup"
+    },
+    {
+      "task": "distribution_bins",
+      "name": "inspect_input",
+      "status": "ok",
+      "wall_s": 0.024555494,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "extension_distribution_bins"
+    },
+    {
+      "task": "distribution_bins",
+      "name": "compute",
+      "status": "ok",
+      "wall_s": 1.584845003,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "extension_distribution_bins"
+    },
+    {
+      "task": "categorical_independence",
+      "name": "inspect_input",
+      "status": "ok",
+      "wall_s": 0.001505305,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "extension_categorical_independence"
+    },
+    {
+      "task": "categorical_independence",
+      "name": "compute",
+      "status": "ok",
+      "wall_s": 1.427543547,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "extension_categorical_independence"
+    },
+    {
+      "task": "bootstrap_interval",
+      "name": "inspect_input",
+      "status": "ok",
+      "wall_s": 0.00109007,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "extension_bootstrap_interval"
+    },
+    {
+      "task": "bootstrap_interval",
+      "name": "compute",
+      "status": "ok",
+      "wall_s": 1.54937536,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "extension_bootstrap_interval"
+    },
+    {
+      "task": "randomization_test",
+      "name": "inspect_input",
+      "status": "ok",
+      "wall_s": 0.000868012,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "extension_randomization_test"
+    },
+    {
+      "task": "randomization_test",
+      "name": "compute",
+      "status": "ok",
+      "wall_s": 2.036288697,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "extension_randomization_test"
+    },
+    {
+      "task": "paired_measurements",
+      "name": "inspect_input",
+      "status": "ok",
+      "wall_s": 0.001151339,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "extension_paired_measurements"
+    },
+    {
+      "task": "paired_measurements",
+      "name": "compute",
+      "status": "ok",
+      "wall_s": 2.015393131,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "extension_paired_measurements"
+    },
+    {
+      "task": "multi_group_anova",
+      "name": "inspect_input",
+      "status": "ok",
+      "wall_s": 0.001730658,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "extension_multi_group_anova"
+    },
+    {
+      "task": "multi_group_anova",
+      "name": "compute",
+      "status": "ok",
+      "wall_s": 2.035021353,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "extension_multi_group_anova"
+    },
+    {
+      "task": "rank_sum_test",
+      "name": "inspect_input",
+      "status": "ok",
+      "wall_s": 0.001081855,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "extension_rank_sum_test"
+    },
+    {
+      "task": "rank_sum_test",
+      "name": "compute",
+      "status": "ok",
+      "wall_s": 1.7394371,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "extension_rank_sum_test"
+    },
+    {
+      "task": "response_trend",
+      "name": "inspect_input",
+      "status": "ok",
+      "wall_s": 0.002974333,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "extension_response_trend"
+    },
+    {
+      "task": "response_trend",
+      "name": "compute",
+      "status": "ok",
+      "wall_s": 1.726020966,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "extension_response_trend"
+    },
+    {
+      "task": "robust_fences",
+      "name": "inspect_input",
+      "status": "ok",
+      "wall_s": 0.016153014,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "extension_robust_fences"
+    },
+    {
+      "task": "robust_fences",
+      "name": "compute",
+      "status": "ok",
+      "wall_s": 2.030728267,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "extension_robust_fences"
+    },
+    {
+      "task": "temporal_asof",
+      "name": "inspect_input",
+      "status": "ok",
+      "wall_s": 0.002746106,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "extension_temporal_asof"
+    },
+    {
+      "task": "temporal_asof",
+      "name": "compute",
+      "status": "ok",
+      "wall_s": 1.63662666,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "extension_temporal_asof"
+    },
+    {
+      "task": "window_smoothing",
+      "name": "inspect_input",
+      "status": "ok",
+      "wall_s": 0.01649458,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "extension_window_smoothing"
+    },
+    {
+      "task": "window_smoothing",
+      "name": "compute",
+      "status": "ok",
+      "wall_s": 1.512215067,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "extension_window_smoothing"
+    },
+    {
+      "task": "time_buckets",
+      "name": "inspect_input",
+      "status": "ok",
+      "wall_s": 0.00880038,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "extension_time_buckets"
+    },
+    {
+      "task": "time_buckets",
+      "name": "compute",
+      "status": "ok",
+      "wall_s": 1.729449123,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "extension_time_buckets"
+    },
+    {
+      "task": "activity_sessions",
+      "name": "inspect_input",
+      "status": "ok",
+      "wall_s": 0.009880843,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "extension_activity_sessions"
+    },
+    {
+      "task": "activity_sessions",
+      "name": "compute",
+      "status": "ok",
+      "wall_s": 1.658493673,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "extension_activity_sessions"
+    },
+    {
+      "task": "gap_interpolation",
+      "name": "inspect_input",
+      "status": "ok",
+      "wall_s": 0.001592175,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "extension_gap_interpolation"
+    },
+    {
+      "task": "gap_interpolation",
+      "name": "compute",
+      "status": "ok",
+      "wall_s": 1.841640022,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "extension_gap_interpolation"
+    },
+    {
+      "task": "dominant_frequency",
+      "name": "inspect_input",
+      "status": "ok",
+      "wall_s": 0.004376187,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "extension_dominant_frequency"
+    },
+    {
+      "task": "dominant_frequency",
+      "name": "compute",
+      "status": "ok",
+      "wall_s": 1.93210657,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "extension_dominant_frequency"
+    },
+    {
+      "task": "signal_alignment",
+      "name": "inspect_input",
+      "status": "ok",
+      "wall_s": 0.002426087,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "extension_signal_alignment"
+    },
+    {
+      "task": "signal_alignment",
+      "name": "compute",
+      "status": "ok",
+      "wall_s": 3.978018523,
+      "actual_band": "medium",
+      "planned_band": "short",
+      "source_group": "extension_signal_alignment"
+    },
+    {
+      "task": "noise_filtering",
+      "name": "compute",
+      "status": "ok",
+      "wall_s": 1.811510738,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "extension_noise_filtering"
+    },
+    {
+      "task": "event_peaks",
+      "name": "inspect_input",
+      "status": "ok",
+      "wall_s": 0.005233311,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "extension_event_peaks"
+    },
+    {
+      "task": "event_peaks",
+      "name": "compute",
+      "status": "ok",
+      "wall_s": 1.939909892,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "extension_event_peaks"
+    },
+    {
+      "task": "curve_area",
+      "name": "inspect_input",
+      "status": "ok",
+      "wall_s": 0.0086528,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "extension_curve_area"
+    },
+    {
+      "task": "curve_area",
+      "name": "compute",
+      "status": "ok",
+      "wall_s": 3.05732983,
+      "actual_band": "medium",
+      "planned_band": "short",
+      "source_group": "extension_curve_area"
+    },
+    {
+      "task": "bracketed_root",
+      "name": "inspect_input",
+      "status": "ok",
+      "wall_s": 0.000819735,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "extension_bracketed_root"
+    },
+    {
+      "task": "bracketed_root",
+      "name": "compute",
+      "status": "ok",
+      "wall_s": 1.522251479,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "extension_bracketed_root"
+    },
+    {
+      "task": "portfolio_allocation",
+      "name": "inspect_input",
+      "status": "ok",
+      "wall_s": 0.000777871,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "extension_portfolio_allocation"
+    },
+    {
+      "task": "portfolio_allocation",
+      "name": "compute",
+      "status": "ok",
+      "wall_s": 2.159585433,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "extension_portfolio_allocation"
+    },
+    {
+      "task": "tridiagonal_system",
+      "name": "inspect_input",
+      "status": "ok",
+      "wall_s": 0.014769344,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "extension_tridiagonal_system"
+    },
+    {
+      "task": "tridiagonal_system",
+      "name": "compute",
+      "status": "ok",
+      "wall_s": 1.577742189,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "extension_tridiagonal_system"
+    },
+    {
+      "task": "nonnegative_factors",
+      "name": "inspect_input",
+      "status": "ok",
+      "wall_s": 0.036993246,
+      "actual_band": "short",
+      "planned_band": "medium",
+      "source_group": "extension_nonnegative_factors"
+    },
+    {
+      "task": "nonnegative_factors",
+      "name": "compute",
+      "status": "ok",
+      "wall_s": 2.815334705,
+      "actual_band": "short",
+      "planned_band": "medium",
+      "source_group": "extension_nonnegative_factors"
+    },
+    {
+      "task": "independent_sources",
+      "name": "inspect_input",
+      "status": "ok",
+      "wall_s": 0.007926682,
+      "actual_band": "short",
+      "planned_band": "medium",
+      "source_group": "extension_independent_sources"
+    },
+    {
+      "task": "independent_sources",
+      "name": "compute",
+      "status": "ok",
+      "wall_s": 1.654398568,
+      "actual_band": "short",
+      "planned_band": "medium",
+      "source_group": "extension_independent_sources"
+    },
+    {
+      "task": "density_clusters",
+      "name": "inspect_input",
+      "status": "ok",
+      "wall_s": 0.002264127,
+      "actual_band": "short",
+      "planned_band": "medium",
+      "source_group": "extension_density_clusters"
+    },
+    {
+      "task": "density_clusters",
+      "name": "compute",
+      "status": "ok",
+      "wall_s": 3.141188675,
+      "actual_band": "medium",
+      "planned_band": "medium",
+      "source_group": "extension_density_clusters"
+    },
+    {
+      "task": "neighbor_retrieval",
+      "name": "inspect_input",
+      "status": "ok",
+      "wall_s": 0.028722283,
+      "actual_band": "short",
+      "planned_band": "medium",
+      "source_group": "extension_neighbor_retrieval"
+    },
+    {
+      "task": "neighbor_retrieval",
+      "name": "compute",
+      "status": "ok",
+      "wall_s": 2.68669644,
+      "actual_band": "short",
+      "planned_band": "medium",
+      "source_group": "extension_neighbor_retrieval"
+    },
+    {
+      "task": "anomaly_detection",
+      "name": "inspect_input",
+      "status": "ok",
+      "wall_s": 0.042145895,
+      "actual_band": "short",
+      "planned_band": "medium",
+      "source_group": "extension_anomaly_detection"
+    },
+    {
+      "task": "anomaly_detection",
+      "name": "compute",
+      "status": "ok",
+      "wall_s": 3.935944355,
+      "actual_band": "medium",
+      "planned_band": "medium",
+      "source_group": "extension_anomaly_detection"
+    },
+    {
+      "task": "feature_information",
+      "name": "inspect_input",
+      "status": "ok",
+      "wall_s": 0.005500992,
+      "actual_band": "short",
+      "planned_band": "medium",
+      "source_group": "extension_feature_information"
+    },
+    {
+      "task": "feature_information",
+      "name": "compute",
+      "status": "ok",
+      "wall_s": 3.151135322,
+      "actual_band": "medium",
+      "planned_band": "medium",
+      "source_group": "extension_feature_information"
+    },
+    {
+      "task": "recursive_forecast",
+      "name": "inspect_input",
+      "status": "ok",
+      "wall_s": 0.005995115,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "extension_recursive_forecast"
+    },
+    {
+      "task": "recursive_forecast",
+      "name": "compute",
+      "status": "ok",
+      "wall_s": 1.840846406,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "extension_recursive_forecast"
+    },
+    {
+      "task": "censored_survival",
+      "name": "inspect_input",
+      "status": "ok",
+      "wall_s": 0.013203861,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "extension_censored_survival"
+    },
+    {
+      "task": "censored_survival",
+      "name": "compute",
+      "status": "ok",
+      "wall_s": 1.631252141,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "extension_censored_survival"
+    },
+    {
+      "task": "image_regions",
+      "name": "inspect_input",
+      "status": "ok",
+      "wall_s": 0.004130588,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "extension_image_regions"
+    },
+    {
+      "task": "image_regions",
+      "name": "compute",
+      "status": "ok",
+      "wall_s": 2.016540366,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "extension_image_regions"
+    },
+    {
+      "task": "cost_assignment",
+      "name": "inspect_input",
+      "status": "ok",
+      "wall_s": 0.00095315,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "extension_cost_assignment"
+    },
+    {
+      "task": "cost_assignment",
+      "name": "compute",
+      "status": "ok",
+      "wall_s": 1.844521479,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "extension_cost_assignment"
+    },
+    {
+      "task": "distribution_transport",
+      "name": "inspect_input",
+      "status": "ok",
+      "wall_s": 0.014590023,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "extension_distribution_transport"
+    },
+    {
+      "task": "distribution_transport",
+      "name": "compute",
+      "status": "ok",
+      "wall_s": 1.423655256,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "extension_distribution_transport"
+    }
+  ],
+  "actual_tool_bands": {
+    "short": 69,
+    "medium": 7
+  },
+  "quality_success_trace_audited": true,
+  "frozen_tasks_sha256": "197b7293dbb09321fe07f1dde4a98991191f0bfb2c8e0104bf82a6fa5c643578",
+  "frozen_references_sha256": "b4821020fd5f3c56ef53fd81c2c211b831105fc5ac2b3038e2bfb578770a2c98"
+}

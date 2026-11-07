@@ -1,0 +1,444 @@
+{
+  "scope": "32b_extension",
+  "batch_task_count": 38,
+  "unique_development_parents": 38,
+  "complete_success": 38,
+  "first_attempt_complete_success": 38,
+  "retry_success": "No external task retries in this frozen batch; within-task parameter repairs retained in tool calls.",
+  "successful_independent_parents": 38,
+  "successful_parents_with_ge60s_tool": 0,
+  "audit_status": "passed",
+  "pilot_qualified": false,
+  "extension_qualified": true,
+  "observed_labels": {
+    "legal_demand": 76,
+    "retire": 38
+  },
+  "main_labels": {
+    "legal_demand": 76,
+    "retire": 38
+  },
+  "success_per_planned_band": {
+    "short": 32,
+    "medium": 6
+  },
+  "all_compute_calls": [
+    {
+      "task": "missing_median",
+      "source_group": "extension_missing_median",
+      "status": "error",
+      "operation": "impute",
+      "planned_band": "short",
+      "tool_s": 0.002674253,
+      "child_s": null
+    },
+    {
+      "task": "missing_median",
+      "source_group": "extension_missing_median",
+      "status": "ok",
+      "operation": "impute",
+      "planned_band": "short",
+      "tool_s": 3.241568221,
+      "child_s": 2.253249871
+    },
+    {
+      "task": "upper_quantile",
+      "source_group": "extension_upper_quantile",
+      "status": "ok",
+      "operation": "quantile",
+      "planned_band": "short",
+      "tool_s": 2.020280075,
+      "child_s": 1.632267989
+    },
+    {
+      "task": "weighted_groups",
+      "source_group": "extension_weighted_groups",
+      "status": "ok",
+      "operation": "weighted_group_mean",
+      "planned_band": "short",
+      "tool_s": 2.146868909,
+      "child_s": 1.398486407
+    },
+    {
+      "task": "feature_correlation",
+      "source_group": "extension_feature_correlation",
+      "status": "ok",
+      "operation": "correlation",
+      "planned_band": "short",
+      "tool_s": 1.375991023,
+      "child_s": 1.34880133
+    },
+    {
+      "task": "composite_dedup",
+      "source_group": "extension_composite_dedup",
+      "status": "ok",
+      "operation": "deduplicate",
+      "planned_band": "short",
+      "tool_s": 3.890987006,
+      "child_s": 1.493801179
+    },
+    {
+      "task": "distribution_bins",
+      "source_group": "extension_distribution_bins",
+      "status": "ok",
+      "operation": "histogram",
+      "planned_band": "short",
+      "tool_s": 1.584845003,
+      "child_s": 1.468497011
+    },
+    {
+      "task": "categorical_independence",
+      "source_group": "extension_categorical_independence",
+      "status": "ok",
+      "operation": "chi_square",
+      "planned_band": "short",
+      "tool_s": 1.427543547,
+      "child_s": 1.282412886
+    },
+    {
+      "task": "bootstrap_interval",
+      "source_group": "extension_bootstrap_interval",
+      "status": "ok",
+      "operation": "bootstrap_mean",
+      "planned_band": "short",
+      "tool_s": 1.54937536,
+      "child_s": 1.496125831
+    },
+    {
+      "task": "randomization_test",
+      "source_group": "extension_randomization_test",
+      "status": "ok",
+      "operation": "permutation_mean",
+      "planned_band": "short",
+      "tool_s": 2.036288697,
+      "child_s": 1.603913537
+    },
+    {
+      "task": "paired_measurements",
+      "source_group": "extension_paired_measurements",
+      "status": "ok",
+      "operation": "paired_t",
+      "planned_band": "short",
+      "tool_s": 2.015393131,
+      "child_s": 1.302664029
+    },
+    {
+      "task": "multi_group_anova",
+      "source_group": "extension_multi_group_anova",
+      "status": "ok",
+      "operation": "anova",
+      "planned_band": "short",
+      "tool_s": 2.035021353,
+      "child_s": 1.712006009
+    },
+    {
+      "task": "rank_sum_test",
+      "source_group": "extension_rank_sum_test",
+      "status": "ok",
+      "operation": "mann_whitney",
+      "planned_band": "short",
+      "tool_s": 1.7394371,
+      "child_s": 1.440911716
+    },
+    {
+      "task": "response_trend",
+      "source_group": "extension_response_trend",
+      "status": "ok",
+      "operation": "linear_trend",
+      "planned_band": "short",
+      "tool_s": 1.726020966,
+      "child_s": 1.383718481
+    },
+    {
+      "task": "robust_fences",
+      "source_group": "extension_robust_fences",
+      "status": "ok",
+      "operation": "iqr_outliers",
+      "planned_band": "short",
+      "tool_s": 2.030728267,
+      "child_s": 1.366761233
+    },
+    {
+      "task": "temporal_asof",
+      "source_group": "extension_temporal_asof",
+      "status": "ok",
+      "operation": "asof_align",
+      "planned_band": "short",
+      "tool_s": 1.63662666,
+      "child_s": 1.435743209
+    },
+    {
+      "task": "window_smoothing",
+      "source_group": "extension_window_smoothing",
+      "status": "ok",
+      "operation": "rolling_mean",
+      "planned_band": "short",
+      "tool_s": 1.512215067,
+      "child_s": 1.271647793
+    },
+    {
+      "task": "time_buckets",
+      "source_group": "extension_time_buckets",
+      "status": "ok",
+      "operation": "time_resample",
+      "planned_band": "short",
+      "tool_s": 1.729449123,
+      "child_s": 1.655580455
+    },
+    {
+      "task": "activity_sessions",
+      "source_group": "extension_activity_sessions",
+      "status": "ok",
+      "operation": "sessionize",
+      "planned_band": "short",
+      "tool_s": 1.658493673,
+      "child_s": 1.608256601
+    },
+    {
+      "task": "gap_interpolation",
+      "source_group": "extension_gap_interpolation",
+      "status": "ok",
+      "operation": "interpolate",
+      "planned_band": "short",
+      "tool_s": 1.841640022,
+      "child_s": 1.427853954
+    },
+    {
+      "task": "dominant_frequency",
+      "source_group": "extension_dominant_frequency",
+      "status": "ok",
+      "operation": "spectrum",
+      "planned_band": "short",
+      "tool_s": 1.93210657,
+      "child_s": 1.246816109
+    },
+    {
+      "task": "signal_alignment",
+      "source_group": "extension_signal_alignment",
+      "status": "ok",
+      "operation": "cross_correlation",
+      "planned_band": "short",
+      "tool_s": 3.978018523,
+      "child_s": 1.755961991
+    },
+    {
+      "task": "noise_filtering",
+      "source_group": "extension_noise_filtering",
+      "status": "ok",
+      "operation": "lowpass",
+      "planned_band": "short",
+      "tool_s": 1.811510738,
+      "child_s": 1.327762823
+    },
+    {
+      "task": "event_peaks",
+      "source_group": "extension_event_peaks",
+      "status": "ok",
+      "operation": "find_peaks",
+      "planned_band": "short",
+      "tool_s": 1.939909892,
+      "child_s": 1.300962395
+    },
+    {
+      "task": "curve_area",
+      "source_group": "extension_curve_area",
+      "status": "ok",
+      "operation": "integrate",
+      "planned_band": "short",
+      "tool_s": 3.05732983,
+      "child_s": 1.805021966
+    },
+    {
+      "task": "bracketed_root",
+      "source_group": "extension_bracketed_root",
+      "status": "ok",
+      "operation": "polynomial_root",
+      "planned_band": "short",
+      "tool_s": 1.522251479,
+      "child_s": 1.333174036
+    },
+    {
+      "task": "portfolio_allocation",
+      "source_group": "extension_portfolio_allocation",
+      "status": "ok",
+      "operation": "simplex_optimize",
+      "planned_band": "short",
+      "tool_s": 2.159585433,
+      "child_s": 1.306642877
+    },
+    {
+      "task": "tridiagonal_system",
+      "source_group": "extension_tridiagonal_system",
+      "status": "ok",
+      "operation": "banded_solve",
+      "planned_band": "short",
+      "tool_s": 1.577742189,
+      "child_s": 1.386980227
+    },
+    {
+      "task": "nonnegative_factors",
+      "source_group": "extension_nonnegative_factors",
+      "status": "ok",
+      "operation": "nmf",
+      "planned_band": "medium",
+      "tool_s": 2.815334705,
+      "child_s": 2.7405784
+    },
+    {
+      "task": "independent_sources",
+      "source_group": "extension_independent_sources",
+      "status": "ok",
+      "operation": "ica",
+      "planned_band": "medium",
+      "tool_s": 1.654398568,
+      "child_s": 1.574947176
+    },
+    {
+      "task": "density_clusters",
+      "source_group": "extension_density_clusters",
+      "status": "ok",
+      "operation": "dbscan",
+      "planned_band": "medium",
+      "tool_s": 3.141188675,
+      "child_s": 2.944680346
+    },
+    {
+      "task": "neighbor_retrieval",
+      "source_group": "extension_neighbor_retrieval",
+      "status": "ok",
+      "operation": "neighbors",
+      "planned_band": "medium",
+      "tool_s": 2.68669644,
+      "child_s": 2.394058955
+    },
+    {
+      "task": "anomaly_detection",
+      "source_group": "extension_anomaly_detection",
+      "status": "ok",
+      "operation": "isolation",
+      "planned_band": "medium",
+      "tool_s": 3.935944355,
+      "child_s": 3.743095074
+    },
+    {
+      "task": "feature_information",
+      "source_group": "extension_feature_information",
+      "status": "ok",
+      "operation": "mutual_information",
+      "planned_band": "medium",
+      "tool_s": 3.151135322,
+      "child_s": 2.877235139
+    },
+    {
+      "task": "recursive_forecast",
+      "source_group": "extension_recursive_forecast",
+      "status": "ok",
+      "operation": "autoregression",
+      "planned_band": "short",
+      "tool_s": 1.840846406,
+      "child_s": 1.381946739
+    },
+    {
+      "task": "censored_survival",
+      "source_group": "extension_censored_survival",
+      "status": "ok",
+      "operation": "kaplan_meier",
+      "planned_band": "short",
+      "tool_s": 1.631252141,
+      "child_s": 1.370544867
+    },
+    {
+      "task": "image_regions",
+      "source_group": "extension_image_regions",
+      "status": "ok",
+      "operation": "connected_components",
+      "planned_band": "short",
+      "tool_s": 2.016540366,
+      "child_s": 1.777781969
+    },
+    {
+      "task": "cost_assignment",
+      "source_group": "extension_cost_assignment",
+      "status": "ok",
+      "operation": "assignment",
+      "planned_band": "short",
+      "tool_s": 1.844521479,
+      "child_s": 1.449932865
+    },
+    {
+      "task": "distribution_transport",
+      "source_group": "extension_distribution_transport",
+      "status": "ok",
+      "operation": "wasserstein",
+      "planned_band": "short",
+      "tool_s": 1.423655256,
+      "child_s": 1.379927442
+    }
+  ],
+  "budget": {
+    "generations": 120,
+    "probe": 6,
+    "pilot": 114,
+    "total_cap": 127,
+    "lane_caps": {
+      "probe": 7,
+      "pilot": 120
+    },
+    "prior_usage_status": "historical_unreconciled"
+  },
+  "fee": "local existing hardware; no external inference purchase; no currency cost estimate",
+  "elapsed_model_process_s": 1229.12025499,
+  "training": "not started",
+  "online_policy": "not started",
+  "JCT_benefit": "not measured",
+  "source_tasks_sha256": "197b7293dbb09321fe07f1dde4a98991191f0bfb2c8e0104bf82a6fa5c643578",
+  "quality_subset": {
+    "tasks": [
+      "activity_sessions",
+      "anomaly_detection",
+      "bootstrap_interval",
+      "bracketed_root",
+      "categorical_independence",
+      "censored_survival",
+      "composite_dedup",
+      "cost_assignment",
+      "curve_area",
+      "density_clusters",
+      "distribution_bins",
+      "distribution_transport",
+      "dominant_frequency",
+      "event_peaks",
+      "feature_correlation",
+      "feature_information",
+      "gap_interpolation",
+      "image_regions",
+      "independent_sources",
+      "missing_median",
+      "multi_group_anova",
+      "neighbor_retrieval",
+      "noise_filtering",
+      "nonnegative_factors",
+      "paired_measurements",
+      "portfolio_allocation",
+      "randomization_test",
+      "rank_sum_test",
+      "recursive_forecast",
+      "response_trend",
+      "robust_fences",
+      "signal_alignment",
+      "temporal_asof",
+      "time_buckets",
+      "tridiagonal_system",
+      "upper_quantile",
+      "weighted_groups",
+      "window_smoothing"
+    ],
+    "episodes": 114,
+    "snapshots": 241,
+    "labels": {
+      "legal_demand": 76,
+      "retire": 38
+    },
+    "scope": "32b_extension"
+  }
+}

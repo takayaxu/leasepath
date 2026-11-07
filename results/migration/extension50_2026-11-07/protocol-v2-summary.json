@@ -1,0 +1,164 @@
+{
+  "scope": "32b_protocol",
+  "model_identity_sha256": "227bd7f3c7bc9b44fd6edfcd70987c61519dfd473e3d0a6229f37d9c86fa82fa",
+  "collection_contract_sha256": "db7f8a36432116a0b8ece2cb3106e6d31710081f502f9ceca512849c32405d8c",
+  "status": "passed",
+  "complete_success": 2,
+  "tasks": 2,
+  "success_per_planned_band": {
+    "short": 1,
+    "medium": 1
+  },
+  "quality": [
+    {
+      "task": "feature_correlation",
+      "source_group": "extension_feature_correlation",
+      "planned_band": "short",
+      "success": true,
+      "failure": null,
+      "generations": 3,
+      "wall_s": 31.802351687,
+      "final": {
+        "artifact_id": "a6675d9b3f6ef483bb0f04819abab4b10",
+        "answer": {
+          "matrix": [
+            [
+              1.0,
+              0.8111350859821015,
+              -0.0029600167176648084
+            ],
+            [
+              0.8111350859821014,
+              1.0,
+              -0.006322589419196355
+            ],
+            [
+              -0.0029600167176648084,
+              -0.006322589419196355,
+              0.9999999999999999
+            ]
+          ]
+        }
+      },
+      "tools": [
+        {
+          "call_id": "t68d3b4fc92d9460d910d08abc24a339a",
+          "name": "inspect_input",
+          "started_ns": 1223792516791347,
+          "ended_ns": 1223792520336019,
+          "child_wall_ns": null,
+          "status": "ok"
+        },
+        {
+          "call_id": "t79872d690ac6476e8b84a4ac1826132a",
+          "name": "compute",
+          "started_ns": 1223795994170004,
+          "ended_ns": 1223800702441461,
+          "child_wall_ns": 1136663231,
+          "status": "ok"
+        }
+      ]
+    },
+    {
+      "task": "neighbor_retrieval",
+      "source_group": "extension_neighbor_retrieval",
+      "planned_band": "medium",
+      "success": true,
+      "failure": null,
+      "generations": 3,
+      "wall_s": 32.074233182,
+      "final": {
+        "artifact_id": "a70b09247f8434659a437ca52ae1b1cda",
+        "answer": {
+          "mean_kth_distance": 3.236648312729333,
+          "first_indices": [
+            47823,
+            39601,
+            14304,
+            22178,
+            10210
+          ]
+        }
+      },
+      "tools": [
+        {
+          "call_id": "t1608df3087474a35b60fd9936fa90f12",
+          "name": "inspect_input",
+          "started_ns": 1223824083163887,
+          "ended_ns": 1223824111324094,
+          "child_wall_ns": null,
+          "status": "ok"
+        },
+        {
+          "call_id": "tc7a6200b684d4d948a2dca0fd6fc46c9",
+          "name": "compute",
+          "started_ns": 1223833692936984,
+          "ended_ns": 1223839768957295,
+          "child_wall_ns": 1585294528,
+          "status": "ok"
+        }
+      ]
+    }
+  ],
+  "audit_status": "passed",
+  "audit": {
+    "status": "passed",
+    "scope": "single_dense_sequence_no_preemption",
+    "transport": {
+      "observer_version": "real-development-observer-v1",
+      "streams": [
+        {
+          "observer_version": "real-development-observer-v1",
+          "run_id": "protocol-90aeef37",
+          "stream_id": "4d60af18025f4a2ab56afba7a78ac379",
+          "pid": 2112954,
+          "boot_id": "91b65d19-10fc-4f9a-ae68-2b38e6ad0b40",
+          "source": "qwen_controller",
+          "rank": null,
+          "records": 24,
+          "sha256": "7f2161861c4613c570b38604f9af2201c2b21ee8bdf18514b8ee65e1df50a465",
+          "complete": true
+        },
+        {
+          "observer_version": "real-development-observer-v1",
+          "run_id": "protocol-90aeef37",
+          "stream_id": "2bca730890e1474699784000a661c889",
+          "pid": 2112954,
+          "boot_id": "91b65d19-10fc-4f9a-ae68-2b38e6ad0b40",
+          "source": "native_cuda_engine",
+          "rank": null,
+          "records": 10,
+          "sha256": "453c65eb26386c56e551f4d18c009010c773841dd7c9f19a7628d53807060236",
+          "complete": true
+        }
+      ],
+      "complete": true,
+      "semantic_completeness_verified": false,
+      "scope": "transport_integrity_only_not_backend_or_label_acceptance"
+    },
+    "requests": 6,
+    "tool_results_consumed": 4,
+    "tool_results_unconsumed": [],
+    "labels": {
+      "legal_demand": 4,
+      "retire": 2
+    },
+    "episodes": 6,
+    "snapshot_count": 16,
+    "unmapped": 0,
+    "unexplained": 0,
+    "cell_blocks": "analysis groups, not vLLM allocations"
+  },
+  "budget": {
+    "generations": 6,
+    "probe": 6,
+    "pilot": 0,
+    "total_cap": 127,
+    "lane_caps": {
+      "probe": 7,
+      "pilot": 120
+    },
+    "prior_usage_status": "historical_unreconciled"
+  },
+  "runtime_s": 585.859285144
+}

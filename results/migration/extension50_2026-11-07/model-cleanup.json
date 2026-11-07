@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "released_tmpfs_bytes": 65535970144,
+  "persistent_weights_retained": "/home/liuxv/local-models/qwen25-coder-32b-leasepath/persistent-f16/Qwen2.5-Coder-32B-Instruct-F16.gguf",
+  "all_self_owned_model_processes_stopped": true,
+  "wall_ns": 1794061996837437404
+}

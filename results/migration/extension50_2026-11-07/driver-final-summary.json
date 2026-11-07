@@ -1,0 +1,26 @@
+{
+  "stages": [
+    {
+      "stage": "extension",
+      "returncode": 0
+    },
+    {
+      "stage": "independent-check",
+      "returncode": 0
+    },
+    {
+      "stage": "timing",
+      "returncode": 0
+    },
+    {
+      "stage": "finalize",
+      "returncode": 0
+    },
+    {
+      "stage": "aggregate",
+      "returncode": 0
+    }
+  ],
+  "runtime_s": 1290.022604611,
+  "end_wall_ns": 1794061906720319959
+}
