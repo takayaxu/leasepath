@@ -2,6 +2,8 @@
 
 LeasePath 研究一个具体问题：**一个 Agent 上下文暂时空闲后，它所对应的兼容 KV 前缀，未来何时会被真实请求再次使用？** 项目最终目标是用当前可观察的状态预测未来合法 KV lookup 的时间分布，并把预测接入缓存/调度器，检验是否减少真实 KV 重算、改善请求完成时间，同时正确计入预测开销。
 
+**2026-11-07 新服务器路线：Qwen-Agent＋固定 Qwen2.5-Coder-32B＋受限参数数据工具。** 以 `66a34c8eb618f4849153cb3c8d72880362e8e387` 为迁移基线，工作区 `/home/liuxv/LeasePath-new-server-data`。环境与新增 CPU 边界检查已运行，32B 权重下载、协议门槛和 12 题试点进行中；没有新的 32B 主数据完成声明。当前入口见 [迁移报告](reports/new_server_migration_2026-11-07.md)，参数见 [冻结配置](configs/collection/new_server_v1.json)。下方旧机器路径、50 母题和 Codex/Flask 阶段均为历史记录，未随本次迁移恢复，不作为新路线前置条件。
+
 本 README 是新对话或新开发者的项目入口。先看“当前状态”，再按“快速开始”运行现有验收。下一阶段以 [真实开发与决策收益计划](reports/real_development_lookup_plan_2026-10-31.md) 为准；原 [预测计划](reports/mixed_workload_reuse_prediction_plan_2026-10-27.md)、[数据契约](docs/prediction_contract.md) 和 [项目架构](docs/architecture.md) 保留背景与实现说明。
 
 当前数据集的统一入口为 [数据集说明](docs/dataset_card.md)：**50 个不同母题、65 条可审计主执行、472 个 idle episode、2,414 张快照**；质量子集为 54 条执行、47 个母题、296 个 episode、1,553 张快照。已在新目录合并并完成 [经验预测/GBDT 训练 v2](reports/prediction_v2_50parents_review.md)，原轮数据保持原版本；逐文件路径、分组与哈希见 [50 母题清单](results/prediction/dataset_inventory_50parents_2026-10-31.json)，[此前 16 母题清单](results/prediction/dataset_inventory_2026-10-31.json) 保留。

@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "evidence_kind": "measured",
+  "scope": "infrastructure_only",
+  "generations": 7,
+  "reasons": {
+    "eog": 3,
+    "protocol_stop": 1,
+    "length": 1,
+    "timeout": 1,
+    "cancelled": 1
+  },
+  "exact_prompt_ids": true,
+  "physical_kv_cells_checked": true,
+  "protocol_stop_is_normal_release": true,
+  "cache_hit_and_miss_preserve_demand_identity": true,
+  "main_pilot_passed": false
+}

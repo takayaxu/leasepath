@@ -1,0 +1,47 @@
+{
+  "version": "qwen-restricted-pilot-v1",
+  "baseline_commit": "66a34c8eb618f4849153cb3c8d72880362e8e387",
+  "model": {
+    "repository": "Qwen/Qwen2.5-Coder-32B-Instruct",
+    "revision": "381fc969f78efac66bc87ff7ddeadb7e73c218a7",
+    "dtype": "float16",
+    "quantization": null,
+    "partition": "layer",
+    "tensor_parallel": false,
+    "context": 16384,
+    "max_output_tokens": 1024,
+    "cuda_visible_devices": [5, 6, 7]
+  },
+  "backend": {
+    "kind": "llama.cpp single-sequence native adapter",
+    "source_commit": "fd27b2034905f8dadd8bd6d2cc44595f4929d391",
+    "block_size_tokens": 16,
+    "block_semantics": "analysis chunk of 16 exact physical KV cells; no claim of vLLM block allocator",
+    "preemption": false,
+    "clock": "CLOCK_MONOTONIC"
+  },
+  "agent": {
+    "library": "qwen-agent",
+    "version": "0.0.34",
+    "loop": "sequential",
+    "compression": false,
+    "generations_per_task": 6,
+    "task_timeout_s": 900,
+    "tool_timeout_s": 240,
+    "tool_threads": 2,
+    "tool_memory_gib": 12
+  },
+  "budget": {
+    "prior_usage_status": "historical_unreconciled",
+    "probe_limit": 72,
+    "pilot_limit": 72,
+    "total_limit": 144,
+    "purchase_or_expansion": false
+  },
+  "qualification": {
+    "complete_success": 10,
+    "success_per_planned_band": 3,
+    "all_admitted_traces_audited": true,
+    "reference_repetitions": 3
+  }
+}
