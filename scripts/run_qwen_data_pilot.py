@@ -63,7 +63,19 @@ def main():
     p.add_argument('--infrastructure-only',action='store_true')
     p.add_argument('--model-identity',type=Path)
     p.add_argument('--gpus',type=int,default=3)
+    p.add_argument('--collection-contract',type=Path)
     args=p.parse_args()
+    contract=None
+    if args.collection_contract:
+        contract=json.loads(args.collection_contract.read_text())
+        if (contract['version']!='extension38-to-50-v1' or contract['additional_parents']!=38 or
+                contract['budget_limits']!={'probe':24,'pilot':228,'total':252} or
+                contract['ledger']!=str(args.ledger.resolve())):
+            raise ValueError('unexpected extension contract or ledger')
+        freeze=json.loads((args.tasks/'preflight.json').read_text())
+        for key,name in [('tasks_sha256','tasks.private.json'),('references_sha256','references.private.json'),('schemas_sha256','tool-schemas.json')]:
+            if contract[key]!=freeze[key] or freeze[key]!=file_hash(args.tasks/name):
+                raise ValueError('extension differs from frozen contract: '+name)
     if not args.infrastructure_only:
         if args.model_identity is None:raise ValueError('verified 32B conversion identity required')
         model_identity=json.loads(args.model_identity.read_text())
@@ -89,7 +101,9 @@ def main():
         if (gate.get('scope')!='32b_protocol' or gate.get('complete_success',0)<2 or gate.get('audit_status')!='passed' or
                 gate.get('model_identity_sha256')!=file_hash(args.model_identity)):
             raise ValueError('32B real protocol gate not passed')
-        if args.task_ids or len(tasks)!=12:raise ValueError('main pilot is one frozen batch of twelve')
+        if contract and gate.get('collection_contract_sha256')!=file_hash(args.collection_contract):
+            raise ValueError('extension protocol belongs to another contract')
+        if args.task_ids or len(tasks)!=(38 if contract else 12):raise ValueError('main batch differs from frozen task count')
     refs_path=args.tasks/'references.private.json'
     refs=json.loads(refs_path.read_text())
     if not all(t['id'] in refs for t in tasks):raise ValueError('task references incomplete')
@@ -97,17 +111,18 @@ def main():
     output.mkdir(parents=True,exist_ok=False)
     (output/'raw').mkdir()
     run_id=output.name+'-'+uuid.uuid4().hex[:8]
-    budget=GenerationBudget(args.ledger)
+    budget=GenerationBudget(args.ledger,limits=contract['budget_limits'] if contract else None)
     controller=TimedObserver(output/'raw/controller.jsonl',run_id=run_id,source='qwen_controller')
     backend=TimedObserver(output/'raw/backend.jsonl',run_id=run_id,source='native_cuda_engine')
     protected=[Path(__file__).resolve(),args.tasks/'tasks.private.json',refs_path,args.library,
                args.tokenizer/'tokenizer.json',args.tokenizer/'tokenizer_config.json']
     protected+=list((Path(__file__).resolve().parents[1]/'src/leasepath').glob('qwen_data_*.py'))
     protected+=list((Path(__file__).resolve().parents[1]/'src/leasepath').glob('restricted_data_*.py'))
+    if contract:protected.extend([args.collection_contract,args.tasks/'preflight.json',args.tasks/'tool-schemas.json'])
     hashes={str(p.resolve()):file_hash(p) for p in protected}
     identity={'run_id':run_id,'baseline':'66a34c8eb618f4849153cb3c8d72880362e8e387',
               'lane':args.lane,'scope':'infrastructure_only' if args.infrastructure_only else
-                      '32b_protocol' if args.lane=='probe' else '32b_pilot',
+                      '32b_protocol' if args.lane=='probe' else '32b_extension' if contract else '32b_pilot',
               'model':str(args.model.resolve()),'model_sha256':file_hash(args.model),
               'model_identity_sha256':file_hash(args.model_identity) if args.model_identity else None,
               'tokenizer':str(args.tokenizer.resolve()),'library_sha256':file_hash(args.library),
@@ -120,6 +135,7 @@ def main():
               'tasks':[t['id'] for t in tasks],
               'expected_stream_ids':[controller.identity['stream_id'],backend.identity['stream_id']],
               'start_wall_ns':process_start_wall_ns,'start_monotonic_ns':process_start_monotonic_ns}
+    identity['collection_contract_sha256']=file_hash(args.collection_contract) if contract else None
     identity['compatibility_id']=hashlib.sha256(json.dumps({
         k:identity[k] for k in ('model_sha256','library_sha256','llama_commit','qwen_agent',
                               'tokenizer_sha256','template_sha256','dtype','kv_dtype','context')},
@@ -238,6 +254,7 @@ def main():
             audit_result={'status':'rejected','reason':str(exc),'type':type(exc).__name__}
             (output/'audit-rejection.json').write_text(json.dumps(audit_result,indent=2)+'\n')
         summary={'scope':identity['scope'],'model_identity_sha256':identity['model_identity_sha256'],
+                 'collection_contract_sha256':identity['collection_contract_sha256'],
                  'status':'passed' if all(q['success'] for q in qualities) else 'quality_failed',
                  'complete_success':sum(q['success'] for q in qualities),'tasks':len(qualities),
                  'success_per_planned_band':dict(Counter(q['planned_band'] for q in qualities if q['success'])),
@@ -253,6 +270,9 @@ def main():
             summary['pilot_qualified']=(summary['complete_success']>=10 and
                     all(summary['success_per_planned_band'].get(k,0)>=3 for k in ('short','medium','long')) and
                     summary['audit_status']=='passed')
+            if contract:
+                summary['extension_qualified']=(summary['complete_success']==38 and summary['audit_status']=='passed')
+                summary['pilot_qualified']=False
         (output/'summary.json').write_text(json.dumps(summary,indent=2)+'\n')
         print(json.dumps({k:v for k,v in summary.items() if k not in ('quality','audit')},indent=2),flush=True)
     finally:

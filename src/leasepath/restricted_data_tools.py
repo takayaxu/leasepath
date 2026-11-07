@@ -53,6 +53,9 @@ ALLOWED_KEYS = {
     'forest_cv': {'folds', 'trees'}, 'histboost_cv': {'folds', 'iterations'},
     'svc_cv': {'folds', 'kernel'}, 'extra_trees_cv': {'folds', 'trees'}}
 
+from .restricted_data_extended import PARAMETERS as EXTENDED_PARAMETERS, DESCRIPTIONS as EXTENDED_DESCRIPTIONS
+ALLOWED_KEYS.update({op:set(params) for op,params in EXTENDED_PARAMETERS.items()})
+
 def file_hash(path):
     h = hashlib.sha256()
     with Path(path).open('rb') as fd:
@@ -85,6 +88,12 @@ def open_resource(path, expected_hash):
 def schemas_for(operations):
     from copy import deepcopy
     schemas = deepcopy(SCHEMAS)
+    for op in operations:
+        if op in EXTENDED_PARAMETERS:
+            for key,value in EXTENDED_PARAMETERS[op].items():
+                prior=schemas['compute']['properties'].get(key)
+                # Branches below carry the exact operation-specific bounds.
+                if prior is None:schemas['compute']['properties'][key]=deepcopy(value)
     schemas['compute']['properties']['operation']['enum'] = list(operations)
     needed = set().union(*(ALLOWED_KEYS[op] for op in operations))
     schemas['compute']['properties'] = {k:v for k,v in schemas['compute']['properties'].items()
@@ -107,6 +116,15 @@ def schemas_for(operations):
         for op in operations]
     for op,branch in zip(operations,schemas['compute']['oneOf']):
         branch['properties']['operation']={'const':op}
+        if op in EXTENDED_PARAMETERS:
+            branch['properties'].update(deepcopy(EXTENDED_PARAMETERS[op]))
+            branch['description']=EXTENDED_DESCRIPTIONS[op]
+    # Shared parameter names may have different bounds per operation. The exact
+    # schemas live in oneOf; top-level accepts their union, never a narrower branch.
+    extended_keys=set().union(*(set(EXTENDED_PARAMETERS.get(op,{})) for op in operations))
+    for key in extended_keys:
+        variants=[branch['properties'][key] for branch in schemas['compute']['oneOf'] if key in branch['properties']]
+        schemas['compute']['properties'][key]={'anyOf':variants}
     return [{'name': name, 'description': {
         'inspect_input': 'Read schema, shape and at most 3 input rows from the session dataset.',
         'compute': 'Run one bounded data operation. Supply only parameters relevant to that operation.',

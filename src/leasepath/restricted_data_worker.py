@@ -50,6 +50,9 @@ def execute(request):
             with os.fdopen(os.dup(fd), 'rb') as stream:
                 with np.load(stream, allow_pickle=False) as data:
                     X, y = data['X'], data['y']
+            from .restricted_data_extended import PARAMETERS,execute_extended
+            if op in PARAMETERS:
+                return execute_extended(op,X,y,args)
             from sklearn.decomposition import PCA
             from sklearn.cluster import KMeans
             from sklearn.ensemble import RandomForestClassifier, ExtraTreesClassifier, HistGradientBoostingClassifier

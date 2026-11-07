@@ -1,0 +1,1084 @@
+{
+  "tasks": [
+    {
+      "id": "missing_median",
+      "source_group": "extension_missing_median",
+      "operation": "impute",
+      "intent": "Fill missing values by each column median. Report fill values, missing counts and resulting column means.",
+      "planned_band": "short",
+      "input_sha256": "7bce68f03ab34581059dd11b7c98bb4dba44420d3205e84a5f2160cba0a75f58"
+    },
+    {
+      "id": "upper_quantile",
+      "source_group": "extension_upper_quantile",
+      "operation": "quantile",
+      "intent": "Find the 90th percentile of column 1 using linear interpolation.",
+      "planned_band": "short",
+      "input_sha256": "de87a94cd0de80b5811ffb432738b2a284e5b88ef6fc1173ce290080d735ee15"
+    },
+    {
+      "id": "weighted_groups",
+      "source_group": "extension_weighted_groups",
+      "operation": "weighted_group_mean",
+      "intent": "Compute value column 1 weighted by column 2 within each integer group in column 0; sort groups.",
+      "planned_band": "short",
+      "input_sha256": "8ab32476040e13940a7f0664c16c69325cb38cc6d28929f359c053c9068799ad"
+    },
+    {
+      "id": "feature_correlation",
+      "source_group": "extension_feature_correlation",
+      "operation": "correlation",
+      "intent": "Compute the Pearson correlation matrix of columns 0, 1 and 2.",
+      "planned_band": "short",
+      "input_sha256": "e2caae7d49df8e153dc9f59a3d12b332801c6c6a9ac0b57bf8c0a0f25e390c2b"
+    },
+    {
+      "id": "composite_dedup",
+      "source_group": "extension_composite_dedup",
+      "operation": "deduplicate",
+      "intent": "Deduplicate on columns 0 and 1, keeping the first row. Report retained row count and sum of column 2 on retained rows.",
+      "planned_band": "short",
+      "input_sha256": "dfba71656a5cfda5c14f5f8ec8e8289ed3c53fe5662460d8ef1c52f2bfef5d1a"
+    },
+    {
+      "id": "distribution_bins",
+      "source_group": "extension_distribution_bins",
+      "operation": "histogram",
+      "intent": "Count column 0 values in 8 equal-width bins over [-4,4], using numpy histogram endpoint conventions.",
+      "planned_band": "short",
+      "input_sha256": "2ca3c507abcd6a18c30aa1ec25184270f61edeeb42c7bbed7653fab074543ca6"
+    },
+    {
+      "id": "categorical_independence",
+      "source_group": "extension_categorical_independence",
+      "operation": "chi_square",
+      "intent": "Test independence of categorical columns 0 and 1 using Pearson chi-square without continuity correction. Return statistic, pvalue and degrees of freedom.",
+      "planned_band": "short",
+      "input_sha256": "40b824cf7ee07745a355bb4c8dff794c4603b34e2910c237d8c10cab09037602"
+    },
+    {
+      "id": "bootstrap_interval",
+      "source_group": "extension_bootstrap_interval",
+      "operation": "bootstrap_mean",
+      "intent": "Estimate a 95% percentile bootstrap confidence interval for the mean of column 0 using 1000 resamples and RNG seed 42. Return sample mean and interval endpoints.",
+      "planned_band": "short",
+      "input_sha256": "c41111e1fcd44d9a8a986b7412d6329d067d17a316c42bcf0112100445a965ac"
+    },
+    {
+      "id": "randomization_test",
+      "source_group": "extension_randomization_test",
+      "operation": "permutation_mean",
+      "intent": "Test mean difference of column 0 between y=0 and y=1 with 1000 random label permutations, seed 42. Use two-sided absolute differences and plus-one pvalue; report difference group 0 minus 1.",
+      "planned_band": "short",
+      "input_sha256": "2fbe60c61e0d277b94fb6f1cee5c43582f95a4ec9e601123eac20faf3daf3982"
+    },
+    {
+      "id": "paired_measurements",
+      "source_group": "extension_paired_measurements",
+      "operation": "paired_t",
+      "intent": "Perform a two-sided paired t test of column 0 minus column 1; report statistic and pvalue.",
+      "planned_band": "short",
+      "input_sha256": "9f7d038b0908b44b176cd95cccfd3a597049632f8681e79f5900fc35e756189e"
+    },
+    {
+      "id": "multi_group_anova",
+      "source_group": "extension_multi_group_anova",
+      "operation": "anova",
+      "intent": "Perform one-way ANOVA of column 1 across categorical groups in column 0; report statistic and pvalue.",
+      "planned_band": "short",
+      "input_sha256": "4fd5c810a3754fe985a75143b06c220e430608c39ce9eb9e2591f98646e9ea5a"
+    },
+    {
+      "id": "rank_sum_test",
+      "source_group": "extension_rank_sum_test",
+      "operation": "mann_whitney",
+      "intent": "Perform a two-sided asymptotic Mann-Whitney U test comparing columns 0 and 1, with continuity correction; report statistic and pvalue.",
+      "planned_band": "short",
+      "input_sha256": "d9c19c6c1f2160206b4365ad32c45b96276645cdc03974de6395fed6274bd1d1"
+    },
+    {
+      "id": "response_trend",
+      "source_group": "extension_response_trend",
+      "operation": "linear_trend",
+      "intent": "Fit unregularized OLS of y on column 0 with intercept. Report slope, intercept and R squared.",
+      "planned_band": "short",
+      "input_sha256": "2becc9b97270db547e6da5b4fc5fbd68c9e39d446904f43a5aa5256837936e3f"
+    },
+    {
+      "id": "robust_fences",
+      "source_group": "extension_robust_fences",
+      "operation": "iqr_outliers",
+      "intent": "Count column 0 observations outside Tukey fences Q1-1.5*IQR and Q3+1.5*IQR; report count and fraction.",
+      "planned_band": "short",
+      "input_sha256": "34eacd668422a6905adecd858d5d30c964584943aab8ead0ef9eb202f524583d"
+    },
+    {
+      "id": "temporal_asof",
+      "source_group": "extension_temporal_asof",
+      "operation": "asof_align",
+      "intent": "For each sorted left timestamp X[:,0], match the latest right timestamp y no later than it. Right values are X[:,1]. Report matched count, matched value sum and first 5 matched values.",
+      "planned_band": "short",
+      "input_sha256": "378257df309cb69fc11749f5011c63ab9eeceb6afd8ec95857379f0196bb8c7c"
+    },
+    {
+      "id": "window_smoothing",
+      "source_group": "extension_window_smoothing",
+      "operation": "rolling_mean",
+      "intent": "Compute trailing 51-sample rolling means of column 0, keeping valid windows only. Report count, mean, minimum and maximum of these means.",
+      "planned_band": "short",
+      "input_sha256": "43e86691dc12586186988d80102d919418732433a1ad4cf5079c0404ba3ce97a"
+    },
+    {
+      "id": "time_buckets",
+      "source_group": "extension_time_buckets",
+      "operation": "time_resample",
+      "intent": "Aggregate values X[:,1] into 60-second buckets floor(X[:,0]/60)*60. Report number of occupied buckets and first 5 sorted bucket sums.",
+      "planned_band": "short",
+      "input_sha256": "999d6d6feff16bdb50eae15453e51e22b1b65143a75764dbdf36bfb978f97c63"
+    },
+    {
+      "id": "activity_sessions",
+      "source_group": "extension_activity_sessions",
+      "operation": "sessionize",
+      "intent": "Sessionize sorted events X[:,0]: a gap greater than 30 starts a new session. Return session count, mean events per session and maximum last-minus-first duration.",
+      "planned_band": "short",
+      "input_sha256": "cbaed819d79fd6a173f5d83c0773fdc191390cbaf2836d7f2edb6106d4300089"
+    },
+    {
+      "id": "gap_interpolation",
+      "source_group": "extension_gap_interpolation",
+      "operation": "interpolate",
+      "intent": "Use linear interpolation of finite values X[:,1] at times X[:,0] to evaluate query times y. Report query count, first 5 values and mean over all queries.",
+      "planned_band": "short",
+      "input_sha256": "5c3fc6423f8ce1bbc6cf8f43469b38cfe56690b48ebb1fbe50f7359733fd6674"
+    },
+    {
+      "id": "dominant_frequency",
+      "source_group": "extension_dominant_frequency",
+      "operation": "spectrum",
+      "intent": "For column 0 sampled at 128 Hz, find the dominant positive FFT frequency after centering, and its fraction of all non-DC power.",
+      "planned_band": "short",
+      "input_sha256": "3b19f843faa6c82525333fd5019a93ea3e1c69fe985e5c73896b3782f3dcb079"
+    },
+    {
+      "id": "signal_alignment",
+      "source_group": "extension_signal_alignment",
+      "operation": "cross_correlation",
+      "intent": "Find signed lag maximizing full cross-correlation of centered X[:,0] with centered X[:,1], restricting absolute lag to 100.",
+      "planned_band": "short",
+      "input_sha256": "fa1ee50f92d5fa2f0a9099b89a0a0414a3ae3d70069536dcc89b9de22deef4a0"
+    },
+    {
+      "id": "noise_filtering",
+      "source_group": "extension_noise_filtering",
+      "operation": "lowpass",
+      "intent": "Apply order-4 zero-phase Butterworth low-pass to column 0 with 10 Hz cutoff at 100 Hz sample rate. Report filtered mean and RMS.",
+      "planned_band": "short",
+      "input_sha256": "dcba44b9713324ef09cd97abe5801460e1f9f061888f31e9d8f342440efe701d"
+    },
+    {
+      "id": "event_peaks",
+      "source_group": "extension_event_peaks",
+      "operation": "find_peaks",
+      "intent": "Detect peaks in column 0 with minimum distance 50 samples and prominence 0.8. Return count, first 5 indices and mean peak height.",
+      "planned_band": "short",
+      "input_sha256": "c74e878db8d9f090ffdbdf8a80912961b6f27cc85ff2837bc37ec926f8a98327"
+    },
+    {
+      "id": "curve_area",
+      "source_group": "extension_curve_area",
+      "operation": "integrate",
+      "intent": "Integrate X[:,1] against nonuniform sample positions X[:,0] using the trapezoid rule.",
+      "planned_band": "short",
+      "input_sha256": "39007d0124fe4e2fad36122ef6dab8623969cfba99052adb8b9324efcc2cb022"
+    },
+    {
+      "id": "bracketed_root",
+      "source_group": "extension_bracketed_root",
+      "operation": "polynomial_root",
+      "intent": "Find the real polynomial root in [0,2]. Descending coefficients are X[:,0]. Return root and polynomial residual.",
+      "planned_band": "short",
+      "input_sha256": "5d15cfead1fb7beb393ac04f1805e7015776429bedf428fa670f5b414e774ef0"
+    },
+    {
+      "id": "portfolio_allocation",
+      "source_group": "extension_portfolio_allocation",
+      "operation": "simplex_optimize",
+      "intent": "Minimize 0.5*w.T*X*w+y.T*w subject to sum(w)=1 and each weight in [0,1]. Report optimal objective and weight sum.",
+      "planned_band": "short",
+      "input_sha256": "be1a470d6cd0f54630354dee58d5085151d3b4107fb7d1512e09dabc354072e8"
+    },
+    {
+      "id": "tridiagonal_system",
+      "source_group": "extension_tridiagonal_system",
+      "operation": "banded_solve",
+      "intent": "Solve a tridiagonal system: X columns 0/1/2 are lower/main/upper diagonals, y is RHS. Add 0.5 to the main diagonal. Return solution mean, Euclidean norm and max absolute residual.",
+      "planned_band": "short",
+      "input_sha256": "6fe2902e97ad539f0ba91f14df7ae185e78f87b89e7329c6817a828ac550ed70"
+    },
+    {
+      "id": "nonnegative_factors",
+      "source_group": "extension_nonnegative_factors",
+      "operation": "nmf",
+      "intent": "Fit rank-6 NMF to nonnegative X, random initialization seed 42, coordinate descent, tol=1e-4, max_iter=200. Report Frobenius reconstruction error.",
+      "planned_band": "medium",
+      "input_sha256": "5d59d635652c2f24099592f8df73a02e2dc870c95b51602612932a454fcc3d5b"
+    },
+    {
+      "id": "independent_sources",
+      "source_group": "extension_independent_sources",
+      "operation": "ica",
+      "intent": "Separate 5 independent components using FastICA, unit-variance whitening, seed 42, tol=1e-4, max_iter=300. Report mean absolute excess kurtosis (biased estimator) across recovered signals.",
+      "planned_band": "medium",
+      "input_sha256": "53f30624755187cb9a2d241d5e4d84e0185991c25f4c161e47f958faed14e4ca"
+    },
+    {
+      "id": "density_clusters",
+      "source_group": "extension_density_clusters",
+      "operation": "dbscan",
+      "intent": "Apply Euclidean DBSCAN with eps=0.65 and min_samples=8. Return non-noise cluster count, noise count and largest cluster size.",
+      "planned_band": "medium",
+      "input_sha256": "5bc52fc61297bcd143679a8845f69efc998dfabf83bc2cb4ca10003c36b1ab15"
+    },
+    {
+      "id": "neighbor_retrieval",
+      "source_group": "extension_neighbor_retrieval",
+      "operation": "neighbors",
+      "intent": "Use the first 1000 X rows as queries and remaining rows as training points. Find exact 5 nearest Euclidean neighbors. Report mean fifth distance and nearest training-relative index for the first 5 queries.",
+      "planned_band": "medium",
+      "input_sha256": "bffe3ce2f61f067fd0932f1d55a4bc5b530ae63d7026d8688645baaf2f57d99f"
+    },
+    {
+      "id": "anomaly_detection",
+      "source_group": "extension_anomaly_detection",
+      "operation": "isolation",
+      "intent": "Fit IsolationForest with 100 estimators, contamination=0.05, seed 42, single job. Return number with negative decision score and mean decision score.",
+      "planned_band": "medium",
+      "input_sha256": "4603eff64ad2002f50d0284c7c735efdb39afcc4e4521307faf42def44f1958c"
+    },
+    {
+      "id": "feature_information",
+      "source_group": "extension_feature_information",
+      "operation": "mutual_information",
+      "intent": "Estimate classification mutual information of every X column against y using 3 neighbors, seed 42. Return values and top 3 feature indices in descending order, ties by column index.",
+      "planned_band": "medium",
+      "input_sha256": "164444f779c0d351bec200869607af765e7da97e2850aec351027689b5776c40"
+    },
+    {
+      "id": "recursive_forecast",
+      "source_group": "extension_recursive_forecast",
+      "operation": "autoregression",
+      "intent": "Fit OLS AR(8) with intercept to X[:,0], then recursively forecast the next 5 values. Return forecast array.",
+      "planned_band": "short",
+      "input_sha256": "59e0d8759de3521cfa766cffa2462cd0dc1410b1c3cbd2698bee5866fb293c1d"
+    },
+    {
+      "id": "censored_survival",
+      "source_group": "extension_censored_survival",
+      "operation": "kaplan_meier",
+      "intent": "Estimate Kaplan-Meier survival from X[:,0] durations and X[:,1] event indicators. Report survival at time 3 and first event time when survival reaches 0.5 or below.",
+      "planned_band": "short",
+      "input_sha256": "dff4eeccbddd36670eab543f5f6a7652776cc273c9870349d4cbc835f84b278c"
+    },
+    {
+      "id": "image_regions",
+      "source_group": "extension_image_regions",
+      "operation": "connected_components",
+      "intent": "Treat X as a binary image. Label 4-neighbor connected foreground regions, retain those with at least 8 pixels, and report region count and largest size.",
+      "planned_band": "short",
+      "input_sha256": "158c7b90f502758fc19a4757c6cde1968f738c560934ad3e1ec4e16d1ce65bd2"
+    },
+    {
+      "id": "cost_assignment",
+      "source_group": "extension_cost_assignment",
+      "operation": "assignment",
+      "intent": "Find the minimum-cost one-to-one assignment of rows to columns in square cost matrix X. Return total cost and assigned count.",
+      "planned_band": "short",
+      "input_sha256": "e09e992457d0d1055baf4e8a00849ff094ddeef5f6bf5f7d31d64c10bef30b52"
+    },
+    {
+      "id": "distribution_transport",
+      "source_group": "extension_distribution_transport",
+      "operation": "wasserstein",
+      "intent": "Compute the order-1 Wasserstein distance between equally weighted empirical samples in columns 0 and 1.",
+      "planned_band": "short",
+      "input_sha256": "d017a09bece80c8d51ca6112e196e0f0ee0fd5dcaf181bc4378f218eb60d38f7"
+    }
+  ],
+  "references": {
+    "missing_median": {
+      "reference": {
+        "fill_values": [
+          -0.006652657865111599,
+          0.003974430780958511,
+          -0.00028976958007375763,
+          -0.010824655429106426
+        ],
+        "missing_counts": [
+          3989,
+          3939,
+          4039,
+          4042
+        ],
+        "means": [
+          -0.0012119608798860982,
+          -0.002343498799288621,
+          0.002364854255319671,
+          -0.008120303581655419
+        ]
+      },
+      "reference_s": [
+        0.026662397,
+        0.009907127,
+        0.009034293
+      ],
+      "input_sha256": "7bce68f03ab34581059dd11b7c98bb4dba44420d3205e84a5f2160cba0a75f58",
+      "tool_s": 2.966991145,
+      "planned_band": "short",
+      "measured_band": "short",
+      "checker_rejects_wrong_value": true,
+      "real_tool_reference_matches": true
+    },
+    "upper_quantile": {
+      "reference": {
+        "value": 1.475521868288515
+      },
+      "reference_s": [
+        0.009419898,
+        0.008335648,
+        0.007674455
+      ],
+      "input_sha256": "de87a94cd0de80b5811ffb432738b2a284e5b88ef6fc1173ce290080d735ee15",
+      "tool_s": 1.705511535,
+      "planned_band": "short",
+      "measured_band": "short",
+      "checker_rejects_wrong_value": true,
+      "real_tool_reference_matches": true
+    },
+    "weighted_groups": {
+      "reference": {
+        "rows": [
+          [
+            0,
+            -0.006643873608639467
+          ],
+          [
+            1,
+            0.006769000264463364
+          ],
+          [
+            2,
+            -0.006249291403705262
+          ],
+          [
+            3,
+            -0.0005903287026358488
+          ]
+        ]
+      },
+      "reference_s": [
+        0.301274445,
+        0.050284963,
+        0.047397078
+      ],
+      "input_sha256": "8ab32476040e13940a7f0664c16c69325cb38cc6d28929f359c053c9068799ad",
+      "tool_s": 2.4912858,
+      "planned_band": "short",
+      "measured_band": "short",
+      "checker_rejects_wrong_value": true,
+      "real_tool_reference_matches": true
+    },
+    "feature_correlation": {
+      "reference": {
+        "matrix": [
+          [
+            1.0000000000000004,
+            0.8111350859821015,
+            -0.0029600167176648097
+          ],
+          [
+            0.8111350859821015,
+            0.9999999999999999,
+            -0.006322589419196356
+          ],
+          [
+            -0.0029600167176648097,
+            -0.006322589419196356,
+            1.0000000000000002
+          ]
+        ]
+      },
+      "reference_s": [
+        0.005608182,
+        0.00577602,
+        0.005864588
+      ],
+      "input_sha256": "e2caae7d49df8e153dc9f59a3d12b332801c6c6a9ac0b57bf8c0a0f25e390c2b",
+      "tool_s": 1.958256039,
+      "planned_band": "short",
+      "measured_band": "short",
+      "checker_rejects_wrong_value": true,
+      "real_tool_reference_matches": true
+    },
+    "composite_dedup": {
+      "reference": {
+        "count": 28985,
+        "value_sum": -21.078993677374626
+      },
+      "reference_s": [
+        0.389830597,
+        0.417212608,
+        0.379341606
+      ],
+      "input_sha256": "dfba71656a5cfda5c14f5f8ec8e8289ed3c53fe5662460d8ef1c52f2bfef5d1a",
+      "tool_s": 2.934017296,
+      "planned_band": "short",
+      "measured_band": "short",
+      "checker_rejects_wrong_value": true,
+      "real_tool_reference_matches": true
+    },
+    "distribution_bins": {
+      "reference": {
+        "counts": [
+          386,
+          6404,
+          40794,
+          102350,
+          102191,
+          41068,
+          6407,
+          382
+        ]
+      },
+      "reference_s": [
+        0.031599945,
+        0.019614151,
+        0.022766679
+      ],
+      "input_sha256": "2ca3c507abcd6a18c30aa1ec25184270f61edeeb42c7bbed7653fab074543ca6",
+      "tool_s": 1.537817217,
+      "planned_band": "short",
+      "measured_band": "short",
+      "checker_rejects_wrong_value": true,
+      "real_tool_reference_matches": true
+    },
+    "categorical_independence": {
+      "reference": {
+        "statistic": 7.890447309362539,
+        "pvalue": 0.24623982056640759,
+        "dof": 6
+      },
+      "reference_s": [
+        0.072984913,
+        0.00541258,
+        0.005614472
+      ],
+      "input_sha256": "40b824cf7ee07745a355bb4c8dff794c4603b34e2910c237d8c10cab09037602",
+      "tool_s": 4.884769722,
+      "planned_band": "short",
+      "measured_band": "medium",
+      "checker_rejects_wrong_value": true,
+      "real_tool_reference_matches": true
+    },
+    "bootstrap_interval": {
+      "reference": {
+        "mean": 1.207843185813046,
+        "lower": 1.1853039779519086,
+        "upper": 1.231157600388551
+      },
+      "reference_s": [
+        0.081588758,
+        0.062221294,
+        0.054620467
+      ],
+      "input_sha256": "c41111e1fcd44d9a8a986b7412d6329d067d17a316c42bcf0112100445a965ac",
+      "tool_s": 1.937711562,
+      "planned_band": "short",
+      "measured_band": "short",
+      "checker_rejects_wrong_value": true,
+      "real_tool_reference_matches": true
+    },
+    "randomization_test": {
+      "reference": {
+        "difference": -0.08938715665471095,
+        "pvalue": 0.15884115884115885
+      },
+      "reference_s": [
+        0.087327223,
+        0.086686095,
+        0.067529481
+      ],
+      "input_sha256": "2fbe60c61e0d277b94fb6f1cee5c43582f95a4ec9e601123eac20faf3daf3982",
+      "tool_s": 1.905044682,
+      "planned_band": "short",
+      "measured_band": "short",
+      "checker_rejects_wrong_value": true,
+      "real_tool_reference_matches": true
+    },
+    "paired_measurements": {
+      "reference": {
+        "statistic": 0.43033572653975355,
+        "pvalue": 0.6669746318739143
+      },
+      "reference_s": [
+        0.11025789,
+        0.002372119,
+        0.002166322
+      ],
+      "input_sha256": "9f7d038b0908b44b176cd95cccfd3a597049632f8681e79f5900fc35e756189e",
+      "tool_s": 3.978332197,
+      "planned_band": "short",
+      "measured_band": "medium",
+      "checker_rejects_wrong_value": true,
+      "real_tool_reference_matches": true
+    },
+    "multi_group_anova": {
+      "reference": {
+        "statistic": 0.43469982986277794,
+        "pvalue": 0.7281645510407051
+      },
+      "reference_s": [
+        0.005495449,
+        0.005260416,
+        0.003642335
+      ],
+      "input_sha256": "4fd5c810a3754fe985a75143b06c220e430608c39ce9eb9e2591f98646e9ea5a",
+      "tool_s": 2.960918996,
+      "planned_band": "short",
+      "measured_band": "short",
+      "checker_rejects_wrong_value": true,
+      "real_tool_reference_matches": true
+    },
+    "rank_sum_test": {
+      "reference": {
+        "statistic": 2001301.0,
+        "pvalue": 0.9715923711570226
+      },
+      "reference_s": [
+        0.081444404,
+        0.003535812,
+        0.002814543
+      ],
+      "input_sha256": "d9c19c6c1f2160206b4365ad32c45b96276645cdc03974de6395fed6274bd1d1",
+      "tool_s": 1.858282905,
+      "planned_band": "short",
+      "measured_band": "short",
+      "checker_rejects_wrong_value": true,
+      "real_tool_reference_matches": true
+    },
+    "response_trend": {
+      "reference": {
+        "slope": 1.6909942733580208,
+        "intercept": 0.3922933846709468,
+        "r_squared": 0.7437142235997456
+      },
+      "reference_s": [
+        0.433668584,
+        0.006240228,
+        0.005875159
+      ],
+      "input_sha256": "2becc9b97270db547e6da5b4fc5fbd68c9e39d446904f43a5aa5256837936e3f",
+      "tool_s": 2.728753444,
+      "planned_band": "short",
+      "measured_band": "short",
+      "checker_rejects_wrong_value": true,
+      "real_tool_reference_matches": true
+    },
+    "robust_fences": {
+      "reference": {
+        "count": 8091,
+        "fraction": 0.040455
+      },
+      "reference_s": [
+        0.017824749,
+        0.019263836,
+        0.018637237
+      ],
+      "input_sha256": "34eacd668422a6905adecd858d5d30c964584943aab8ead0ef9eb202f524583d",
+      "tool_s": 1.728636287,
+      "planned_band": "short",
+      "measured_band": "short",
+      "checker_rejects_wrong_value": true,
+      "real_tool_reference_matches": true
+    },
+    "temporal_asof": {
+      "reference": {
+        "matched": 19999,
+        "value_sum": 233.35971851667574,
+        "first_values": [
+          0.6259180969808498,
+          0.6259180969808498,
+          0.2718294221544711,
+          1.7620272024492236,
+          0.6508376541422984
+        ]
+      },
+      "reference_s": [
+        0.063142819,
+        0.032636947,
+        0.032063891
+      ],
+      "input_sha256": "378257df309cb69fc11749f5011c63ab9eeceb6afd8ec95857379f0196bb8c7c",
+      "tool_s": 1.894336712,
+      "planned_band": "short",
+      "measured_band": "short",
+      "checker_rejects_wrong_value": true,
+      "real_tool_reference_matches": true
+    },
+    "window_smoothing": {
+      "reference": {
+        "count": 199950,
+        "mean": -0.0005632410463096411,
+        "min": -0.5905224442581606,
+        "max": 0.5084569696146304
+      },
+      "reference_s": [
+        0.027931131,
+        0.018635286,
+        0.023459061
+      ],
+      "input_sha256": "43e86691dc12586186988d80102d919418732433a1ad4cf5079c0404ba3ce97a",
+      "tool_s": 2.181054048,
+      "planned_band": "short",
+      "measured_band": "short",
+      "checker_rejects_wrong_value": true,
+      "real_tool_reference_matches": true
+    },
+    "time_buckets": {
+      "reference": {
+        "buckets": 1440,
+        "rows": [
+          [
+            0,
+            236.48300515226717
+          ],
+          [
+            60,
+            194.16793441851107
+          ],
+          [
+            120,
+            181.06484411276958
+          ],
+          [
+            180,
+            163.50949699214806
+          ],
+          [
+            240,
+            196.07894185011148
+          ]
+        ]
+      },
+      "reference_s": [
+        0.194605623,
+        0.1554764,
+        0.159602005
+      ],
+      "input_sha256": "999d6d6feff16bdb50eae15453e51e22b1b65143a75764dbdf36bfb978f97c63",
+      "tool_s": 1.503635448,
+      "planned_band": "short",
+      "measured_band": "short",
+      "checker_rejects_wrong_value": true,
+      "real_tool_reference_matches": true
+    },
+    "activity_sessions": {
+      "reference": {
+        "sessions": 8189,
+        "mean_events": 12.211503236048358,
+        "max_duration": 953.8936848755693
+      },
+      "reference_s": [
+        0.034368883,
+        0.034576551,
+        0.034763601
+      ],
+      "input_sha256": "cbaed819d79fd6a173f5d83c0773fdc191390cbaf2836d7f2edb6106d4300089",
+      "tool_s": 1.576426837,
+      "planned_band": "short",
+      "measured_band": "short",
+      "checker_rejects_wrong_value": true,
+      "real_tool_reference_matches": true
+    },
+    "gap_interpolation": {
+      "reference": {
+        "count": 101,
+        "first_values": [
+          0.026607267931297543,
+          0.1282145683951863,
+          0.36680210641304944,
+          0.6358966874948095,
+          0.7749777529707595
+        ],
+        "mean": 0.03391585606973016
+      },
+      "reference_s": [
+        0.002273031,
+        0.00202569,
+        0.003000379
+      ],
+      "input_sha256": "5c3fc6423f8ce1bbc6cf8f43469b38cfe56690b48ebb1fbe50f7359733fd6674",
+      "tool_s": 2.035832025,
+      "planned_band": "short",
+      "measured_band": "short",
+      "checker_rejects_wrong_value": true,
+      "real_tool_reference_matches": true
+    },
+    "dominant_frequency": {
+      "reference": {
+        "frequency": 20.0,
+        "power_fraction": 0.9010566214909059
+      },
+      "reference_s": [
+        0.167916084,
+        0.008473615,
+        0.014118841
+      ],
+      "input_sha256": "3b19f843faa6c82525333fd5019a93ea3e1c69fe985e5c73896b3782f3dcb079",
+      "tool_s": 2.211423329,
+      "planned_band": "short",
+      "measured_band": "short",
+      "checker_rejects_wrong_value": true,
+      "real_tool_reference_matches": true
+    },
+    "signal_alignment": {
+      "reference": {
+        "lag": -37
+      },
+      "reference_s": [
+        0.006413183,
+        0.00635741,
+        0.006335749
+      ],
+      "input_sha256": "fa1ee50f92d5fa2f0a9099b89a0a0414a3ae3d70069536dcc89b9de22deef4a0",
+      "tool_s": 1.686665576,
+      "planned_band": "short",
+      "measured_band": "short",
+      "checker_rejects_wrong_value": true,
+      "real_tool_reference_matches": true
+    },
+    "noise_filtering": {
+      "reference": {
+        "mean": -0.0003487355553712905,
+        "rms": 0.7084556666838162
+      },
+      "reference_s": [
+        0.194860671,
+        0.016765275,
+        0.016387919
+      ],
+      "input_sha256": "dcba44b9713324ef09cd97abe5801460e1f9f061888f31e9d8f342440efe701d",
+      "tool_s": 1.665856597,
+      "planned_band": "short",
+      "measured_band": "short",
+      "checker_rejects_wrong_value": true,
+      "real_tool_reference_matches": true
+    },
+    "event_peaks": {
+      "reference": {
+        "count": 417,
+        "first_indices": [
+          29,
+          151,
+          270,
+          387,
+          520
+        ],
+        "mean_height": 1.06837937096594
+      },
+      "reference_s": [
+        0.025737182,
+        0.007648275,
+        0.005371547
+      ],
+      "input_sha256": "c74e878db8d9f090ffdbdf8a80912961b6f27cc85ff2837bc37ec926f8a98327",
+      "tool_s": 2.7794878,
+      "planned_band": "short",
+      "measured_band": "short",
+      "checker_rejects_wrong_value": true,
+      "real_tool_reference_matches": true
+    },
+    "curve_area": {
+      "reference": {
+        "value": 111.14220716211354
+      },
+      "reference_s": [
+        0.009490634,
+        0.008430355,
+        0.007801122
+      ],
+      "input_sha256": "39007d0124fe4e2fad36122ef6dab8623969cfba99052adb8b9324efcc2cb022",
+      "tool_s": 2.446674337,
+      "planned_band": "short",
+      "measured_band": "short",
+      "checker_rejects_wrong_value": true,
+      "real_tool_reference_matches": true
+    },
+    "bracketed_root": {
+      "reference": {
+        "root": 1.414213562373095,
+        "residual": -4.440892098500626e-16
+      },
+      "reference_s": [
+        0.004525827,
+        0.00500821,
+        0.005813025
+      ],
+      "input_sha256": "5d15cfead1fb7beb393ac04f1805e7015776429bedf428fa670f5b414e774ef0",
+      "tool_s": 2.169021975,
+      "planned_band": "short",
+      "measured_band": "short",
+      "checker_rejects_wrong_value": true,
+      "real_tool_reference_matches": true
+    },
+    "portfolio_allocation": {
+      "reference": {
+        "objective": 0.41905405405405394,
+        "weight_sum": 0.9999999999999998
+      },
+      "reference_s": [
+        0.00354173,
+        0.002999608,
+        0.00221567
+      ],
+      "input_sha256": "be1a470d6cd0f54630354dee58d5085151d3b4107fb7d1512e09dabc354072e8",
+      "tool_s": 2.086054363,
+      "planned_band": "short",
+      "measured_band": "short",
+      "checker_rejects_wrong_value": true,
+      "real_tool_reference_matches": true
+    },
+    "tridiagonal_system": {
+      "reference": {
+        "mean": -0.0013342756887650983,
+        "norm": 126.69631884050214,
+        "residual": 1.0005017647696235e-15
+      },
+      "reference_s": [
+        0.183546076,
+        0.037913017,
+        0.029614568
+      ],
+      "input_sha256": "6fe2902e97ad539f0ba91f14df7ae185e78f87b89e7329c6817a828ac550ed70",
+      "tool_s": 2.726490994,
+      "planned_band": "short",
+      "measured_band": "short",
+      "checker_rejects_wrong_value": true,
+      "real_tool_reference_matches": true
+    },
+    "nonnegative_factors": {
+      "reference": {
+        "error": 15.2607817832539
+      },
+      "reference_s": [
+        3.150847292,
+        0.864545084,
+        0.68430159
+      ],
+      "input_sha256": "5d59d635652c2f24099592f8df73a02e2dc870c95b51602612932a454fcc3d5b",
+      "tool_s": 2.404176431,
+      "planned_band": "medium",
+      "measured_band": "short",
+      "checker_rejects_wrong_value": true,
+      "real_tool_reference_matches": true
+    },
+    "independent_sources": {
+      "reference": {
+        "mean_absolute_kurtosis": 3.3513441636239216
+      },
+      "reference_s": [
+        0.309636797,
+        0.073623463,
+        0.072052665
+      ],
+      "input_sha256": "53f30624755187cb9a2d241d5e4d84e0185991c25f4c161e47f958faed14e4ca",
+      "tool_s": 2.060896051,
+      "planned_band": "medium",
+      "measured_band": "short",
+      "checker_rejects_wrong_value": true,
+      "real_tool_reference_matches": true
+    },
+    "density_clusters": {
+      "reference": {
+        "clusters": 5,
+        "noise": 2,
+        "largest": 2400
+      },
+      "reference_s": [
+        1.962661012,
+        0.802124363,
+        0.7567607
+      ],
+      "input_sha256": "5bc52fc61297bcd143679a8845f69efc998dfabf83bc2cb4ca10003c36b1ab15",
+      "tool_s": 2.91738663,
+      "planned_band": "medium",
+      "measured_band": "short",
+      "checker_rejects_wrong_value": true,
+      "real_tool_reference_matches": true
+    },
+    "neighbor_retrieval": {
+      "reference": {
+        "mean_kth_distance": 3.236648312729333,
+        "first_indices": [
+          47823,
+          39601,
+          14304,
+          22178,
+          10210
+        ]
+      },
+      "reference_s": [
+        3.208657349,
+        3.074283414,
+        2.986863785
+      ],
+      "input_sha256": "bffe3ce2f61f067fd0932f1d55a4bc5b530ae63d7026d8688645baaf2f57d99f",
+      "tool_s": 2.260800634,
+      "planned_band": "medium",
+      "measured_band": "short",
+      "checker_rejects_wrong_value": true,
+      "real_tool_reference_matches": true
+    },
+    "anomaly_detection": {
+      "reference": {
+        "outliers": 5000,
+        "mean_score": 0.04656185114192509
+      },
+      "reference_s": [
+        2.729495014,
+        1.988277203,
+        1.912021541
+      ],
+      "input_sha256": "4603eff64ad2002f50d0284c7c735efdb39afcc4e4521307faf42def44f1958c",
+      "tool_s": 3.650986023,
+      "planned_band": "medium",
+      "measured_band": "medium",
+      "checker_rejects_wrong_value": true,
+      "real_tool_reference_matches": true
+    },
+    "feature_information": {
+      "reference": {
+        "values": [
+          0.0930285715686292,
+          0.0187039047641,
+          0.07627661693676546,
+          0.004022051332930765,
+          0.12895358314133532,
+          0.0,
+          0.0,
+          0.0024929400827913284
+        ],
+        "top_indices": [
+          4,
+          0,
+          2
+        ]
+      },
+      "reference_s": [
+        1.014565252,
+        0.792284922,
+        0.760942596
+      ],
+      "input_sha256": "164444f779c0d351bec200869607af765e7da97e2850aec351027689b5776c40",
+      "tool_s": 2.620621347,
+      "planned_band": "medium",
+      "measured_band": "short",
+      "checker_rejects_wrong_value": true,
+      "real_tool_reference_matches": true
+    },
+    "recursive_forecast": {
+      "reference": {
+        "forecast": [
+          -0.5505452957986393,
+          -0.16969109349859815,
+          -0.017199551121230647,
+          0.012248369360619304,
+          0.008174906713684956
+        ]
+      },
+      "reference_s": [
+        0.030575543,
+        0.01675962,
+        0.013607873
+      ],
+      "input_sha256": "59e0d8759de3521cfa766cffa2462cd0dc1410b1c3cbd2698bee5866fb293c1d",
+      "tool_s": 1.477285513,
+      "planned_band": "short",
+      "measured_band": "short",
+      "checker_rejects_wrong_value": true,
+      "real_tool_reference_matches": true
+    },
+    "censored_survival": {
+      "reference": {
+        "survival": 0.3691655695298041,
+        "median": 2.091332056438506
+      },
+      "reference_s": [
+        0.249801126,
+        0.251001722,
+        0.234113108
+      ],
+      "input_sha256": "dff4eeccbddd36670eab543f5f6a7652776cc273c9870349d4cbc835f84b278c",
+      "tool_s": 1.462013952,
+      "planned_band": "short",
+      "measured_band": "short",
+      "checker_rejects_wrong_value": true,
+      "real_tool_reference_matches": true
+    },
+    "image_regions": {
+      "reference": {
+        "regions": 82,
+        "largest": 343
+      },
+      "reference_s": [
+        0.046428351,
+        0.033539692,
+        0.034260897
+      ],
+      "input_sha256": "158c7b90f502758fc19a4757c6cde1968f738c560934ad3e1ec4e16d1ce65bd2",
+      "tool_s": 1.68512302,
+      "planned_band": "short",
+      "measured_band": "short",
+      "checker_rejects_wrong_value": true,
+      "real_tool_reference_matches": true
+    },
+    "cost_assignment": {
+      "reference": {
+        "cost": 156.9849205875591,
+        "assigned": 64
+      },
+      "reference_s": [
+        0.431378454,
+        0.047590755,
+        0.033859913
+      ],
+      "input_sha256": "e09e992457d0d1055baf4e8a00849ff094ddeef5f6bf5f7d31d64c10bef30b52",
+      "tool_s": 1.429481928,
+      "planned_band": "short",
+      "measured_band": "short",
+      "checker_rejects_wrong_value": true,
+      "real_tool_reference_matches": true
+    },
+    "distribution_transport": {
+      "reference": {
+        "value": 0.5398659151999965
+      },
+      "reference_s": [
+        0.011150956,
+        0.009105267,
+        0.010884367
+      ],
+      "input_sha256": "d017a09bece80c8d51ca6112e196e0f0ee0fd5dcaf181bc4378f218eb60d38f7",
+      "tool_s": 1.540362858,
+      "planned_band": "short",
+      "measured_band": "short",
+      "checker_rejects_wrong_value": true,
+      "real_tool_reference_matches": true
+    }
+  },
+  "frozen_hashes": {
+    "tasks_sha256": "197b7293dbb09321fe07f1dde4a98991191f0bfb2c8e0104bf82a6fa5c643578",
+    "references_sha256": "b4821020fd5f3c56ef53fd81c2c211b831105fc5ac2b3038e2bfb578770a2c98",
+    "schemas_sha256": "57b6437233ea10b4b80d82e7289bdbc34a0fd671e5e937c8bae92eb4c3a7125c"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "version": "extension38-to-50-v1",
+  "authorization": "User request: \u7ee7\u7eed\u589e\u52a0\u6bcd\u9898\u523050",
+  "authorization_client_date": "2026-11-07 Asia/Shanghai",
+  "additional_parents": 38,
+  "prior_successful_parents": 12,
+  "target_parents": 50,
+  "budget_limits": {
+    "probe": 24,
+    "pilot": 228,
+    "total": 252
+  },
+  "prior_generations": 86,
+  "cumulative_maximum_generations": 338,
+  "ledger": "/home/liuxv/LeasePath-new-server-data/.artifacts/extension50/ledger.jsonl",
+  "tasks_sha256": "197b7293dbb09321fe07f1dde4a98991191f0bfb2c8e0104bf82a6fa5c643578",
+  "references_sha256": "b4821020fd5f3c56ef53fd81c2c211b831105fc5ac2b3038e2bfb578770a2c98",
+  "schemas_sha256": "57b6437233ea10b4b80d82e7289bdbc34a0fd671e5e937c8bae92eb4c3a7125c",
+  "task_directory": "/home/liuxv/LeasePath-new-server-data/.artifacts/qwen-data-tasks-extension38-v1",
+  "base_run": "/home/liuxv/LeasePath-new-server-data/.artifacts/qwen-data-32b-batch-d/pilot",
+  "max_generations_per_task": 6,
+  "max_task_s": 900,
+  "max_tool_s": 240,
+  "threads": 2,
+  "tool_memory_gib": 12,
+  "model_repository": "Qwen/Qwen2.5-Coder-32B-Instruct",
+  "model_revision": "381fc969f78efac66bc87ff7ddeadb7e73c218a7",
+  "model_sha256": "0c2f9e4daac78e72b24f7c054416232a523f0fd2aeb37653747d3c21f7dca078",
+  "training": false,
+  "online_policy": false,
+  "purchase": false,
+  "created_wall_ns": 1794047877856508291,
+  "contract_sha256": "89e61605faa8ac5e340b73f2b680124f8c2745f880331dcd6dc7b2f678b138e5",
+  "preflight_actual_bands": {
+    "short": 35,
+    "medium": 3
+  },
+  "status": "frozen_before_extension_model_requests"
+}
