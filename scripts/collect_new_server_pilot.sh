@@ -5,7 +5,8 @@ if (( $# != 6 )); then
   echo "usage: $0 AGENT_PYTHON NATIVE_SO MODEL_GGUF TOKENIZER_DIR TASK_DIR NEW_BATCH_DIR" >&2
   exit 2
 fi
-agent_python=$(realpath "$1")
+# Preserve the venv's interpreter symlink: dereferencing it loses pyvenv.cfg.
+agent_python=$(python3 -c 'import os,sys; print(os.path.abspath(sys.argv[1]))' "$1")
 native_so=$(realpath "$2")
 model_gguf=$(realpath "$3")
 tokenizer_dir=$(realpath "$4")
