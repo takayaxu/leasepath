@@ -50,13 +50,38 @@ def main():
           'retry_success':'No external task retries in this frozen batch; within-task parameter repairs retained in tool calls.',
           'successful_independent_parents':len(independent),'successful_parents_with_ge60s_tool':len(long_success),
           'audit_status':summary['audit_status'],'pilot_qualified':summary.get('pilot_qualified',False),
-          'main_labels':summary.get('audit',{}).get('labels'),
+          'observed_labels':summary.get('audit',{}).get('labels'),
+          'main_labels':summary.get('audit',{}).get('labels') if summary['scope']=='32b_pilot' else None,
           'success_per_planned_band':summary['success_per_planned_band'],
           'all_compute_calls':observations,'budget':summary['budget'],
           'fee':'local existing hardware; no external inference purchase; no currency cost estimate',
           'elapsed_model_process_s':summary['runtime_s'],
           'training':'not started','online_policy':'not started','JCT_benefit':'not measured',
           'source_tasks_sha256':sha(a.tasks/'tasks.private.json')}
+    if summary['audit_status']=='passed':
+        approved={row['task'] for row in summary['quality'] if row['success']}
+        events=[json.loads(x) for x in (a.run/'events.jsonl').read_text().splitlines()]
+        episodes=[json.loads(x) for x in (a.run/'episodes.jsonl').read_text().splitlines()]
+        features=[json.loads(x) for x in (a.run/'snapshots.jsonl').read_text().splitlines()]
+        owners={e['idle_episode_id']:e['workflow_id'] for e in events if e['event_type']=='idle_start'}
+        quality_episodes={e['idle_episode_id']:e for e in episodes if owners[e['idle_episode_id']] in approved}
+        quality_features=[r for r in features if r['idle_episode_id'] in quality_episodes]
+        targets=[]
+        for item in quality_features:
+            ep=quality_episodes[item['idle_episode_id']]
+            remaining=ep['end_ns']-item['snapshot_ns']
+            if remaining<=0:raise ValueError('noncausal or already closed snapshot')
+            targets.append({'run_id':item['run_id'],'idle_episode_id':item['idle_episode_id'],
+                            'snapshot_ns':item['snapshot_ns'],'outcome':ep['outcome'],'remaining_ns':remaining})
+        quality=a.output/'quality-subset'
+        quality.mkdir()
+        for name,items in [('episodes',quality_episodes.values()),('features',quality_features),('targets',targets)]:
+            with (quality/(name+'.jsonl')).open('x') as stream:
+                for item in items:stream.write(json.dumps(item,allow_nan=False)+'\n')
+        card['quality_subset']={'tasks':sorted(approved),'episodes':len(quality_episodes),
+                               'snapshots':len(quality_features),
+                               'labels':dict(Counter(ep['outcome'] for ep in quality_episodes.values())),
+                               'scope':summary['scope']}
     (a.output/'dataset-card.json').write_text(json.dumps(card,indent=2)+'\n')
     checks={}
     for path in sorted(a.run.rglob('*')):
