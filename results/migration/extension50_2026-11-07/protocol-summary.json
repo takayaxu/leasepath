@@ -1,0 +1,181 @@
+{
+  "scope": "32b_protocol",
+  "model_identity_sha256": "227bd7f3c7bc9b44fd6edfcd70987c61519dfd473e3d0a6229f37d9c86fa82fa",
+  "collection_contract_sha256": "89e61605faa8ac5e340b73f2b680124f8c2745f880331dcd6dc7b2f678b138e5",
+  "status": "passed",
+  "complete_success": 2,
+  "tasks": 2,
+  "success_per_planned_band": {
+    "short": 2
+  },
+  "quality": [
+    {
+      "task": "missing_median",
+      "source_group": "extension_missing_median",
+      "planned_band": "short",
+      "success": true,
+      "failure": null,
+      "generations": 4,
+      "wall_s": 34.239104672,
+      "final": {
+        "artifact_id": "a46206d76eb8f4babac9e77acb571ec9d",
+        "answer": {
+          "fill_values": [
+            -0.006652657865111599,
+            0.003974430780958511,
+            -0.00028976958007375763,
+            -0.010824655429106426
+          ],
+          "missing_counts": [
+            3989,
+            3939,
+            4039,
+            4042
+          ],
+          "means": [
+            -0.0012119608798861667,
+            -0.0023434987992887162,
+            0.0023648542553195606,
+            -0.008120303581655898
+          ]
+        }
+      },
+      "tools": [
+        {
+          "call_id": "td66ddad6a6414bec940e043d0cb04d60",
+          "name": "inspect_input",
+          "started_ns": 1221680563691057,
+          "ended_ns": 1221680571502671,
+          "child_wall_ns": null,
+          "status": "ok"
+        },
+        {
+          "call_id": "tf0fb5f69409f4a8a8a377df8977df1cf",
+          "name": "compute",
+          "started_ns": 1221684184881359,
+          "ended_ns": 1221684187255563,
+          "child_wall_ns": null,
+          "status": "error"
+        },
+        {
+          "call_id": "t72fc532432b94b059422586f7c63788d",
+          "name": "compute",
+          "started_ns": 1221687804424278,
+          "ended_ns": 1221689798202022,
+          "child_wall_ns": 1764421499,
+          "status": "ok"
+        }
+      ]
+    },
+    {
+      "task": "feature_correlation",
+      "source_group": "extension_feature_correlation",
+      "planned_band": "short",
+      "success": true,
+      "failure": null,
+      "generations": 3,
+      "wall_s": 26.052570792,
+      "final": {
+        "artifact_id": "ac3934494992c48969bc0a91197a38c43",
+        "answer": {
+          "matrix": [
+            [
+              1.0,
+              0.8111350859821015,
+              -0.0029600167176648084
+            ],
+            [
+              0.8111350859821014,
+              1.0,
+              -0.006322589419196355
+            ],
+            [
+              -0.0029600167176648084,
+              -0.006322589419196355,
+              0.9999999999999999
+            ]
+          ]
+        }
+      },
+      "tools": [
+        {
+          "call_id": "tad852dc8d17143c5852d49a60eac23fb",
+          "name": "inspect_input",
+          "started_ns": 1221714173745006,
+          "ended_ns": 1221714177882915,
+          "child_wall_ns": null,
+          "status": "ok"
+        },
+        {
+          "call_id": "t967b08b4b1a54ddf8d08edc34cc301a0",
+          "name": "compute",
+          "started_ns": 1221717824541680,
+          "ended_ns": 1221719683370933,
+          "child_wall_ns": 1569769489,
+          "status": "ok"
+        }
+      ]
+    }
+  ],
+  "audit_status": "passed",
+  "audit": {
+    "status": "passed",
+    "scope": "single_dense_sequence_no_preemption",
+    "transport": {
+      "observer_version": "real-development-observer-v1",
+      "streams": [
+        {
+          "observer_version": "real-development-observer-v1",
+          "run_id": "protocol-03dd9f3f",
+          "stream_id": "aa7b9c1bffa349caa851c72ab2eb3211",
+          "pid": 2061030,
+          "boot_id": "91b65d19-10fc-4f9a-ae68-2b38e6ad0b40",
+          "source": "qwen_controller",
+          "rank": null,
+          "records": 27,
+          "sha256": "6334f6af8b7c2611763625013eddbb46bab4f4004089a4ec661ae89c13326a2a",
+          "complete": true
+        },
+        {
+          "observer_version": "real-development-observer-v1",
+          "run_id": "protocol-03dd9f3f",
+          "stream_id": "d4b7c6636ba94405832982c1fb93bca4",
+          "pid": 2061030,
+          "boot_id": "91b65d19-10fc-4f9a-ae68-2b38e6ad0b40",
+          "source": "native_cuda_engine",
+          "rank": null,
+          "records": 11,
+          "sha256": "a37ded25245eaff49cf38c17c40b90c34c202b01b3af317d81a16ecd219b9b3f",
+          "complete": true
+        }
+      ],
+      "complete": true,
+      "semantic_completeness_verified": false,
+      "scope": "transport_integrity_only_not_backend_or_label_acceptance"
+    },
+    "requests": 7,
+    "tool_results_consumed": 5,
+    "tool_results_unconsumed": [],
+    "labels": {
+      "legal_demand": 5,
+      "retire": 2
+    },
+    "episodes": 7,
+    "snapshot_count": 14,
+    "unmapped": 0,
+    "unexplained": 0,
+    "cell_blocks": "analysis groups, not vLLM allocations"
+  },
+  "budget": {
+    "generations": 7,
+    "probe": 7,
+    "pilot": 0,
+    "total_cap": 252,
+    "lane_caps": {
+      "probe": 24,
+      "pilot": 228
+    },
+    "prior_usage_status": "historical_unreconciled"
+  },
+  "runtime_s": 564.803259277
+}

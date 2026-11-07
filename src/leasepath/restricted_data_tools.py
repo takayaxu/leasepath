@@ -128,7 +128,7 @@ def schemas_for(operations):
     return [{'name': name, 'description': {
         'inspect_input': 'Read schema, shape and at most 3 input rows from the session dataset.',
         'compute': 'Run one bounded data operation. Supply only parameters relevant to that operation.',
-        'view_artifact': 'Read a page of a session result artifact; IDs from other sessions are forbidden.'
+        'view_artifact': 'Read complete result plus an optional page. compute already returns the complete result, including nested arrays. IDs from other sessions are forbidden.'
     }[name], 'parameters': schema} for name, schema in schemas.items()]
 
 @dataclass
@@ -168,10 +168,13 @@ class SessionTools:
                 if identifier not in self.artifacts:
                     raise ValueError('unknown session artifact')
                 result = self.artifacts[identifier]
-                rows = result.get('rows', [])
+                # Non-tabular results are one object, not an empty table. Nested
+                # arrays remain complete inside result and are not row pagination.
+                rows = result['rows'] if 'rows' in result else [result]
                 answer = {'artifact_id': identifier, 'result': result,
                           'page': rows[arguments['offset']:arguments['offset']+arguments['limit']],
-                          'row_count': len(rows)}
+                          'row_count': len(rows),'complete_result_returned':True,
+                          'pagination_unit':'rows' if 'rows' in result else 'result_object'}
             else:
                 identifier = arguments['dataset_id']
                 if identifier not in self.resources:

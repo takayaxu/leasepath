@@ -26,6 +26,8 @@ Use the Qwen-Agent function format. For example, to inspect a dataset named dexa
 ✿ARGS✿: {"dataset_id":"dexample"}
 Use the real session dataset ID. Use the same FUNCTION/ARGS format for compute and view_artifact.
 Do not generate tool results yourself. Wait for the real tool result before continuing.
+compute returns the COMPLETE result, including every nested array. Use that result for the final answer.
+Only use view_artifact when a result explicitly says it was truncated. Do not paginate nested arrays.
 After a successful computation, end with exactly one JSON object:
 {"artifact_id": "<ID returned by compute>", "answer": <the complete result object returned by compute>}.
 Copy every required row, scalar and fold score accurately; preserve at least 12 significant digits.
@@ -68,10 +70,17 @@ def main():
     contract=None
     if args.collection_contract:
         contract=json.loads(args.collection_contract.read_text())
-        if (contract['version']!='extension38-to-50-v1' or contract['additional_parents']!=38 or
-                contract['budget_limits']!={'probe':24,'pilot':228,'total':252} or
+        expected_limits=({'probe':24,'pilot':228,'total':252} if contract['version']=='extension38-to-50-v1'
+                         else {'probe':7,'pilot':120,'total':127} if contract['version']=='extension38-to-50-v2' else None)
+        if (expected_limits is None or contract['additional_parents']!=38 or
+                contract['budget_limits']!=expected_limits or
                 contract['ledger']!=str(args.ledger.resolve())):
             raise ValueError('unexpected extension contract or ledger')
+        if contract['version']=='extension38-to-50-v2':
+            prior=Path(contract['prior_ledger'])
+            if file_hash(prior)!=contract['prior_ledger_sha256'] or len(prior.read_text().splitlines())!=125:
+                raise ValueError('prior failed batch budget changed')
+            if not prior.with_suffix('.sealed.json').exists():raise ValueError('prior ledger is not sealed')
         freeze=json.loads((args.tasks/'preflight.json').read_text())
         for key,name in [('tasks_sha256','tasks.private.json'),('references_sha256','references.private.json'),('schemas_sha256','tool-schemas.json')]:
             if contract[key]!=freeze[key] or freeze[key]!=file_hash(args.tasks/name):
@@ -92,6 +101,10 @@ def main():
     all_tasks=json.loads((args.tasks/'tasks.private.json').read_text())
     tasks=[t for t in all_tasks if not args.task_ids or t['id'] in args.task_ids]
     if not tasks:raise ValueError('no selected tasks')
+    if contract:
+        frozen_schemas=json.loads((args.tasks/'tool-schemas.json').read_text())
+        if any(frozen_schemas[t['id']]!=schemas_for(t['operations']) for t in tasks):
+            raise ValueError('runtime tool schemas differ from frozen schema file')
     if args.lane=='pilot':
         if args.infrastructure_only:raise ValueError('infrastructure model cannot enter pilot')
         preflight=json.loads((args.tasks/'preflight.json').read_text())

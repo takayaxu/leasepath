@@ -22,6 +22,8 @@ class GenerationBudget:
         fd=os.open(self.path,os.O_CREAT|os.O_RDWR|os.O_APPEND|os.O_NOFOLLOW,0o600)
         try:
             fcntl.flock(fd,fcntl.LOCK_EX)
+            if self.path.with_suffix('.sealed.json').exists():
+                raise RuntimeError('generation ledger is sealed')
             with os.fdopen(os.dup(fd),'r') as stream:
                 stream.seek(0)
                 rows=[json.loads(line) for line in stream]

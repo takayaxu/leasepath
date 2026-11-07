@@ -1,0 +1,107 @@
+{
+  "scope": "independent sealed evidence and checker revalidation",
+  "status": "passed",
+  "audit": {
+    "status": "passed",
+    "scope": "single_dense_sequence_no_preemption",
+    "transport": {
+      "observer_version": "real-development-observer-v1",
+      "streams": [
+        {
+          "observer_version": "real-development-observer-v1",
+          "run_id": "protocol-03dd9f3f",
+          "stream_id": "aa7b9c1bffa349caa851c72ab2eb3211",
+          "pid": 2061030,
+          "boot_id": "91b65d19-10fc-4f9a-ae68-2b38e6ad0b40",
+          "source": "qwen_controller",
+          "rank": null,
+          "records": 27,
+          "sha256": "6334f6af8b7c2611763625013eddbb46bab4f4004089a4ec661ae89c13326a2a",
+          "complete": true
+        },
+        {
+          "observer_version": "real-development-observer-v1",
+          "run_id": "protocol-03dd9f3f",
+          "stream_id": "d4b7c6636ba94405832982c1fb93bca4",
+          "pid": 2061030,
+          "boot_id": "91b65d19-10fc-4f9a-ae68-2b38e6ad0b40",
+          "source": "native_cuda_engine",
+          "rank": null,
+          "records": 11,
+          "sha256": "a37ded25245eaff49cf38c17c40b90c34c202b01b3af317d81a16ecd219b9b3f",
+          "complete": true
+        }
+      ],
+      "complete": true,
+      "semantic_completeness_verified": false,
+      "scope": "transport_integrity_only_not_backend_or_label_acceptance"
+    },
+    "requests": 7,
+    "tool_results_consumed": 5,
+    "tool_results_unconsumed": [],
+    "labels": {
+      "legal_demand": 5,
+      "retire": 2
+    },
+    "episodes": 7,
+    "snapshot_count": 14,
+    "unmapped": 0,
+    "unexplained": 0,
+    "cell_blocks": "analysis groups, not vLLM allocations"
+  },
+  "unique_parents": 2,
+  "complete_success": 2,
+  "tool_calls": [
+    {
+      "task": "missing_median",
+      "name": "inspect_input",
+      "status": "ok",
+      "wall_s": 0.007811614,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "extension_missing_median"
+    },
+    {
+      "task": "missing_median",
+      "name": "compute",
+      "status": "error",
+      "wall_s": 0.002374204,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "extension_missing_median"
+    },
+    {
+      "task": "missing_median",
+      "name": "compute",
+      "status": "ok",
+      "wall_s": 1.993777744,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "extension_missing_median"
+    },
+    {
+      "task": "feature_correlation",
+      "name": "inspect_input",
+      "status": "ok",
+      "wall_s": 0.004137909,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "extension_feature_correlation"
+    },
+    {
+      "task": "feature_correlation",
+      "name": "compute",
+      "status": "ok",
+      "wall_s": 1.858829253,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "extension_feature_correlation"
+    }
+  ],
+  "actual_tool_bands": {
+    "short": 5
+  },
+  "quality_success_trace_audited": true,
+  "frozen_tasks_sha256": "197b7293dbb09321fe07f1dde4a98991191f0bfb2c8e0104bf82a6fa5c643578",
+  "frozen_references_sha256": "b4821020fd5f3c56ef53fd81c2c211b831105fc5ac2b3038e2bfb578770a2c98"
+}
