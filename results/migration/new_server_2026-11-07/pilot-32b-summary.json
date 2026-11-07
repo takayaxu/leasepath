@@ -1,0 +1,564 @@
+{
+  "scope": "32b_pilot",
+  "model_identity_sha256": "227bd7f3c7bc9b44fd6edfcd70987c61519dfd473e3d0a6229f37d9c86fa82fa",
+  "status": "passed",
+  "complete_success": 12,
+  "tasks": 12,
+  "success_per_planned_band": {
+    "short": 4,
+    "medium": 4,
+    "long": 4
+  },
+  "quality": [
+    {
+      "task": "ship_groups",
+      "source_group": "tpch_shipping_aggregation",
+      "planned_band": "short",
+      "success": true,
+      "failure": null,
+      "generations": 3,
+      "wall_s": 16.40275012,
+      "final": {
+        "artifact_id": "ab3c94a4f1cab4e4ebbbc7c9c8a5dca2e",
+        "answer": {
+          "rows": [
+            [
+              "A",
+              3774200.0
+            ],
+            [
+              "N",
+              7775079.0
+            ],
+            [
+              "R",
+              3785523.0
+            ]
+          ]
+        }
+      },
+      "tools": [
+        {
+          "call_id": "t853bd7496a764ffa9171c3a738ef8d1c",
+          "name": "inspect_input",
+          "started_ns": 1215933341651620,
+          "ended_ns": 1215933430681015,
+          "child_wall_ns": null,
+          "status": "ok"
+        },
+        {
+          "call_id": "t00f7ab04b4074dcf80dabb861db04eea",
+          "name": "compute",
+          "started_ns": 1215937120324162,
+          "ended_ns": 1215937856171275,
+          "child_wall_ns": 339751759,
+          "status": "ok"
+        }
+      ]
+    },
+    {
+      "task": "air_count",
+      "source_group": "tpch_transport_filter",
+      "planned_band": "short",
+      "success": true,
+      "failure": null,
+      "generations": 3,
+      "wall_s": 13.107473961,
+      "final": {
+        "artifact_id": "ae4381f1ae8bc4704bcf1795a5558d3af",
+        "answer": {
+          "value": 85689
+        }
+      },
+      "tools": [
+        {
+          "call_id": "tc9021d86ae384f8e889570792fae1c69",
+          "name": "inspect_input",
+          "started_ns": 1215949046489791,
+          "ended_ns": 1215949146977207,
+          "child_wall_ns": null,
+          "status": "ok"
+        },
+        {
+          "call_id": "t3362ebafd5f64efdb8d75324e6c19805",
+          "name": "compute",
+          "started_ns": 1215952986493865,
+          "ended_ns": 1215953561482062,
+          "child_wall_ns": 283321530,
+          "status": "ok"
+        }
+      ]
+    },
+    {
+      "task": "segment_orders",
+      "source_group": "tpch_customer_join",
+      "planned_band": "short",
+      "success": true,
+      "failure": null,
+      "generations": 3,
+      "wall_s": 21.549621249,
+      "final": {
+        "artifact_id": "a11a698c5658f48f3bd7bcb2d39723138",
+        "answer": {
+          "rows": [
+            [
+              "AUTOMOBILE",
+              4257005377.58
+            ],
+            [
+              "BUILDING",
+              4452787076.43
+            ],
+            [
+              "FURNITURE",
+              4144895069.99
+            ],
+            [
+              "HOUSEHOLD",
+              4173585374.26
+            ],
+            [
+              "MACHINERY",
+              4328323132.37
+            ]
+          ]
+        }
+      },
+      "tools": [
+        {
+          "call_id": "tcb5adf6a1c284ff5b3c8a25efc3656b1",
+          "name": "inspect_input",
+          "started_ns": 1215962336872597,
+          "ended_ns": 1215962423171815,
+          "child_wall_ns": null,
+          "status": "ok"
+        },
+        {
+          "call_id": "ta9718c66bef943ce9291a549da085c06",
+          "name": "compute",
+          "started_ns": 1215966469743641,
+          "ended_ns": 1215967300487546,
+          "child_wall_ns": 338460203,
+          "status": "ok"
+        }
+      ]
+    },
+    {
+      "task": "priority_top",
+      "source_group": "tpch_partitioned_rank",
+      "planned_band": "short",
+      "success": true,
+      "failure": null,
+      "generations": 3,
+      "wall_s": 22.286188206,
+      "final": {
+        "artifact_id": "aa20655c14c054dd883dcf8c2ecf19d60",
+        "answer": {
+          "rows": [
+            [
+              "1-URGENT",
+              169734,
+              433189.61
+            ],
+            [
+              "2-HIGH",
+              279812,
+              479129.21
+            ],
+            [
+              "3-MEDIUM",
+              597221,
+              450789.68
+            ],
+            [
+              "4-NOT SPECIFIED",
+              66659,
+              458396.42
+            ],
+            [
+              "5-LOW",
+              459712,
+              447729.64
+            ]
+          ]
+        }
+      },
+      "tools": [
+        {
+          "call_id": "teb683250988f40fa923fc3a396c20455",
+          "name": "inspect_input",
+          "started_ns": 1215983920113629,
+          "ended_ns": 1215984030061459,
+          "child_wall_ns": null,
+          "status": "ok"
+        },
+        {
+          "call_id": "t03502f172a6c44329e63f40a5cb57bfa",
+          "name": "compute",
+          "started_ns": 1215987871415232,
+          "ended_ns": 1215988534375419,
+          "child_wall_ns": 308889831,
+          "status": "ok"
+        }
+      ]
+    },
+    {
+      "task": "variance_pca",
+      "source_group": "sklearn_latent_variance",
+      "planned_band": "medium",
+      "success": true,
+      "failure": null,
+      "generations": 3,
+      "wall_s": 45.392336164,
+      "final": {
+        "artifact_id": "abe961940d0a449c2a6bafe59bb032275",
+        "answer": {
+          "value": 0.27162982731670904
+        }
+      },
+      "tools": [
+        {
+          "call_id": "t635d922073da423aa2b46498b47e93d8",
+          "name": "inspect_input",
+          "started_ns": 1216005504062029,
+          "ended_ns": 1216022879725135,
+          "child_wall_ns": null,
+          "status": "ok"
+        },
+        {
+          "call_id": "t17a8ce54b2a942829a4457bb49feb2f3",
+          "name": "compute",
+          "started_ns": 1216027568692275,
+          "ended_ns": 1216041731730046,
+          "child_wall_ns": 12814001256,
+          "status": "ok"
+        }
+      ]
+    },
+    {
+      "task": "cluster_inertia",
+      "source_group": "sklearn_blob_clustering",
+      "planned_band": "medium",
+      "success": true,
+      "failure": null,
+      "generations": 3,
+      "wall_s": 27.718111448,
+      "final": {
+        "artifact_id": "a4cd7db1e5b52456688ceb7bc8f168c7c",
+        "answer": {
+          "value": 287753502.57471704
+        }
+      },
+      "tools": [
+        {
+          "call_id": "t096513434b9642c1b87170e8265ca235",
+          "name": "inspect_input",
+          "started_ns": 1216050835318375,
+          "ended_ns": 1216054590922115,
+          "child_wall_ns": null,
+          "status": "ok"
+        },
+        {
+          "call_id": "t5ef7bcd5b82c4c85ae423657a906a5b5",
+          "name": "compute",
+          "started_ns": 1216058118431599,
+          "ended_ns": 1216069019571534,
+          "child_wall_ns": 9543955801,
+          "status": "ok"
+        }
+      ]
+    },
+    {
+      "task": "logistic_holdout",
+      "source_group": "sklearn_linear_logistic_holdout",
+      "planned_band": "medium",
+      "success": true,
+      "failure": null,
+      "generations": 3,
+      "wall_s": 27.41362765,
+      "final": {
+        "artifact_id": "af9b53d5ce3564b99bba9e35fa795fe29",
+        "answer": {
+          "value": 0.7517733333333333
+        }
+      },
+      "tools": [
+        {
+          "call_id": "t7df5109263db4f6987a4edc907bac766",
+          "name": "inspect_input",
+          "started_ns": 1216078099294357,
+          "ended_ns": 1216083694144050,
+          "child_wall_ns": null,
+          "status": "ok"
+        },
+        {
+          "call_id": "t30323364f50940b68f717669d0ba25c9",
+          "name": "compute",
+          "started_ns": 1216091321978155,
+          "ended_ns": 1216096786196673,
+          "child_wall_ns": 4194204807,
+          "status": "ok"
+        }
+      ]
+    },
+    {
+      "task": "ridge_validation",
+      "source_group": "sklearn_linear_regularization",
+      "planned_band": "medium",
+      "success": true,
+      "failure": null,
+      "generations": 3,
+      "wall_s": 86.221096208,
+      "final": {
+        "artifact_id": "a6b8e85b442d9455399d9a93284ff2414",
+        "answer": {
+          "value": -9.018607624158935,
+          "fold_scores": [
+            -8.980452950685558,
+            -9.091757327983244,
+            -9.01481589297761,
+            -8.955923329415207,
+            -9.05008861973306
+          ]
+        }
+      },
+      "tools": [
+        {
+          "call_id": "t55cf38d012404edbb7e0e9694874dd67",
+          "name": "inspect_input",
+          "started_ns": 1216105790199881,
+          "ended_ns": 1216157780291272,
+          "child_wall_ns": null,
+          "status": "ok"
+        },
+        {
+          "call_id": "t90f41f333e674dbb808ff388aa912b0d",
+          "name": "compute",
+          "started_ns": 1216165280449904,
+          "ended_ns": 1216175300114411,
+          "child_wall_ns": 6777293723,
+          "status": "ok"
+        }
+      ]
+    },
+    {
+      "task": "forest_cv",
+      "source_group": "sklearn_nonlinear_forest_validation",
+      "planned_band": "long",
+      "success": true,
+      "failure": null,
+      "generations": 3,
+      "wall_s": 145.836696626,
+      "final": {
+        "artifact_id": "abc1835534de34a2a876e8941631e14a5",
+        "answer": {
+          "value": 0.9332499999999999,
+          "fold_scores": [
+            0.9365625,
+            0.9290625,
+            0.9428125,
+            0.9375,
+            0.9203125
+          ]
+        }
+      },
+      "tools": [
+        {
+          "call_id": "tbc525b4e985e44d892606727fd9e0598",
+          "name": "inspect_input",
+          "started_ns": 1216191791574029,
+          "ended_ns": 1216192082587518,
+          "child_wall_ns": null,
+          "status": "ok"
+        },
+        {
+          "call_id": "te494eb2559ac4a64a21359eba818acff",
+          "name": "compute",
+          "started_ns": 1216196140260250,
+          "ended_ns": 1216324031364001,
+          "child_wall_ns": 127541861942,
+          "status": "ok"
+        }
+      ]
+    },
+    {
+      "task": "boosting_cv",
+      "source_group": "sklearn_histogram_boosting",
+      "planned_band": "long",
+      "success": true,
+      "failure": null,
+      "generations": 3,
+      "wall_s": 60.024848457,
+      "final": {
+        "artifact_id": "adae6accfa51248f7a4dbb0c5637439b9",
+        "answer": {
+          "value": 0.9625866666666667,
+          "fold_scores": [
+            0.9607666666666667,
+            0.9639333333333333,
+            0.9630333333333333,
+            0.9628666666666666,
+            0.9623333333333334
+          ]
+        }
+      },
+      "tools": [
+        {
+          "call_id": "t8dcac7ef7029465fb799398f4edc1b1a",
+          "name": "inspect_input",
+          "started_ns": 1216337918334588,
+          "ended_ns": 1216343240489464,
+          "child_wall_ns": null,
+          "status": "ok"
+        },
+        {
+          "call_id": "tb7051ce8bac94fc2a4d9340333894f4a",
+          "name": "compute",
+          "started_ns": 1216347517554952,
+          "ended_ns": 1216380379494806,
+          "child_wall_ns": 31945946284,
+          "status": "ok"
+        }
+      ]
+    },
+    {
+      "task": "kernel_cv",
+      "source_group": "sklearn_nonlinear_margin",
+      "planned_band": "long",
+      "success": true,
+      "failure": null,
+      "generations": 3,
+      "wall_s": 65.180925517,
+      "final": {
+        "artifact_id": "a88e80e15fb3b42afb51e26198b5b9371",
+        "answer": {
+          "value": 0.95525,
+          "fold_scores": [
+            0.95375,
+            0.952,
+            0.9645,
+            0.95175,
+            0.95425
+          ]
+        }
+      },
+      "tools": [
+        {
+          "call_id": "ta4eebc08d4d744ff92071aa7c7c70d36",
+          "name": "inspect_input",
+          "started_ns": 1216397649858219,
+          "ended_ns": 1216398161100693,
+          "child_wall_ns": null,
+          "status": "ok"
+        },
+        {
+          "call_id": "teb95930cf78a466cb23d6a7533be654f",
+          "name": "compute",
+          "started_ns": 1216401969421431,
+          "ended_ns": 1216450789408728,
+          "child_wall_ns": 48715090016,
+          "status": "ok"
+        }
+      ]
+    },
+    {
+      "task": "extra_trees_cv",
+      "source_group": "sklearn_randomized_tree_validation",
+      "planned_band": "long",
+      "success": true,
+      "failure": null,
+      "generations": 3,
+      "wall_s": 148.298854432,
+      "final": {
+        "artifact_id": "a9731c461e85e4d969b80d8d12acf780b",
+        "answer": {
+          "value": 0.94952,
+          "fold_scores": [
+            0.9451,
+            0.9518,
+            0.9506,
+            0.9538,
+            0.9463
+          ]
+        }
+      },
+      "tools": [
+        {
+          "call_id": "t745bcb9ae5f3404d8cf4ef6d9539d2a2",
+          "name": "inspect_input",
+          "started_ns": 1216463451977221,
+          "ended_ns": 1216465326190593,
+          "child_wall_ns": null,
+          "status": "ok"
+        },
+        {
+          "call_id": "t883b02b485544913aab33264ca54c18e",
+          "name": "compute",
+          "started_ns": 1216470178236869,
+          "ended_ns": 1216599167887529,
+          "child_wall_ns": 128641629525,
+          "status": "ok"
+        }
+      ]
+    }
+  ],
+  "audit_status": "passed",
+  "audit": {
+    "status": "passed",
+    "scope": "single_dense_sequence_no_preemption",
+    "transport": {
+      "observer_version": "real-development-observer-v1",
+      "streams": [
+        {
+          "observer_version": "real-development-observer-v1",
+          "run_id": "pilot-fbaf3c69",
+          "stream_id": "10534bf3434e4b3a8493b64da1761690",
+          "pid": 1908207,
+          "boot_id": "91b65d19-10fc-4f9a-ae68-2b38e6ad0b40",
+          "source": "qwen_controller",
+          "rank": null,
+          "records": 124,
+          "sha256": "fba1ca41f626ee4f3090fda5a6959386689e8268db2328ab58ed6ff1ec03677a",
+          "complete": true
+        },
+        {
+          "observer_version": "real-development-observer-v1",
+          "run_id": "pilot-fbaf3c69",
+          "stream_id": "8b92819d6903403d8274cbea4969fa03",
+          "pid": 1908207,
+          "boot_id": "91b65d19-10fc-4f9a-ae68-2b38e6ad0b40",
+          "source": "native_cuda_engine",
+          "rank": null,
+          "records": 50,
+          "sha256": "cb30943884a11e7906ffd3dc073eb733507c7407ff478e5815213e3a8dcd4fcf",
+          "complete": true
+        }
+      ],
+      "complete": true,
+      "semantic_completeness_verified": false,
+      "scope": "transport_integrity_only_not_backend_or_label_acceptance"
+    },
+    "requests": 36,
+    "tool_results_consumed": 24,
+    "tool_results_unconsumed": [],
+    "labels": {
+      "legal_demand": 24,
+      "retire": 12
+    },
+    "episodes": 36,
+    "snapshot_count": 106,
+    "unmapped": 0,
+    "unexplained": 0,
+    "cell_blocks": "analysis groups, not vLLM allocations"
+  },
+  "budget": {
+    "generations": 86,
+    "probe": 50,
+    "pilot": 36,
+    "total_cap": 144,
+    "lane_cap": 72,
+    "prior_usage_status": "historical_unreconciled"
+  },
+  "runtime_s": 1175.742374576,
+  "pilot_qualified": true
+}

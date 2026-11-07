@@ -1,0 +1,6 @@
+{
+  "status": "passed",
+  "raw_files": 58,
+  "archive": ".artifacts/qwen-data-32b-batch-d/delivery/raw-evidence.tar.gz",
+  "archive_sha256": "69b6ee48173a2b0df05c22f13e16f842117161a40e7f9dc94b2669ca1efa7e5f"
+}

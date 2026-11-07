@@ -1,0 +1,326 @@
+{
+  "run": "/home/liuxv/LeasePath-new-server-data/.artifacts/qwen-data-32b-batch-d/pilot",
+  "clock": "same-host CLOCK_MONOTONIC",
+  "metrics": {
+    "engine_dispatch_to_lookup": {
+      "count": 36,
+      "min_s": 1.505e-06,
+      "median_s": 0.000752469,
+      "p95_s": 0.0016770075,
+      "max_s": 0.001960576,
+      "sum_s": 0.025285951
+    },
+    "engine_enqueue_to_dispatch": {
+      "count": 36,
+      "min_s": 0.004354021,
+      "median_s": 0.010100526499999998,
+      "p95_s": 0.015258892500000001,
+      "max_s": 0.02363539,
+      "sum_s": 0.372719403
+    },
+    "engine_lookup_to_release": {
+      "count": 36,
+      "min_s": 2.921893663,
+      "median_s": 3.89474212,
+      "p95_s": 13.0388897915,
+      "max_s": 13.743897989,
+      "sum_s": 195.26274639
+    },
+    "engine_result_verification": {
+      "count": 36,
+      "min_s": 0.00015366,
+      "median_s": 0.000322617,
+      "p95_s": 0.00063299775,
+      "max_s": 0.000844282,
+      "sum_s": 0.012681084
+    },
+    "model_input_source_check": {
+      "count": 36,
+      "min_s": 0.024204945,
+      "median_s": 0.026408918500000003,
+      "p95_s": 0.04363891975,
+      "max_s": 0.045751853,
+      "sum_s": 1.13713836
+    },
+    "model_preprocessing_and_reservation": {
+      "count": 36,
+      "min_s": 0.020460555,
+      "median_s": 0.2145028235,
+      "p95_s": 0.711139609,
+      "max_s": 0.826529522,
+      "sum_s": 9.734661483
+    },
+    "observation_final_fsync_and_close": {
+      "count": 1,
+      "min_s": 0.49720924,
+      "median_s": 0.49720924,
+      "p95_s": 0.49720924,
+      "max_s": 0.49720924,
+      "sum_s": 0.49720924
+    },
+    "observer_serialization_and_write": {
+      "count": 172,
+      "min_s": 2.072e-05,
+      "median_s": 0.000186715,
+      "p95_s": 0.03019250415,
+      "max_s": 0.207813257,
+      "sum_s": 0.897664844
+    },
+    "protected_sources_after_tool": {
+      "count": 24,
+      "min_s": 0.024292899,
+      "median_s": 0.043183028,
+      "p95_s": 0.04714926835,
+      "max_s": 0.049646583,
+      "sum_s": 0.907808731
+    },
+    "protected_sources_before_tool": {
+      "count": 24,
+      "min_s": 0.02472311,
+      "median_s": 0.0250875255,
+      "p95_s": 0.042853858450000004,
+      "max_s": 0.043563083,
+      "sum_s": 0.696291423
+    },
+    "tool_call_evidence_write": {
+      "count": 24,
+      "min_s": 0.000237088,
+      "median_s": 0.0003510425,
+      "p95_s": 0.0017789622500000001,
+      "max_s": 0.001974002,
+      "sum_s": 0.012949259
+    },
+    "tool_call_wall": {
+      "count": 24,
+      "min_s": 0.086299218,
+      "median_s": 4.538879308,
+      "p95_s": 116.50595189700002,
+      "max_s": 128.98965066,
+      "sum_s": 469.015877695
+    },
+    "tool_child_wall": {
+      "count": 12,
+      "min_s": 0.28332153,
+      "median_s": 8.160624762,
+      "p95_s": 128.03675735435002,
+      "max_s": 128.641629525,
+      "sum_s": 371.444406677
+    },
+    "tool_end_to_next_lookup": {
+      "count": 24,
+      "min_s": 0.05969907,
+      "median_s": 0.237273755,
+      "p95_s": 0.79559469845,
+      "max_s": 0.901451524,
+      "sum_s": 6.830669515
+    },
+    "tool_input_check": {
+      "count": 24,
+      "min_s": 0.017116955,
+      "median_s": 0.28247710299999995,
+      "p95_s": 15.60818415715,
+      "max_s": 51.989559743,
+      "sum_s": 90.474800925
+    },
+    "tool_post_input_check": {
+      "count": 12,
+      "min_s": 0.030123316,
+      "median_s": 0.1240964805,
+      "p95_s": 1.06347369665,
+      "max_s": 1.688725179,
+      "sum_s": 3.91851799
+    },
+    "tool_worker_execute": {
+      "count": 12,
+      "min_s": 0.208765068,
+      "median_s": 7.9311224970000005,
+      "p95_s": 127.81195749445,
+      "max_s": 128.435624462,
+      "sum_s": 369.215940025
+    }
+  },
+  "tool_gaps": [
+    {
+      "owner": "ship_groups",
+      "tool_id": "toole2b70c87f4cc4ecab66c345891cad287",
+      "tool_name": "inspect_input",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.177910924
+    },
+    {
+      "owner": "ship_groups",
+      "tool_id": "toolb59d17fda63044b397c867ea04eca127",
+      "tool_name": "compute",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.05969907
+    },
+    {
+      "owner": "air_count",
+      "tool_id": "tool7fb15836aec846679a3e967e52894472",
+      "tool_name": "inspect_input",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.369991756
+    },
+    {
+      "owner": "air_count",
+      "tool_id": "tool49a92f7b8b154a219974e228991068c9",
+      "tool_name": "compute",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.096524716
+    },
+    {
+      "owner": "segment_orders",
+      "tool_id": "tool33b306d04efa436a9a23cbae35c632cf",
+      "tool_name": "inspect_input",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.44418595
+    },
+    {
+      "owner": "segment_orders",
+      "tool_id": "tool09906a3f3bc049d8b911da7ca5cbf981",
+      "tool_name": "compute",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.197673136
+    },
+    {
+      "owner": "priority_top",
+      "tool_id": "tool1ad4338a5f6549a1af9d9b082cc59a30",
+      "tool_name": "inspect_input",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.305924188
+    },
+    {
+      "owner": "priority_top",
+      "tool_id": "tool7bc4f28ca69d4a2fa98e669b87472675",
+      "tool_name": "compute",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.088044382
+    },
+    {
+      "owner": "variance_pca",
+      "tool_id": "tool70213c6fc10b45fbabf3814e0f94bcb2",
+      "tool_name": "inspect_input",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.85755692
+    },
+    {
+      "owner": "variance_pca",
+      "tool_id": "tool30eb405d8d4049baa281212f131268e2",
+      "tool_name": "compute",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.105541506
+    },
+    {
+      "owner": "cluster_inertia",
+      "tool_id": "tool0d0cef33bd1a4c4194bbdc2567cbb97e",
+      "tool_name": "inspect_input",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.239738001
+    },
+    {
+      "owner": "cluster_inertia",
+      "tool_id": "tool2d4b1a908406423a972fffb70a9739e2",
+      "tool_name": "compute",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.444475443
+    },
+    {
+      "owner": "logistic_holdout",
+      "tool_id": "toold90cbd04509f482d8816a3bce50a4565",
+      "tool_name": "inspect_input",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.269156633
+    },
+    {
+      "owner": "logistic_holdout",
+      "tool_id": "tool46f8a9f5e5e24b089dd2011f9ba115b7",
+      "tool_name": "compute",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.197935479
+    },
+    {
+      "owner": "ridge_validation",
+      "tool_id": "toolce1d207825b44ad596d411d6c8d93b29",
+      "tool_name": "inspect_input",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.29886055
+    },
+    {
+      "owner": "ridge_validation",
+      "tool_id": "tool528c5f16182a4998ba7d6f1f19725b5d",
+      "tool_name": "compute",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.095484953
+    },
+    {
+      "owner": "forest_cv",
+      "tool_id": "toolfb088f5748f54764b152b7cb901bc42d",
+      "tool_name": "inspect_input",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.234809509
+    },
+    {
+      "owner": "forest_cv",
+      "tool_id": "tool00bdabbcf879479f8fe8a409eeb4ea75",
+      "tool_name": "compute",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.176845066
+    },
+    {
+      "owner": "boosting_cv",
+      "tool_id": "tool4df7f4c9d39440cb8d26ddae4f001d90",
+      "tool_name": "inspect_input",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.306993203
+    },
+    {
+      "owner": "boosting_cv",
+      "tool_id": "tool180a00ffe65349fab24d15ee09a6ca16",
+      "tool_name": "compute",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.158767112
+    },
+    {
+      "owner": "kernel_cv",
+      "tool_id": "tool5f8a523400324da6a33321754a2a572e",
+      "tool_name": "inspect_input",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.103918599
+    },
+    {
+      "owner": "kernel_cv",
+      "tool_id": "toola0b9866b9d2f479d8e016d4ccf6a12f7",
+      "tool_name": "compute",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.350959793
+    },
+    {
+      "owner": "extra_trees_cv",
+      "tool_id": "tool81f42df947204addb9cea6bdc973883a",
+      "tool_name": "inspect_input",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.901451524
+    },
+    {
+      "owner": "extra_trees_cv",
+      "tool_id": "tool1f38ae058ad4428fa4a9c894f5d71abf",
+      "tool_name": "compute",
+      "tool_status": "ok",
+      "tool_end_to_next_lookup_s": 0.348221102
+    }
+  ],
+  "observer_overhead_recorded": true,
+  "missing_measurements": "Absent fields are omitted, never imputed as zero.",
+  "interpretation": [
+    "Durations are nested; sums across categories would double-count.",
+    "worker_execute is inside child_wall, which is inside tool_call_wall.",
+    "Input hashes and artifact persistence are inside tool_call_wall.",
+    "Protected source checks bracket tool calls and are reported separately.",
+    "Model preprocessing includes the durable generation reservation.",
+    "Observer writes include serialization and os.write, not per-row fsync.",
+    "Tool-end to lookup includes intervening checks, preprocessing and writes; it is not a cache benefit.",
+    "Final observation fsync occurs only after producers drained."
+  ],
+  "workspace_hash_1": "not_applicable",
+  "workspace_hash_2": "not_applicable"
+}

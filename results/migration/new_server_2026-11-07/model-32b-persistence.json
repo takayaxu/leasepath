@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "source": "/dev/shm/leasepath-liuxv-qwen-data/Qwen2.5-Coder-32B-Instruct-F16.gguf",
+  "persistent_model": "/home/liuxv/local-models/qwen25-coder-32b-leasepath/persistent-f16/Qwen2.5-Coder-32B-Instruct-F16.gguf",
+  "persistent_identity": "/home/liuxv/local-models/qwen25-coder-32b-leasepath/persistent-f16/Qwen2.5-Coder-32B-Instruct-F16.identity.json",
+  "sha256": "0c2f9e4daac78e72b24f7c054416232a523f0fd2aeb37653747d3c21f7dca078",
+  "bytes": 65535970144,
+  "verification": "complete ordered SHA256; bounded prefetch, no sampled bytes",
+  "identity_gguf_path_is_original_conversion_provenance": true,
+  "verification_elapsed_s": 267.136890392,
+  "completed_wall_ns": 1794043977974391810
+}

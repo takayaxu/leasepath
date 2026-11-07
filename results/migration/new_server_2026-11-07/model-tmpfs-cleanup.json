@@ -1,0 +1,7 @@
+{
+  "wall_ns": 1794044014370782193,
+  "status": "temporary_files_removed_after_full_persistent_sha256_match",
+  "released_tmpfs_bytes": 65535970144,
+  "persistent_receipt": "/home/liuxv/local-models/qwen25-coder-32b-leasepath/persistent-f16/Qwen2.5-Coder-32B-Instruct-F16.persistence.json",
+  "old_incomplete_disk_output_preserved": "/home/liuxv/local-models/qwen25-coder-32b-leasepath/Qwen2.5-Coder-32B-Instruct-F16.gguf.incomplete-first-conversion"
+}

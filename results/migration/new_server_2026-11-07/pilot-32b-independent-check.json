@@ -1,0 +1,280 @@
+{
+  "scope": "independent sealed evidence and checker revalidation",
+  "status": "passed",
+  "audit": {
+    "status": "passed",
+    "scope": "single_dense_sequence_no_preemption",
+    "transport": {
+      "observer_version": "real-development-observer-v1",
+      "streams": [
+        {
+          "observer_version": "real-development-observer-v1",
+          "run_id": "pilot-fbaf3c69",
+          "stream_id": "10534bf3434e4b3a8493b64da1761690",
+          "pid": 1908207,
+          "boot_id": "91b65d19-10fc-4f9a-ae68-2b38e6ad0b40",
+          "source": "qwen_controller",
+          "rank": null,
+          "records": 124,
+          "sha256": "fba1ca41f626ee4f3090fda5a6959386689e8268db2328ab58ed6ff1ec03677a",
+          "complete": true
+        },
+        {
+          "observer_version": "real-development-observer-v1",
+          "run_id": "pilot-fbaf3c69",
+          "stream_id": "8b92819d6903403d8274cbea4969fa03",
+          "pid": 1908207,
+          "boot_id": "91b65d19-10fc-4f9a-ae68-2b38e6ad0b40",
+          "source": "native_cuda_engine",
+          "rank": null,
+          "records": 50,
+          "sha256": "cb30943884a11e7906ffd3dc073eb733507c7407ff478e5815213e3a8dcd4fcf",
+          "complete": true
+        }
+      ],
+      "complete": true,
+      "semantic_completeness_verified": false,
+      "scope": "transport_integrity_only_not_backend_or_label_acceptance"
+    },
+    "requests": 36,
+    "tool_results_consumed": 24,
+    "tool_results_unconsumed": [],
+    "labels": {
+      "legal_demand": 24,
+      "retire": 12
+    },
+    "episodes": 36,
+    "snapshot_count": 106,
+    "unmapped": 0,
+    "unexplained": 0,
+    "cell_blocks": "analysis groups, not vLLM allocations"
+  },
+  "unique_parents": 12,
+  "complete_success": 12,
+  "tool_calls": [
+    {
+      "task": "ship_groups",
+      "name": "inspect_input",
+      "status": "ok",
+      "wall_s": 0.089029395,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "tpch_shipping_aggregation"
+    },
+    {
+      "task": "ship_groups",
+      "name": "compute",
+      "status": "ok",
+      "wall_s": 0.735847113,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "tpch_shipping_aggregation"
+    },
+    {
+      "task": "air_count",
+      "name": "inspect_input",
+      "status": "ok",
+      "wall_s": 0.100487416,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "tpch_transport_filter"
+    },
+    {
+      "task": "air_count",
+      "name": "compute",
+      "status": "ok",
+      "wall_s": 0.574988197,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "tpch_transport_filter"
+    },
+    {
+      "task": "segment_orders",
+      "name": "inspect_input",
+      "status": "ok",
+      "wall_s": 0.086299218,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "tpch_customer_join"
+    },
+    {
+      "task": "segment_orders",
+      "name": "compute",
+      "status": "ok",
+      "wall_s": 0.830743905,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "tpch_customer_join"
+    },
+    {
+      "task": "priority_top",
+      "name": "inspect_input",
+      "status": "ok",
+      "wall_s": 0.10994783,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "tpch_partitioned_rank"
+    },
+    {
+      "task": "priority_top",
+      "name": "compute",
+      "status": "ok",
+      "wall_s": 0.662960187,
+      "actual_band": "short",
+      "planned_band": "short",
+      "source_group": "tpch_partitioned_rank"
+    },
+    {
+      "task": "variance_pca",
+      "name": "inspect_input",
+      "status": "ok",
+      "wall_s": 17.375663106,
+      "actual_band": "medium",
+      "planned_band": "medium",
+      "source_group": "sklearn_latent_variance"
+    },
+    {
+      "task": "variance_pca",
+      "name": "compute",
+      "status": "ok",
+      "wall_s": 14.163037771,
+      "actual_band": "medium",
+      "planned_band": "medium",
+      "source_group": "sklearn_latent_variance"
+    },
+    {
+      "task": "cluster_inertia",
+      "name": "inspect_input",
+      "status": "ok",
+      "wall_s": 3.75560374,
+      "actual_band": "medium",
+      "planned_band": "medium",
+      "source_group": "sklearn_blob_clustering"
+    },
+    {
+      "task": "cluster_inertia",
+      "name": "compute",
+      "status": "ok",
+      "wall_s": 10.901139935,
+      "actual_band": "medium",
+      "planned_band": "medium",
+      "source_group": "sklearn_blob_clustering"
+    },
+    {
+      "task": "logistic_holdout",
+      "name": "inspect_input",
+      "status": "ok",
+      "wall_s": 5.594849693,
+      "actual_band": "medium",
+      "planned_band": "medium",
+      "source_group": "sklearn_linear_logistic_holdout"
+    },
+    {
+      "task": "logistic_holdout",
+      "name": "compute",
+      "status": "ok",
+      "wall_s": 5.464218518,
+      "actual_band": "medium",
+      "planned_band": "medium",
+      "source_group": "sklearn_linear_logistic_holdout"
+    },
+    {
+      "task": "ridge_validation",
+      "name": "inspect_input",
+      "status": "ok",
+      "wall_s": 51.990091391,
+      "actual_band": "long",
+      "planned_band": "medium",
+      "source_group": "sklearn_linear_regularization"
+    },
+    {
+      "task": "ridge_validation",
+      "name": "compute",
+      "status": "ok",
+      "wall_s": 10.019664507,
+      "actual_band": "medium",
+      "planned_band": "medium",
+      "source_group": "sklearn_linear_regularization"
+    },
+    {
+      "task": "forest_cv",
+      "name": "inspect_input",
+      "status": "ok",
+      "wall_s": 0.291013489,
+      "actual_band": "short",
+      "planned_band": "long",
+      "source_group": "sklearn_nonlinear_forest_validation"
+    },
+    {
+      "task": "forest_cv",
+      "name": "compute",
+      "status": "ok",
+      "wall_s": 127.891103751,
+      "actual_band": "long",
+      "planned_band": "long",
+      "source_group": "sklearn_nonlinear_forest_validation"
+    },
+    {
+      "task": "boosting_cv",
+      "name": "inspect_input",
+      "status": "ok",
+      "wall_s": 5.322154876,
+      "actual_band": "medium",
+      "planned_band": "long",
+      "source_group": "sklearn_histogram_boosting"
+    },
+    {
+      "task": "boosting_cv",
+      "name": "compute",
+      "status": "ok",
+      "wall_s": 32.861939854,
+      "actual_band": "long",
+      "planned_band": "long",
+      "source_group": "sklearn_histogram_boosting"
+    },
+    {
+      "task": "kernel_cv",
+      "name": "inspect_input",
+      "status": "ok",
+      "wall_s": 0.511242474,
+      "actual_band": "short",
+      "planned_band": "long",
+      "source_group": "sklearn_nonlinear_margin"
+    },
+    {
+      "task": "kernel_cv",
+      "name": "compute",
+      "status": "ok",
+      "wall_s": 48.819987297,
+      "actual_band": "long",
+      "planned_band": "long",
+      "source_group": "sklearn_nonlinear_margin"
+    },
+    {
+      "task": "extra_trees_cv",
+      "name": "inspect_input",
+      "status": "ok",
+      "wall_s": 1.874213372,
+      "actual_band": "short",
+      "planned_band": "long",
+      "source_group": "sklearn_randomized_tree_validation"
+    },
+    {
+      "task": "extra_trees_cv",
+      "name": "compute",
+      "status": "ok",
+      "wall_s": 128.98965066,
+      "actual_band": "long",
+      "planned_band": "long",
+      "source_group": "sklearn_randomized_tree_validation"
+    }
+  ],
+  "actual_tool_bands": {
+    "short": 11,
+    "medium": 8,
+    "long": 5
+  },
+  "quality_success_trace_audited": true,
+  "frozen_tasks_sha256": "e4cc34b953dafae813677dfd4e89eea843592aad8b35c70d3a2459e109df3a08",
+  "frozen_references_sha256": "086a71e2115a086c14a6209ff9fae0cc5657239c8299a1b25563be0c103f3d26"
+}

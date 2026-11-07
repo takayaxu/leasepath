@@ -1,0 +1,44 @@
+{
+  "sampling": "~1s during collection, ~10s during preflight; observed occupancy, not profiler-exclusive runtime",
+  "selected_gpu_peak_mib": {
+    "5": 22346,
+    "6": 22324,
+    "7": 21850
+  },
+  "samples": 785,
+  "driver": {
+    "stages": [
+      {
+        "stage": "protocol",
+        "returncode": 0
+      },
+      {
+        "stage": "pilot",
+        "returncode": 0
+      },
+      {
+        "stage": "finalize",
+        "returncode": 0
+      }
+    ],
+    "runtime_s": 1717.81407719,
+    "end_wall_ns": 1794043376421950856
+  },
+  "start_loadavg": [
+    55.17529296875,
+    55.826171875,
+    55.748046875
+  ],
+  "end_loadavg": [
+    49.3583984375,
+    51.0478515625,
+    52.75634765625
+  ],
+  "estimated_selected_gpu_nonidle_s": {
+    "5": 792.055971243,
+    "6": 792.055971243,
+    "7": 792.055971243
+  },
+  "final_gpu_idle_observed": true,
+  "existing_gpu_0_to_4_jobs_untouched": true
+}

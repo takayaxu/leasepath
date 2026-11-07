@@ -1,0 +1,172 @@
+{
+  "scope": "32b_pilot",
+  "batch_task_count": 12,
+  "unique_development_parents": 12,
+  "complete_success": 12,
+  "first_attempt_complete_success": 12,
+  "retry_success": "No external task retries in this frozen batch; within-task parameter repairs retained in tool calls.",
+  "successful_independent_parents": 12,
+  "successful_parents_with_ge60s_tool": 2,
+  "audit_status": "passed",
+  "pilot_qualified": true,
+  "observed_labels": {
+    "legal_demand": 24,
+    "retire": 12
+  },
+  "main_labels": {
+    "legal_demand": 24,
+    "retire": 12
+  },
+  "success_per_planned_band": {
+    "short": 4,
+    "medium": 4,
+    "long": 4
+  },
+  "all_compute_calls": [
+    {
+      "task": "ship_groups",
+      "source_group": "tpch_shipping_aggregation",
+      "status": "ok",
+      "operation": "group_sum",
+      "planned_band": "short",
+      "tool_s": 0.735847113,
+      "child_s": 0.339751759
+    },
+    {
+      "task": "air_count",
+      "source_group": "tpch_transport_filter",
+      "status": "ok",
+      "operation": "filtered_count",
+      "planned_band": "short",
+      "tool_s": 0.574988197,
+      "child_s": 0.28332153
+    },
+    {
+      "task": "segment_orders",
+      "source_group": "tpch_customer_join",
+      "status": "ok",
+      "operation": "join_sum",
+      "planned_band": "short",
+      "tool_s": 0.830743905,
+      "child_s": 0.338460203
+    },
+    {
+      "task": "priority_top",
+      "source_group": "tpch_partitioned_rank",
+      "status": "ok",
+      "operation": "window_rank",
+      "planned_band": "short",
+      "tool_s": 0.662960187,
+      "child_s": 0.308889831
+    },
+    {
+      "task": "variance_pca",
+      "source_group": "sklearn_latent_variance",
+      "status": "ok",
+      "operation": "pca",
+      "planned_band": "medium",
+      "tool_s": 14.163037771,
+      "child_s": 12.814001256
+    },
+    {
+      "task": "cluster_inertia",
+      "source_group": "sklearn_blob_clustering",
+      "status": "ok",
+      "operation": "kmeans",
+      "planned_band": "medium",
+      "tool_s": 10.901139935,
+      "child_s": 9.543955801
+    },
+    {
+      "task": "logistic_holdout",
+      "source_group": "sklearn_linear_logistic_holdout",
+      "status": "ok",
+      "operation": "logistic",
+      "planned_band": "medium",
+      "tool_s": 5.464218518,
+      "child_s": 4.194204807
+    },
+    {
+      "task": "ridge_validation",
+      "source_group": "sklearn_linear_regularization",
+      "status": "ok",
+      "operation": "ridge_cv",
+      "planned_band": "medium",
+      "tool_s": 10.019664507,
+      "child_s": 6.777293723
+    },
+    {
+      "task": "forest_cv",
+      "source_group": "sklearn_nonlinear_forest_validation",
+      "status": "ok",
+      "operation": "forest_cv",
+      "planned_band": "long",
+      "tool_s": 127.891103751,
+      "child_s": 127.541861942
+    },
+    {
+      "task": "boosting_cv",
+      "source_group": "sklearn_histogram_boosting",
+      "status": "ok",
+      "operation": "histboost_cv",
+      "planned_band": "long",
+      "tool_s": 32.861939854,
+      "child_s": 31.945946284
+    },
+    {
+      "task": "kernel_cv",
+      "source_group": "sklearn_nonlinear_margin",
+      "status": "ok",
+      "operation": "svc_cv",
+      "planned_band": "long",
+      "tool_s": 48.819987297,
+      "child_s": 48.715090016
+    },
+    {
+      "task": "extra_trees_cv",
+      "source_group": "sklearn_randomized_tree_validation",
+      "status": "ok",
+      "operation": "extra_trees_cv",
+      "planned_band": "long",
+      "tool_s": 128.98965066,
+      "child_s": 128.641629525
+    }
+  ],
+  "budget": {
+    "generations": 86,
+    "probe": 50,
+    "pilot": 36,
+    "total_cap": 144,
+    "lane_cap": 72,
+    "prior_usage_status": "historical_unreconciled"
+  },
+  "fee": "local existing hardware; no external inference purchase; no currency cost estimate",
+  "elapsed_model_process_s": 1175.742374576,
+  "training": "not started",
+  "online_policy": "not started",
+  "JCT_benefit": "not measured",
+  "source_tasks_sha256": "e4cc34b953dafae813677dfd4e89eea843592aad8b35c70d3a2459e109df3a08",
+  "quality_subset": {
+    "tasks": [
+      "air_count",
+      "boosting_cv",
+      "cluster_inertia",
+      "extra_trees_cv",
+      "forest_cv",
+      "kernel_cv",
+      "logistic_holdout",
+      "priority_top",
+      "ridge_validation",
+      "segment_orders",
+      "ship_groups",
+      "variance_pca"
+    ],
+    "episodes": 36,
+    "snapshots": 106,
+    "labels": {
+      "legal_demand": 24,
+      "retire": 12
+    },
+    "scope": "32b_pilot"
+  }
+}

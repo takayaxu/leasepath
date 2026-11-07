@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "feature_rows": 106,
+  "target_rows": 106,
+  "same_episode_snapshot_keys": true,
+  "remaining_ns_positive": true,
+  "future_target_fields_absent_from_feature_whitelist": true,
+  "quality_subset_equals_all_12_main_tasks": true
+}
