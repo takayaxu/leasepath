@@ -98,7 +98,9 @@ def schemas_for(operations):
                     'iterations':'Number of boosting iterations.', 'kernel':'SVC kernel.',
                     'alpha':'Ridge regularization strength.'}
     for key,value in schemas['compute']['properties'].items():
-        if key in descriptions:value['description']=descriptions[key]
+        # FIELD is shared by several properties; do not mutate its aliased copies.
+        if key in descriptions:
+            schemas['compute']['properties'][key]={**value,'description':descriptions[key]}
     schemas['compute']['oneOf'] = [
         object_schema({k:deepcopy(v) for k,v in schemas['compute']['properties'].items()
                        if k in ALLOWED_KEYS[op] | {'dataset_id','operation'}})

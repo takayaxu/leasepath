@@ -21,6 +21,13 @@ SYSTEM = """You are a data analyst using bounded parameter tools. Use only the t
 Select the correct operation and its parameters from the task. Do real computation with compute.
 You must read its returned result before answering. Do not invent results or write code/SQL.
 Arguments are strict JSON. Call one tool at a time. Keep the full history. There is no compression.
+Tool calls MUST include the literal opening and closing XML tags. For example, to inspect a
+session dataset named dexample, write exactly this format (use the real session ID):
+<tool_call>
+{"name":"inspect_input","arguments":{"dataset_id":"dexample"}}
+</tool_call>
+A bare {"name":...,"arguments":...} object is not a tool call and will fail the protocol.
+Use the same XML wrapper for compute and view_artifact. These are function calls, not final answers.
 After a successful computation, end with exactly one JSON object:
 {"artifact_id": "<ID returned by compute>", "answer": <the complete result object returned by compute>}.
 Copy every required row, scalar and fold score accurately; preserve at least 12 significant digits.
@@ -150,7 +157,9 @@ def main():
             messages=[{'role':'system','content':SYSTEM},
                       {'role':'user','content':f"Session dataset_id: {task['dataset_id']}\n"
                        f"Task: {task['intent']}\nUse only this session dataset. "
-                       "The dataset schema is available from inspect_input."}]
+                       "The dataset schema is available from inspect_input. "
+                       "Wrap every function call in <tool_call> and </tool_call>; "
+                       "use bare JSON only for the final artifact_id/answer object."}]
             began=time.monotonic_ns()
             final=None
             failure=None
