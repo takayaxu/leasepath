@@ -70,6 +70,8 @@ def main():
     old_refs=json.loads((args.reuse_inputs/'references.private.json').read_text()) if args.reuse_checked_references else {}
     # All parameters/data fixed before these measurements; no model requests.
     for task in tasks:
+        if args.reuse_checked_references:
+            old_refs=json.loads((args.reuse_inputs/'references.private.json').read_text())
         prior=old_refs.get(task['id'])
         if (prior and prior['input_sha256']==task['input_sha256'] and task['id'] not in resize):
             assert len(prior['reference_s'])==3 and prior['checker_rejects_wrong_value']

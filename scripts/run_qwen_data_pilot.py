@@ -41,6 +41,8 @@ class TimedObserver(Observer):
                              'scope':'serialization_and_os_write_no_fsync'})
 
 def main():
+    process_start_monotonic_ns=time.monotonic_ns()
+    process_start_wall_ns=time.time_ns()
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('--library',type=Path,required=True)
     p.add_argument('--model',type=Path,required=True)
@@ -110,7 +112,7 @@ def main():
               'llama_commit':PINNED_LLAMA,'qwen_agent':'0.0.34','protected_sha256':hashes,
               'tasks':[t['id'] for t in tasks],
               'expected_stream_ids':[controller.identity['stream_id'],backend.identity['stream_id']],
-              'start_wall_ns':time.time_ns(),'start_monotonic_ns':time.monotonic_ns()}
+              'start_wall_ns':process_start_wall_ns,'start_monotonic_ns':process_start_monotonic_ns}
     identity['compatibility_id']=hashlib.sha256(json.dumps({
         k:identity[k] for k in ('model_sha256','library_sha256','llama_commit','qwen_agent',
                               'tokenizer_sha256','template_sha256','dtype','kv_dtype','context')},

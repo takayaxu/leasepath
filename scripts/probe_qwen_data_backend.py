@@ -31,7 +31,7 @@ def main():
     args.output.mkdir(parents=True, exist_ok=False)
     from transformers import AutoTokenizer
     tokenizer = AutoTokenizer.from_pretrained(str(args.tokenizer), local_files_only=True)
-    engine = NativeEngine(args.library, args.model, gpus=args.gpus, context=4096)
+    engine = NativeEngine(args.library, args.model, gpus=args.gpus, context=16384)
     results = []
     ledger = args.output/'ledger.jsonl'
     budget=GenerationBudget(args.ledger)
@@ -61,7 +61,7 @@ def main():
         b = generate('hit', prompt, limit=64)
         engine.clear()
         c = generate('controlled_miss', prompt, limit=64)
-        assert b['hit'] >= len(b['tokens'])//16*16 and c['hit'] == 0
+        assert b['hit'] >= (len(b['tokens'])-1)//16*16 and b['hit']>0 and c['hit'] == 0
         assert a['reason'] == 'eog'
         word = a['text'].strip()
         assert word

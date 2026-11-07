@@ -93,12 +93,15 @@ def execute(request):
     return result
 
 def main():
+    begin=time.monotonic_ns()
     request = json.load(sys.stdin)
     memory = int(request['memory_gib'])*1024**3
     resource.setrlimit(resource.RLIMIT_AS, (memory, memory))
     resource.setrlimit(resource.RLIMIT_CPU, (240, 240))
     result = execute(request)
-    print(json.dumps(result, allow_nan=False))
+    if os.environ.get('LEASEPATH_TOOL_TIMING_ENVELOPE')=='1':
+        result={'result':result,'worker_execute_ns':time.monotonic_ns()-begin}
+    print(json.dumps(result,allow_nan=False))
 
 if __name__ == '__main__':
     main()

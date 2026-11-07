@@ -171,7 +171,8 @@ class SessionTools:
                     request = {'arguments': arguments, 'kind': resource.kind,
                                'fd': fd, 'threads': self.threads, 'memory_gib': self.memory_gib}
                     env = {**os.environ, 'OMP_NUM_THREADS': str(self.threads),
-                           'OPENBLAS_NUM_THREADS': str(self.threads), 'MKL_NUM_THREADS': str(self.threads)}
+                           'OPENBLAS_NUM_THREADS': str(self.threads), 'MKL_NUM_THREADS': str(self.threads),
+                           'LEASEPATH_TOOL_TIMING_ENVELOPE':'1'}
                     child_started = time.monotonic_ns()
                     proc = subprocess.Popen([sys.executable, '-m', 'leasepath.restricted_data_worker'],
                                             stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
@@ -187,7 +188,9 @@ class SessionTools:
                     record['child_stderr'] = stderr[-4000:]
                     if proc.returncode:
                         raise ValueError('compute failed: '+stderr[-1000:])
-                    result = json.loads(stdout)
+                    envelope = json.loads(stdout)
+                    result = envelope['result']
+                    record['worker_execute_ns'] = envelope['worker_execute_ns']
                     after = os.fstat(fd)
                     if before != (after.st_dev, after.st_ino, after.st_size, after.st_mtime_ns, after.st_ctime_ns):
                         raise ValueError('concurrent source write')
