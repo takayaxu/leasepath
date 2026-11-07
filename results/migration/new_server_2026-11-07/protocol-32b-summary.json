@@ -1,0 +1,149 @@
+{
+  "scope": "32b_protocol",
+  "model_identity_sha256": "227bd7f3c7bc9b44fd6edfcd70987c61519dfd473e3d0a6229f37d9c86fa82fa",
+  "status": "passed",
+  "complete_success": 2,
+  "tasks": 2,
+  "success_per_planned_band": {
+    "short": 2
+  },
+  "quality": [
+    {
+      "task": "ship_groups",
+      "source_group": "tpch_shipping_aggregation",
+      "planned_band": "short",
+      "success": true,
+      "failure": null,
+      "generations": 3,
+      "wall_s": 22.917719486,
+      "final": {
+        "artifact_id": "a82e561da8eca4cc3bbe7fc9cbe5a2af0",
+        "answer": {
+          "rows": [
+            [
+              "A",
+              3774200.0
+            ],
+            [
+              "N",
+              7775079.0
+            ],
+            [
+              "R",
+              3785523.0
+            ]
+          ]
+        }
+      },
+      "tools": [
+        {
+          "call_id": "t582f2a390e604055b661f70167057150",
+          "name": "inspect_input",
+          "started_ns": 1215394965551214,
+          "ended_ns": 1215396975344992,
+          "child_wall_ns": null,
+          "status": "ok"
+        },
+        {
+          "call_id": "t6c6789efa859458cac93a80bd04d3e6d",
+          "name": "compute",
+          "started_ns": 1215403112467303,
+          "ended_ns": 1215404874381911,
+          "child_wall_ns": 962158450,
+          "status": "ok"
+        }
+      ]
+    },
+    {
+      "task": "air_count",
+      "source_group": "tpch_transport_filter",
+      "planned_band": "short",
+      "success": true,
+      "failure": null,
+      "generations": 3,
+      "wall_s": 15.085186899,
+      "final": {
+        "artifact_id": "a8fc8bf44de4448d08390f54a0195a345",
+        "answer": {
+          "value": 85689
+        }
+      },
+      "tools": [
+        {
+          "call_id": "tc4994e0c8f794ee1876d02161dd21583",
+          "name": "inspect_input",
+          "started_ns": 1215416810039983,
+          "ended_ns": 1215416901670164,
+          "child_wall_ns": null,
+          "status": "ok"
+        },
+        {
+          "call_id": "t3973acdd65214782bb2c85b83da88e21",
+          "name": "compute",
+          "started_ns": 1215420903419046,
+          "ended_ns": 1215422102020042,
+          "child_wall_ns": 329730608,
+          "status": "ok"
+        }
+      ]
+    }
+  ],
+  "audit_status": "passed",
+  "audit": {
+    "status": "passed",
+    "scope": "single_dense_sequence_no_preemption",
+    "transport": {
+      "observer_version": "real-development-observer-v1",
+      "streams": [
+        {
+          "observer_version": "real-development-observer-v1",
+          "run_id": "protocol-f378827f",
+          "stream_id": "878cdc30ef534352a6bf23561afe4ecd",
+          "pid": 1896388,
+          "boot_id": "91b65d19-10fc-4f9a-ae68-2b38e6ad0b40",
+          "source": "qwen_controller",
+          "rank": null,
+          "records": 24,
+          "sha256": "a8c539c0e508f8416001c6d4d768f712d8c9c2459f53ba1fbc981b081032c221",
+          "complete": true
+        },
+        {
+          "observer_version": "real-development-observer-v1",
+          "run_id": "protocol-f378827f",
+          "stream_id": "72e73613c00949e6b55606ca808042ca",
+          "pid": 1896388,
+          "boot_id": "91b65d19-10fc-4f9a-ae68-2b38e6ad0b40",
+          "source": "native_cuda_engine",
+          "rank": null,
+          "records": 10,
+          "sha256": "c65bf555fbb2cfec0e5741f4cf534476e3ac1db7a48b7039cb24caec4aa8f177",
+          "complete": true
+        }
+      ],
+      "complete": true,
+      "semantic_completeness_verified": false,
+      "scope": "transport_integrity_only_not_backend_or_label_acceptance"
+    },
+    "requests": 6,
+    "tool_results_consumed": 4,
+    "tool_results_unconsumed": [],
+    "labels": {
+      "legal_demand": 4,
+      "retire": 2
+    },
+    "episodes": 6,
+    "snapshot_count": 14,
+    "unmapped": 0,
+    "unexplained": 0,
+    "cell_blocks": "analysis groups, not vLLM allocations"
+  },
+  "budget": {
+    "generations": 50,
+    "probe": 50,
+    "pilot": 0,
+    "total_cap": 144,
+    "lane_cap": 72,
+    "prior_usage_status": "historical_unreconciled"
+  },
+  "runtime_s": 531.277594382
+}

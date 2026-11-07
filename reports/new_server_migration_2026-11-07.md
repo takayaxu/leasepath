@@ -64,3 +64,23 @@ Git bundle v2 本身不会序列化 shallow 边界。恢复须同时保留 metad
 batch-b/backend 完成 8 次真实生成，输入 token 与客户端逐项一致，物理 KV cell token/owner 和每设备实际 KV 字节均核验。首次/命中/受控 miss 返回相同输出 token，正常 EOG 与协议 stop 可建立 idle；长度截断、短前缀、取消和超时不伪造 idle。进行中取消的发出时间在 lookup 与 release 之间；timeout/cancel 分别实际执行了 41/44 个 prefill token。取消/超时在 batch 边界协作检查，不声称硬中断 GPU kernel：20ms 探针实际在约 641ms/206ms 后释放。
 
 独立审计：8 个 request、0 个 unmapped/unexplained，受控 U=2/D=1/C=1；完整控制日志与自然试点分开。摘要在 results/migration/new_server_2026-11-07/backend-32b-boundaries.json。三设备实际 F16 KV 分别为 1,476,395,008 / 1,476,395,008 / 1,342,177,280 字节；模型层切分 buffer 分别约 20,461 / 20,461 / 20,086 MiB，另有 CPU 映射 embedding 约 1,485 MiB，不是 TP。门槛通过后的账本为 40 probe / 0 pilot。两题工具协议与主试点的结果另列。
+
+## 32B 首次两题协议失败与有界修正
+
+batch-b/protocol 两题各一次生成，均输出裸 JSON 工具名/参数，未生成 Nous 所需 `<tool_call>` XML wrapper。独立 tokenizer 重解 output_tokens 与文本完全一致，排除解码丢字；官方 Qwen-Agent 正确将其视为普通文本，严格最终 schema 拒绝。因此质量 0/2，工具执行 0，audit 通过且 D=2；这些不是成功主数据。完整失败保留，主试点没有生成，账本 42 probe / 0 pilot。
+
+下一版仅在系统/用户提示明确 XML 调用示例与最终 JSON 区别，不从裸文本猜调用；另修正工具 schema 描述共享 FIELD 对象导致 group_by 描述被 value 覆盖的问题。操作、边界、冻结题目/输入/参考解不变。该代码版本为 564d7c9，适用回归 199 passed / 1 skipped / 1 deselected。新 batch-c 复用已通过后端，须再次完成 2/2 协议与审计后才启动主试点，不拼接旧批最佳结果。
+
+持久模型复制为自有进程；protocol/pilot identity 建立到 summary 封口期间用 SIGSTOP 暂停复制，外部检查阶段/运行结束用 SIGCONT 恢复，并记录动作。它避免自有大文件归档与工具计算同时运行，但不保证共享磁盘已完成全部 writeback，也不代表其他用户负载隔离。
+
+## 协议第二次失败与官方 Qwen 格式
+
+batch-c 两题仍各仅一次生成，实际输出错误标签 `<compute>…</compute>` 与 `<{…}>`，0/2；独立解码确认原始 token 如此。轨迹审计通过，D=2，无工具调用；driver 在门槛失败后未启动主试点。账本 44 probe / 0 pilot。没有宽松标签解析、补造工具执行或更换模型。
+
+batch-d 改用同一 Qwen-Agent 0.0.34 提供的官方 QwenFnCallPrompt，即 `✿FUNCTION✿ / ✿ARGS✿` 格式；完整 FUNCTION/ARGS/result history 与续写仍由官方组件处理。generate_cfg 的 `✿RESULT✿ / ✿RETURN✿` stop 现传入原生后端，保留 protocol_stop 来源。固定库 parser/stop 离线核验通过，受限工具与审计相关 23 项回归通过（117.64 秒）；源提交 cc87dad。题目、输入、参数能力和参考解仍是 v5。此处不是 32B 协议通过声明，真实结果待 batch-d。
+
+## 32B 真实两题协议门槛通过
+
+batch-d/protocol 使用官方 Qwen FUNCTION/ARGS 格式，ship_groups 和 air_count 均在 3 次生成内完整成功，2/2；分别实际执行 inspect_input 与 compute，4 个工具结果均进入下一次真实后端输入。原生输出 protocol_stop 有真实 matched_stop 来源，最终 JSON 由官方解析组件移除续写冒号后按严格 schema/checker 验证，未自定义猜测工具调用。独立封口复核与质量复核通过；U=4/D=2/C=0、unmapped=0、unexplained=0、未消费结果=0。控制实验与前两次失败不并入本组成功率。摘要及独立复核在 results/migration/new_server_2026-11-07/protocol-32b-*.json。门槛后的总账 50 probe/0 pilot。
+
+同一 batch-d 驱动已启动一次完整冻结 v5 的 12 题主试点，不变更输入/参考/意图/能力。主结果以之后的封口 summary 和独立 checker 为准，不以两题成功推定 12 题通过。
