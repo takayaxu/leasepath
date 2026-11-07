@@ -11,7 +11,7 @@ class ObservedQwen(BaseFnCallModel):
     def __init__(self,engine,tokenizer,budget,controller,backend,*,lane,context=16384):
         super().__init__({'model':'Qwen2.5-Coder-32B-Instruct',
                           'generate_cfg':{'max_retries':0,'max_input_tokens':0,'use_raw_api':False,
-                                          'parallel_function_calls':False,'fncall_prompt_type':'nous'}})
+                                          'parallel_function_calls':False,'fncall_prompt_type':'qwen'}})
         self.engine,self.tokenizer,self.budget=engine,tokenizer,budget
         self.controller,self.backend=controller,backend
         self.context=context
@@ -60,7 +60,8 @@ class ObservedQwen(BaseFnCallModel):
                              prompt=prompt,prompt_sha256=prompt_sha,token_ids=tokens,
                              input_source_check_ns=check_ns,preprocess_ns=time.monotonic_ns()-begin)
         remaining=(self.task_deadline-time.monotonic()) if self.task_deadline else 180
-        result=self.engine.generate(prompt,limit=1024,timeout=min(remaining,180))
+        result=self.engine.generate(prompt,limit=1024,timeout=min(remaining,180),
+                                    stops=generate_cfg.get('stop',[]))
         verification_start=time.monotonic_ns()
         verify_request(result,tokens)
         result['verification_ns']=time.monotonic_ns()-verification_start
