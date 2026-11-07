@@ -1,0 +1,24 @@
+{
+  "repository": "Qwen/Qwen2.5-Coder-32B-Instruct",
+  "revision": "381fc969f78efac66bc87ff7ddeadb7e73c218a7",
+  "dtype": "float16",
+  "quantization": null,
+  "gguf": "/dev/shm/leasepath-liuxv-qwen-data/Qwen2.5-Coder-32B-Instruct-F16.gguf",
+  "gguf_sha256": "0c2f9e4daac78e72b24f7c054416232a523f0fd2aeb37653747d3c21f7dca078",
+  "source_metadata_sha256": "21fc61fba554e4feacaa18676147657c5f45fc21d7b6d01a8f8706a35bced3ca",
+  "download_verification_manifests": {
+    "/home/liuxv/local-models/qwen25-coder-32b-leasepath/hf/download-verified-0-7.json": "59b56fe7b7dd93d668990cac59168530b63e83b664f46482a1bb8efb1896e0a9",
+    "/home/liuxv/local-models/qwen25-coder-32b-leasepath/hf/download-verified-7-14.json": "168093e1329d557391917bda22d6f64baeefb48336e2bec31549c1eb7feed1d2"
+  },
+  "converter_sha256": "39fd91af35d1fb60be9a12b9e7bf63e50ac297100d7f72431b37e4f9053ad91b",
+  "command": [
+    "/home/liuxv/local-models/qwen35-9b/venv/bin/python",
+    "/home/liuxv/local-models/qwen35-9b/llama.cpp-api/convert_hf_to_gguf.py",
+    "/home/liuxv/local-models/qwen25-coder-32b-leasepath/hf",
+    "--outtype",
+    "f16",
+    "--outfile",
+    "/dev/shm/leasepath-liuxv-qwen-data/Qwen2.5-Coder-32B-Instruct-F16.gguf"
+  ],
+  "source_weights_individually_verified": true
+}

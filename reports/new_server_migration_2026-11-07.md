@@ -24,7 +24,7 @@ GitHub HTTPS Git 的 POST 不通，API/codeload 可读。因此通过固定提�
 
 3B 基础设施实测 7 次，输入 token 与独立 tokenizer 精确一致，命中/受控清空 miss、正常 EOG、协议 stop、length、timeout、cancel 路径通过。实际进行中的取消尚待 32B 新探针补验，旧探针的取消在请求前设置 flag。此结果只算基础设施，不能代替 32B。3B 工具流诊断两题第一次失败全部保留；收紧相关参数 schema 后第二版 1/2 正确，全部 5 个关系经过独立审计（3 U / 2 D），仍不算主试点。
 
-主模型固定 Qwen2.5-Coder-32B-Instruct / 381fc969f78efac66bc87ff7ddeadb7e73c218a7，14 分片共 65,527,841,688 字节。HF 与 ModelScope 元数据的逐分片大小/SHA256 全部相符。14 分片已全部下载并通过完整 SHA256 复核，正在转为不量化的 F16 GGUF；不换模型。共享磁盘读取缓慢，转换输出暂存在 /dev/shm/leasepath-liuxv-qwen-data；完成后必须复制回持久模型目录并核对 SHA256，不能将 tmpfs 当备份。使用 GPU 5/6/7 层切分：两卡放权重后无足够 KV/runtime 余量，三卡约 96 GiB。启动前重新检查空闲设备。
+主模型固定 Qwen2.5-Coder-32B-Instruct / 381fc969f78efac66bc87ff7ddeadb7e73c218a7，14 分片共 65,527,841,688 字节。HF 与 ModelScope 元数据的逐分片大小/SHA256 全部相符。14 分片已全部下载并通过完整 SHA256 复核，已成功转为不量化的 F16 GGUF 并完成完整输出 SHA256；不换模型。共享磁盘读取缓慢，转换输出暂存在 /dev/shm/leasepath-liuxv-qwen-data；正在复制到持久模型目录 persistent-f16 并核对 SHA256，不能将 tmpfs 当备份。使用 GPU 5/6/7 层切分：两卡放权重后无足够 KV/runtime 余量，三卡约 96 GiB。启动前重新检查空闲设备。
 
 ## D：试点与边界
 
@@ -52,3 +52,15 @@ Git bundle v2 本身不会序列化 shallow 边界。恢复须同时保留 metad
 同一 16K 单序列后端完成 8 次新增探针，独立审计证实 U=2（实际命中与受控清空 miss 各一）、D=1（显式 discard）、C=1（生产者排空后仍开放的关系）。控制日志与自然样本隔离。两种物理路径返回相同输出 token；EOG 与协议 stop 保留正常释放证据，length、短于分析块前缀、取消和超时不伪造 idle。超时与取消请求分别执行了 41 和 44 个新 prefill token 并实际释放；后续 32B 版本还将显式记录取消发出时间位于 lookup/release 之间。受控终态摘要见 results/migration/new_server_2026-11-07/infrastructure-controlled-audit.json。
 
 全部 3B 探针/失败流入本轮总账，目前 32 次 probe，0 次主试点；32B 可用后再按照两项门槛执行。模型进入 GPU 前再次核对空闲卡；未触碰现存 9B 服务。归档见 .artifacts/checkpoints/controlled-cuda/raw-infrastructure.tar.gz。
+
+## F16 转换与启动路径修正
+
+完整 GGUF SHA256 为 `0c2f9e4daac78e72b24f7c054416232a523f0fd2aeb37653747d3c21f7dca078`，模型身份副本见 results/migration/new_server_2026-11-07/model-32b-identity.json。转换原始分片的干净文件缓存仅在转换子进程结束后通过 POSIX_FADV_DONTNEED 建议释放；没有 drop_caches、全局内存参数调整或其他任务终止。共享主机在输出校验初段有 swap/I/O 压力，保留采样，不将其当作独占环境性能。
+
+首个自动 launcher 的 realpath 会解引用 venv Python 到系统 Python，在生成前被发现并停止，退出码 143；账本仍为 32 次。原批次 .artifacts/qwen-data-32b-batch-a/ 保留 launcher-failure.json。已修为仅取绝对路径，实际核验虚拟环境 prefix 与 Qwen-Agent 0.0.34 / Transformers 5.3.0，再从 batch-b 启动。没有复用失败批次为已通过门槛。完整新驱动参数、退出码与资源见 .artifacts/migration-baseline/batch-b.*。
+
+## 32B 真实后端门槛已通过
+
+batch-b/backend 完成 8 次真实生成，输入 token 与客户端逐项一致，物理 KV cell token/owner 和每设备实际 KV 字节均核验。首次/命中/受控 miss 返回相同输出 token，正常 EOG 与协议 stop 可建立 idle；长度截断、短前缀、取消和超时不伪造 idle。进行中取消的发出时间在 lookup 与 release 之间；timeout/cancel 分别实际执行了 41/44 个 prefill token。取消/超时在 batch 边界协作检查，不声称硬中断 GPU kernel：20ms 探针实际在约 641ms/206ms 后释放。
+
+独立审计：8 个 request、0 个 unmapped/unexplained，受控 U=2/D=1/C=1；完整控制日志与自然试点分开。摘要在 results/migration/new_server_2026-11-07/backend-32b-boundaries.json。三设备实际 F16 KV 分别为 1,476,395,008 / 1,476,395,008 / 1,342,177,280 字节；模型层切分 buffer 分别约 20,461 / 20,461 / 20,086 MiB，另有 CPU 映射 embedding 约 1,485 MiB，不是 TP。门槛通过后的账本为 40 probe / 0 pilot。两题工具协议与主试点的结果另列。
