@@ -33,3 +33,16 @@ GitHub HTTPS Git 的 POST 不通，API/codeload 可读。因此通过固定提�
 只有 32B 的后端边界和两题真实多轮闭环通过后才允许 12 题入口；完整成功/按预定档成功/实际耗时三类分别判定。没有伪造主 U/D/C 或训练包，没有启动预测器训练、在线缓存策略或 JCT 收益测量。
 
 全部运行目录使用新名，失败不覆盖。每阶段保存本地提交、补丁、bundle 与 raw 数据归档/SHA256；不擅自推送。后续以本报告的实测更新为准。
+
+
+## 12 题 CPU 冻结结果
+
+最终输入与独立参考在 .artifacts/qwen-data-tasks-v5/。12 个不同 source_group；每题三次独立参考执行，实质错误值/缺行负例均拒绝，受限工具数值与独立参考一致。四题 SQL 约 0.58–0.81 秒；实际工具中档为聚类 13.78 秒、逻辑回归 5.34 秒；PCA 30.38 秒、岭回归 166.44 秒、森林 CV 135.55 秒、提升树 CV 39.48 秒、SVC CV 53.00 秒、Extra Trees CV 135.05 秒。预定 4/4/4，实测 4/2/6，不能宣称稳定三档均衡。
+
+保留的共享服务器耗时差异：岭回归相同输入及参数在 v4 工具约 29.8 秒，在 v5 约 161.9 秒计算子进程墙钟；均与参考数值一致。PCA 的参考三次为 6.15/3.91/3.25 秒，v5 工具墙钟 30.38 秒。后台 CPU 工作负载存在，没有停止其他用户任务；固定线程数不等于独占 CPU。未为均衡追加无意义计算或 sleep。
+
+为避免将同一种森林分类的留出/CV 变体计为不同母题，最终中档分类改用逻辑回归留出测试。所有调整均在 32B 请求之前；最终输入规模、意图、参数范围和 checker 现已冻结。完整小清单见 results/migration/new_server_2026-11-07/task-preflight.json；大输入、三次参考与失败校准日志另打包于 .artifacts/checkpoints/task-freeze-v5/inputs-and-references.tar，并有 SHA256。
+
+当前新增软件回归为 199 passed / 1 skipped / 1 deselected；CPU 测试不包含真实模型验收。观测写入/封口 fsync、源保护检查、模型预处理和 worker 执行时间分别计量；workspace_hash 两项不存在，标记 not_applicable。计时嵌套不可直接相加。
+
+Git bundle v2 本身不会序列化 shallow 边界。恢复须同时保留 metadata.json，并使用 scripts/restore_qwen_data_checkpoint.py；已在新的空目录通过恢复和 git fsck。普通 git clone bundle 的失败日志也保留，不能仅凭 bundle verify 宣称完整祖先已恢复。

@@ -62,6 +62,8 @@ def main():
         engine.clear()
         c = generate('controlled_miss', prompt, limit=64)
         assert b['hit'] >= (len(b['tokens'])-1)//16*16 and b['hit']>0 and c['hit'] == 0
+        assert a['text']==b['text']==c['text']
+        assert a['output_tokens']==b['output_tokens']==c['output_tokens']
         assert a['reason'] == 'eog'
         word = a['text'].strip()
         assert word

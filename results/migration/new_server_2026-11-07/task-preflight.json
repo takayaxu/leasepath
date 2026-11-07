@@ -1,0 +1,242 @@
+[
+  {
+    "task": "ship_groups",
+    "source_group": "tpch_shipping_aggregation",
+    "planned": "short",
+    "reference_s": [
+      0.131528928,
+      0.040907206,
+      0.039602175
+    ],
+    "reference_band": "short",
+    "tool_s": 0.581400168,
+    "tool_band": "short",
+    "input_sha256": "d4e491a099330d07f6d1c26fc9576fa799eee62c6c93767a10c76606b2eb13e1",
+    "source": {
+      "url": "https://duckdb.org/docs/current/core_extensions/tpch",
+      "implementation_version": "duckdb-1.5.3",
+      "license": "DuckDB MIT; generated TPC-H derivative, no TPC benchmark claim",
+      "adaptation": "bounded parameter tool, generated inputs and original request; not original benchmark score"
+    }
+  },
+  {
+    "task": "air_count",
+    "source_group": "tpch_transport_filter",
+    "planned": "short",
+    "reference_s": [
+      0.039779958,
+      0.041304463,
+      0.035327436
+    ],
+    "reference_band": "short",
+    "tool_s": 0.601534229,
+    "tool_band": "short",
+    "input_sha256": "d4e491a099330d07f6d1c26fc9576fa799eee62c6c93767a10c76606b2eb13e1",
+    "source": {
+      "url": "https://duckdb.org/docs/current/core_extensions/tpch",
+      "implementation_version": "duckdb-1.5.3",
+      "license": "DuckDB MIT; generated TPC-H derivative, no TPC benchmark claim",
+      "adaptation": "bounded parameter tool, generated inputs and original request; not original benchmark score"
+    }
+  },
+  {
+    "task": "segment_orders",
+    "source_group": "tpch_customer_join",
+    "planned": "short",
+    "reference_s": [
+      0.0505942,
+      0.048911948,
+      0.049093635
+    ],
+    "reference_band": "short",
+    "tool_s": 0.660046054,
+    "tool_band": "short",
+    "input_sha256": "d4e491a099330d07f6d1c26fc9576fa799eee62c6c93767a10c76606b2eb13e1",
+    "source": {
+      "url": "https://duckdb.org/docs/current/core_extensions/tpch",
+      "implementation_version": "duckdb-1.5.3",
+      "license": "DuckDB MIT; generated TPC-H derivative, no TPC benchmark claim",
+      "adaptation": "bounded parameter tool, generated inputs and original request; not original benchmark score"
+    }
+  },
+  {
+    "task": "priority_top",
+    "source_group": "tpch_partitioned_rank",
+    "planned": "short",
+    "reference_s": [
+      0.110600068,
+      0.129839505,
+      0.11296111
+    ],
+    "reference_band": "short",
+    "tool_s": 0.812565761,
+    "tool_band": "short",
+    "input_sha256": "d4e491a099330d07f6d1c26fc9576fa799eee62c6c93767a10c76606b2eb13e1",
+    "source": {
+      "url": "https://duckdb.org/docs/current/core_extensions/tpch",
+      "implementation_version": "duckdb-1.5.3",
+      "license": "DuckDB MIT; generated TPC-H derivative, no TPC benchmark claim",
+      "adaptation": "bounded parameter tool, generated inputs and original request; not original benchmark score"
+    }
+  },
+  {
+    "task": "variance_pca",
+    "source_group": "sklearn_latent_variance",
+    "planned": "medium",
+    "reference_s": [
+      6.150993028,
+      3.909748648,
+      3.249527057
+    ],
+    "reference_band": "medium",
+    "tool_s": 30.377676143,
+    "tool_band": "long",
+    "input_sha256": "c2a7d85d26ce5d36bb5a50a48793c5dd4946b5c8db04834b622b3b935cc3b0f0",
+    "source": {
+      "url": "https://scikit-learn.org/1.7/datasets/sample_generators.html",
+      "implementation_version": "scikit-learn-1.7.2",
+      "license": "scikit-learn BSD-3-Clause, generated data",
+      "adaptation": "bounded parameter tool, generated inputs and original request; not original benchmark score"
+    }
+  },
+  {
+    "task": "cluster_inertia",
+    "source_group": "sklearn_blob_clustering",
+    "planned": "medium",
+    "reference_s": [
+      8.73501291,
+      8.565526446,
+      8.556271584
+    ],
+    "reference_band": "medium",
+    "tool_s": 13.778939309,
+    "tool_band": "medium",
+    "input_sha256": "4fdfee888f6094a3d9e36d6fbd468b400bbd097726f768a5d4378a328f196025",
+    "source": {
+      "url": "https://scikit-learn.org/1.7/datasets/sample_generators.html",
+      "implementation_version": "scikit-learn-1.7.2",
+      "license": "scikit-learn BSD-3-Clause, generated data",
+      "adaptation": "bounded parameter tool, generated inputs and original request; not original benchmark score"
+    }
+  },
+  {
+    "task": "logistic_holdout",
+    "source_group": "sklearn_linear_logistic_holdout",
+    "planned": "medium",
+    "reference_s": [
+      2.239452465,
+      2.032014406,
+      2.010707346
+    ],
+    "reference_band": "short",
+    "tool_s": 5.335996121,
+    "tool_band": "medium",
+    "input_sha256": "42ce37579c4a7fdec7b5887d64045fefe9d64727a1ad5a91f0a58ce6491120a1",
+    "source": {
+      "url": "https://scikit-learn.org/1.7/datasets/sample_generators.html",
+      "implementation_version": "scikit-learn-1.7.2",
+      "license": "scikit-learn BSD-3-Clause, generated data",
+      "adaptation": "bounded parameter tool, generated inputs and original request; not original benchmark score"
+    }
+  },
+  {
+    "task": "ridge_validation",
+    "source_group": "sklearn_linear_regularization",
+    "planned": "medium",
+    "reference_s": [
+      17.957386496,
+      5.17585046,
+      4.883368231
+    ],
+    "reference_band": "medium",
+    "tool_s": 166.441753254,
+    "tool_band": "long",
+    "input_sha256": "d37a40e82a4d3efa2cf368b2a64f4136e4439a243270cf240c4ac50cbbf5eab6",
+    "source": {
+      "url": "https://scikit-learn.org/1.7/datasets/sample_generators.html",
+      "implementation_version": "scikit-learn-1.7.2",
+      "license": "scikit-learn BSD-3-Clause, generated data",
+      "adaptation": "bounded parameter tool, generated inputs and original request; not original benchmark score"
+    }
+  },
+  {
+    "task": "forest_cv",
+    "source_group": "sklearn_nonlinear_forest_validation",
+    "planned": "long",
+    "reference_s": [
+      129.55055885,
+      125.719686972,
+      132.658240754
+    ],
+    "reference_band": "long",
+    "tool_s": 135.546751464,
+    "tool_band": "long",
+    "input_sha256": "8f5d4d29bbc10371f48527a721d77f972b823aca429dc1da1e7dd6653cf98254",
+    "source": {
+      "url": "https://scikit-learn.org/1.7/datasets/sample_generators.html",
+      "implementation_version": "scikit-learn-1.7.2",
+      "license": "scikit-learn BSD-3-Clause, generated data",
+      "adaptation": "bounded parameter tool, generated inputs and original request; not original benchmark score"
+    }
+  },
+  {
+    "task": "boosting_cv",
+    "source_group": "sklearn_histogram_boosting",
+    "planned": "long",
+    "reference_s": [
+      39.647569394,
+      35.781617826,
+      34.936922768
+    ],
+    "reference_band": "long",
+    "tool_s": 39.485172776,
+    "tool_band": "long",
+    "input_sha256": "e2479e3e2ceaef0238757118dcdde4b892a35712fad98cb2f8d17b4c838c990c",
+    "source": {
+      "url": "https://scikit-learn.org/1.7/datasets/sample_generators.html",
+      "implementation_version": "scikit-learn-1.7.2",
+      "license": "scikit-learn BSD-3-Clause, generated data",
+      "adaptation": "bounded parameter tool, generated inputs and original request; not original benchmark score"
+    }
+  },
+  {
+    "task": "kernel_cv",
+    "source_group": "sklearn_nonlinear_margin",
+    "planned": "long",
+    "reference_s": [
+      45.865863119,
+      48.679705007,
+      46.976389399
+    ],
+    "reference_band": "long",
+    "tool_s": 52.998891737,
+    "tool_band": "long",
+    "input_sha256": "9b2880b6905c165143e01cf49de6253c8dc461c6d3842901615341c419ab82cf",
+    "source": {
+      "url": "https://scikit-learn.org/1.7/datasets/sample_generators.html",
+      "implementation_version": "scikit-learn-1.7.2",
+      "license": "scikit-learn BSD-3-Clause, generated data",
+      "adaptation": "bounded parameter tool, generated inputs and original request; not original benchmark score"
+    }
+  },
+  {
+    "task": "extra_trees_cv",
+    "source_group": "sklearn_randomized_tree_validation",
+    "planned": "long",
+    "reference_s": [
+      141.872687976,
+      154.93362196,
+      139.517746536
+    ],
+    "reference_band": "long",
+    "tool_s": 135.051114147,
+    "tool_band": "long",
+    "input_sha256": "6cc59f351c1daf07962b89fdee3afe3c695d6fc0624fd16c994d4565376b7985",
+    "source": {
+      "url": "https://scikit-learn.org/1.7/datasets/sample_generators.html",
+      "implementation_version": "scikit-learn-1.7.2",
+      "license": "scikit-learn BSD-3-Clause, generated data",
+      "adaptation": "bounded parameter tool, generated inputs and original request; not original benchmark score"
+    }
+  }
+]
