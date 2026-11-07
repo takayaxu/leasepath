@@ -10,13 +10,13 @@ GitHub HTTPS Git 的 POST 不通，API/codeload 可读。因此通过固定提�
 
 新 CPU .venv 基线适用回归：174 passed, 1 skipped, 1 deselected。full_pinned_audit 按交接排除，另一条历史测试自行 skip；不能记为全套通过。D1 50 项和事件契约 8 正例/16 反例通过。新路线初次回归为 189 passed, 1 skipped, 1 deselected。依赖锁位于 requirements/，每次补充依赖保留安装日志。
 
-## B：新增软件与任务（进行中）
+## B：新增软件与已冻结任务
 
 新增工具只接收会话 dataset/artifact ID、操作枚举、字段白名单和有界参数。工具子进程不接收 Python/SQL/shell/路径/URL；内部固定 SQL 标识符白名单、值参数绑定；numpy load 禁止 pickle。资源拒绝符号链接、硬链接、哈希变化和并发写入。计算使用继承 FD，子进程组 240 秒超时后 SIGKILL 并 wait，固定 2 线程/12 GiB，源/参考/检查器不由工具注册表暴露。这是能力边界，不是同 UID 的 OS 隔离。
 
 边界测试 15 项通过，包括 FD 校验后的偏移回归、跨会话、注入、超限、源修改、链接和超时清理。独立投影测试 8 项通过，包含 hit/miss 同为 U、未 retire 的 C、abort 不造 idle、缺消费、错误物理 token、断流和未映射请求；测试为合成证据。
 
-12 个开发母题按 TPC-H 的四种独立查询意图及 sklearn 的八种常规统计/学习操作改编。每题独立 reference/checker，质量检查比较具体数据、数值、行和最终答案；不声称原 benchmark 成绩。CPU 校准发现预计中档的聚类/回归过快、一个森林 CV 超过 180 秒，正在模型试点前调整数据量；旧 v1/v2/v3 输入、耗时和失败均保留。最终版本冻结后不再按模型运行耗时调整。
+12 个开发母题按 TPC-H 的四种独立查询意图及 sklearn 的八种常规统计/学习操作改编。每题独立 reference/checker，质量检查比较具体数据、数值、行和最终答案；不声称原 benchmark 成绩。CPU 校准发现预计中档的聚类/回归过快、一个森林 CV 超过 180 秒，已在模型试点前完成调整并冻结 v5；旧 v1/v2/v3/v4 输入、耗时和失败均保留。冻结后不再按模型运行耗时调整。
 
 ## C：CUDA 后端与协议（进行中）
 
@@ -24,7 +24,7 @@ GitHub HTTPS Git 的 POST 不通，API/codeload 可读。因此通过固定提�
 
 3B 基础设施实测 7 次，输入 token 与独立 tokenizer 精确一致，命中/受控清空 miss、正常 EOG、协议 stop、length、timeout、cancel 路径通过。实际进行中的取消尚待 32B 新探针补验，旧探针的取消在请求前设置 flag。此结果只算基础设施，不能代替 32B。3B 工具流诊断两题第一次失败全部保留；收紧相关参数 schema 后第二版 1/2 正确，全部 5 个关系经过独立审计（3 U / 2 D），仍不算主试点。
 
-主模型固定 Qwen2.5-Coder-32B-Instruct / 381fc969f78efac66bc87ff7ddeadb7e73c218a7，14 分片共 65,527,841,688 字节。HF 与 ModelScope 元数据的逐分片大小/SHA256 全部相符。当前在下载，完成后逐文件全哈希复核、转 F16 GGUF；不量化、不换模型。拟使用 GPU 5/6/7 层切分：两卡放权重后无足够 KV/runtime 余量，三卡约 96 GiB。启动前重新检查空闲设备。
+主模型固定 Qwen2.5-Coder-32B-Instruct / 381fc969f78efac66bc87ff7ddeadb7e73c218a7，14 分片共 65,527,841,688 字节。HF 与 ModelScope 元数据的逐分片大小/SHA256 全部相符。14 分片已全部下载并通过完整 SHA256 复核，正在转为不量化的 F16 GGUF；不换模型。共享磁盘读取缓慢，转换输出暂存在 /dev/shm/leasepath-liuxv-qwen-data；完成后必须复制回持久模型目录并核对 SHA256，不能将 tmpfs 当备份。使用 GPU 5/6/7 层切分：两卡放权重后无足够 KV/runtime 余量，三卡约 96 GiB。启动前重新检查空闲设备。
 
 ## D：试点与边界
 
