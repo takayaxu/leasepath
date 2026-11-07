@@ -20,17 +20,18 @@ def build(root,*,miss=False,retire=True,abort=False,missing_result=False,wrong_c
         'expected_stream_ids':[a.identity['stream_id'],b.identity['stream_id']]}))
     owner='owner'
     a.emit('workflow_submit',owner=owner)
+    a.emit('context_open',owner=owner,context_version='v1',compatibility_id='test-compatible')
     for index in range(2):
         prompt='PROMPT' if index==0 else ('RESULT NEXT' if not missing_result else 'NEXT')
         tokens=TestTokenizer().encode(prompt)
         rid=str(index)
         ph=hashlib.sha256(prompt.encode()).hexdigest()
-        a.emit('request_input',owner=owner,request_id=rid,token_ids=tokens,prompt=prompt,prompt_sha256=ph)
+        a.emit('request_input',owner=owner,context_version='v1',request_id=rid,token_ids=tokens,prompt=prompt,prompt_sha256=ph)
         n=time.monotonic_ns()
         release=[[x,x] for x in tokens]
         if wrong_cell and index==0:release[0][1]=9999
         reason='cancelled' if abort and index==0 else 'eog'
-        b.emit('engine_request',owner=owner,request_id=rid,backend_id=index,
+        b.emit('engine_request',owner=owner,context_version='v1',request_id=rid,backend_id=index,
                tokens=tokens,prompt_sha256=ph,enqueue_ns=n,dispatch_ns=n,lookup_ns=n,
                release_ns=n+1,hit=0 if miss or index==0 else 32,
                prefill=len(tokens)-(0 if miss or index==0 else 32),
@@ -40,7 +41,7 @@ def build(root,*,miss=False,retire=True,abort=False,missing_result=False,wrong_c
         if index==0:
             a.emit('tool_start',owner=owner,tool_id='t',tool_name='compute')
             a.emit('tool_end',owner=owner,tool_id='t',tool_name='compute',result_json='RESULT')
-    if retire:a.emit('context_retire',owner=owner,reason='explicit_discard')
+    if retire:a.emit('context_retire',owner=owner,context_version='v1',reason='explicit_discard')
     a.emit('observation_end',complete=True)
     b.finish();a.finish()
 

@@ -26,7 +26,7 @@ FIELD = {'type': 'string', 'enum': [
 COMPUTE = object_schema({
     'dataset_id': ID,
     'operation': {'enum': ['group_sum', 'filtered_count', 'join_sum', 'window_rank',
-                           'pca', 'kmeans', 'random_forest', 'ridge_cv',
+                           'pca', 'kmeans', 'random_forest', 'logistic', 'ridge_cv',
                            'forest_cv', 'histboost_cv', 'svc_cv', 'extra_trees_cv']},
     'group_by': FIELD,
     'value': FIELD,
@@ -49,7 +49,7 @@ ALLOWED_KEYS = {
     'group_sum': {'group_by', 'value'}, 'filtered_count': {'group_by', 'filter_value'},
     'join_sum': {'group_by', 'value'}, 'window_rank': {'group_by', 'value'},
     'pca': {'components'}, 'kmeans': {'clusters'},
-    'random_forest': {'trees'}, 'ridge_cv': {'folds', 'alpha'},
+    'random_forest': {'trees'}, 'logistic': {'iterations'}, 'ridge_cv': {'folds', 'alpha'},
     'forest_cv': {'folds', 'trees'}, 'histboost_cv': {'folds', 'iterations'},
     'svc_cv': {'folds', 'kernel'}, 'extra_trees_cv': {'folds', 'trees'}}
 

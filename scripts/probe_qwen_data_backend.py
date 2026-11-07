@@ -18,7 +18,16 @@ def main():
     parser.add_argument('--ledger',type=Path,required=True)
     parser.add_argument('--gpus', type=int, default=3)
     parser.add_argument('--infrastructure-only', action='store_true')
+    parser.add_argument('--model-identity',type=Path)
     args = parser.parse_args()
+    if not args.infrastructure_only:
+        from leasepath.restricted_data_tools import file_hash
+        if args.model_identity is None:raise ValueError('verified 32B conversion identity required')
+        identity=json.loads(args.model_identity.read_text())
+        if (identity['repository']!='Qwen/Qwen2.5-Coder-32B-Instruct' or
+                identity['revision']!='381fc969f78efac66bc87ff7ddeadb7e73c218a7' or
+                identity['gguf_sha256']!=file_hash(args.model) or identity['dtype']!='float16' or
+                identity['quantization'] is not None):raise ValueError('unexpected 32B model identity')
     args.output.mkdir(parents=True, exist_ok=False)
     from transformers import AutoTokenizer
     tokenizer = AutoTokenizer.from_pretrained(str(args.tokenizer), local_files_only=True)
@@ -83,6 +92,7 @@ def main():
             'cache_hit_and_miss_preserve_demand_identity': True,
             'main_pilot_passed': False}
         summary['budget']=budget.summary()
+        summary['model_identity_sha256']=file_hash(args.model_identity) if args.model_identity else None
         (args.output/'summary.json').write_text(json.dumps(summary, indent=2)+'\n')
     finally:
         engine.close()

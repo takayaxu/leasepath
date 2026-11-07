@@ -1,13 +1,29 @@
 """Pinned CUDA adapter: single native engine, exact token and physical cell evidence."""
 import ctypes as C
 import json
+import os
 from pathlib import Path
+import subprocess
 import time
 
 PINNED_LLAMA = 'fd27b2034905f8dadd8bd6d2cc44595f4929d391'
 
 class NativeEngine:
     def __init__(self, library, model, *, context=16384, batch=512, threads=8, gpus=3):
+        visible=os.environ.get('CUDA_VISIBLE_DEVICES','').split(',')
+        if len(visible)!=gpus or any(not d.isdigit() for d in visible):
+            raise ValueError('explicit numeric CUDA_VISIBLE_DEVICES required')
+        observed=subprocess.run(['nvidia-smi','--query-gpu=index,uuid,memory.used,memory.total',
+                                 '--format=csv,noheader,nounits'],capture_output=True,text=True,check=True)
+        selected=[]
+        for line in observed.stdout.splitlines():
+            index,uuid,used,total=[part.strip() for part in line.split(',')]
+            if index in visible:
+                if int(used)>256 or int(total)-int(used)<30000:
+                    raise ValueError('selected GPU is no longer idle: '+index)
+                selected.append({'index':index,'uuid':uuid,'used_mib':int(used),'total_mib':int(total)})
+        if len(selected)!=gpus:raise ValueError('unresolved selected GPU')
+        self.resource_preflight=selected
         self.lib = C.CDLL(str(Path(library).resolve()))
         self.lib.lp_qd_error.restype = C.c_char_p
         self.lib.lp_qd_open.argtypes = [C.c_char_p, C.c_uint, C.c_uint, C.c_int, C.c_uint]

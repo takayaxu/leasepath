@@ -53,7 +53,7 @@ def execute(request):
             from sklearn.decomposition import PCA
             from sklearn.cluster import KMeans
             from sklearn.ensemble import RandomForestClassifier, ExtraTreesClassifier, HistGradientBoostingClassifier
-            from sklearn.linear_model import Ridge
+            from sklearn.linear_model import Ridge,LogisticRegression
             from sklearn.model_selection import StratifiedKFold, KFold, cross_val_score, train_test_split
             from sklearn.svm import SVC
             if op == 'pca':
@@ -62,9 +62,10 @@ def execute(request):
             elif op == 'kmeans':
                 model = KMeans(n_clusters=args['clusters'], n_init=10, random_state=42).fit(X)
                 result = {'value': float(model.inertia_)}
-            elif op == 'random_forest':
+            elif op in ('random_forest','logistic'):
                 train_x,test_x,train_y,test_y = train_test_split(X,y,test_size=0.25,random_state=42,stratify=y)
-                model = RandomForestClassifier(n_estimators=args['trees'], random_state=42,n_jobs=1)
+                model = (RandomForestClassifier(n_estimators=args['trees'], random_state=42,n_jobs=1)
+                         if op=='random_forest' else LogisticRegression(C=1.0,max_iter=args['iterations'],random_state=42))
                 model.fit(train_x,train_y)
                 result = {'value': float(model.score(test_x,test_y))}
             else:

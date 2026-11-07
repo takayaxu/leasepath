@@ -24,22 +24,43 @@ def audit(run,*,export=False):
     controller,backend=[rows(p) for p in paths]
     client=[r for r in controller if r['kind']=='request_input']
     requests=[r for r in backend if r['kind']=='engine_request']
+    opened={}
+    retire_times={}
+    for record in controller:
+        d=record['data']
+        if record['kind']=='context_open':
+            if (d['owner'] in opened or d['context_version']!='v1' or
+                    d['compatibility_id']!=plan['compatibility_id']):
+                raise ValueError('invalid or duplicate context open')
+            opened[d['owner']]=record['ts_ns']
+        if record['kind']=='context_retire':
+            if d['owner'] in retire_times or d['context_version']!='v1':
+                raise ValueError('invalid or duplicate context retire')
+            retire_times[d['owner']]=record['ts_ns']
     client_map={r['data']['request_id']:r for r in client}
     tokenizer=client_tokenizer(plan)
     if len(client)!=len(client_map) or len(client)!=len(requests):
         raise ValueError('missing, duplicate or unmapped request')
     timelines=[]
     consumed=[]
+    unconsumed=[]
     for r in requests:
         d=r['data']
         c=client_map.pop(d['request_id'])['data']
-        if c['owner']!=d['owner'] or c['prompt_sha256']!=d['prompt_sha256']:
+        if (c['owner']!=d['owner'] or c['prompt_sha256']!=d['prompt_sha256'] or
+                c['context_version']!=d['context_version'] or d['context_version']!='v1'):
             raise ValueError('request identity differs')
+        if not opened.get(d['owner'],float('inf'))<d['enqueue_ns']:
+            raise ValueError('request has no explicit open context')
+        if d['enqueue_ns']>=retire_times.get(d['owner'],float('inf')):
+            raise ValueError('request enqueued after context retire')
         if hashlib.sha256(c['prompt'].encode()).hexdigest()!=c['prompt_sha256']:
             raise ValueError('prompt bytes differ')
         if tokenizer.encode(c['prompt'],add_special_tokens=False)!=c['token_ids']:
             raise ValueError('independent tokenizer differs from recorded client IDs')
         verify_request(d,c['token_ids'])
+        if d['release_ns']>r['ts_ns']:
+            raise ValueError('native release clock exceeds observed record')
         timelines.append((d['lookup_ns'],'lookup',d))
         timelines.append((d['release_ns'],'release',d))
     if client_map:
@@ -51,7 +72,13 @@ def audit(run,*,export=False):
             d=row['data']
             following=[r['data'] for r in client if r['data']['owner']==d['owner'] and
                        r['ts_ns']>row['ts_ns']]
-            if not following or d['result_json'] not in following[0]['prompt']:
+            if not following:
+                if retire_times.get(d['owner'],0)<=row['ts_ns']:
+                    raise ValueError('unconsumed tool result has no explicit later discard')
+                unconsumed.append({'tool_id':d['tool_id'],'owner':d['owner'],
+                                   'reason':'no subsequent request before explicit context discard'})
+                continue
+            if d['result_json'] not in following[0]['prompt']:
                 raise ValueError('tool result not consumed by next actual backend request')
             consumed.append(d['tool_id'])
     timelines.sort(key=lambda e:e[0])
@@ -143,8 +170,21 @@ def audit(run,*,export=False):
         item=snapshot(events,run_id,event['idle_episode_id'],event['ts_ns'])
         validate_features(item['features'])
         snapshots.append(item)
+    # Frozen elapsed grid. Features project only the prefix through each timestamp.
+    by_episode={label['idle_episode_id']:label for label in labels}
+    for event in events:
+        if event['event_type']!='idle_start':continue
+        episode=event['idle_episode_id']
+        for seconds in (1,3,10,30,60,120):
+            t0=event['ts_ns']+seconds*10**9
+            if t0>=by_episode[episode]['end_ns']:continue
+            item=snapshot(events,run_id,episode,t0)
+            validate_features(item['features'])
+            snapshots.append(item)
+    snapshots.sort(key=lambda s:(s['snapshot_ns'],s['idle_episode_id']))
     summary={'status':'passed','scope':'single_dense_sequence_no_preemption',
              'transport':transport,'requests':len(requests),'tool_results_consumed':len(consumed),
+             'tool_results_unconsumed':unconsumed,
              'labels':dict(Counter(x['outcome'] for x in labels)), 'episodes':len(labels),
              'snapshot_count':len(snapshots),'unmapped':0,'unexplained':0,
              'cell_blocks':'analysis groups, not vLLM allocations'}

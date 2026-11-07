@@ -28,10 +28,10 @@ def definitions():
       dict(id='cluster_inertia',source_group='sklearn_blob_clustering',planned_band='medium',kind='numpy',
            intent='Cluster the observations into 8 groups using KMeans with random_state=42 and n_init=10. Report inertia.',
            operation='kmeans',parameters={'clusters':8},generator='blobs',rows=150000,features=40),
-      dict(id='forest_holdout',source_group='sklearn_noisy_holdout',planned_band='medium',kind='numpy',
-           intent='Use a random forest of 100 trees (random_state=42) to classify the data. '
+      dict(id='logistic_holdout',source_group='sklearn_linear_logistic_holdout',planned_band='medium',kind='numpy',
+           intent='Use logistic regression (C=1, max_iter=200, random_state=42) to classify the data. '
                   'Use the fixed stratified 25% test split, random_state=42. Report test accuracy.',
-           operation='random_forest',parameters={'trees':100},generator='classification',rows=12000,features=24),
+           operation='logistic',parameters={'iterations':200},generator='classification',rows=300000,features=40),
       dict(id='ridge_validation',source_group='sklearn_linear_regularization',planned_band='medium',kind='numpy',
            intent='Estimate ridge regression generalization with alpha=1.0, five shuffled KFold splits, random_state=42. '
                   'Report mean negative mean squared error and all fold scores.',
@@ -135,7 +135,7 @@ def reference(task):
     from sklearn.decomposition import PCA
     from sklearn.cluster import KMeans
     from sklearn.ensemble import RandomForestClassifier,HistGradientBoostingClassifier,ExtraTreesClassifier
-    from sklearn.linear_model import Ridge
+    from sklearn.linear_model import Ridge,LogisticRegression
     from sklearn.svm import SVC
     from sklearn.model_selection import KFold,StratifiedKFold,train_test_split
     if task['id']=='variance_pca':
@@ -144,9 +144,9 @@ def reference(task):
     if task['id']=='cluster_inertia':
         model=KMeans(n_clusters=8,n_init=10,random_state=42).fit(X)
         return {'value':float(model.inertia_)}
-    if task['id']=='forest_holdout':
+    if task['id']=='logistic_holdout':
         a,b,c,d=train_test_split(X,y,test_size=0.25,stratify=y,random_state=42)
-        model=RandomForestClassifier(n_estimators=100,random_state=42,n_jobs=1).fit(a,c)
+        model=LogisticRegression(C=1.0,max_iter=200,random_state=42).fit(a,c)
         return {'value':float(model.score(b,d))}
     if task['id']=='ridge_validation':
         splitter=KFold(n_splits=5,shuffle=True,random_state=42)
@@ -175,7 +175,8 @@ def equal(a,b):
     if isinstance(a,list) or isinstance(b,list):
         return isinstance(a,list) and isinstance(b,list) and len(a)==len(b) and all(equal(x,y) for x,y in zip(a,b))
     if isinstance(a,(float,int)) and not isinstance(a,bool) and isinstance(b,(float,int)) and not isinstance(b,bool):
-        return bool(np.isfinite(a) and np.isfinite(b) and np.isclose(a,b,rtol=1e-7,atol=1e-8))
+        if isinstance(b,int):return bool(np.isfinite(a) and a==b)
+        return bool(np.isfinite(a) and np.isfinite(b) and np.isclose(a,b,rtol=1e-9,atol=1e-10))
     return type(a) is type(b) and a==b
 
 def actual_band(seconds):

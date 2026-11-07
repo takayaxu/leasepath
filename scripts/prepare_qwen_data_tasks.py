@@ -16,11 +16,20 @@ def main():
     p.add_argument('--reuse-inputs',type=Path)
     p.add_argument('--resize',nargs='*',default=[],help='CPU-only calibration: task_id:rows')
     p.add_argument('--reuse-checked-references',action='store_true')
+    p.add_argument('--refresh-definitions',action='store_true')
     args=p.parse_args()
     if args.reuse_inputs:
         args.output.mkdir(parents=True,exist_ok=False)
         (args.output/'inputs').mkdir()
         tasks=json.loads((args.reuse_inputs/'tasks.private.json').read_text())
+        if args.refresh_definitions:
+            from leasepath.qwen_data_tasks import definitions
+            changed=next(t for t in definitions() if t['id']=='logistic_holdout')
+            for task in tasks:
+                if task['id']=='forest_holdout':
+                    task.update(changed)
+                    task['dataset_id']='d'+task['id']
+                    task['operations']=['logistic','pca']
         for task in tasks:
             source=Path(task['file'])
             destination=(args.output/'inputs'/source.name).resolve()

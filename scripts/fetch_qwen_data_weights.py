@@ -24,12 +24,16 @@ def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument('--root', type=Path, required=True)
     p.add_argument('--workers', type=int, default=24)
+    p.add_argument('--start-index',type=int,default=0)
+    p.add_argument('--end-index',type=int,default=14)
+    p.add_argument('--source',choices=['hf','modelscope'],default='hf')
     args = p.parse_args()
     root = args.root.resolve()
     hf = json.loads((root/'metadata/hf.json').read_text())
     mirror = json.loads((root/'metadata/modelscope.json').read_text())
     assert hf['id'] == REPO and hf['sha'] == REV
     files = {x['rfilename']: x for x in hf['siblings'] if x['rfilename'].endswith('.safetensors')}
+    files={name:files[name] for name in sorted(files)[args.start_index:args.end_index]}
     mf = {x['Path']: x for x in mirror['Data']['Files'] if x['Path'] in files}
     assert set(mf) == set(files)
     out = root/'hf'
@@ -70,7 +74,11 @@ def main():
         expected = f'bytes {start}-{end}/{files[name]["size"]}'
         for attempt in range(4):
             try:
-                url = f'https://hf-mirror.com/{REPO}/resolve/{REV}/{name}?range_start={start}'
+                if args.source=='hf':
+                    url = f'https://hf-mirror.com/{REPO}/resolve/{REV}/{name}?range_start={start}'
+                else:
+                    url = (f"https://modelscope.cn/models/{REPO}/resolve/{mf[name]['Revision']}/{name}"
+                           f'?leasepath_offset={start}&chunk_end={end}')
                 req = urllib.request.Request(url, headers={'Range': f'bytes={start}-{end}'})
                 with urllib.request.urlopen(req, timeout=90) as res:
                     assert res.status == 206 and res.headers.get('Content-Range') == expected
@@ -113,12 +121,13 @@ def main():
         print(json.dumps({'verified': name}), flush=True)
     for item in hf['siblings']:
         name = item['rfilename']
-        if name in files or name == '.gitattributes':
+        if name.endswith('.safetensors') or name == '.gitattributes':
             continue
         data = (out/name).read_bytes()
         assert hashlib.sha1(f'blob {len(data)}\0'.encode()+data).hexdigest() == item['blobId']
         hashes[name] = hashlib.sha256(data).hexdigest()
-    (out/'download-complete.json').write_text(json.dumps({
+    complete_name='download-complete.json' if len(files)==14 else f'download-verified-{args.start_index}-{args.end_index}.json'
+    (out/complete_name).write_text(json.dumps({
         'repository': REPO, 'revision': REV, 'verified': True, 'sha256': hashes,
         'inference_validated': False}, indent=2)+'\n')
 
