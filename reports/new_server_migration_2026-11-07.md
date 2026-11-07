@@ -46,3 +46,9 @@ GitHub HTTPS Git 的 POST 不通，API/codeload 可读。因此通过固定提�
 当前新增软件回归为 199 passed / 1 skipped / 1 deselected；CPU 测试不包含真实模型验收。观测写入/封口 fsync、源保护检查、模型预处理和 worker 执行时间分别计量；workspace_hash 两项不存在，标记 not_applicable。计时嵌套不可直接相加。
 
 Git bundle v2 本身不会序列化 shallow 边界。恢复须同时保留 metadata.json，并使用 scripts/restore_qwen_data_checkpoint.py；已在新的空目录通过恢复和 git fsck。普通 git clone bundle 的失败日志也保留，不能仅凭 bundle verify 宣称完整祖先已恢复。
+
+## 真实 CUDA 受控边界补验（3B 基础设施）
+
+同一 16K 单序列后端完成 8 次新增探针，独立审计证实 U=2（实际命中与受控清空 miss 各一）、D=1（显式 discard）、C=1（生产者排空后仍开放的关系）。控制日志与自然样本隔离。两种物理路径返回相同输出 token；EOG 与协议 stop 保留正常释放证据，length、短于分析块前缀、取消和超时不伪造 idle。超时与取消请求分别执行了 41 和 44 个新 prefill token 并实际释放；后续 32B 版本还将显式记录取消发出时间位于 lookup/release 之间。受控终态摘要见 results/migration/new_server_2026-11-07/infrastructure-controlled-audit.json。
+
+全部 3B 探针/失败流入本轮总账，目前 32 次 probe，0 次主试点；32B 可用后再按照两项门槛执行。模型进入 GPU 前再次核对空闲卡；未触碰现存 9B 服务。归档见 .artifacts/checkpoints/controlled-cuda/raw-infrastructure.tar.gz。

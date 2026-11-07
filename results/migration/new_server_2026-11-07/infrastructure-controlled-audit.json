@@ -1,0 +1,76 @@
+{
+  "status": "passed",
+  "evidence_kind": "measured",
+  "scope": "infrastructure_only",
+  "generations": 8,
+  "reasons": {
+    "eog": 3,
+    "protocol_stop": 1,
+    "length": 2,
+    "timeout": 1,
+    "cancelled": 1
+  },
+  "exact_prompt_ids": true,
+  "physical_kv_cells_checked": true,
+  "protocol_stop_is_normal_release": true,
+  "cache_hit_and_miss_preserve_demand_identity": true,
+  "main_pilot_passed": false,
+  "budget": {
+    "generations": 32,
+    "probe": 32,
+    "pilot": 0,
+    "total_cap": 144,
+    "lane_cap": 72,
+    "prior_usage_status": "historical_unreconciled"
+  },
+  "controlled_audit": {
+    "status": "passed",
+    "scope": "single_dense_sequence_no_preemption",
+    "transport": {
+      "observer_version": "real-development-observer-v1",
+      "streams": [
+        {
+          "observer_version": "real-development-observer-v1",
+          "run_id": "qwen-data-infrastructure-c-controlled",
+          "stream_id": "9114696ac32b4c59bf703f801ff27cd1",
+          "pid": 1689101,
+          "boot_id": "91b65d19-10fc-4f9a-ae68-2b38e6ad0b40",
+          "source": "boundary_controller",
+          "rank": null,
+          "records": 18,
+          "sha256": "b5338da36c7e6522468ee440d95d25bc75550d087e3d16fec4d32143c4d456cc",
+          "complete": true
+        },
+        {
+          "observer_version": "real-development-observer-v1",
+          "run_id": "qwen-data-infrastructure-c-controlled",
+          "stream_id": "f1ba461583224dea934b04663bce3e54",
+          "pid": 1689101,
+          "boot_id": "91b65d19-10fc-4f9a-ae68-2b38e6ad0b40",
+          "source": "native_cuda_engine",
+          "rank": null,
+          "records": 11,
+          "sha256": "524f56301f5f25917fa3ead903c3bec15b04f2c56eb2973ce791ecbf74f6287b",
+          "complete": true
+        }
+      ],
+      "complete": true,
+      "semantic_completeness_verified": false,
+      "scope": "transport_integrity_only_not_backend_or_label_acceptance"
+    },
+    "requests": 8,
+    "tool_results_consumed": 0,
+    "tool_results_unconsumed": [],
+    "labels": {
+      "legal_demand": 2,
+      "retire": 1,
+      "right_censored": 1
+    },
+    "episodes": 4,
+    "snapshot_count": 4,
+    "unmapped": 0,
+    "unexplained": 0,
+    "cell_blocks": "analysis groups, not vLLM allocations"
+  },
+  "model_identity_sha256": null
+}

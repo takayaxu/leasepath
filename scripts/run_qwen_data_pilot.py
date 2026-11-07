@@ -23,7 +23,8 @@ You must read its returned result before answering. Do not invent results or wri
 Arguments are strict JSON. Call one tool at a time. Keep the full history. There is no compression.
 After a successful computation, end with exactly one JSON object:
 {"artifact_id": "<ID returned by compute>", "answer": <the complete result object returned by compute>}.
-Copy every required row, scalar and fold score accurately; preserve at least 9 significant digits.
+Copy every required row, scalar and fold score accurately; preserve at least 12 significant digits.
+The answer value must contain only the nested result fields from compute, not artifact metadata or pagination fields.
 Do not add explanations, code fences or tool calls after your final answer.
 """
 
