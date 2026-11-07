@@ -136,6 +136,7 @@ def main():
         for task in tasks:
             owner=task['id'];llm.owner=owner
             llm.generation_attempts=0
+            llm.pending_tool_results=[]
             llm.task_deadline=time.monotonic()+900
             engine.clear()
             backend.emit('cache_clear',owner=owner)
