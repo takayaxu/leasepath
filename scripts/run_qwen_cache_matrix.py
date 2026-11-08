@@ -21,6 +21,9 @@ def resource_samples(output, stopping):
             row = {'wall_ns': time.time_ns(), 'monotonic_ns': time.monotonic_ns(),
                    'loadavg': os.getloadavg(), 'cpu_pressure': Path('/proc/pressure/cpu').read_text(),
                    'io_pressure': Path('/proc/pressure/io').read_text(),
+                   'memory_pressure': Path('/proc/pressure/memory').read_text(),
+                   'vmstat': {k: int(v) for k,v in (line.split() for line in Path('/proc/vmstat').read_text().splitlines())
+                       if k.startswith(('allocstall', 'compact_', 'pgscan', 'pgsteal', 'thp_', 'numa_'))},
                    'meminfo': {k: v.strip() for k,v in (line.split(':', 1) for line in
                        Path('/proc/meminfo').read_text().splitlines()) if k in {'MemAvailable','Shmem'}}}
             try:
@@ -48,6 +51,9 @@ def main():
     manifest = {'status': 'running', 'plan_sha256': sha256(args.plan), 'started_wall_ns': time.time_ns(),
                 'capacities': [], 'pid': os.getpid(), 'budget_limits': plan['budget_limits'],
                 'cpu_affinity': sorted(os.sched_getaffinity(0)), 'resource_sample_interval_s': 10}
+    manifest['memory_settings'] = {name: Path(name).read_text().strip() for name in
+        ['/sys/kernel/mm/transparent_hugepage/enabled', '/sys/kernel/mm/transparent_hugepage/defrag',
+         '/proc/sys/kernel/numa_balancing'] if Path(name).exists()}
     write(args.output/'matrix-manifest.json', manifest)
     stopping = threading.Event()
     sampler = threading.Thread(target=resource_samples, args=(args.output, stopping), daemon=True)

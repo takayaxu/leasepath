@@ -126,5 +126,7 @@
       "input_sha256": "158c7b90f502758fc19a4757c6cde1968f738c560934ad3e1ec4e16d1ce65bd2",
       "group": "extension_image_regions"
     }
-  }
+  },
+  "tool_timeout_scope": "Existing semantics preserved: compute communicate deadline is call start+240 seconds; process group killed and reaped if exceeded. Blocking pre/post immutable input checks are not preempted; final tool wall can exceed240s. All checks retained and full wall included in JCT.",
+  "resource_diagnostics": "10s global CPU,IO,memory PSI and vmstat reclaim/compaction/THP/NUMA counters; read only; not predictor features"
 }
