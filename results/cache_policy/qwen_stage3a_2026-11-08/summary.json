@@ -1,0 +1,38 @@
+{
+  "status": "quality_failed_and_stopped",
+  "tasks": 33,
+  "correct": 32,
+  "failed": 1,
+  "generations": 113,
+  "probe": 13,
+  "live": 100,
+  "batches_completed": 10,
+  "first_cell": [
+    {
+      "policy": "retired_first_lru",
+      "task_runs": 9,
+      "mean_jct_s": 52.237264600892864,
+      "mean_makespan_s": 67.77294061938301,
+      "mean_cached_tokens": 6272,
+      "mean_prefill_s": 11.580466471333335
+    },
+    {
+      "policy": "conditional",
+      "task_runs": 9,
+      "mean_jct_s": 49.446646973723546,
+      "mean_makespan_s": 64.64950687034677,
+      "mean_cached_tokens": 7296,
+      "mean_prefill_s": 9.703517069666667
+    },
+    {
+      "policy": "gbdt",
+      "task_runs": 9,
+      "mean_jct_s": 49.15277037027085,
+      "mean_makespan_s": 64.84667613737595,
+      "mean_cached_tokens": 7168,
+      "mean_prefill_s": 9.923235808666666
+    }
+  ],
+  "failure": "priority_top final omitted rows root wrapper; computed artifact correct, final rejected",
+  "interpretation": "incomplete matrix; first cell descriptive only; do not splice into protocol-revised full matrix"
+}

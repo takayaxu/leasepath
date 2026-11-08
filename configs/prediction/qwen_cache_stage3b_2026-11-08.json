@@ -1,0 +1,143 @@
+{
+  "stage": "qwen_cache_stage3b_one_protocol_revision_full_matrix",
+  "authorization": "继续原任务；一次明确的最终JSON根对象提示修订，原失败尝试不改标、不拼接，新矩阵从头跑；本阶段总新增生成上限3117保持",
+  "model_repository": "Qwen/Qwen2.5-Coder-32B-Instruct",
+  "revision": "381fc969f78efac66bc87ff7ddeadb7e73c218a7",
+  "model_sha256": "0c2f9e4daac78e72b24f7c054416232a523f0fd2aeb37653747d3c21f7dca078",
+  "gpus": [
+    5,
+    6,
+    7
+  ],
+  "dtype": "float16",
+  "kv_dtype": "float16",
+  "quantization": null,
+  "block_tokens": 128,
+  "physical_context": 16384,
+  "transient_headroom_tokens": 2048,
+  "budget_limits": {
+    "probe": 39,
+    "pilot": 2965,
+    "total": 3004
+  },
+  "prior_collection_generations": 512,
+  "old_ledgers": "sealed; no append",
+  "gate_before_live": true,
+  "repeats": 3,
+  "live_tasks": [
+    "logistic_holdout",
+    "ridge_validation",
+    "temporal_asof",
+    "priority_top",
+    "missing_median",
+    "multi_group_anova",
+    "rank_sum_test",
+    "dominant_frequency",
+    "feature_information",
+    "image_regions"
+  ],
+  "policies": [
+    "retired_first_lru",
+    "conditional",
+    "gbdt"
+  ],
+  "prediction_horizon_s": 3.0,
+  "model_steps_per_task_max": 6,
+  "task_wall_s": 900,
+  "tool_timeout_s": 240,
+  "tool_threads": 2,
+  "tool_memory_gib": 12,
+  "live_scope": "nested first3/6/10 known development parents; not independent final holdout",
+  "prediction_result": "results/prediction/qwen50_holdout_2026-11-08",
+  "policy_selection": "three complete Latin cyclic orderings by repeat; all cells; no tuning or best-capacity selection",
+  "generation_limit_note": "prior113 sealed + fresh hard cap3004 <= original3117; expected fresh1578 incl39 probes; global pilot budget can stop worst-case retries before every task reaches6",
+  "primary_metric": "submit to independently validated correct final answer JCT; include observer, checks, prediction and scheduling; failures retained",
+  "no_purchase": true,
+  "created_client_date": "2026-11-08 Asia/Shanghai",
+  "fixed_ttl_semantics": "1-second soft priority at pressure, expiration permits LRU; never hard-blocks ready requests",
+  "runtime_transfer": "Only statistical compatibility guard is mapped after the physical gate; native tensor cache identity stays new and distinct; same fixed model/tokenizer/context/F16",
+  "capacities_blocks": [
+    24,
+    32,
+    64
+  ],
+  "concurrencies": [
+    3,
+    6,
+    10
+  ],
+  "native_gate": "13 real physical probes per capacity; pressure prompt targets capacity-2 blocks",
+  "tool_timing": "diagnostics only; NPZ materialize, operation compute/imports, process CPU, main-thread schedstat runqueue wait, proc IO/faults, checks and artifact fsync; never wall minus multithread CPU",
+  "failure_rule": "retain every attempt; abort whole matrix on first non-passed batch, no selection or automatic rerun",
+  "admission_rule": "all complete input blocks must fit capacity; no truncation or bypass",
+  "tool_cache_state": "normal filesystem page cache; per-call integrity hashes warm inputs; no system-wide cache dropping",
+  "decision_audit": "same-state shadow retired-first LRU, no future requests, diagnostics included for every policy",
+  "planned_batches": 81,
+  "planned_task_executions": 513,
+  "expected_live_generations": 1539,
+  "live_task_sources": {
+    "priority_top": {
+      "directory": ".artifacts/qwen-data-tasks-v5",
+      "input_sha256": "d4e491a099330d07f6d1c26fc9576fa799eee62c6c93767a10c76606b2eb13e1",
+      "group": "tpch_partitioned_rank"
+    },
+    "logistic_holdout": {
+      "directory": ".artifacts/qwen-data-tasks-v5",
+      "input_sha256": "42ce37579c4a7fdec7b5887d64045fefe9d64727a1ad5a91f0a58ce6491120a1",
+      "group": "sklearn_linear_logistic_holdout"
+    },
+    "ridge_validation": {
+      "directory": ".artifacts/qwen-data-tasks-v5",
+      "input_sha256": "d37a40e82a4d3efa2cf368b2a64f4136e4439a243270cf240c4ac50cbbf5eab6",
+      "group": "sklearn_linear_regularization"
+    },
+    "missing_median": {
+      "directory": ".artifacts/qwen-data-tasks-extension38-v2",
+      "input_sha256": "7bce68f03ab34581059dd11b7c98bb4dba44420d3205e84a5f2160cba0a75f58",
+      "group": "extension_missing_median"
+    },
+    "multi_group_anova": {
+      "directory": ".artifacts/qwen-data-tasks-extension38-v2",
+      "input_sha256": "4fd5c810a3754fe985a75143b06c220e430608c39ce9eb9e2591f98646e9ea5a",
+      "group": "extension_multi_group_anova"
+    },
+    "rank_sum_test": {
+      "directory": ".artifacts/qwen-data-tasks-extension38-v2",
+      "input_sha256": "d9c19c6c1f2160206b4365ad32c45b96276645cdc03974de6395fed6274bd1d1",
+      "group": "extension_rank_sum_test"
+    },
+    "temporal_asof": {
+      "directory": ".artifacts/qwen-data-tasks-extension38-v2",
+      "input_sha256": "378257df309cb69fc11749f5011c63ab9eeceb6afd8ec95857379f0196bb8c7c",
+      "group": "extension_temporal_asof"
+    },
+    "dominant_frequency": {
+      "directory": ".artifacts/qwen-data-tasks-extension38-v2",
+      "input_sha256": "3b19f843faa6c82525333fd5019a93ea3e1c69fe985e5c73896b3782f3dcb079",
+      "group": "extension_dominant_frequency"
+    },
+    "feature_information": {
+      "directory": ".artifacts/qwen-data-tasks-extension38-v2",
+      "input_sha256": "164444f779c0d351bec200869607af765e7da97e2850aec351027689b5776c40",
+      "group": "extension_feature_information"
+    },
+    "image_regions": {
+      "directory": ".artifacts/qwen-data-tasks-extension38-v2",
+      "input_sha256": "158c7b90f502758fc19a4757c6cde1968f738c560934ad3e1ec4e16d1ce65bd2",
+      "group": "extension_image_regions"
+    }
+  },
+  "tool_timeout_scope": "Existing semantics preserved: compute communicate deadline is call start+240 seconds; process group killed and reaped if exceeded. Blocking pre/post immutable input checks are not preempted; final tool wall can exceed240s. All checks retained and full wall included in JCT.",
+  "resource_diagnostics": "10s global CPU,IO,memory PSI and vmstat reclaim/compaction/THP/NUMA counters; read only; not predictor features",
+  "prior_failed_generations": 113,
+  "stage_generation_total_cap": 3117,
+  "prior_failed_ledger": "/home/liuxv/LeasePath-new-server-data/.artifacts/qwen-cache-stage3/ledger.jsonl",
+  "prior_failed_ledger_sha256": "94b3bdd695ed840cc99995b107906a894b6e7ed37427cb28a91dd554b687b0ce",
+  "prior_failed_audit": "/home/liuxv/LeasePath-new-server-data/.artifacts/qwen-cache-stage3/attempt-a-independent-audit.json",
+  "prior_failed_audit_sha256": "91a894df2193e8c011172221125d522e7c5102c4e08169f70bed1d6cbdce0f49",
+  "prior_failed_run": "/home/liuxv/LeasePath-new-server-data/.artifacts/qwen-cache-stage3/run-a",
+  "ledger": "/home/liuxv/LeasePath-new-server-data/.artifacts/qwen-cache-stage3/attempt-b-ledger.jsonl",
+  "protocol_revision": "generic final answer OBJECT/root-key examples only; no checker normalization, no hidden references in model prompt, all strategies identical",
+  "revision_limit": "one declared revision; any second quality failure aborts and is reported, no further automatic repair",
+  "prior_attempt_accounting": "13probes+100live=113; 32/33 tasks correct, priority_top missing rows wrapper rejected; first9 successful batches not spliced into new full matrix"
+}

@@ -70,7 +70,18 @@ def main():
     manifest = read_json(args.run/'matrix-manifest.json')
     require(manifest['status'] == 'passed', 'matrix incomplete')
     require(len(manifest['capacities']) == len(plan['capacities_blocks']), 'capacities missing')
-    reservations = read_jsonl(ROOT/'.artifacts/qwen-cache-stage3/ledger.jsonl')
+    ledger = Path(plan.get('ledger', ROOT/'.artifacts/qwen-cache-stage3/ledger.jsonl'))
+    prior_generations = 0
+    if 'prior_failed_ledger' in plan:
+        require(sha256(plan['prior_failed_ledger']) == plan['prior_failed_ledger_sha256'], 'prior ledger changed')
+        require(sha256(plan['prior_failed_audit']) == plan['prior_failed_audit_sha256'], 'prior audit changed')
+        prior = read_json(plan['prior_failed_audit'])
+        require(prior['status'] == 'passed' and prior['experiment_status'] == 'quality_failed_and_stopped', 'prior audit missing')
+        prior_generations = prior['requests_checked']
+        require(prior_generations == plan['prior_failed_generations'], 'prior count differs')
+        require(prior_generations+plan['budget_limits']['total'] == plan['stage_generation_total_cap'] == 3117,
+                'stage total cap changed')
+    reservations = read_jsonl(ledger)
     by_id = {r['id']: r for r in reservations}
     require(len(by_id) == len(reservations) <= plan['budget_limits']['total'], 'global ledger differs')
     for lane in ['probe', 'pilot']:
@@ -165,10 +176,14 @@ def main():
                 task_rows.append({'capacity': capacity, 'concurrency': concurrency, 'repeat': repeat,
                     'policy': policy, 'task': row['task'], 'jct_s': row['jct_to_validated_answer_s']})
                 for call in row['tools']:
-                    require(call['status'] == 'ok', 'tool call failed')
+                    # A bounded rejected argument can be consumed and corrected.
+                    # Final artifact/answer checks above still require correctness.
+                    require(call['status'] in {'ok', 'rejected', 'error'}, 'unknown tool outcome')
+                    if call['status'] != 'ok':
+                        require('error' in call['result'], 'tool rejection lacks structured result')
                     clean = {k: v for k,v in call.items() if k not in {'result', 'child_stderr'}}
                     clean.update(capacity=capacity, concurrency=concurrency, repeat=repeat, policy=policy, task=row['task'])
-                    if call['name'] == 'compute':
+                    if call['name'] == 'compute' and call['status'] == 'ok':
                         timing = call['worker_timing']; overall = timing['overall']
                         require(call['child_wall_ns'] >= overall['wall_ns'] == call['worker_execute_ns'] > 0, 'worker timing boundary differs')
                         require(sum(v['wall_ns'] for v in timing['phases'].values()) <= overall['wall_ns'], 'phase overlap')
@@ -207,7 +222,10 @@ def main():
     summary = {'status': 'passed', 'scope': 'descriptive fixed matrix of 10 known development parents; repetitions and nested sets are not independent sources',
         'live_requests_checked': live_requests, 'probe_requests_checked': probe_requests,
         'sealed_streams_checked': streams, 'consumed_tool_results_checked': consumed,
-        'budget_reserved': len(reservations), 'unmapped_reservations': len(set(by_id)-seen),
+        'budget_reserved': len(reservations), 'prior_failed_generations': prior_generations,
+        'stage_generations_including_failed_attempt': prior_generations+len(reservations),
+        'unmapped_reservations': len(set(by_id)-seen),
+        'structured_tool_rejections_retained': sum(r['status'] != 'ok' for r in tool_rows),
         'batches_checked': len(batch_rows), 'tasks_correct': len(task_rows), 'cells': cells,
         'same_state_LRU_replayed_independently': True, 'final_independent_performance_claim': False}
     args.output.mkdir(parents=True, exist_ok=False)
