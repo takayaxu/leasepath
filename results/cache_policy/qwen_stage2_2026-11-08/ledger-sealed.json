@@ -1,0 +1,13 @@
+{
+  "reason": "native gate and all 18 live batches complete; independently checked; no more reservations",
+  "generations": 181,
+  "probe": 19,
+  "pilot": 162,
+  "ledger_sha256": "ec1530e34ac7e52ac056318fb3245f7681fbc25bc90ba1673542a30c8da0fd93",
+  "budget_limits": {
+    "probe": 32,
+    "pilot": 192,
+    "total": 224
+  },
+  "sealed_wall_ns": 1794133105054113658
+}

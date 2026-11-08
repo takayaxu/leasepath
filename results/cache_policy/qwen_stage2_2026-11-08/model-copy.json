@@ -1,0 +1,8 @@
+{
+  "src": "/home/liuxv/local-models/qwen25-coder-32b-leasepath/persistent-f16/Qwen2.5-Coder-32B-Instruct-F16.gguf",
+  "dst": "/dev/shm/leasepath-liuxv-cache-stage2/Qwen2.5-Coder-32B-Instruct-F16.gguf",
+  "sha256": "0c2f9e4daac78e72b24f7c054416232a523f0fd2aeb37653747d3c21f7dca078",
+  "bytes": 65535970144,
+  "elapsed_s": 1189.487450412009,
+  "verification": "SHA256 over every copied byte; persisted source unchanged"
+}

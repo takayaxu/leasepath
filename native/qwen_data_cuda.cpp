@@ -39,7 +39,7 @@ struct Engine {
     unsigned batch_size = 0;
     std::string response;
 
-    Engine(const char *path, unsigned context, unsigned batch, int threads, unsigned gpus) {
+    Engine(const char *path, unsigned context, unsigned batch, int threads, unsigned gpus, unsigned sequences = 1) {
         llama_backend_init();
         std::vector<ggml_backend_dev_t> devices;
         for (size_t i = 0; i < ggml_backend_dev_count(); ++i) {
@@ -64,7 +64,8 @@ struct Engine {
         cp.n_ctx = context;
         cp.n_batch = batch;
         cp.n_ubatch = std::min(batch, 128U);
-        cp.n_seq_max = 1;
+        cp.n_seq_max = sequences;
+        if (sequences > 1) { cp.kv_unified = true; }
         cp.n_threads = cp.n_threads_batch = threads;
         cp.flash_attn_type = LLAMA_FLASH_ATTN_TYPE_ENABLED;
         cp.type_k = cp.type_v = GGML_TYPE_F16;

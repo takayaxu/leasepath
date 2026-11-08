@@ -100,7 +100,7 @@ TraceLab 的独立辅助通路是：固定来源压缩包 → 来源哈希核验
 
 ## 可选后端资源
 
-2026-11-08 新服务器进展：`predictive_cache.py` 已提供独立因果淘汰控制器，`replay_qwen_cache_policy.py` 将冻结条件经验／GBDT 接入相同压力淘汰规则，按 active 保护、共享 owner 和前缀祖先闭包管理元数据。它未改写旧 `source_replay.py`，也尚未接到当前 32B 真机；固定服务时间的压力回放不产生 JCT 收益证据。当前 32B `qwen_data_cuda.cpp` 仍为单序列，下一步多 owner 实际 KV enactment 与端到端验收见 [新服务器缓存阶段报告](../reports/qwen_cache_stage1_2026-11-08.md)。
+2026-11-08 新服务器进展：`predictive_cache.py` 已提供独立因果淘汰控制器，`replay_qwen_cache_policy.py` 完成元数据压力回放。随后新增 `native/qwen_cache_cuda.cpp` / `qwen_cache_backend.py`，以统一 GPU KV 池、执行 sequence 0 和持久块 sequence 1–32 实际共享／删除引用；逐请求独立核对物理 cell 并集与 payload 配额。`run_qwen_cache_stage2.py` 使用真实异步工具、单线程模型 FCFS 和冻结统计模型，完成六策略三次轮换的三母题端到端验收；`check_qwen_cache_stage2.py` 复核 raw、输入 token、产物和 JCT。原 `qwen_data_cuda.cpp` 的默认单序列采集入口仍保留；旧 `source_replay.py` 未改写。真实结果与小规模／共享资源限制见 [第二阶段报告](../reports/qwen_cache_stage2_2026-11-08.md)。
 
 `native.py` 仍使用 `.artifacts/d6-native/liblp_native.so` 和 `models/Qwen2.5-3B-Instruct/Qwen2.5-3B-Instruct-f16.gguf`。其中 `d6-native` 是保留下来的二进制目录名，不表示新计划的 D6 已完成。没有为整理目录移动 llama.cpp 源码/构建，否则旧构建中的绝对路径会失效。
 

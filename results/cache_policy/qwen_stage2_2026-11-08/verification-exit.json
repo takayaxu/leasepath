@@ -1,0 +1,12 @@
+{
+  "argv": [
+    ".artifacts/qwen-data-env/bin/python",
+    "scripts/check_qwen_cache_stage2.py",
+    "--run",
+    ".artifacts/qwen-cache-stage2/run-a",
+    "--output",
+    ".artifacts/qwen-cache-stage2/run-a/independent-check.json"
+  ],
+  "exit_code": 0,
+  "wall_s": 30.321783819934353
+}

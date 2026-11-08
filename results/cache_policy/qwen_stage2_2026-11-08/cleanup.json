@@ -1,0 +1,6 @@
+{
+  "temporary_model_removed": "/dev/shm/leasepath-liuxv-cache-stage2/Qwen2.5-Coder-32B-Instruct-F16.gguf",
+  "bytes_released": 65535970144,
+  "persistent_model_preserved": "/home/liuxv/local-models/qwen25-coder-32b-leasepath/persistent-f16/Qwen2.5-Coder-32B-Instruct-F16.gguf",
+  "new_engine_closed": true
+}

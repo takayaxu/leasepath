@@ -1,0 +1,70 @@
+{
+  "status": "passed",
+  "gate_and_prefill_requests_checked": 19,
+  "live_requests_checked": 162,
+  "consumed_tool_results_checked": 108,
+  "sealed_streams_checked": 36,
+  "budget_reserved": 181,
+  "requests_mapped_to_this_run": 181,
+  "reserved_outside_this_run": 0,
+  "current_run_all_requests_accounted": true,
+  "physical_used_union_and_quota_checked": true,
+  "quality_rechecked": true,
+  "paired_jct": {
+    "no_reuse": {
+      "paired_successful_task_runs": 9,
+      "failed_pairs": 0,
+      "mean_jct_s": 53.99220810483934,
+      "p50_jct_s": 53.10521247703582,
+      "p95_jct_s": 74.94464129381812,
+      "mean_paired_delta_vs_retired_first_lru_s": 7.699305162351164,
+      "interpretation": "descriptive 3-parent repeated development smoke; repetitions not independent tasks"
+    },
+    "lru": {
+      "paired_successful_task_runs": 9,
+      "failed_pairs": 0,
+      "mean_jct_s": 46.578881711129924,
+      "p50_jct_s": 46.77837869198993,
+      "p95_jct_s": 61.79526616460644,
+      "mean_paired_delta_vs_retired_first_lru_s": 0.28597876864175004,
+      "interpretation": "descriptive 3-parent repeated development smoke; repetitions not independent tasks"
+    },
+    "retired_first_lru": {
+      "paired_successful_task_runs": 9,
+      "failed_pairs": 0,
+      "mean_jct_s": 46.292902942488176,
+      "p50_jct_s": 47.06776407104917,
+      "p95_jct_s": 60.80445786551572,
+      "mean_paired_delta_vs_retired_first_lru_s": 0.0,
+      "interpretation": "descriptive 3-parent repeated development smoke; repetitions not independent tasks"
+    },
+    "fixed_ttl": {
+      "paired_successful_task_runs": 9,
+      "failed_pairs": 0,
+      "mean_jct_s": 46.648572982909776,
+      "p50_jct_s": 47.643226735061035,
+      "p95_jct_s": 62.16304138074629,
+      "mean_paired_delta_vs_retired_first_lru_s": 0.3556700404216018,
+      "interpretation": "descriptive 3-parent repeated development smoke; repetitions not independent tasks"
+    },
+    "conditional": {
+      "paired_successful_task_runs": 9,
+      "failed_pairs": 0,
+      "mean_jct_s": 53.10774907914715,
+      "p50_jct_s": 47.036289611132815,
+      "p95_jct_s": 97.56250976161098,
+      "mean_paired_delta_vs_retired_first_lru_s": 6.81484613665897,
+      "interpretation": "descriptive 3-parent repeated development smoke; repetitions not independent tasks"
+    },
+    "gbdt": {
+      "paired_successful_task_runs": 9,
+      "failed_pairs": 0,
+      "mean_jct_s": 47.355930424062535,
+      "p50_jct_s": 47.320645140018314,
+      "p95_jct_s": 65.65835193814709,
+      "mean_paired_delta_vs_retired_first_lru_s": 1.0630274815743581,
+      "interpretation": "descriptive 3-parent repeated development smoke; repetitions not independent tasks"
+    }
+  },
+  "final_independent_performance_claim": false
+}

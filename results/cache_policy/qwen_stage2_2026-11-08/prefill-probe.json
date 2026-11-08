@@ -1,0 +1,66 @@
+{
+  "status": "passed",
+  "rows": [
+    {
+      "blocks_target": 4,
+      "mode": "cold",
+      "input_tokens": 542,
+      "cached_tokens": 0,
+      "executed_prefill_tokens": 542,
+      "prefill_ms": 739.172598,
+      "decode_ms": 87.445761,
+      "native_total_ms": 834.337089
+    },
+    {
+      "blocks_target": 4,
+      "mode": "hot",
+      "input_tokens": 542,
+      "cached_tokens": 512,
+      "executed_prefill_tokens": 30,
+      "prefill_ms": 138.269719,
+      "decode_ms": 85.042535,
+      "native_total_ms": 232.594892
+    },
+    {
+      "blocks_target": 10,
+      "mode": "cold",
+      "input_tokens": 1391,
+      "cached_tokens": 0,
+      "executed_prefill_tokens": 1391,
+      "prefill_ms": 1746.901712,
+      "decode_ms": 85.446177,
+      "native_total_ms": 1845.409377
+    },
+    {
+      "blocks_target": 10,
+      "mode": "hot",
+      "input_tokens": 1391,
+      "cached_tokens": 1280,
+      "executed_prefill_tokens": 111,
+      "prefill_ms": 268.131314,
+      "decode_ms": 87.210093,
+      "native_total_ms": 382.647377
+    },
+    {
+      "blocks_target": 20,
+      "mode": "cold",
+      "input_tokens": 2811,
+      "cached_tokens": 0,
+      "executed_prefill_tokens": 2811,
+      "prefill_ms": 3235.659673,
+      "decode_ms": 85.875587,
+      "native_total_ms": 3346.3371
+    },
+    {
+      "blocks_target": 20,
+      "mode": "hot",
+      "input_tokens": 2811,
+      "cached_tokens": 2688,
+      "executed_prefill_tokens": 123,
+      "prefill_ms": 279.016088,
+      "decode_ms": 88.177784,
+      "native_total_ms": 408.840281
+    }
+  ],
+  "scope": "one controlled cold/hot pair per length; mechanism timing, not confidence interval or JCT result"
+}

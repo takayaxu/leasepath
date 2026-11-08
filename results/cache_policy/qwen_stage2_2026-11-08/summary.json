@@ -1,0 +1,288 @@
+{
+  "status": "passed",
+  "stage": "real_native_multi_owner_gate_and_three_parent_live_smoke",
+  "quality": {
+    "parents": 3,
+    "policies": 6,
+    "repeats": 3,
+    "correct_task_executions": 54,
+    "total_task_executions": 54
+  },
+  "measured_policy_summary": {
+    "no_reuse": {
+      "paired_successful_task_runs": 9,
+      "failed_pairs": 0,
+      "mean_jct_s": 53.99220810483934,
+      "p50_jct_s": 53.10521247703582,
+      "p95_jct_s": 74.94464129381812,
+      "mean_paired_delta_vs_retired_first_lru_s": 7.699305162351164,
+      "interpretation": "descriptive 3-parent repeated development smoke; repetitions not independent tasks",
+      "mean_makespan_s": 71.71022406903406,
+      "mean_prefill_s": 16.921378104333336,
+      "mean_decode_s": 48.87115245766667,
+      "mean_prefill_tokens": 13860,
+      "cached_tokens_each_repeat": [
+        0,
+        0,
+        0
+      ],
+      "prediction_ms_each_batch": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "repeat_mean_jct_s": [
+        57.646982509332396,
+        51.89410601579584,
+        52.43553578938978
+      ]
+    },
+    "lru": {
+      "paired_successful_task_runs": 9,
+      "failed_pairs": 0,
+      "mean_jct_s": 46.578881711129924,
+      "p50_jct_s": 46.77837869198993,
+      "p95_jct_s": 61.79526616460644,
+      "mean_paired_delta_vs_retired_first_lru_s": 0.28597876864175004,
+      "interpretation": "descriptive 3-parent repeated development smoke; repetitions not independent tasks",
+      "mean_makespan_s": 61.65260314537833,
+      "mean_prefill_s": 7.806004114666667,
+      "mean_decode_s": 49.95707828066667,
+      "mean_prefill_tokens": 5156.333333333333,
+      "cached_tokens_each_repeat": [
+        8704,
+        8704,
+        8704
+      ],
+      "prediction_ms_each_batch": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "repeat_mean_jct_s": [
+        46.28252785590788,
+        47.29101842478849,
+        46.163098852693416
+      ]
+    },
+    "retired_first_lru": {
+      "paired_successful_task_runs": 9,
+      "failed_pairs": 0,
+      "mean_jct_s": 46.292902942488176,
+      "p50_jct_s": 47.06776407104917,
+      "p95_jct_s": 60.80445786551572,
+      "mean_paired_delta_vs_retired_first_lru_s": 0.0,
+      "interpretation": "descriptive 3-parent repeated development smoke; repetitions not independent tasks",
+      "mean_makespan_s": 60.97560168531103,
+      "mean_prefill_s": 7.235719285,
+      "mean_decode_s": 49.770648964,
+      "mean_prefill_tokens": 4899.666666666667,
+      "cached_tokens_each_repeat": [
+        8960,
+        8960,
+        8960
+      ],
+      "prediction_ms_each_batch": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "repeat_mean_jct_s": [
+        46.276405203854665,
+        46.29689292058659,
+        46.30541070302328
+      ]
+    },
+    "fixed_ttl": {
+      "paired_successful_task_runs": 9,
+      "failed_pairs": 0,
+      "mean_jct_s": 46.648572982909776,
+      "p50_jct_s": 47.643226735061035,
+      "p95_jct_s": 62.16304138074629,
+      "mean_paired_delta_vs_retired_first_lru_s": 0.3556700404216018,
+      "interpretation": "descriptive 3-parent repeated development smoke; repetitions not independent tasks",
+      "mean_makespan_s": 61.62925803808806,
+      "mean_prefill_s": 7.260184922333333,
+      "mean_decode_s": 50.13660391733333,
+      "mean_prefill_tokens": 4901.666666666667,
+      "cached_tokens_each_repeat": [
+        8960,
+        8960,
+        8960
+      ],
+      "prediction_ms_each_batch": [
+        0.075648,
+        0.046249,
+        0.012227
+      ],
+      "repeat_mean_jct_s": [
+        47.445295305612184,
+        46.71127532608807,
+        45.78914831702908
+      ]
+    },
+    "conditional": {
+      "paired_successful_task_runs": 9,
+      "failed_pairs": 0,
+      "mean_jct_s": 53.10774907914715,
+      "p50_jct_s": 47.036289611132815,
+      "p95_jct_s": 97.56250976161098,
+      "mean_paired_delta_vs_retired_first_lru_s": 6.81484613665897,
+      "interpretation": "descriptive 3-parent repeated development smoke; repetitions not independent tasks",
+      "mean_makespan_s": 81.37680347403511,
+      "mean_prefill_s": 7.267671970333333,
+      "mean_decode_s": 50.17719285933333,
+      "mean_prefill_tokens": 4900,
+      "cached_tokens_each_repeat": [
+        8960,
+        8960,
+        8960
+      ],
+      "prediction_ms_each_batch": [
+        0.399312,
+        0.28898599999999997,
+        0.352719
+      ],
+      "repeat_mean_jct_s": [
+        46.05409298557788,
+        46.285925933082275,
+        66.98322831878129
+      ]
+    },
+    "gbdt": {
+      "paired_successful_task_runs": 9,
+      "failed_pairs": 0,
+      "mean_jct_s": 47.355930424062535,
+      "p50_jct_s": 47.320645140018314,
+      "p95_jct_s": 65.65835193814709,
+      "mean_paired_delta_vs_retired_first_lru_s": 1.0630274815743581,
+      "interpretation": "descriptive 3-parent repeated development smoke; repetitions not independent tasks",
+      "mean_makespan_s": 63.725325976964086,
+      "mean_prefill_s": 7.261674567,
+      "mean_decode_s": 50.10156708,
+      "mean_prefill_tokens": 4901,
+      "cached_tokens_each_repeat": [
+        8960,
+        8960,
+        8960
+      ],
+      "prediction_ms_each_batch": [
+        2.522945,
+        1.379637,
+        1.863804
+      ],
+      "repeat_mean_jct_s": [
+        46.229082608905934,
+        46.72581142528603,
+        49.11289723799564
+      ]
+    }
+  },
+  "budget": {
+    "generations": 181,
+    "probe": 19,
+    "pilot": 162,
+    "total_cap": 224,
+    "lane_caps": {
+      "probe": 32,
+      "pilot": 192
+    },
+    "prior_usage_status": "historical_unreconciled"
+  },
+  "model_load_s": 33.18879349180497,
+  "prefill_probe": [
+    {
+      "blocks_target": 4,
+      "mode": "cold",
+      "input_tokens": 542,
+      "cached_tokens": 0,
+      "executed_prefill_tokens": 542,
+      "prefill_ms": 739.172598,
+      "decode_ms": 87.445761,
+      "native_total_ms": 834.337089
+    },
+    {
+      "blocks_target": 4,
+      "mode": "hot",
+      "input_tokens": 542,
+      "cached_tokens": 512,
+      "executed_prefill_tokens": 30,
+      "prefill_ms": 138.269719,
+      "decode_ms": 85.042535,
+      "native_total_ms": 232.594892
+    },
+    {
+      "blocks_target": 10,
+      "mode": "cold",
+      "input_tokens": 1391,
+      "cached_tokens": 0,
+      "executed_prefill_tokens": 1391,
+      "prefill_ms": 1746.901712,
+      "decode_ms": 85.446177,
+      "native_total_ms": 1845.409377
+    },
+    {
+      "blocks_target": 10,
+      "mode": "hot",
+      "input_tokens": 1391,
+      "cached_tokens": 1280,
+      "executed_prefill_tokens": 111,
+      "prefill_ms": 268.131314,
+      "decode_ms": 87.210093,
+      "native_total_ms": 382.647377
+    },
+    {
+      "blocks_target": 20,
+      "mode": "cold",
+      "input_tokens": 2811,
+      "cached_tokens": 0,
+      "executed_prefill_tokens": 2811,
+      "prefill_ms": 3235.659673,
+      "decode_ms": 85.875587,
+      "native_total_ms": 3346.3371
+    },
+    {
+      "blocks_target": 20,
+      "mode": "hot",
+      "input_tokens": 2811,
+      "cached_tokens": 2688,
+      "executed_prefill_tokens": 123,
+      "prefill_ms": 279.016088,
+      "decode_ms": 88.177784,
+      "native_total_ms": 408.840281
+    }
+  ],
+  "native_gate_checks": {
+    "exact_client_native_token_ids": true,
+    "physical_cell_reuse_verified": true,
+    "shared_owner_retire_preserves_device_cells": true,
+    "pressure_physically_evicts_and_recomputes": true,
+    "cold_hot_greedy_output_equal": true,
+    "protocol_stop_normal_release": true,
+    "timeout_cancel_active_drained_other_owner_preserved": true,
+    "input_and_active_headroom_quota_verified": true
+  },
+  "result": "Real cache reuse improves observed JCT versus no reuse; predictive ranking shows no incremental gain over retired-first LRU in this small workload.",
+  "conditional_outlier": {
+    "repeat": 2,
+    "task": "ridge_validation",
+    "jct_s": 122.00938324606977,
+    "compute_tool_wall_s": 86.497027888,
+    "worker_s": 82.606959346,
+    "root_cause": "not isolated; no claim that predictor caused the tool delay",
+    "included_in_primary_metrics": true
+  },
+  "limitations": [
+    "three known development parents only, no independent final performance claim",
+    "shared server CPU and disk not isolated; tool times vary markedly, including retained long outlier",
+    "single model executor with real asynchronous tools; no continuous batching or preemption",
+    "logical payload quota and actual physical cells audited; reserved GPU KV buffer remains 4 GiB",
+    "current 32-block/three-owner setting gives all predictive and retired-first policies the same hit counts",
+    "same frozen statistical models explicitly transferred to the new native compatibility domain after the gate",
+    "policy idle clock begins after evidence checks, slightly later than native release",
+    "artifact IDs and token counts vary across actual executions; no forced fixed-output replay",
+    "three repetitions partly balance order; no selected-repeat or outlier exclusion"
+  ],
+  "raw_run": "/home/liuxv/LeasePath-new-server-data/.artifacts/qwen-cache-stage2/run-a",
+  "infrastructure_copy_s": 1189.487450412009
+}

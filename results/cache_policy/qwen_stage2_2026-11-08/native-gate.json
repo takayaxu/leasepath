@@ -1,0 +1,44 @@
+{
+  "status": "passed",
+  "scope": "controlled_real_32b_multi_owner_gate",
+  "generations": 13,
+  "interleaved_A_B_A_hit": 1280,
+  "cold_prefill_tokens": 1372,
+  "hot_prefill_tokens": 92,
+  "after_pressure_hit": 128,
+  "after_pressure_prefill_tokens": 1244,
+  "checks": {
+    "exact_client_native_token_ids": true,
+    "physical_cell_reuse_verified": true,
+    "shared_owner_retire_preserves_device_cells": true,
+    "pressure_physically_evicts_and_recomputes": true,
+    "cold_hot_greedy_output_equal": true,
+    "protocol_stop_normal_release": true,
+    "timeout_cancel_active_drained_other_owner_preserved": true,
+    "input_and_active_headroom_quota_verified": true
+  },
+  "buffer_semantics": "used physical KV cells freed; preallocated device buffer remains reserved",
+  "budget": {
+    "generations": 13,
+    "probe": 13,
+    "pilot": 0,
+    "total_cap": 224,
+    "lane_caps": {
+      "probe": 32,
+      "pilot": 192
+    },
+    "prior_usage_status": "historical_unreconciled"
+  },
+  "final_physical": {
+    "device_kv_reserved_bytes": {
+      "CUDA0": 1476395008,
+      "CUDA1": 1476395008,
+      "CUDA2": 1342177280
+    },
+    "idle_union_cells": 0,
+    "reserved_capacity_cells": 16384,
+    "sequence_references": 0,
+    "sequences": {},
+    "used_cells": 0
+  }
+}
