@@ -1,0 +1,19 @@
+# 固定容量／并发矩阵与工具耗时分解
+
+状态：实现与预检完成，等待权重复制校验后启动真实矩阵。此处不预填性能结论。
+
+承接 stage2 的 32 块、3 会话验收。本阶段固定 24/32/64 块 × 3/6/10 会话，比较释放优先 LRU、条件经验分布、GBDT；每格三次循环交错，三个策略各占每个顺序位置一次。81 批、513 次任务执行，预期 1,539 次真实生成。额外每容量 13 次物理验收，共 39 次。新全局 fsync 账本上限 probe=39、pilot=3,078、total=3,117，包含失败尝试；不复用旧 512 次账本或自动重跑。任意批质量失败即停，保留所有尝试。
+
+前三题沿用 logistic_holdout、ridge_validation、temporal_asof；6 题加入 priority_top、missing_median、multi_group_anova；10 题再加入 rank_sum_test、dominant_frequency、feature_information、image_regions。按固定列表取前 3/6/10，均为已查看的开发母题，嵌套集合和重复轮次不能算成 513 个独立题或独立来源留出。
+
+模型、tokenizer、F16、16,384 cells 原生 context、128 tokens/block、2,048 tokens 活跃 headroom 均固定。三个逻辑容量分别为 3,072/4,096/8,192 tokens，约 0.75/1/2 GiB 可复用 payload；物理预留仍为 4 GiB。每容量单独原生进程，重新通过物理 gate 后迁移统计模型的兼容 guard；不变更原预测模型、3 秒 horizon、FCFS 调度或粗粒度可观测特征。完整输入必须入池，不截断。
+
+版本化计时工具保留旧 stage2 源码和证据；参数 schema、不可变 FD、双重输入 hash、子进程组超时、2 线程、12 GiB、240 秒上限不变。新增 NPZ 读取／物化、NumPy 与 sklearn 导入、实际数值计算、结果校验的分项墙钟、进程 CPU、用户／内核时间、缺页、上下文切换、I/O 计数和主线程 schedstat 排队等待。扩展运算内部的惰性库导入仍属于该运算计算窗口，SQL 连接／查询／关闭合并计时。模型答案和预测输入不包含这些诊断。输入 hash 本身会预热文件页缓存；read_bytes=0 不能解释为没有读数组。进程 CPU 包含 BLAS 多线程，不用 wall-CPU 冒充等待时间；主线程 schedstat 也不能代表全部 BLAS 线程。
+
+每次真实 admission 都另算同状态释放优先 LRU 的候选淘汰序列，记录实际差异、当时 owner 概率和因果特征。影子策略只检查当前状态，不生成后续请求或控制真实 KV；它证明是否改变动作，不等于反事实 JCT 加速。所有策略都承担该诊断成本。独立检查器重建实际居民块和 LRU 动作，并核对物理 cell、预算、工具结果消费、正确答案、产物和配对 JCT。
+
+JCT 沿用共同提交到独立正确性通过的端到端口径，包含工具、队列、校验、策略、诊断与证据开销；模型加载及权重复制另列。各会话工具可并发，工具／模型耗时不能简单累加为整批 makespan。服务器 CPU／磁盘共享，每 10 秒保存资源样本，不声明独占性能。
+
+预检：10 题真实受限工具结果全部与冻结 reference 一致；原生 275 个固定源码项、8 份运行库 SHA256 复核。逻辑容量压力探针实际输入分别 3,048/4,008/8,088 tokens，均完整入池。新增 7 项测试覆盖结果等价、超时回收、旧预算不放宽及影子动作不修改实际决策；完整回归 226 passed / 1 deselected；stage2 的 181 个请求亦独立只读复核通过，旧证据保持可复查。
+
+入口：`configs/prediction/qwen_cache_stage3_2026-11-08.json`、`scripts/run_qwen_cache_matrix.py`、`scripts/check_qwen_cache_matrix.py`。完整过程证据保存在 `.artifacts/qwen-cache-stage3/`。
