@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "train_only_empirical_and_gbdt_support": true,
+  "saved_predictions_replayed": 216,
+  "metrics_recomputed": true,
+  "parent_split_disjoint": true,
+  "input_hashes_verified": true,
+  "source_hashes_verified": true
+}

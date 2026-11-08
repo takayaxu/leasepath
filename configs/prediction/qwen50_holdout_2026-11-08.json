@@ -1,0 +1,141 @@
+{
+  "stage": "qwen50_holdout_2026-11-08",
+  "dataset": ".artifacts/qwen-data-extension50-c/fifty-parent-dataset",
+  "seed": 23,
+  "models": [
+    "global",
+    "conditional",
+    "gbdt"
+  ],
+  "selection_policy": "single_configuration_no_search_no_early_stopping",
+  "primary_metric": "macro_parent_multiclass_cumulative_brier_at_0.1_seconds_lower_is_better",
+  "baseline": {
+    "right_edges": [
+      0.01,
+      0.03,
+      0.1,
+      0.3,
+      1,
+      3,
+      10,
+      30,
+      60,
+      120,
+      300,
+      600
+    ],
+    "elapsed_edges": [
+      0.03,
+      0.1,
+      0.3,
+      1
+    ],
+    "min_group_workflows": 3,
+    "prior_weight": 1.0
+  },
+  "gbdt": {
+    "num_boost_round": 40,
+    "learning_rate": 0.05,
+    "num_leaves": 4,
+    "max_depth": 2,
+    "min_data_in_leaf": 20,
+    "min_sum_hessian_in_leaf": 0.1,
+    "lambda_l1": 0.1,
+    "lambda_l2": 10.0,
+    "min_gain_to_split": 0.01
+  },
+  "strata": {
+    "sql": {
+      "tasks": [
+        "ship_groups",
+        "air_count",
+        "segment_orders",
+        "priority_top"
+      ],
+      "test_count": 1
+    },
+    "ml": {
+      "tasks": [
+        "variance_pca",
+        "cluster_inertia",
+        "logistic_holdout",
+        "ridge_validation",
+        "forest_cv",
+        "boosting_cv",
+        "kernel_cv",
+        "extra_trees_cv"
+      ],
+      "test_count": 2
+    },
+    "cleaning": {
+      "tasks": [
+        "missing_median",
+        "upper_quantile",
+        "weighted_groups",
+        "feature_correlation",
+        "composite_dedup",
+        "distribution_bins"
+      ],
+      "test_count": 1
+    },
+    "statistics": {
+      "tasks": [
+        "categorical_independence",
+        "bootstrap_interval",
+        "randomization_test",
+        "paired_measurements",
+        "multi_group_anova",
+        "rank_sum_test",
+        "response_trend",
+        "robust_fences"
+      ],
+      "test_count": 2
+    },
+    "timeseries": {
+      "tasks": [
+        "temporal_asof",
+        "window_smoothing",
+        "time_buckets",
+        "activity_sessions",
+        "gap_interpolation",
+        "dominant_frequency",
+        "signal_alignment",
+        "noise_filtering",
+        "event_peaks",
+        "curve_area"
+      ],
+      "test_count": 2
+    },
+    "numerical": {
+      "tasks": [
+        "bracketed_root",
+        "portfolio_allocation",
+        "tridiagonal_system",
+        "nonnegative_factors",
+        "independent_sources",
+        "density_clusters",
+        "neighbor_retrieval",
+        "anomaly_detection",
+        "feature_information",
+        "recursive_forecast",
+        "censored_survival",
+        "image_regions",
+        "cost_assignment",
+        "distribution_transport"
+      ],
+      "test_count": 2
+    }
+  },
+  "input_sha256": {
+    "SHA256SUMS": "f73e401ed489c738d24207fa9cf209fc47a5d581b7d9fb4b02c2e39b4a74d264",
+    "catalog.jsonl": "b4d723a29b2fc7b7e1dab2bca75e94dd8e02a8aae4dc0918a0ee2d1e8a63abb6",
+    "features.jsonl": "cc5fe948622b1ed58f0aae5d6dc4323d24b664ba20f37a6eed98a665c062a100",
+    "provenance.json": "2aaee37491b8708dd138f308c10b9a7b7bc1ad7c50ad73aca89b09cb9209ac38",
+    "events.jsonl": "e900816b5be1a4a26a66c088645ed9c931021e10bdb1753889b4af1e3df65c82",
+    "targets.jsonl": "bc246272a7713a30cea3c8285ee62068b6c3a2a3ecb6e86b5d720b56f89c1bdb",
+    "episodes.jsonl": "fe682c5de40595919ec96d6293d3c47fb3f10f3ac8b1460b66ae46526348473d",
+    "dataset-card.json": "e6f624c1fada6a7e5bfb7740f389d950c581e2eb2523ff44f868317cf93241a5",
+    "compute-calls.jsonl": "5335e51b2e50692712af66043b7f5a952bd60731106215237d80e25b28708975"
+  },
+  "provenance": "Existing predictor implementations and fixed review-2 settings; only new-server final 50-task data. User authorized held-out prediction on 2026-11-08. Freeze before fitting. No hyperparameter search."
+}

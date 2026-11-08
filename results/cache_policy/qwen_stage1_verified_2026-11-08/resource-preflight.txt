@@ -1,0 +1,11 @@
+index, name, memory.used [MiB], memory.total [MiB], utilization.gpu [%]
+0, Tesla V100-PCIE-32GB, 1658 MiB, 32768 MiB, 0 %
+1, Tesla V100-PCIE-32GB, 28966 MiB, 32768 MiB, 0 %
+2, Tesla V100-PCIE-32GB, 28944 MiB, 32768 MiB, 0 %
+3, Tesla V100-PCIE-32GB, 12964 MiB, 32768 MiB, 0 %
+4, Tesla V100-PCIE-32GB, 12904 MiB, 32768 MiB, 0 %
+5, Tesla V100-PCIE-32GB, 4 MiB, 32768 MiB, 0 %
+6, Tesla V100-PCIE-32GB, 4 MiB, 32768 MiB, 0 %
+7, Tesla V100-PCIE-32GB, 4 MiB, 32768 MiB, 0 %
+8, Tesla V100-PCIE-32GB, 4 MiB, 32768 MiB, 0 %
+9, Tesla V100-PCIE-32GB, 4 MiB, 32768 MiB, 0 %

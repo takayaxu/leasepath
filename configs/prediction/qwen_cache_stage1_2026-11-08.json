@@ -1,0 +1,22 @@
+{
+  "stage": "causal_cache_metadata_pressure_diagnostic",
+  "prediction_result": "results/prediction/qwen50_holdout_2026-11-08",
+  "policies": [
+    "lru",
+    "retired_first_lru",
+    "conditional",
+    "gbdt"
+  ],
+  "capacity_blocks": [
+    32,
+    64,
+    128,
+    256
+  ],
+  "block_tokens": 128,
+  "horizon_s": 3.0,
+  "arrivals": "all 10 held-out tasks arrive at time zero; FCFS model server; observed tool gaps overlap",
+  "selection": "frozen before policy replay; report all capacities, no best-capacity or horizon selection",
+  "measurement": "metadata replay only; observed service times fixed for every policy; no JCT benefit inference",
+  "next_gate": "native multi-owner KV with physical enactment and exact token checks before any live end-to-end comparison"
+}

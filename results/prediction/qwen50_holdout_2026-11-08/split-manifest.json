@@ -1,0 +1,511 @@
+{
+  "scope": "internal held-out analysis intents from previously inspected development data",
+  "rule": "within fixed semantic strata, sort SHA256(seed:source_group); select fixed test_count",
+  "seed": 23,
+  "assignments": {
+    "activity_sessions": "train",
+    "air_count": "train",
+    "anomaly_detection": "train",
+    "boosting_cv": "train",
+    "bootstrap_interval": "train",
+    "bracketed_root": "train",
+    "categorical_independence": "train",
+    "censored_survival": "train",
+    "cluster_inertia": "train",
+    "composite_dedup": "train",
+    "cost_assignment": "train",
+    "curve_area": "train",
+    "density_clusters": "train",
+    "distribution_bins": "train",
+    "distribution_transport": "train",
+    "dominant_frequency": "test",
+    "event_peaks": "train",
+    "extra_trees_cv": "train",
+    "feature_correlation": "train",
+    "feature_information": "test",
+    "forest_cv": "train",
+    "gap_interpolation": "train",
+    "image_regions": "test",
+    "independent_sources": "train",
+    "kernel_cv": "train",
+    "logistic_holdout": "test",
+    "missing_median": "test",
+    "multi_group_anova": "test",
+    "neighbor_retrieval": "train",
+    "noise_filtering": "train",
+    "nonnegative_factors": "train",
+    "paired_measurements": "train",
+    "portfolio_allocation": "train",
+    "priority_top": "test",
+    "randomization_test": "train",
+    "rank_sum_test": "test",
+    "recursive_forecast": "train",
+    "response_trend": "train",
+    "ridge_validation": "test",
+    "robust_fences": "train",
+    "segment_orders": "train",
+    "ship_groups": "train",
+    "signal_alignment": "train",
+    "temporal_asof": "test",
+    "time_buckets": "train",
+    "tridiagonal_system": "train",
+    "upper_quantile": "train",
+    "variance_pca": "train",
+    "weighted_groups": "train",
+    "window_smoothing": "train"
+  },
+  "strata": {
+    "sql": {
+      "tasks": [
+        "ship_groups",
+        "air_count",
+        "segment_orders",
+        "priority_top"
+      ],
+      "test_count": 1
+    },
+    "ml": {
+      "tasks": [
+        "variance_pca",
+        "cluster_inertia",
+        "logistic_holdout",
+        "ridge_validation",
+        "forest_cv",
+        "boosting_cv",
+        "kernel_cv",
+        "extra_trees_cv"
+      ],
+      "test_count": 2
+    },
+    "cleaning": {
+      "tasks": [
+        "missing_median",
+        "upper_quantile",
+        "weighted_groups",
+        "feature_correlation",
+        "composite_dedup",
+        "distribution_bins"
+      ],
+      "test_count": 1
+    },
+    "statistics": {
+      "tasks": [
+        "categorical_independence",
+        "bootstrap_interval",
+        "randomization_test",
+        "paired_measurements",
+        "multi_group_anova",
+        "rank_sum_test",
+        "response_trend",
+        "robust_fences"
+      ],
+      "test_count": 2
+    },
+    "timeseries": {
+      "tasks": [
+        "temporal_asof",
+        "window_smoothing",
+        "time_buckets",
+        "activity_sessions",
+        "gap_interpolation",
+        "dominant_frequency",
+        "signal_alignment",
+        "noise_filtering",
+        "event_peaks",
+        "curve_area"
+      ],
+      "test_count": 2
+    },
+    "numerical": {
+      "tasks": [
+        "bracketed_root",
+        "portfolio_allocation",
+        "tridiagonal_system",
+        "nonnegative_factors",
+        "independent_sources",
+        "density_clusters",
+        "neighbor_retrieval",
+        "anomaly_detection",
+        "feature_information",
+        "recursive_forecast",
+        "censored_survival",
+        "image_regions",
+        "cost_assignment",
+        "distribution_transport"
+      ],
+      "test_count": 2
+    }
+  },
+  "tasks": [
+    {
+      "task": "ship_groups",
+      "source_group": "tpch_shipping_aggregation",
+      "intent": "Sum lineitem quantities separately for each return flag. Return rows sorted by return flag.",
+      "run_id": "pilot-fbaf3c69",
+      "split": "train"
+    },
+    {
+      "task": "air_count",
+      "source_group": "tpch_transport_filter",
+      "intent": "Count lineitems whose ship mode is AIR.",
+      "run_id": "pilot-fbaf3c69",
+      "split": "train"
+    },
+    {
+      "task": "segment_orders",
+      "source_group": "tpch_customer_join",
+      "intent": "Join customers to orders and sum order total price for each customer market segment. Sort by segment.",
+      "run_id": "pilot-fbaf3c69",
+      "split": "train"
+    },
+    {
+      "task": "priority_top",
+      "source_group": "tpch_partitioned_rank",
+      "intent": "For each order priority, find its most expensive order. Break price ties by smallest order key. Return priority, order key, price, sorted by priority.",
+      "run_id": "pilot-fbaf3c69",
+      "split": "test"
+    },
+    {
+      "task": "variance_pca",
+      "source_group": "sklearn_latent_variance",
+      "intent": "Find the sum of explained variance ratios of the first 5 principal components, using full SVD.",
+      "run_id": "pilot-fbaf3c69",
+      "split": "train"
+    },
+    {
+      "task": "cluster_inertia",
+      "source_group": "sklearn_blob_clustering",
+      "intent": "Cluster the observations into 8 groups using KMeans with random_state=42 and n_init=10. Report inertia.",
+      "run_id": "pilot-fbaf3c69",
+      "split": "train"
+    },
+    {
+      "task": "logistic_holdout",
+      "source_group": "sklearn_linear_logistic_holdout",
+      "intent": "Use logistic regression (C=1, max_iter=200, random_state=42) to classify the data. Use the fixed stratified 25% test split, random_state=42. Report test accuracy.",
+      "run_id": "pilot-fbaf3c69",
+      "split": "test"
+    },
+    {
+      "task": "ridge_validation",
+      "source_group": "sklearn_linear_regularization",
+      "intent": "Estimate ridge regression generalization with alpha=1.0, five shuffled KFold splits, random_state=42. Report mean negative mean squared error and all fold scores.",
+      "run_id": "pilot-fbaf3c69",
+      "split": "test"
+    },
+    {
+      "task": "forest_cv",
+      "source_group": "sklearn_nonlinear_forest_validation",
+      "intent": "Estimate a 200-tree random forest classifier with five shuffled stratified folds, random_state=42. Report mean accuracy and all fold accuracies.",
+      "run_id": "pilot-fbaf3c69",
+      "split": "train"
+    },
+    {
+      "task": "boosting_cv",
+      "source_group": "sklearn_histogram_boosting",
+      "intent": "Estimate histogram gradient boosting classification with max_iter=200 and five shuffled stratified folds, random_state=42. Report mean accuracy and fold accuracies.",
+      "run_id": "pilot-fbaf3c69",
+      "split": "train"
+    },
+    {
+      "task": "kernel_cv",
+      "source_group": "sklearn_nonlinear_margin",
+      "intent": "Estimate RBF support-vector classification (C=1) with five shuffled stratified folds, random_state=42. Report mean accuracy and fold accuracies.",
+      "run_id": "pilot-fbaf3c69",
+      "split": "train"
+    },
+    {
+      "task": "extra_trees_cv",
+      "source_group": "sklearn_randomized_tree_validation",
+      "intent": "Estimate an extra-trees classifier with 300 trees and five shuffled stratified folds, random_state=42. Report mean accuracy and fold accuracies.",
+      "run_id": "pilot-fbaf3c69",
+      "split": "train"
+    },
+    {
+      "task": "missing_median",
+      "source_group": "extension_missing_median",
+      "intent": "Fill missing values by each column median. Report fill values, missing counts and resulting column means.",
+      "run_id": "extension-dc1e952d",
+      "split": "test"
+    },
+    {
+      "task": "upper_quantile",
+      "source_group": "extension_upper_quantile",
+      "intent": "Find the 90th percentile of column 1 using linear interpolation.",
+      "run_id": "extension-dc1e952d",
+      "split": "train"
+    },
+    {
+      "task": "weighted_groups",
+      "source_group": "extension_weighted_groups",
+      "intent": "Compute value column 1 weighted by column 2 within each integer group in column 0; sort groups.",
+      "run_id": "extension-dc1e952d",
+      "split": "train"
+    },
+    {
+      "task": "feature_correlation",
+      "source_group": "extension_feature_correlation",
+      "intent": "Compute the Pearson correlation matrix of columns 0, 1 and 2.",
+      "run_id": "extension-dc1e952d",
+      "split": "train"
+    },
+    {
+      "task": "composite_dedup",
+      "source_group": "extension_composite_dedup",
+      "intent": "Deduplicate on columns 0 and 1, keeping the first row. Report retained row count and sum of column 2 on retained rows.",
+      "run_id": "extension-dc1e952d",
+      "split": "train"
+    },
+    {
+      "task": "distribution_bins",
+      "source_group": "extension_distribution_bins",
+      "intent": "Count column 0 values in 8 equal-width bins over [-4,4], using numpy histogram endpoint conventions.",
+      "run_id": "extension-dc1e952d",
+      "split": "train"
+    },
+    {
+      "task": "categorical_independence",
+      "source_group": "extension_categorical_independence",
+      "intent": "Test independence of categorical columns 0 and 1 using Pearson chi-square without continuity correction. Return statistic, pvalue and degrees of freedom.",
+      "run_id": "extension-dc1e952d",
+      "split": "train"
+    },
+    {
+      "task": "bootstrap_interval",
+      "source_group": "extension_bootstrap_interval",
+      "intent": "Estimate a 95% percentile bootstrap confidence interval for the mean of column 0 using 1000 resamples and RNG seed 42. Return sample mean and interval endpoints.",
+      "run_id": "extension-dc1e952d",
+      "split": "train"
+    },
+    {
+      "task": "randomization_test",
+      "source_group": "extension_randomization_test",
+      "intent": "Test mean difference of column 0 between y=0 and y=1 with 1000 random label permutations, seed 42. Use two-sided absolute differences and plus-one pvalue; report difference group 0 minus 1.",
+      "run_id": "extension-dc1e952d",
+      "split": "train"
+    },
+    {
+      "task": "paired_measurements",
+      "source_group": "extension_paired_measurements",
+      "intent": "Perform a two-sided paired t test of column 0 minus column 1; report statistic and pvalue.",
+      "run_id": "extension-dc1e952d",
+      "split": "train"
+    },
+    {
+      "task": "multi_group_anova",
+      "source_group": "extension_multi_group_anova",
+      "intent": "Perform one-way ANOVA of column 1 across categorical groups in column 0; report statistic and pvalue.",
+      "run_id": "extension-dc1e952d",
+      "split": "test"
+    },
+    {
+      "task": "rank_sum_test",
+      "source_group": "extension_rank_sum_test",
+      "intent": "Perform a two-sided asymptotic Mann-Whitney U test comparing columns 0 and 1, with continuity correction; report statistic and pvalue.",
+      "run_id": "extension-dc1e952d",
+      "split": "test"
+    },
+    {
+      "task": "response_trend",
+      "source_group": "extension_response_trend",
+      "intent": "Fit unregularized OLS of y on column 0 with intercept. Report slope, intercept and R squared.",
+      "run_id": "extension-dc1e952d",
+      "split": "train"
+    },
+    {
+      "task": "robust_fences",
+      "source_group": "extension_robust_fences",
+      "intent": "Count column 0 observations outside Tukey fences Q1-1.5*IQR and Q3+1.5*IQR; report count and fraction.",
+      "run_id": "extension-dc1e952d",
+      "split": "train"
+    },
+    {
+      "task": "temporal_asof",
+      "source_group": "extension_temporal_asof",
+      "intent": "For each sorted left timestamp X[:,0], match the latest right timestamp y no later than it. Right values are X[:,1]. Report matched count, matched value sum and first 5 matched values.",
+      "run_id": "extension-dc1e952d",
+      "split": "test"
+    },
+    {
+      "task": "window_smoothing",
+      "source_group": "extension_window_smoothing",
+      "intent": "Compute trailing 51-sample rolling means of column 0, keeping valid windows only. Report count, mean, minimum and maximum of these means.",
+      "run_id": "extension-dc1e952d",
+      "split": "train"
+    },
+    {
+      "task": "time_buckets",
+      "source_group": "extension_time_buckets",
+      "intent": "Aggregate values X[:,1] into 60-second buckets floor(X[:,0]/60)*60. Report number of occupied buckets and first 5 sorted bucket sums.",
+      "run_id": "extension-dc1e952d",
+      "split": "train"
+    },
+    {
+      "task": "activity_sessions",
+      "source_group": "extension_activity_sessions",
+      "intent": "Sessionize sorted events X[:,0]: a gap greater than 30 starts a new session. Return session count, mean events per session and maximum last-minus-first duration.",
+      "run_id": "extension-dc1e952d",
+      "split": "train"
+    },
+    {
+      "task": "gap_interpolation",
+      "source_group": "extension_gap_interpolation",
+      "intent": "Use linear interpolation of finite values X[:,1] at times X[:,0] to evaluate query times y. Report query count, first 5 values and mean over all queries.",
+      "run_id": "extension-dc1e952d",
+      "split": "train"
+    },
+    {
+      "task": "dominant_frequency",
+      "source_group": "extension_dominant_frequency",
+      "intent": "For column 0 sampled at 128 Hz, find the dominant positive FFT frequency after centering, and its fraction of all non-DC power.",
+      "run_id": "extension-dc1e952d",
+      "split": "test"
+    },
+    {
+      "task": "signal_alignment",
+      "source_group": "extension_signal_alignment",
+      "intent": "Find signed lag maximizing full cross-correlation of centered X[:,0] with centered X[:,1], restricting absolute lag to 100.",
+      "run_id": "extension-dc1e952d",
+      "split": "train"
+    },
+    {
+      "task": "noise_filtering",
+      "source_group": "extension_noise_filtering",
+      "intent": "Apply order-4 zero-phase Butterworth low-pass to column 0 with 10 Hz cutoff at 100 Hz sample rate. Report filtered mean and RMS.",
+      "run_id": "extension-dc1e952d",
+      "split": "train"
+    },
+    {
+      "task": "event_peaks",
+      "source_group": "extension_event_peaks",
+      "intent": "Detect peaks in column 0 with minimum distance 50 samples and prominence 0.8. Return count, first 5 indices and mean peak height.",
+      "run_id": "extension-dc1e952d",
+      "split": "train"
+    },
+    {
+      "task": "curve_area",
+      "source_group": "extension_curve_area",
+      "intent": "Integrate X[:,1] against nonuniform sample positions X[:,0] using the trapezoid rule.",
+      "run_id": "extension-dc1e952d",
+      "split": "train"
+    },
+    {
+      "task": "bracketed_root",
+      "source_group": "extension_bracketed_root",
+      "intent": "Find the real polynomial root in [0,2]. Descending coefficients are X[:,0]. Return root and polynomial residual.",
+      "run_id": "extension-dc1e952d",
+      "split": "train"
+    },
+    {
+      "task": "portfolio_allocation",
+      "source_group": "extension_portfolio_allocation",
+      "intent": "Minimize 0.5*w.T*X*w+y.T*w subject to sum(w)=1 and each weight in [0,1]. Report optimal objective and weight sum.",
+      "run_id": "extension-dc1e952d",
+      "split": "train"
+    },
+    {
+      "task": "tridiagonal_system",
+      "source_group": "extension_tridiagonal_system",
+      "intent": "Solve a tridiagonal system: X columns 0/1/2 are lower/main/upper diagonals, y is RHS. Add 0.5 to the main diagonal. Return solution mean, Euclidean norm and max absolute residual.",
+      "run_id": "extension-dc1e952d",
+      "split": "train"
+    },
+    {
+      "task": "nonnegative_factors",
+      "source_group": "extension_nonnegative_factors",
+      "intent": "Fit rank-6 NMF to nonnegative X, random initialization seed 42, coordinate descent, tol=1e-4, max_iter=200. Report Frobenius reconstruction error.",
+      "run_id": "extension-dc1e952d",
+      "split": "train"
+    },
+    {
+      "task": "independent_sources",
+      "source_group": "extension_independent_sources",
+      "intent": "Separate 5 independent components using FastICA, unit-variance whitening, seed 42, tol=1e-4, max_iter=300. Report mean absolute excess kurtosis (biased estimator) across recovered signals.",
+      "run_id": "extension-dc1e952d",
+      "split": "train"
+    },
+    {
+      "task": "density_clusters",
+      "source_group": "extension_density_clusters",
+      "intent": "Apply Euclidean DBSCAN with eps=0.65 and min_samples=8. Return non-noise cluster count, noise count and largest cluster size.",
+      "run_id": "extension-dc1e952d",
+      "split": "train"
+    },
+    {
+      "task": "neighbor_retrieval",
+      "source_group": "extension_neighbor_retrieval",
+      "intent": "Use the first 1000 X rows as queries and remaining rows as training points. Find exact 5 nearest Euclidean neighbors. Report mean fifth distance and nearest training-relative index for the first 5 queries.",
+      "run_id": "extension-dc1e952d",
+      "split": "train"
+    },
+    {
+      "task": "anomaly_detection",
+      "source_group": "extension_anomaly_detection",
+      "intent": "Fit IsolationForest with 100 estimators, contamination=0.05, seed 42, single job. Return number with negative decision score and mean decision score.",
+      "run_id": "extension-dc1e952d",
+      "split": "train"
+    },
+    {
+      "task": "feature_information",
+      "source_group": "extension_feature_information",
+      "intent": "Estimate classification mutual information of every X column against y using 3 neighbors, seed 42. Return values and top 3 feature indices in descending order, ties by column index.",
+      "run_id": "extension-dc1e952d",
+      "split": "test"
+    },
+    {
+      "task": "recursive_forecast",
+      "source_group": "extension_recursive_forecast",
+      "intent": "Fit OLS AR(8) with intercept to X[:,0], then recursively forecast the next 5 values. Return forecast array.",
+      "run_id": "extension-dc1e952d",
+      "split": "train"
+    },
+    {
+      "task": "censored_survival",
+      "source_group": "extension_censored_survival",
+      "intent": "Estimate Kaplan-Meier survival from X[:,0] durations and X[:,1] event indicators. Report survival at time 3 and first event time when survival reaches 0.5 or below.",
+      "run_id": "extension-dc1e952d",
+      "split": "train"
+    },
+    {
+      "task": "image_regions",
+      "source_group": "extension_image_regions",
+      "intent": "Treat X as a binary image. Label 4-neighbor connected foreground regions, retain those with at least 8 pixels, and report region count and largest size.",
+      "run_id": "extension-dc1e952d",
+      "split": "test"
+    },
+    {
+      "task": "cost_assignment",
+      "source_group": "extension_cost_assignment",
+      "intent": "Find the minimum-cost one-to-one assignment of rows to columns in square cost matrix X. Return total cost and assigned count.",
+      "run_id": "extension-dc1e952d",
+      "split": "train"
+    },
+    {
+      "task": "distribution_transport",
+      "source_group": "extension_distribution_transport",
+      "intent": "Compute the order-1 Wasserstein distance between equally weighted empirical samples in columns 0 and 1.",
+      "run_id": "extension-dc1e952d",
+      "split": "train"
+    }
+  ],
+  "sizes": {
+    "train": {
+      "parents": 40,
+      "episodes": 119,
+      "snapshots": 275,
+      "episode_outcomes": {
+        "legal_demand": 79,
+        "retire": 40
+      }
+    },
+    "test": {
+      "parents": 10,
+      "episodes": 31,
+      "snapshots": 72,
+      "episode_outcomes": {
+        "legal_demand": 21,
+        "retire": 10
+      }
+    }
+  }
+}

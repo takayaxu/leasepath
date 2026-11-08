@@ -6,7 +6,9 @@ LeasePath 研究一个具体问题：**一个 Agent 上下文暂时空闲后，�
 
 **2026-11-07 扩量已完成：50 个成功开发母题。** 原12题加完整重跑通过的38题，独立质量/轨迹与导出重建核验通过；**150 episode、347 snapshots，U=100/D=50/C=0**。主要计算实测短中长35/11/4，≥60秒成功母题2个；首次49/50，整批修正后最终50/50，全部失败和重跑保留。累计331次生成（本次新增245），没有训练或在线实验。见[50题报告](reports/extension50_collection_2026-11-07.md)、[数据卡](results/migration/extension50_2026-11-07/fifty-parent-dataset-card.json)、[母题清单](results/migration/extension50_2026-11-07/fifty-parent-catalog.jsonl)。以下旧50母题/472 episode是旧机器历史，未与本轮合并。
 
-本 README 是新对话或新开发者的项目入口。先看“当前状态”，再按“快速开始”运行现有验收。下一阶段以 [真实开发与决策收益计划](reports/real_development_lookup_plan_2026-10-31.md) 为准；原 [预测计划](reports/mixed_workload_reuse_prediction_plan_2026-10-27.md)、[数据契约](docs/prediction_contract.md) 和 [项目架构](docs/architecture.md) 保留背景与实现说明。
+**2026-11-08 新服务器后续：** 已完成 50 道分析母题真实采集及 40/10 内部母题留出预测；条件经验在主指标上优于固定 GBDT，见 [预测评估](reports/qwen50_prediction_holdout_2026-11-08.md)。已将二者接入相同因果淘汰控制器并完成 16 组容量压力回放；条件经验与 GBDT 的淘汰块相同，尚无端到端加速实测。下一阶段是当前 32B 后端的多 owner 真实 KV 与配对 JCT 实验，见 [缓存策略结果与后续门槛](reports/qwen_cache_stage1_2026-11-08.md)。旧 Codex 修复路线不作为前置。
+
+本 README 是新对话或新开发者的项目入口。先看上方新服务器最新进度，再按“快速开始”运行现有验收。原 [真实开发与决策收益计划](reports/real_development_lookup_plan_2026-10-31.md)、[预测计划](reports/mixed_workload_reuse_prediction_plan_2026-10-27.md)、[数据契约](docs/prediction_contract.md) 和 [项目架构](docs/architecture.md) 保留历史背景与实现说明。
 
 当前数据集的统一入口为 [数据集说明](docs/dataset_card.md)：**50 个不同母题、65 条可审计主执行、472 个 idle episode、2,414 张快照**；质量子集为 54 条执行、47 个母题、296 个 episode、1,553 张快照。已在新目录合并并完成 [经验预测/GBDT 训练 v2](reports/prediction_v2_50parents_review.md)，原轮数据保持原版本；逐文件路径、分组与哈希见 [50 母题清单](results/prediction/dataset_inventory_50parents_2026-10-31.json)，[此前 16 母题清单](results/prediction/dataset_inventory_2026-10-31.json) 保留。
 

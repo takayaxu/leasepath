@@ -1,0 +1,1182 @@
+{
+  "policy": "gbdt",
+  "capacity_blocks": 64,
+  "requests": [
+    {
+      "owner": "dominant_frequency",
+      "request_index": 0,
+      "ready_s": 0.0,
+      "dispatch_s": 0.0,
+      "prompt_tokens": 1349,
+      "cached_tokens": 0
+    },
+    {
+      "owner": "feature_information",
+      "request_index": 0,
+      "ready_s": 0.0,
+      "dispatch_s": 3.391983245,
+      "prompt_tokens": 1286,
+      "cached_tokens": 384
+    },
+    {
+      "owner": "image_regions",
+      "request_index": 0,
+      "ready_s": 0.0,
+      "dispatch_s": 6.6183765900000004,
+      "prompt_tokens": 1350,
+      "cached_tokens": 384
+    },
+    {
+      "owner": "logistic_holdout",
+      "request_index": 0,
+      "ready_s": 0.0,
+      "dispatch_s": 9.915601926,
+      "prompt_tokens": 1092,
+      "cached_tokens": 128
+    },
+    {
+      "owner": "missing_median",
+      "request_index": 0,
+      "ready_s": 0.0,
+      "dispatch_s": 13.019235442000001,
+      "prompt_tokens": 1237,
+      "cached_tokens": 384
+    },
+    {
+      "owner": "multi_group_anova",
+      "request_index": 0,
+      "ready_s": 0.0,
+      "dispatch_s": 16.473064653,
+      "prompt_tokens": 1331,
+      "cached_tokens": 384
+    },
+    {
+      "owner": "priority_top",
+      "request_index": 0,
+      "ready_s": 0.0,
+      "dispatch_s": 19.889725898000002,
+      "prompt_tokens": 2006,
+      "cached_tokens": 384
+    },
+    {
+      "owner": "rank_sum_test",
+      "request_index": 0,
+      "ready_s": 0.0,
+      "dispatch_s": 23.861039852,
+      "prompt_tokens": 1347,
+      "cached_tokens": 384
+    },
+    {
+      "owner": "ridge_validation",
+      "request_index": 0,
+      "ready_s": 0.0,
+      "dispatch_s": 27.237976627000002,
+      "prompt_tokens": 1155,
+      "cached_tokens": 384
+    },
+    {
+      "owner": "temporal_asof",
+      "request_index": 0,
+      "ready_s": 0.0,
+      "dispatch_s": 30.289426867000003,
+      "prompt_tokens": 1288,
+      "cached_tokens": 384
+    },
+    {
+      "owner": "dominant_frequency",
+      "request_index": 1,
+      "ready_s": 3.74439598,
+      "dispatch_s": 33.68112825,
+      "prompt_tokens": 1541,
+      "cached_tokens": 1152
+    },
+    {
+      "owner": "feature_information",
+      "request_index": 1,
+      "ready_s": 6.97378881,
+      "dispatch_s": 37.177629614,
+      "prompt_tokens": 1764,
+      "cached_tokens": 1280
+    },
+    {
+      "owner": "image_regions",
+      "request_index": 1,
+      "ready_s": 10.33869245,
+      "dispatch_s": 40.519887974,
+      "prompt_tokens": 1556,
+      "cached_tokens": 1280
+    },
+    {
+      "owner": "missing_median",
+      "request_index": 1,
+      "ready_s": 17.299748277000003,
+      "dispatch_s": 43.861555581,
+      "prompt_tokens": 1570,
+      "cached_tokens": 1152
+    },
+    {
+      "owner": "logistic_holdout",
+      "request_index": 1,
+      "ready_s": 18.972203847000003,
+      "dispatch_s": 47.224855205,
+      "prompt_tokens": 1517,
+      "cached_tokens": 1024
+    },
+    {
+      "owner": "multi_group_anova",
+      "request_index": 1,
+      "ready_s": 20.090219235000003,
+      "dispatch_s": 54.479097624,
+      "prompt_tokens": 1528,
+      "cached_tokens": 1280
+    },
+    {
+      "owner": "priority_top",
+      "request_index": 1,
+      "ready_s": 24.565146955,
+      "dispatch_s": 57.814397535,
+      "prompt_tokens": 2116,
+      "cached_tokens": 1920
+    },
+    {
+      "owner": "rank_sum_test",
+      "request_index": 1,
+      "ready_s": 27.420774947,
+      "dispatch_s": 61.266832985,
+      "prompt_tokens": 1594,
+      "cached_tokens": 640
+    },
+    {
+      "owner": "temporal_asof",
+      "request_index": 1,
+      "ready_s": 34.086763417,
+      "dispatch_s": 64.87034843,
+      "prompt_tokens": 1596,
+      "cached_tokens": 896
+    },
+    {
+      "owner": "dominant_frequency",
+      "request_index": 2,
+      "ready_s": 39.429969637,
+      "dispatch_s": 68.03234326500001,
+      "prompt_tokens": 1651,
+      "cached_tokens": 1152
+    },
+    {
+      "owner": "feature_information",
+      "request_index": 2,
+      "ready_s": 44.123566843,
+      "dispatch_s": 74.26429752600001,
+      "prompt_tokens": 1977,
+      "cached_tokens": 1408
+    },
+    {
+      "owner": "image_regions",
+      "request_index": 2,
+      "ready_s": 46.248335284999996,
+      "dispatch_s": 89.265270473,
+      "prompt_tokens": 1649,
+      "cached_tokens": 1152
+    },
+    {
+      "owner": "missing_median",
+      "request_index": 2,
+      "ready_s": 47.744395118999996,
+      "dispatch_s": 94.030965449,
+      "prompt_tokens": 1786,
+      "cached_tokens": 1152
+    },
+    {
+      "owner": "multi_group_anova",
+      "request_index": 2,
+      "ready_s": 60.098053123999996,
+      "dispatch_s": 96.928757555,
+      "prompt_tokens": 1652,
+      "cached_tokens": 1280
+    },
+    {
+      "owner": "logistic_holdout",
+      "request_index": 2,
+      "ready_s": 60.233699689999995,
+      "dispatch_s": 104.34178519400001,
+      "prompt_tokens": 1656,
+      "cached_tokens": 1280
+    },
+    {
+      "owner": "priority_top",
+      "request_index": 2,
+      "ready_s": 62.092758925,
+      "dispatch_s": 109.56994630100002,
+      "prompt_tokens": 2313,
+      "cached_tokens": 1152
+    },
+    {
+      "owner": "rank_sum_test",
+      "request_index": 2,
+      "ready_s": 67.23167410100001,
+      "dispatch_s": 122.64700823200002,
+      "prompt_tokens": 1711,
+      "cached_tokens": 896
+    },
+    {
+      "owner": "temporal_asof",
+      "request_index": 2,
+      "ready_s": 69.990747849,
+      "dispatch_s": 129.37005589100002,
+      "prompt_tokens": 1798,
+      "cached_tokens": 1152
+    },
+    {
+      "owner": "ridge_validation",
+      "request_index": 1,
+      "ready_s": 82.668496659,
+      "dispatch_s": 144.05056889000002,
+      "prompt_tokens": 1636,
+      "cached_tokens": 384
+    },
+    {
+      "owner": "missing_median",
+      "request_index": 3,
+      "ready_s": 100.320618155,
+      "dispatch_s": 151.14012557900003,
+      "prompt_tokens": 2058,
+      "cached_tokens": 1664
+    },
+    {
+      "owner": "ridge_validation",
+      "request_index": 2,
+      "ready_s": 161.35272685400003,
+      "dispatch_s": 171.05470019900002,
+      "prompt_tokens": 1870,
+      "cached_tokens": 1536
+    }
+  ],
+  "decisions": [
+    {
+      "owner": "dominant_frequency",
+      "request_index": 0,
+      "at_s": 0.0,
+      "cached_blocks": 0,
+      "evicted": [],
+      "resident_blocks": 10
+    },
+    {
+      "owner": "feature_information",
+      "request_index": 0,
+      "at_s": 3.391983245,
+      "cached_blocks": 3,
+      "evicted": [],
+      "resident_blocks": 17
+    },
+    {
+      "owner": "image_regions",
+      "request_index": 0,
+      "at_s": 6.6183765900000004,
+      "cached_blocks": 3,
+      "evicted": [],
+      "resident_blocks": 24
+    },
+    {
+      "owner": "logistic_holdout",
+      "request_index": 0,
+      "at_s": 9.915601926,
+      "cached_blocks": 1,
+      "evicted": [],
+      "resident_blocks": 31
+    },
+    {
+      "owner": "missing_median",
+      "request_index": 0,
+      "at_s": 13.019235442000001,
+      "cached_blocks": 3,
+      "evicted": [],
+      "resident_blocks": 37
+    },
+    {
+      "owner": "multi_group_anova",
+      "request_index": 0,
+      "at_s": 16.473064653,
+      "cached_blocks": 3,
+      "evicted": [],
+      "resident_blocks": 44
+    },
+    {
+      "owner": "priority_top",
+      "request_index": 0,
+      "at_s": 19.889725898000002,
+      "cached_blocks": 3,
+      "evicted": [],
+      "resident_blocks": 56
+    },
+    {
+      "owner": "rank_sum_test",
+      "request_index": 0,
+      "at_s": 23.861039852,
+      "cached_blocks": 3,
+      "evicted": [],
+      "resident_blocks": 63
+    },
+    {
+      "owner": "ridge_validation",
+      "request_index": 0,
+      "at_s": 27.237976627000002,
+      "cached_blocks": 3,
+      "evicted": [
+        {
+          "key": "ef7d5fbc144910c40113258d35c08beb3e9cebf10bf898d6cf2c0940786135c8",
+          "live_owners": [
+            "rank_sum_test"
+          ],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.49236527001198516
+        },
+        {
+          "key": "68f10bc2a558752340af1bda87a9b10359b9c0c533d5540f461fc24f1cdec632",
+          "live_owners": [
+            "rank_sum_test"
+          ],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.49236527001198516
+        },
+        {
+          "key": "e373dee243dc7bf310e9636fdf1e2a3591d5dde50f7f9a2fa040b8da6b824d63",
+          "live_owners": [
+            "rank_sum_test"
+          ],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.49236527001198516
+        },
+        {
+          "key": "4d226aabfc1fffe3d699471d10021f8ed519154d58f0988c493205e4726b6788",
+          "live_owners": [
+            "rank_sum_test"
+          ],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.49236527001198516
+        },
+        {
+          "key": "9de15e6e8f7afe2d97ef79ba45eab3fc52574644454faeeee7fb04b1c25920f1",
+          "live_owners": [
+            "rank_sum_test"
+          ],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.49236527001198516
+        }
+      ],
+      "resident_blocks": 64
+    },
+    {
+      "owner": "temporal_asof",
+      "request_index": 0,
+      "at_s": 30.289426867000003,
+      "cached_blocks": 3,
+      "evicted": [
+        {
+          "key": "58e7db79629eeec98315f12079ca8523ff69c001b884e7d62f0141dcd233dc99",
+          "live_owners": [
+            "ridge_validation"
+          ],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.49236527001198516
+        },
+        {
+          "key": "9454ccb41ea9c398bbce859507c986f528959ab97dc5e588ac021dcf4cde17c8",
+          "live_owners": [
+            "ridge_validation"
+          ],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.49236527001198516
+        },
+        {
+          "key": "fb49ec20c8d93ade462822757c08baaadb80499b0b2683b7a9fa2a2bd4b29aad",
+          "live_owners": [
+            "ridge_validation"
+          ],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.49236527001198516
+        },
+        {
+          "key": "e3f4c541d591eae8c2540f4f9f5ecb474cd2709c1d040423c246e2372f773f64",
+          "live_owners": [
+            "ridge_validation"
+          ],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.49236527001198516
+        },
+        {
+          "key": "6dae00b290084404ed082fa9ca93e66a0c49fa46045e2d870d3bc02610a08e5f",
+          "live_owners": [
+            "ridge_validation"
+          ],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.49236527001198516
+        },
+        {
+          "key": "a9f1c50d4ef89810cf96ff6d391a81204092a0de733fb0fcee8c3cdcda98eaf6",
+          "live_owners": [
+            "ridge_validation"
+          ],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.49236527001198516
+        },
+        {
+          "key": "64ca1d3409d087efea837f6b49f12afc0dbcf7da7f1058bbeaf8b3bd444c6b3d",
+          "live_owners": [
+            "dominant_frequency"
+          ],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.6368593353456715
+        }
+      ],
+      "resident_blocks": 64
+    },
+    {
+      "owner": "dominant_frequency",
+      "request_index": 1,
+      "at_s": 33.68112825,
+      "cached_blocks": 9,
+      "evicted": [
+        {
+          "key": "64aed60a4a54edaf5ec09f910f45a71c508c0d947d8d79c49f583b288e119144",
+          "live_owners": [
+            "temporal_asof"
+          ],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.49236527001198516
+        },
+        {
+          "key": "f52ef0e156ccd72e7ee8fe737beaa027b6c30916cb6475eb47bec072bfe41af3",
+          "live_owners": [
+            "temporal_asof"
+          ],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.49236527001198516
+        },
+        {
+          "key": "691658ce6bc3d514a56b6bd8021448c0ce0201e60b8a57b23167cf54b82d56a7",
+          "live_owners": [
+            "temporal_asof"
+          ],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.49236527001198516
+        }
+      ],
+      "resident_blocks": 64
+    },
+    {
+      "owner": "feature_information",
+      "request_index": 1,
+      "at_s": 37.177629614,
+      "cached_blocks": 10,
+      "evicted": [
+        {
+          "key": "0028bccff47397805f048423663380358a1cbd57af1aeb4cbfac4fe83cdbdd65",
+          "live_owners": [
+            "dominant_frequency"
+          ],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.49236527001198516
+        },
+        {
+          "key": "50739feac63b56c979fdfbe9e29d005ffbb82a2da2a885b8831e7a89162d8113",
+          "live_owners": [
+            "dominant_frequency"
+          ],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.49236527001198516
+        },
+        {
+          "key": "64ca1d3409d087efea837f6b49f12afc0dbcf7da7f1058bbeaf8b3bd444c6b3d",
+          "live_owners": [
+            "dominant_frequency"
+          ],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.49236527001198516
+        }
+      ],
+      "resident_blocks": 64
+    },
+    {
+      "owner": "image_regions",
+      "request_index": 1,
+      "at_s": 40.519887974,
+      "cached_blocks": 10,
+      "evicted": [
+        {
+          "key": "7ecf84a77dc2891f4d6daed6167cec9e4986d4499eee4ef831514a63f87cc195",
+          "live_owners": [
+            "feature_information"
+          ],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.49236527001198516
+        },
+        {
+          "key": "7258298a013af5faff7b39ed0a118e3f3c28af6c1e039cb7b4c89d6b17c16f96",
+          "live_owners": [
+            "feature_information"
+          ],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.49236527001198516
+        }
+      ],
+      "resident_blocks": 64
+    },
+    {
+      "owner": "missing_median",
+      "request_index": 1,
+      "at_s": 43.861555581,
+      "cached_blocks": 9,
+      "evicted": [
+        {
+          "key": "e1387a8f583736ffe1ec7b0eae3118d14cefc88f26b121a879bb36ffcb9252e8",
+          "live_owners": [
+            "image_regions"
+          ],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.49236527001198516
+        },
+        {
+          "key": "05c75a51043b6065bace43d92cd7c46f4ade623ab17271496866dfceedc70a48",
+          "live_owners": [
+            "image_regions"
+          ],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.49236527001198516
+        },
+        {
+          "key": "cf935814d9063133e6abbf4f13f791a26c00d42b5ea4712ae77bb246304b2b65",
+          "live_owners": [
+            "image_regions"
+          ],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.49236527001198516
+        }
+      ],
+      "resident_blocks": 64
+    },
+    {
+      "owner": "logistic_holdout",
+      "request_index": 1,
+      "at_s": 47.224855205,
+      "cached_blocks": 8,
+      "evicted": [
+        {
+          "key": "56bbf4be2dd1f6a4e8303af13ebb2c3f2909d7eddc1dc1d60b4cac744c6a8b85",
+          "live_owners": [
+            "missing_median"
+          ],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.49236527001198516
+        },
+        {
+          "key": "b496c7d9e652ad659c0adc2e9323112d610210fc31d9a9502955f8d306d880f6",
+          "live_owners": [
+            "missing_median"
+          ],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.49236527001198516
+        },
+        {
+          "key": "0960cd25c333afdd934cde661aef7faab41bd69aaa515d363cdf8e183de6a4ba",
+          "live_owners": [
+            "missing_median"
+          ],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.49236527001198516
+        }
+      ],
+      "resident_blocks": 64
+    },
+    {
+      "owner": "multi_group_anova",
+      "request_index": 1,
+      "at_s": 54.479097624,
+      "cached_blocks": 10,
+      "evicted": [
+        {
+          "key": "5568152e39f095314be28ca9334cd450ef1bbe4ea749bc17f7bba484b91f9415",
+          "live_owners": [
+            "logistic_holdout"
+          ],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.49236527001198516
+        }
+      ],
+      "resident_blocks": 64
+    },
+    {
+      "owner": "priority_top",
+      "request_index": 1,
+      "at_s": 57.814397535,
+      "cached_blocks": 15,
+      "evicted": [
+        {
+          "key": "ed2f29fa016ac053e514458748dc1807f0aaffc703e7bfdea86e388874fce3f4",
+          "live_owners": [
+            "multi_group_anova"
+          ],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.49236527001198516
+        }
+      ],
+      "resident_blocks": 64
+    },
+    {
+      "owner": "rank_sum_test",
+      "request_index": 1,
+      "at_s": 61.266832985,
+      "cached_blocks": 5,
+      "evicted": [
+        {
+          "key": "c28137ec420e5bc23033e6d429b88f1bcd2baea1987fdf7a4a99cc73744005bf",
+          "live_owners": [
+            "priority_top"
+          ],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.49236527001198516
+        },
+        {
+          "key": "6df48d541beaf346f8594d86d09a0f26df747366e3b1b405c0aeb03316e4b3d3",
+          "live_owners": [
+            "priority_top"
+          ],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.49236527001198516
+        },
+        {
+          "key": "a9b9128829f83c9c3f3ec3243d2290a3109a88980bce586ffdb53556a8c89a85",
+          "live_owners": [
+            "priority_top"
+          ],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.49236527001198516
+        },
+        {
+          "key": "51753ec4897fdb59e79cd545551beb7467dd740b4d9c13b2ea9181c987e4bddc",
+          "live_owners": [
+            "priority_top"
+          ],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.49236527001198516
+        },
+        {
+          "key": "b7b77b08c6be550175a8aedb37bc64178654942f15fbb99af2b90e3b8ce6d87c",
+          "live_owners": [
+            "priority_top"
+          ],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.49236527001198516
+        },
+        {
+          "key": "5e380a1e40227b140b23255c33f6fa9ff920f9325edb9603d6c296c2ca3f2cf9",
+          "live_owners": [
+            "priority_top"
+          ],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.49236527001198516
+        },
+        {
+          "key": "671dc703029bd0e5186f23f2e6f5cef2ffd0d7c2b598dcee50c1ffd93dd928db",
+          "live_owners": [
+            "priority_top"
+          ],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.49236527001198516
+        }
+      ],
+      "resident_blocks": 64
+    },
+    {
+      "owner": "temporal_asof",
+      "request_index": 1,
+      "at_s": 64.87034843,
+      "cached_blocks": 7,
+      "evicted": [
+        {
+          "key": "2a1ff05b5008da3436ef40eac928296a2e1c54c0ab6790ac29ac7288d95b3f0d",
+          "live_owners": [
+            "rank_sum_test"
+          ],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.49236527001198516
+        },
+        {
+          "key": "8867bcb77eba33b609c53e05270141e96e0b1d99a69d007a355e11cdbc0bd1f4",
+          "live_owners": [
+            "rank_sum_test"
+          ],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.49236527001198516
+        },
+        {
+          "key": "ef7d5fbc144910c40113258d35c08beb3e9cebf10bf898d6cf2c0940786135c8",
+          "live_owners": [
+            "rank_sum_test"
+          ],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.49236527001198516
+        },
+        {
+          "key": "68f10bc2a558752340af1bda87a9b10359b9c0c533d5540f461fc24f1cdec632",
+          "live_owners": [
+            "rank_sum_test"
+          ],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.49236527001198516
+        },
+        {
+          "key": "e373dee243dc7bf310e9636fdf1e2a3591d5dde50f7f9a2fa040b8da6b824d63",
+          "live_owners": [
+            "rank_sum_test"
+          ],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.49236527001198516
+        }
+      ],
+      "resident_blocks": 64
+    },
+    {
+      "owner": "dominant_frequency",
+      "request_index": 2,
+      "at_s": 68.03234326500001,
+      "cached_blocks": 9,
+      "evicted": [
+        {
+          "key": "8cb44fbca7adaf8c79e2b6d66a82e034276ec15d30df29b3fc035bfcd320404f",
+          "live_owners": [
+            "temporal_asof"
+          ],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.49236527001198516
+        },
+        {
+          "key": "a030cba754fa337f7782d1f997070c6c66611567dd7ff4905184decde295ecec",
+          "live_owners": [
+            "temporal_asof"
+          ],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.49236527001198516
+        },
+        {
+          "key": "64aed60a4a54edaf5ec09f910f45a71c508c0d947d8d79c49f583b288e119144",
+          "live_owners": [
+            "temporal_asof"
+          ],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.49236527001198516
+        }
+      ],
+      "resident_blocks": 64
+    },
+    {
+      "owner": "feature_information",
+      "request_index": 2,
+      "at_s": 74.26429752600001,
+      "cached_blocks": 11,
+      "evicted": [
+        {
+          "key": "0028bccff47397805f048423663380358a1cbd57af1aeb4cbfac4fe83cdbdd65",
+          "live_owners": [
+            "dominant_frequency"
+          ],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.49236527001198516
+        },
+        {
+          "key": "50739feac63b56c979fdfbe9e29d005ffbb82a2da2a885b8831e7a89162d8113",
+          "live_owners": [
+            "dominant_frequency"
+          ],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.49236527001198516
+        },
+        {
+          "key": "64ca1d3409d087efea837f6b49f12afc0dbcf7da7f1058bbeaf8b3bd444c6b3d",
+          "live_owners": [
+            "dominant_frequency"
+          ],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.49236527001198516
+        },
+        {
+          "key": "1ad13974e58200358abf7b1d64d56e79df160485c31d877f605374588e402feb",
+          "live_owners": [
+            "dominant_frequency"
+          ],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.49236527001198516
+        }
+      ],
+      "resident_blocks": 64
+    },
+    {
+      "owner": "image_regions",
+      "request_index": 2,
+      "at_s": 89.265270473,
+      "cached_blocks": 9,
+      "evicted": [
+        {
+          "key": "fa8f0db0e74eb894e52b9310f43b11e1d203226f15d02cda7efab119cdfba5f9",
+          "live_owners": [],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.0
+        },
+        {
+          "key": "54af429e2e45727f76ea563c3f26146ebc6920fe60be5a2194d03a9a6db115b5",
+          "live_owners": [],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.0
+        },
+        {
+          "key": "5d9127af02e80ee3bbdad4d34999a630738eeff6f295f26121e86bee4ecf8083",
+          "live_owners": [],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.0
+        }
+      ],
+      "resident_blocks": 64
+    },
+    {
+      "owner": "missing_median",
+      "request_index": 2,
+      "at_s": 94.030965449,
+      "cached_blocks": 9,
+      "evicted": [
+        {
+          "key": "81e4c9d42f53b7de70a0e4afb502c16ed20f14256ae9eaebd5792b2d8944f2a2",
+          "live_owners": [],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.0
+        },
+        {
+          "key": "45f3c4565cd4c3e409579f39c4513f362a5e5f65c355f36cf111df46a5f14466",
+          "live_owners": [],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.0
+        },
+        {
+          "key": "6ea671fa73e5a685123aa92f5b97bef347159b91e7be03c679d45d9ec85373ca",
+          "live_owners": [],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.0
+        },
+        {
+          "key": "61f1e094eef644137afdab986c857fa8849dfac51106282b4ea1576fad0ded1c",
+          "live_owners": [],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.0
+        }
+      ],
+      "resident_blocks": 64
+    },
+    {
+      "owner": "multi_group_anova",
+      "request_index": 2,
+      "at_s": 96.928757555,
+      "cached_blocks": 10,
+      "evicted": [
+        {
+          "key": "7ecf84a77dc2891f4d6daed6167cec9e4986d4499eee4ef831514a63f87cc195",
+          "live_owners": [],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.0
+        },
+        {
+          "key": "7258298a013af5faff7b39ed0a118e3f3c28af6c1e039cb7b4c89d6b17c16f96",
+          "live_owners": [],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.0
+        }
+      ],
+      "resident_blocks": 64
+    },
+    {
+      "owner": "logistic_holdout",
+      "request_index": 2,
+      "at_s": 104.34178519400001,
+      "cached_blocks": 10,
+      "evicted": [
+        {
+          "key": "841a1413087adb4d3a9ebc76033f4a4661d7c3ab427d622c93dadec0fdb1c27b",
+          "live_owners": [],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.0
+        },
+        {
+          "key": "c60b44aabdfbd0b49e5a71512e1fd34b18683572fe09160cb860b564591a84df",
+          "live_owners": [],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.0
+        }
+      ],
+      "resident_blocks": 64
+    },
+    {
+      "owner": "priority_top",
+      "request_index": 2,
+      "at_s": 109.56994630100002,
+      "cached_blocks": 9,
+      "evicted": [
+        {
+          "key": "aed1f6e7b003cd057759c222d1aceb6407978ad388a1f7b7106a36455a4d6f4c",
+          "live_owners": [],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.0
+        },
+        {
+          "key": "da42d2a627e74beee5873186c7450f8851ad0a0593f79cb10b6791f1e3667961",
+          "live_owners": [],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.0
+        },
+        {
+          "key": "0c1e0ad981c077c000d44248e0510ac35af88bd1f4aeae7224359b70223dabd7",
+          "live_owners": [],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.0
+        },
+        {
+          "key": "8683f754906d4e4fbe0d520fb3502b7e227bfa24ce2c9ccd08a0d4dd901ef6f9",
+          "live_owners": [],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.0
+        },
+        {
+          "key": "f2f1cfdeb4a1a56f0afdac18ed09cb5749f345643d49aef35ae7b88c01f6d387",
+          "live_owners": [],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.0
+        },
+        {
+          "key": "1fdfab59404641edd13c082b7c64b0421177fa4f41a946fa11c18ac692dac190",
+          "live_owners": [],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.0
+        },
+        {
+          "key": "e1387a8f583736ffe1ec7b0eae3118d14cefc88f26b121a879bb36ffcb9252e8",
+          "live_owners": [],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.0
+        },
+        {
+          "key": "05c75a51043b6065bace43d92cd7c46f4ade623ab17271496866dfceedc70a48",
+          "live_owners": [],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.0
+        },
+        {
+          "key": "cf935814d9063133e6abbf4f13f791a26c00d42b5ea4712ae77bb246304b2b65",
+          "live_owners": [],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.0
+        }
+      ],
+      "resident_blocks": 64
+    },
+    {
+      "owner": "rank_sum_test",
+      "request_index": 2,
+      "at_s": 122.64700823200002,
+      "cached_blocks": 7,
+      "evicted": [
+        {
+          "key": "299dc92d32be59f291b678c2ff206f9b7c2d74b499a0d16a891ac9875e49dd89",
+          "live_owners": [],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.0
+        },
+        {
+          "key": "b38711602f361e57859117fcce5ed0340ddb2ad14c06983860febb063c13fc75",
+          "live_owners": [],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.0
+        },
+        {
+          "key": "3e42e76234116da3ce57e0dfd1ce14257d74c71da70e38ccfe2888c3d8d6b0b2",
+          "live_owners": [],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.0
+        },
+        {
+          "key": "63d19f92930d38fd3eba86af309709ff54043fa95a2b54f18c00e4ed8ac6684c",
+          "live_owners": [],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.0
+        },
+        {
+          "key": "eaf5307f74df4da81bc72210d3e222702b6b20a37e541eb5cc5f9332559fe3a2",
+          "live_owners": [],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.0
+        },
+        {
+          "key": "cf13d99a990c3a573dcf14af32c58976e7e723b449f6a8cc593c7f10e5aebd3a",
+          "live_owners": [],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.0
+        }
+      ],
+      "resident_blocks": 64
+    },
+    {
+      "owner": "temporal_asof",
+      "request_index": 2,
+      "at_s": 129.37005589100002,
+      "cached_blocks": 9,
+      "evicted": [
+        {
+          "key": "ae20677131fd2f632cf96eb69bc1759c94168152e7aa2436859695348eed9a43",
+          "live_owners": [],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.0
+        },
+        {
+          "key": "ed2f29fa016ac053e514458748dc1807f0aaffc703e7bfdea86e388874fce3f4",
+          "live_owners": [],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.0
+        },
+        {
+          "key": "0ae774f7c964c149ec51a2bce3a71240be89d64c9b573a0e73f4b8ac70f968a4",
+          "live_owners": [],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.0
+        },
+        {
+          "key": "e6fb267cc1753ab83cecb07b7099171ad943b1a75fdd01b2d0f1944a328b530f",
+          "live_owners": [],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.0
+        },
+        {
+          "key": "a2b310724726bb384fb12f71a3a6bd9197f2639136a592430424e93998d27841",
+          "live_owners": [],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.0
+        }
+      ],
+      "resident_blocks": 64
+    },
+    {
+      "owner": "ridge_validation",
+      "request_index": 1,
+      "at_s": 144.05056889000002,
+      "cached_blocks": 3,
+      "evicted": [
+        {
+          "key": "099325631f92b2f263b7b3aa589b3793b16c41418a9fcb25d1dda8b8bad3ccfc",
+          "live_owners": [],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.0
+        },
+        {
+          "key": "ccc78ad697e56d97176f6bec3b49ef097fadccf5cbdea27228b985d8bbf83926",
+          "live_owners": [],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.0
+        },
+        {
+          "key": "1612600159124b2bb88c11d6404c78dfd4c2a9ee73e82afdbf360c4939cb403e",
+          "live_owners": [],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.0
+        },
+        {
+          "key": "d02bcc1f086f4bc7583abcbcdf52e0a6f178d16407fc00450d4e815ebfa88789",
+          "live_owners": [],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.0
+        },
+        {
+          "key": "b172e6a60cb190d1782fe46df0db6219fa1c8738962f9fcd118272e4fa62cd62",
+          "live_owners": [],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.0
+        },
+        {
+          "key": "5568152e39f095314be28ca9334cd450ef1bbe4ea749bc17f7bba484b91f9415",
+          "live_owners": [],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.0
+        },
+        {
+          "key": "5836039f51b034dca6677c526757e52edc7eafc163605133f05f4c29286a6286",
+          "live_owners": [],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.0
+        },
+        {
+          "key": "990935830aee81cc1e26b6e4d8c397ddf11476a948bfaaab0ed08d79d6e761ff",
+          "live_owners": [],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.0
+        },
+        {
+          "key": "fc88d8cc9ff875562f37d02b26259e6034090bb9be6eccc71b17f4335e976ea8",
+          "live_owners": [],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.0
+        }
+      ],
+      "resident_blocks": 64
+    },
+    {
+      "owner": "missing_median",
+      "request_index": 3,
+      "at_s": 151.14012557900003,
+      "cached_blocks": 13,
+      "evicted": [
+        {
+          "key": "5b1b196447456f5363dffd0dc6918ceb6f8d54e9a2c0961ec1713fdd7a612951",
+          "live_owners": [],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.0
+        },
+        {
+          "key": "22ab714edf45575909a6509c5ab087ae425d5633494f3c979fd2ee6a8974d5ad",
+          "live_owners": [],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.0
+        },
+        {
+          "key": "13823dec1c304c3fc3f1873c750a57accd3dfe9800458f6713125dd940159b43",
+          "live_owners": [],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.0
+        }
+      ],
+      "resident_blocks": 64
+    },
+    {
+      "owner": "ridge_validation",
+      "request_index": 2,
+      "at_s": 171.05470019900002,
+      "cached_blocks": 12,
+      "evicted": [
+        {
+          "key": "29b468e0acbb625d488ecf724b711bdec78aedb0076086de4c82c0b974afad4e",
+          "live_owners": [],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.0
+        },
+        {
+          "key": "fda2b8e8789e4431cdc13760f26d22a114b29b71b56432627cbe1e50285d007e",
+          "live_owners": [],
+          "reason": "predicted_reuse",
+          "reuse_probability_proxy": 0.0
+        }
+      ],
+      "resident_blocks": 64
+    }
+  ],
+  "cached_tokens": 28032,
+  "prompt_tokens": 49980,
+  "missed_input_tokens": 21948,
+  "evictions": 92,
+  "prediction_calls": 159,
+  "prediction_wall_ms": 117.681559,
+  "unsupported_fallback_sweeps": 0,
+  "evidence_kind": "counterfactual_cache_metadata_replay_fixed_measured_service",
+  "JCT_benefit_measured": false
+}

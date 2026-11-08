@@ -1,0 +1,146 @@
+{
+  "status": "passed",
+  "scope": "40 train / 10 internal held-out parent tasks; no tuning",
+  "primary_metric": "macro_parent_multiclass_cumulative_brier_at_0.1_seconds_lower_is_better",
+  "sizes": {
+    "train": {
+      "parents": 40,
+      "episodes": 119,
+      "snapshots": 275,
+      "episode_outcomes": {
+        "legal_demand": 79,
+        "retire": 40
+      }
+    },
+    "test": {
+      "parents": 10,
+      "episodes": 31,
+      "snapshots": 72,
+      "episode_outcomes": {
+        "legal_demand": 21,
+        "retire": 10
+      }
+    }
+  },
+  "test_tasks": [
+    "dominant_frequency",
+    "feature_information",
+    "image_regions",
+    "logistic_holdout",
+    "missing_median",
+    "multi_group_anova",
+    "priority_top",
+    "rank_sum_test",
+    "ridge_validation",
+    "temporal_asof"
+  ],
+  "primary_brier3_at_0.1s": {
+    "global": 0.43881076388888884,
+    "conditional": 0.29755530996209034,
+    "gbdt": 0.3902993423491083
+  },
+  "models": {
+    "global": {
+      "fitted_groups": 0,
+      "supported_right_edges": [
+        0.01,
+        0.03,
+        0.1,
+        0.3,
+        1,
+        3,
+        10,
+        30,
+        60,
+        120,
+        300
+      ],
+      "fit_and_predict_wall_s": 0.02365731610916555,
+      "model_sha256": "b6be9a68a5ba01bb2e9dafea7d875c6cddeb156f3bdb2c3ef10922226058646a",
+      "prediction_estimate_sources_by_supported_interval": {
+        "global": 792
+      },
+      "predict_ms_median": 0.0671875
+    },
+    "conditional": {
+      "fitted_groups": 9,
+      "supported_right_edges": [
+        0.01,
+        0.03,
+        0.1,
+        0.3,
+        1,
+        3,
+        10,
+        30,
+        60,
+        120,
+        300
+      ],
+      "fit_and_predict_wall_s": 0.04239480406977236,
+      "model_sha256": "b42ee7799f3e6532c2f68da0129ab80280c52fb89658b24581bc86b77851adfb",
+      "prediction_estimate_sources_by_supported_interval": {
+        "group_shrunk_to_global": 606,
+        "global_fallback": 186
+      },
+      "predict_ms_median": 0.087151
+    },
+    "gbdt": {
+      "training_risk_rows": 1552,
+      "boosting_iterations": 40,
+      "trees": 120,
+      "maximum_leaves": 3,
+      "vocabularies": {
+        "tool_name": [
+          null,
+          "compute",
+          "inspect_input"
+        ],
+        "phase": [
+          null,
+          "waiting_tool"
+        ]
+      },
+      "elapsed_bins": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "supported_right_edges": [
+        0.01,
+        0.03,
+        0.1,
+        0.3,
+        1,
+        3,
+        10,
+        30,
+        60,
+        120,
+        300
+      ],
+      "fit_and_predict_wall_s": 0.16526356316171587,
+      "model_sha256": "283b3c829a48460360ccf6a1ac311e2e7989a90d74d2338e15e25b08f7e78c5c",
+      "prediction_estimate_sources_by_supported_interval": {
+        "gbdt_shared_multiclass": 792
+      },
+      "predict_ms_median": 0.6477679999999999
+    }
+  },
+  "learned_inputs": [
+    "tool_name",
+    "phase",
+    "elapsed_idle_bin",
+    "interval_index"
+  ],
+  "weighting": "each task total 1; each episode equal within task; each snapshot equal within episode",
+  "limitations": [
+    "previously inspected development data: internal holdout, not blind external test",
+    "shared data/library families across train and test; only analysis intents held out",
+    "small test set; all-success filtered collection; no natural censoring",
+    "coarse features; per-operation identity and future durations excluded for both models",
+    "unsupported tail intervals excluded and counted, not filled using test labels",
+    "no online cache policy, JCT or new model-generation run"
+  ]
+}

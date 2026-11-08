@@ -100,6 +100,8 @@ TraceLab 的独立辅助通路是：固定来源压缩包 → 来源哈希核验
 
 ## 可选后端资源
 
+2026-11-08 新服务器进展：`predictive_cache.py` 已提供独立因果淘汰控制器，`replay_qwen_cache_policy.py` 将冻结条件经验／GBDT 接入相同压力淘汰规则，按 active 保护、共享 owner 和前缀祖先闭包管理元数据。它未改写旧 `source_replay.py`，也尚未接到当前 32B 真机；固定服务时间的压力回放不产生 JCT 收益证据。当前 32B `qwen_data_cuda.cpp` 仍为单序列，下一步多 owner 实际 KV enactment 与端到端验收见 [新服务器缓存阶段报告](../reports/qwen_cache_stage1_2026-11-08.md)。
+
 `native.py` 仍使用 `.artifacts/d6-native/liblp_native.so` 和 `models/Qwen2.5-3B-Instruct/Qwen2.5-3B-Instruct-f16.gguf`。其中 `d6-native` 是保留下来的二进制目录名，不表示新计划的 D6 已完成。没有为整理目录移动 llama.cpp 源码/构建，否则旧构建中的绝对路径会失效。
 
 `scripts/build_native.py` 使用 `patches/native_bridge.cpp` 链接现有 `.artifacts/llama-build/bin`。它只编译 bridge，不从零安装 CUDA 或构建 llama.cpp。两个 `llama-*.patch` 保留后端修改依据；旧后端从零准备流程在项目外归档，尚未迁移为新的安装入口。
