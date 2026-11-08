@@ -90,7 +90,12 @@ def main():
         'runtime_libraries_sha256': identity['linked_runtime_libraries'],
         'training_compatibility': training_compatibility,
         'statistical_transfer': 'explicit mapping after new native gate; same model, tokenizer, F16 KV, context and coarse features; tensor identities remain separate',
-        'budget_at_start': budget.summary(), 'started_wall_ns': time.time_ns()}
+        'budget_at_start': budget.summary(), 'started_wall_ns': time.time_ns(),
+        'timed_worker_hashes': {str(p.resolve()): file_hash(p) for p in
+            [ROOT/'src/leasepath/restricted_data_timed_worker.py', ROOT/'src/leasepath/restricted_data_timed_tools.py']}}
+    manifest['memory_settings'] = {name: Path(name).read_text().strip() for name in
+        ['/sys/kernel/mm/transparent_hugepage/enabled', '/sys/kernel/mm/transparent_hugepage/defrag',
+         '/proc/sys/kernel/numa_balancing'] if Path(name).exists()}
     write(args.output/'run-manifest.json', manifest)
     engine = None
     try:

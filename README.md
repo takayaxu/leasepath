@@ -8,6 +8,8 @@ LeasePath 研究一个具体问题：**一个 Agent 上下文暂时空闲后，�
 
 **2026-11-08 新服务器后续：** 已完成 50 道分析母题真实采集及 40/10 内部母题留出预测，见 [预测评估](reports/qwen50_prediction_holdout_2026-11-08.md)；随后完成 [16 组容量回放](reports/qwen_cache_stage1_2026-11-08.md)。**真实 32B 多 owner KV 与异步工具闭环已通过：54/54 次任务正确，181 次生成逐请求复核。** 三母题／六策略／三轮小规模实测中，释放优先 LRU 平均 JCT 为 46.29s，无复用为 53.99s（观测降低 14.26%）；条件经验 53.11s、GBDT 47.36s，未证明预测策略有额外收益。条件经验包含一次真实工具长延迟，未剔除。见 [完整真机结果与限制](reports/qwen_cache_stage2_2026-11-08.md)。下一步预先固定容量／并发压力矩阵并分解工具波动；不把这三题当作独立大规模性能结论。旧 Codex 修复路线不作为前置。
 
+**2026-11-08 固定压力矩阵已有部分实测，完整矩阵未通过。** 24/32/64块×3/6/10会话、三策略三轮预先冻结；一次通用JSON提示修订后重新从头执行，24块×3/6会话共81/81任务正确，10会话首批9/10因最终artifact ID少一字符停止；32/64块未跑。6会话GBDT平均JCT观测降低3.13%，3会话反而增加9.48%，尚无稳定端到端结论。预测有额外真实命中，工具长尾已分到读取／计算／内核CPU；两次尝试共409次生成，409次请求均通过独立证据审计，两个质量失败按原样保留；账本封口，GPU关闭。见[压力矩阵、全部失败及工具分解](reports/qwen_cache_stage3_2026-11-08.md)。下一步优先保证最终产物引用可靠、干净隔离内存波动，再补全矩阵。
+
 本 README 是新对话或新开发者的项目入口。先看上方新服务器最新进度，再按“快速开始”运行现有验收。原 [真实开发与决策收益计划](reports/real_development_lookup_plan_2026-10-31.md)、[预测计划](reports/mixed_workload_reuse_prediction_plan_2026-10-27.md)、[数据契约](docs/prediction_contract.md) 和 [项目架构](docs/architecture.md) 保留历史背景与实现说明。
 
 当前数据集的统一入口为 [数据集说明](docs/dataset_card.md)：**50 个不同母题、65 条可审计主执行、472 个 idle episode、2,414 张快照**；质量子集为 54 条执行、47 个母题、296 个 episode、1,553 张快照。已在新目录合并并完成 [经验预测/GBDT 训练 v2](reports/prediction_v2_50parents_review.md)，原轮数据保持原版本；逐文件路径、分组与哈希见 [50 母题清单](results/prediction/dataset_inventory_50parents_2026-10-31.json)，[此前 16 母题清单](results/prediction/dataset_inventory_2026-10-31.json) 保留。

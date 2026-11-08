@@ -51,9 +51,6 @@ def main():
     manifest = {'status': 'running', 'plan_sha256': sha256(args.plan), 'started_wall_ns': time.time_ns(),
                 'capacities': [], 'pid': os.getpid(), 'budget_limits': plan['budget_limits'],
                 'cpu_affinity': sorted(os.sched_getaffinity(0)), 'resource_sample_interval_s': 10}
-    manifest['memory_settings'] = {name: Path(name).read_text().strip() for name in
-        ['/sys/kernel/mm/transparent_hugepage/enabled', '/sys/kernel/mm/transparent_hugepage/defrag',
-         '/proc/sys/kernel/numa_balancing'] if Path(name).exists()}
     write(args.output/'matrix-manifest.json', manifest)
     stopping = threading.Event()
     sampler = threading.Thread(target=resource_samples, args=(args.output, stopping), daemon=True)
