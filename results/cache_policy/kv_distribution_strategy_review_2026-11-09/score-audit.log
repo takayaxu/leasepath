@@ -1,0 +1,79 @@
+{
+  "status": "passed",
+  "analysis_only": true,
+  "model_generations": 0,
+  "training_performed": false,
+  "parameters": {
+    "H_s": 30,
+    "tau_s": 10,
+    "weights": "exp(-right_edge/tau)",
+    "costs": "equal",
+    "min_global_workflows": 5
+  },
+  "original_probability_checks": 84,
+  "summary": {
+    "conditional": {
+      "states": 48,
+      "owner_pairs": 36,
+      "strict_reversals": 0,
+      "order_or_tie_changes": 0
+    },
+    "gbdt": {
+      "states": 48,
+      "owner_pairs": 36,
+      "strict_reversals": 2,
+      "order_or_tie_changes": 2
+    }
+  },
+  "support": [
+    {
+      "right_s": 0.01,
+      "workflows": 40
+    },
+    {
+      "right_s": 0.03,
+      "workflows": 40
+    },
+    {
+      "right_s": 0.1,
+      "workflows": 40
+    },
+    {
+      "right_s": 0.3,
+      "workflows": 40
+    },
+    {
+      "right_s": 1,
+      "workflows": 40
+    },
+    {
+      "right_s": 3,
+      "workflows": 38
+    },
+    {
+      "right_s": 10,
+      "workflows": 13
+    },
+    {
+      "right_s": 30,
+      "workflows": 6
+    },
+    {
+      "right_s": 60,
+      "workflows": 4
+    },
+    {
+      "right_s": 120,
+      "workflows": 2
+    },
+    {
+      "right_s": 300,
+      "workflows": 2
+    },
+    {
+      "right_s": 600,
+      "workflows": 0
+    }
+  ],
+  "interpretation": "Same recorded states rescored by both frozen models. Owner pairs are not necessarily legal victim pairs. No new cache state trajectory, hit count, prefill saving or JCT is inferred."
+}

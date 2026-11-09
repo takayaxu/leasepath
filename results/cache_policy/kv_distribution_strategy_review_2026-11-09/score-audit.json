@@ -1,0 +1,2366 @@
+{
+  "status": "passed",
+  "analysis_only": true,
+  "model_generations": 0,
+  "training_performed": false,
+  "parameters": {
+    "H_s": 30,
+    "tau_s": 10,
+    "weights": "exp(-right_edge/tau)",
+    "costs": "equal",
+    "min_global_workflows": 5
+  },
+  "original_probability_checks": 84,
+  "summary": {
+    "conditional": {
+      "states": 48,
+      "owner_pairs": 36,
+      "strict_reversals": 0,
+      "order_or_tie_changes": 0
+    },
+    "gbdt": {
+      "states": 48,
+      "owner_pairs": 36,
+      "strict_reversals": 2,
+      "order_or_tie_changes": 2
+    }
+  },
+  "support": [
+    {
+      "right_s": 0.01,
+      "workflows": 40
+    },
+    {
+      "right_s": 0.03,
+      "workflows": 40
+    },
+    {
+      "right_s": 0.1,
+      "workflows": 40
+    },
+    {
+      "right_s": 0.3,
+      "workflows": 40
+    },
+    {
+      "right_s": 1,
+      "workflows": 40
+    },
+    {
+      "right_s": 3,
+      "workflows": 38
+    },
+    {
+      "right_s": 10,
+      "workflows": 13
+    },
+    {
+      "right_s": 30,
+      "workflows": 6
+    },
+    {
+      "right_s": 60,
+      "workflows": 4
+    },
+    {
+      "right_s": 120,
+      "workflows": 2
+    },
+    {
+      "right_s": 300,
+      "workflows": 2
+    },
+    {
+      "right_s": 600,
+      "workflows": 0
+    }
+  ],
+  "interpretation": "Same recorded states rescored by both frozen models. Owner pairs are not necessarily legal victim pairs. No new cache state trajectory, hit count, prefill saving or JCT is inferred.",
+  "source_sha256": {
+    "/home/liuxv/LeasePath-new-server-data/scripts/audit_kv_distribution_proposal.py": "49eba130b5f1f861109ffcb23f217879af246fe44cf2c5fe17dfe3a3689a54a0",
+    "/home/liuxv/LeasePath-new-server-data/results/prediction/qwen50_holdout_2026-11-08/conditional-model.json": "b42ee7799f3e6532c2f68da0129ab80280c52fb89658b24581bc86b77851adfb",
+    "/home/liuxv/LeasePath-new-server-data/results/prediction/qwen50_holdout_2026-11-08/gbdt-model.json": "283b3c829a48460360ccf6a1ac311e2e7989a90d74d2338e15e25b08f7e78c5c"
+  },
+  "cases": [
+    {
+      "source": "natural/concurrency-3-repeat-0-conditional/logistic_holdout-quality.json",
+      "request_ordinal": 2,
+      "recorded_policy": "conditional",
+      "models": {
+        "conditional": {
+          "owner_scores": {
+            "ridge_validation": {
+              "F_U_3s": 0.6889743065973912,
+              "discounted_F_U_H30_tau10": 0.591335477698067
+            },
+            "temporal_asof": {
+              "F_U_3s": 0.5599999999999996,
+              "discounted_F_U_H30_tau10": 0.49834649316906776
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "ridge_validation",
+                "temporal_asof"
+              ],
+              "old_sign": 1,
+              "new_sign": 1,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        },
+        "gbdt": {
+          "owner_scores": {
+            "ridge_validation": {
+              "F_U_3s": 0.5471156027651083,
+              "discounted_F_U_H30_tau10": 0.5286224068215681
+            },
+            "temporal_asof": {
+              "F_U_3s": 0.5286341049758164,
+              "discounted_F_U_H30_tau10": 0.5040346602848541
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "ridge_validation",
+                "temporal_asof"
+              ],
+              "old_sign": 1,
+              "new_sign": 1,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source": "natural/concurrency-3-repeat-0-conditional/ridge_validation-quality.json",
+      "request_ordinal": 1,
+      "recorded_policy": "conditional",
+      "models": {
+        "conditional": {
+          "owner_scores": {
+            "temporal_asof": {
+              "F_U_3s": 0.6735873139494633,
+              "discounted_F_U_H30_tau10": 0.6094460560919968
+            },
+            "logistic_holdout": {
+              "F_U_3s": 0.5599999999999996,
+              "discounted_F_U_H30_tau10": 0.49834649316906776
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "logistic_holdout",
+                "temporal_asof"
+              ],
+              "old_sign": -1,
+              "new_sign": -1,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        },
+        "gbdt": {
+          "owner_scores": {
+            "temporal_asof": {
+              "F_U_3s": 0.6395217258581605,
+              "discounted_F_U_H30_tau10": 0.6094240503251538
+            },
+            "logistic_holdout": {
+              "F_U_3s": 0.5286341049758164,
+              "discounted_F_U_H30_tau10": 0.5040346602848541
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "logistic_holdout",
+                "temporal_asof"
+              ],
+              "old_sign": -1,
+              "new_sign": -1,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source": "natural/concurrency-3-repeat-0-conditional/temporal_asof-quality.json",
+      "request_ordinal": 1,
+      "recorded_policy": "conditional",
+      "models": {
+        "conditional": {
+          "owner_scores": {
+            "logistic_holdout": {
+              "F_U_3s": 0.5599999999999996,
+              "discounted_F_U_H30_tau10": 0.49834649316906776
+            },
+            "ridge_validation": {
+              "F_U_3s": 0.5599999999999996,
+              "discounted_F_U_H30_tau10": 0.49834649316906776
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "logistic_holdout",
+                "ridge_validation"
+              ],
+              "old_sign": 0,
+              "new_sign": 0,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        },
+        "gbdt": {
+          "owner_scores": {
+            "logistic_holdout": {
+              "F_U_3s": 0.5516570027214646,
+              "discounted_F_U_H30_tau10": 0.5326276877542939
+            },
+            "ridge_validation": {
+              "F_U_3s": 0.5286341049758164,
+              "discounted_F_U_H30_tau10": 0.5040346602848541
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "logistic_holdout",
+                "ridge_validation"
+              ],
+              "old_sign": 1,
+              "new_sign": 1,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source": "natural/concurrency-3-repeat-0-conditional/temporal_asof-quality.json",
+      "request_ordinal": 2,
+      "recorded_policy": "conditional",
+      "models": {
+        "conditional": {
+          "owner_scores": {
+            "ridge_validation": {
+              "F_U_3s": 0.6889743065973912,
+              "discounted_F_U_H30_tau10": 0.591335477698067
+            }
+          },
+          "pairs": []
+        },
+        "gbdt": {
+          "owner_scores": {
+            "ridge_validation": {
+              "F_U_3s": 0.5471156027651083,
+              "discounted_F_U_H30_tau10": 0.5286224068215681
+            }
+          },
+          "pairs": []
+        }
+      }
+    },
+    {
+      "source": "natural/concurrency-3-repeat-0-gbdt/logistic_holdout-quality.json",
+      "request_ordinal": 2,
+      "recorded_policy": "gbdt",
+      "models": {
+        "conditional": {
+          "owner_scores": {
+            "ridge_validation": {
+              "F_U_3s": 0.6889743065973912,
+              "discounted_F_U_H30_tau10": 0.591335477698067
+            },
+            "temporal_asof": {
+              "F_U_3s": 0.5599999999999996,
+              "discounted_F_U_H30_tau10": 0.49834649316906776
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "ridge_validation",
+                "temporal_asof"
+              ],
+              "old_sign": 1,
+              "new_sign": 1,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        },
+        "gbdt": {
+          "owner_scores": {
+            "ridge_validation": {
+              "F_U_3s": 0.5471156027651083,
+              "discounted_F_U_H30_tau10": 0.5286224068215681
+            },
+            "temporal_asof": {
+              "F_U_3s": 0.5286341049758164,
+              "discounted_F_U_H30_tau10": 0.5040346602848541
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "ridge_validation",
+                "temporal_asof"
+              ],
+              "old_sign": 1,
+              "new_sign": 1,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source": "natural/concurrency-3-repeat-0-gbdt/ridge_validation-quality.json",
+      "request_ordinal": 1,
+      "recorded_policy": "gbdt",
+      "models": {
+        "conditional": {
+          "owner_scores": {
+            "temporal_asof": {
+              "F_U_3s": 0.6735873139494633,
+              "discounted_F_U_H30_tau10": 0.6094460560919968
+            },
+            "logistic_holdout": {
+              "F_U_3s": 0.5599999999999996,
+              "discounted_F_U_H30_tau10": 0.49834649316906776
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "logistic_holdout",
+                "temporal_asof"
+              ],
+              "old_sign": -1,
+              "new_sign": -1,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        },
+        "gbdt": {
+          "owner_scores": {
+            "temporal_asof": {
+              "F_U_3s": 0.6395217258581605,
+              "discounted_F_U_H30_tau10": 0.6094240503251538
+            },
+            "logistic_holdout": {
+              "F_U_3s": 0.5286341049758164,
+              "discounted_F_U_H30_tau10": 0.5040346602848541
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "logistic_holdout",
+                "temporal_asof"
+              ],
+              "old_sign": -1,
+              "new_sign": -1,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source": "natural/concurrency-3-repeat-0-gbdt/temporal_asof-quality.json",
+      "request_ordinal": 1,
+      "recorded_policy": "gbdt",
+      "models": {
+        "conditional": {
+          "owner_scores": {
+            "logistic_holdout": {
+              "F_U_3s": 0.5599999999999996,
+              "discounted_F_U_H30_tau10": 0.49834649316906776
+            },
+            "ridge_validation": {
+              "F_U_3s": 0.5599999999999996,
+              "discounted_F_U_H30_tau10": 0.49834649316906776
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "logistic_holdout",
+                "ridge_validation"
+              ],
+              "old_sign": 0,
+              "new_sign": 0,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        },
+        "gbdt": {
+          "owner_scores": {
+            "logistic_holdout": {
+              "F_U_3s": 0.5516570027214646,
+              "discounted_F_U_H30_tau10": 0.5326276877542939
+            },
+            "ridge_validation": {
+              "F_U_3s": 0.5286341049758164,
+              "discounted_F_U_H30_tau10": 0.5040346602848541
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "logistic_holdout",
+                "ridge_validation"
+              ],
+              "old_sign": 1,
+              "new_sign": 1,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source": "natural/concurrency-3-repeat-0-gbdt/temporal_asof-quality.json",
+      "request_ordinal": 2,
+      "recorded_policy": "gbdt",
+      "models": {
+        "conditional": {
+          "owner_scores": {
+            "ridge_validation": {
+              "F_U_3s": 0.6889743065973912,
+              "discounted_F_U_H30_tau10": 0.591335477698067
+            }
+          },
+          "pairs": []
+        },
+        "gbdt": {
+          "owner_scores": {
+            "ridge_validation": {
+              "F_U_3s": 0.5471156027651083,
+              "discounted_F_U_H30_tau10": 0.5286224068215681
+            }
+          },
+          "pairs": []
+        }
+      }
+    },
+    {
+      "source": "natural/concurrency-3-repeat-1-conditional/logistic_holdout-quality.json",
+      "request_ordinal": 2,
+      "recorded_policy": "conditional",
+      "models": {
+        "conditional": {
+          "owner_scores": {
+            "ridge_validation": {
+              "F_U_3s": 0.6889743065973912,
+              "discounted_F_U_H30_tau10": 0.591335477698067
+            },
+            "temporal_asof": {
+              "F_U_3s": 0.5599999999999996,
+              "discounted_F_U_H30_tau10": 0.49834649316906776
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "ridge_validation",
+                "temporal_asof"
+              ],
+              "old_sign": 1,
+              "new_sign": 1,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        },
+        "gbdt": {
+          "owner_scores": {
+            "ridge_validation": {
+              "F_U_3s": 0.5471156027651083,
+              "discounted_F_U_H30_tau10": 0.5286224068215681
+            },
+            "temporal_asof": {
+              "F_U_3s": 0.5286341049758164,
+              "discounted_F_U_H30_tau10": 0.5040346602848541
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "ridge_validation",
+                "temporal_asof"
+              ],
+              "old_sign": 1,
+              "new_sign": 1,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source": "natural/concurrency-3-repeat-1-conditional/ridge_validation-quality.json",
+      "request_ordinal": 1,
+      "recorded_policy": "conditional",
+      "models": {
+        "conditional": {
+          "owner_scores": {
+            "temporal_asof": {
+              "F_U_3s": 0.6735873139494633,
+              "discounted_F_U_H30_tau10": 0.6094460560919968
+            },
+            "logistic_holdout": {
+              "F_U_3s": 0.5599999999999996,
+              "discounted_F_U_H30_tau10": 0.49834649316906776
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "logistic_holdout",
+                "temporal_asof"
+              ],
+              "old_sign": -1,
+              "new_sign": -1,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        },
+        "gbdt": {
+          "owner_scores": {
+            "temporal_asof": {
+              "F_U_3s": 0.6395217258581605,
+              "discounted_F_U_H30_tau10": 0.6094240503251538
+            },
+            "logistic_holdout": {
+              "F_U_3s": 0.5286341049758164,
+              "discounted_F_U_H30_tau10": 0.5040346602848541
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "logistic_holdout",
+                "temporal_asof"
+              ],
+              "old_sign": -1,
+              "new_sign": -1,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source": "natural/concurrency-3-repeat-1-conditional/temporal_asof-quality.json",
+      "request_ordinal": 1,
+      "recorded_policy": "conditional",
+      "models": {
+        "conditional": {
+          "owner_scores": {
+            "logistic_holdout": {
+              "F_U_3s": 0.5599999999999996,
+              "discounted_F_U_H30_tau10": 0.49834649316906776
+            },
+            "ridge_validation": {
+              "F_U_3s": 0.5599999999999996,
+              "discounted_F_U_H30_tau10": 0.49834649316906776
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "logistic_holdout",
+                "ridge_validation"
+              ],
+              "old_sign": 0,
+              "new_sign": 0,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        },
+        "gbdt": {
+          "owner_scores": {
+            "logistic_holdout": {
+              "F_U_3s": 0.5516570027214646,
+              "discounted_F_U_H30_tau10": 0.5326276877542939
+            },
+            "ridge_validation": {
+              "F_U_3s": 0.5286341049758164,
+              "discounted_F_U_H30_tau10": 0.5040346602848541
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "logistic_holdout",
+                "ridge_validation"
+              ],
+              "old_sign": 1,
+              "new_sign": 1,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source": "natural/concurrency-3-repeat-1-conditional/temporal_asof-quality.json",
+      "request_ordinal": 2,
+      "recorded_policy": "conditional",
+      "models": {
+        "conditional": {
+          "owner_scores": {
+            "ridge_validation": {
+              "F_U_3s": 0.6889743065973912,
+              "discounted_F_U_H30_tau10": 0.591335477698067
+            }
+          },
+          "pairs": []
+        },
+        "gbdt": {
+          "owner_scores": {
+            "ridge_validation": {
+              "F_U_3s": 0.5471156027651083,
+              "discounted_F_U_H30_tau10": 0.5286224068215681
+            }
+          },
+          "pairs": []
+        }
+      }
+    },
+    {
+      "source": "natural/concurrency-3-repeat-1-gbdt/logistic_holdout-quality.json",
+      "request_ordinal": 2,
+      "recorded_policy": "gbdt",
+      "models": {
+        "conditional": {
+          "owner_scores": {
+            "ridge_validation": {
+              "F_U_3s": 0.6889743065973912,
+              "discounted_F_U_H30_tau10": 0.591335477698067
+            },
+            "temporal_asof": {
+              "F_U_3s": 0.5599999999999996,
+              "discounted_F_U_H30_tau10": 0.49834649316906776
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "ridge_validation",
+                "temporal_asof"
+              ],
+              "old_sign": 1,
+              "new_sign": 1,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        },
+        "gbdt": {
+          "owner_scores": {
+            "ridge_validation": {
+              "F_U_3s": 0.5471156027651083,
+              "discounted_F_U_H30_tau10": 0.5286224068215681
+            },
+            "temporal_asof": {
+              "F_U_3s": 0.5599999999999996,
+              "discounted_F_U_H30_tau10": 0.49834649316906776
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "ridge_validation",
+                "temporal_asof"
+              ],
+              "old_sign": -1,
+              "new_sign": 1,
+              "strict_reversal": true,
+              "order_or_tie_changed": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source": "natural/concurrency-3-repeat-1-gbdt/ridge_validation-quality.json",
+      "request_ordinal": 1,
+      "recorded_policy": "gbdt",
+      "models": {
+        "conditional": {
+          "owner_scores": {
+            "temporal_asof": {
+              "F_U_3s": 0.6735873139494633,
+              "discounted_F_U_H30_tau10": 0.6094460560919968
+            },
+            "logistic_holdout": {
+              "F_U_3s": 0.5599999999999996,
+              "discounted_F_U_H30_tau10": 0.49834649316906776
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "logistic_holdout",
+                "temporal_asof"
+              ],
+              "old_sign": -1,
+              "new_sign": -1,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        },
+        "gbdt": {
+          "owner_scores": {
+            "temporal_asof": {
+              "F_U_3s": 0.6395217258581605,
+              "discounted_F_U_H30_tau10": 0.6094240503251538
+            },
+            "logistic_holdout": {
+              "F_U_3s": 0.5286341049758164,
+              "discounted_F_U_H30_tau10": 0.5040346602848541
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "logistic_holdout",
+                "temporal_asof"
+              ],
+              "old_sign": -1,
+              "new_sign": -1,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source": "natural/concurrency-3-repeat-1-gbdt/temporal_asof-quality.json",
+      "request_ordinal": 1,
+      "recorded_policy": "gbdt",
+      "models": {
+        "conditional": {
+          "owner_scores": {
+            "logistic_holdout": {
+              "F_U_3s": 0.5599999999999996,
+              "discounted_F_U_H30_tau10": 0.49834649316906776
+            },
+            "ridge_validation": {
+              "F_U_3s": 0.5599999999999996,
+              "discounted_F_U_H30_tau10": 0.49834649316906776
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "logistic_holdout",
+                "ridge_validation"
+              ],
+              "old_sign": 0,
+              "new_sign": 0,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        },
+        "gbdt": {
+          "owner_scores": {
+            "logistic_holdout": {
+              "F_U_3s": 0.5516570027214646,
+              "discounted_F_U_H30_tau10": 0.5326276877542939
+            },
+            "ridge_validation": {
+              "F_U_3s": 0.5286341049758164,
+              "discounted_F_U_H30_tau10": 0.5040346602848541
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "logistic_holdout",
+                "ridge_validation"
+              ],
+              "old_sign": 1,
+              "new_sign": 1,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source": "natural/concurrency-3-repeat-1-gbdt/temporal_asof-quality.json",
+      "request_ordinal": 2,
+      "recorded_policy": "gbdt",
+      "models": {
+        "conditional": {
+          "owner_scores": {
+            "ridge_validation": {
+              "F_U_3s": 0.6889743065973912,
+              "discounted_F_U_H30_tau10": 0.591335477698067
+            }
+          },
+          "pairs": []
+        },
+        "gbdt": {
+          "owner_scores": {
+            "ridge_validation": {
+              "F_U_3s": 0.5471156027651083,
+              "discounted_F_U_H30_tau10": 0.5286224068215681
+            }
+          },
+          "pairs": []
+        }
+      }
+    },
+    {
+      "source": "natural/concurrency-3-repeat-2-conditional/logistic_holdout-quality.json",
+      "request_ordinal": 2,
+      "recorded_policy": "conditional",
+      "models": {
+        "conditional": {
+          "owner_scores": {
+            "ridge_validation": {
+              "F_U_3s": 0.6889743065973912,
+              "discounted_F_U_H30_tau10": 0.591335477698067
+            },
+            "temporal_asof": {
+              "F_U_3s": 0.5599999999999996,
+              "discounted_F_U_H30_tau10": 0.49834649316906776
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "ridge_validation",
+                "temporal_asof"
+              ],
+              "old_sign": 1,
+              "new_sign": 1,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        },
+        "gbdt": {
+          "owner_scores": {
+            "ridge_validation": {
+              "F_U_3s": 0.5471156027651083,
+              "discounted_F_U_H30_tau10": 0.5286224068215681
+            },
+            "temporal_asof": {
+              "F_U_3s": 0.5286341049758164,
+              "discounted_F_U_H30_tau10": 0.5040346602848541
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "ridge_validation",
+                "temporal_asof"
+              ],
+              "old_sign": 1,
+              "new_sign": 1,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source": "natural/concurrency-3-repeat-2-conditional/ridge_validation-quality.json",
+      "request_ordinal": 1,
+      "recorded_policy": "conditional",
+      "models": {
+        "conditional": {
+          "owner_scores": {
+            "temporal_asof": {
+              "F_U_3s": 0.6735873139494633,
+              "discounted_F_U_H30_tau10": 0.6094460560919968
+            },
+            "logistic_holdout": {
+              "F_U_3s": 0.5599999999999996,
+              "discounted_F_U_H30_tau10": 0.49834649316906776
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "logistic_holdout",
+                "temporal_asof"
+              ],
+              "old_sign": -1,
+              "new_sign": -1,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        },
+        "gbdt": {
+          "owner_scores": {
+            "temporal_asof": {
+              "F_U_3s": 0.6395217258581605,
+              "discounted_F_U_H30_tau10": 0.6094240503251538
+            },
+            "logistic_holdout": {
+              "F_U_3s": 0.5286341049758164,
+              "discounted_F_U_H30_tau10": 0.5040346602848541
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "logistic_holdout",
+                "temporal_asof"
+              ],
+              "old_sign": -1,
+              "new_sign": -1,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source": "natural/concurrency-3-repeat-2-conditional/temporal_asof-quality.json",
+      "request_ordinal": 1,
+      "recorded_policy": "conditional",
+      "models": {
+        "conditional": {
+          "owner_scores": {
+            "logistic_holdout": {
+              "F_U_3s": 0.5599999999999996,
+              "discounted_F_U_H30_tau10": 0.49834649316906776
+            },
+            "ridge_validation": {
+              "F_U_3s": 0.5599999999999996,
+              "discounted_F_U_H30_tau10": 0.49834649316906776
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "logistic_holdout",
+                "ridge_validation"
+              ],
+              "old_sign": 0,
+              "new_sign": 0,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        },
+        "gbdt": {
+          "owner_scores": {
+            "logistic_holdout": {
+              "F_U_3s": 0.5516570027214646,
+              "discounted_F_U_H30_tau10": 0.5326276877542939
+            },
+            "ridge_validation": {
+              "F_U_3s": 0.5286341049758164,
+              "discounted_F_U_H30_tau10": 0.5040346602848541
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "logistic_holdout",
+                "ridge_validation"
+              ],
+              "old_sign": 1,
+              "new_sign": 1,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source": "natural/concurrency-3-repeat-2-conditional/temporal_asof-quality.json",
+      "request_ordinal": 2,
+      "recorded_policy": "conditional",
+      "models": {
+        "conditional": {
+          "owner_scores": {
+            "ridge_validation": {
+              "F_U_3s": 0.6889743065973912,
+              "discounted_F_U_H30_tau10": 0.591335477698067
+            }
+          },
+          "pairs": []
+        },
+        "gbdt": {
+          "owner_scores": {
+            "ridge_validation": {
+              "F_U_3s": 0.5471156027651083,
+              "discounted_F_U_H30_tau10": 0.5286224068215681
+            }
+          },
+          "pairs": []
+        }
+      }
+    },
+    {
+      "source": "natural/concurrency-3-repeat-2-gbdt/logistic_holdout-quality.json",
+      "request_ordinal": 2,
+      "recorded_policy": "gbdt",
+      "models": {
+        "conditional": {
+          "owner_scores": {
+            "ridge_validation": {
+              "F_U_3s": 0.6889743065973912,
+              "discounted_F_U_H30_tau10": 0.591335477698067
+            },
+            "temporal_asof": {
+              "F_U_3s": 0.5599999999999996,
+              "discounted_F_U_H30_tau10": 0.49834649316906776
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "ridge_validation",
+                "temporal_asof"
+              ],
+              "old_sign": 1,
+              "new_sign": 1,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        },
+        "gbdt": {
+          "owner_scores": {
+            "ridge_validation": {
+              "F_U_3s": 0.5471156027651083,
+              "discounted_F_U_H30_tau10": 0.5286224068215681
+            },
+            "temporal_asof": {
+              "F_U_3s": 0.5286341049758164,
+              "discounted_F_U_H30_tau10": 0.5040346602848541
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "ridge_validation",
+                "temporal_asof"
+              ],
+              "old_sign": 1,
+              "new_sign": 1,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source": "natural/concurrency-3-repeat-2-gbdt/ridge_validation-quality.json",
+      "request_ordinal": 1,
+      "recorded_policy": "gbdt",
+      "models": {
+        "conditional": {
+          "owner_scores": {
+            "temporal_asof": {
+              "F_U_3s": 0.6735873139494633,
+              "discounted_F_U_H30_tau10": 0.6094460560919968
+            },
+            "logistic_holdout": {
+              "F_U_3s": 0.5599999999999996,
+              "discounted_F_U_H30_tau10": 0.49834649316906776
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "logistic_holdout",
+                "temporal_asof"
+              ],
+              "old_sign": -1,
+              "new_sign": -1,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        },
+        "gbdt": {
+          "owner_scores": {
+            "temporal_asof": {
+              "F_U_3s": 0.6395217258581605,
+              "discounted_F_U_H30_tau10": 0.6094240503251538
+            },
+            "logistic_holdout": {
+              "F_U_3s": 0.5286341049758164,
+              "discounted_F_U_H30_tau10": 0.5040346602848541
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "logistic_holdout",
+                "temporal_asof"
+              ],
+              "old_sign": -1,
+              "new_sign": -1,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source": "natural/concurrency-3-repeat-2-gbdt/temporal_asof-quality.json",
+      "request_ordinal": 1,
+      "recorded_policy": "gbdt",
+      "models": {
+        "conditional": {
+          "owner_scores": {
+            "logistic_holdout": {
+              "F_U_3s": 0.5599999999999996,
+              "discounted_F_U_H30_tau10": 0.49834649316906776
+            },
+            "ridge_validation": {
+              "F_U_3s": 0.5599999999999996,
+              "discounted_F_U_H30_tau10": 0.49834649316906776
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "logistic_holdout",
+                "ridge_validation"
+              ],
+              "old_sign": 0,
+              "new_sign": 0,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        },
+        "gbdt": {
+          "owner_scores": {
+            "logistic_holdout": {
+              "F_U_3s": 0.5516570027214646,
+              "discounted_F_U_H30_tau10": 0.5326276877542939
+            },
+            "ridge_validation": {
+              "F_U_3s": 0.5599999999999996,
+              "discounted_F_U_H30_tau10": 0.49834649316906776
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "logistic_holdout",
+                "ridge_validation"
+              ],
+              "old_sign": -1,
+              "new_sign": 1,
+              "strict_reversal": true,
+              "order_or_tie_changed": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source": "natural/concurrency-3-repeat-2-gbdt/temporal_asof-quality.json",
+      "request_ordinal": 2,
+      "recorded_policy": "gbdt",
+      "models": {
+        "conditional": {
+          "owner_scores": {
+            "ridge_validation": {
+              "F_U_3s": 0.6889743065973912,
+              "discounted_F_U_H30_tau10": 0.591335477698067
+            }
+          },
+          "pairs": []
+        },
+        "gbdt": {
+          "owner_scores": {
+            "ridge_validation": {
+              "F_U_3s": 0.5471156027651083,
+              "discounted_F_U_H30_tau10": 0.5286224068215681
+            }
+          },
+          "pairs": []
+        }
+      }
+    },
+    {
+      "source": "natural/concurrency-3-repeat-3-conditional/logistic_holdout-quality.json",
+      "request_ordinal": 2,
+      "recorded_policy": "conditional",
+      "models": {
+        "conditional": {
+          "owner_scores": {
+            "ridge_validation": {
+              "F_U_3s": 0.6889743065973912,
+              "discounted_F_U_H30_tau10": 0.591335477698067
+            },
+            "temporal_asof": {
+              "F_U_3s": 0.5599999999999996,
+              "discounted_F_U_H30_tau10": 0.49834649316906776
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "ridge_validation",
+                "temporal_asof"
+              ],
+              "old_sign": 1,
+              "new_sign": 1,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        },
+        "gbdt": {
+          "owner_scores": {
+            "ridge_validation": {
+              "F_U_3s": 0.5471156027651083,
+              "discounted_F_U_H30_tau10": 0.5286224068215681
+            },
+            "temporal_asof": {
+              "F_U_3s": 0.5286341049758164,
+              "discounted_F_U_H30_tau10": 0.5040346602848541
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "ridge_validation",
+                "temporal_asof"
+              ],
+              "old_sign": 1,
+              "new_sign": 1,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source": "natural/concurrency-3-repeat-3-conditional/ridge_validation-quality.json",
+      "request_ordinal": 1,
+      "recorded_policy": "conditional",
+      "models": {
+        "conditional": {
+          "owner_scores": {
+            "temporal_asof": {
+              "F_U_3s": 0.6735873139494633,
+              "discounted_F_U_H30_tau10": 0.6094460560919968
+            },
+            "logistic_holdout": {
+              "F_U_3s": 0.5599999999999996,
+              "discounted_F_U_H30_tau10": 0.49834649316906776
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "logistic_holdout",
+                "temporal_asof"
+              ],
+              "old_sign": -1,
+              "new_sign": -1,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        },
+        "gbdt": {
+          "owner_scores": {
+            "temporal_asof": {
+              "F_U_3s": 0.6395217258581605,
+              "discounted_F_U_H30_tau10": 0.6094240503251538
+            },
+            "logistic_holdout": {
+              "F_U_3s": 0.5286341049758164,
+              "discounted_F_U_H30_tau10": 0.5040346602848541
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "logistic_holdout",
+                "temporal_asof"
+              ],
+              "old_sign": -1,
+              "new_sign": -1,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source": "natural/concurrency-3-repeat-3-conditional/temporal_asof-quality.json",
+      "request_ordinal": 1,
+      "recorded_policy": "conditional",
+      "models": {
+        "conditional": {
+          "owner_scores": {
+            "logistic_holdout": {
+              "F_U_3s": 0.5599999999999996,
+              "discounted_F_U_H30_tau10": 0.49834649316906776
+            },
+            "ridge_validation": {
+              "F_U_3s": 0.5599999999999996,
+              "discounted_F_U_H30_tau10": 0.49834649316906776
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "logistic_holdout",
+                "ridge_validation"
+              ],
+              "old_sign": 0,
+              "new_sign": 0,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        },
+        "gbdt": {
+          "owner_scores": {
+            "logistic_holdout": {
+              "F_U_3s": 0.5516570027214646,
+              "discounted_F_U_H30_tau10": 0.5326276877542939
+            },
+            "ridge_validation": {
+              "F_U_3s": 0.5286341049758164,
+              "discounted_F_U_H30_tau10": 0.5040346602848541
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "logistic_holdout",
+                "ridge_validation"
+              ],
+              "old_sign": 1,
+              "new_sign": 1,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source": "natural/concurrency-3-repeat-3-conditional/temporal_asof-quality.json",
+      "request_ordinal": 2,
+      "recorded_policy": "conditional",
+      "models": {
+        "conditional": {
+          "owner_scores": {
+            "ridge_validation": {
+              "F_U_3s": 0.6889743065973912,
+              "discounted_F_U_H30_tau10": 0.591335477698067
+            }
+          },
+          "pairs": []
+        },
+        "gbdt": {
+          "owner_scores": {
+            "ridge_validation": {
+              "F_U_3s": 0.5471156027651083,
+              "discounted_F_U_H30_tau10": 0.5286224068215681
+            }
+          },
+          "pairs": []
+        }
+      }
+    },
+    {
+      "source": "natural/concurrency-3-repeat-3-gbdt/logistic_holdout-quality.json",
+      "request_ordinal": 2,
+      "recorded_policy": "gbdt",
+      "models": {
+        "conditional": {
+          "owner_scores": {
+            "ridge_validation": {
+              "F_U_3s": 0.6889743065973912,
+              "discounted_F_U_H30_tau10": 0.591335477698067
+            },
+            "temporal_asof": {
+              "F_U_3s": 0.5599999999999996,
+              "discounted_F_U_H30_tau10": 0.49834649316906776
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "ridge_validation",
+                "temporal_asof"
+              ],
+              "old_sign": 1,
+              "new_sign": 1,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        },
+        "gbdt": {
+          "owner_scores": {
+            "ridge_validation": {
+              "F_U_3s": 0.5471156027651083,
+              "discounted_F_U_H30_tau10": 0.5286224068215681
+            },
+            "temporal_asof": {
+              "F_U_3s": 0.5286341049758164,
+              "discounted_F_U_H30_tau10": 0.5040346602848541
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "ridge_validation",
+                "temporal_asof"
+              ],
+              "old_sign": 1,
+              "new_sign": 1,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source": "natural/concurrency-3-repeat-3-gbdt/ridge_validation-quality.json",
+      "request_ordinal": 1,
+      "recorded_policy": "gbdt",
+      "models": {
+        "conditional": {
+          "owner_scores": {
+            "temporal_asof": {
+              "F_U_3s": 0.6735873139494633,
+              "discounted_F_U_H30_tau10": 0.6094460560919968
+            },
+            "logistic_holdout": {
+              "F_U_3s": 0.5599999999999996,
+              "discounted_F_U_H30_tau10": 0.49834649316906776
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "logistic_holdout",
+                "temporal_asof"
+              ],
+              "old_sign": -1,
+              "new_sign": -1,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        },
+        "gbdt": {
+          "owner_scores": {
+            "temporal_asof": {
+              "F_U_3s": 0.6395217258581605,
+              "discounted_F_U_H30_tau10": 0.6094240503251538
+            },
+            "logistic_holdout": {
+              "F_U_3s": 0.5286341049758164,
+              "discounted_F_U_H30_tau10": 0.5040346602848541
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "logistic_holdout",
+                "temporal_asof"
+              ],
+              "old_sign": -1,
+              "new_sign": -1,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source": "natural/concurrency-3-repeat-3-gbdt/temporal_asof-quality.json",
+      "request_ordinal": 1,
+      "recorded_policy": "gbdt",
+      "models": {
+        "conditional": {
+          "owner_scores": {
+            "logistic_holdout": {
+              "F_U_3s": 0.5599999999999996,
+              "discounted_F_U_H30_tau10": 0.49834649316906776
+            },
+            "ridge_validation": {
+              "F_U_3s": 0.5599999999999996,
+              "discounted_F_U_H30_tau10": 0.49834649316906776
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "logistic_holdout",
+                "ridge_validation"
+              ],
+              "old_sign": 0,
+              "new_sign": 0,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        },
+        "gbdt": {
+          "owner_scores": {
+            "logistic_holdout": {
+              "F_U_3s": 0.5516570027214646,
+              "discounted_F_U_H30_tau10": 0.5326276877542939
+            },
+            "ridge_validation": {
+              "F_U_3s": 0.5286341049758164,
+              "discounted_F_U_H30_tau10": 0.5040346602848541
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "logistic_holdout",
+                "ridge_validation"
+              ],
+              "old_sign": 1,
+              "new_sign": 1,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source": "natural/concurrency-3-repeat-3-gbdt/temporal_asof-quality.json",
+      "request_ordinal": 2,
+      "recorded_policy": "gbdt",
+      "models": {
+        "conditional": {
+          "owner_scores": {
+            "ridge_validation": {
+              "F_U_3s": 0.6889743065973912,
+              "discounted_F_U_H30_tau10": 0.591335477698067
+            }
+          },
+          "pairs": []
+        },
+        "gbdt": {
+          "owner_scores": {
+            "ridge_validation": {
+              "F_U_3s": 0.5471156027651083,
+              "discounted_F_U_H30_tau10": 0.5286224068215681
+            }
+          },
+          "pairs": []
+        }
+      }
+    },
+    {
+      "source": "natural/concurrency-3-repeat-4-conditional/logistic_holdout-quality.json",
+      "request_ordinal": 2,
+      "recorded_policy": "conditional",
+      "models": {
+        "conditional": {
+          "owner_scores": {
+            "ridge_validation": {
+              "F_U_3s": 0.6889743065973912,
+              "discounted_F_U_H30_tau10": 0.591335477698067
+            },
+            "temporal_asof": {
+              "F_U_3s": 0.5599999999999996,
+              "discounted_F_U_H30_tau10": 0.49834649316906776
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "ridge_validation",
+                "temporal_asof"
+              ],
+              "old_sign": 1,
+              "new_sign": 1,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        },
+        "gbdt": {
+          "owner_scores": {
+            "ridge_validation": {
+              "F_U_3s": 0.5471156027651083,
+              "discounted_F_U_H30_tau10": 0.5286224068215681
+            },
+            "temporal_asof": {
+              "F_U_3s": 0.5286341049758164,
+              "discounted_F_U_H30_tau10": 0.5040346602848541
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "ridge_validation",
+                "temporal_asof"
+              ],
+              "old_sign": 1,
+              "new_sign": 1,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source": "natural/concurrency-3-repeat-4-conditional/ridge_validation-quality.json",
+      "request_ordinal": 1,
+      "recorded_policy": "conditional",
+      "models": {
+        "conditional": {
+          "owner_scores": {
+            "temporal_asof": {
+              "F_U_3s": 0.6735873139494633,
+              "discounted_F_U_H30_tau10": 0.6094460560919968
+            },
+            "logistic_holdout": {
+              "F_U_3s": 0.5599999999999996,
+              "discounted_F_U_H30_tau10": 0.49834649316906776
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "logistic_holdout",
+                "temporal_asof"
+              ],
+              "old_sign": -1,
+              "new_sign": -1,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        },
+        "gbdt": {
+          "owner_scores": {
+            "temporal_asof": {
+              "F_U_3s": 0.6395217258581605,
+              "discounted_F_U_H30_tau10": 0.6094240503251538
+            },
+            "logistic_holdout": {
+              "F_U_3s": 0.5286341049758164,
+              "discounted_F_U_H30_tau10": 0.5040346602848541
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "logistic_holdout",
+                "temporal_asof"
+              ],
+              "old_sign": -1,
+              "new_sign": -1,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source": "natural/concurrency-3-repeat-4-conditional/temporal_asof-quality.json",
+      "request_ordinal": 1,
+      "recorded_policy": "conditional",
+      "models": {
+        "conditional": {
+          "owner_scores": {
+            "logistic_holdout": {
+              "F_U_3s": 0.5599999999999996,
+              "discounted_F_U_H30_tau10": 0.49834649316906776
+            },
+            "ridge_validation": {
+              "F_U_3s": 0.5599999999999996,
+              "discounted_F_U_H30_tau10": 0.49834649316906776
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "logistic_holdout",
+                "ridge_validation"
+              ],
+              "old_sign": 0,
+              "new_sign": 0,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        },
+        "gbdt": {
+          "owner_scores": {
+            "logistic_holdout": {
+              "F_U_3s": 0.5516570027214646,
+              "discounted_F_U_H30_tau10": 0.5326276877542939
+            },
+            "ridge_validation": {
+              "F_U_3s": 0.5286341049758164,
+              "discounted_F_U_H30_tau10": 0.5040346602848541
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "logistic_holdout",
+                "ridge_validation"
+              ],
+              "old_sign": 1,
+              "new_sign": 1,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source": "natural/concurrency-3-repeat-4-conditional/temporal_asof-quality.json",
+      "request_ordinal": 2,
+      "recorded_policy": "conditional",
+      "models": {
+        "conditional": {
+          "owner_scores": {
+            "ridge_validation": {
+              "F_U_3s": 0.6889743065973912,
+              "discounted_F_U_H30_tau10": 0.591335477698067
+            }
+          },
+          "pairs": []
+        },
+        "gbdt": {
+          "owner_scores": {
+            "ridge_validation": {
+              "F_U_3s": 0.5471156027651083,
+              "discounted_F_U_H30_tau10": 0.5286224068215681
+            }
+          },
+          "pairs": []
+        }
+      }
+    },
+    {
+      "source": "natural/concurrency-3-repeat-4-gbdt/logistic_holdout-quality.json",
+      "request_ordinal": 2,
+      "recorded_policy": "gbdt",
+      "models": {
+        "conditional": {
+          "owner_scores": {
+            "ridge_validation": {
+              "F_U_3s": 0.6889743065973912,
+              "discounted_F_U_H30_tau10": 0.591335477698067
+            },
+            "temporal_asof": {
+              "F_U_3s": 0.5599999999999996,
+              "discounted_F_U_H30_tau10": 0.49834649316906776
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "ridge_validation",
+                "temporal_asof"
+              ],
+              "old_sign": 1,
+              "new_sign": 1,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        },
+        "gbdt": {
+          "owner_scores": {
+            "ridge_validation": {
+              "F_U_3s": 0.5471156027651083,
+              "discounted_F_U_H30_tau10": 0.5286224068215681
+            },
+            "temporal_asof": {
+              "F_U_3s": 0.5286341049758164,
+              "discounted_F_U_H30_tau10": 0.5040346602848541
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "ridge_validation",
+                "temporal_asof"
+              ],
+              "old_sign": 1,
+              "new_sign": 1,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source": "natural/concurrency-3-repeat-4-gbdt/ridge_validation-quality.json",
+      "request_ordinal": 1,
+      "recorded_policy": "gbdt",
+      "models": {
+        "conditional": {
+          "owner_scores": {
+            "temporal_asof": {
+              "F_U_3s": 0.6735873139494633,
+              "discounted_F_U_H30_tau10": 0.6094460560919968
+            },
+            "logistic_holdout": {
+              "F_U_3s": 0.5599999999999996,
+              "discounted_F_U_H30_tau10": 0.49834649316906776
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "logistic_holdout",
+                "temporal_asof"
+              ],
+              "old_sign": -1,
+              "new_sign": -1,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        },
+        "gbdt": {
+          "owner_scores": {
+            "temporal_asof": {
+              "F_U_3s": 0.6395217258581605,
+              "discounted_F_U_H30_tau10": 0.6094240503251538
+            },
+            "logistic_holdout": {
+              "F_U_3s": 0.5286341049758164,
+              "discounted_F_U_H30_tau10": 0.5040346602848541
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "logistic_holdout",
+                "temporal_asof"
+              ],
+              "old_sign": -1,
+              "new_sign": -1,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source": "natural/concurrency-3-repeat-4-gbdt/temporal_asof-quality.json",
+      "request_ordinal": 1,
+      "recorded_policy": "gbdt",
+      "models": {
+        "conditional": {
+          "owner_scores": {
+            "logistic_holdout": {
+              "F_U_3s": 0.5599999999999996,
+              "discounted_F_U_H30_tau10": 0.49834649316906776
+            },
+            "ridge_validation": {
+              "F_U_3s": 0.5599999999999996,
+              "discounted_F_U_H30_tau10": 0.49834649316906776
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "logistic_holdout",
+                "ridge_validation"
+              ],
+              "old_sign": 0,
+              "new_sign": 0,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        },
+        "gbdt": {
+          "owner_scores": {
+            "logistic_holdout": {
+              "F_U_3s": 0.5516570027214646,
+              "discounted_F_U_H30_tau10": 0.5326276877542939
+            },
+            "ridge_validation": {
+              "F_U_3s": 0.5286341049758164,
+              "discounted_F_U_H30_tau10": 0.5040346602848541
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "logistic_holdout",
+                "ridge_validation"
+              ],
+              "old_sign": 1,
+              "new_sign": 1,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source": "natural/concurrency-3-repeat-4-gbdt/temporal_asof-quality.json",
+      "request_ordinal": 2,
+      "recorded_policy": "gbdt",
+      "models": {
+        "conditional": {
+          "owner_scores": {
+            "ridge_validation": {
+              "F_U_3s": 0.6889743065973912,
+              "discounted_F_U_H30_tau10": 0.591335477698067
+            }
+          },
+          "pairs": []
+        },
+        "gbdt": {
+          "owner_scores": {
+            "ridge_validation": {
+              "F_U_3s": 0.5471156027651083,
+              "discounted_F_U_H30_tau10": 0.5286224068215681
+            }
+          },
+          "pairs": []
+        }
+      }
+    },
+    {
+      "source": "natural/concurrency-3-repeat-5-conditional/logistic_holdout-quality.json",
+      "request_ordinal": 2,
+      "recorded_policy": "conditional",
+      "models": {
+        "conditional": {
+          "owner_scores": {
+            "ridge_validation": {
+              "F_U_3s": 0.6889743065973912,
+              "discounted_F_U_H30_tau10": 0.591335477698067
+            },
+            "temporal_asof": {
+              "F_U_3s": 0.5599999999999996,
+              "discounted_F_U_H30_tau10": 0.49834649316906776
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "ridge_validation",
+                "temporal_asof"
+              ],
+              "old_sign": 1,
+              "new_sign": 1,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        },
+        "gbdt": {
+          "owner_scores": {
+            "ridge_validation": {
+              "F_U_3s": 0.5471156027651083,
+              "discounted_F_U_H30_tau10": 0.5286224068215681
+            },
+            "temporal_asof": {
+              "F_U_3s": 0.5286341049758164,
+              "discounted_F_U_H30_tau10": 0.5040346602848541
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "ridge_validation",
+                "temporal_asof"
+              ],
+              "old_sign": 1,
+              "new_sign": 1,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source": "natural/concurrency-3-repeat-5-conditional/ridge_validation-quality.json",
+      "request_ordinal": 1,
+      "recorded_policy": "conditional",
+      "models": {
+        "conditional": {
+          "owner_scores": {
+            "temporal_asof": {
+              "F_U_3s": 0.6735873139494633,
+              "discounted_F_U_H30_tau10": 0.6094460560919968
+            },
+            "logistic_holdout": {
+              "F_U_3s": 0.5599999999999996,
+              "discounted_F_U_H30_tau10": 0.49834649316906776
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "logistic_holdout",
+                "temporal_asof"
+              ],
+              "old_sign": -1,
+              "new_sign": -1,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        },
+        "gbdt": {
+          "owner_scores": {
+            "temporal_asof": {
+              "F_U_3s": 0.6395217258581605,
+              "discounted_F_U_H30_tau10": 0.6094240503251538
+            },
+            "logistic_holdout": {
+              "F_U_3s": 0.5286341049758164,
+              "discounted_F_U_H30_tau10": 0.5040346602848541
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "logistic_holdout",
+                "temporal_asof"
+              ],
+              "old_sign": -1,
+              "new_sign": -1,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source": "natural/concurrency-3-repeat-5-conditional/temporal_asof-quality.json",
+      "request_ordinal": 1,
+      "recorded_policy": "conditional",
+      "models": {
+        "conditional": {
+          "owner_scores": {
+            "logistic_holdout": {
+              "F_U_3s": 0.5599999999999996,
+              "discounted_F_U_H30_tau10": 0.49834649316906776
+            },
+            "ridge_validation": {
+              "F_U_3s": 0.5599999999999996,
+              "discounted_F_U_H30_tau10": 0.49834649316906776
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "logistic_holdout",
+                "ridge_validation"
+              ],
+              "old_sign": 0,
+              "new_sign": 0,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        },
+        "gbdt": {
+          "owner_scores": {
+            "logistic_holdout": {
+              "F_U_3s": 0.5516570027214646,
+              "discounted_F_U_H30_tau10": 0.5326276877542939
+            },
+            "ridge_validation": {
+              "F_U_3s": 0.5286341049758164,
+              "discounted_F_U_H30_tau10": 0.5040346602848541
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "logistic_holdout",
+                "ridge_validation"
+              ],
+              "old_sign": 1,
+              "new_sign": 1,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source": "natural/concurrency-3-repeat-5-conditional/temporal_asof-quality.json",
+      "request_ordinal": 2,
+      "recorded_policy": "conditional",
+      "models": {
+        "conditional": {
+          "owner_scores": {
+            "ridge_validation": {
+              "F_U_3s": 0.6889743065973912,
+              "discounted_F_U_H30_tau10": 0.591335477698067
+            }
+          },
+          "pairs": []
+        },
+        "gbdt": {
+          "owner_scores": {
+            "ridge_validation": {
+              "F_U_3s": 0.5471156027651083,
+              "discounted_F_U_H30_tau10": 0.5286224068215681
+            }
+          },
+          "pairs": []
+        }
+      }
+    },
+    {
+      "source": "natural/concurrency-3-repeat-5-gbdt/logistic_holdout-quality.json",
+      "request_ordinal": 2,
+      "recorded_policy": "gbdt",
+      "models": {
+        "conditional": {
+          "owner_scores": {
+            "ridge_validation": {
+              "F_U_3s": 0.6889743065973912,
+              "discounted_F_U_H30_tau10": 0.591335477698067
+            },
+            "temporal_asof": {
+              "F_U_3s": 0.5599999999999996,
+              "discounted_F_U_H30_tau10": 0.49834649316906776
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "ridge_validation",
+                "temporal_asof"
+              ],
+              "old_sign": 1,
+              "new_sign": 1,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        },
+        "gbdt": {
+          "owner_scores": {
+            "ridge_validation": {
+              "F_U_3s": 0.5471156027651083,
+              "discounted_F_U_H30_tau10": 0.5286224068215681
+            },
+            "temporal_asof": {
+              "F_U_3s": 0.5286341049758164,
+              "discounted_F_U_H30_tau10": 0.5040346602848541
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "ridge_validation",
+                "temporal_asof"
+              ],
+              "old_sign": 1,
+              "new_sign": 1,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source": "natural/concurrency-3-repeat-5-gbdt/ridge_validation-quality.json",
+      "request_ordinal": 1,
+      "recorded_policy": "gbdt",
+      "models": {
+        "conditional": {
+          "owner_scores": {
+            "temporal_asof": {
+              "F_U_3s": 0.6735873139494633,
+              "discounted_F_U_H30_tau10": 0.6094460560919968
+            },
+            "logistic_holdout": {
+              "F_U_3s": 0.5599999999999996,
+              "discounted_F_U_H30_tau10": 0.49834649316906776
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "logistic_holdout",
+                "temporal_asof"
+              ],
+              "old_sign": -1,
+              "new_sign": -1,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        },
+        "gbdt": {
+          "owner_scores": {
+            "temporal_asof": {
+              "F_U_3s": 0.6395217258581605,
+              "discounted_F_U_H30_tau10": 0.6094240503251538
+            },
+            "logistic_holdout": {
+              "F_U_3s": 0.5286341049758164,
+              "discounted_F_U_H30_tau10": 0.5040346602848541
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "logistic_holdout",
+                "temporal_asof"
+              ],
+              "old_sign": -1,
+              "new_sign": -1,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source": "natural/concurrency-3-repeat-5-gbdt/temporal_asof-quality.json",
+      "request_ordinal": 1,
+      "recorded_policy": "gbdt",
+      "models": {
+        "conditional": {
+          "owner_scores": {
+            "logistic_holdout": {
+              "F_U_3s": 0.5599999999999996,
+              "discounted_F_U_H30_tau10": 0.49834649316906776
+            },
+            "ridge_validation": {
+              "F_U_3s": 0.5599999999999996,
+              "discounted_F_U_H30_tau10": 0.49834649316906776
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "logistic_holdout",
+                "ridge_validation"
+              ],
+              "old_sign": 0,
+              "new_sign": 0,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        },
+        "gbdt": {
+          "owner_scores": {
+            "logistic_holdout": {
+              "F_U_3s": 0.5516570027214646,
+              "discounted_F_U_H30_tau10": 0.5326276877542939
+            },
+            "ridge_validation": {
+              "F_U_3s": 0.5286341049758164,
+              "discounted_F_U_H30_tau10": 0.5040346602848541
+            }
+          },
+          "pairs": [
+            {
+              "owners": [
+                "logistic_holdout",
+                "ridge_validation"
+              ],
+              "old_sign": 1,
+              "new_sign": 1,
+              "strict_reversal": false,
+              "order_or_tie_changed": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source": "natural/concurrency-3-repeat-5-gbdt/temporal_asof-quality.json",
+      "request_ordinal": 2,
+      "recorded_policy": "gbdt",
+      "models": {
+        "conditional": {
+          "owner_scores": {
+            "ridge_validation": {
+              "F_U_3s": 0.6889743065973912,
+              "discounted_F_U_H30_tau10": 0.591335477698067
+            }
+          },
+          "pairs": []
+        },
+        "gbdt": {
+          "owner_scores": {
+            "ridge_validation": {
+              "F_U_3s": 0.5471156027651083,
+              "discounted_F_U_H30_tau10": 0.5286224068215681
+            }
+          },
+          "pairs": []
+        }
+      }
+    }
+  ]
+}
