@@ -1,0 +1,113 @@
+{
+  "status": "noise_gate_failed",
+  "reasons": [
+    "all-thread runqueue/wall exceeds frozen limit",
+    "io_psi_pct range exceeds frozen limit"
+  ],
+  "ridge_wall_s": [
+    15.24993406,
+    14.864344086,
+    15.207841271,
+    14.324476511,
+    13.739575386,
+    14.569457082
+  ],
+  "ridge_cv": 0.03585799950700397,
+  "ridge_max_min_ratio": 1.1099276092286654,
+  "max_all_thread_runqueue_fraction": 0.6204856245685051,
+  "tool_calls": 18,
+  "correct": 18,
+  "new_model_generations": 0,
+  "host_intervals": [
+    {
+      "cpu_psi_pct": 0.7897540685533259,
+      "io_psi_pct": 15.595716103215597,
+      "memory_full_psi_pct": 0.010070915489334451,
+      "host_busy_cpu_equivalents": 38.3606930773611
+    },
+    {
+      "cpu_psi_pct": 0.764035823244607,
+      "io_psi_pct": 14.191687308763733,
+      "memory_full_psi_pct": 0.004902130365585432,
+      "host_busy_cpu_equivalents": 38.050479339629376
+    },
+    {
+      "cpu_psi_pct": 0.8042333184724383,
+      "io_psi_pct": 11.661906178470499,
+      "memory_full_psi_pct": 0.010363747691043595,
+      "host_busy_cpu_equivalents": 39.48821705787744
+    },
+    {
+      "cpu_psi_pct": 0.7391916207998933,
+      "io_psi_pct": 13.77419677132738,
+      "memory_full_psi_pct": 0.014225556811166424,
+      "host_busy_cpu_equivalents": 38.636859916508165
+    },
+    {
+      "cpu_psi_pct": 0.8676313207396139,
+      "io_psi_pct": 17.76319124203518,
+      "memory_full_psi_pct": 0.1494301420452537,
+      "host_busy_cpu_equivalents": 37.23522061191626
+    },
+    {
+      "cpu_psi_pct": 0.9289894161085239,
+      "io_psi_pct": 21.24983230929781,
+      "memory_full_psi_pct": 0.8033764867642031,
+      "host_busy_cpu_equivalents": 37.06208808579975
+    }
+  ],
+  "available_memory_range_gib": 0.3753852844238281,
+  "no_outlier_exclusion": true,
+  "gate_frozen_before_observations": true,
+  "tool_summary": {
+    "logistic_holdout": {
+      "n": 6,
+      "mean_s": 6.858467009,
+      "min_s": 6.355325619,
+      "max_s": 7.044767126,
+      "cv": 0.03556444506569433,
+      "mean_compute_s": 3.5495959758333333,
+      "max_sum_thread_wait_per_worker_wall": 0.6204856245685051
+    },
+    "ridge_validation": {
+      "n": 6,
+      "mean_s": 14.659271399333333,
+      "min_s": 13.739575386,
+      "max_s": 15.24993406,
+      "cv": 0.03585799950700397,
+      "mean_compute_s": 7.303900750166666,
+      "max_sum_thread_wait_per_worker_wall": 0.06584286611499257
+    },
+    "temporal_asof": {
+      "n": 6,
+      "mean_s": 1.9808605701666666,
+      "min_s": 1.725532888,
+      "max_s": 2.085870844,
+      "cv": 0.06486380741698876,
+      "mean_compute_s": 1.4787134395,
+      "max_sum_thread_wait_per_worker_wall": 0.0852180251404193
+    }
+  },
+  "warmup_calls": 3,
+  "warmup_correct": 3,
+  "audit": {
+    "status": "passed",
+    "experiment_status": "noise_gate_failed",
+    "measured": 18,
+    "warmup": 3,
+    "correct": 21,
+    "rejected": 0,
+    "new_model_generations": 0,
+    "no_missing_or_excluded_measured_calls": true,
+    "summary_sha256": "a9796d2775dec884a2bae72b439cc9dfdf001f35c3319e80017376ca5b941df9",
+    "scope": "source hashes, three input hashes, all real parameters, independent references, artifacts, saved calls, phase times and frozen noise gate checked"
+  },
+  "experiment_scope": "real parameter tools only; no new GPU/native protocol or cache-policy JCT measurements",
+  "frozen_implementation_commit": "a565dad",
+  "previous_known_model_generations": 921,
+  "known_model_generations_after_this_attempt": 921,
+  "all_worker_disk_read_bytes": 0,
+  "all_worker_major_faults": 0,
+  "no_acceleration_claim": true,
+  "no_automatic_rerun": true
+}

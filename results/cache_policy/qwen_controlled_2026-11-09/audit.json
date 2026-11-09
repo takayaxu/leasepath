@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "experiment_status": "noise_gate_failed",
+  "measured": 18,
+  "warmup": 3,
+  "correct": 21,
+  "rejected": 0,
+  "new_model_generations": 0,
+  "no_missing_or_excluded_measured_calls": true,
+  "summary_sha256": "a9796d2775dec884a2bae72b439cc9dfdf001f35c3319e80017376ca5b941df9",
+  "scope": "source hashes, three input hashes, all real parameters, independent references, artifacts, saved calls, phase times and frozen noise gate checked"
+}
