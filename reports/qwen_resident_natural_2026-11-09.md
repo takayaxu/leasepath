@@ -23,3 +23,15 @@ Python 3.13.9 解释器与完整标准库（不含字节码缓存）、原冻结
 初次 ldd 发现重定位后的可选标准库扩展需要原 Conda 库，已用显式符号链接保持原库字节与解析关系，实际系统目标纳入哈希／锁页；未安装或升级数值依赖。初次追踪解析器误把 read 返回的二进制内容当成路径，准备阶段报错；修正解析规则后直接重用已保存追踪，未重跑或替换这3次调用。原始错误日志一并保留，均发生在模型生成与新账本创建之前。
 
 功能检查目前244 passed，1 deselected（外部 full_pinned_audit 数据缺失）。新自然 JCT 执行、独立审核和关闭结果将在本文件补记。
+
+## 首次扩展门控失败及执行文件闭包补充
+
+冻结提交 `d3ad3b0` 的首次准备在持久化输入重复复制期间受控中断，0次生成；输入磁盘复制速度低，版本化运行器 `7472dfc` 改用已有SHA256验证的同字节tmpfs准备副本。保留中断日志，不改变任务内容与策略顺序。
+
+随后13次原生门控通过，模型加载40.225秒。加载后3个哨兵答案全部正确，但新增完整进程树门控发现logistic wait4 major_faults=1、block_input_ops=0；asof major_faults=3、block_input_ops=1656、自exec聚合read_bytes=847872。worker自身所有数值阶段、导入窗口major_faults和read_bytes仍为0。实验立即失败关闭，账本封口13 probe／0 pilot；GPU5/6/7均恢复4MiB。没有自然JCT样本，也不报策略收益。
+
+继续读取已保存strace，发现 `ctypes.util`／线程库发现流程会启动 `/sbin/ldconfig -p`。此路径是387字节shell包装，内核需要执行 `/bin/sh`（真实目标 `/usr/bin/dash`），再执行 `/sbin/ldconfig.real`（真实目标 `/usr/sbin/ldconfig.real`，1213960字节静态ELF）。原解析器覆盖open/read/mmap，却漏掉execve及shebang隐含解释器：只锁住了包装脚本。这两份执行文件构成**证据确认的驻留缺口**；不能据此声称已取得故障地址或证明上一轮每个I/O字节归属。
+
+对wait4的范围补充纠正：它包括已回收的后代进程，而不是仅Python自身。新增进程树版本记录每次库发现辅助进程的PID、命令和wait4资源，分别呈现worker自身和后代。原始字段和失败不改写。补锁execve目标及shebang解释器后，另做2组三工具共6次，6/6正确，完整进程树major_faults、block_input_ops和read_bytes均为0；辅助ldconfig逐次计数也全为0。
+
+下一次独立新自然账本使用 `qwen_resident_tree_natural_2026-11-09.json`，仍原18批／54任务／六种顺序及所有严格停止规则。首次13次探针不挪入新账本，也不替换为成功。

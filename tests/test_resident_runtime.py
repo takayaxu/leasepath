@@ -74,3 +74,14 @@ def test_runtime_rejects_changed_copy(tmp_path):
     source=tmp_path/'file';source.write_bytes(b'wrong')
     with pytest.raises(ValueError,match='runtime copy changed'):
         ResidentRuntime({'dst':str(tmp_path),'files':[{'relative':'file','sha256':'0'*64}]})
+
+
+def test_trace_paths_includes_exec_and_shebang_not_returned_binary(tmp_path):
+    from leasepath.resident_trace_paths import trace_paths
+    interpreter=tmp_path/'shell';interpreter.write_bytes(b'ELF-test')
+    script=tmp_path/'helper';script.write_bytes(b'#!'+str(interpreter).encode()+b'\necho test\n')
+    executable=tmp_path/'real';executable.write_bytes(b'ELF-test')
+    lines=[f'123 execve("{script}", ["helper"], ...) = 0 <0.001>',
+        f'124 execve("{executable}", ["real"], ...) = 0 <0.001>',
+        '125 read(4<pipe:[1]>, "/bad<path>/data", 32) = 32']
+    assert trace_paths(lines)=={script,interpreter,executable}
