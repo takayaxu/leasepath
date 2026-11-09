@@ -1,0 +1,40 @@
+{
+  "status": "passed",
+  "scope": "baseline integrity and prospective plan validation only",
+  "baseline": {
+    "baseline_id": "gbdt-distribution-equalcost-H30-tau10-v1",
+    "manifest_sha256": "bf93dcdbb907cc130cdc3bd23f4e14e00fc29766942ae827694a24461c3a42bc",
+    "predictor_sha256": "283b3c829a48460360ccf6a1ac311e2e7989a90d74d2338e15e25b08f7e78c5c",
+    "fixed": {
+      "policy": "distribution_value",
+      "horizon_s": 30.0,
+      "tau_s": 10.0,
+      "min_global_workflows": 5,
+      "block_tokens": 128,
+      "block_bytes": 33554432,
+      "cost": "equal_one",
+      "owner_aggregation": "max",
+      "interval_weight": "right_edge_exp",
+      "fallback": "retired_first_lru",
+      "eviction": "pressure_only_legal_leaf",
+      "scheduling": "FCFS",
+      "adaptive_tau": false,
+      "retraining": false,
+      "prefetch": false,
+      "offload": false,
+      "audit_shadows": true
+    }
+  },
+  "old_parents_excluded": 50,
+  "matrix_cells": 9,
+  "matrix_budget_limits_validated": true,
+  "new_parent_suite_collected": false,
+  "real_agent_loop_verified": false,
+  "new_model_generations": 0,
+  "new_JCT_measurements": 0,
+  "source_sha256": {
+    "scripts/freeze_distribution_next_stage.py": "f709a535d13000cd0738382d2cf3af06a54c11101f79fdbcdb8196daed6c130d",
+    "src/leasepath/frozen_distribution_baseline.py": "6ebc484e3925f9dbea366c2b0e41e28e461dc8ab1bcf95c7f50f106be88c5b2d"
+  },
+  "plan_sha256": "a9c8fe56dd25e2b8aa4854fb229d94b2a35eb57aafdcfb85fd3cf3657c4fd816"
+}

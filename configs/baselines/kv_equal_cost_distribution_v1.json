@@ -1,0 +1,72 @@
+{
+  "baseline_id": "gbdt-distribution-equalcost-H30-tau10-v1",
+  "status": "accepted",
+  "accepted_date": "2026-11-09",
+  "decision": "用户确定等成本分布作为后续基线；当前24块/3会话证据仅来自共享服务器3个已知开发题",
+  "baseline_commit": "284b5b634bb82bce1fa61e2b29f1d28c61da019d",
+  "fixed": {
+    "policy": "distribution_value",
+    "horizon_s": 30.0,
+    "tau_s": 10.0,
+    "min_global_workflows": 5,
+    "block_tokens": 128,
+    "block_bytes": 33554432,
+    "cost": "equal_one",
+    "owner_aggregation": "max",
+    "interval_weight": "right_edge_exp",
+    "fallback": "retired_first_lru",
+    "eviction": "pressure_only_legal_leaf",
+    "scheduling": "FCFS",
+    "adaptive_tau": false,
+    "retraining": false,
+    "prefetch": false,
+    "offload": false,
+    "audit_shadows": true
+  },
+  "predictor": {
+    "kind": "frozen_gbdt_competing_risk",
+    "path": "results/prediction/qwen50_holdout_2026-11-08/gbdt-model.json",
+    "sha256": "283b3c829a48460360ccf6a1ac311e2e7989a90d74d2338e15e25b08f7e78c5c",
+    "training_compatibility": "3940a7b79e6d17f9bbb921f937e832c7276fe09e7860d6332928797a80ca2101"
+  },
+  "protected_sha256": {
+    "src/leasepath/distribution_cache.py": "0d28dbfbba409bc79070e36e8095c878030ff4b5b24c391c3048dda044a16a6d",
+    "src/leasepath/distribution_cache_backend.py": "225aa39160e5ea9f82b5a49809336e16042444c3da1dcb36d7c01778988f20c5",
+    "src/leasepath/predictive_cache.py": "56fd34121ac2bcc8d3aecb0a990f3b95538487814bf6f2f381f35aaeb2bd5d8a",
+    "src/leasepath/gbdt_predictor.py": "df8645870c255c70f2edee7ec288c1bdf7d6fd8c5bddc0335d3fae7d460d440c",
+    "src/leasepath/reuse_predictor.py": "24773e363c9fb77e3008cdf7672a4136a4cd2ebb95c85cdc5752126137b67729",
+    "src/leasepath/prediction_state.py": "513acd885ad7bf490a52c1f3be004429489ed682920b26b3213e17378ce6d30f",
+    "src/leasepath/prediction_training.py": "3d9a04d3c11f906b412af0610d4ee04d7b9569a3869b23b546865b95a14377f0",
+    "src/leasepath/cache_policy_models.py": "1b4d661456e1984776c779cd64dece684c277d24181576dd98b407873a916391",
+    "src/leasepath/d2_hazards.py": "0feaa2ec2ec327ff5e5feedb9d5018dcd61ce95f9041b5d47a6d63b6ffe535b2",
+    "src/leasepath/qwen_cache_backend.py": "c8f46fe6232e3b38863bed3af9e5167070d390f5aac5e138e95d85e32d51018c",
+    "results/prediction/qwen50_holdout_2026-11-08/gbdt-model.json": "283b3c829a48460360ccf6a1ac311e2e7989a90d74d2338e15e25b08f7e78c5c",
+    "results/prediction/qwen50_holdout_2026-11-08/conditional-model.json": "b42ee7799f3e6532c2f68da0129ab80280c52fb89658b24581bc86b77851adfb"
+  },
+  "implementation_semantics": {
+    "capacity_blocks": "experiment variable, not scoring parameter",
+    "shared_bytes": "count physical block once; max owner weight, equal cost",
+    "support": "all intervals through H require >=5 global workflows; unsupported comparisons use retired-first LRU",
+    "OOD": "unseen tool/phase uses frozen predictor global_fallback_unseen_state; log separately from unsupported eviction fallback",
+    "known_resolution_limit": "elapsed buckets end at 1 second; no new elapsed or queue features"
+  },
+  "enabled_comparators": [
+    "retired_first_lru",
+    "gbdt_point"
+  ],
+  "not_enabled": [
+    "gbdt_cost",
+    "adaptive_tau",
+    "hard_lease",
+    "prefetch",
+    "request_reordering",
+    "predictor_retraining"
+  ],
+  "evidence": {
+    "report": "reports/kv_distribution_natural_2026-11-09.md",
+    "audit": "results/cache_policy/kv_distribution_natural_2026-11-09/audit.json",
+    "tasks_correct": 48,
+    "cycles": 4,
+    "scope": "three known development parents, 24 blocks, concurrency 3; not independent generalization or exclusive-host causal evidence"
+  }
+}

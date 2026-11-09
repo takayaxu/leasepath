@@ -1,0 +1,2109 @@
+{
+  "version": 1,
+  "status": "preregistered_pending_workload_preflight",
+  "baseline_id": "gbdt-distribution-equalcost-H30-tau10-v1",
+  "baseline_manifest": "configs/baselines/kv_equal_cost_distribution_v1.json",
+  "baseline_manifest_sha256": "bf93dcdbb907cc130cdc3bd23f4e14e00fc29766942ae827694a24461c3a42bc",
+  "baseline_commit": "284b5b634bb82bce1fa61e2b29f1d28c61da019d",
+  "authorization": "用户确认等成本分布为后续基线，固定参数扩大容量/并发，新增独立母题和真实agent循环",
+  "policies": [
+    "retired_first_lru",
+    "gbdt_point",
+    "gbdt_distribution"
+  ],
+  "automatic_model_launch": false,
+  "known_prior_model_generations": 1727,
+  "known_parent_matrix": {
+    "purpose": "pressure generalization on known development workload; not new-parent evidence",
+    "capacities_blocks": [
+      24,
+      32,
+      64
+    ],
+    "concurrencies": [
+      3,
+      6,
+      10
+    ],
+    "nested_task_order": [
+      "logistic_holdout",
+      "ridge_validation",
+      "temporal_asof",
+      "priority_top",
+      "missing_median",
+      "multi_group_anova",
+      "rank_sum_test",
+      "dominant_frequency",
+      "feature_information",
+      "image_regions"
+    ],
+    "orders": [
+      [
+        "retired_first_lru",
+        "gbdt_point",
+        "gbdt_distribution"
+      ],
+      [
+        "retired_first_lru",
+        "gbdt_distribution",
+        "gbdt_point"
+      ],
+      [
+        "gbdt_point",
+        "retired_first_lru",
+        "gbdt_distribution"
+      ],
+      [
+        "gbdt_point",
+        "gbdt_distribution",
+        "retired_first_lru"
+      ],
+      [
+        "gbdt_distribution",
+        "retired_first_lru",
+        "gbdt_point"
+      ],
+      [
+        "gbdt_distribution",
+        "gbdt_point",
+        "retired_first_lru"
+      ]
+    ],
+    "cells": [
+      {
+        "capacity_blocks": 24,
+        "concurrency": 3,
+        "idle_tokens": 3072,
+        "status": "pending_native_input_and_resource_preflight",
+        "task_ids": [
+          "logistic_holdout",
+          "ridge_validation",
+          "temporal_asof"
+        ],
+        "batches": [
+          {
+            "cycle": 0,
+            "position": 0,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-24/concurrency-3/cycle-0/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 0,
+            "position": 1,
+            "policy": "gbdt_point",
+            "ledger": "capacity-24/concurrency-3/cycle-0/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 0,
+            "position": 2,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-24/concurrency-3/cycle-0/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 1,
+            "position": 0,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-24/concurrency-3/cycle-1/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 1,
+            "position": 1,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-24/concurrency-3/cycle-1/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 1,
+            "position": 2,
+            "policy": "gbdt_point",
+            "ledger": "capacity-24/concurrency-3/cycle-1/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 2,
+            "position": 0,
+            "policy": "gbdt_point",
+            "ledger": "capacity-24/concurrency-3/cycle-2/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 2,
+            "position": 1,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-24/concurrency-3/cycle-2/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 2,
+            "position": 2,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-24/concurrency-3/cycle-2/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 3,
+            "position": 0,
+            "policy": "gbdt_point",
+            "ledger": "capacity-24/concurrency-3/cycle-3/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 3,
+            "position": 1,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-24/concurrency-3/cycle-3/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 3,
+            "position": 2,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-24/concurrency-3/cycle-3/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 4,
+            "position": 0,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-24/concurrency-3/cycle-4/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 4,
+            "position": 1,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-24/concurrency-3/cycle-4/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 4,
+            "position": 2,
+            "policy": "gbdt_point",
+            "ledger": "capacity-24/concurrency-3/cycle-4/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 5,
+            "position": 0,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-24/concurrency-3/cycle-5/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 5,
+            "position": 1,
+            "policy": "gbdt_point",
+            "ledger": "capacity-24/concurrency-3/cycle-5/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 5,
+            "position": 2,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-24/concurrency-3/cycle-5/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          }
+        ]
+      },
+      {
+        "capacity_blocks": 32,
+        "concurrency": 3,
+        "idle_tokens": 4096,
+        "status": "pending_native_input_and_resource_preflight",
+        "task_ids": [
+          "logistic_holdout",
+          "ridge_validation",
+          "temporal_asof"
+        ],
+        "batches": [
+          {
+            "cycle": 0,
+            "position": 0,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-32/concurrency-3/cycle-0/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 0,
+            "position": 1,
+            "policy": "gbdt_point",
+            "ledger": "capacity-32/concurrency-3/cycle-0/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 0,
+            "position": 2,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-32/concurrency-3/cycle-0/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 1,
+            "position": 0,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-32/concurrency-3/cycle-1/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 1,
+            "position": 1,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-32/concurrency-3/cycle-1/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 1,
+            "position": 2,
+            "policy": "gbdt_point",
+            "ledger": "capacity-32/concurrency-3/cycle-1/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 2,
+            "position": 0,
+            "policy": "gbdt_point",
+            "ledger": "capacity-32/concurrency-3/cycle-2/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 2,
+            "position": 1,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-32/concurrency-3/cycle-2/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 2,
+            "position": 2,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-32/concurrency-3/cycle-2/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 3,
+            "position": 0,
+            "policy": "gbdt_point",
+            "ledger": "capacity-32/concurrency-3/cycle-3/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 3,
+            "position": 1,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-32/concurrency-3/cycle-3/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 3,
+            "position": 2,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-32/concurrency-3/cycle-3/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 4,
+            "position": 0,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-32/concurrency-3/cycle-4/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 4,
+            "position": 1,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-32/concurrency-3/cycle-4/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 4,
+            "position": 2,
+            "policy": "gbdt_point",
+            "ledger": "capacity-32/concurrency-3/cycle-4/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 5,
+            "position": 0,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-32/concurrency-3/cycle-5/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 5,
+            "position": 1,
+            "policy": "gbdt_point",
+            "ledger": "capacity-32/concurrency-3/cycle-5/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 5,
+            "position": 2,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-32/concurrency-3/cycle-5/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          }
+        ]
+      },
+      {
+        "capacity_blocks": 64,
+        "concurrency": 3,
+        "idle_tokens": 8192,
+        "status": "pending_native_input_and_resource_preflight",
+        "task_ids": [
+          "logistic_holdout",
+          "ridge_validation",
+          "temporal_asof"
+        ],
+        "batches": [
+          {
+            "cycle": 0,
+            "position": 0,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-64/concurrency-3/cycle-0/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 0,
+            "position": 1,
+            "policy": "gbdt_point",
+            "ledger": "capacity-64/concurrency-3/cycle-0/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 0,
+            "position": 2,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-64/concurrency-3/cycle-0/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 1,
+            "position": 0,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-64/concurrency-3/cycle-1/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 1,
+            "position": 1,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-64/concurrency-3/cycle-1/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 1,
+            "position": 2,
+            "policy": "gbdt_point",
+            "ledger": "capacity-64/concurrency-3/cycle-1/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 2,
+            "position": 0,
+            "policy": "gbdt_point",
+            "ledger": "capacity-64/concurrency-3/cycle-2/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 2,
+            "position": 1,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-64/concurrency-3/cycle-2/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 2,
+            "position": 2,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-64/concurrency-3/cycle-2/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 3,
+            "position": 0,
+            "policy": "gbdt_point",
+            "ledger": "capacity-64/concurrency-3/cycle-3/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 3,
+            "position": 1,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-64/concurrency-3/cycle-3/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 3,
+            "position": 2,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-64/concurrency-3/cycle-3/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 4,
+            "position": 0,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-64/concurrency-3/cycle-4/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 4,
+            "position": 1,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-64/concurrency-3/cycle-4/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 4,
+            "position": 2,
+            "policy": "gbdt_point",
+            "ledger": "capacity-64/concurrency-3/cycle-4/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 5,
+            "position": 0,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-64/concurrency-3/cycle-5/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 5,
+            "position": 1,
+            "policy": "gbdt_point",
+            "ledger": "capacity-64/concurrency-3/cycle-5/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 5,
+            "position": 2,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-64/concurrency-3/cycle-5/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          }
+        ]
+      },
+      {
+        "capacity_blocks": 24,
+        "concurrency": 6,
+        "idle_tokens": 3072,
+        "status": "pending_native_input_and_resource_preflight",
+        "task_ids": [
+          "logistic_holdout",
+          "ridge_validation",
+          "temporal_asof",
+          "priority_top",
+          "missing_median",
+          "multi_group_anova"
+        ],
+        "batches": [
+          {
+            "cycle": 0,
+            "position": 0,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-24/concurrency-6/cycle-0/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 0,
+            "position": 1,
+            "policy": "gbdt_point",
+            "ledger": "capacity-24/concurrency-6/cycle-0/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 0,
+            "position": 2,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-24/concurrency-6/cycle-0/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 1,
+            "position": 0,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-24/concurrency-6/cycle-1/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 1,
+            "position": 1,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-24/concurrency-6/cycle-1/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 1,
+            "position": 2,
+            "policy": "gbdt_point",
+            "ledger": "capacity-24/concurrency-6/cycle-1/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 2,
+            "position": 0,
+            "policy": "gbdt_point",
+            "ledger": "capacity-24/concurrency-6/cycle-2/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 2,
+            "position": 1,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-24/concurrency-6/cycle-2/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 2,
+            "position": 2,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-24/concurrency-6/cycle-2/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 3,
+            "position": 0,
+            "policy": "gbdt_point",
+            "ledger": "capacity-24/concurrency-6/cycle-3/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 3,
+            "position": 1,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-24/concurrency-6/cycle-3/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 3,
+            "position": 2,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-24/concurrency-6/cycle-3/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 4,
+            "position": 0,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-24/concurrency-6/cycle-4/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 4,
+            "position": 1,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-24/concurrency-6/cycle-4/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 4,
+            "position": 2,
+            "policy": "gbdt_point",
+            "ledger": "capacity-24/concurrency-6/cycle-4/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 5,
+            "position": 0,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-24/concurrency-6/cycle-5/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 5,
+            "position": 1,
+            "policy": "gbdt_point",
+            "ledger": "capacity-24/concurrency-6/cycle-5/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 5,
+            "position": 2,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-24/concurrency-6/cycle-5/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          }
+        ]
+      },
+      {
+        "capacity_blocks": 32,
+        "concurrency": 6,
+        "idle_tokens": 4096,
+        "status": "pending_native_input_and_resource_preflight",
+        "task_ids": [
+          "logistic_holdout",
+          "ridge_validation",
+          "temporal_asof",
+          "priority_top",
+          "missing_median",
+          "multi_group_anova"
+        ],
+        "batches": [
+          {
+            "cycle": 0,
+            "position": 0,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-32/concurrency-6/cycle-0/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 0,
+            "position": 1,
+            "policy": "gbdt_point",
+            "ledger": "capacity-32/concurrency-6/cycle-0/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 0,
+            "position": 2,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-32/concurrency-6/cycle-0/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 1,
+            "position": 0,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-32/concurrency-6/cycle-1/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 1,
+            "position": 1,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-32/concurrency-6/cycle-1/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 1,
+            "position": 2,
+            "policy": "gbdt_point",
+            "ledger": "capacity-32/concurrency-6/cycle-1/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 2,
+            "position": 0,
+            "policy": "gbdt_point",
+            "ledger": "capacity-32/concurrency-6/cycle-2/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 2,
+            "position": 1,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-32/concurrency-6/cycle-2/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 2,
+            "position": 2,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-32/concurrency-6/cycle-2/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 3,
+            "position": 0,
+            "policy": "gbdt_point",
+            "ledger": "capacity-32/concurrency-6/cycle-3/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 3,
+            "position": 1,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-32/concurrency-6/cycle-3/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 3,
+            "position": 2,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-32/concurrency-6/cycle-3/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 4,
+            "position": 0,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-32/concurrency-6/cycle-4/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 4,
+            "position": 1,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-32/concurrency-6/cycle-4/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 4,
+            "position": 2,
+            "policy": "gbdt_point",
+            "ledger": "capacity-32/concurrency-6/cycle-4/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 5,
+            "position": 0,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-32/concurrency-6/cycle-5/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 5,
+            "position": 1,
+            "policy": "gbdt_point",
+            "ledger": "capacity-32/concurrency-6/cycle-5/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 5,
+            "position": 2,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-32/concurrency-6/cycle-5/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          }
+        ]
+      },
+      {
+        "capacity_blocks": 64,
+        "concurrency": 6,
+        "idle_tokens": 8192,
+        "status": "pending_native_input_and_resource_preflight",
+        "task_ids": [
+          "logistic_holdout",
+          "ridge_validation",
+          "temporal_asof",
+          "priority_top",
+          "missing_median",
+          "multi_group_anova"
+        ],
+        "batches": [
+          {
+            "cycle": 0,
+            "position": 0,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-64/concurrency-6/cycle-0/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 0,
+            "position": 1,
+            "policy": "gbdt_point",
+            "ledger": "capacity-64/concurrency-6/cycle-0/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 0,
+            "position": 2,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-64/concurrency-6/cycle-0/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 1,
+            "position": 0,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-64/concurrency-6/cycle-1/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 1,
+            "position": 1,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-64/concurrency-6/cycle-1/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 1,
+            "position": 2,
+            "policy": "gbdt_point",
+            "ledger": "capacity-64/concurrency-6/cycle-1/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 2,
+            "position": 0,
+            "policy": "gbdt_point",
+            "ledger": "capacity-64/concurrency-6/cycle-2/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 2,
+            "position": 1,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-64/concurrency-6/cycle-2/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 2,
+            "position": 2,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-64/concurrency-6/cycle-2/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 3,
+            "position": 0,
+            "policy": "gbdt_point",
+            "ledger": "capacity-64/concurrency-6/cycle-3/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 3,
+            "position": 1,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-64/concurrency-6/cycle-3/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 3,
+            "position": 2,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-64/concurrency-6/cycle-3/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 4,
+            "position": 0,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-64/concurrency-6/cycle-4/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 4,
+            "position": 1,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-64/concurrency-6/cycle-4/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 4,
+            "position": 2,
+            "policy": "gbdt_point",
+            "ledger": "capacity-64/concurrency-6/cycle-4/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 5,
+            "position": 0,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-64/concurrency-6/cycle-5/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 5,
+            "position": 1,
+            "policy": "gbdt_point",
+            "ledger": "capacity-64/concurrency-6/cycle-5/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 5,
+            "position": 2,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-64/concurrency-6/cycle-5/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          }
+        ]
+      },
+      {
+        "capacity_blocks": 24,
+        "concurrency": 10,
+        "idle_tokens": 3072,
+        "status": "pending_native_input_and_resource_preflight",
+        "task_ids": [
+          "logistic_holdout",
+          "ridge_validation",
+          "temporal_asof",
+          "priority_top",
+          "missing_median",
+          "multi_group_anova",
+          "rank_sum_test",
+          "dominant_frequency",
+          "feature_information",
+          "image_regions"
+        ],
+        "batches": [
+          {
+            "cycle": 0,
+            "position": 0,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-24/concurrency-10/cycle-0/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 0,
+            "position": 1,
+            "policy": "gbdt_point",
+            "ledger": "capacity-24/concurrency-10/cycle-0/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 0,
+            "position": 2,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-24/concurrency-10/cycle-0/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 1,
+            "position": 0,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-24/concurrency-10/cycle-1/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 1,
+            "position": 1,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-24/concurrency-10/cycle-1/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 1,
+            "position": 2,
+            "policy": "gbdt_point",
+            "ledger": "capacity-24/concurrency-10/cycle-1/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 2,
+            "position": 0,
+            "policy": "gbdt_point",
+            "ledger": "capacity-24/concurrency-10/cycle-2/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 2,
+            "position": 1,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-24/concurrency-10/cycle-2/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 2,
+            "position": 2,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-24/concurrency-10/cycle-2/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 3,
+            "position": 0,
+            "policy": "gbdt_point",
+            "ledger": "capacity-24/concurrency-10/cycle-3/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 3,
+            "position": 1,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-24/concurrency-10/cycle-3/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 3,
+            "position": 2,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-24/concurrency-10/cycle-3/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 4,
+            "position": 0,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-24/concurrency-10/cycle-4/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 4,
+            "position": 1,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-24/concurrency-10/cycle-4/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 4,
+            "position": 2,
+            "policy": "gbdt_point",
+            "ledger": "capacity-24/concurrency-10/cycle-4/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 5,
+            "position": 0,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-24/concurrency-10/cycle-5/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 5,
+            "position": 1,
+            "policy": "gbdt_point",
+            "ledger": "capacity-24/concurrency-10/cycle-5/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 5,
+            "position": 2,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-24/concurrency-10/cycle-5/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          }
+        ]
+      },
+      {
+        "capacity_blocks": 32,
+        "concurrency": 10,
+        "idle_tokens": 4096,
+        "status": "pending_native_input_and_resource_preflight",
+        "task_ids": [
+          "logistic_holdout",
+          "ridge_validation",
+          "temporal_asof",
+          "priority_top",
+          "missing_median",
+          "multi_group_anova",
+          "rank_sum_test",
+          "dominant_frequency",
+          "feature_information",
+          "image_regions"
+        ],
+        "batches": [
+          {
+            "cycle": 0,
+            "position": 0,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-32/concurrency-10/cycle-0/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 0,
+            "position": 1,
+            "policy": "gbdt_point",
+            "ledger": "capacity-32/concurrency-10/cycle-0/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 0,
+            "position": 2,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-32/concurrency-10/cycle-0/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 1,
+            "position": 0,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-32/concurrency-10/cycle-1/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 1,
+            "position": 1,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-32/concurrency-10/cycle-1/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 1,
+            "position": 2,
+            "policy": "gbdt_point",
+            "ledger": "capacity-32/concurrency-10/cycle-1/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 2,
+            "position": 0,
+            "policy": "gbdt_point",
+            "ledger": "capacity-32/concurrency-10/cycle-2/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 2,
+            "position": 1,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-32/concurrency-10/cycle-2/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 2,
+            "position": 2,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-32/concurrency-10/cycle-2/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 3,
+            "position": 0,
+            "policy": "gbdt_point",
+            "ledger": "capacity-32/concurrency-10/cycle-3/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 3,
+            "position": 1,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-32/concurrency-10/cycle-3/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 3,
+            "position": 2,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-32/concurrency-10/cycle-3/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 4,
+            "position": 0,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-32/concurrency-10/cycle-4/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 4,
+            "position": 1,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-32/concurrency-10/cycle-4/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 4,
+            "position": 2,
+            "policy": "gbdt_point",
+            "ledger": "capacity-32/concurrency-10/cycle-4/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 5,
+            "position": 0,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-32/concurrency-10/cycle-5/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 5,
+            "position": 1,
+            "policy": "gbdt_point",
+            "ledger": "capacity-32/concurrency-10/cycle-5/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 5,
+            "position": 2,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-32/concurrency-10/cycle-5/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          }
+        ]
+      },
+      {
+        "capacity_blocks": 64,
+        "concurrency": 10,
+        "idle_tokens": 8192,
+        "status": "pending_native_input_and_resource_preflight",
+        "task_ids": [
+          "logistic_holdout",
+          "ridge_validation",
+          "temporal_asof",
+          "priority_top",
+          "missing_median",
+          "multi_group_anova",
+          "rank_sum_test",
+          "dominant_frequency",
+          "feature_information",
+          "image_regions"
+        ],
+        "batches": [
+          {
+            "cycle": 0,
+            "position": 0,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-64/concurrency-10/cycle-0/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 0,
+            "position": 1,
+            "policy": "gbdt_point",
+            "ledger": "capacity-64/concurrency-10/cycle-0/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 0,
+            "position": 2,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-64/concurrency-10/cycle-0/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 1,
+            "position": 0,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-64/concurrency-10/cycle-1/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 1,
+            "position": 1,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-64/concurrency-10/cycle-1/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 1,
+            "position": 2,
+            "policy": "gbdt_point",
+            "ledger": "capacity-64/concurrency-10/cycle-1/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 2,
+            "position": 0,
+            "policy": "gbdt_point",
+            "ledger": "capacity-64/concurrency-10/cycle-2/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 2,
+            "position": 1,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-64/concurrency-10/cycle-2/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 2,
+            "position": 2,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-64/concurrency-10/cycle-2/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 3,
+            "position": 0,
+            "policy": "gbdt_point",
+            "ledger": "capacity-64/concurrency-10/cycle-3/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 3,
+            "position": 1,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-64/concurrency-10/cycle-3/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 3,
+            "position": 2,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-64/concurrency-10/cycle-3/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 4,
+            "position": 0,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-64/concurrency-10/cycle-4/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 4,
+            "position": 1,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-64/concurrency-10/cycle-4/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 4,
+            "position": 2,
+            "policy": "gbdt_point",
+            "ledger": "capacity-64/concurrency-10/cycle-4/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 5,
+            "position": 0,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-64/concurrency-10/cycle-5/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 5,
+            "position": 1,
+            "policy": "gbdt_point",
+            "ledger": "capacity-64/concurrency-10/cycle-5/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 5,
+            "position": 2,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-64/concurrency-10/cycle-5/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          }
+        ]
+      }
+    ],
+    "counts": {
+      "cells": 9,
+      "batches": 162,
+      "task_executions": 1026,
+      "live_generations_if_three_per_task": 3078,
+      "live_generation_hard_cap": 6156,
+      "native_probe_cap": 39,
+      "full_matrix_hard_cap_excluding_preflights": 6195
+    },
+    "native_probe_ledgers": {
+      "24": {
+        "probe": 13,
+        "pilot": 1,
+        "total": 13
+      },
+      "32": {
+        "probe": 13,
+        "pilot": 1,
+        "total": 13
+      },
+      "64": {
+        "probe": 13,
+        "pilot": 1,
+        "total": 13
+      }
+    },
+    "prefix_guard": "Before reserving any generation validate each actual prompt cached-block count <= cell capacity; no silent truncation, compression, prompt padding or no-cache bypass.",
+    "timing_rule": "Fresh complete crossover per cell. Never pool prior legacy matrix or 24/3 means into new averages.",
+    "host_recipe": "Fresh real tool CPU/SMT/NUMA plan for 10 concurrent tasks; account aggregate memory and all runnable tool threads. Reusing three CPU groups without documenting contention is forbidden.",
+    "failure_rule": "Stop at first native/protocol/quality/resource/source violation, seal all affected ledgers; no replacement batches or posthoc threshold relaxation."
+  },
+  "new_parent_agent_loops": {
+    "suite_status": "not_collected",
+    "target_new_parent_groups": 12,
+    "target_development_groups": 6,
+    "target_final_test_groups": 6,
+    "split_unit": "source_family_and_parent",
+    "old_parent_ids_are_ineligible": true,
+    "old_parent_inventory": "seen-parent-exclusion.json",
+    "definition": "New analysis/decision intent and provenance review; a new seed, scale, wording, operation name, or task ID alone is not a new parent.",
+    "independence_claim": "Holdout from predictor training and workload/prompt tuning, after family-level exclusion review; no claim of independence from model pretraining or from shared libraries.",
+    "freeze_before_model": "Freeze input hashes, schema, parent/family split, checker/reference hashes, prompt/protocol, CPU controls and aggregate/per-ledger generation caps before first model test.",
+    "reference_requirement": "Independent solver/reference plus meaningful incorrect-answer and violated-constraint rejection tests; real bounded tool executions, no compute tool returning entire task plan.",
+    "agent_choice": "Model selects each next tool and its arguments from actual returned data. Host only validates capabilities, executes tool, preserves full history and checks finish.",
+    "loop_certificate": [
+      "Model-generated decision before each call, linked to immutable backend request/output.",
+      "At least two substantive decisions separated by real feedback; at least one changed candidate/parameter/branch based on observed feedback.",
+      "Tool feedback consumed by the next actual tokenized prompt; action-output-call identifiers and hashes agree.",
+      "Observed repair/search/refinement trace and model stop decision with independently validated final answer."
+    ],
+    "not_loop_evidence": [
+      "inspect→one compute→final",
+      "repeating identical calls",
+      "host-scripted tool order or arguments",
+      "sleep/busy-wait/artificial retries",
+      "oracle next action or future request length in predictor"
+    ],
+    "no_forced_errors": "Do not deliberately break correct output to force a loop. One-shot success stays successful, reports no iterative-loop evidence, is never replaced by a cherry-picked failure.",
+    "termination": {
+      "model_generations_per_task_max": 12,
+      "tool_calls_per_task_max": 11,
+      "tool_timeout_s": 240,
+      "workflow_timeout_s": 1800
+    },
+    "initial_agent_pilot": {
+      "concurrency": 3,
+      "capacity_blocks": 32,
+      "max_generations_per_policy_batch": 36,
+      "probe_required": "Exact tokenizer and accumulated history must fit 32 cached blocks before launch; if not, preregister another geometry before timing, not after seeing JCT.",
+      "post_pilot_matrix": "Freeze exact capacities/concurrency/task lists from reference/protocol/resource feasibility only; do not select by policy JCT."
+    },
+    "admission_rule": "Only development groups used to debug protocol. After first final-test run, retain every failure and do not retrain, retune, replace task or rename it unseen.",
+    "primary_outcome": "success_gated_natural_JCT",
+    "failure_reporting": "Report all-task success/timeout/invalid answers separately; never compare successful-task-only JCT without success denominators."
+  },
+  "common_controls": {
+    "FCFS": true,
+    "model": "Qwen2.5-Coder-32B-Instruct F16",
+    "gpus": [
+      5,
+      6,
+      7
+    ],
+    "context_tokens": 16384,
+    "block_tokens": 128,
+    "transient_headroom_tokens": 2048,
+    "tool_threads": 1,
+    "residency": "Verified read-only model/runtime/input/system maps; trace full changed controller and child dependencies outside JCT; own tmpfs only.",
+    "parent_read_bytes_max": 0,
+    "parent_major_faults_max": 0,
+    "parent_block_input_ops_max": 0,
+    "worker_lifetime_read_bytes_max": 0,
+    "worker_lifetime_major_faults_max": 0,
+    "worker_lifetime_block_input_ops_max": 0,
+    "host_scope": "Shared host; affinity is not exclusivity. Observe CPU/IO/memory PSI and GPU tenants; never modify other jobs/global page cache/THP.",
+    "uniform_audit": "Same shadow and instrumentation overhead for all policies, included in JCT."
+  },
+  "reporting": [
+    "paired cycle and parent/family JCT, makespan, descriptive tail and failure denominators",
+    "exact input/output token equality, actual reusable/prefill tokens and native prefill/decode times",
+    "prediction/control/shadow cost, pressure and legal-victim differences, shared-prefix subset",
+    "GBDT global_fallback_unseen_state vs unsupported-window LRU fallback separately",
+    "elapsed>1s resolution limit, loop depth, actual tool branches/feedback, queue/load covariates",
+    "all failures, sealed generation ledgers, source hashes, independently audited archive and GPU release"
+  ],
+  "next_executable_step": "Restore verified runtime; freeze a versioned capacity/concurrency runner and CPU/memory plan; full-controller trace then first 24/3 crossover; new-parent suite construction is a separate preflight gate."
+}

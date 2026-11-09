@@ -1,0 +1,410 @@
+{
+  "status": "reviewed_as_already_seen",
+  "count": 50,
+  "source_sha256": {
+    ".artifacts/qwen-data-tasks-v5/tasks.private.json": "e4cc34b953dafae813677dfd4e89eea843592aad8b35c70d3a2459e109df3a08",
+    ".artifacts/qwen-data-tasks-extension38-v2/tasks.private.json": "197b7293dbb09321fe07f1dde4a98991191f0bfb2c8e0104bf82a6fa5c643578"
+  },
+  "parents": [
+    {
+      "parent_id": "ship_groups",
+      "source_group": "tpch_shipping_aggregation",
+      "operation": "group_sum",
+      "input_sha256": "d4e491a099330d07f6d1c26fc9576fa799eee62c6c93767a10c76606b2eb13e1",
+      "status": "previously_seen_development",
+      "eligible_as_new_independent_parent": false
+    },
+    {
+      "parent_id": "air_count",
+      "source_group": "tpch_transport_filter",
+      "operation": "filtered_count",
+      "input_sha256": "d4e491a099330d07f6d1c26fc9576fa799eee62c6c93767a10c76606b2eb13e1",
+      "status": "previously_seen_development",
+      "eligible_as_new_independent_parent": false
+    },
+    {
+      "parent_id": "segment_orders",
+      "source_group": "tpch_customer_join",
+      "operation": "join_sum",
+      "input_sha256": "d4e491a099330d07f6d1c26fc9576fa799eee62c6c93767a10c76606b2eb13e1",
+      "status": "previously_seen_development",
+      "eligible_as_new_independent_parent": false
+    },
+    {
+      "parent_id": "priority_top",
+      "source_group": "tpch_partitioned_rank",
+      "operation": "window_rank",
+      "input_sha256": "d4e491a099330d07f6d1c26fc9576fa799eee62c6c93767a10c76606b2eb13e1",
+      "status": "previously_seen_development",
+      "eligible_as_new_independent_parent": false
+    },
+    {
+      "parent_id": "variance_pca",
+      "source_group": "sklearn_latent_variance",
+      "operation": "pca",
+      "input_sha256": "c2a7d85d26ce5d36bb5a50a48793c5dd4946b5c8db04834b622b3b935cc3b0f0",
+      "status": "previously_seen_development",
+      "eligible_as_new_independent_parent": false
+    },
+    {
+      "parent_id": "cluster_inertia",
+      "source_group": "sklearn_blob_clustering",
+      "operation": "kmeans",
+      "input_sha256": "4fdfee888f6094a3d9e36d6fbd468b400bbd097726f768a5d4378a328f196025",
+      "status": "previously_seen_development",
+      "eligible_as_new_independent_parent": false
+    },
+    {
+      "parent_id": "logistic_holdout",
+      "source_group": "sklearn_linear_logistic_holdout",
+      "operation": "logistic",
+      "input_sha256": "42ce37579c4a7fdec7b5887d64045fefe9d64727a1ad5a91f0a58ce6491120a1",
+      "status": "previously_seen_development",
+      "eligible_as_new_independent_parent": false
+    },
+    {
+      "parent_id": "ridge_validation",
+      "source_group": "sklearn_linear_regularization",
+      "operation": "ridge_cv",
+      "input_sha256": "d37a40e82a4d3efa2cf368b2a64f4136e4439a243270cf240c4ac50cbbf5eab6",
+      "status": "previously_seen_development",
+      "eligible_as_new_independent_parent": false
+    },
+    {
+      "parent_id": "forest_cv",
+      "source_group": "sklearn_nonlinear_forest_validation",
+      "operation": "forest_cv",
+      "input_sha256": "8f5d4d29bbc10371f48527a721d77f972b823aca429dc1da1e7dd6653cf98254",
+      "status": "previously_seen_development",
+      "eligible_as_new_independent_parent": false
+    },
+    {
+      "parent_id": "boosting_cv",
+      "source_group": "sklearn_histogram_boosting",
+      "operation": "histboost_cv",
+      "input_sha256": "e2479e3e2ceaef0238757118dcdde4b892a35712fad98cb2f8d17b4c838c990c",
+      "status": "previously_seen_development",
+      "eligible_as_new_independent_parent": false
+    },
+    {
+      "parent_id": "kernel_cv",
+      "source_group": "sklearn_nonlinear_margin",
+      "operation": "svc_cv",
+      "input_sha256": "9b2880b6905c165143e01cf49de6253c8dc461c6d3842901615341c419ab82cf",
+      "status": "previously_seen_development",
+      "eligible_as_new_independent_parent": false
+    },
+    {
+      "parent_id": "extra_trees_cv",
+      "source_group": "sklearn_randomized_tree_validation",
+      "operation": "extra_trees_cv",
+      "input_sha256": "6cc59f351c1daf07962b89fdee3afe3c695d6fc0624fd16c994d4565376b7985",
+      "status": "previously_seen_development",
+      "eligible_as_new_independent_parent": false
+    },
+    {
+      "parent_id": "missing_median",
+      "source_group": "extension_missing_median",
+      "operation": "impute",
+      "input_sha256": "7bce68f03ab34581059dd11b7c98bb4dba44420d3205e84a5f2160cba0a75f58",
+      "status": "previously_seen_development",
+      "eligible_as_new_independent_parent": false
+    },
+    {
+      "parent_id": "upper_quantile",
+      "source_group": "extension_upper_quantile",
+      "operation": "quantile",
+      "input_sha256": "de87a94cd0de80b5811ffb432738b2a284e5b88ef6fc1173ce290080d735ee15",
+      "status": "previously_seen_development",
+      "eligible_as_new_independent_parent": false
+    },
+    {
+      "parent_id": "weighted_groups",
+      "source_group": "extension_weighted_groups",
+      "operation": "weighted_group_mean",
+      "input_sha256": "8ab32476040e13940a7f0664c16c69325cb38cc6d28929f359c053c9068799ad",
+      "status": "previously_seen_development",
+      "eligible_as_new_independent_parent": false
+    },
+    {
+      "parent_id": "feature_correlation",
+      "source_group": "extension_feature_correlation",
+      "operation": "correlation",
+      "input_sha256": "e2caae7d49df8e153dc9f59a3d12b332801c6c6a9ac0b57bf8c0a0f25e390c2b",
+      "status": "previously_seen_development",
+      "eligible_as_new_independent_parent": false
+    },
+    {
+      "parent_id": "composite_dedup",
+      "source_group": "extension_composite_dedup",
+      "operation": "deduplicate",
+      "input_sha256": "dfba71656a5cfda5c14f5f8ec8e8289ed3c53fe5662460d8ef1c52f2bfef5d1a",
+      "status": "previously_seen_development",
+      "eligible_as_new_independent_parent": false
+    },
+    {
+      "parent_id": "distribution_bins",
+      "source_group": "extension_distribution_bins",
+      "operation": "histogram",
+      "input_sha256": "2ca3c507abcd6a18c30aa1ec25184270f61edeeb42c7bbed7653fab074543ca6",
+      "status": "previously_seen_development",
+      "eligible_as_new_independent_parent": false
+    },
+    {
+      "parent_id": "categorical_independence",
+      "source_group": "extension_categorical_independence",
+      "operation": "chi_square",
+      "input_sha256": "40b824cf7ee07745a355bb4c8dff794c4603b34e2910c237d8c10cab09037602",
+      "status": "previously_seen_development",
+      "eligible_as_new_independent_parent": false
+    },
+    {
+      "parent_id": "bootstrap_interval",
+      "source_group": "extension_bootstrap_interval",
+      "operation": "bootstrap_mean",
+      "input_sha256": "c41111e1fcd44d9a8a986b7412d6329d067d17a316c42bcf0112100445a965ac",
+      "status": "previously_seen_development",
+      "eligible_as_new_independent_parent": false
+    },
+    {
+      "parent_id": "randomization_test",
+      "source_group": "extension_randomization_test",
+      "operation": "permutation_mean",
+      "input_sha256": "2fbe60c61e0d277b94fb6f1cee5c43582f95a4ec9e601123eac20faf3daf3982",
+      "status": "previously_seen_development",
+      "eligible_as_new_independent_parent": false
+    },
+    {
+      "parent_id": "paired_measurements",
+      "source_group": "extension_paired_measurements",
+      "operation": "paired_t",
+      "input_sha256": "9f7d038b0908b44b176cd95cccfd3a597049632f8681e79f5900fc35e756189e",
+      "status": "previously_seen_development",
+      "eligible_as_new_independent_parent": false
+    },
+    {
+      "parent_id": "multi_group_anova",
+      "source_group": "extension_multi_group_anova",
+      "operation": "anova",
+      "input_sha256": "4fd5c810a3754fe985a75143b06c220e430608c39ce9eb9e2591f98646e9ea5a",
+      "status": "previously_seen_development",
+      "eligible_as_new_independent_parent": false
+    },
+    {
+      "parent_id": "rank_sum_test",
+      "source_group": "extension_rank_sum_test",
+      "operation": "mann_whitney",
+      "input_sha256": "d9c19c6c1f2160206b4365ad32c45b96276645cdc03974de6395fed6274bd1d1",
+      "status": "previously_seen_development",
+      "eligible_as_new_independent_parent": false
+    },
+    {
+      "parent_id": "response_trend",
+      "source_group": "extension_response_trend",
+      "operation": "linear_trend",
+      "input_sha256": "2becc9b97270db547e6da5b4fc5fbd68c9e39d446904f43a5aa5256837936e3f",
+      "status": "previously_seen_development",
+      "eligible_as_new_independent_parent": false
+    },
+    {
+      "parent_id": "robust_fences",
+      "source_group": "extension_robust_fences",
+      "operation": "iqr_outliers",
+      "input_sha256": "34eacd668422a6905adecd858d5d30c964584943aab8ead0ef9eb202f524583d",
+      "status": "previously_seen_development",
+      "eligible_as_new_independent_parent": false
+    },
+    {
+      "parent_id": "temporal_asof",
+      "source_group": "extension_temporal_asof",
+      "operation": "asof_align",
+      "input_sha256": "378257df309cb69fc11749f5011c63ab9eeceb6afd8ec95857379f0196bb8c7c",
+      "status": "previously_seen_development",
+      "eligible_as_new_independent_parent": false
+    },
+    {
+      "parent_id": "window_smoothing",
+      "source_group": "extension_window_smoothing",
+      "operation": "rolling_mean",
+      "input_sha256": "43e86691dc12586186988d80102d919418732433a1ad4cf5079c0404ba3ce97a",
+      "status": "previously_seen_development",
+      "eligible_as_new_independent_parent": false
+    },
+    {
+      "parent_id": "time_buckets",
+      "source_group": "extension_time_buckets",
+      "operation": "time_resample",
+      "input_sha256": "999d6d6feff16bdb50eae15453e51e22b1b65143a75764dbdf36bfb978f97c63",
+      "status": "previously_seen_development",
+      "eligible_as_new_independent_parent": false
+    },
+    {
+      "parent_id": "activity_sessions",
+      "source_group": "extension_activity_sessions",
+      "operation": "sessionize",
+      "input_sha256": "cbaed819d79fd6a173f5d83c0773fdc191390cbaf2836d7f2edb6106d4300089",
+      "status": "previously_seen_development",
+      "eligible_as_new_independent_parent": false
+    },
+    {
+      "parent_id": "gap_interpolation",
+      "source_group": "extension_gap_interpolation",
+      "operation": "interpolate",
+      "input_sha256": "5c3fc6423f8ce1bbc6cf8f43469b38cfe56690b48ebb1fbe50f7359733fd6674",
+      "status": "previously_seen_development",
+      "eligible_as_new_independent_parent": false
+    },
+    {
+      "parent_id": "dominant_frequency",
+      "source_group": "extension_dominant_frequency",
+      "operation": "spectrum",
+      "input_sha256": "3b19f843faa6c82525333fd5019a93ea3e1c69fe985e5c73896b3782f3dcb079",
+      "status": "previously_seen_development",
+      "eligible_as_new_independent_parent": false
+    },
+    {
+      "parent_id": "signal_alignment",
+      "source_group": "extension_signal_alignment",
+      "operation": "cross_correlation",
+      "input_sha256": "fa1ee50f92d5fa2f0a9099b89a0a0414a3ae3d70069536dcc89b9de22deef4a0",
+      "status": "previously_seen_development",
+      "eligible_as_new_independent_parent": false
+    },
+    {
+      "parent_id": "noise_filtering",
+      "source_group": "extension_noise_filtering",
+      "operation": "lowpass",
+      "input_sha256": "dcba44b9713324ef09cd97abe5801460e1f9f061888f31e9d8f342440efe701d",
+      "status": "previously_seen_development",
+      "eligible_as_new_independent_parent": false
+    },
+    {
+      "parent_id": "event_peaks",
+      "source_group": "extension_event_peaks",
+      "operation": "find_peaks",
+      "input_sha256": "c74e878db8d9f090ffdbdf8a80912961b6f27cc85ff2837bc37ec926f8a98327",
+      "status": "previously_seen_development",
+      "eligible_as_new_independent_parent": false
+    },
+    {
+      "parent_id": "curve_area",
+      "source_group": "extension_curve_area",
+      "operation": "integrate",
+      "input_sha256": "39007d0124fe4e2fad36122ef6dab8623969cfba99052adb8b9324efcc2cb022",
+      "status": "previously_seen_development",
+      "eligible_as_new_independent_parent": false
+    },
+    {
+      "parent_id": "bracketed_root",
+      "source_group": "extension_bracketed_root",
+      "operation": "polynomial_root",
+      "input_sha256": "5d15cfead1fb7beb393ac04f1805e7015776429bedf428fa670f5b414e774ef0",
+      "status": "previously_seen_development",
+      "eligible_as_new_independent_parent": false
+    },
+    {
+      "parent_id": "portfolio_allocation",
+      "source_group": "extension_portfolio_allocation",
+      "operation": "simplex_optimize",
+      "input_sha256": "be1a470d6cd0f54630354dee58d5085151d3b4107fb7d1512e09dabc354072e8",
+      "status": "previously_seen_development",
+      "eligible_as_new_independent_parent": false
+    },
+    {
+      "parent_id": "tridiagonal_system",
+      "source_group": "extension_tridiagonal_system",
+      "operation": "banded_solve",
+      "input_sha256": "6fe2902e97ad539f0ba91f14df7ae185e78f87b89e7329c6817a828ac550ed70",
+      "status": "previously_seen_development",
+      "eligible_as_new_independent_parent": false
+    },
+    {
+      "parent_id": "nonnegative_factors",
+      "source_group": "extension_nonnegative_factors",
+      "operation": "nmf",
+      "input_sha256": "5d59d635652c2f24099592f8df73a02e2dc870c95b51602612932a454fcc3d5b",
+      "status": "previously_seen_development",
+      "eligible_as_new_independent_parent": false
+    },
+    {
+      "parent_id": "independent_sources",
+      "source_group": "extension_independent_sources",
+      "operation": "ica",
+      "input_sha256": "53f30624755187cb9a2d241d5e4d84e0185991c25f4c161e47f958faed14e4ca",
+      "status": "previously_seen_development",
+      "eligible_as_new_independent_parent": false
+    },
+    {
+      "parent_id": "density_clusters",
+      "source_group": "extension_density_clusters",
+      "operation": "dbscan",
+      "input_sha256": "5bc52fc61297bcd143679a8845f69efc998dfabf83bc2cb4ca10003c36b1ab15",
+      "status": "previously_seen_development",
+      "eligible_as_new_independent_parent": false
+    },
+    {
+      "parent_id": "neighbor_retrieval",
+      "source_group": "extension_neighbor_retrieval",
+      "operation": "neighbors",
+      "input_sha256": "bffe3ce2f61f067fd0932f1d55a4bc5b530ae63d7026d8688645baaf2f57d99f",
+      "status": "previously_seen_development",
+      "eligible_as_new_independent_parent": false
+    },
+    {
+      "parent_id": "anomaly_detection",
+      "source_group": "extension_anomaly_detection",
+      "operation": "isolation",
+      "input_sha256": "4603eff64ad2002f50d0284c7c735efdb39afcc4e4521307faf42def44f1958c",
+      "status": "previously_seen_development",
+      "eligible_as_new_independent_parent": false
+    },
+    {
+      "parent_id": "feature_information",
+      "source_group": "extension_feature_information",
+      "operation": "mutual_information",
+      "input_sha256": "164444f779c0d351bec200869607af765e7da97e2850aec351027689b5776c40",
+      "status": "previously_seen_development",
+      "eligible_as_new_independent_parent": false
+    },
+    {
+      "parent_id": "recursive_forecast",
+      "source_group": "extension_recursive_forecast",
+      "operation": "autoregression",
+      "input_sha256": "59e0d8759de3521cfa766cffa2462cd0dc1410b1c3cbd2698bee5866fb293c1d",
+      "status": "previously_seen_development",
+      "eligible_as_new_independent_parent": false
+    },
+    {
+      "parent_id": "censored_survival",
+      "source_group": "extension_censored_survival",
+      "operation": "kaplan_meier",
+      "input_sha256": "dff4eeccbddd36670eab543f5f6a7652776cc273c9870349d4cbc835f84b278c",
+      "status": "previously_seen_development",
+      "eligible_as_new_independent_parent": false
+    },
+    {
+      "parent_id": "image_regions",
+      "source_group": "extension_image_regions",
+      "operation": "connected_components",
+      "input_sha256": "158c7b90f502758fc19a4757c6cde1968f738c560934ad3e1ec4e16d1ce65bd2",
+      "status": "previously_seen_development",
+      "eligible_as_new_independent_parent": false
+    },
+    {
+      "parent_id": "cost_assignment",
+      "source_group": "extension_cost_assignment",
+      "operation": "assignment",
+      "input_sha256": "e09e992457d0d1055baf4e8a00849ff094ddeef5f6bf5f7d31d64c10bef30b52",
+      "status": "previously_seen_development",
+      "eligible_as_new_independent_parent": false
+    },
+    {
+      "parent_id": "distribution_transport",
+      "source_group": "extension_distribution_transport",
+      "operation": "wasserstein",
+      "input_sha256": "d017a09bece80c8d51ca6112e196e0f0ee0fd5dcaf181bc4378f218eb60d38f7",
+      "status": "previously_seen_development",
+      "eligible_as_new_independent_parent": false
+    }
+  ]
+}

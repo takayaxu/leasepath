@@ -1,0 +1,74 @@
+{
+  "status": "passed",
+  "synthetic_metadata_smoke_only": true,
+  "model_generations": 0,
+  "native_GPU_test": false,
+  "checks": [
+    {
+      "capacity_blocks": 24,
+      "arm": "retired_first_lru",
+      "admissions_checked": 10,
+      "evictions_checked": 116,
+      "legacy_equal_cost_controller_equivalent": true
+    },
+    {
+      "capacity_blocks": 24,
+      "arm": "gbdt_point",
+      "admissions_checked": 10,
+      "evictions_checked": 116,
+      "legacy_equal_cost_controller_equivalent": true
+    },
+    {
+      "capacity_blocks": 24,
+      "arm": "gbdt_distribution",
+      "admissions_checked": 10,
+      "evictions_checked": 116,
+      "legacy_equal_cost_controller_equivalent": true
+    },
+    {
+      "capacity_blocks": 32,
+      "arm": "retired_first_lru",
+      "admissions_checked": 10,
+      "evictions_checked": 108,
+      "legacy_equal_cost_controller_equivalent": true
+    },
+    {
+      "capacity_blocks": 32,
+      "arm": "gbdt_point",
+      "admissions_checked": 10,
+      "evictions_checked": 108,
+      "legacy_equal_cost_controller_equivalent": true
+    },
+    {
+      "capacity_blocks": 32,
+      "arm": "gbdt_distribution",
+      "admissions_checked": 10,
+      "evictions_checked": 108,
+      "legacy_equal_cost_controller_equivalent": true
+    },
+    {
+      "capacity_blocks": 64,
+      "arm": "retired_first_lru",
+      "admissions_checked": 10,
+      "evictions_checked": 76,
+      "legacy_equal_cost_controller_equivalent": true
+    },
+    {
+      "capacity_blocks": 64,
+      "arm": "gbdt_point",
+      "admissions_checked": 10,
+      "evictions_checked": 76,
+      "legacy_equal_cost_controller_equivalent": true
+    },
+    {
+      "capacity_blocks": 64,
+      "arm": "gbdt_distribution",
+      "admissions_checked": 10,
+      "evictions_checked": 76,
+      "legacy_equal_cost_controller_equivalent": true
+    }
+  ],
+  "new_tool_predictor_fallback_verified": true,
+  "new_tool_fallback": "global_fallback_unseen_state; not equivalent to controller LRU fallback",
+  "baseline_manifest_sha256": "bf93dcdbb907cc130cdc3bd23f4e14e00fc29766942ae827694a24461c3a42bc"
+}

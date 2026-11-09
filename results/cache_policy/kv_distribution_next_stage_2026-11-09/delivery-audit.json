@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "previous_commit_tracked_files_modified": 0,
+  "baseline_and_plan_source_hashes_match": true,
+  "protected_baseline_files": 12,
+  "targeted_tests_passed": 16,
+  "synthetic_admissions_checked": 90,
+  "new_model_generations": 0,
+  "new_gpu_experiment_or_JCT_claim": false,
+  "new_independent_parents_collected": 0,
+  "real_iterative_agent_workflows_validated": 0
+}
