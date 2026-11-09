@@ -1,0 +1,114 @@
+{
+  "stage": "qwen_cache_controlled_2026-11-09",
+  "baseline_git": "42adf0445b6ea721c4729e6d408c47b39bf9fb31",
+  "authorization": "再跑一轮测试；先隔离工具波动，控制共享服务器资源差异",
+  "model_sha256": "0c2f9e4daac78e72b24f7c054416232a523f0fd2aeb37653747d3c21f7dca078",
+  "capacity_blocks": 24,
+  "concurrency": 3,
+  "block_tokens": 128,
+  "physical_context": 16384,
+  "transient_headroom_tokens": 2048,
+  "live_tasks": [
+    "logistic_holdout",
+    "ridge_validation",
+    "temporal_asof"
+  ],
+  "policies": [
+    "retired_first_lru",
+    "conditional",
+    "gbdt"
+  ],
+  "orders": [
+    [
+      "retired_first_lru",
+      "conditional",
+      "gbdt"
+    ],
+    [
+      "conditional",
+      "gbdt",
+      "retired_first_lru"
+    ],
+    [
+      "gbdt",
+      "retired_first_lru",
+      "conditional"
+    ]
+  ],
+  "budget_limits": {
+    "probe": 13,
+    "pilot": 162,
+    "total": 175
+  },
+  "expected_live_generations": 81,
+  "prediction_result": "results/prediction/qwen50_holdout_2026-11-08",
+  "prediction_horizon_s": 3,
+  "tool_controls": {
+    "logistic_holdout": {
+      "cpus": [
+        14,
+        16
+      ],
+      "numa_node": 1,
+      "disable_thp": true
+    },
+    "ridge_validation": {
+      "cpus": [
+        17,
+        19
+      ],
+      "numa_node": 1,
+      "disable_thp": true
+    },
+    "temporal_asof": {
+      "cpus": [
+        21,
+        23
+      ],
+      "numa_node": 1,
+      "disable_thp": true
+    }
+  },
+  "model_cpus": [
+    0,
+    2,
+    3,
+    5,
+    6,
+    8,
+    9,
+    11
+  ],
+  "tool_threads": 2,
+  "tool_memory_gib": 12,
+  "tool_timeout_s": 240,
+  "preflight": {
+    "warmups": 1,
+    "repeats": 6,
+    "concurrency": 3,
+    "ridge_cv_max": 0.1,
+    "ridge_max_min_ratio_max": 1.25,
+    "all_thread_runqueue_fraction_max": 0.05
+  },
+  "resource_gate": {
+    "available_memory_range_gib_max": 8,
+    "cpu_psi_range_pp_max": 5,
+    "io_psi_range_pp_max": 5,
+    "memory_full_psi_max_pct": 1,
+    "ridge_cv_max": 0.1,
+    "ridge_max_min_ratio_max": 1.25,
+    "host_busy_cpu_range_max": 4
+  },
+  "inputs": "byte-identical verified private tmpfs copies; retain pre/post hashes on every call; mlock inputs before preflight",
+  "outputs": "own tmpfs; artifacts fsync before return; archive after all measurement; power-loss persistence not claimed",
+  "artifact_ids": "session-local UUID5 of opaque fixed namespace, session key and compute ordinal; identical across policies; strict session registry validation",
+  "quality": "same stage3b SYSTEM, strict final schema/artifact/reference/consumption; no posthoc normalization",
+  "failure_rule": "one warmup excluded by plan only; retain every measured call; no rerun or outlier exclusion; abort before live if stability fails; stop live on first quality failure; resource gate failure invalidates acceleration inference",
+  "host_scope": "affinity is not exclusive reservation; never stop others or alter global THP/NUMA/page cache settings",
+  "scope": "three known development parents; targeted replication of prior 3-session anomaly; not independent holdout or full matrix",
+  "primary_metric": "submit to validated correct final JCT, all checks/observer/scheduling included; prep/load/warmups/sentinels separately reported",
+  "sentinels": "same controlled three-task tool group after model load (3 repeats), before and after each 3-policy cycle (one each); no copy/archive/cleanup during measured windows",
+  "created_client_date": "2026-11-09 Asia/Shanghai",
+  "preflight_preparation": "Own slow model copy paused during CPU-only preflight; partial tmpfs file retained unchanged; mandatory repeated tool qualification after complete copy and GPU model load before live tests",
+  "tool_runtime": "SHA256-verified tmpfs copy of pinned qwen-data-env site-packages; per-child PYTHONPATH fixed to this copy; mlock all copied files before warmup; system Python/stdlib remain host runtime"
+}
