@@ -141,14 +141,17 @@ def main():
         manifest['model_load_s']=time.monotonic()-start;manifest['device_preflight']=engine.resource_preflight
         # Freeze and pin all actual parent mappings (CUDA driver, predictor, tokenizer)
         # before the first native generation. No privileged operations are needed.
-        mapped=set()
+        mapped=set();special_maps=[]
         for line in Path('/proc/self/maps').read_text().splitlines():
             parts=line.split(None,5)
             if len(parts)<6 or not parts[5].startswith('/'):continue
             path=Path(parts[5]).resolve()
+            if not path.is_file():
+                special_maps.append(parts[5]);continue
             st=path.stat()
             if path==model.resolve() or (st.st_dev,st.st_ino) in allowed_inodes:continue
             mapped.add(path)
+        manifest['parent_special_mappings']=sorted(set(special_maps))
         loaded_files=ResidentFiles(mapped)
         manifest['post_load_libraries_sha256']={str(path):sha256(path) for path in sorted(mapped)}
         write(args.output/'post-load-locked-files.json',loaded_files.records)
