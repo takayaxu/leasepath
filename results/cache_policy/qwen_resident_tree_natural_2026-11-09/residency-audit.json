@@ -1,0 +1,116 @@
+{
+  "status": "passed",
+  "correct_compute_calls": 75,
+  "live_calls": 54,
+  "sentinel_calls": 21,
+  "library_discovery_children": 300,
+  "all_tree_major_faults": 0,
+  "all_tree_block_input_ops": 0,
+  "all_tree_read_bytes": 0,
+  "mapped_and_opened_immutable_files_covered": true,
+  "unknown_files": [],
+  "maximum_worker_queue_fraction": 0.01988039603136973,
+  "controller_read_bytes": 4096,
+  "controller_io_attribution": "one 4096-byte batch read, filename not captured, no full-chain-zero-IO claim",
+  "tool_means": [
+    {
+      "policy": "retired_first_lru",
+      "task": "logistic_holdout",
+      "n": 6,
+      "tool_wall_s": 7.434960672,
+      "worker_wall_s": 6.2388564545000005,
+      "launch_import_exit_s": 0.464699967,
+      "input_hash_s": 0.3832986896666667,
+      "post_hash_s": 0.3375437655,
+      "queue_fraction": 0.00415828478694434
+    },
+    {
+      "policy": "retired_first_lru",
+      "task": "ridge_validation",
+      "n": 6,
+      "tool_wall_s": 15.290490643166667,
+      "worker_wall_s": 12.002587844,
+      "launch_import_exit_s": 0.48108925916666667,
+      "input_hash_s": 1.4119893023333334,
+      "post_hash_s": 1.3864205855,
+      "queue_fraction": 0.002540916649840189
+    },
+    {
+      "policy": "retired_first_lru",
+      "task": "temporal_asof",
+      "n": 6,
+      "tool_wall_s": 3.805172592,
+      "worker_wall_s": 3.374677075,
+      "launch_import_exit_s": 0.41900786833333337,
+      "input_hash_s": 0.0034861485,
+      "post_hash_s": 0.0023568815,
+      "queue_fraction": 0.007877727880954635
+    },
+    {
+      "policy": "conditional",
+      "task": "logistic_holdout",
+      "n": 6,
+      "tool_wall_s": 7.2808400725,
+      "worker_wall_s": 6.066423112666667,
+      "launch_import_exit_s": 0.4788429986666667,
+      "input_hash_s": 0.38911138733333334,
+      "post_hash_s": 0.3381331381666667,
+      "queue_fraction": 0.004042408357223602
+    },
+    {
+      "policy": "conditional",
+      "task": "ridge_validation",
+      "n": 6,
+      "tool_wall_s": 14.833085402333333,
+      "worker_wall_s": 11.601556190666667,
+      "launch_import_exit_s": 0.46566933816666667,
+      "input_hash_s": 1.3987693578333333,
+      "post_hash_s": 1.3579496076666666,
+      "queue_fraction": 0.002834937027717654
+    },
+    {
+      "policy": "conditional",
+      "task": "temporal_asof",
+      "n": 6,
+      "tool_wall_s": 3.7703801298333333,
+      "worker_wall_s": 3.325657565833333,
+      "launch_import_exit_s": 0.4326401243333333,
+      "input_hash_s": 0.0038678189999999998,
+      "post_hash_s": 0.0020786331666666664,
+      "queue_fraction": 0.007144605538025486
+    },
+    {
+      "policy": "gbdt",
+      "task": "logistic_holdout",
+      "n": 6,
+      "tool_wall_s": 7.201184566666667,
+      "worker_wall_s": 6.047039230166667,
+      "launch_import_exit_s": 0.46721969533333335,
+      "input_hash_s": 0.3464491378333333,
+      "post_hash_s": 0.3286070135,
+      "queue_fraction": 0.0030824450665120286
+    },
+    {
+      "policy": "gbdt",
+      "task": "ridge_validation",
+      "n": 6,
+      "tool_wall_s": 14.732318288666667,
+      "worker_wall_s": 11.525865162,
+      "launch_import_exit_s": 0.468845231,
+      "input_hash_s": 1.4071168631666666,
+      "post_hash_s": 1.3217349046666667,
+      "queue_fraction": 0.0027859226879809774
+    },
+    {
+      "policy": "gbdt",
+      "task": "temporal_asof",
+      "n": 6,
+      "tool_wall_s": 3.8096936848333334,
+      "worker_wall_s": 3.3627218355,
+      "launch_import_exit_s": 0.436973078,
+      "input_hash_s": 0.0021643423333333332,
+      "post_hash_s": 0.002256974666666667,
+      "queue_fraction": 0.007698364407494734
+    }
+  ]
+}
