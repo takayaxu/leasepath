@@ -1,0 +1,223 @@
+{
+  "status": "passed",
+  "real_compute_calls": 6,
+  "model_generations": 0,
+  "regular_disk_files": 366,
+  "trace_processes_or_threads": 19,
+  "historical_4096B_file_identified": false,
+  "full_native_controller_JCT_gate_passed": false,
+  "traced": {
+    "status": "passed",
+    "pid": 1433620,
+    "real_compute_calls": 3,
+    "parent_process_delta": {
+      "rchar": 1632960687,
+      "wchar": 8437735,
+      "syscr": 40800,
+      "syscw": 261,
+      "read_bytes": 0,
+      "write_bytes": 0,
+      "cancelled_write_bytes": 0,
+      "self_major_faults": 0,
+      "self_block_input_ops": 0,
+      "reaped_child_major_faults": 0,
+      "reaped_child_block_input_ops": 0
+    },
+    "tool_group_process_delta": {
+      "rchar": 1632445080,
+      "wchar": 8437735,
+      "syscr": 40271,
+      "syscw": 261,
+      "read_bytes": 0,
+      "write_bytes": 0,
+      "cancelled_write_bytes": 0,
+      "self_major_faults": 0,
+      "self_block_input_ops": 0,
+      "reaped_child_major_faults": 0,
+      "reaped_child_block_input_ops": 0
+    },
+    "worker_usage": [
+      {
+        "task": "logistic_holdout",
+        "lifetime": {
+          "major_faults": 0,
+          "minor_faults": 89763,
+          "block_input_ops": 0,
+          "block_output_ops": 0,
+          "user_s": 8.52285,
+          "system_s": 0.854995,
+          "scope": "wait4 worker lifetime including startup, exit, and reaped descendants"
+        },
+        "io_since_exec": {
+          "major_faults": 0,
+          "minor_faults": 89229,
+          "read_bytes": 0,
+          "rchar": 141911434
+        }
+      },
+      {
+        "task": "ridge_validation",
+        "lifetime": {
+          "major_faults": 0,
+          "minor_faults": 1022075,
+          "block_input_ops": 0,
+          "block_output_ops": 0,
+          "user_s": 11.555386,
+          "system_s": 3.5871459999999997,
+          "scope": "wait4 worker lifetime including startup, exit, and reaped descendants"
+        },
+        "io_since_exec": {
+          "major_faults": 0,
+          "minor_faults": 1021221,
+          "read_bytes": 0,
+          "rchar": 447511836
+        }
+      },
+      {
+        "task": "temporal_asof",
+        "lifetime": {
+          "major_faults": 0,
+          "minor_faults": 24721,
+          "block_input_ops": 0,
+          "block_output_ops": 0,
+          "user_s": 4.795768,
+          "system_s": 0.443901,
+          "scope": "wait4 worker lifetime including startup, exit, and reaped descendants"
+        },
+        "io_since_exec": {
+          "major_faults": 0,
+          "minor_faults": 24125,
+          "read_bytes": 0,
+          "rchar": 33800087
+        }
+      }
+    ],
+    "residency": {
+      "runtime": {
+        "files": 21991,
+        "pages": 178888,
+        "nonresident_pages": 0
+      },
+      "files": {
+        "files": 156,
+        "pages": 9486,
+        "nonresident_pages": 0
+      },
+      "inputs": {
+        "files": 3,
+        "pages": 122775,
+        "nonresident_pages": 0
+      }
+    },
+    "scope": "real parent Python/controller imports/source hashes and three actual tools; native CUDA and full model-driven loop not covered",
+    "historical_4096B_file_identified": false,
+    "natural_JCT_gate_passed": false
+  },
+  "locked": {
+    "status": "passed",
+    "pid": 1445900,
+    "real_compute_calls": 3,
+    "parent_process_delta": {
+      "rchar": 1632984098,
+      "wchar": 8457139,
+      "syscr": 41066,
+      "syscw": 261,
+      "read_bytes": 0,
+      "write_bytes": 0,
+      "cancelled_write_bytes": 0,
+      "self_major_faults": 0,
+      "self_block_input_ops": 0,
+      "reaped_child_major_faults": 0,
+      "reaped_child_block_input_ops": 0
+    },
+    "tool_group_process_delta": {
+      "rchar": 1632468491,
+      "wchar": 8457139,
+      "syscr": 40537,
+      "syscw": 261,
+      "read_bytes": 0,
+      "write_bytes": 0,
+      "cancelled_write_bytes": 0,
+      "self_major_faults": 0,
+      "self_block_input_ops": 0,
+      "reaped_child_major_faults": 0,
+      "reaped_child_block_input_ops": 0
+    },
+    "worker_usage": [
+      {
+        "task": "logistic_holdout",
+        "lifetime": {
+          "major_faults": 0,
+          "minor_faults": 151104,
+          "block_input_ops": 0,
+          "block_output_ops": 0,
+          "user_s": 7.326942,
+          "system_s": 0.594208,
+          "scope": "wait4 worker lifetime including startup, exit, and reaped descendants"
+        },
+        "io_since_exec": {
+          "major_faults": 0,
+          "minor_faults": 150576,
+          "read_bytes": 0,
+          "rchar": 141911524
+        }
+      },
+      {
+        "task": "ridge_validation",
+        "lifetime": {
+          "major_faults": 0,
+          "minor_faults": 1022059,
+          "block_input_ops": 0,
+          "block_output_ops": 0,
+          "user_s": 10.701636,
+          "system_s": 3.237771,
+          "scope": "wait4 worker lifetime including startup, exit, and reaped descendants"
+        },
+        "io_since_exec": {
+          "major_faults": 0,
+          "minor_faults": 1021208,
+          "read_bytes": 0,
+          "rchar": 447511961
+        }
+      },
+      {
+        "task": "temporal_asof",
+        "lifetime": {
+          "major_faults": 0,
+          "minor_faults": 24073,
+          "block_input_ops": 0,
+          "block_output_ops": 0,
+          "user_s": 4.570901,
+          "system_s": 0.21090199999999998,
+          "scope": "wait4 worker lifetime including startup, exit, and reaped descendants"
+        },
+        "io_since_exec": {
+          "major_faults": 0,
+          "minor_faults": 23583,
+          "read_bytes": 0,
+          "rchar": 33800090
+        }
+      }
+    ],
+    "residency": {
+      "runtime": {
+        "files": 21991,
+        "pages": 178888,
+        "nonresident_pages": 0
+      },
+      "files": {
+        "files": 364,
+        "pages": 11176,
+        "nonresident_pages": 0
+      },
+      "inputs": {
+        "files": 3,
+        "pages": 122775,
+        "nonresident_pages": 0
+      }
+    },
+    "scope": "real parent Python/controller imports/source hashes and three actual tools; native CUDA and full model-driven loop not covered",
+    "historical_4096B_file_identified": false,
+    "natural_JCT_gate_passed": false
+  }
+}

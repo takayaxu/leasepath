@@ -1,0 +1,370 @@
+{
+  "status": "passed",
+  "checked_existing_repository_files": 91,
+  "files": [
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/configs/prediction/qwen_resident_tree_natural_2026-11-09.json",
+      "sha256": "2c3f33e72c8681679d4b63ae0504740c9a9393fb19ac2c75dc4e514a16d82905"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/scripts/run_qwen_resident_tree_natural.py",
+      "sha256": "4e9ea253e0f2a794435b23fba9db07a754571c1f4c97535b1c3d004622566562"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/scripts/qwen_cache_resident_tree_batch.py",
+      "sha256": "68d1061196f4230b74d81cb21e67283acecb8bd91b0f76e6171e668968d9c717"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/scripts/probe_qwen_resident_tree_tools.py",
+      "sha256": "670c4a61543bdb8c44b20020d7fed2149ca43f05bd1c9445636d1b220b16cfab"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/scripts/probe_qwen_controlled_tools.py",
+      "sha256": "c7643a1e59dbb7113a28fb83375c423e8aae1b967c4dbf7e07f70062970c8728"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/scripts/run_qwen_cache_controlled.py",
+      "sha256": "e865a286318b97b05db5b8b90042107056149fbbcd198956664b5300b3a3e3b2"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/scripts/probe_qwen_cache_matrix.py",
+      "sha256": "b451f5bc3b491252c99677bf84d4d17600fa33c421433e38fa0143d3a48d84fb"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/scripts/check_qwen_resident_tree_natural.py",
+      "sha256": "94fb0cf474b912cacd15fed0a28bb72657ca7e07768de8701905556f7abe8e77"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/scripts/summarize_qwen_resident_natural.py",
+      "sha256": "0a81f81a6c2bf7fd05a851b5607cf9afe321f64bac2c0bae9ebd2480b2430a71"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/scripts/prepare_qwen_resident_runtime.py",
+      "sha256": "66befa4985adf935467f66d433ab1464a916732f2898d76c00f62030ff8492e1"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/scripts/diagnose_qwen_resident_files.py",
+      "sha256": "e61ba79cfe0009ca6f967d19893e7dd5bbf2102939242437a2af107bf70af040"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/.artifacts/qwen-cache-resident-tree-natural-2026-11-09/system-residency.json",
+      "sha256": "b78c2a000bcdd64629dbf57202d583d8cf467ee063e78504e2155c681c22d14f"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/.artifacts/qwen-cache-stage2/native/backend.so",
+      "sha256": "9a143ad8ff9c8345785b9332b69e19e44bf91ede3bc1546aed6fc8e5d61192c6"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/results/prediction/qwen50_holdout_2026-11-08/conditional-model.json",
+      "sha256": "b42ee7799f3e6532c2f68da0129ab80280c52fb89658b24581bc86b77851adfb"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/results/prediction/qwen50_holdout_2026-11-08/gbdt-model.json",
+      "sha256": "283b3c829a48460360ccf6a1ac311e2e7989a90d74d2338e15e25b08f7e78c5c"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/.artifacts/qwen-cache-resident-tree-natural-2026-11-09/runtime-copy.json",
+      "sha256": "814a3769b688a0f43e435d0f15c5fe536a43f02816be20f91cc847cc40941cdf"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/codex_protocol.py",
+      "sha256": "613c1dcc6a9f7f7931e55085335dc45229678606530bbfb948c2002b6086f20a"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/real_environment.py",
+      "sha256": "437318de21ad1ec08523de4258eb3dfad566c589a6008cd0c6ba1e3398042ccd"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/prediction_state.py",
+      "sha256": "513acd885ad7bf490a52c1f3be004429489ed682920b26b3213e17378ce6d30f"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/qwen_data_audit.py",
+      "sha256": "173e9e7ba200a20e0580f5b8329e1a8e5860756f13eab1b2c42c7683fc94a1d3"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/cache_matrix_continuation.py",
+      "sha256": "128b3674b8d60c66f919997dc138f8e405913bd1a9fc79e96dc6c1912612cafc"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/predictive_cache.py",
+      "sha256": "56fd34121ac2bcc8d3aecb0a990f3b95538487814bf6f2f381f35aaeb2bd5d8a"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/restricted_data_resident_tree_worker.py",
+      "sha256": "04bb1bcdb000b2857fc1a255c80cba5846d9f3c023bf7cd24de22ce4ed81b01c"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/restricted_data_resident_tools.py",
+      "sha256": "1fde6cd7f6237173dff8efdd054ab81d01cb5317474979cfd79aac971d8af23f"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/restricted_data_controlled_tools.py",
+      "sha256": "586f670878c8249c00ec7ac42ff37aab7271e8c5503835f67763d5400fbca8a3"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/qwen_data_extension_tasks.py",
+      "sha256": "d4e39da5f93bc6a573b4602fa14bb103a9aa2c2503004caa6ef7170ed37c72bc"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/real_projection_v2.py",
+      "sha256": "287cae728148247218da7ea8408e5b76a8b63da24e23eb83b057ae103605fcf4"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/cache_matrix.py",
+      "sha256": "f3d31666a5542f74c2f2b0b83eeab070f3e314917c1755f99b7854146665fae6"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/d2_repair.py",
+      "sha256": "4ad5a4205abdcbba61472e435488c72ac9111a5e6c2a9a8e587d9c80ebedc8ee"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/d2_dataset.py",
+      "sha256": "27d0c0b12a8616c0ea7f482af94539bc8f5b06b17f2e8e24f5a1969d0a760330"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/real_probe.py",
+      "sha256": "eeae8cf9b544ee1de1e72a4d56f8b9d1bef2455dd55f714ab5032807f912f301"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/restricted_data_tools.py",
+      "sha256": "7a85342450982a5db5b8841cec58e3f7e0b6913064b66f0f026a463fbdf58cae"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/qwen_data_backend.py",
+      "sha256": "d4e3373aa48d5654e739567a4d3ac0c9764b276c074d359736172f70f3ff2899"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/qwen_data_ledger.py",
+      "sha256": "3a377a02b372776df1c43735a35044affe968fc34408a58be365d1ebac0f38f5"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/qwen_data_tasks.py",
+      "sha256": "8ac84f097d088b2152bdbf97e561b7ca13a879a675d03f46f63c91d1c1eae61d"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/restricted_data_worker.py",
+      "sha256": "a6b1c07a0451514573b0f2b243984d121bc0329c0cbed528cf1774752cfd2aa0"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/resident_trace_paths.py",
+      "sha256": "a6bc4f76d8b020ac1aaf9f30cac29423884054a65d5c98a79dc9fbd29afe1939"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/prediction_training.py",
+      "sha256": "3d9a04d3c11f906b412af0610d4ee04d7b9569a3869b23b546865b95a14377f0"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/real_dataset.py",
+      "sha256": "5a384a08a5b2a99e2d89c648eef330a45e367d9860f7cf00e2d6a3ee003ca5df"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/trace.py",
+      "sha256": "a123767706d42cc6cb15e7cc34af85a8e253f41aaa04d863b7102e3891e51d89"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/shared_experiment_residency.py",
+      "sha256": "cd2b588fb1de5e0aaaf5b069346cf900d6cd61cf77554ed171e62a1fc4ed91d9"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/d2_repair_audit.py",
+      "sha256": "e7b57499c49ce922dbb804912938a2810ad429785ceb06ffb609c8cc1ad8461a"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/d2_repair_guidance.py",
+      "sha256": "a17ba7e4e7b6c3faf24e01ee172585a75f3dfd7004182e42ee0f6abdcba77e7b"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/native.py",
+      "sha256": "6effa3a8f28111d78f29a07d27fe9ca5ea6f522281075c4ec820b846018333c0"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/real_patches.py",
+      "sha256": "a283aa79efc98b715b8f5aee0607956daaab1b59eb80ee3acbd9e42af267fb01"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/resident_runtime.py",
+      "sha256": "f28ab34d7f41ece03258e4a6968d72dc357ccf9fc34e76fe7cc47ba0e4d02f14"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/resident_tree_worker_process.py",
+      "sha256": "440157f033ad33963662350e5932577e3aef6acc97b02077e883c79a01c2a3db"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/restricted_data_extended.py",
+      "sha256": "988afdee68582f4c34b05d4b6195a18a65ed1698c016579eb17492fcb0c9b953"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/contract_fixtures.py",
+      "sha256": "c0dee446e348dee6eee44eae29409e63916995ba21be88cc1842ce48c62f3d7e"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/d2_hazards.py",
+      "sha256": "0feaa2ec2ec327ff5e5feedb9d5018dcd61ce95f9041b5d47a6d63b6ffe535b2"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/restricted_data_thread_probe_worker.py",
+      "sha256": "c640ca2f531d546fa8a2d29b518e6bed47e190bc27cb5d58fe01208034ca13f8"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/cachewise.py",
+      "sha256": "59f93fb9b4848cc7e503d4e0f9bb0c5e8c9f04c87a53748c50e82614baa4dceb"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/bfcl_runtime.py",
+      "sha256": "706887f7d8c01a688e909e3b1dc11da3cb1d80763cc9016feb13ec24fe55cc75"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/restricted_data_no_thp_worker.py",
+      "sha256": "7469975eceacea47a5d2089b553bca714ab9269bbc30ad47964e4ffafdec7d8d"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/restricted_data_resident_tree_tools.py",
+      "sha256": "3dd4bf311916958f485a0355992db0637c2d02fed57757a9e3b49f0f29644394"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/source_cost.py",
+      "sha256": "0cac94a760e73c5349690040b626c4f14ae573df68cac518cc1902b6a16dc3d5"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/source_replay.py",
+      "sha256": "52b99f8a35dc15f27d96a90cfa8b70480dfd92df3ecce971b8a3f24e349a7d28"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/reuse_predictor.py",
+      "sha256": "24773e363c9fb77e3008cdf7672a4136a4cd2ebb95c85cdc5752126137b67729"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/resident_worker_process.py",
+      "sha256": "fd27743028f1c12eeb6e10cace7f672b557d26153c608e722736e8d384554967"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/restricted_data_timed_worker.py",
+      "sha256": "0f02a08c4aa269ac00eb4bc87f3a30fdc2181456b07f12955f72db5b80d17a2a"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/d2_expansion.py",
+      "sha256": "d4dc6e7f0721a2726d1cebd2e7ab9587d9be1227f9ca36f606c24cd653f37137"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/real_worker.py",
+      "sha256": "0bf78708787385a1f1c082a1560381e0339bf3a86e0740c9a1a9f63fd7057519"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/real_observer.py",
+      "sha256": "222a0f78e204f9fab0fa6580ae77bca3ba5b37f779244685cc6a5b3b2c75bee8"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/qwen_prediction_holdout.py",
+      "sha256": "6a5df999740a6012e0ce5cbf92c1b767f86d8ca8726517d7f645706d7074c77b"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/gbdt_predictor.py",
+      "sha256": "df8645870c255c70f2edee7ec288c1bdf7d6fd8c5bddc0335d3fae7d460d440c"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/resident_file_keeper.py",
+      "sha256": "bfeadac4ea7bf1f90c349a78cafba921600895a7b1c258e1186072241d42abbc"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/__init__.py",
+      "sha256": "6d571806d61aa4bcae35aecc8186a538f4bb0d341ad1ad8c62c7e1548c6cb8ed"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/cache_policy_models.py",
+      "sha256": "1b4d661456e1984776c779cd64dece684c277d24181576dd98b407873a916391"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/real_audit.py",
+      "sha256": "3138b6e20c76e99b67c46a1006989c9e339263002d9a9efcb93c6797e4b5a2c0"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/tracelab.py",
+      "sha256": "03ade77101228a5dbbbb31d5afd9c23dd4d13e7619bcac3a2b9d66310954e016"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/real_tools_v3.py",
+      "sha256": "23f4fc604f7c25633eea9bb5c9cd18ce72e2b61f1c93a0069b196071c7aaad6d"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/d2_probe.py",
+      "sha256": "a924b81cd190f962f5d791da2a80af6825a1bf6da81edeec92cd7c61db8754ec"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/restricted_data_resident_worker.py",
+      "sha256": "551758cf515f4282f2e401dda71fd61cf657d8bcfb29bae966c4210f4f667500"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/restricted_data_timed_tools.py",
+      "sha256": "95d76aadd24da65b32e0416f1b5864006cea10f6ab6d3c4aa38704849cefacf8"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/controlled_window_tools.py",
+      "sha256": "a8348a5472cc93f7e05abbe4ae778f35d1a47cd32034fe8fb4d85cc4a6dfb7da"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/kv_layout.py",
+      "sha256": "94ac484aff37fdb7dcd1a43be03991b61d954b6aa83e386469b56ab890502a5f"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/qwen_data_agent.py",
+      "sha256": "70bf03fe10da0fe00c01118b0c85f05b11998a7fcdbe989aebaae2475e261b61"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/measurement_clock.py",
+      "sha256": "9489177fbca9d2af629e29b825674bdff4c3a7667608b061780e74eb893771b0"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/real_workflow.py",
+      "sha256": "7c77af4443fe969e8391e9daea7382d6b724b06a0e067af61f0fd234f0fc631f"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/source_cases.py",
+      "sha256": "fbe6621fdfd53d6f64113448eebdef139bdc5647a5b834af41df4d43f7f31122"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/restricted_data_single_thread_tools.py",
+      "sha256": "b84ff3d4f9eb3595f7f45b3491f132ad8192cecce683de7b2713a6a09ba8d51e"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/qwen_cache_backend.py",
+      "sha256": "c8f46fe6232e3b38863bed3af9e5167070d390f5aac5e138e95d85e32d51018c"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/d2_raw.py",
+      "sha256": "1a4666def4d0c55a7ddcdb213135cb4e1578f2dbc1f5e94e1ef45fc627c57443"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/prediction_merged.py",
+      "sha256": "ef1041e342af9c7181a8c3a4f70c0be55a3881749e267c795604caae14c9f135"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/cache.py",
+      "sha256": "3ac477520a6584fe4c9fdc5115aade6b46489d88d670875d45f546ccc232d63f"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/controlled_resources.py",
+      "sha256": "c8ce2aba12f511bd4646bc0259cedb7e7df950f5f1f780a7c26496cec3d024b1"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/src/leasepath/restricted_data_controlled_worker.py",
+      "sha256": "d3bc7e43cbb7ec03fd0e996de51fa9ce60c3be0f1a3a5d299253ef5494dc6e06"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/.artifacts/qwen-data-tasks-v5/tasks.private.json",
+      "sha256": "e4cc34b953dafae813677dfd4e89eea843592aad8b35c70d3a2459e109df3a08"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/.artifacts/qwen-data-tasks-v5/references.private.json",
+      "sha256": "086a71e2115a086c14a6209ff9fae0cc5657239c8299a1b25563be0c103f3d26"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/.artifacts/qwen-data-tasks-extension38-v2/tasks.private.json",
+      "sha256": "197b7293dbb09321fe07f1dde4a98991191f0bfb2c8e0104bf82a6fa5c643578"
+    },
+    {
+      "path": "/home/liuxv/LeasePath-new-server-data/.artifacts/qwen-data-tasks-extension38-v2/references.private.json",
+      "sha256": "b4821020fd5f3c56ef53fd81c2c211b831105fc5ac2b3038e2bfb578770a2c98"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "own_tmpfs_directories_removed_after_verified_archive": [
+    "/dev/shm/leasepath-distribution-tests-20261109",
+    "/dev/shm/leasepath-distribution-parent-python-20261109",
+    "/dev/shm/leasepath-distribution-parent-io-20261109",
+    "/dev/shm/leasepath-distribution-natural-python-20261109",
+    "/dev/shm/leasepath-distribution-full-parent-trace-20261109",
+    "/dev/shm/leasepath-distribution-natural-run-20261109"
+  ],
+  "raw_persistent_copies_retained": true,
+  "model_original_preserved": true,
+  "global_host_settings_changed": false,
+  "other_jobs_modified": false
+}

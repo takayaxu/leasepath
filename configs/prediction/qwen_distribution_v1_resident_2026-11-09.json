@@ -1,0 +1,78 @@
+{
+  "stage": "qwen-distribution-v1-native-calibration-2026-11-09-resident-startup-v2",
+  "baseline_git": "81b49e0",
+  "authorization": "按照这个方案继续：版本化分布加权KV淘汰、独立校准及阶段门控",
+  "H_s": 30,
+  "tau_s": 10,
+  "minimum_global_risk_workflows": 5,
+  "capacity_blocks": 24,
+  "block_tokens": 128,
+  "physical_context": 16384,
+  "transient_headroom_tokens": 2048,
+  "model_sha256": "0c2f9e4daac78e72b24f7c054416232a523f0fd2aeb37653747d3c21f7dca078",
+  "gpus": [
+    5,
+    6,
+    7
+  ],
+  "model_cpus": [
+    0,
+    2,
+    5,
+    6,
+    8,
+    10,
+    11,
+    12
+  ],
+  "prefill_cost_proxy": "For already observed block-aligned P, calibrate exact prompt length P+1; the native backend requires one uncached token. No future request suffix is used. This is a declared one-token proxy, not exact future cost.",
+  "prefix_blocks": [
+    9,
+    10,
+    12,
+    13,
+    14,
+    15
+  ],
+  "hit_blocks": "every integer from zero through the observed prefix block count",
+  "calibration": {
+    "seed": 20261109,
+    "fit_repeats": 2,
+    "validation_repeats": 1,
+    "sample_order": "seeded interleaving of prefix length per repeat and hit length within each prefix; each request materializes its full prefix again",
+    "fit": "equal-weight mean of both fit repetitions at each grid point, then decreasing pool-adjacent-violators; no fastest-sample selection",
+    "validation": "independent third repetition; global MAE <= 10% of mean validation prefill and MAE <= 50% of median positive fitted adjacent-block marginal; require positive median marginal",
+    "failure": "retain rejected table and raw measurements; cost-aware policy is not enabled if validation fails"
+  },
+  "phases": {
+    "native": {
+      "probe": 18,
+      "pilot": 1,
+      "total": 18
+    },
+    "calibration_fit": {
+      "probe": 12,
+      "pilot": 158,
+      "total": 170
+    },
+    "calibration_validation": {
+      "probe": 6,
+      "pilot": 79,
+      "total": 85
+    }
+  },
+  "total_generation_hard_cap": 273,
+  "prior_known_generations": 1275,
+  "native_gate": "13 original physical/protocol/abort probes plus 5 real generations with explicitly synthetic crossing distributions to prove ranking-to-native-drop; synthetic scores make no predictor accuracy claim",
+  "resource_scope": "Own GPU 5/6/7 only after idle verification; own CPU affinity is not reservation. Read-only model pages pinned in separate own process. No global cache/THP settings or interference with other tenants.",
+  "instrumentation_scope": "Native prefill_ns excludes decode and Python control. Native/calibration only, no tools, no natural JCT claim. Record parent IO, faults, host/GPU identity and model residency; no ptrace during calibration.",
+  "natural_JCT_gate": "Do not start natural JCT here. Prior controller 4KiB read remains unattributed. A subsequent version must trace parent/descendant I/O outside timing and freeze strict parent read_bytes and major-fault gates before any natural B/C or A/B/C/D crossover.",
+  "failure_rule": "Stop on any token/physical/ownership/protocol/source/GPU-tenant/generation-bound violation, retain every reservation and failure; no replacement samples. Calibration validation failure rejects the table, not its evidence.",
+  "verified_model_origin": "/home/liuxv/LeasePath-new-server-data/.artifacts/qwen-distribution-v1-2026-11-09/run/run-manifest.json",
+  "verified_model_origin_sha256": "5ee43aa0beae6a0671a8747f7da3196476e798d890bffb0d2135fbe3608a7969",
+  "verified_model_runner": "/home/liuxv/LeasePath-new-server-data/scripts/run_qwen_distribution_v1.py",
+  "prior_plan_path": "/home/liuxv/LeasePath-new-server-data/configs/prediction/qwen_distribution_v1_2026-11-09.json",
+  "model_residency_startup_timeout_s": 1800,
+  "prior_failed_attempt": "Original disk-backed model pin startup exceeded 60s; full SHA256 completed; zero generations; immutable failure and sealed zero-use ledgers retained.",
+  "version_change": "Reuse identity-stable fully hashed model; bound initial model pin response at 1800s, later checks at 60s. Same generation/calibration/sample-order limits and acceptance criteria."
+}

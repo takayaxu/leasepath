@@ -1,0 +1,6 @@
+{
+  "status": "passed",
+  "parent_runtime_files_verified_as_identical_subset": 22257,
+  "preserved_runtime": "/home/liuxv/LeasePath-new-server-data/.artifacts/qwen-distribution-natural-2026-11-09/private-runtime",
+  "method": "All original parent runtime file SHA256 and sizes match the independently indexed preserved natural runtime files; two extra source files in latter can be omitted when restoring parent runtime."
+}

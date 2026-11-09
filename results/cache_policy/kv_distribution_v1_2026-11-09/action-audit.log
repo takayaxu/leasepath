@@ -1,0 +1,59 @@
+{
+  "status": "passed",
+  "scope": "same_state_legal_victims_only",
+  "model_generations": 0,
+  "parameters": {
+    "H_s": 30,
+    "tau_s": 10,
+    "cost": "equal",
+    "min_global_workflows": 5
+  },
+  "counts": {
+    "requests": 162,
+    "pressure_requests": 90
+  },
+  "recorded_predictive_actions_verified": 60,
+  "summary": {
+    "conditional": {
+      "pressure_states": 90,
+      "victim_set_changes": 0,
+      "victim_sequence_changes": 0,
+      "fallback_sweeps": 0,
+      "by_recorded_policy": {
+        "retired_first_lru": {
+          "states": 30,
+          "set_changes": 0
+        },
+        "conditional": {
+          "states": 30,
+          "set_changes": 0
+        },
+        "gbdt": {
+          "states": 30,
+          "set_changes": 0
+        }
+      }
+    },
+    "gbdt": {
+      "pressure_states": 90,
+      "victim_set_changes": 4,
+      "victim_sequence_changes": 4,
+      "fallback_sweeps": 0,
+      "by_recorded_policy": {
+        "retired_first_lru": {
+          "states": 30,
+          "set_changes": 2
+        },
+        "conditional": {
+          "states": 30,
+          "set_changes": 0
+        },
+        "gbdt": {
+          "states": 30,
+          "set_changes": 2
+        }
+      }
+    }
+  },
+  "interpretation": "Recorded states, independently reconstructed. No new hit/prefill/JCT benefit inferred."
+}

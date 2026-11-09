@@ -1,0 +1,40 @@
+........................................F............................... [ 28%]
+........................................................................ [ 56%]
+........................................................................ [ 84%]
+........................................                                 [100%]
+=================================== FAILURES ===================================
+________ test_shell_observation_preserves_failed_exit_and_call_identity ________
+
+tmp_path = PosixPath('/tmp/pytest-of-liuxv/pytest-291/test_shell_observation_preserv0')
+
+    def test_shell_observation_preserves_failed_exit_and_call_identity(tmp_path):
+        import hashlib
+        import os
+        from pathlib import Path
+        import subprocess
+        import sys
+        from leasepath.real_observer import validate_stream
+
+        root = Path(__file__).resolve().parents[1]
+        (tmp_path / 'tool-intents').mkdir()
+        (tmp_path / 'tool-execution').mkdir()
+        command = 'printf actual-output; exit 7'
+        intent = {'id': 'test-call', 'name': 'exec_command', 'owner': 'test-owner', 'run_id': 'test',
+                  'arguments': json.dumps({'cmd': command, 'login': False})}
+        (tmp_path / 'tool-intents/one.json').write_text(json.dumps(intent))
+        bootstrap = tmp_path / 'bootstrap.sh'
+        bootstrap.write_text('exec ' + sys.executable + ' ' + str(root / 'scripts/codex32b_shell.py') +
+                             ' -c "$BASH_EXECUTION_STRING"\n')
+        run = subprocess.run(['/bin/bash', '-c', command], cwd=tmp_path, capture_output=True,
+                             text=True, timeout=10, env={**os.environ, 'BASH_ENV': str(bootstrap),
+                             'LEASEPATH_CODEX_EXECUTION_ROOT': str(tmp_path)})
+>       assert (run.returncode, run.stdout) == (7, 'actual-output')
+E       AssertionError: assert (1, '') == (7, 'actual-output')
+E
+E         At index 0 diff: 1 != 7
+E         Use -v to get more diff
+
+tests/test_codex_protocol.py:161: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_codex_protocol.py::test_shell_observation_preserves_failed_exit_and_call_identity
+1 failed, 255 passed, 1 deselected in 80.97s (0:01:20)

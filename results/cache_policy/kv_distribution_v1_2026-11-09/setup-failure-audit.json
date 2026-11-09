@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "attempts": [
+    {
+      "attempt": "run",
+      "status": "failed_before_generation",
+      "error": "TimeoutError: model residency keeper did not respond",
+      "generations": 0,
+      "manifest_sha256": "5ee43aa0beae6a0671a8747f7da3196476e798d890bffb0d2135fbe3608a7969"
+    },
+    {
+      "attempt": "run-resident",
+      "status": "failed_before_generation",
+      "error": "ValueError: prior frozen plan changed",
+      "generations": 0,
+      "manifest_sha256": "83f77514ac1488b5860810f8fa3ac28693f2a2ea861a898831b8806066c693c5"
+    }
+  ],
+  "model_generations": 0
+}

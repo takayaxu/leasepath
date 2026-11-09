@@ -1,0 +1,118 @@
+{
+  "status": "passed",
+  "attempts": [
+    {
+      "name": "setup-1",
+      "status": "failed",
+      "generations": 0,
+      "phases": [
+        {
+          "phase": "calibration_fit",
+          "generations": 0,
+          "ledger_sha256": null
+        },
+        {
+          "phase": "calibration_validation",
+          "generations": 0,
+          "ledger_sha256": null
+        },
+        {
+          "phase": "native",
+          "generations": 0,
+          "ledger_sha256": null
+        }
+      ]
+    },
+    {
+      "name": "setup-2",
+      "status": "failed",
+      "generations": 0,
+      "phases": [
+        {
+          "phase": "calibration_fit",
+          "generations": 0,
+          "ledger_sha256": null
+        },
+        {
+          "phase": "calibration_validation",
+          "generations": 0,
+          "ledger_sha256": null
+        },
+        {
+          "phase": "native",
+          "generations": 0,
+          "ledger_sha256": null
+        }
+      ]
+    },
+    {
+      "name": "native-calibration",
+      "status": "completed",
+      "generations": 273,
+      "phases": [
+        {
+          "phase": "calibration_fit",
+          "generations": 170,
+          "ledger_sha256": "0cbafff33947f79c40e961b59e1957cb8fd5bc8d07c034092d98841d29e52e31"
+        },
+        {
+          "phase": "calibration_validation",
+          "generations": 85,
+          "ledger_sha256": "52d7ec9cc2c5077ee4505c43881c3cbf3c872fe76295d76ac90769cdc9d3a930"
+        },
+        {
+          "phase": "native",
+          "generations": 18,
+          "ledger_sha256": "a0b0943402663af454ab5383dd915fd180cdad8326e7394ebff70230c83904cd"
+        }
+      ]
+    },
+    {
+      "name": "full-parent-trace",
+      "status": "completed",
+      "generations": 22,
+      "phases": [
+        {
+          "phase": "diagnostic",
+          "generations": 22,
+          "ledger_sha256": "f18711475adbd1665e2b68b63a4fd3d333792e1e80cff9483cbed26f3790000b"
+        }
+      ]
+    },
+    {
+      "name": "natural",
+      "status": "completed",
+      "generations": 157,
+      "phases": [
+        {
+          "phase": "cycle_0",
+          "generations": 49,
+          "ledger_sha256": "b15e542123a1aa61ff7239876eda6ae30eb60cf8e9b83ac22d01fba238795077"
+        },
+        {
+          "phase": "cycle_1",
+          "generations": 36,
+          "ledger_sha256": "ed46f34ecb33d91aead62b87a3df1dcc33654ae9d6f53bc02a9ee2cde199df36"
+        },
+        {
+          "phase": "cycle_2",
+          "generations": 36,
+          "ledger_sha256": "da5826dca387954bb8862cb0c73ccdd7048b7ad1fe69ac6f47b8bf11594e8c0d"
+        },
+        {
+          "phase": "cycle_3",
+          "generations": 36,
+          "ledger_sha256": "5994545232546fd8418d8bdffbdace995f94e0b32228225cd17c436607378244"
+        }
+      ]
+    }
+  ],
+  "new_unique_generation_reservations": 452,
+  "prior_known_generations": 1275,
+  "known_total": 1727,
+  "GPU_5_6_7_memory_MiB_after_close": {
+    "5": 4,
+    "6": 4,
+    "7": 4
+  }
+}

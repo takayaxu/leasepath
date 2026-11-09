@@ -1,0 +1,5 @@
+{
+  "raw_gzip": "tests-first-command-failed.log.gz",
+  "raw_sha256": "39a8f682b1e709c2f7da3020e5c6110e81a6333c9fcfc9249d2774fbd470f95c",
+  "text_copy": "trailing whitespace trimmed for repository display; exact original bytes retained in gzip"
+}

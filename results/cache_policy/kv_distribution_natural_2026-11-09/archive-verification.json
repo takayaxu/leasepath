@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "archive": "/home/liuxv/LeasePath-new-server-data/.artifacts/checkpoints/kv-distribution-2026-11-09/raw-evidence.tar.gz",
+  "archive_bytes": 1828823086,
+  "archive_sha256": "83d44e33fa9c48a4a4a06ad2ed1c1fe2e3a5f093fc38d78e334939e3c963b081",
+  "entries_verified": 23568,
+  "raw_file_bytes": 3281396999,
+  "tmpfs_copies_verified": true,
+  "known_model_generations_after": 1727,
+  "new_model_generations": 452,
+  "contents": "273 native/calibration + 22 traced full-controller + 157 natural generations; two retained zero-generation setup failures; parent IO traces; private runtime; sealed ledgers; frozen sources",
+  "restoration": "Raw audits were run before tmpfs cleanup; to rerun original path-based runtime audits restore own recorded tmpfs paths or use immutable archived files/hashes. Model GGUF remains at its verified persistent source and is not bundled."
+}

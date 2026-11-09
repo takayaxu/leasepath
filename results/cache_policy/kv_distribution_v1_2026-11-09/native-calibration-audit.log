@@ -1,0 +1,31 @@
+PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+{
+  "status": "passed",
+  "experiment_status": "completed",
+  "model_generations": 273,
+  "phase_generations": {
+    "native": 18,
+    "calibration_fit": 170,
+    "calibration_validation": 85
+  },
+  "native_physical_token_requests_checked": 273,
+  "calibration_samples_checked": 237,
+  "independent_fit_validation": {
+    "status": "passed",
+    "heldout_grid_points": 79,
+    "MAE_s": 0.002607123430379744,
+    "MAE_over_mean_prefill": 0.002465385917074471,
+    "median_positive_marginal_s": 0.09299061600000003,
+    "MAE_over_median_marginal": 0.028036414237537076,
+    "thresholds": {
+      "MAE_over_mean_prefill_max": 0.1,
+      "MAE_over_median_marginal_max": 0.5
+    }
+  },
+  "synthetic_weighted_native_gate": "passed",
+  "sample_parent_disk_read_bytes": 0,
+  "sample_parent_major_faults": 0,
+  "natural_JCT_executed": false,
+  "cumulative_known_generations": 1548,
+  "audit_source_sha256": "8c9f9a967ebf4d0129a523455815aee4f76b8b8a0615898ec977859a26cbef25"
+}

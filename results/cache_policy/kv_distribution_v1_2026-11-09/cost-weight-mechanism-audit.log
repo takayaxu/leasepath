@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "pressure_states": 90,
+  "model_generations": 0,
+  "weighted_vs_cost_only_victim_set_changes": 37,
+  "weighted_vs_cost_point_victim_set_changes": 2,
+  "scope": "independent greedy reconstruction at old recorded states; no new cache trajectory/JCT inferred",
+  "source_sha256": "934cb765d19a7516259f0c3b313132829cf54f7d31582e5602a627a949b272af"
+}

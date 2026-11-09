@@ -1,0 +1,918 @@
+{
+  "status": "passed",
+  "experiment_status": "completed",
+  "requests_checked": 22,
+  "probe_requests": 13,
+  "live_requests": 9,
+  "batches": 1,
+  "tasks": 3,
+  "correct": 3,
+  "failed": 0,
+  "sealed_streams": 2,
+  "consumed_tool_results": 6,
+  "compute_calls": 3,
+  "structured_rejections": 0,
+  "sentinels": [
+    {
+      "group": "after-load-tool-sentinel",
+      "task": "logistic_holdout",
+      "lifetime": {
+        "major_faults": 0,
+        "minor_faults": 152150,
+        "block_input_ops": 0,
+        "block_output_ops": 0,
+        "user_s": 8.664219,
+        "system_s": 1.212199,
+        "scope": "wait4 worker lifetime including startup, exit, and reaped descendants"
+      },
+      "descendants": [
+        {
+          "argv": [
+            "/sbin/ldconfig",
+            "-p"
+          ],
+          "began_ns": 1405826670734637,
+          "pid": 1776874,
+          "ended_ns": 1405826681394732,
+          "usage": {
+            "major_faults": 0,
+            "minor_faults": 102,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 0.0035619999999999996,
+            "system_s": 0.0,
+            "scope": "wait4 entire child lifetime, includes interpreter startup and exit"
+          }
+        },
+        {
+          "argv": [
+            "/sbin/ldconfig",
+            "-p"
+          ],
+          "began_ns": 1405826687795913,
+          "pid": 1776878,
+          "ended_ns": 1405826698591074,
+          "usage": {
+            "major_faults": 0,
+            "minor_faults": 104,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 0.0035039999999999997,
+            "system_s": 0.0,
+            "scope": "wait4 entire child lifetime, includes interpreter startup and exit"
+          }
+        },
+        {
+          "argv": [
+            "/sbin/ldconfig",
+            "-p"
+          ],
+          "began_ns": 1405827540472843,
+          "pid": 1777201,
+          "ended_ns": 1405827554615762,
+          "usage": {
+            "major_faults": 0,
+            "minor_faults": 105,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 0.0,
+            "system_s": 0.004529,
+            "scope": "wait4 entire child lifetime, includes interpreter startup and exit"
+          }
+        },
+        {
+          "argv": [
+            "/sbin/ldconfig",
+            "-p"
+          ],
+          "began_ns": 1405838313989522,
+          "pid": 1779595,
+          "ended_ns": 1405838326804527,
+          "usage": {
+            "major_faults": 0,
+            "minor_faults": 105,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 0.004222,
+            "system_s": 0.0,
+            "scope": "wait4 entire child lifetime, includes interpreter startup and exit"
+          }
+        }
+      ]
+    },
+    {
+      "group": "after-load-tool-sentinel",
+      "task": "ridge_validation",
+      "lifetime": {
+        "major_faults": 0,
+        "minor_faults": 1022672,
+        "block_input_ops": 0,
+        "block_output_ops": 0,
+        "user_s": 12.014576,
+        "system_s": 4.212084,
+        "scope": "wait4 worker lifetime including startup, exit, and reaped descendants"
+      },
+      "descendants": [
+        {
+          "argv": [
+            "/sbin/ldconfig",
+            "-p"
+          ],
+          "began_ns": 1405828052194171,
+          "pid": 1777445,
+          "ended_ns": 1405828064524629,
+          "usage": {
+            "major_faults": 0,
+            "minor_faults": 105,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 0.004425,
+            "system_s": 0.0,
+            "scope": "wait4 entire child lifetime, includes interpreter startup and exit"
+          }
+        },
+        {
+          "argv": [
+            "/sbin/ldconfig",
+            "-p"
+          ],
+          "began_ns": 1405828071724130,
+          "pid": 1777446,
+          "ended_ns": 1405828083669193,
+          "usage": {
+            "major_faults": 0,
+            "minor_faults": 104,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 0.004127,
+            "system_s": 0.0,
+            "scope": "wait4 entire child lifetime, includes interpreter startup and exit"
+          }
+        },
+        {
+          "argv": [
+            "/sbin/ldconfig",
+            "-p"
+          ],
+          "began_ns": 1405828899510259,
+          "pid": 1777494,
+          "ended_ns": 1405828914646188,
+          "usage": {
+            "major_faults": 0,
+            "minor_faults": 103,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 0.0045179999999999994,
+            "system_s": 0.0,
+            "scope": "wait4 entire child lifetime, includes interpreter startup and exit"
+          }
+        },
+        {
+          "argv": [
+            "/sbin/ldconfig",
+            "-p"
+          ],
+          "began_ns": 1405846112887317,
+          "pid": 1780841,
+          "ended_ns": 1405846124048977,
+          "usage": {
+            "major_faults": 0,
+            "minor_faults": 102,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 0.001807,
+            "system_s": 0.001807,
+            "scope": "wait4 entire child lifetime, includes interpreter startup and exit"
+          }
+        }
+      ]
+    },
+    {
+      "group": "after-load-tool-sentinel",
+      "task": "temporal_asof",
+      "lifetime": {
+        "major_faults": 0,
+        "minor_faults": 24399,
+        "block_input_ops": 0,
+        "block_output_ops": 0,
+        "user_s": 5.328401,
+        "system_s": 0.6372,
+        "scope": "wait4 worker lifetime including startup, exit, and reaped descendants"
+      },
+      "descendants": [
+        {
+          "argv": [
+            "/sbin/ldconfig",
+            "-p"
+          ],
+          "began_ns": 1405826103754568,
+          "pid": 1776767,
+          "ended_ns": 1405826114287713,
+          "usage": {
+            "major_faults": 0,
+            "minor_faults": 100,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 0.0,
+            "system_s": 0.0035949999999999997,
+            "scope": "wait4 entire child lifetime, includes interpreter startup and exit"
+          }
+        },
+        {
+          "argv": [
+            "/sbin/ldconfig",
+            "-p"
+          ],
+          "began_ns": 1405826120464737,
+          "pid": 1776768,
+          "ended_ns": 1405826130233999,
+          "usage": {
+            "major_faults": 0,
+            "minor_faults": 100,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 0.00343,
+            "system_s": 0.0,
+            "scope": "wait4 entire child lifetime, includes interpreter startup and exit"
+          }
+        },
+        {
+          "argv": [
+            "/sbin/ldconfig",
+            "-p"
+          ],
+          "began_ns": 1405826932163134,
+          "pid": 1776963,
+          "ended_ns": 1405826944636278,
+          "usage": {
+            "major_faults": 0,
+            "minor_faults": 99,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 0.0039759999999999995,
+            "system_s": 0.0,
+            "scope": "wait4 entire child lifetime, includes interpreter startup and exit"
+          }
+        },
+        {
+          "argv": [
+            "/sbin/ldconfig",
+            "-p"
+          ],
+          "began_ns": 1405832935148926,
+          "pid": 1778626,
+          "ended_ns": 1405832946013194,
+          "usage": {
+            "major_faults": 0,
+            "minor_faults": 103,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 0.003681,
+            "system_s": 0.0,
+            "scope": "wait4 entire child lifetime, includes interpreter startup and exit"
+          }
+        }
+      ]
+    },
+    {
+      "group": "sentinel-0",
+      "task": "logistic_holdout",
+      "lifetime": {
+        "major_faults": 0,
+        "minor_faults": 151192,
+        "block_input_ops": 0,
+        "block_output_ops": 0,
+        "user_s": 8.884015,
+        "system_s": 1.377138,
+        "scope": "wait4 worker lifetime including startup, exit, and reaped descendants"
+      },
+      "descendants": [
+        {
+          "argv": [
+            "/sbin/ldconfig",
+            "-p"
+          ],
+          "began_ns": 1405850800193639,
+          "pid": 1782079,
+          "ended_ns": 1405850811566478,
+          "usage": {
+            "major_faults": 0,
+            "minor_faults": 99,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 0.0,
+            "system_s": 0.003522,
+            "scope": "wait4 entire child lifetime, includes interpreter startup and exit"
+          }
+        },
+        {
+          "argv": [
+            "/sbin/ldconfig",
+            "-p"
+          ],
+          "began_ns": 1405850817473981,
+          "pid": 1782081,
+          "ended_ns": 1405850826251820,
+          "usage": {
+            "major_faults": 0,
+            "minor_faults": 104,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 0.0,
+            "system_s": 0.003356,
+            "scope": "wait4 entire child lifetime, includes interpreter startup and exit"
+          }
+        },
+        {
+          "argv": [
+            "/sbin/ldconfig",
+            "-p"
+          ],
+          "began_ns": 1405851601412352,
+          "pid": 1782421,
+          "ended_ns": 1405851613538051,
+          "usage": {
+            "major_faults": 0,
+            "minor_faults": 103,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 0.0,
+            "system_s": 0.0035919999999999997,
+            "scope": "wait4 entire child lifetime, includes interpreter startup and exit"
+          }
+        },
+        {
+          "argv": [
+            "/sbin/ldconfig",
+            "-p"
+          ],
+          "began_ns": 1405862916947615,
+          "pid": 1784618,
+          "ended_ns": 1405862927743596,
+          "usage": {
+            "major_faults": 0,
+            "minor_faults": 101,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 0.0,
+            "system_s": 0.00364,
+            "scope": "wait4 entire child lifetime, includes interpreter startup and exit"
+          }
+        }
+      ]
+    },
+    {
+      "group": "sentinel-0",
+      "task": "ridge_validation",
+      "lifetime": {
+        "major_faults": 0,
+        "minor_faults": 1022101,
+        "block_input_ops": 0,
+        "block_output_ops": 0,
+        "user_s": 11.961708,
+        "system_s": 4.231941,
+        "scope": "wait4 worker lifetime including startup, exit, and reaped descendants"
+      },
+      "descendants": [
+        {
+          "argv": [
+            "/sbin/ldconfig",
+            "-p"
+          ],
+          "began_ns": 1405852751948919,
+          "pid": 1782642,
+          "ended_ns": 1405852764883808,
+          "usage": {
+            "major_faults": 0,
+            "minor_faults": 104,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 0.004478,
+            "system_s": 0.0,
+            "scope": "wait4 entire child lifetime, includes interpreter startup and exit"
+          }
+        },
+        {
+          "argv": [
+            "/sbin/ldconfig",
+            "-p"
+          ],
+          "began_ns": 1405852772068119,
+          "pid": 1782652,
+          "ended_ns": 1405852785647896,
+          "usage": {
+            "major_faults": 0,
+            "minor_faults": 101,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 0.004395,
+            "system_s": 0.0,
+            "scope": "wait4 entire child lifetime, includes interpreter startup and exit"
+          }
+        },
+        {
+          "argv": [
+            "/sbin/ldconfig",
+            "-p"
+          ],
+          "began_ns": 1405853663398846,
+          "pid": 1782889,
+          "ended_ns": 1405853678350446,
+          "usage": {
+            "major_faults": 0,
+            "minor_faults": 100,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 0.004926,
+            "system_s": 0.0,
+            "scope": "wait4 entire child lifetime, includes interpreter startup and exit"
+          }
+        },
+        {
+          "argv": [
+            "/sbin/ldconfig",
+            "-p"
+          ],
+          "began_ns": 1405870804054472,
+          "pid": 1786570,
+          "ended_ns": 1405870812798510,
+          "usage": {
+            "major_faults": 0,
+            "minor_faults": 102,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 0.003437,
+            "system_s": 0.0,
+            "scope": "wait4 entire child lifetime, includes interpreter startup and exit"
+          }
+        }
+      ]
+    },
+    {
+      "group": "sentinel-0",
+      "task": "temporal_asof",
+      "lifetime": {
+        "major_faults": 0,
+        "minor_faults": 23884,
+        "block_input_ops": 0,
+        "block_output_ops": 0,
+        "user_s": 5.764606,
+        "system_s": 0.541203,
+        "scope": "wait4 worker lifetime including startup, exit, and reaped descendants"
+      },
+      "descendants": [
+        {
+          "argv": [
+            "/sbin/ldconfig",
+            "-p"
+          ],
+          "began_ns": 1405850299011331,
+          "pid": 1781951,
+          "ended_ns": 1405850309860070,
+          "usage": {
+            "major_faults": 0,
+            "minor_faults": 102,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 0.003927,
+            "system_s": 0.0,
+            "scope": "wait4 entire child lifetime, includes interpreter startup and exit"
+          }
+        },
+        {
+          "argv": [
+            "/sbin/ldconfig",
+            "-p"
+          ],
+          "began_ns": 1405850315885035,
+          "pid": 1781961,
+          "ended_ns": 1405850326159915,
+          "usage": {
+            "major_faults": 0,
+            "minor_faults": 102,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 0.003506,
+            "system_s": 0.0,
+            "scope": "wait4 entire child lifetime, includes interpreter startup and exit"
+          }
+        },
+        {
+          "argv": [
+            "/sbin/ldconfig",
+            "-p"
+          ],
+          "began_ns": 1405851128206779,
+          "pid": 1782234,
+          "ended_ns": 1405851140071582,
+          "usage": {
+            "major_faults": 0,
+            "minor_faults": 102,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 0.0,
+            "system_s": 0.004158,
+            "scope": "wait4 entire child lifetime, includes interpreter startup and exit"
+          }
+        },
+        {
+          "argv": [
+            "/sbin/ldconfig",
+            "-p"
+          ],
+          "began_ns": 1405857456299281,
+          "pid": 1783272,
+          "ended_ns": 1405857468598149,
+          "usage": {
+            "major_faults": 0,
+            "minor_faults": 100,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 0.0,
+            "system_s": 0.004424,
+            "scope": "wait4 entire child lifetime, includes interpreter startup and exit"
+          }
+        }
+      ]
+    }
+  ],
+  "sentinel_violations": [],
+  "failures": [],
+  "resource_violations": [],
+  "aggregates": [
+    {
+      "phase": "diagnostic",
+      "policy": "gbdt_cost",
+      "batches": 1,
+      "mean_successful_jct_s": 53.95147442359788,
+      "makespan_s": 69.43885873886757,
+      "cached_tokens": 7808,
+      "prefill_s": 9.960247542,
+      "decode_s": 53.302958598,
+      "prediction_s": 0.011544323,
+      "host_cpu_psi_pct": [
+        0.5869539248235496
+      ],
+      "host_io_psi_pct": [
+        6.2351987105813995
+      ],
+      "parent_read_bytes": 0
+    }
+  ],
+  "paired": [
+    {
+      "phase": "diagnostic",
+      "policy": "gbdt_cost",
+      "complete_repeat_pairs": 0,
+      "mean_task_jct_delta_s": null,
+      "repeat_mean_jct_deltas_s": [],
+      "per_task_mean_delta_s": {},
+      "paired_input_shapes_equal": true,
+      "paired_exact_token_workloads_equal": true,
+      "scope": "external strace preparation only, never natural timing evidence"
+    }
+  ],
+  "batch_metrics": [
+    {
+      "repeat": 0,
+      "policy": "gbdt_cost",
+      "status": "passed",
+      "mean_successful_jct_s": 53.95147442359788,
+      "makespan_s": 69.43885873886757,
+      "cached_tokens": 7808,
+      "executed_prefill_tokens": 6746,
+      "prefill_s": 9.960247542,
+      "decode_s": 53.302958598,
+      "prediction_s": 0.011544323,
+      "generations": 9,
+      "phase": "diagnostic",
+      "victim_set_divergences": 3,
+      "tools": [
+        {
+          "task": "logistic_holdout",
+          "natural_tool_wall_s": 13.348649633,
+          "worker_kernel_s": 1.068209,
+          "queue_fraction": 0.004953615194114078,
+          "window_added_wait_s": 0.0
+        },
+        {
+          "task": "temporal_asof",
+          "natural_tool_wall_s": 7.797964945,
+          "worker_kernel_s": 0.42773,
+          "queue_fraction": 0.003451527121844191,
+          "window_added_wait_s": 0.0
+        },
+        {
+          "task": "ridge_validation",
+          "natural_tool_wall_s": 22.907931379,
+          "worker_kernel_s": 3.882056,
+          "queue_fraction": 0.0034408148380010296,
+          "window_added_wait_s": 0.0
+        }
+      ],
+      "score_audits": [
+        {
+          "cost_fallback_sweeps": 0,
+          "distribution_fallback_sweeps": 0,
+          "point_victim_set_changed": false,
+          "controller_prepare_s": 0.000529203,
+          "decision_with_shadows_s": 0.000308353,
+          "prediction_calls": 0
+        },
+        {
+          "cost_fallback_sweeps": 0,
+          "distribution_fallback_sweeps": 0,
+          "point_victim_set_changed": false,
+          "controller_prepare_s": 0.00620341,
+          "decision_with_shadows_s": 0.00118034,
+          "prediction_calls": 0
+        },
+        {
+          "cost_fallback_sweeps": 0,
+          "distribution_fallback_sweeps": 0,
+          "point_victim_set_changed": false,
+          "controller_prepare_s": 0.009963445,
+          "decision_with_shadows_s": 0.002283122,
+          "prediction_calls": 0
+        },
+        {
+          "cost_fallback_sweeps": 0,
+          "distribution_fallback_sweeps": 0,
+          "point_victim_set_changed": false,
+          "controller_prepare_s": 0.016292759,
+          "decision_with_shadows_s": 0.002783171,
+          "prediction_calls": 0
+        },
+        {
+          "cost_fallback_sweeps": 0,
+          "distribution_fallback_sweeps": 0,
+          "point_victim_set_changed": true,
+          "controller_prepare_s": 0.039144292,
+          "decision_with_shadows_s": 0.009052132,
+          "prediction_calls": 2
+        },
+        {
+          "cost_fallback_sweeps": 0,
+          "distribution_fallback_sweeps": 0,
+          "point_victim_set_changed": true,
+          "controller_prepare_s": 0.047423038,
+          "decision_with_shadows_s": 0.011180002,
+          "prediction_calls": 2
+        },
+        {
+          "cost_fallback_sweeps": 0,
+          "distribution_fallback_sweeps": 0,
+          "point_victim_set_changed": true,
+          "controller_prepare_s": 0.038680139,
+          "decision_with_shadows_s": 0.008937571,
+          "prediction_calls": 2
+        },
+        {
+          "cost_fallback_sweeps": 0,
+          "distribution_fallback_sweeps": 0,
+          "point_victim_set_changed": false,
+          "controller_prepare_s": 0.032089489,
+          "decision_with_shadows_s": 0.00298664,
+          "prediction_calls": 0
+        },
+        {
+          "cost_fallback_sweeps": 0,
+          "distribution_fallback_sweeps": 0,
+          "point_victim_set_changed": false,
+          "controller_prepare_s": 0.0280213,
+          "decision_with_shadows_s": 0.003398524,
+          "prediction_calls": 0
+        }
+      ],
+      "actual_prefill_tokens": 6746,
+      "controller_prepare_s": 0.218347075,
+      "host_cpu_psi_pct": 0.5869539248235496,
+      "host_io_psi_pct": 6.2351987105813995,
+      "host_memory_full_psi_pct": 0.5480943159250866,
+      "parent_read_bytes": 0,
+      "parent_major_faults": 0,
+      "parent_block_input_ops": 0,
+      "residency": {
+        "model": {
+          "files": 1,
+          "pages": 15999993,
+          "nonresident_pages": 0
+        },
+        "protected": {
+          "files": 396,
+          "pages": 69538,
+          "nonresident_pages": 0
+        },
+        "runtime": {
+          "files": 21993,
+          "pages": 178890,
+          "nonresident_pages": 0
+        },
+        "post_load": {
+          "files": 8,
+          "pages": 281183,
+          "nonresident_pages": 0
+        }
+      }
+    }
+  ],
+  "task_metrics": [
+    {
+      "phase": "diagnostic",
+      "repeat": 0,
+      "policy": "gbdt_cost",
+      "task": "logistic_holdout",
+      "success": true,
+      "jct_s": 38.25973336189054,
+      "generations": 3,
+      "input_token_counts": [
+        1213,
+        1638,
+        1777
+      ],
+      "decode_tokens": [
+        21,
+        79,
+        60
+      ],
+      "input_token_sha256": [
+        "9fbf9f10d9448375f470cc03c0db1fc03c4e71fa44dedc6462e213ed82064912",
+        "97fd32f32b52ac6d592327522e3121cb57d525144904be2b005a283502473ad5",
+        "ba28c12dc611add051cb632ae4d390ec43c29dd5014d612625aa28f42743434d"
+      ],
+      "output_token_sha256": [
+        "15cd5820126a4fb77ce28124e2d12f8546936d98cd559d93777d0ce4e197d109",
+        "9d1a8f0ba566825d42b6c243f4f517897eed4fd5ad4e018d7df6e51f4887987d",
+        "e0f20befab3cbd94fd6880869c798a0138a73b45375c5a21560f1e75a8611383"
+      ]
+    },
+    {
+      "phase": "diagnostic",
+      "repeat": 0,
+      "policy": "gbdt_cost",
+      "task": "temporal_asof",
+      "success": true,
+      "jct_s": 54.35720520885661,
+      "generations": 3,
+      "input_token_counts": [
+        1360,
+        1668,
+        1872
+      ],
+      "decode_tokens": [
+        21,
+        34,
+        178
+      ],
+      "input_token_sha256": [
+        "d881c65f4aaf90dc8940a7cea8283cc2bab11beda3fe7b7f3b2efb21ad91efa4",
+        "2949ba67690104f4978b9ad8bf80e329d6a3f51c911b3c96970a46b01a7719fe",
+        "3b6a02387c9893f2ebc3918a803cc8d4a736c0579c4a7dca809ef3c98c9bf562"
+      ],
+      "output_token_sha256": [
+        "00ad56d60a35060cc26a700d6b1d18f645beae1895cbeeba720c4430fbfb028f",
+        "7b414426c061004ec7aebc8ce1ef10414461ce3f3cd1747166d340511bddeff4",
+        "bfeebb7d574b8e7af4fb7360b49b9b7d54d33cafe5372d078d76ad3c3ebb53df"
+      ]
+    },
+    {
+      "phase": "diagnostic",
+      "repeat": 0,
+      "policy": "gbdt_cost",
+      "task": "ridge_validation",
+      "success": true,
+      "jct_s": 69.23748470004648,
+      "generations": 3,
+      "input_token_counts": [
+        1276,
+        1756,
+        1994
+      ],
+      "decode_tokens": [
+        19,
+        87,
+        151
+      ],
+      "input_token_sha256": [
+        "2ccf57f1efcd1a13cb036b4d0a84779aa13d078cfe4845a1e4587c26566772b5",
+        "a12093b8ac5cdb8ed23f70112101930065ae2d23bf82750e4c740ff269b84545",
+        "ebcbadefb28b13ead6a15ff5eba095b730fec562710ab3f827992cdabe43c10a"
+      ],
+      "output_token_sha256": [
+        "6726d281f2125ee1937d48a2db65d9b4e9182fe70b3b7cee4f67f6c9a283e8e7",
+        "bb8e2c154074f0baf0dd18526aadf2f4e0aab63ddba69fb018d5055f2f3b2c5e",
+        "5f1d6c250bb1433f3632f5b82b645c3e796164f3e339fe1a3d9ddca8e13e1fbe"
+      ]
+    }
+  ],
+  "fixed_window_is_not_natural_jct": true,
+  "prior_noise_gates_remain_failed": true,
+  "natural_scope": "diagnostic trace only; do not use timings",
+  "diagnostic_trace": true,
+  "parent_io_gate": false,
+  "source_sha256": {
+    "/home/liuxv/LeasePath-new-server-data/configs/prediction/qwen_distribution_parent_trace_2026-11-09.json": "f5861299f516cbc03dcb219fabd2e6f03983912a04d42904290c2a3afa172330",
+    "/home/liuxv/LeasePath-new-server-data/scripts/run_qwen_distribution_natural.py": "2ed66190934be7ac86b26a3f37c50d2be172b77b90884c9859fb3b48bcd2e30d",
+    "/home/liuxv/LeasePath-new-server-data/scripts/qwen_cache_resident_tree_batch.py": "68d1061196f4230b74d81cb21e67283acecb8bd91b0f76e6171e668968d9c717",
+    "/home/liuxv/LeasePath-new-server-data/scripts/probe_qwen_resident_tree_tools.py": "670c4a61543bdb8c44b20020d7fed2149ca43f05bd1c9445636d1b220b16cfab",
+    "/home/liuxv/LeasePath-new-server-data/scripts/probe_qwen_controlled_tools.py": "c7643a1e59dbb7113a28fb83375c423e8aae1b967c4dbf7e07f70062970c8728",
+    "/home/liuxv/LeasePath-new-server-data/scripts/run_qwen_cache_controlled.py": "e865a286318b97b05db5b8b90042107056149fbbcd198956664b5300b3a3e3b2",
+    "/home/liuxv/LeasePath-new-server-data/scripts/probe_qwen_cache_matrix.py": "b451f5bc3b491252c99677bf84d4d17600fa33c421433e38fa0143d3a48d84fb",
+    "/home/liuxv/LeasePath-new-server-data/scripts/check_qwen_distribution_natural.py": "b3230040e5af98f7432661a251aadbc4c9b3b9adb23e5f338e6933d0efb7e442",
+    "/home/liuxv/LeasePath-new-server-data/scripts/audit_distribution_live.py": "340df8e86b135f265b71d730492c93e0168feb2969831c0bfafaa49c520e3a6d",
+    "/home/liuxv/LeasePath-new-server-data/scripts/audit_kv_distribution_actions.py": "805c49698695dcbf4b7c023df3d9cc1d4918e9100fa2f34a8bb66acc631b3dcc",
+    "/home/liuxv/LeasePath-new-server-data/scripts/audit_kv_distribution_cost_actions.py": "856b775c7c21e6301185c4aceea5d2eae64e1e29cffe18bf1bd9ca132a824425",
+    "/home/liuxv/LeasePath-new-server-data/scripts/summarize_qwen_resident_natural.py": "0a81f81a6c2bf7fd05a851b5607cf9afe321f64bac2c0bae9ebd2480b2430a71",
+    "/home/liuxv/LeasePath-new-server-data/scripts/prepare_qwen_resident_runtime.py": "66befa4985adf935467f66d433ab1464a916732f2898d76c00f62030ff8492e1",
+    "/home/liuxv/LeasePath-new-server-data/scripts/diagnose_qwen_resident_files.py": "e61ba79cfe0009ca6f967d19893e7dd5bbf2102939242437a2af107bf70af040",
+    "/home/liuxv/LeasePath-new-server-data/.artifacts/qwen-distribution-natural-2026-11-09/preparation/system-residency.json": "8388882db15e2579698b035d5bcb61062261721b74dddb422fe8fa9dcc36cea9",
+    "/home/liuxv/LeasePath-new-server-data/.artifacts/qwen-cache-stage2/native/backend.so": "9a143ad8ff9c8345785b9332b69e19e44bf91ede3bc1546aed6fc8e5d61192c6",
+    "/home/liuxv/local-models/qwen25-coder-32b-leasepath/hf/tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+    "/home/liuxv/local-models/qwen25-coder-32b-leasepath/hf/tokenizer_config.json": "959e7f1d9a1b7641a6d6ce05ca97b75c7894fcb66cbe5a040406458fb1128ee4",
+    "/home/liuxv/LeasePath-new-server-data/results/prediction/qwen50_holdout_2026-11-08/conditional-model.json": "b42ee7799f3e6532c2f68da0129ab80280c52fb89658b24581bc86b77851adfb",
+    "/home/liuxv/LeasePath-new-server-data/results/prediction/qwen50_holdout_2026-11-08/gbdt-model.json": "283b3c829a48460360ccf6a1ac311e2e7989a90d74d2338e15e25b08f7e78c5c",
+    "/home/liuxv/LeasePath-new-server-data/.artifacts/qwen-distribution-natural-2026-11-09/preparation/runtime-copy.json": "acb96de4e3acde351ff9b171f291c1f52d2111343484ad4a986e75c796eda882",
+    "/home/liuxv/LeasePath-new-server-data/.artifacts/qwen-distribution-v1-2026-11-09/run-resident-v2/cost-table.json": "ee000f512c840d04bce7d8f77e15a0ec8b831ed4138343e6e7c1a130911ed85f",
+    "/home/liuxv/LeasePath-new-server-data/.artifacts/qwen-distribution-v1-2026-11-09/run-resident-v2/backend-identity.json": "fd29e435756e4319cdfaeed10eacf4a0199215b680872ed2e3e37aa820a7901e",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/codex_protocol.py": "613c1dcc6a9f7f7931e55085335dc45229678606530bbfb948c2002b6086f20a",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/real_environment.py": "437318de21ad1ec08523de4258eb3dfad566c589a6008cd0c6ba1e3398042ccd",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/prediction_state.py": "513acd885ad7bf490a52c1f3be004429489ed682920b26b3213e17378ce6d30f",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/distribution_model_residency_v2.py": "0180db3c995b8f635a96eeb606e17414631f32fabbe679b9af6a98df327a2dba",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/qwen_data_audit.py": "173e9e7ba200a20e0580f5b8329e1a8e5860756f13eab1b2c42c7683fc94a1d3",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/cache_matrix_continuation.py": "128b3674b8d60c66f919997dc138f8e405913bd1a9fc79e96dc6c1912612cafc",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/predictive_cache.py": "56fd34121ac2bcc8d3aecb0a990f3b95538487814bf6f2f381f35aaeb2bd5d8a",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/restricted_data_resident_tree_worker.py": "04bb1bcdb000b2857fc1a255c80cba5846d9f3c023bf7cd24de22ce4ed81b01c",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/restricted_data_resident_tools.py": "1fde6cd7f6237173dff8efdd054ab81d01cb5317474979cfd79aac971d8af23f",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/restricted_data_controlled_tools.py": "586f670878c8249c00ec7ac42ff37aab7271e8c5503835f67763d5400fbca8a3",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/qwen_data_extension_tasks.py": "d4e39da5f93bc6a573b4602fa14bb103a9aa2c2503004caa6ef7170ed37c72bc",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/real_projection_v2.py": "287cae728148247218da7ea8408e5b76a8b63da24e23eb83b057ae103605fcf4",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/cache_matrix.py": "f3d31666a5542f74c2f2b0b83eeab070f3e314917c1755f99b7854146665fae6",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/d2_repair.py": "4ad5a4205abdcbba61472e435488c72ac9111a5e6c2a9a8e587d9c80ebedc8ee",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/d2_dataset.py": "27d0c0b12a8616c0ea7f482af94539bc8f5b06b17f2e8e24f5a1969d0a760330",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/real_probe.py": "eeae8cf9b544ee1de1e72a4d56f8b9d1bef2455dd55f714ab5032807f912f301",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/restricted_data_tools.py": "7a85342450982a5db5b8841cec58e3f7e0b6913064b66f0f026a463fbdf58cae",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/qwen_data_backend.py": "d4e3373aa48d5654e739567a4d3ac0c9764b276c074d359736172f70f3ff2899",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/qwen_data_ledger.py": "3a377a02b372776df1c43735a35044affe968fc34408a58be365d1ebac0f38f5",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/qwen_data_tasks.py": "8ac84f097d088b2152bdbf97e561b7ca13a879a675d03f46f63c91d1c1eae61d",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/restricted_data_worker.py": "a6b1c07a0451514573b0f2b243984d121bc0329c0cbed528cf1774752cfd2aa0",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/resident_trace_paths.py": "a6bc4f76d8b020ac1aaf9f30cac29423884054a65d5c98a79dc9fbd29afe1939",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/prediction_training.py": "3d9a04d3c11f906b412af0610d4ee04d7b9569a3869b23b546865b95a14377f0",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/real_dataset.py": "5a384a08a5b2a99e2d89c648eef330a45e367d9860f7cf00e2d6a3ee003ca5df",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/trace.py": "a123767706d42cc6cb15e7cc34af85a8e253f41aaa04d863b7102e3891e51d89",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/shared_experiment_residency.py": "cd2b588fb1de5e0aaaf5b069346cf900d6cd61cf77554ed171e62a1fc4ed91d9",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/d2_repair_audit.py": "e7b57499c49ce922dbb804912938a2810ad429785ceb06ffb609c8cc1ad8461a",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/d2_repair_guidance.py": "a17ba7e4e7b6c3faf24e01ee172585a75f3dfd7004182e42ee0f6abdcba77e7b",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/distribution_cache.py": "0d28dbfbba409bc79070e36e8095c878030ff4b5b24c391c3048dda044a16a6d",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/native.py": "6effa3a8f28111d78f29a07d27fe9ca5ea6f522281075c4ec820b846018333c0",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/real_patches.py": "a283aa79efc98b715b8f5aee0607956daaab1b59eb80ee3acbd9e42af267fb01",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/resident_runtime.py": "f28ab34d7f41ece03258e4a6968d72dc357ccf9fc34e76fe7cc47ba0e4d02f14",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/resident_tree_worker_process.py": "440157f033ad33963662350e5932577e3aef6acc97b02077e883c79a01c2a3db",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/restricted_data_extended.py": "988afdee68582f4c34b05d4b6195a18a65ed1698c016579eb17492fcb0c9b953",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/contract_fixtures.py": "c0dee446e348dee6eee44eae29409e63916995ba21be88cc1842ce48c62f3d7e",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/d2_hazards.py": "0feaa2ec2ec327ff5e5feedb9d5018dcd61ce95f9041b5d47a6d63b6ffe535b2",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/restricted_data_thread_probe_worker.py": "c640ca2f531d546fa8a2d29b518e6bed47e190bc27cb5d58fe01208034ca13f8",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/cachewise.py": "59f93fb9b4848cc7e503d4e0f9bb0c5e8c9f04c87a53748c50e82614baa4dceb",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/bfcl_runtime.py": "706887f7d8c01a688e909e3b1dc11da3cb1d80763cc9016feb13ec24fe55cc75",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/restricted_data_no_thp_worker.py": "7469975eceacea47a5d2089b553bca714ab9269bbc30ad47964e4ffafdec7d8d",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/restricted_data_resident_tree_tools.py": "3dd4bf311916958f485a0355992db0637c2d02fed57757a9e3b49f0f29644394",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/distribution_model_residency.py": "75498a1910bbf5fcdb2b4b8bbf1d34c780e7230edafeb64766e2126f1d146716",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/source_cost.py": "0cac94a760e73c5349690040b626c4f14ae573df68cac518cc1902b6a16dc3d5",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/source_replay.py": "52b99f8a35dc15f27d96a90cfa8b70480dfd92df3ecce971b8a3f24e349a7d28",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/reuse_predictor.py": "24773e363c9fb77e3008cdf7672a4136a4cd2ebb95c85cdc5752126137b67729",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/resident_worker_process.py": "fd27743028f1c12eeb6e10cace7f672b557d26153c608e722736e8d384554967",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/restricted_data_timed_worker.py": "0f02a08c4aa269ac00eb4bc87f3a30fdc2181456b07f12955f72db5b80d17a2a",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/d2_expansion.py": "d4dc6e7f0721a2726d1cebd2e7ab9587d9be1227f9ca36f606c24cd653f37137",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/prefill_cost_calibration.py": "a2bfee327ddc6a3ec0250e32927b8336bbd6c736f38898e13eb7ca08341e1faa",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/real_worker.py": "0bf78708787385a1f1c082a1560381e0339bf3a86e0740c9a1a9f63fd7057519",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/real_observer.py": "222a0f78e204f9fab0fa6580ae77bca3ba5b37f779244685cc6a5b3b2c75bee8",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/qwen_prediction_holdout.py": "6a5df999740a6012e0ce5cbf92c1b767f86d8ca8726517d7f645706d7074c77b",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/gbdt_predictor.py": "df8645870c255c70f2edee7ec288c1bdf7d6fd8c5bddc0335d3fae7d460d440c",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/resident_file_keeper.py": "bfeadac4ea7bf1f90c349a78cafba921600895a7b1c258e1186072241d42abbc",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/__init__.py": "6d571806d61aa4bcae35aecc8186a538f4bb0d341ad1ad8c62c7e1548c6cb8ed",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/cache_policy_models.py": "1b4d661456e1984776c779cd64dece684c277d24181576dd98b407873a916391",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/real_audit.py": "3138b6e20c76e99b67c46a1006989c9e339263002d9a9efcb93c6797e4b5a2c0",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/tracelab.py": "03ade77101228a5dbbbb31d5afd9c23dd4d13e7619bcac3a2b9d66310954e016",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/real_tools_v3.py": "23f4fc604f7c25633eea9bb5c9cd18ce72e2b61f1c93a0069b196071c7aaad6d",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/d2_probe.py": "a924b81cd190f962f5d791da2a80af6825a1bf6da81edeec92cd7c61db8754ec",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/restricted_data_resident_worker.py": "551758cf515f4282f2e401dda71fd61cf657d8bcfb29bae966c4210f4f667500",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/restricted_data_timed_tools.py": "95d76aadd24da65b32e0416f1b5864006cea10f6ab6d3c4aa38704849cefacf8",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/controlled_window_tools.py": "a8348a5472cc93f7e05abbe4ae778f35d1a47cd32034fe8fb4d85cc4a6dfb7da",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/kv_layout.py": "94ac484aff37fdb7dcd1a43be03991b61d954b6aa83e386469b56ab890502a5f",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/qwen_data_agent.py": "70bf03fe10da0fe00c01118b0c85f05b11998a7fcdbe989aebaae2475e261b61",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/measurement_clock.py": "9489177fbca9d2af629e29b825674bdff4c3a7667608b061780e74eb893771b0",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/real_workflow.py": "7c77af4443fe969e8391e9daea7382d6b724b06a0e067af61f0fd234f0fc631f",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/source_cases.py": "fbe6621fdfd53d6f64113448eebdef139bdc5647a5b834af41df4d43f7f31122",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/restricted_data_single_thread_tools.py": "b84ff3d4f9eb3595f7f45b3491f132ad8192cecce683de7b2713a6a09ba8d51e",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/qwen_cache_backend.py": "c8f46fe6232e3b38863bed3af9e5167070d390f5aac5e138e95d85e32d51018c",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/distribution_cache_backend.py": "225aa39160e5ea9f82b5a49809336e16042444c3da1dcb36d7c01778988f20c5",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/d2_raw.py": "1a4666def4d0c55a7ddcdb213135cb4e1578f2dbc1f5e94e1ef45fc627c57443",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/prediction_merged.py": "ef1041e342af9c7181a8c3a4f70c0be55a3881749e267c795604caae14c9f135",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/cache.py": "3ac477520a6584fe4c9fdc5115aade6b46489d88d670875d45f546ccc232d63f",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/controlled_resources.py": "c8ce2aba12f511bd4646bc0259cedb7e7df950f5f1f780a7c26496cec3d024b1",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/restricted_data_controlled_worker.py": "d3bc7e43cbb7ec03fd0e996de51fa9ce60c3be0f1a3a5d299253ef5494dc6e06",
+    "/home/liuxv/LeasePath-new-server-data/.artifacts/qwen-data-tasks-v5/tasks.private.json": "e4cc34b953dafae813677dfd4e89eea843592aad8b35c70d3a2459e109df3a08",
+    "/home/liuxv/LeasePath-new-server-data/.artifacts/qwen-data-tasks-v5/references.private.json": "086a71e2115a086c14a6209ff9fae0cc5657239c8299a1b25563be0c103f3d26",
+    "/home/liuxv/LeasePath-new-server-data/.artifacts/qwen-data-tasks-extension38-v2/tasks.private.json": "197b7293dbb09321fe07f1dde4a98991191f0bfb2c8e0104bf82a6fa5c643578",
+    "/home/liuxv/LeasePath-new-server-data/.artifacts/qwen-data-tasks-extension38-v2/references.private.json": "b4821020fd5f3c56ef53fd81c2c211b831105fc5ac2b3038e2bfb578770a2c98"
+  }
+}

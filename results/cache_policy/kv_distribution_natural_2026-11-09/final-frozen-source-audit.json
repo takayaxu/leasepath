@@ -1,0 +1,35 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "manifest": "/home/liuxv/LeasePath-new-server-data/.artifacts/qwen-cache-resident-tree-natural-2026-11-09/run/run-manifest.json",
+      "repository_source_files_unchanged": 91,
+      "status": "completed"
+    },
+    {
+      "manifest": "/home/liuxv/LeasePath-new-server-data/.artifacts/qwen-distribution-v1-2026-11-09/run/run-manifest.json",
+      "repository_source_files_unchanged": 79,
+      "status": "failed"
+    },
+    {
+      "manifest": "/home/liuxv/LeasePath-new-server-data/.artifacts/qwen-distribution-v1-2026-11-09/run-resident/run-manifest.json",
+      "repository_source_files_unchanged": 80,
+      "status": "failed"
+    },
+    {
+      "manifest": "/home/liuxv/LeasePath-new-server-data/.artifacts/qwen-distribution-v1-2026-11-09/run-resident-v2/run-manifest.json",
+      "repository_source_files_unchanged": 81,
+      "status": "completed"
+    },
+    {
+      "manifest": "/home/liuxv/LeasePath-new-server-data/.artifacts/qwen-distribution-natural-2026-11-09/full-parent-trace/run/run-manifest.json",
+      "repository_source_files_unchanged": 101,
+      "status": "completed"
+    },
+    {
+      "manifest": "/home/liuxv/LeasePath-new-server-data/.artifacts/qwen-distribution-natural-2026-11-09/run/run-manifest.json",
+      "repository_source_files_unchanged": 103,
+      "status": "completed"
+    }
+  ]
+}

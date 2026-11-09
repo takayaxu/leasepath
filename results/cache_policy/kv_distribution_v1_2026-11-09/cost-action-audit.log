@@ -1,0 +1,24 @@
+{
+  "model_generations": 0,
+  "cost_table_file_sha256": "ee000f512c840d04bce7d8f77e15a0ec8b831ed4138343e6e7c1a130911ed85f",
+  "scope": "same_state_actions_only; no hit/prefill/JCT benefit inferred",
+  "calibration_validation": {
+    "status": "passed",
+    "heldout_grid_points": 79,
+    "MAE_s": 0.002607123430379744,
+    "MAE_over_mean_prefill": 0.002465385917074471,
+    "median_positive_marginal_s": 0.09299061600000003,
+    "MAE_over_median_marginal": 0.028036414237537076,
+    "thresholds": {
+      "MAE_over_mean_prefill_max": 0.1,
+      "MAE_over_median_marginal_max": 0.5
+    }
+  },
+  "status": "passed",
+  "pressure_states": 90,
+  "cost_vs_equal_victim_set_changes": 54,
+  "cost_vs_point_victim_set_changes": 54,
+  "cost_fallback_sweeps": 0,
+  "distribution_fallback_sweeps": 0,
+  "source_sha256": "856b775c7c21e6301185c4aceea5d2eae64e1e29cffe18bf1bd9ca132a824425"
+}

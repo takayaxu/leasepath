@@ -1,0 +1,86 @@
+{
+  "status": "passed",
+  "validation": {
+    "status": "passed",
+    "heldout_grid_points": 79,
+    "MAE_s": 0.002607123430379744,
+    "MAE_over_mean_prefill": 0.002465385917074471,
+    "median_positive_marginal_s": 0.09299061600000003,
+    "MAE_over_median_marginal": 0.028036414237537076,
+    "thresholds": {
+      "MAE_over_mean_prefill_max": 0.1,
+      "MAE_over_median_marginal_max": 0.5
+    }
+  },
+  "curves": [
+    {
+      "observed_prefix_tokens": 1152,
+      "actual_prompt_tokens": 1153,
+      "fitted_cold_prefill_s": 1.410810033,
+      "fitted_full_prefix_hit_prefill_s": 0.0820031925,
+      "fitted_cold_to_hot_difference_s": 1.3288068405,
+      "median_block_marginal_s": 0.11944334950000002,
+      "min_block_marginal_s": 0.08792126349999974,
+      "max_block_marginal_s": 0.2613130425,
+      "validation_MAE_s": 0.0016740780500000135
+    },
+    {
+      "observed_prefix_tokens": 1280,
+      "actual_prompt_tokens": 1281,
+      "fitted_cold_prefill_s": 1.671160466,
+      "fitted_full_prefix_hit_prefill_s": 0.0818690675,
+      "fitted_cold_to_hot_difference_s": 1.5892913985,
+      "median_block_marginal_s": 0.09164937500000003,
+      "min_block_marginal_s": 0.08240850149999979,
+      "max_block_marginal_s": 0.2983345995000002,
+      "validation_MAE_s": 0.0023863329090909047
+    },
+    {
+      "observed_prefix_tokens": 1536,
+      "actual_prompt_tokens": 1537,
+      "fitted_cold_prefill_s": 1.8572516860000001,
+      "fitted_full_prefix_hit_prefill_s": 0.08365693,
+      "fitted_cold_to_hot_difference_s": 1.773594756,
+      "median_block_marginal_s": 0.09074994500000005,
+      "min_block_marginal_s": 0.0832768075000001,
+      "max_block_marginal_s": 0.29850798750000007,
+      "validation_MAE_s": 0.002317435653846157
+    },
+    {
+      "observed_prefix_tokens": 1664,
+      "actual_prompt_tokens": 1665,
+      "fitted_cold_prefill_s": 1.982146807,
+      "fitted_full_prefix_hit_prefill_s": 0.082797414,
+      "fitted_cold_to_hot_difference_s": 1.8993493929999998,
+      "median_block_marginal_s": 0.11745444949999984,
+      "min_block_marginal_s": 0.08585115750000005,
+      "max_block_marginal_s": 0.2653838855,
+      "validation_MAE_s": 0.00223225553571426
+    },
+    {
+      "observed_prefix_tokens": 1792,
+      "actual_prompt_tokens": 1793,
+      "fitted_cold_prefill_s": 2.250303914,
+      "fitted_full_prefix_hit_prefill_s": 0.082866634,
+      "fitted_cold_to_hot_difference_s": 2.1674372799999997,
+      "median_block_marginal_s": 0.09086593600000004,
+      "min_block_marginal_s": 0.0802900310000001,
+      "max_block_marginal_s": 0.3023226000000001,
+      "validation_MAE_s": 0.00271224323333335
+    },
+    {
+      "observed_prefix_tokens": 1920,
+      "actual_prompt_tokens": 1921,
+      "fitted_cold_prefill_s": 2.341920055,
+      "fitted_full_prefix_hit_prefill_s": 0.0832837275,
+      "fitted_cold_to_hot_difference_s": 2.2586363275,
+      "median_block_marginal_s": 0.12212101800000008,
+      "min_block_marginal_s": 0.07839860700000001,
+      "max_block_marginal_s": 0.2699596100000001,
+      "validation_MAE_s": 0.003806901187499985
+    }
+  ],
+  "sample_parent_disk_read_bytes": 0,
+  "sample_parent_major_faults": 0,
+  "scope": "Calibration with generic fixed prompt content. No new policy hit, prefill or JCT savings claimed."
+}

@@ -1,0 +1,41 @@
+{
+  "sha256": "c58f52923a260db33e3133589c56485f1fc73291a376c1cf3e834595b0f7c331",
+  "configuration": {
+    "model_sha256": "0c2f9e4daac78e72b24f7c054416232a523f0fd2aeb37653747d3c21f7dca078",
+    "adapter_sha256": "9a143ad8ff9c8345785b9332b69e19e44bf91ede3bc1546aed6fc8e5d61192c6",
+    "tokenizer_sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+    "runtime_libraries": {
+      "/home/liuxv/local-models/qwen35-9b/build-v100/bin/libllama-server-impl.so": "11ba545f6d014577868e6256bc0a63658670c3dae11d3f4466d653b1d8a3be3f",
+      "/home/liuxv/local-models/qwen35-9b/build-v100/bin/libggml.so.0.29.0": "7e68bd283cd13697d8335e4c7ff3f9fc35a60a56760e66c00a916419a1070657",
+      "/home/liuxv/local-models/qwen35-9b/build-v100/bin/libmtmd.so.0.9.0": "d44d73e5d236e72b9dbee40a1073afb1becefa32d0c96a6a4229ca25a51af61f",
+      "/home/liuxv/local-models/qwen35-9b/build-v100/bin/libllama.so.0.9.0": "f82a8bfc6eb8cf73042ab7a2d0737fa122d76cf7d352118150305ebc3b0bdcae",
+      "/home/liuxv/local-models/qwen35-9b/build-v100/bin/libllama-common.so.0.9.0": "807638152347e0a1d48b57fe1b2222f2f6d5b84892b3ea6da1b2b705616962a9",
+      "/home/liuxv/local-models/qwen35-9b/build-v100/bin/libggml-cuda.so.0.29.0": "0b80fd69b92e9cf7b4c3037db4e6cecca086604918e47e738ddd8f5278172b90",
+      "/home/liuxv/local-models/qwen35-9b/build-v100/bin/libggml-base.so.0.29.0": "33a2e328e01815cd62e02928355f68dacb86cc276e547de7cd999bf144224e5a",
+      "/home/liuxv/local-models/qwen35-9b/build-v100/bin/libggml-cpu.so.0.29.0": "537e8c2e689dd3784758a311395d6f16e380f486f22a9ee137456d9f74785bf9"
+    },
+    "GPU_UUIDs": [
+      "GPU-87cd5f26-d0a4-4b48-62c9-161b68452dfc",
+      "GPU-9fedf347-c37c-a7d0-5db7-0bd9fb6d7188",
+      "GPU-a2abbb79-e97e-3dad-7c2c-3e3a1bed3430"
+    ],
+    "cuda_visible_devices": "5,6,7",
+    "model_cpus": [
+      0,
+      2,
+      5,
+      6,
+      8,
+      10,
+      11,
+      12
+    ],
+    "native_threads": 8,
+    "batch_tokens": 512,
+    "capacity_blocks": 24,
+    "block_tokens": 128,
+    "context": 16384,
+    "headroom": 2048,
+    "kv": "float16"
+  }
+}

@@ -1,0 +1,207 @@
+{
+  "stage": "qwen_distribution_natural_2026-11-09",
+  "baseline_git": "81b49e0",
+  "authorization": "按照分布加权KV策略方案继续；成本校准与实际合法动作差异已独立通过",
+  "model_sha256": "0c2f9e4daac78e72b24f7c054416232a523f0fd2aeb37653747d3c21f7dca078",
+  "capacity_blocks": 24,
+  "concurrency": 3,
+  "block_tokens": 128,
+  "physical_context": 16384,
+  "transient_headroom_tokens": 2048,
+  "live_tasks": [
+    "logistic_holdout",
+    "ridge_validation",
+    "temporal_asof"
+  ],
+  "policies": [
+    "retired_first_lru",
+    "gbdt_point",
+    "gbdt_distribution",
+    "gbdt_cost"
+  ],
+  "expected_live_generations": 144,
+  "prediction_result": "results/prediction/qwen50_holdout_2026-11-08",
+  "prediction_horizon_s": 30,
+  "tool_controls": {
+    "logistic_holdout": {
+      "cpus": [
+        22,
+        24,
+        50,
+        52
+      ],
+      "numa_node": 1,
+      "disable_thp": true
+    },
+    "ridge_validation": {
+      "cpus": [
+        20,
+        21,
+        48,
+        49
+      ],
+      "numa_node": 1,
+      "disable_thp": true
+    },
+    "temporal_asof": {
+      "cpus": [
+        15,
+        23,
+        43,
+        51
+      ],
+      "numa_node": 1,
+      "disable_thp": true
+    }
+  },
+  "model_cpus": [
+    0,
+    2,
+    5,
+    6,
+    8,
+    10,
+    11,
+    12
+  ],
+  "tool_threads": 1,
+  "tool_memory_gib": 12,
+  "tool_timeout_s": 240,
+  "preflight": {
+    "warmups": 1,
+    "repeats": 6,
+    "concurrency": 3,
+    "ridge_cv_max": 0.1,
+    "ridge_max_min_ratio_max": 1.25,
+    "all_thread_runqueue_fraction_max": 0.05
+  },
+  "resource_gate": {
+    "available_memory_range_gib_max": 8,
+    "cpu_psi_range_pp_max": 5,
+    "io_psi_range_pp_max": 5,
+    "memory_full_psi_max_pct": 1,
+    "ridge_cv_max": 0.1,
+    "ridge_max_min_ratio_max": 1.25,
+    "host_busy_cpu_range_max": 4
+  },
+  "inputs": "byte-identical verified private tmpfs copies; retain pre/post hashes on every call; mlock inputs before preflight",
+  "outputs": "own tmpfs; artifacts fsync before return; archive after all measurement; power-loss persistence not claimed",
+  "artifact_ids": "same deterministic session-scoped artifact scheme as prior natural experiment",
+  "quality": "same stage3b SYSTEM, strict final schema/artifact/reference/consumption; no posthoc normalization",
+  "failure_rule": "Stop at first protocol/quality/native/source/GPU ownership/residency violation, worker lifetime read/major-fault/block input, or parent batch read_bytes/major_faults/block_input_ops > 0. Retain all samples and failures; no replacements.",
+  "host_scope": "affinity is not exclusive reservation; never stop others or alter global THP/NUMA/page cache settings",
+  "scope": "three known development parents; targeted replication of prior 3-session anomaly; not independent holdout or full matrix",
+  "primary_metric": "natural real-tool submit-to-validated-answer JCT",
+  "sentinels": "one group after load and one before each of four cycles, 15 real compute sentinel calls",
+  "created_client_date": "2026-11-09 Asia/Shanghai",
+  "tool_runtime": "private SHA256-verified Python 3.13 interpreter plus complete stdlib (excluding bytecode caches), frozen site-packages and current LeasePath sources; PYTHONHOME and PYTHONPATH fixed; byte-identical numerical dependencies; original system ELF/config files pinned by hash and device/inode",
+  "recipe_change": "One numerical thread in every NumPy/SciPy/OpenMP pool; four logical CPUs cover two physical cores including their SMT siblings per tool. Different workload configuration from previous two-thread runs; do not pool their timings.",
+  "cpu_selection": "Fixed from read-only 10-second per-CPU load/topology sample before new tool measurements; affinity is not reservation; other jobs remain unconstrained.",
+  "diagnostic": "two warmups then three paired logistic two/one-thread comparisons in fixed AB/BA/AB order; choice of one thread is to remove BLAS helpers, not fastest mean selection",
+  "prior_preflights": "both failed and retained; never relabelled or used as passed admission",
+  "design": "four-policy Williams order: every position once, every directed adjacent pair once; one fixed 24-block/3-session cell",
+  "phases": [
+    {
+      "name": "cycle_0",
+      "orders": [
+        [
+          "retired_first_lru",
+          "gbdt_point",
+          "gbdt_cost",
+          "gbdt_distribution"
+        ]
+      ],
+      "budget_limits": {
+        "probe": 13,
+        "pilot": 72,
+        "total": 85
+      },
+      "expected_live_generations": 36,
+      "interpretation": "fixed Williams four-policy crossover; natural real tools, shared host"
+    },
+    {
+      "name": "cycle_1",
+      "orders": [
+        [
+          "gbdt_point",
+          "gbdt_distribution",
+          "retired_first_lru",
+          "gbdt_cost"
+        ]
+      ],
+      "budget_limits": {
+        "probe": 1,
+        "pilot": 72,
+        "total": 72
+      },
+      "expected_live_generations": 36,
+      "interpretation": "fixed Williams four-policy crossover; natural real tools, shared host"
+    },
+    {
+      "name": "cycle_2",
+      "orders": [
+        [
+          "gbdt_distribution",
+          "gbdt_cost",
+          "gbdt_point",
+          "retired_first_lru"
+        ]
+      ],
+      "budget_limits": {
+        "probe": 1,
+        "pilot": 72,
+        "total": 72
+      },
+      "expected_live_generations": 36,
+      "interpretation": "fixed Williams four-policy crossover; natural real tools, shared host"
+    },
+    {
+      "name": "cycle_3",
+      "orders": [
+        [
+          "gbdt_cost",
+          "retired_first_lru",
+          "gbdt_distribution",
+          "gbdt_point"
+        ]
+      ],
+      "budget_limits": {
+        "probe": 1,
+        "pilot": 72,
+        "total": 72
+      },
+      "expected_live_generations": 36,
+      "interpretation": "fixed Williams four-policy crossover; natural real tools, shared host"
+    }
+  ],
+  "expected_new_generations": 157,
+  "total_generation_hard_cap": 301,
+  "local_resource_rule": "GPU exclusive to engine PID; read_bytes=0 since worker exec; wait4 full-lifetime major_faults=0 and block_input_ops=0; old phase-level IO retained; no ptrace during JCT; loaded non-tmpfs file maps must be in pinned manifest",
+  "host_resource_rule": "read-only covariates retained. Previous global-PSI stability gate not claimed passed; no host-exclusive natural causal claim. No sample rejection or reruns based on measured JCT.",
+  "model_residency": "PROT_READ MAP_SHARED mlock for full verified model, all runtime, input and dependency files; mincore before each batch; fail on missing page or identity change; do not change RLIMIT_MEMLOCK",
+  "file_attribution": "Preparation strace covers real file opens/reads/mmaps; worker import windows retain counters and exact origins. No privileged kernel fault-address tracing; historical file cannot be retroactively reconstructed.",
+  "instrumentation_scope": "Same version for every policy. Audit/open/import metadata included in natural JCT; ptrace, copying, hashing full model, tests and archives excluded from measurement.",
+  "model_page_keeper": "A dedicated own non-GPU process pins only the model; parent pins all other files. Each respects its inherited RLIMIT_MEMLOCK. No limit elevation or duplicate COW pages.",
+  "version_change": "DistributionEngine, fixed GBDT for all scores, independently validated marginal costs only in D; identical audit/shadow and real-tool recipe for all arms. No retraining/adaptive tau/request reorder. Full native parent trace audited before natural start; only provenance fields added after trace, scoring/order/budgets unchanged.",
+  "verified_model_origin": "/home/liuxv/LeasePath-new-server-data/.artifacts/qwen-distribution-v1-2026-11-09/run/run-manifest.json",
+  "verified_model_origin_sha256": "5ee43aa0beae6a0671a8747f7da3196476e798d890bffb0d2135fbe3608a7969",
+  "verified_model_runner": "/home/liuxv/LeasePath-new-server-data/scripts/run_qwen_distribution_v1.py",
+  "prior_plan_path": "/home/liuxv/LeasePath-new-server-data/configs/prediction/qwen_distribution_v1_2026-11-09.json",
+  "model_residency_startup_timeout_s": 1800,
+  "prediction_tau_s": 10,
+  "cost_table": "/home/liuxv/LeasePath-new-server-data/.artifacts/qwen-distribution-v1-2026-11-09/run-resident-v2/cost-table.json",
+  "cost_table_sha256": "ee000f512c840d04bce7d8f77e15a0ec8b831ed4138343e6e7c1a130911ed85f",
+  "calibration_backend": "/home/liuxv/LeasePath-new-server-data/.artifacts/qwen-distribution-v1-2026-11-09/run-resident-v2/backend-identity.json",
+  "prior_known_generations": 1570,
+  "parent_io_gate": true,
+  "diagnostic_trace": false,
+  "parent_gate": "prospective strict parent read_bytes=0, ru_majflt delta=0 and ru_inblock delta=0 across complete run_batch; includes reaped-child IO accounting; no claims of exclusive host CPU or memory bandwidth",
+  "gate_scope": "Full parent/descendant native-tool loop traced in a separate bounded preparation run. Its timings are excluded from natural comparison.",
+  "full_parent_trace_audit": "/home/liuxv/LeasePath-new-server-data/results/cache_policy/kv_distribution_natural_2026-11-09/parent-trace-audit.json",
+  "full_parent_trace_audit_sha256": "3ebb7e50b828b4920b14b4dd9f2e8e4948f82e3b550ce7c3df92e4e8c0d62bea",
+  "full_parent_file_closure": "/home/liuxv/LeasePath-new-server-data/results/cache_policy/kv_distribution_natural_2026-11-09/parent-file-closure.json",
+  "full_parent_file_closure_sha256": "b0f13203bb9b170720dcba2710a43f3f8740bd745ccfad476a7dfeafa3926ffc",
+  "full_parent_trace_manifest": "/dev/shm/leasepath-distribution-full-parent-trace-20261109/run/run-manifest.json",
+  "full_parent_trace_manifest_sha256": "4383d0b1eff43cb278a0f829a3a8898531fce0208f1f5766202f7cb4000c633c",
+  "diagnostic_generations_before_natural": 22
+}
