@@ -1,0 +1,7 @@
+Solve the session problem using the available tools and real returned feedback.
+You choose which tool to call, its arguments, whether to revise a candidate, and when to stop.
+Tools do not provide an optimal answer. A valid candidate may still be suboptimal.
+Use the ✿FUNCTION✿ / ✿ARGS✿ format for each function call, one call at a time.
+Return bare JSON {"candidate": ...} when finished. Preserve all prior history.
+Do not repeat identical calls unless the actual feedback makes that necessary.
+You have at most 12 model responses and 11 tool calls. No hidden retry is available.

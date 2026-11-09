@@ -1,0 +1,412 @@
+{
+  "audit_status": "passed",
+  "experiment_status": "blocked_by_worker_fault",
+  "model_generations": 0,
+  "tool_calls": 38,
+  "correct": 38,
+  "rows": [
+    {
+      "mode": "traced",
+      "concurrency": 3,
+      "task": "logistic_holdout",
+      "correct": true,
+      "major_faults": 0,
+      "read_bytes": 0,
+      "block_input_ops": 0,
+      "compute_major_faults": 0
+    },
+    {
+      "mode": "traced",
+      "concurrency": 3,
+      "task": "ridge_validation",
+      "correct": true,
+      "major_faults": 0,
+      "read_bytes": 0,
+      "block_input_ops": 0,
+      "compute_major_faults": 0
+    },
+    {
+      "mode": "traced",
+      "concurrency": 3,
+      "task": "temporal_asof",
+      "correct": true,
+      "major_faults": 0,
+      "read_bytes": 0,
+      "block_input_ops": 0,
+      "compute_major_faults": 0
+    },
+    {
+      "mode": "traced",
+      "concurrency": 6,
+      "task": "logistic_holdout",
+      "correct": true,
+      "major_faults": 0,
+      "read_bytes": 0,
+      "block_input_ops": 0,
+      "compute_major_faults": 0
+    },
+    {
+      "mode": "traced",
+      "concurrency": 6,
+      "task": "ridge_validation",
+      "correct": true,
+      "major_faults": 0,
+      "read_bytes": 0,
+      "block_input_ops": 0,
+      "compute_major_faults": 0
+    },
+    {
+      "mode": "traced",
+      "concurrency": 6,
+      "task": "temporal_asof",
+      "correct": true,
+      "major_faults": 0,
+      "read_bytes": 0,
+      "block_input_ops": 0,
+      "compute_major_faults": 0
+    },
+    {
+      "mode": "traced",
+      "concurrency": 6,
+      "task": "priority_top",
+      "correct": true,
+      "major_faults": 0,
+      "read_bytes": 0,
+      "block_input_ops": 0,
+      "compute_major_faults": 0
+    },
+    {
+      "mode": "traced",
+      "concurrency": 6,
+      "task": "missing_median",
+      "correct": true,
+      "major_faults": 0,
+      "read_bytes": 0,
+      "block_input_ops": 0,
+      "compute_major_faults": 0
+    },
+    {
+      "mode": "traced",
+      "concurrency": 6,
+      "task": "multi_group_anova",
+      "correct": true,
+      "major_faults": 0,
+      "read_bytes": 0,
+      "block_input_ops": 0,
+      "compute_major_faults": 0
+    },
+    {
+      "mode": "traced",
+      "concurrency": 10,
+      "task": "logistic_holdout",
+      "correct": true,
+      "major_faults": 0,
+      "read_bytes": 0,
+      "block_input_ops": 0,
+      "compute_major_faults": 0
+    },
+    {
+      "mode": "traced",
+      "concurrency": 10,
+      "task": "ridge_validation",
+      "correct": true,
+      "major_faults": 0,
+      "read_bytes": 0,
+      "block_input_ops": 0,
+      "compute_major_faults": 0
+    },
+    {
+      "mode": "traced",
+      "concurrency": 10,
+      "task": "temporal_asof",
+      "correct": true,
+      "major_faults": 0,
+      "read_bytes": 0,
+      "block_input_ops": 0,
+      "compute_major_faults": 0
+    },
+    {
+      "mode": "traced",
+      "concurrency": 10,
+      "task": "priority_top",
+      "correct": true,
+      "major_faults": 0,
+      "read_bytes": 0,
+      "block_input_ops": 0,
+      "compute_major_faults": 0
+    },
+    {
+      "mode": "traced",
+      "concurrency": 10,
+      "task": "missing_median",
+      "correct": true,
+      "major_faults": 0,
+      "read_bytes": 0,
+      "block_input_ops": 0,
+      "compute_major_faults": 0
+    },
+    {
+      "mode": "traced",
+      "concurrency": 10,
+      "task": "multi_group_anova",
+      "correct": true,
+      "major_faults": 0,
+      "read_bytes": 0,
+      "block_input_ops": 0,
+      "compute_major_faults": 0
+    },
+    {
+      "mode": "traced",
+      "concurrency": 10,
+      "task": "rank_sum_test",
+      "correct": true,
+      "major_faults": 0,
+      "read_bytes": 0,
+      "block_input_ops": 0,
+      "compute_major_faults": 0
+    },
+    {
+      "mode": "traced",
+      "concurrency": 10,
+      "task": "dominant_frequency",
+      "correct": true,
+      "major_faults": 0,
+      "read_bytes": 0,
+      "block_input_ops": 0,
+      "compute_major_faults": 0
+    },
+    {
+      "mode": "traced",
+      "concurrency": 10,
+      "task": "feature_information",
+      "correct": true,
+      "major_faults": 0,
+      "read_bytes": 0,
+      "block_input_ops": 0,
+      "compute_major_faults": 0
+    },
+    {
+      "mode": "traced",
+      "concurrency": 10,
+      "task": "image_regions",
+      "correct": true,
+      "major_faults": 0,
+      "read_bytes": 0,
+      "block_input_ops": 0,
+      "compute_major_faults": 0
+    },
+    {
+      "mode": "pinned",
+      "concurrency": 3,
+      "task": "logistic_holdout",
+      "correct": true,
+      "major_faults": 0,
+      "read_bytes": 0,
+      "block_input_ops": 0,
+      "compute_major_faults": 0
+    },
+    {
+      "mode": "pinned",
+      "concurrency": 3,
+      "task": "ridge_validation",
+      "correct": true,
+      "major_faults": 0,
+      "read_bytes": 0,
+      "block_input_ops": 0,
+      "compute_major_faults": 0
+    },
+    {
+      "mode": "pinned",
+      "concurrency": 3,
+      "task": "temporal_asof",
+      "correct": true,
+      "major_faults": 0,
+      "read_bytes": 0,
+      "block_input_ops": 0,
+      "compute_major_faults": 0
+    },
+    {
+      "mode": "pinned",
+      "concurrency": 6,
+      "task": "logistic_holdout",
+      "correct": true,
+      "major_faults": 0,
+      "read_bytes": 0,
+      "block_input_ops": 0,
+      "compute_major_faults": 0
+    },
+    {
+      "mode": "pinned",
+      "concurrency": 6,
+      "task": "ridge_validation",
+      "correct": true,
+      "major_faults": 0,
+      "read_bytes": 0,
+      "block_input_ops": 0,
+      "compute_major_faults": 0
+    },
+    {
+      "mode": "pinned",
+      "concurrency": 6,
+      "task": "temporal_asof",
+      "correct": true,
+      "major_faults": 0,
+      "read_bytes": 0,
+      "block_input_ops": 0,
+      "compute_major_faults": 0
+    },
+    {
+      "mode": "pinned",
+      "concurrency": 6,
+      "task": "priority_top",
+      "correct": true,
+      "major_faults": 0,
+      "read_bytes": 0,
+      "block_input_ops": 0,
+      "compute_major_faults": 0
+    },
+    {
+      "mode": "pinned",
+      "concurrency": 6,
+      "task": "missing_median",
+      "correct": true,
+      "major_faults": 0,
+      "read_bytes": 0,
+      "block_input_ops": 0,
+      "compute_major_faults": 0
+    },
+    {
+      "mode": "pinned",
+      "concurrency": 6,
+      "task": "multi_group_anova",
+      "correct": true,
+      "major_faults": 0,
+      "read_bytes": 0,
+      "block_input_ops": 0,
+      "compute_major_faults": 0
+    },
+    {
+      "mode": "pinned",
+      "concurrency": 10,
+      "task": "logistic_holdout",
+      "correct": true,
+      "major_faults": 0,
+      "read_bytes": 0,
+      "block_input_ops": 0,
+      "compute_major_faults": 0
+    },
+    {
+      "mode": "pinned",
+      "concurrency": 10,
+      "task": "ridge_validation",
+      "correct": true,
+      "major_faults": 0,
+      "read_bytes": 0,
+      "block_input_ops": 0,
+      "compute_major_faults": 0
+    },
+    {
+      "mode": "pinned",
+      "concurrency": 10,
+      "task": "temporal_asof",
+      "correct": true,
+      "major_faults": 0,
+      "read_bytes": 0,
+      "block_input_ops": 0,
+      "compute_major_faults": 0
+    },
+    {
+      "mode": "pinned",
+      "concurrency": 10,
+      "task": "priority_top",
+      "correct": true,
+      "major_faults": 0,
+      "read_bytes": 0,
+      "block_input_ops": 0,
+      "compute_major_faults": 0
+    },
+    {
+      "mode": "pinned",
+      "concurrency": 10,
+      "task": "missing_median",
+      "correct": true,
+      "major_faults": 0,
+      "read_bytes": 0,
+      "block_input_ops": 0,
+      "compute_major_faults": 0
+    },
+    {
+      "mode": "pinned",
+      "concurrency": 10,
+      "task": "multi_group_anova",
+      "correct": true,
+      "major_faults": 0,
+      "read_bytes": 0,
+      "block_input_ops": 0,
+      "compute_major_faults": 0
+    },
+    {
+      "mode": "pinned",
+      "concurrency": 10,
+      "task": "rank_sum_test",
+      "correct": true,
+      "major_faults": 1,
+      "read_bytes": 0,
+      "block_input_ops": 0,
+      "compute_major_faults": 0
+    },
+    {
+      "mode": "pinned",
+      "concurrency": 10,
+      "task": "dominant_frequency",
+      "correct": true,
+      "major_faults": 0,
+      "read_bytes": 0,
+      "block_input_ops": 0,
+      "compute_major_faults": 0
+    },
+    {
+      "mode": "pinned",
+      "concurrency": 10,
+      "task": "feature_information",
+      "correct": true,
+      "major_faults": 0,
+      "read_bytes": 0,
+      "block_input_ops": 0,
+      "compute_major_faults": 0
+    },
+    {
+      "mode": "pinned",
+      "concurrency": 10,
+      "task": "image_regions",
+      "correct": true,
+      "major_faults": 0,
+      "read_bytes": 0,
+      "block_input_ops": 0,
+      "compute_major_faults": 0
+    }
+  ],
+  "violations": [
+    {
+      "mode": "pinned",
+      "concurrency": 10,
+      "task": "rank_sum_test",
+      "correct": true,
+      "major_faults": 1,
+      "read_bytes": 0,
+      "block_input_ops": 0,
+      "compute_major_faults": 0
+    }
+  ],
+  "natural_launch_allowed": false,
+  "failure_preserved_without_replacement": true,
+  "evidence_sha256": {
+    "/dev/shm/leasepath-pressure-20261110/tool-preflight-v2/traced/concurrency-3/summary.json": "f588b4240e35589d7b77b1224f96730f3b33d33382e716149c6fbce74fbd677f",
+    "/dev/shm/leasepath-pressure-20261110/tool-preflight-v2/traced/concurrency-6/summary.json": "2cfe1f31c19ac6d309e60aae8b26060dad378732e83b6abc6e010faa040d4584",
+    "/dev/shm/leasepath-pressure-20261110/tool-preflight-v2/traced/concurrency-10/summary.json": "8506df3ed621a95ea3df02d37d0806d7285dbf7823e003da32fd7a8177a9d8e6",
+    "/dev/shm/leasepath-pressure-20261110/tool-preflight-v2/pinned/concurrency-3/summary.json": "138379e3440a350d8722043aeeb435c8b2555907abcdad4face9990a04c53bd4",
+    "/dev/shm/leasepath-pressure-20261110/tool-preflight-v2/pinned/concurrency-6/summary.json": "c7d214952137c5b49070ff3f838fe6e31814e1294ef2427c7c03992f94ea5468",
+    "/dev/shm/leasepath-pressure-20261110/tool-preflight-v2/pinned/concurrency-10/summary.json": "4505fc66ed55d7920f80cdfe3b203453c78d9f13efe47c2bdd1e8a27d6369dfd"
+  },
+  "fault_attribution": "rank_sum_test fault precedes measured numerical window; read_bytes and block input zero; exact page/file unknown"
+}

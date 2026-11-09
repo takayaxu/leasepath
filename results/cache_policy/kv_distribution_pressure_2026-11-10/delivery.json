@@ -1,0 +1,188 @@
+{
+  "status": "prepared_but_natural_launch_blocked",
+  "new_model_generations": 0,
+  "completed_pressure_cells": 0,
+  "new_suite_candidates": 12,
+  "development_families": 6,
+  "holdout_families": 6,
+  "native_certified_agent_loops": 0,
+  "holdout_model_runs": 0,
+  "known_prior_generations_unchanged": 1727,
+  "tool_preflight": {
+    "calls": 38,
+    "correct": 38,
+    "blocked_by": "rank_sum_test lifecycle major_faults=1 at concurrency10",
+    "replacement_samples": 0
+  },
+  "candidate_worker_smoke": {
+    "invocations": 24,
+    "reference_accept": 12,
+    "invalid_reject": 12
+  },
+  "source_sha256": {
+    "scripts/preflight_distribution_pressure_v2.py": "8facf76efeb5cd4b2ef66618c8655da021b6eb3daca8ba31aca6a677b3149d8a",
+    "scripts/check_qwen_distribution_pressure.py": "db6148042c7a01b9d24e0545fb0d837cbcd9984c5d2eb76b975754c5fd44331a",
+    "scripts/qwen_cache_pressure_batch.py": "eaa1ebc2f4ec8215985c1395b0307624cb2572f68d2134d175cd88a1c454df93",
+    "scripts/audit_pressure_live_state.py": "b67e4e0ef7698f02481e58d8818ea0d22962e2bbf2223ac15828593581f05f12",
+    "scripts/run_qwen_distribution_pressure.py": "b49b225f44fb7c418673408237535a5a6d8d4ab16b812ef759ddc078f915c745",
+    "scripts/preflight_distribution_pressure.py": "980407dae31ae44fc5499109be253e007b701c57385c8ee934762a86ec6b4b54",
+    "scripts/audit_pressure_tool_preflight.py": "50caef948337de6ff667c09916864fc89767e8c8ab2af5584a20f3c40e596a7c",
+    "scripts/qwen_cache_independent_agent_batch.py": "672877006fefd807a19c93ee8bfc680cdaee72b6fb6681d2c1d6ab3a01b9a150",
+    "scripts/audit_independent_agent_loop.py": "f85ae4198ee5c597b97b39ec2ee552160a541d51279792a3419d9316a12f1f0a",
+    "scripts/preflight_independent_agent_tokens.py": "1097b58307b2fa03ed110078327b5e9e3286b9fdd1dd2f90fb5501cf9b5e8cdb",
+    "scripts/freeze_independent_agent_suite.py": "20046cd1b0157e06705a2d49afe4861f5f957cc5423eed892967ec461850ab1e",
+    "src/leasepath/pressure_matrix.py": "fdf31558b026796e0815b2ed1706c04c844c684397798b6a1fb936d55cb6202d",
+    "src/leasepath/pressure_data_agent.py": "8db7e75b480b720e49d17c9c3a64141f198f976dd0264a6acf583e2d8dd33412",
+    "src/leasepath/independent_agent_reference.py": "8b9b0c45920488bbde807b3238a8a52baaee99fac645028a8698a8b2fc7e8e2e",
+    "src/leasepath/independent_agent_tasks.py": "38bf2fd9030d97220f213239a0ff539dcbbd657566d8d293e854ac47a2416628",
+    "src/leasepath/independent_agent_protocol.py": "cf1e0f5f7ed35f695b8bee8141018a8e148d1784d3eb6e946ba1ae984c1b515a",
+    "src/leasepath/independent_agent_worker.py": "658016e62133c34747b9d5a9f4ca98a0480dab928158106228c89a87cdbc7f8e"
+  },
+  "next_required_gates": [
+    "Bounded startup-fault attribution and versioned resource acceptance",
+    "Full changed-controller trace and independent native protocol/physical KV audit",
+    "Fresh 24/3 anchor followed by registered9cell matrix",
+    "New worker resource recipe and development-only live loop pilot; final holdout remains unopened"
+  ],
+  "gpu_launched": false,
+  "archive_status": "verified",
+  "archive": {
+    "status": "passed",
+    "archive": "/home/liuxv/LeasePath-new-server-data/.artifacts/checkpoints/pressure-independent-2026-11-10/raw-evidence.tar.gz",
+    "bytes": 1284608263,
+    "sha256": "cf29f77730750dc3fe5a77cc6edc371ca4faf6791de52b38c1279ab1836aea90",
+    "regular_files_checked": 22727,
+    "raw_bytes": 1947665978,
+    "model_generations": 0
+  },
+  "source_provenance_archive": {
+    "status": "passed",
+    "archive": "/home/liuxv/LeasePath-new-server-data/.artifacts/checkpoints/pressure-independent-2026-11-10/source-provenance.tar.gz",
+    "sha256": "2685b9ad549e8eff83875bf2da748f1e4870ed608ae1dc9c5ae0dcd4f38a9cdd",
+    "files": [
+      {
+        "path": "/home/liuxv/LeasePath-new-server-data/.artifacts/independent-agent-v1-20261110/provenance/access_control.source",
+        "sha256": "e14e7f9015beadc33105468ceb68e4ce16f35b138ba4c35824d1f85f0e3aa969"
+      },
+      {
+        "path": "/home/liuxv/LeasePath-new-server-data/.artifacts/independent-agent-v1-20261110/provenance/access_control.txt",
+        "sha256": "663e7bf91c318706ac10a80c850fc816735d4203f818e207965357dc7e9d7200"
+      },
+      {
+        "path": "/home/liuxv/LeasePath-new-server-data/.artifacts/independent-agent-v1-20261110/provenance/alternate-sources.json",
+        "sha256": "d6c89c4dc3cfb6003f40c6c766a622fab9cce61d0f30e53c805d8b5302b3942c"
+      },
+      {
+        "path": "/home/liuxv/LeasePath-new-server-data/.artifacts/independent-agent-v1-20261110/provenance/automata_reachability.mirror",
+        "sha256": "802742f0b380d23e4514a1201b51ad7588737219840b0a997efee1a19d250a49"
+      },
+      {
+        "path": "/home/liuxv/LeasePath-new-server-data/.artifacts/independent-agent-v1-20261110/provenance/bin_packing.source",
+        "sha256": "15937660a61f827c70073d1fa3648df7781b61e4e9789cc482e482411e4fa889"
+      },
+      {
+        "path": "/home/liuxv/LeasePath-new-server-data/.artifacts/independent-agent-v1-20261110/provenance/bin_packing.txt",
+        "sha256": "32c231cd71574e19327e13ace5100357fa6b8aa336b23c22e4c0657b7c2550c2"
+      },
+      {
+        "path": "/home/liuxv/LeasePath-new-server-data/.artifacts/independent-agent-v1-20261110/provenance/edit_distance.semantics",
+        "sha256": "abcb3d419911dd05b15107ab9b1b4482f8b4028715c24624231b3812709b7ead"
+      },
+      {
+        "path": "/home/liuxv/LeasePath-new-server-data/.artifacts/independent-agent-v1-20261110/provenance/edit_distance.source",
+        "sha256": "e8583cca8cdfd9796dea88cd174324e30b4de75c696b239274967d1015b68abd"
+      },
+      {
+        "path": "/home/liuxv/LeasePath-new-server-data/.artifacts/independent-agent-v1-20261110/provenance/edit_distance.txt",
+        "sha256": "47acc8ade1c8de8a33ac33429f0d38c0f65b194551a3356b983acc0696ad7d04"
+      },
+      {
+        "path": "/home/liuxv/LeasePath-new-server-data/.artifacts/independent-agent-v1-20261110/provenance/error_correction.source",
+        "sha256": "b4942a8f776aa17d802b5a5b4448e5ffb7623b18ffb5b88c6110466b678f8d4e"
+      },
+      {
+        "path": "/home/liuxv/LeasePath-new-server-data/.artifacts/independent-agent-v1-20261110/provenance/error_correction.txt",
+        "sha256": "fc7c76a76f936e30786ca4021c763ac61af299cc5e1ec2177944b3756fea16d7"
+      },
+      {
+        "path": "/home/liuxv/LeasePath-new-server-data/.artifacts/independent-agent-v1-20261110/provenance/exact_cover.source",
+        "sha256": "d276d51bbccdd3d9584dc7b38539312945c0eabe69873db8e0c8b87336a40b1e"
+      },
+      {
+        "path": "/home/liuxv/LeasePath-new-server-data/.artifacts/independent-agent-v1-20261110/provenance/exact_cover.txt",
+        "sha256": "5f80e596ce18aa02433af7cbe4816bbca0b9b1da6e48d210c2521f4f6d74f306"
+      },
+      {
+        "path": "/home/liuxv/LeasePath-new-server-data/.artifacts/independent-agent-v1-20261110/provenance/job_shop.verified-source",
+        "sha256": "8294515355a8dc6929994e4ea08b4fee7b276088917c0f9a6b1b08a409e22f1c"
+      },
+      {
+        "path": "/home/liuxv/LeasePath-new-server-data/.artifacts/independent-agent-v1-20261110/provenance/max_flow.source",
+        "sha256": "f3fe87c4c52be26b2ed31de66ca5f2330922edbae988a4b2b5a22b382bbb4eb1"
+      },
+      {
+        "path": "/home/liuxv/LeasePath-new-server-data/.artifacts/independent-agent-v1-20261110/provenance/max_flow.txt",
+        "sha256": "83a5eb831c601fc1fb43d1b8c6fecdf6d6a200d7dd28cf42ea994a1150e3c4c5"
+      },
+      {
+        "path": "/home/liuxv/LeasePath-new-server-data/.artifacts/independent-agent-v1-20261110/provenance/mirror-sources.json",
+        "sha256": "6842c78d96c08a2fc9c72127d5cebc71666f41948ac9b63824022f9c37831726"
+      },
+      {
+        "path": "/home/liuxv/LeasePath-new-server-data/.artifacts/independent-agent-v1-20261110/provenance/package_resolution.source",
+        "sha256": "2516801de3b98b6c49cccd13deced826e6e00030d18e5a98ed701dba8e63716a"
+      },
+      {
+        "path": "/home/liuxv/LeasePath-new-server-data/.artifacts/independent-agent-v1-20261110/provenance/package_resolution.txt",
+        "sha256": "e91df5eb1b1622b00efb9e57fe91a2a7f201de6c492eca20e553f66c6301c1bf"
+      },
+      {
+        "path": "/home/liuxv/LeasePath-new-server-data/.artifacts/independent-agent-v1-20261110/provenance/propositional_sat.source",
+        "sha256": "59757f5ba218fa45b3f03bd464f20cc9716e6cc2930f9ea85f8413bd85942f0e"
+      },
+      {
+        "path": "/home/liuxv/LeasePath-new-server-data/.artifacts/independent-agent-v1-20261110/provenance/propositional_sat.txt",
+        "sha256": "bd019672437c89b805d30969573b4197f6ed1a101871ffd025dbc697ba3bd2c4"
+      },
+      {
+        "path": "/home/liuxv/LeasePath-new-server-data/.artifacts/independent-agent-v1-20261110/provenance/reaction_balance.source",
+        "sha256": "915711677e5d3b6a7790b06b7730e07ed1684b7ce825767c488ab1951ca737fb"
+      },
+      {
+        "path": "/home/liuxv/LeasePath-new-server-data/.artifacts/independent-agent-v1-20261110/provenance/reaction_balance.txt",
+        "sha256": "be6dab410df5d732b029848cc3d04e84ffd2dad0fc5d72f725deab1ec57a2c41"
+      },
+      {
+        "path": "/home/liuxv/LeasePath-new-server-data/.artifacts/independent-agent-v1-20261110/provenance/resolved-sources.json",
+        "sha256": "5af46fca1fa67f6d9525b1becb69d786f61cf67f2931fd218034a79f9f35945f"
+      },
+      {
+        "path": "/home/liuxv/LeasePath-new-server-data/.artifacts/independent-agent-v1-20261110/provenance/semantic-sources.json",
+        "sha256": "52852e9523386e40d548466a3e5f9190f64dde090f6aedc4c6ab43f85a4ad518"
+      },
+      {
+        "path": "/home/liuxv/LeasePath-new-server-data/.artifacts/independent-agent-v1-20261110/provenance/sources.json",
+        "sha256": "b1bdd1585fc06658b8a4c1cbaff26efa3548d9bf15427a312d71141c57440e6d"
+      },
+      {
+        "path": "/home/liuxv/LeasePath-new-server-data/.artifacts/independent-agent-v1-20261110/provenance/voting_rule.source",
+        "sha256": "05dda8f9e39676f7e740e2b9a421b2acf3d4b3f522adf878d595110c55f7ec8a"
+      },
+      {
+        "path": "/home/liuxv/LeasePath-new-server-data/.artifacts/independent-agent-v1-20261110/provenance/voting_rule.txt",
+        "sha256": "56760fa4f88e458b234ec02f5887a24f82dee015e7e865b9f7489e57daa53d2d"
+      }
+    ]
+  },
+  "tests": {
+    "full_passed": 299,
+    "full_deselected": 1,
+    "final_targeted_passed": 41
+  },
+  "own_tmpfs_cleanup": "completed_after_full_archive_and_current_file_hash_verification",
+  "gpu_end_mib": {
+    "5": 4,
+    "6": 4,
+    "7": 4
+  }
+}

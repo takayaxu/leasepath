@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "rejected_actual_failed_preflight": true,
+  "new_model_generations": 0,
+  "output_created": false,
+  "returncode": 1,
+  "stderr": "PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.\nTraceback (most recent call last):\n  File \"/home/liuxv/LeasePath-new-server-data/scripts/run_qwen_distribution_pressure.py\", line 271, in <module>\n    if __name__=='__main__':main()\n                            ~~~~^^\n  File \"/home/liuxv/LeasePath-new-server-data/scripts/run_qwen_distribution_pressure.py\", line 58, in main\n    if tool_gate['status']!='passed' or tool_gate.get('concurrencies')!=[3,6,10]:raise ValueError('fresh complete CPU gate required; failed gates cannot be bypassed')\n                                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: fresh complete CPU gate required; failed gates cannot be bypassed\n"
+}

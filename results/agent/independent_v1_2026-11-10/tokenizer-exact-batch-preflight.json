@@ -1,0 +1,70 @@
+{
+  "status": "passed_initial_prompt_only",
+  "model_generations": 0,
+  "reservations": 0,
+  "rows": [
+    {
+      "task": "independent_job_shop",
+      "actual_initial_prompt_tokens": 405,
+      "cached_blocks": 3
+    },
+    {
+      "task": "independent_propositional_sat",
+      "actual_initial_prompt_tokens": 408,
+      "cached_blocks": 3
+    },
+    {
+      "task": "independent_package_resolution",
+      "actual_initial_prompt_tokens": 436,
+      "cached_blocks": 3
+    },
+    {
+      "task": "independent_max_flow",
+      "actual_initial_prompt_tokens": 412,
+      "cached_blocks": 3
+    },
+    {
+      "task": "independent_exact_cover",
+      "actual_initial_prompt_tokens": 405,
+      "cached_blocks": 3
+    },
+    {
+      "task": "independent_error_correction",
+      "actual_initial_prompt_tokens": 423,
+      "cached_blocks": 3
+    },
+    {
+      "task": "independent_bin_packing",
+      "actual_initial_prompt_tokens": 412,
+      "cached_blocks": 3
+    },
+    {
+      "task": "independent_automata_reachability",
+      "actual_initial_prompt_tokens": 405,
+      "cached_blocks": 3
+    },
+    {
+      "task": "independent_access_control",
+      "actual_initial_prompt_tokens": 422,
+      "cached_blocks": 3
+    },
+    {
+      "task": "independent_reaction_balance",
+      "actual_initial_prompt_tokens": 423,
+      "cached_blocks": 3
+    },
+    {
+      "task": "independent_voting_rule",
+      "actual_initial_prompt_tokens": 429,
+      "cached_blocks": 3
+    },
+    {
+      "task": "independent_edit_distance",
+      "actual_initial_prompt_tokens": 422,
+      "cached_blocks": 3
+    }
+  ],
+  "template": "exact qwen_cache_independent_agent_batch initial messages",
+  "capacity_guard_rejections_before_reservation": 12,
+  "full_actual_agent_history_feasibility": "not established; runtime guard required"
+}

@@ -1,0 +1,110 @@
+[
+  {
+    "parent": "independent_job_shop",
+    "split": "development",
+    "source_family": "job_shop",
+    "semantic_review": "Disjunctive machine scheduling; no old scheduling parent. Different intent from old linear assignment.",
+    "old_inputs_reused": false,
+    "source_data_copied": false,
+    "review_type": "author review, not independent human or second-agent review"
+  },
+  {
+    "parent": "independent_propositional_sat",
+    "split": "development",
+    "source_family": "propositional_sat",
+    "semantic_review": "Boolean clause satisfiability; no old SAT parent.",
+    "old_inputs_reused": false,
+    "source_data_copied": false,
+    "review_type": "author review, not independent human or second-agent review"
+  },
+  {
+    "parent": "independent_package_resolution",
+    "split": "development",
+    "source_family": "package_resolution",
+    "semantic_review": "Discrete dependency/conflict graph version selection; no old package-resolution parent.",
+    "old_inputs_reused": false,
+    "source_data_copied": false,
+    "review_type": "author review, not independent human or second-agent review"
+  },
+  {
+    "parent": "independent_max_flow",
+    "split": "development",
+    "source_family": "max_flow",
+    "semantic_review": "Capacity-constrained network flow with conservation and min-cut certificate; adjacent to old assignment/transport but different constraints, input and objective formulation.",
+    "old_inputs_reused": false,
+    "source_data_copied": false,
+    "review_type": "author review, not independent human or second-agent review"
+  },
+  {
+    "parent": "independent_exact_cover",
+    "split": "development",
+    "source_family": "exact_cover",
+    "semantic_review": "Exact subset partition, not old group aggregation or image components. Shared constraint-solver techniques with SAT kept in development.",
+    "old_inputs_reused": false,
+    "source_data_copied": false,
+    "review_type": "author review, not independent human or second-agent review"
+  },
+  {
+    "parent": "independent_error_correction",
+    "split": "development",
+    "source_family": "error_correction",
+    "semantic_review": "Erasure recovery from finite-field polynomial evaluations; not old real-valued interpolation or root finding. GF(17) toy instance is NOT RFC5510 GF(2^m) wire-format conformance.",
+    "old_inputs_reused": false,
+    "source_data_copied": false,
+    "review_type": "author review, not independent human or second-agent review"
+  },
+  {
+    "parent": "independent_bin_packing",
+    "split": "holdout",
+    "source_family": "bin_packing",
+    "semantic_review": "Item-to-bin capacity partition and minimum bin count, not job precedence/machine schedules. Same broad operations-research field as development job shop; generalization claim must remain problem-family holdout, not solver-paradigm independence.",
+    "old_inputs_reused": false,
+    "source_data_copied": false,
+    "review_type": "author review, not independent human or second-agent review"
+  },
+  {
+    "parent": "independent_automata_reachability",
+    "split": "holdout",
+    "source_family": "automata_reachability",
+    "semantic_review": "Finite-state word reachability with BFS optimality certificate; no old state-machine parent. Toy DFA, not a Spin benchmark or full model checker.",
+    "old_inputs_reused": false,
+    "source_data_copied": false,
+    "review_type": "author review, not independent human or second-agent review"
+  },
+  {
+    "parent": "independent_access_control",
+    "split": "holdout",
+    "source_family": "access_control",
+    "semantic_review": "Explicit-deny policy evaluation; no old security-policy parent. Toy rule set, not full IAM conformance.",
+    "old_inputs_reused": false,
+    "source_data_copied": false,
+    "review_type": "author review, not independent human or second-agent review"
+  },
+  {
+    "parent": "independent_reaction_balance",
+    "split": "holdout",
+    "source_family": "reaction_balance",
+    "semantic_review": "Integer stoichiometric conservation and primitive coefficients; not old fixed banded real system.",
+    "old_inputs_reused": false,
+    "source_data_copied": false,
+    "review_type": "author review, not independent human or second-agent review"
+  },
+  {
+    "parent": "independent_voting_rule",
+    "split": "holdout",
+    "source_family": "voting_rule",
+    "semantic_review": "Ranked ballot choice under instant-runoff elimination; not old SQL top-k rank or rank-sum statistics.",
+    "old_inputs_reused": false,
+    "source_data_copied": false,
+    "review_type": "author review, not independent human or second-agent review"
+  },
+  {
+    "parent": "independent_edit_distance",
+    "split": "holdout",
+    "source_family": "edit_distance",
+    "semantic_review": "Sequence edit script optimization; not old signal cross-correlation or timestamp asof. Distinct source publisher from development references.",
+    "old_inputs_reused": false,
+    "source_data_copied": false,
+    "review_type": "author review, not independent human or second-agent review"
+  }
+]

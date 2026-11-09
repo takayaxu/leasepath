@@ -1,0 +1,158 @@
+{
+  "raw_path": "/home/liuxv/LeasePath-new-server-data/.artifacts/checkpoints/pressure-independent-2026-11-10/accessible-summaries/resources.json",
+  "sha256": "f75533469cec15530d8610f593874c4af85a9b2ee5391044bdd8193aa1bc510b",
+  "topology": {
+    "status": "passed",
+    "groups": [
+      [
+        0,
+        2,
+        5,
+        6,
+        8,
+        10,
+        11,
+        12
+      ],
+      [
+        14,
+        42
+      ],
+      [
+        15,
+        43
+      ],
+      [
+        16,
+        44
+      ],
+      [
+        17,
+        45
+      ],
+      [
+        18,
+        46
+      ],
+      [
+        19,
+        47
+      ],
+      [
+        20,
+        48
+      ],
+      [
+        21,
+        49
+      ],
+      [
+        22,
+        50
+      ],
+      [
+        23,
+        51
+      ]
+    ],
+    "exclusive_host_claim": false
+  },
+  "gpus": "index, uuid, memory.used [MiB], memory.total [MiB]\n0, GPU-b9484a1f-922b-b89e-2baf-26a67de1829d, 1658 MiB, 32768 MiB\n1, GPU-5d44bdcc-ceb1-b719-0a2a-8bd892114b61, 28966 MiB, 32768 MiB\n2, GPU-3d19f110-8051-ad4c-9094-2306f26c9fa6, 28944 MiB, 32768 MiB\n3, GPU-6baf9be0-2b05-b71f-d4fe-0bedfbf53989, 12964 MiB, 32768 MiB\n4, GPU-fba64d61-c955-2142-6e10-7ea0576f3d26, 12904 MiB, 32768 MiB\n5, GPU-9fedf347-c37c-a7d0-5db7-0bd9fb6d7188, 4 MiB, 32768 MiB\n6, GPU-a2abbb79-e97e-3dad-7c2c-3e3a1bed3430, 4 MiB, 32768 MiB\n7, GPU-87cd5f26-d0a4-4b48-62c9-161b68452dfc, 4 MiB, 32768 MiB\n8, GPU-90357533-44b2-bd04-09e7-fdd8f273b8e8, 4 MiB, 32768 MiB\n9, GPU-514f3676-7ee9-c703-6ea1-f29a9f5529bd, 4 MiB, 32768 MiB\n",
+  "memory_kib": {
+    "MemTotal": 527739504,
+    "MemFree": 100912372,
+    "MemAvailable": 313549548,
+    "Buffers": 8125608,
+    "Cached": 201708616,
+    "SwapCached": 734696,
+    "Active": 153219652,
+    "Inactive": 242719936,
+    "Active(anon)": 5347684,
+    "Inactive(anon)": 195056444,
+    "Active(file)": 147871968,
+    "Inactive(file)": 47663492,
+    "Unevictable": 31904,
+    "Mlocked": 31904,
+    "SwapTotal": 8388604,
+    "SwapFree": 167272,
+    "Dirty": 14468,
+    "Writeback": 0,
+    "AnonPages": 185271468,
+    "Mapped": 14311888,
+    "Shmem": 14288240,
+    "KReclaimable": 20525348,
+    "Slab": 24459564,
+    "SReclaimable": 20525348,
+    "SUnreclaim": 3934216,
+    "KernelStack": 157904,
+    "PageTables": 807504,
+    "NFS_Unstable": 0,
+    "Bounce": 0,
+    "WritebackTmp": 0,
+    "CommitLimit": 272258356,
+    "Committed_AS": 342590288,
+    "VmallocTotal": 34359738367,
+    "VmallocUsed": 816340,
+    "VmallocChunk": 0,
+    "Percpu": 262400,
+    "HardwareCorrupted": 0,
+    "AnonHugePages": 1433600,
+    "ShmemHugePages": 0,
+    "ShmemPmdMapped": 0,
+    "FileHugePages": 0,
+    "FilePmdMapped": 0,
+    "HugePages_Total": 0,
+    "HugePages_Free": 0,
+    "HugePages_Rsvd": 0,
+    "HugePages_Surp": 0,
+    "Hugepagesize": 2048,
+    "Hugetlb": 0,
+    "DirectMap4k": 35608016,
+    "DirectMap2M": 463945728,
+    "DirectMap1G": 36700160
+  },
+  "PSI": {
+    "cpu": {
+      "some": {
+        "avg10": 31.45,
+        "avg60": 74.06,
+        "avg300": 67.09,
+        "total": 39763931380.0
+      },
+      "full": {
+        "avg10": 0.0,
+        "avg60": 0.0,
+        "avg300": 0.0,
+        "total": 0.0
+      }
+    },
+    "io": {
+      "some": {
+        "avg10": 2.13,
+        "avg60": 8.88,
+        "avg300": 13.04,
+        "total": 43884894015.0
+      },
+      "full": {
+        "avg10": 0.67,
+        "avg60": 0.2,
+        "avg300": 0.51,
+        "total": 32708513415.0
+      }
+    },
+    "memory": {
+      "some": {
+        "avg10": 0.18,
+        "avg60": 0.25,
+        "avg300": 0.08,
+        "total": 3828911992.0
+      },
+      "full": {
+        "avg10": 0.08,
+        "avg60": 0.02,
+        "avg300": 0.0,
+        "total": 2663936302.0
+      }
+    }
+  }
+}

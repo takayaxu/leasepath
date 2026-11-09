@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "status": "offline_candidate_suite_frozen_pending_protocol_resource_acceptance",
+  "created_client_date": "2026-11-10 Asia/Shanghai",
+  "parents": 12,
+  "development": 6,
+  "holdout": 6,
+  "model_generations": 0,
+  "model_validated_loops": 0,
+  "final_holdout_opened_to_model": false,
+  "exclusion_count": 50,
+  "exclusion_sha256": "f0eab73d72bc99bdac1b8b53a2473233c63f0aae214c46089e3cfc3d233a524b",
+  "source_sha256": {
+    "src/leasepath/independent_agent_tasks.py": "38bf2fd9030d97220f213239a0ff539dcbbd657566d8d293e854ac47a2416628",
+    "src/leasepath/independent_agent_reference.py": "8b9b0c45920488bbde807b3238a8a52baaee99fac645028a8698a8b2fc7e8e2e",
+    "src/leasepath/independent_agent_protocol.py": "cf1e0f5f7ed35f695b8bee8141018a8e148d1784d3eb6e946ba1ae984c1b515a",
+    "src/leasepath/independent_agent_worker.py": "658016e62133c34747b9d5a9f4ca98a0480dab928158106228c89a87cdbc7f8e",
+    "src/leasepath/pressure_data_agent.py": "8db7e75b480b720e49d17c9c3a64141f198f976dd0264a6acf583e2d8dd33412",
+    "scripts/qwen_cache_independent_agent_batch.py": "672877006fefd807a19c93ee8bfc680cdaee72b6fb6681d2c1d6ab3a01b9a150",
+    "tests/test_independent_agent_v1.py": "f81810fe9eb86deae5da1c77414c9e8aef0b45f05f6fde8625c3a693559092ad",
+    "scripts/freeze_independent_agent_suite.py": "20046cd1b0157e06705a2d49afe4861f5f957cc5423eed892967ec461850ab1e"
+  },
+  "artifact_sha256": {
+    "family-review.json": "c622df9e7d4568516bad0c5220d6f0e2980531465890779b50cc40414005a2a4",
+    "system-prompt.txt": "a31648fb7fa9a832ee67b591345778c8dfd79cb3bad7a058f52ba421d364fe83",
+    "references.private.json": "320a611012bc3e4078b8b31be87b339f669f5641316cb013755383e8d7da2976",
+    "tasks.json": "f5d4c73566f578cbe2a6463dd6a706898495fa007c95cdac3bbc9c8014795abb"
+  },
+  "baseline_manifest_sha256": "bf93dcdbb907cc130cdc3bd23f4e14e00fc29766942ae827694a24461c3a42bc",
+  "scope": "Locally authored small synthetic protocol fixtures informed by different problem-domain sources. Not imported public benchmark samples; shared authorship and tool/checker code remain common. No claim of representative heavy-tool latency, model-pretraining independence, or statistical independence of repeated runs.",
+  "protocol_limits": {
+    "model_generations_per_task": 12,
+    "tool_calls_per_task": 11,
+    "tool_timeout_s": 240,
+    "workflow_timeout_s": 1800
+  },
+  "pilot": {
+    "status": "not_launched",
+    "capacity_blocks": 32,
+    "concurrency": 3,
+    "development_batches": [
+      [
+        "independent_job_shop",
+        "independent_propositional_sat",
+        "independent_package_resolution"
+      ],
+      [
+        "independent_max_flow",
+        "independent_exact_cover",
+        "independent_error_correction"
+      ]
+    ],
+    "policy": "gbdt_distribution",
+    "limits_per_batch": {
+      "probe": 1,
+      "pilot": 36,
+      "total": 36
+    },
+    "aggregate_live_cap": 72,
+    "stop_on_first_failure": true,
+    "prerequisites": [
+      "real tokenized accumulating history feasibility",
+      "frozen actual CPU/NUMA/THP/residency recipe",
+      "new full controller trace and native protocol acceptance",
+      "model-facing tool worker must not access reference files"
+    ],
+    "not_a_policy_JCT_comparison": true
+  },
+  "holdout_rule": "No holdout model execution before development protocol/resource acceptance and final plan freeze. Keep every first-run failure; no replacement/relabeling.",
+  "loop_rule": "At least two substantive model decisions separated by consumed real feedback and observable refinement/search/repair. One-shot success stays successful and carries no iterative evidence. Behavioral checks require independent native-output/call linkage before certification."
+}

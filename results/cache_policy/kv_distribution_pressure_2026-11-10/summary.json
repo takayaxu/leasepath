@@ -1,0 +1,13 @@
+{
+  "status": "failed",
+  "concurrencies": [
+    3,
+    6,
+    10
+  ],
+  "real_tool_calls": 38,
+  "correct": 38,
+  "model_generations": 0,
+  "reason": "rank_sum_test lifetime major_faults=1 in pinned concurrency-10; strict gate failed",
+  "independent_audit": "results/cache_policy/kv_distribution_pressure_2026-11-10/tool-preflight-audit.json"
+}

@@ -1,0 +1,165 @@
+"""Versioned real batch loop; retain the stage-2 runner byte for byte."""
+from collections import deque
+from concurrent.futures import ThreadPoolExecutor
+import json
+from pathlib import Path
+import queue
+import time
+from leasepath.pressure_data_agent import PressureObservedQwen as ObservedQwen
+from leasepath.qwen_data_tasks import equal
+from leasepath.real_observer import Observer
+from leasepath.independent_agent_protocol import CandidateTools, SYSTEM, schemas, check_final
+from probe_qwen_cache_native import write
+
+
+def features(engine, owner, tool=None, phase=None, started=None):
+    initial, idle_at = engine.cache.idle[owner]
+    now = time.monotonic()
+    return {**initial, 'elapsed_idle_s': initial['elapsed_idle_s']+now-idle_at,
+            'tool_name': tool, 'phase': phase,
+            'tool_elapsed_s': now-started if started is not None else None}
+
+
+def run_batch(engine, tokenizer, budget, tasks, references, output, policy, check_sources, tool_controls, tool_threads, response_windows=None):
+    if response_windows is not None:raise ValueError('synthetic response windows forbidden')
+    output.mkdir(parents=True, exist_ok=False)
+    controller = Observer(output/'raw/controller.jsonl', run_id=output.name, source='live_agent_controller')
+    backend = Observer(output/'raw/backend.jsonl', run_id=output.name, source='multi_owner_native_cuda')
+    engine.clear()
+    engine.history = []
+    begin = time.monotonic()
+    submissions, states, ready, records = {}, {}, deque(), []
+    notifications = queue.Queue()
+    pool = ThreadPoolExecutor(max_workers=len(tasks))
+    def notice(kind, owner, **data):
+        notifications.put((time.monotonic(), kind, owner, data))
+    def tool_call(owner, tools, call):
+        check_sources()
+        notice('start', owner, tool_name=call['name'])
+        try:
+            try: arguments = json.loads(call['arguments'])
+            except (ValueError, TypeError): arguments = {'invalid_json': str(call['arguments'])[:200]}
+            result = tools.call(call['name'], arguments)
+            if response_windows is None:
+                check_sources()
+            notice('end', owner, tool_name=call['name'], result=result)
+        except Exception as exc:
+            notice('failed', owner, error=f'{type(exc).__name__}: {exc}')
+    def finish(owner, final=None, error=None):
+        state = states[owner]
+        if state['done']: return
+        check_start = time.monotonic()
+        try:
+            check_sources()
+            if error is None:
+                correct,reason=check_final(state['task'],references[state['task']['id']],final)
+                if not correct:raise ValueError(reason)
+            if state['llm'].pending_tool_results:
+                raise ValueError('unconsumed tool result at task completion')
+        except Exception as exc:
+            error = f'{type(exc).__name__}: {exc}'
+        validated = time.monotonic()
+        engine.retire(owner)
+        controller.emit('context_retire', owner=owner, context_version='v1', reason='explicit_task_completed_or_failed')
+        state['done'] = True
+        record = {'task': state['task']['id'], 'owner': owner, 'policy': policy,
+            'success': error is None, 'error': error, 'generations': state['llm'].generation_attempts,
+            'submit_monotonic_s': submissions[owner], 'validated_monotonic_s': validated,
+            'jct_to_validated_answer_s': validated-submissions[owner],
+            'validation_s': validated-check_start, 'final': final,
+            'tools': state['tools'].calls,
+            'loop_evidence':'pending_independent_native_audit',
+            'model_requests': [r for r in engine.history if r['owner'] == owner]}
+        write(output/f'{owner}-messages.json', state['messages'])
+        write(output/f'{owner}-quality.json', record)
+        records.append(record)
+        print('live_task', output.name, record['task'], record['success'], round(record['jct_to_validated_answer_s'], 3), flush=True)
+    try:
+        for task in tasks:
+            owner = task['id']
+            submissions[owner] = begin  # Same externally fixed simultaneous arrivals, before per-task preparation.
+            controller.emit('workflow_submit', owner=owner, source_group=task['source_family'])
+            controller.emit('context_open', owner=owner, context_version='v1', compatibility_id=engine.compatibility)
+            tools=CandidateTools(task,output/'sessions'/owner/'artifacts',tool_controls[owner])
+            llm = ObservedQwen(engine, tokenizer, budget, controller, backend, lane='pilot')
+            llm.owner = owner
+            llm.check_sources = check_sources
+            llm.task_deadline = begin+1800
+            messages=[{'role':'system','content':SYSTEM},{'role':'user','content':task['intent']+'\nUse inspect_problem to read the actual instance data. You decide subsequent calls and stopping.'}]
+            states[owner] = {'task': task, 'tools': tools, 'llm': llm, 'messages': messages,
+                             'done': False, 'tool_running': False}
+            ready.append((begin, owner))
+        while any(not s['done'] for s in states.values()):
+            while True:
+                try: observed, kind, owner, data = notifications.get_nowait()
+                except queue.Empty: break
+                state = states[owner]
+                if state['done']: continue
+                controller.emit('tool_'+kind, owner=owner, actual_observed_monotonic_s=observed, **data)
+                if kind == 'start':
+                    state['tool_running'] = True
+                    if owner in engine.cache.idle:
+                        engine.observe(owner, features(engine, owner, data['tool_name'], 'waiting_tool', observed))
+                elif kind == 'end':
+                    state['tool_running'] = False
+                    result_json = json.dumps(data['result'], allow_nan=False, separators=(',', ':'))
+                    state['messages'].append({'role': 'function', 'name': data['tool_name'], 'content': result_json})
+                    state['llm'].pending_tool_results.append(result_json)
+                    if owner in engine.cache.idle:
+                        engine.observe(owner, features(engine, owner, data['tool_name']))
+                    ready.append((observed, owner))
+                elif kind == 'failed':
+                    state['tool_running'] = False
+                    finish(owner, error=data['error'])
+            if not ready:
+                # Wait only when no runnable model work exists; genuine tools run concurrently.
+                time.sleep(.002)
+                if time.monotonic()-begin > 1800:
+                    raise TimeoutError('live batch wall budget')
+                continue
+            ready = deque(sorted(ready))
+            _, owner = ready.popleft()
+            state = states[owner]
+            if state['done']: continue
+            try:
+                if state['llm'].generation_attempts >= 12:
+                    raise RuntimeError('twelve-generation task budget')
+                if policy == 'no_reuse': engine.clear()
+                engine.owner = owner
+                replies = state['llm'].chat(state['messages'], functions=schemas(state['task']), stream=False)
+                state['messages'].extend(replies)
+                calls = [m for m in replies if m.get('function_call')]
+                if not calls:
+                    final = json.loads(''.join(m.get('content', '') for m in replies).strip())
+                    finish(owner, final=final)
+                else:
+                    if len(calls) != 1: raise ValueError('sequential function protocol required')
+                    pool.submit(tool_call, owner, state['tools'], calls[0]['function_call'])
+            except Exception as exc:
+                finish(owner, error=f'{type(exc).__name__}: {exc}')
+        pool.shutdown(wait=True)
+        ending = time.monotonic()
+        controller.emit('observation_end', complete=True)
+        controller.finish(); backend.finish()
+        summary = {'status': 'passed' if all(r['success'] for r in records) else 'quality_failed',
+            'policy': policy, 'complete_success': sum(r['success'] for r in records), 'tasks': len(tasks),
+            'makespan_s': ending-begin,
+            'mean_all_task_time_to_terminal_s': sum(r['jct_to_validated_answer_s'] for r in records)/len(tasks),
+            'success_gated_mean_jct_s': sum(r['jct_to_validated_answer_s'] for r in records)/len(tasks) if all(r['success'] for r in records) else None,
+            'mean_successful_jct_s': sum(r['jct_to_validated_answer_s'] for r in records if r['success']) / max(1, sum(r['success'] for r in records)),
+            'cached_tokens': sum(r['hit'] for x in records for r in x['model_requests']),
+            'executed_prefill_tokens': sum(r['prefill'] for x in records for r in x['model_requests']),
+            'prefill_s': sum(r['prefill_ns']/1e9 for x in records for r in x['model_requests']),
+            'decode_s': sum(r['decode_ns']/1e9 for x in records for r in x['model_requests']),
+            'prediction_s': engine.cache.prediction_ns/1e9, 'prediction_calls': engine.cache.prediction_calls,
+            'evictions': engine.cache.evictions, 'generations': sum(r['generations'] for r in records),
+            'final_physical': engine.inspect(), 'quality_records': [r['task']+'-quality.json' for r in records],
+            'evidence_kind': 'measured_real_32b_and_real_parameter_tools',
+            'scope': 'new synthetic problem families; loop evidence requires separate native feedback audit',
+            'tool_response_mode': 'fixed_window_real_computation' if response_windows is not None else 'natural_real_computation',
+            'policy_overhead_included_in_jct': True, 'model_load_excluded_and_separately_reported': True}
+        write(output/'summary.json', summary)
+        return summary
+    finally:
+        pool.shutdown(wait=True)
+        controller.abort(); backend.abort()

@@ -1,0 +1,112 @@
+{
+  "independent_job_shop": {
+    "candidate": [
+      0,
+      2,
+      0,
+      2
+    ],
+    "optimum_minimize": 4,
+    "solver": "independent_agent_reference_v1"
+  },
+  "independent_propositional_sat": {
+    "candidate": [
+      1,
+      0,
+      1,
+      0,
+      0
+    ],
+    "optimum_minimize": 0,
+    "solver": "independent_agent_reference_v1"
+  },
+  "independent_package_resolution": {
+    "candidate": [
+      2,
+      2,
+      3,
+      2
+    ],
+    "optimum_minimize": 9,
+    "solver": "independent_agent_reference_v1"
+  },
+  "independent_max_flow": {
+    "candidate": [
+      3,
+      2,
+      1,
+      2,
+      3
+    ],
+    "optimum_minimize": -5,
+    "solver": "independent_agent_reference_v1"
+  },
+  "independent_exact_cover": {
+    "candidate": [
+      0,
+      1,
+      2
+    ],
+    "optimum_minimize": 0,
+    "solver": "independent_agent_reference_v1"
+  },
+  "independent_error_correction": {
+    "candidate": [
+      4,
+      3,
+      3
+    ],
+    "optimum_minimize": 0,
+    "solver": "independent_agent_reference_v1"
+  },
+  "independent_bin_packing": {
+    "candidate": [
+      0,
+      1,
+      2,
+      1,
+      0
+    ],
+    "optimum_minimize": 3,
+    "solver": "independent_agent_reference_v1"
+  },
+  "independent_automata_reachability": {
+    "candidate": "abab",
+    "optimum_minimize": 4,
+    "solver": "independent_agent_reference_v1"
+  },
+  "independent_access_control": {
+    "candidate": [
+      1,
+      1,
+      0,
+      1,
+      0
+    ],
+    "optimum_minimize": 0,
+    "solver": "independent_agent_reference_v1"
+  },
+  "independent_reaction_balance": {
+    "candidate": [
+      4,
+      3,
+      2
+    ],
+    "optimum_minimize": 9,
+    "solver": "independent_agent_reference_v1"
+  },
+  "independent_voting_rule": {
+    "candidate": [
+      "B",
+      "A",
+      "C"
+    ],
+    "optimum_minimize": 1,
+    "solver": "independent_agent_reference_v1"
+  },
+  "independent_edit_distance": {
+    "candidate": "MDSM",
+    "optimum_minimize": 2,
+    "solver": "independent_agent_reference_v1"
+  }
+}

@@ -1,0 +1,440 @@
+{
+  "raw_path": "/home/liuxv/LeasePath-new-server-data/.artifacts/checkpoints/pressure-independent-2026-11-10/accessible-summaries/pinned-tool-summary.json",
+  "sha256": "8768d0b1616aa7d6228fc2c1252e4afdb6ab126dfa02ed562cd4d0a12aa88933",
+  "status": "failed",
+  "error": "ValueError: pinned CPU preflight disk input/fault gate failed",
+  "scope": "CPU tools only; no native controller or natural JCT acceptance",
+  "model_generations": 0,
+  "groups": [
+    {
+      "concurrency": 3,
+      "correct": 3,
+      "parent_delta": {
+        "read_bytes": 0,
+        "major_faults": 0,
+        "block_input_ops": 0
+      },
+      "residency": [
+        {
+          "files": 21996,
+          "pages": 178895,
+          "nonresident_pages": 0
+        },
+        {
+          "files": 634,
+          "pages": 360438,
+          "nonresident_pages": 0
+        }
+      ],
+      "tasks": [
+        {
+          "task": "logistic_holdout",
+          "correct": true,
+          "child_lifetime": {
+            "major_faults": 0,
+            "minor_faults": 151229,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 8.815849,
+            "system_s": 0.716939,
+            "scope": "wait4 worker lifetime including startup, exit, and reaped descendants"
+          },
+          "io_since_exec": {
+            "major_faults": 0,
+            "minor_faults": 150701,
+            "read_bytes": 0,
+            "rchar": 141899813
+          }
+        },
+        {
+          "task": "ridge_validation",
+          "correct": true,
+          "child_lifetime": {
+            "major_faults": 0,
+            "minor_faults": 1022589,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 10.259579,
+            "system_s": 3.21759,
+            "scope": "wait4 worker lifetime including startup, exit, and reaped descendants"
+          },
+          "io_since_exec": {
+            "major_faults": 0,
+            "minor_faults": 1021746,
+            "read_bytes": 0,
+            "rchar": 447500872
+          }
+        },
+        {
+          "task": "temporal_asof",
+          "correct": true,
+          "child_lifetime": {
+            "major_faults": 0,
+            "minor_faults": 23874,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 4.755635,
+            "system_s": 0.204119,
+            "scope": "wait4 worker lifetime including startup, exit, and reaped descendants"
+          },
+          "io_since_exec": {
+            "major_faults": 0,
+            "minor_faults": 23384,
+            "read_bytes": 0,
+            "rchar": 33792362
+          }
+        }
+      ]
+    },
+    {
+      "concurrency": 6,
+      "correct": 6,
+      "parent_delta": {
+        "read_bytes": 0,
+        "major_faults": 0,
+        "block_input_ops": 0
+      },
+      "residency": [
+        {
+          "files": 21996,
+          "pages": 178895,
+          "nonresident_pages": 0
+        },
+        {
+          "files": 634,
+          "pages": 360438,
+          "nonresident_pages": 0
+        }
+      ],
+      "tasks": [
+        {
+          "task": "logistic_holdout",
+          "correct": true,
+          "child_lifetime": {
+            "major_faults": 0,
+            "minor_faults": 151728,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 8.993305,
+            "system_s": 0.672322,
+            "scope": "wait4 worker lifetime including startup, exit, and reaped descendants"
+          },
+          "io_since_exec": {
+            "major_faults": 0,
+            "minor_faults": 151193,
+            "read_bytes": 0,
+            "rchar": 141899746
+          }
+        },
+        {
+          "task": "ridge_validation",
+          "correct": true,
+          "child_lifetime": {
+            "major_faults": 0,
+            "minor_faults": 1022268,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 11.677994,
+            "system_s": 3.549366,
+            "scope": "wait4 worker lifetime including startup, exit, and reaped descendants"
+          },
+          "io_since_exec": {
+            "major_faults": 0,
+            "minor_faults": 1021423,
+            "read_bytes": 0,
+            "rchar": 447500532
+          }
+        },
+        {
+          "task": "temporal_asof",
+          "correct": true,
+          "child_lifetime": {
+            "major_faults": 0,
+            "minor_faults": 24142,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 4.454658,
+            "system_s": 0.150605,
+            "scope": "wait4 worker lifetime including startup, exit, and reaped descendants"
+          },
+          "io_since_exec": {
+            "major_faults": 0,
+            "minor_faults": 23648,
+            "read_bytes": 0,
+            "rchar": 33792409
+          }
+        },
+        {
+          "task": "priority_top",
+          "correct": true,
+          "child_lifetime": {
+            "major_faults": 0,
+            "minor_faults": 13400,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 1.376226,
+            "system_s": 0.125573,
+            "scope": "wait4 worker lifetime including startup, exit, and reaped descendants"
+          },
+          "io_since_exec": {
+            "major_faults": 0,
+            "minor_faults": 12733,
+            "read_bytes": 0,
+            "rchar": 8172312
+          }
+        },
+        {
+          "task": "missing_median",
+          "correct": true,
+          "child_lifetime": {
+            "major_faults": 0,
+            "minor_faults": 25609,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 4.58118,
+            "system_s": 0.18831699999999998,
+            "scope": "wait4 worker lifetime including startup, exit, and reaped descendants"
+          },
+          "io_since_exec": {
+            "major_faults": 0,
+            "minor_faults": 24905,
+            "read_bytes": 0,
+            "rchar": 35312392
+          }
+        },
+        {
+          "task": "multi_group_anova",
+          "correct": true,
+          "child_lifetime": {
+            "major_faults": 0,
+            "minor_faults": 23952,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 4.142202,
+            "system_s": 0.181364,
+            "scope": "wait4 worker lifetime including startup, exit, and reaped descendants"
+          },
+          "io_since_exec": {
+            "major_faults": 0,
+            "minor_faults": 23452,
+            "read_bytes": 0,
+            "rchar": 33552212
+          }
+        }
+      ]
+    },
+    {
+      "concurrency": 10,
+      "correct": 10,
+      "parent_delta": {
+        "read_bytes": 0,
+        "major_faults": 0,
+        "block_input_ops": 0
+      },
+      "residency": [
+        {
+          "files": 21996,
+          "pages": 178895,
+          "nonresident_pages": 0
+        },
+        {
+          "files": 634,
+          "pages": 360438,
+          "nonresident_pages": 0
+        }
+      ],
+      "tasks": [
+        {
+          "task": "logistic_holdout",
+          "correct": true,
+          "child_lifetime": {
+            "major_faults": 0,
+            "minor_faults": 151754,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 7.305336,
+            "system_s": 0.604694,
+            "scope": "wait4 worker lifetime including startup, exit, and reaped descendants"
+          },
+          "io_since_exec": {
+            "major_faults": 0,
+            "minor_faults": 151221,
+            "read_bytes": 0,
+            "rchar": 141899852
+          }
+        },
+        {
+          "task": "ridge_validation",
+          "correct": true,
+          "child_lifetime": {
+            "major_faults": 0,
+            "minor_faults": 1023550,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 10.820497,
+            "system_s": 3.476007,
+            "scope": "wait4 worker lifetime including startup, exit, and reaped descendants"
+          },
+          "io_since_exec": {
+            "major_faults": 0,
+            "minor_faults": 1022485,
+            "read_bytes": 0,
+            "rchar": 447499842
+          }
+        },
+        {
+          "task": "temporal_asof",
+          "correct": true,
+          "child_lifetime": {
+            "major_faults": 0,
+            "minor_faults": 23891,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 5.551885,
+            "system_s": 0.226508,
+            "scope": "wait4 worker lifetime including startup, exit, and reaped descendants"
+          },
+          "io_since_exec": {
+            "major_faults": 0,
+            "minor_faults": 23398,
+            "read_bytes": 0,
+            "rchar": 33792339
+          }
+        },
+        {
+          "task": "priority_top",
+          "correct": true,
+          "child_lifetime": {
+            "major_faults": 0,
+            "minor_faults": 13407,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 1.429818,
+            "system_s": 0.11971899999999999,
+            "scope": "wait4 worker lifetime including startup, exit, and reaped descendants"
+          },
+          "io_since_exec": {
+            "major_faults": 0,
+            "minor_faults": 12732,
+            "read_bytes": 0,
+            "rchar": 8172648
+          }
+        },
+        {
+          "task": "missing_median",
+          "correct": true,
+          "child_lifetime": {
+            "major_faults": 0,
+            "minor_faults": 24487,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 5.380775,
+            "system_s": 0.235623,
+            "scope": "wait4 worker lifetime including startup, exit, and reaped descendants"
+          },
+          "io_since_exec": {
+            "major_faults": 0,
+            "minor_faults": 24000,
+            "read_bytes": 0,
+            "rchar": 35312201
+          }
+        },
+        {
+          "task": "multi_group_anova",
+          "correct": true,
+          "child_lifetime": {
+            "major_faults": 0,
+            "minor_faults": 24318,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 4.924314,
+            "system_s": 0.216168,
+            "scope": "wait4 worker lifetime including startup, exit, and reaped descendants"
+          },
+          "io_since_exec": {
+            "major_faults": 0,
+            "minor_faults": 23728,
+            "read_bytes": 0,
+            "rchar": 33552184
+          }
+        },
+        {
+          "task": "rank_sum_test",
+          "correct": true,
+          "child_lifetime": {
+            "major_faults": 1,
+            "minor_faults": 24418,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 5.642371,
+            "system_s": 0.24021299999999998,
+            "scope": "wait4 worker lifetime including startup, exit, and reaped descendants"
+          },
+          "io_since_exec": {
+            "major_faults": 1,
+            "minor_faults": 23849,
+            "read_bytes": 0,
+            "rchar": 33360301
+          }
+        },
+        {
+          "task": "dominant_frequency",
+          "correct": true,
+          "child_lifetime": {
+            "major_faults": 0,
+            "minor_faults": 24125,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 4.3062,
+            "system_s": 0.187885,
+            "scope": "wait4 worker lifetime including startup, exit, and reaped descendants"
+          },
+          "io_since_exec": {
+            "major_faults": 0,
+            "minor_faults": 23629,
+            "read_bytes": 0,
+            "rchar": 34361136
+          }
+        },
+        {
+          "task": "feature_information",
+          "correct": true,
+          "child_lifetime": {
+            "major_faults": 0,
+            "minor_faults": 30231,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 6.223353,
+            "system_s": 0.26775699999999997,
+            "scope": "wait4 worker lifetime including startup, exit, and reaped descendants"
+          },
+          "io_since_exec": {
+            "major_faults": 0,
+            "minor_faults": 28895,
+            "read_bytes": 0,
+            "rchar": 44736399
+          }
+        },
+        {
+          "task": "image_regions",
+          "correct": true,
+          "child_lifetime": {
+            "major_faults": 0,
+            "minor_faults": 24022,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 4.15036,
+            "system_s": 0.19994199999999998,
+            "scope": "wait4 worker lifetime including startup, exit, and reaped descendants"
+          },
+          "io_since_exec": {
+            "major_faults": 0,
+            "minor_faults": 23531,
+            "read_bytes": 0,
+            "rchar": 33838711
+          }
+        }
+      ]
+    }
+  ]
+}

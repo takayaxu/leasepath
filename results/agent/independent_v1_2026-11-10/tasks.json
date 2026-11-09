@@ -1,0 +1,604 @@
+[
+  {
+    "id": "independent_job_shop",
+    "source_family": "job_shop",
+    "split": "development",
+    "intent": "Schedule four operations with minimum makespan. Candidate: integer start time per operation in listed order.",
+    "kind": "job_shop",
+    "problem": {
+      "operations": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "precedence": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "start_max": 8
+    },
+    "input_origin": "locally authored deterministic small instance; cited source supplies problem semantics, not this data",
+    "max_generations": 12,
+    "max_tool_calls": 11,
+    "input_sha256": "b055d9c69ecd13b3ae6d69232381106815467883c5615e84b3f480f7e2894664",
+    "schema_sha256": "633edf6041c1d3492d2861389e2f2ec4db2c13d4d63167cebc145727fdd49478",
+    "source_document": {
+      "family": "job_shop",
+      "url": "https://cdn.jsdelivr.net/gh/google/or-tools@stable/ortools/sat/samples/minimal_jobshop_sat.py",
+      "status": "retrieved",
+      "bytes": 5483,
+      "sha256": "8294515355a8dc6929994e4ea08b4fee7b276088917c0f9a6b1b08a409e22f1c",
+      "error": "",
+      "local_path": "/home/liuxv/LeasePath-new-server-data/.artifacts/independent-agent-v1-20261110/provenance/job_shop.verified-source",
+      "retrieved_client_date": "2026-11-10"
+    }
+  },
+  {
+    "id": "independent_propositional_sat",
+    "source_family": "propositional_sat",
+    "split": "development",
+    "intent": "Find a satisfying Boolean assignment. Candidate: list of 0/1 values for variables 1..5.",
+    "kind": "propositional_sat",
+    "problem": {
+      "variables": 5,
+      "clauses": [
+        [
+          1,
+          2
+        ],
+        [
+          -1,
+          3
+        ],
+        [
+          -2,
+          -3,
+          4
+        ],
+        [
+          -4,
+          5
+        ],
+        [
+          -5,
+          2
+        ],
+        [
+          -2,
+          3
+        ]
+      ]
+    },
+    "input_origin": "locally authored deterministic small instance; cited source supplies problem semantics, not this data",
+    "max_generations": 12,
+    "max_tool_calls": 11,
+    "input_sha256": "d70134775adebf0363715e257cd84ccf4d95e628d9c0454f852ea03492bf32e0",
+    "schema_sha256": "633edf6041c1d3492d2861389e2f2ec4db2c13d4d63167cebc145727fdd49478",
+    "source_document": {
+      "family": "propositional_sat",
+      "url": "https://www.cs.ubc.ca/~hoos/SATLIB/Benchmarks/SAT/satformat.ps",
+      "effective_url": "https://www.cs.ubc.ca/~hoos/SATLIB/Benchmarks/SAT/satformat.ps",
+      "status": "retrieved",
+      "error": "",
+      "sha256": "59757f5ba218fa45b3f03bd464f20cc9716e6cc2930f9ea85f8413bd85942f0e",
+      "bytes": 112439,
+      "local_path": "/home/liuxv/LeasePath-new-server-data/.artifacts/independent-agent-v1-20261110/provenance/propositional_sat.source",
+      "retrieved_client_date": "2026-11-10"
+    }
+  },
+  {
+    "id": "independent_package_resolution",
+    "source_family": "package_resolution",
+    "split": "development",
+    "intent": "Resolve versions 1..3 for packages A,B,C,D. A must be at least 2. Minimize sum of version numbers. Dependencies are [package index, selected version, required package index, minimum version]. Candidate: four integer versions.",
+    "kind": "package_resolution",
+    "problem": {
+      "packages": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "dependencies": [
+        [
+          0,
+          2,
+          1,
+          2
+        ],
+        [
+          0,
+          3,
+          1,
+          3
+        ],
+        [
+          1,
+          2,
+          2,
+          3
+        ],
+        [
+          1,
+          3,
+          2,
+          2
+        ],
+        [
+          2,
+          3,
+          3,
+          2
+        ]
+      ],
+      "conflicts": [
+        [
+          1,
+          3,
+          3,
+          1
+        ]
+      ]
+    },
+    "input_origin": "locally authored deterministic small instance; cited source supplies problem semantics, not this data",
+    "max_generations": 12,
+    "max_tool_calls": 11,
+    "input_sha256": "a5fced829f5f6935472785d3ce39195d3a008a12df11a4da74450b620a7c5df3",
+    "schema_sha256": "633edf6041c1d3492d2861389e2f2ec4db2c13d4d63167cebc145727fdd49478",
+    "source_document": {
+      "family": "package_resolution",
+      "url": "https://pip.pypa.io/en/stable/topics/dependency-resolution/",
+      "effective_url": "https://pip.pypa.io/en/stable/topics/dependency-resolution/",
+      "status": "retrieved",
+      "error": "",
+      "sha256": "2516801de3b98b6c49cccd13deced826e6e00030d18e5a98ed701dba8e63716a",
+      "bytes": 71860,
+      "local_path": "/home/liuxv/LeasePath-new-server-data/.artifacts/independent-agent-v1-20261110/provenance/package_resolution.source",
+      "retrieved_client_date": "2026-11-10"
+    }
+  },
+  {
+    "id": "independent_max_flow",
+    "source_family": "max_flow",
+    "split": "development",
+    "intent": "Find a maximum integral flow from node 0 to node 3. Candidate: nonnegative integer flow on each listed directed edge.",
+    "kind": "max_flow",
+    "problem": {
+      "nodes": 4,
+      "source": 0,
+      "sink": 3,
+      "edges": [
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          0,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          3,
+          2
+        ],
+        [
+          2,
+          3,
+          3
+        ]
+      ]
+    },
+    "input_origin": "locally authored deterministic small instance; cited source supplies problem semantics, not this data",
+    "max_generations": 12,
+    "max_tool_calls": 11,
+    "input_sha256": "46f82260d82ffe419ef2c74e15899ef4e0abb5fc346570aa58e3c985c9eac7da",
+    "schema_sha256": "633edf6041c1d3492d2861389e2f2ec4db2c13d4d63167cebc145727fdd49478",
+    "source_document": {
+      "family": "max_flow",
+      "url": "https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.flow.maximum_flow.html",
+      "effective_url": "https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.flow.maximum_flow.html",
+      "status": "retrieved",
+      "error": "",
+      "sha256": "f3fe87c4c52be26b2ed31de66ca5f2330922edbae988a4b2b5a22b382bbb4eb1",
+      "bytes": 51332,
+      "local_path": "/home/liuxv/LeasePath-new-server-data/.artifacts/independent-agent-v1-20261110/provenance/max_flow.source",
+      "retrieved_client_date": "2026-11-10"
+    }
+  },
+  {
+    "id": "independent_exact_cover",
+    "source_family": "exact_cover",
+    "split": "development",
+    "intent": "Select subsets covering every universe element exactly once. Candidate: list of distinct zero-based subset indices.",
+    "kind": "exact_cover",
+    "problem": {
+      "universe": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "subsets": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          3,
+          4
+        ]
+      ]
+    },
+    "input_origin": "locally authored deterministic small instance; cited source supplies problem semantics, not this data",
+    "max_generations": 12,
+    "max_tool_calls": 11,
+    "input_sha256": "24db0033a6e9b671a9daa5c0e31d4ab96e5aabe8b14ae0c36156769c37a8f57b",
+    "schema_sha256": "633edf6041c1d3492d2861389e2f2ec4db2c13d4d63167cebc145727fdd49478",
+    "source_document": {
+      "family": "exact_cover",
+      "url": "https://www.cs.mcgill.ca/~aassaf9/python/algorithm_x.html",
+      "effective_url": "https://www.cs.mcgill.ca/~aassaf9/python/algorithm_x.html",
+      "status": "retrieved",
+      "error": "",
+      "sha256": "d276d51bbccdd3d9584dc7b38539312945c0eabe69873db8e0c8b87336a40b1e",
+      "bytes": 5748,
+      "local_path": "/home/liuxv/LeasePath-new-server-data/.artifacts/independent-agent-v1-20261110/provenance/exact_cover.source",
+      "retrieved_client_date": "2026-11-10"
+    }
+  },
+  {
+    "id": "independent_error_correction",
+    "source_family": "error_correction",
+    "split": "development",
+    "intent": "Recover a degree-at-most-two message polynomial over GF(17) from surviving encoded symbols. Candidate: coefficients [constant, linear, quadratic], each 0..16.",
+    "kind": "error_correction",
+    "problem": {
+      "prime": 17,
+      "symbols": [
+        [
+          1,
+          10
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          5,
+          9
+        ]
+      ],
+      "erased_x": [
+        2,
+        4
+      ]
+    },
+    "input_origin": "locally authored deterministic small instance; cited source supplies problem semantics, not this data",
+    "max_generations": 12,
+    "max_tool_calls": 11,
+    "input_sha256": "be43c647d31ce8b23d63aa7284c66f481e81d0d54878babba97dd80aea5d5d7b",
+    "schema_sha256": "633edf6041c1d3492d2861389e2f2ec4db2c13d4d63167cebc145727fdd49478",
+    "source_document": {
+      "family": "error_correction",
+      "url": "https://www.rfc-editor.org/rfc/rfc5510.html",
+      "effective_url": "https://www.rfc-editor.org/rfc/rfc5510.html",
+      "status": "retrieved",
+      "error": "",
+      "sha256": "b4942a8f776aa17d802b5a5b4448e5ffb7623b18ffb5b88c6110466b678f8d4e",
+      "bytes": 72731,
+      "local_path": "/home/liuxv/LeasePath-new-server-data/.artifacts/independent-agent-v1-20261110/provenance/error_correction.source",
+      "retrieved_client_date": "2026-11-10"
+    }
+  },
+  {
+    "id": "independent_bin_packing",
+    "source_family": "bin_packing",
+    "split": "holdout",
+    "intent": "Pack all items into the fewest bins of capacity 6. Candidate: one integer bin label 0..4 per item.",
+    "kind": "bin_packing",
+    "problem": {
+      "sizes": [
+        4,
+        3,
+        3,
+        2,
+        2
+      ],
+      "capacity": 6
+    },
+    "input_origin": "locally authored deterministic small instance; cited source supplies problem semantics, not this data",
+    "max_generations": 12,
+    "max_tool_calls": 11,
+    "input_sha256": "8aee01dce70900a29436b215c16f5c8515310d661f9cd8198080184a4a38f4be",
+    "schema_sha256": "633edf6041c1d3492d2861389e2f2ec4db2c13d4d63167cebc145727fdd49478",
+    "source_document": {
+      "family": "bin_packing",
+      "url": "https://people.brunel.ac.uk/~mastjjb/jeb/orlib/binpackinfo.html",
+      "effective_url": "https://people.brunel.ac.uk/~mastjjb/jeb/orlib/binpackinfo.html",
+      "status": "retrieved",
+      "error": "",
+      "sha256": "15937660a61f827c70073d1fa3648df7781b61e4e9789cc482e482411e4fa889",
+      "bytes": 3208,
+      "local_path": "/home/liuxv/LeasePath-new-server-data/.artifacts/independent-agent-v1-20261110/provenance/bin_packing.source",
+      "retrieved_client_date": "2026-11-10"
+    }
+  },
+  {
+    "id": "independent_automata_reachability",
+    "source_family": "automata_reachability",
+    "split": "holdout",
+    "intent": "Reach accepting state 4 from state 0 with the shortest word over a,b. Candidate: the word string (at most 10 letters).",
+    "kind": "automata_reachability",
+    "problem": {
+      "start": 0,
+      "accept": 4,
+      "transitions": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "alphabet": [
+        "a",
+        "b"
+      ]
+    },
+    "input_origin": "locally authored deterministic small instance; cited source supplies problem semantics, not this data",
+    "max_generations": 12,
+    "max_tool_calls": 11,
+    "input_sha256": "e0c0f4485558cb75bb534418fd28a4914baeb30469b6bd8fe969f53c7b50fefe",
+    "schema_sha256": "fd882c8b253878036e7ecb860c8e889a980162d6ee47fb7b611f510a5352c555",
+    "source_document": {
+      "family": "automata_reachability",
+      "url": "https://cdn.jsdelivr.net/gh/nimble-code/Spin@master/README.md",
+      "status": "retrieved",
+      "bytes": 1522,
+      "sha256": "802742f0b380d23e4514a1201b51ad7588737219840b0a997efee1a19d250a49",
+      "error": "",
+      "local_path": "/home/liuxv/LeasePath-new-server-data/.artifacts/independent-agent-v1-20261110/provenance/automata_reachability.mirror",
+      "retrieved_client_date": "2026-11-10",
+      "role": "same upstream official repository via CDN mirror, not a new source family"
+    }
+  },
+  {
+    "id": "independent_access_control",
+    "source_family": "access_control",
+    "split": "holdout",
+    "intent": "Classify each action as allowed (1) or denied (0). Explicit deny overrides any allow; absent allow is deny. Candidate: 0/1 list in actions order.",
+    "kind": "access_control",
+    "problem": {
+      "actions": [
+        "read",
+        "write",
+        "delete",
+        "list",
+        "admin"
+      ],
+      "allow_policies": [
+        [
+          "read",
+          "write"
+        ],
+        [
+          "list",
+          "delete"
+        ]
+      ],
+      "deny_policies": [
+        [
+          "delete"
+        ],
+        [
+          "admin"
+        ]
+      ]
+    },
+    "input_origin": "locally authored deterministic small instance; cited source supplies problem semantics, not this data",
+    "max_generations": 12,
+    "max_tool_calls": 11,
+    "input_sha256": "1a59042bd8f8a960c77b86170b6505cbbe9d5ad32f7a4755935ed55f42377071",
+    "schema_sha256": "633edf6041c1d3492d2861389e2f2ec4db2c13d4d63167cebc145727fdd49478",
+    "source_document": {
+      "family": "access_control",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic.html",
+      "effective_url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic.html",
+      "status": "retrieved",
+      "error": "",
+      "sha256": "e14e7f9015beadc33105468ceb68e4ce16f35b138ba4c35824d1f85f0e3aa969",
+      "bytes": 17642,
+      "local_path": "/home/liuxv/LeasePath-new-server-data/.artifacts/independent-agent-v1-20261110/provenance/access_control.source",
+      "retrieved_client_date": "2026-11-10"
+    }
+  },
+  {
+    "id": "independent_reaction_balance",
+    "source_family": "reaction_balance",
+    "split": "holdout",
+    "intent": "Balance Fe + O2 -> Fe2O3 using the smallest positive integer coefficients. Candidate: [Fe, O2, Fe2O3], each 1..12.",
+    "kind": "reaction_balance",
+    "problem": {
+      "species": [
+        "Fe",
+        "O2",
+        "Fe2O3"
+      ],
+      "signed_atom_matrix": [
+        [
+          1,
+          0,
+          -2
+        ],
+        [
+          0,
+          2,
+          -3
+        ]
+      ]
+    },
+    "input_origin": "locally authored deterministic small instance; cited source supplies problem semantics, not this data",
+    "max_generations": 12,
+    "max_tool_calls": 11,
+    "input_sha256": "c23b69f1aa743c84bd460980c3aaab4f01c9d305e4bd704ba2dc82abc21b3452",
+    "schema_sha256": "633edf6041c1d3492d2861389e2f2ec4db2c13d4d63167cebc145727fdd49478",
+    "source_document": {
+      "family": "reaction_balance",
+      "url": "https://openstax.org/books/chemistry-2e/pages/4-1-writing-and-balancing-chemical-equations",
+      "effective_url": "https://openstax.org/books/chemistry-2e/pages/4-1-writing-and-balancing-chemical-equations",
+      "status": "retrieved",
+      "error": "",
+      "sha256": "915711677e5d3b6a7790b06b7730e07ed1684b7ce825767c488ab1951ca737fb",
+      "bytes": 372115,
+      "local_path": "/home/liuxv/LeasePath-new-server-data/.artifacts/independent-agent-v1-20261110/provenance/reaction_balance.source",
+      "retrieved_client_date": "2026-11-10"
+    }
+  },
+  {
+    "id": "independent_voting_rule",
+    "source_family": "voting_rule",
+    "split": "holdout",
+    "intent": "Add one ballot to make B win instant-runoff voting, with minimum pair inversions relative to A,B,C. Eliminate the alphabetically greatest tied last-place candidate. Candidate: ranking permutation of A,B,C.",
+    "kind": "voting_rule",
+    "problem": {
+      "candidates": [
+        "A",
+        "B",
+        "C"
+      ],
+      "ballots": [
+        [
+          "A",
+          "C",
+          "B"
+        ],
+        [
+          "A",
+          "B",
+          "C"
+        ],
+        [
+          "B",
+          "C",
+          "A"
+        ],
+        [
+          "C",
+          "B",
+          "A"
+        ]
+      ],
+      "target": "B",
+      "original": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    "input_origin": "locally authored deterministic small instance; cited source supplies problem semantics, not this data",
+    "max_generations": 12,
+    "max_tool_calls": 11,
+    "input_sha256": "fd3130c1a771f476d34afb6e2b2d21c56d609171faab401abea91a1be8ab5616",
+    "schema_sha256": "2dbfae6dca67fafe663b606878fd63e26cbc97a8c4903997b591690b99926e34",
+    "source_document": {
+      "family": "voting_rule",
+      "url": "https://plato.stanford.edu/entries/voting-methods/",
+      "effective_url": "https://plato.stanford.edu/entries/voting-methods/",
+      "status": "retrieved",
+      "error": "",
+      "sha256": "05dda8f9e39676f7e740e2b9a421b2acf3d4b3f522adf878d595110c55f7ec8a",
+      "bytes": 177833,
+      "local_path": "/home/liuxv/LeasePath-new-server-data/.artifacts/independent-agent-v1-20261110/provenance/voting_rule.source",
+      "retrieved_client_date": "2026-11-10"
+    }
+  },
+  {
+    "id": "independent_edit_distance",
+    "source_family": "edit_distance",
+    "split": "holdout",
+    "intent": "Transform source into target at minimum unit edit cost. Candidate: operation string; M matches equal characters, S substitutes, D deletes source character, I inserts next target character. Consume both strings completely; at most 10 operations.",
+    "kind": "edit_distance",
+    "problem": {
+      "source": "GATT",
+      "target": "GCT"
+    },
+    "input_origin": "locally authored deterministic small instance; cited source supplies problem semantics, not this data",
+    "max_generations": 12,
+    "max_tool_calls": 11,
+    "input_sha256": "76393e56fdbd81983b88347062f4aad487d9987e89e786d04a6cdb78897b998c",
+    "schema_sha256": "fd882c8b253878036e7ecb860c8e889a980162d6ee47fb7b611f510a5352c555",
+    "source_document": {
+      "family": "edit_distance",
+      "url": "https://rapidfuzz.github.io/RapidFuzz/Usage/distance/Levenshtein.html",
+      "status": "retrieved",
+      "bytes": 57287,
+      "sha256": "abcb3d419911dd05b15107ab9b1b4482f8b4028715c24624231b3812709b7ead",
+      "error": "",
+      "local_path": "/home/liuxv/LeasePath-new-server-data/.artifacts/independent-agent-v1-20261110/provenance/edit_distance.semantics",
+      "retrieved_client_date": "2026-11-10"
+    }
+  }
+]
