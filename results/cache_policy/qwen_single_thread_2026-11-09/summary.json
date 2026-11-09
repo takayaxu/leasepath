@@ -1,0 +1,116 @@
+{
+  "thread_diagnostic_audit": {
+    "status": "passed",
+    "correct": 8,
+    "measured": 6,
+    "warmups": 2,
+    "new_model_generations": 0,
+    "order": "warmup two/one, then two/one; one/two; two/one; no exclusion",
+    "modes": {
+      "2": {
+        "mean_wall_s": 6.9451628350000005,
+        "measured_wait_s": [
+          3.10451284,
+          3.013662392,
+          3.301204323
+        ],
+        "peak_threads": [
+          3,
+          3,
+          3
+        ]
+      },
+      "1": {
+        "mean_wall_s": 5.788603257,
+        "measured_wait_s": [
+          0.001324012,
+          0.014575132,
+          0.000598431
+        ],
+        "peak_threads": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    "scope": "whole recipe thread count treatment, no host exclusivity or cache policy comparison"
+  },
+  "preflight": {
+    "status": "noise_gate_failed",
+    "reasons": [
+      "io_psi_pct range exceeds frozen limit",
+      "ridge max/min exceeds frozen limit"
+    ],
+    "ridge_wall_s": [
+      13.498505031,
+      14.50732824,
+      12.448983968,
+      13.241750926,
+      15.868662878,
+      14.803768652
+    ],
+    "ridge_cv": 0.08006347336944666,
+    "ridge_max_min_ratio": 1.2746954224369036,
+    "max_all_thread_runqueue_fraction": 0.002256005473201652,
+    "tool_calls": 18,
+    "correct": 18,
+    "new_model_generations": 0,
+    "host_intervals": [
+      {
+        "cpu_psi_pct": 0.6254096934962189,
+        "io_psi_pct": 2.5561123023625574,
+        "memory_full_psi_pct": 7.320726834791278e-06,
+        "host_busy_cpu_equivalents": 41.808204063940735
+      },
+      {
+        "cpu_psi_pct": 0.5657086271632206,
+        "io_psi_pct": 1.4006174746841795,
+        "memory_full_psi_pct": 0.058860212681285565,
+        "host_busy_cpu_equivalents": 41.938683122523344
+      },
+      {
+        "cpu_psi_pct": 0.49854113830193886,
+        "io_psi_pct": 0.8151094458478567,
+        "memory_full_psi_pct": 0.06744053684963532,
+        "host_busy_cpu_equivalents": 41.77013291634089
+      },
+      {
+        "cpu_psi_pct": 0.6578503874147635,
+        "io_psi_pct": 1.6546271102357373,
+        "memory_full_psi_pct": 0.019942552801471284,
+        "host_busy_cpu_equivalents": 42.03019464426851
+      },
+      {
+        "cpu_psi_pct": 0.8231595794106171,
+        "io_psi_pct": 1.4118851928850646,
+        "memory_full_psi_pct": 0.09337560430545382,
+        "host_busy_cpu_equivalents": 43.137511777109786
+      },
+      {
+        "cpu_psi_pct": 0.7570931499021483,
+        "io_psi_pct": 7.1572341229124685,
+        "memory_full_psi_pct": 0.06501828174609725,
+        "host_busy_cpu_equivalents": 41.28163813360188
+      }
+    ],
+    "available_memory_range_gib": 0.7653312683105469,
+    "no_outlier_exclusion": true,
+    "gate_frozen_before_observations": true
+  },
+  "preflight_audit": {
+    "status": "passed",
+    "experiment_status": "noise_gate_failed",
+    "measured": 18,
+    "warmup": 3,
+    "correct": 21,
+    "rejected": 0,
+    "new_model_generations": 0,
+    "no_missing_or_excluded_measured_calls": true,
+    "summary_sha256": "65b1b160244ec14d2a38390aa9d6d2d499dc05511029a6c827ca510c88ca179b",
+    "scope": "source hashes, three input hashes, all real parameters, independent references, artifacts, saved calls, phase times and frozen noise gate checked"
+  },
+  "new_model_generations": 0,
+  "frozen_recipe_commit": "43ef47f",
+  "scope": "separate diagnostic/preflight; not pooled with policy runs"
+}

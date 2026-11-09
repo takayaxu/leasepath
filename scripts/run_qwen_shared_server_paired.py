@@ -115,11 +115,21 @@ def main():
             budgets[spec['name']]=ScopedBudget(directory/'ledger.jsonl',limits=spec['budget_limits'])
             write(directory/'frozen-phase.json',spec)
         gate=run_gate(engine,tokenizer,budgets[plan['phases'][0]['name']],args.output/'native-gate')
-        run_group(tasks,refs,plan,args.output/'after-load-tool-sentinel')
+        def sentinel(output):
+            group=run_group(tasks,refs,plan,output)
+            for row in group['rows']:
+                call=row['call']
+                if not row['correct'] or call['status']!='ok':
+                    raise RuntimeError('real sentinel reference or tool failure')
+                overall=call['worker_timing']['overall']
+                if overall['read_bytes'] or overall['major_faults']:
+                    raise RuntimeError('sentinel numerical worker read disk or major faulted')
+            return group
+        sentinel(args.output/'after-load-tool-sentinel')
         for spec in plan['phases']:
             directory=args.output/spec['name'];budget=budgets[spec['name']];batches=[]
             for repeat,order in enumerate(spec['orders']):
-                run_group(tasks,refs,plan,directory/f'sentinel-{repeat}')
+                sentinel(directory/f'sentinel-{repeat}')
                 for name in order:
                     check_sources();budget.scope={'phase':spec['name'],'capacity':24,'concurrency':3,'repeat':repeat,'policy':name}
                     engine.clear();engine.policy='predicted_reuse' if name in models else name;engine.predictor=models.get(name);engine.clear()
