@@ -1,0 +1,103 @@
+{
+  "status": "passed",
+  "resource_recipe": "preexec-fixed-resolver-current-future-mlock-v2",
+  "rows": [
+    {
+      "mode": "trace",
+      "concurrency": 10,
+      "correct": 10,
+      "parent_delta": {
+        "major_faults": 0,
+        "block_input_ops": 0,
+        "read_bytes": 0
+      },
+      "worker_lifetime_major_faults": 0,
+      "worker_read_bytes": 0,
+      "worker_block_input_ops": 0,
+      "descendant_processes": 0,
+      "worker_final_VmLck_kib": {
+        "logistic_holdout": 388032,
+        "ridge_validation": 377476,
+        "temporal_asof": 282784,
+        "priority_top": 4937676,
+        "missing_median": 281712,
+        "multi_group_anova": 281532,
+        "rank_sum_test": 279336,
+        "dominant_frequency": 281296,
+        "feature_information": 307156,
+        "image_regions": 280788
+      }
+    },
+    {
+      "mode": "qualify",
+      "concurrency": 3,
+      "correct": 3,
+      "parent_delta": {
+        "major_faults": 0,
+        "block_input_ops": 0,
+        "read_bytes": 0
+      },
+      "worker_lifetime_major_faults": 0,
+      "worker_read_bytes": 0,
+      "worker_block_input_ops": 0,
+      "descendant_processes": 0,
+      "worker_final_VmLck_kib": {
+        "logistic_holdout": 378060,
+        "ridge_validation": 377224,
+        "temporal_asof": 282812
+      }
+    },
+    {
+      "mode": "qualify",
+      "concurrency": 6,
+      "correct": 6,
+      "parent_delta": {
+        "major_faults": 0,
+        "block_input_ops": 0,
+        "read_bytes": 0
+      },
+      "worker_lifetime_major_faults": 0,
+      "worker_read_bytes": 0,
+      "worker_block_input_ops": 0,
+      "descendant_processes": 0,
+      "worker_final_VmLck_kib": {
+        "logistic_holdout": 378236,
+        "ridge_validation": 377172,
+        "temporal_asof": 281800,
+        "priority_top": 8017860,
+        "missing_median": 282692,
+        "multi_group_anova": 282580
+      }
+    },
+    {
+      "mode": "qualify",
+      "concurrency": 10,
+      "correct": 10,
+      "parent_delta": {
+        "major_faults": 0,
+        "block_input_ops": 0,
+        "read_bytes": 0
+      },
+      "worker_lifetime_major_faults": 0,
+      "worker_read_bytes": 0,
+      "worker_block_input_ops": 0,
+      "descendant_processes": 0,
+      "worker_final_VmLck_kib": {
+        "logistic_holdout": 378240,
+        "ridge_validation": 377228,
+        "temporal_asof": 282924,
+        "priority_top": 4611012,
+        "missing_median": 282676,
+        "multi_group_anova": 282580,
+        "rank_sum_test": 281360,
+        "dominant_frequency": 281296,
+        "feature_information": 307588,
+        "image_regions": 281796
+      }
+    }
+  ],
+  "tool_calls": 29,
+  "numeric_replacement_calls": 0,
+  "model_generations": 0,
+  "natural_JCT_passed": false
+}

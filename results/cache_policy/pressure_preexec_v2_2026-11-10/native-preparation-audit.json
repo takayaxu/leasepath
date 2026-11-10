@@ -1,0 +1,69 @@
+{
+  "status": "passed_cancelled_attempt_audit",
+  "native_attempt_status": "cancelled_during_model_residency_preparation",
+  "native_runner_error": "KeyboardInterrupt: ",
+  "generation_ledgers": 0,
+  "new_model_generations": 0,
+  "native_protocol_passed": false,
+  "natural_JCT_passed": false,
+  "GPU_engine_started": false,
+  "stream_complete_hash_verified": false,
+  "stream_progress": [
+    [
+      973078528,
+      30.33
+    ],
+    [
+      1191182336,
+      61.65
+    ],
+    [
+      1551892480,
+      91.73
+    ],
+    [
+      1879048192,
+      121.76
+    ],
+    [
+      2181038080,
+      152.41
+    ],
+    [
+      2491416576,
+      182.82
+    ],
+    [
+      2743074816,
+      213.94
+    ],
+    [
+      2927624192,
+      244.1
+    ],
+    [
+      3154116608,
+      274.21
+    ]
+  ],
+  "successive_stream_MiB_s": [
+    6.641123882503193,
+    11.436170212765955,
+    10.38961038961039,
+    9.396411092985321,
+    9.73364024991779,
+    7.712082262210796,
+    5.83554376657825,
+    7.173696446363338
+  ],
+  "startup_timeout_s": 1800,
+  "abort_reason_record_sha256": "56e6ba8800df252e3aa73b7b06359e6e1aafef81cb441f2e23ecd457272cd9b4",
+  "manifest_sha256": "712fdc8b39b98c6e53a904bcec110ea3c4bb9e06a90909a61387878ac1da11a8",
+  "source_hashes_rechecked": 187,
+  "own_keeper_and_controller_exited": true,
+  "GPU_end_mib": {
+    "5": 4,
+    "6": 4,
+    "7": 4
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "status": "v2_tool_resource_qualification_passed_native_preparation_cancelled_for_slow_storage",
+  "v1": {
+    "tool_calls": 29,
+    "correct": 29,
+    "qualification_passed": false,
+    "major_faults": 13,
+    "self": 5,
+    "descendants": 8
+  },
+  "v2": {
+    "tool_calls": 29,
+    "correct": 29,
+    "qualification_passed": true,
+    "major_faults": 0,
+    "ldconfig_descendants": 0
+  },
+  "new_model_generations": 0,
+  "known_total_generations_unchanged": 1727,
+  "new_natural_JCT_cells": 0,
+  "independent_parent_model_executions": 0,
+  "full_native_protocol_accepted": false,
+  "source_model_complete_rehash_this_turn": false,
+  "own_GPU5_6_7_use": false,
+  "own_tmpfs_cleaned_after_verification": true,
+  "archives": [
+    {
+      "status": "passed",
+      "source": "/dev/shm/leasepath-preexec-v1-20261110",
+      "base_archive": "/home/liuxv/LeasePath-new-server-data/.artifacts/checkpoints/pressure-independent-2026-11-10/raw-evidence.tar.gz",
+      "base_archive_sha256": "cf29f77730750dc3fe5a77cc6edc371ca4faf6791de52b38c1279ab1836aea90",
+      "delta_archive": ".artifacts/checkpoints/pressure-preexec-v1-2026-11-10/diagnostic-delta.tar.gz",
+      "delta_archive_sha256": "94aa30bbc344b1762afecf9c69ad916dfb50403dede20e9c66d5e668e70deafa",
+      "delta_bytes": 26038733,
+      "delta_members_verified": 259,
+      "base_regular_files_reused": 22273,
+      "restore_rule": "Construct source root from each base/delta archive_member at relative path; verify sha256 before use. Recreate recorded symlinks. Existing historical archive is immutable."
+    },
+    {
+      "status": "passed",
+      "source": "/dev/shm/leasepath-preexec-v2-20261110",
+      "base_archive": "/home/liuxv/LeasePath-new-server-data/.artifacts/checkpoints/pressure-independent-2026-11-10/raw-evidence.tar.gz",
+      "base_archive_sha256": "cf29f77730750dc3fe5a77cc6edc371ca4faf6791de52b38c1279ab1836aea90",
+      "delta_archive": ".artifacts/checkpoints/pressure-preexec-v2-2026-11-10/diagnostic-delta.tar.gz",
+      "delta_archive_sha256": "79a018b86612fe15a68137d7e630b16b879c8b8894beab6a7aa0180c3b443243",
+      "delta_bytes": 543024180,
+      "delta_members_verified": 433,
+      "base_regular_files_reused": 22273,
+      "restore_rule": "Construct source root from each base/delta archive_member at relative path; verify sha256 before use. Recreate recorded symlinks. Existing historical archive is immutable."
+    }
+  ],
+  "tests": {
+    "v1": 15,
+    "v2": 17,
+    "final_targeted": 5
+  },
+  "next_gate": "Complete independently bounded model residency preparation on currently available storage, then run frozen24/10native diagnostic. Keep resource v2 fixed; no natural JCT before native acceptance."
+}

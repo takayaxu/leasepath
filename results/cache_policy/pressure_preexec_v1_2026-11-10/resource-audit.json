@@ -1,0 +1,392 @@
+{
+  "audit_status": "passed",
+  "resource_qualification_passed": false,
+  "natural_launch_allowed": false,
+  "full_native_controller_passed": false,
+  "natural_JCT_passed": false,
+  "real_tool_calls": 29,
+  "model_generations": 0,
+  "violations": [
+    {
+      "mode": "qualify",
+      "concurrency": 10,
+      "task": "temporal_asof",
+      "correct": true,
+      "lifetime_major_faults": 3,
+      "lifetime_block_input_ops": 0,
+      "read_bytes": 0,
+      "preexec_verified": true
+    },
+    {
+      "mode": "qualify",
+      "concurrency": 10,
+      "task": "multi_group_anova",
+      "correct": true,
+      "lifetime_major_faults": 1,
+      "lifetime_block_input_ops": 0,
+      "read_bytes": 0,
+      "preexec_verified": true
+    },
+    {
+      "mode": "qualify",
+      "concurrency": 10,
+      "task": "rank_sum_test",
+      "correct": true,
+      "lifetime_major_faults": 2,
+      "lifetime_block_input_ops": 0,
+      "read_bytes": 0,
+      "preexec_verified": true
+    },
+    {
+      "mode": "qualify",
+      "concurrency": 10,
+      "task": "dominant_frequency",
+      "correct": true,
+      "lifetime_major_faults": 1,
+      "lifetime_block_input_ops": 0,
+      "read_bytes": 0,
+      "preexec_verified": true
+    },
+    {
+      "mode": "qualify",
+      "concurrency": 10,
+      "task": "feature_information",
+      "correct": true,
+      "lifetime_major_faults": 4,
+      "lifetime_block_input_ops": 0,
+      "read_bytes": 0,
+      "preexec_verified": true
+    },
+    {
+      "mode": "qualify",
+      "concurrency": 10,
+      "task": "image_regions",
+      "correct": true,
+      "lifetime_major_faults": 2,
+      "lifetime_block_input_ops": 0,
+      "read_bytes": 0,
+      "preexec_verified": true
+    }
+  ],
+  "rows": [
+    {
+      "mode": "trace",
+      "concurrency": 10,
+      "task": "logistic_holdout",
+      "correct": true,
+      "lifetime_major_faults": 0,
+      "lifetime_block_input_ops": 0,
+      "read_bytes": 0,
+      "preexec_verified": true,
+      "raw_syscall_order_verified": true
+    },
+    {
+      "mode": "trace",
+      "concurrency": 10,
+      "task": "ridge_validation",
+      "correct": true,
+      "lifetime_major_faults": 0,
+      "lifetime_block_input_ops": 0,
+      "read_bytes": 0,
+      "preexec_verified": true,
+      "raw_syscall_order_verified": true
+    },
+    {
+      "mode": "trace",
+      "concurrency": 10,
+      "task": "temporal_asof",
+      "correct": true,
+      "lifetime_major_faults": 0,
+      "lifetime_block_input_ops": 0,
+      "read_bytes": 0,
+      "preexec_verified": true,
+      "raw_syscall_order_verified": true
+    },
+    {
+      "mode": "trace",
+      "concurrency": 10,
+      "task": "priority_top",
+      "correct": true,
+      "lifetime_major_faults": 0,
+      "lifetime_block_input_ops": 0,
+      "read_bytes": 0,
+      "preexec_verified": true,
+      "raw_syscall_order_verified": true
+    },
+    {
+      "mode": "trace",
+      "concurrency": 10,
+      "task": "missing_median",
+      "correct": true,
+      "lifetime_major_faults": 0,
+      "lifetime_block_input_ops": 0,
+      "read_bytes": 0,
+      "preexec_verified": true,
+      "raw_syscall_order_verified": true
+    },
+    {
+      "mode": "trace",
+      "concurrency": 10,
+      "task": "multi_group_anova",
+      "correct": true,
+      "lifetime_major_faults": 0,
+      "lifetime_block_input_ops": 0,
+      "read_bytes": 0,
+      "preexec_verified": true,
+      "raw_syscall_order_verified": true
+    },
+    {
+      "mode": "trace",
+      "concurrency": 10,
+      "task": "rank_sum_test",
+      "correct": true,
+      "lifetime_major_faults": 0,
+      "lifetime_block_input_ops": 0,
+      "read_bytes": 0,
+      "preexec_verified": true,
+      "raw_syscall_order_verified": true
+    },
+    {
+      "mode": "trace",
+      "concurrency": 10,
+      "task": "dominant_frequency",
+      "correct": true,
+      "lifetime_major_faults": 0,
+      "lifetime_block_input_ops": 0,
+      "read_bytes": 0,
+      "preexec_verified": true,
+      "raw_syscall_order_verified": true
+    },
+    {
+      "mode": "trace",
+      "concurrency": 10,
+      "task": "feature_information",
+      "correct": true,
+      "lifetime_major_faults": 0,
+      "lifetime_block_input_ops": 0,
+      "read_bytes": 0,
+      "preexec_verified": true,
+      "raw_syscall_order_verified": true
+    },
+    {
+      "mode": "trace",
+      "concurrency": 10,
+      "task": "image_regions",
+      "correct": true,
+      "lifetime_major_faults": 0,
+      "lifetime_block_input_ops": 0,
+      "read_bytes": 0,
+      "preexec_verified": true,
+      "raw_syscall_order_verified": true
+    },
+    {
+      "mode": "qualify",
+      "concurrency": 3,
+      "task": "logistic_holdout",
+      "correct": true,
+      "lifetime_major_faults": 0,
+      "lifetime_block_input_ops": 0,
+      "read_bytes": 0,
+      "preexec_verified": true
+    },
+    {
+      "mode": "qualify",
+      "concurrency": 3,
+      "task": "ridge_validation",
+      "correct": true,
+      "lifetime_major_faults": 0,
+      "lifetime_block_input_ops": 0,
+      "read_bytes": 0,
+      "preexec_verified": true
+    },
+    {
+      "mode": "qualify",
+      "concurrency": 3,
+      "task": "temporal_asof",
+      "correct": true,
+      "lifetime_major_faults": 0,
+      "lifetime_block_input_ops": 0,
+      "read_bytes": 0,
+      "preexec_verified": true
+    },
+    {
+      "mode": "qualify",
+      "concurrency": 6,
+      "task": "logistic_holdout",
+      "correct": true,
+      "lifetime_major_faults": 0,
+      "lifetime_block_input_ops": 0,
+      "read_bytes": 0,
+      "preexec_verified": true
+    },
+    {
+      "mode": "qualify",
+      "concurrency": 6,
+      "task": "ridge_validation",
+      "correct": true,
+      "lifetime_major_faults": 0,
+      "lifetime_block_input_ops": 0,
+      "read_bytes": 0,
+      "preexec_verified": true
+    },
+    {
+      "mode": "qualify",
+      "concurrency": 6,
+      "task": "temporal_asof",
+      "correct": true,
+      "lifetime_major_faults": 0,
+      "lifetime_block_input_ops": 0,
+      "read_bytes": 0,
+      "preexec_verified": true
+    },
+    {
+      "mode": "qualify",
+      "concurrency": 6,
+      "task": "priority_top",
+      "correct": true,
+      "lifetime_major_faults": 0,
+      "lifetime_block_input_ops": 0,
+      "read_bytes": 0,
+      "preexec_verified": true
+    },
+    {
+      "mode": "qualify",
+      "concurrency": 6,
+      "task": "missing_median",
+      "correct": true,
+      "lifetime_major_faults": 0,
+      "lifetime_block_input_ops": 0,
+      "read_bytes": 0,
+      "preexec_verified": true
+    },
+    {
+      "mode": "qualify",
+      "concurrency": 6,
+      "task": "multi_group_anova",
+      "correct": true,
+      "lifetime_major_faults": 0,
+      "lifetime_block_input_ops": 0,
+      "read_bytes": 0,
+      "preexec_verified": true
+    },
+    {
+      "mode": "qualify",
+      "concurrency": 10,
+      "task": "logistic_holdout",
+      "correct": true,
+      "lifetime_major_faults": 0,
+      "lifetime_block_input_ops": 0,
+      "read_bytes": 0,
+      "preexec_verified": true
+    },
+    {
+      "mode": "qualify",
+      "concurrency": 10,
+      "task": "ridge_validation",
+      "correct": true,
+      "lifetime_major_faults": 0,
+      "lifetime_block_input_ops": 0,
+      "read_bytes": 0,
+      "preexec_verified": true
+    },
+    {
+      "mode": "qualify",
+      "concurrency": 10,
+      "task": "temporal_asof",
+      "correct": true,
+      "lifetime_major_faults": 3,
+      "lifetime_block_input_ops": 0,
+      "read_bytes": 0,
+      "preexec_verified": true
+    },
+    {
+      "mode": "qualify",
+      "concurrency": 10,
+      "task": "priority_top",
+      "correct": true,
+      "lifetime_major_faults": 0,
+      "lifetime_block_input_ops": 0,
+      "read_bytes": 0,
+      "preexec_verified": true
+    },
+    {
+      "mode": "qualify",
+      "concurrency": 10,
+      "task": "missing_median",
+      "correct": true,
+      "lifetime_major_faults": 0,
+      "lifetime_block_input_ops": 0,
+      "read_bytes": 0,
+      "preexec_verified": true
+    },
+    {
+      "mode": "qualify",
+      "concurrency": 10,
+      "task": "multi_group_anova",
+      "correct": true,
+      "lifetime_major_faults": 1,
+      "lifetime_block_input_ops": 0,
+      "read_bytes": 0,
+      "preexec_verified": true
+    },
+    {
+      "mode": "qualify",
+      "concurrency": 10,
+      "task": "rank_sum_test",
+      "correct": true,
+      "lifetime_major_faults": 2,
+      "lifetime_block_input_ops": 0,
+      "read_bytes": 0,
+      "preexec_verified": true
+    },
+    {
+      "mode": "qualify",
+      "concurrency": 10,
+      "task": "dominant_frequency",
+      "correct": true,
+      "lifetime_major_faults": 1,
+      "lifetime_block_input_ops": 0,
+      "read_bytes": 0,
+      "preexec_verified": true
+    },
+    {
+      "mode": "qualify",
+      "concurrency": 10,
+      "task": "feature_information",
+      "correct": true,
+      "lifetime_major_faults": 4,
+      "lifetime_block_input_ops": 0,
+      "read_bytes": 0,
+      "preexec_verified": true
+    },
+    {
+      "mode": "qualify",
+      "concurrency": 10,
+      "task": "image_regions",
+      "correct": true,
+      "lifetime_major_faults": 2,
+      "lifetime_block_input_ops": 0,
+      "read_bytes": 0,
+      "preexec_verified": true
+    }
+  ],
+  "evidence_sha256": {
+    "/dev/shm/leasepath-preexec-v1-20261110/qualification/trace/concurrency-10/summary.json": "9d6389d9068e7939c7741a4b98698719bbd87cb7393426c5e3f5e37d1457d4de",
+    "/dev/shm/leasepath-preexec-v1-20261110/qualification/preexec.strace.1975766": "dbac3c07b140ef92f1ef4300fb342fe37ed1432830ee75bbeea85251cb409c39",
+    "/dev/shm/leasepath-preexec-v1-20261110/qualification/preexec.strace.1975898": "a664005e00a6f74073a581f318ba91815a8d7e6efceef4868d6c0b9fa77c71ea",
+    "/dev/shm/leasepath-preexec-v1-20261110/qualification/preexec.strace.1975753": "a47adc92845ffdabbde47a7243aa2446775c4f46eda0ec8af0be442b28d6b7d1",
+    "/dev/shm/leasepath-preexec-v1-20261110/qualification/preexec.strace.1975760": "520da2eeb810975e9ec547008474d1063741e178220a8fdedee72e2772a71fbe",
+    "/dev/shm/leasepath-preexec-v1-20261110/qualification/preexec.strace.1975757": "2d9528fb30bc2f425325dead4a15a33f694a82d3d39cf17d8da2786e8cd9f570",
+    "/dev/shm/leasepath-preexec-v1-20261110/qualification/preexec.strace.1975752": "ea51337ea82c0e7661503d7bf887fe70b81bc747f26733cfeb327240a7d7f1a6",
+    "/dev/shm/leasepath-preexec-v1-20261110/qualification/preexec.strace.1975754": "cc1cd9d5a4e438ccadbacb664d6f2bb24f5d6d93b7ab1ce010db57093eafa76a",
+    "/dev/shm/leasepath-preexec-v1-20261110/qualification/preexec.strace.1975756": "1b7fbf3591013cc4eb1b0c180b2c1eca45e16c2d2e1407a3fdbefb7b391b677d",
+    "/dev/shm/leasepath-preexec-v1-20261110/qualification/preexec.strace.1975758": "698350e630fc379bc00be6f09a44c07dd265f67e61771fdc26a4a30e9635ff67",
+    "/dev/shm/leasepath-preexec-v1-20261110/qualification/preexec.strace.1975755": "92771a62931d4468f0cf1088ec368f06f3c12c03d2b7e7ce86e32f439d5cdabc",
+    "/dev/shm/leasepath-preexec-v1-20261110/qualification/qualify/concurrency-3/summary.json": "6e9ddd9ada446bc4fe670848a945aeef4595fb96a1a619fc23762a4bb1f22f91",
+    "/dev/shm/leasepath-preexec-v1-20261110/qualification/qualify/concurrency-6/summary.json": "a7fec3416ac30520744a4ce9b0584e784c52f106fbb9e6c708fcccb48c779036",
+    "/dev/shm/leasepath-preexec-v1-20261110/qualification/qualify/concurrency-10/summary.json": "d0ddbb59e0cd960b75e8547334745f1e7c0191030b6cdb1d7dd6ee8db046c4fa"
+  },
+  "historical_fault_cause_resolved": false,
+  "resource_recipe": "preexec-affinity-membind-thp-limits-v1",
+  "historical_failed_sample_replaced": false
+}

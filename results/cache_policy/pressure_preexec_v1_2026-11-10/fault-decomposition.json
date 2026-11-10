@@ -1,0 +1,899 @@
+{
+  "status": "independent_count_decomposition_passed",
+  "lifetime_major_faults": 13,
+  "worker_self_major_faults": 5,
+  "descendant_major_faults": 8,
+  "rows": [
+    {
+      "task": "logistic_holdout",
+      "lifetime_major_faults": 0,
+      "worker_self_major_faults": 0,
+      "descendant_major_faults": 0,
+      "extensions": [],
+      "descendants": [
+        {
+          "argv": [
+            "/sbin/ldconfig",
+            "-p"
+          ],
+          "began_ns": 1453725385308967,
+          "pid": 1977153,
+          "ended_ns": 1453725389644344,
+          "usage": {
+            "major_faults": 0,
+            "minor_faults": 98,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 0.0,
+            "system_s": 0.002381,
+            "scope": "wait4 entire child lifetime, includes interpreter startup and exit"
+          }
+        },
+        {
+          "argv": [
+            "/sbin/ldconfig",
+            "-p"
+          ],
+          "began_ns": 1453725392448473,
+          "pid": 1977154,
+          "ended_ns": 1453725396372820,
+          "usage": {
+            "major_faults": 0,
+            "minor_faults": 104,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 0.002283,
+            "system_s": 0.0,
+            "scope": "wait4 entire child lifetime, includes interpreter startup and exit"
+          }
+        },
+        {
+          "argv": [
+            "/sbin/ldconfig",
+            "-p"
+          ],
+          "began_ns": 1453726030363016,
+          "pid": 1977274,
+          "ended_ns": 1453726036023626,
+          "usage": {
+            "major_faults": 0,
+            "minor_faults": 101,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 0.0,
+            "system_s": 0.002408,
+            "scope": "wait4 entire child lifetime, includes interpreter startup and exit"
+          }
+        },
+        {
+          "argv": [
+            "/sbin/ldconfig",
+            "-p"
+          ],
+          "began_ns": 1453732745733713,
+          "pid": 1977416,
+          "ended_ns": 1453732748703137,
+          "usage": {
+            "major_faults": 0,
+            "minor_faults": 102,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 0.0,
+            "system_s": 0.002131,
+            "scope": "wait4 entire child lifetime, includes interpreter startup and exit"
+          }
+        }
+      ],
+      "launcher_major_faults": 0,
+      "first_python_major_faults": 0
+    },
+    {
+      "task": "ridge_validation",
+      "lifetime_major_faults": 0,
+      "worker_self_major_faults": 0,
+      "descendant_major_faults": 0,
+      "extensions": [],
+      "descendants": [
+        {
+          "argv": [
+            "/sbin/ldconfig",
+            "-p"
+          ],
+          "began_ns": 1453727115582144,
+          "pid": 1977282,
+          "ended_ns": 1453727119949214,
+          "usage": {
+            "major_faults": 0,
+            "minor_faults": 103,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 0.0,
+            "system_s": 0.0024159999999999997,
+            "scope": "wait4 entire child lifetime, includes interpreter startup and exit"
+          }
+        },
+        {
+          "argv": [
+            "/sbin/ldconfig",
+            "-p"
+          ],
+          "began_ns": 1453727122724306,
+          "pid": 1977283,
+          "ended_ns": 1453727126553310,
+          "usage": {
+            "major_faults": 0,
+            "minor_faults": 101,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 0.0,
+            "system_s": 0.002225,
+            "scope": "wait4 entire child lifetime, includes interpreter startup and exit"
+          }
+        },
+        {
+          "argv": [
+            "/sbin/ldconfig",
+            "-p"
+          ],
+          "began_ns": 1453727748846523,
+          "pid": 1977284,
+          "ended_ns": 1453727757591027,
+          "usage": {
+            "major_faults": 0,
+            "minor_faults": 104,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 0.002433,
+            "system_s": 0.0,
+            "scope": "wait4 entire child lifetime, includes interpreter startup and exit"
+          }
+        },
+        {
+          "argv": [
+            "/sbin/ldconfig",
+            "-p"
+          ],
+          "began_ns": 1453740596139054,
+          "pid": 1977453,
+          "ended_ns": 1453740600423160,
+          "usage": {
+            "major_faults": 0,
+            "minor_faults": 106,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 0.0023539999999999998,
+            "system_s": 0.0,
+            "scope": "wait4 entire child lifetime, includes interpreter startup and exit"
+          }
+        }
+      ],
+      "launcher_major_faults": 0,
+      "first_python_major_faults": 0
+    },
+    {
+      "task": "temporal_asof",
+      "lifetime_major_faults": 3,
+      "worker_self_major_faults": 1,
+      "descendant_major_faults": 2,
+      "extensions": [
+        {
+          "origin": "/dev/shm/leasepath-preexec-v1-20261110/runtime/lib/python3.13/site-packages/numpy/_core/_multiarray_umath.cpython-313-x86_64-linux-gnu.so",
+          "method": "create_module",
+          "delta": {
+            "major_faults": 1,
+            "minor_faults": 156,
+            "read_bytes": 0,
+            "rchar": 8664
+          },
+          "duration_ns": 5570134
+        }
+      ],
+      "descendants": [
+        {
+          "argv": [
+            "/sbin/ldconfig",
+            "-p"
+          ],
+          "began_ns": 1453724831128310,
+          "pid": 1977135,
+          "ended_ns": 1453724835468703,
+          "usage": {
+            "major_faults": 1,
+            "minor_faults": 106,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 0.0,
+            "system_s": 0.002338,
+            "scope": "wait4 entire child lifetime, includes interpreter startup and exit"
+          }
+        },
+        {
+          "argv": [
+            "/sbin/ldconfig",
+            "-p"
+          ],
+          "began_ns": 1453724838095148,
+          "pid": 1977142,
+          "ended_ns": 1453724841700848,
+          "usage": {
+            "major_faults": 0,
+            "minor_faults": 102,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 0.002049,
+            "system_s": 0.0,
+            "scope": "wait4 entire child lifetime, includes interpreter startup and exit"
+          }
+        },
+        {
+          "argv": [
+            "/sbin/ldconfig",
+            "-p"
+          ],
+          "began_ns": 1453725463641696,
+          "pid": 1977157,
+          "ended_ns": 1453725469306789,
+          "usage": {
+            "major_faults": 1,
+            "minor_faults": 107,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 0.0,
+            "system_s": 0.002411,
+            "scope": "wait4 entire child lifetime, includes interpreter startup and exit"
+          }
+        },
+        {
+          "argv": [
+            "/sbin/ldconfig",
+            "-p"
+          ],
+          "began_ns": 1453729349892277,
+          "pid": 1977289,
+          "ended_ns": 1453729352840446,
+          "usage": {
+            "major_faults": 0,
+            "minor_faults": 103,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 0.00215,
+            "system_s": 0.0,
+            "scope": "wait4 entire child lifetime, includes interpreter startup and exit"
+          }
+        }
+      ],
+      "launcher_major_faults": 0,
+      "first_python_major_faults": 0
+    },
+    {
+      "task": "priority_top",
+      "lifetime_major_faults": 0,
+      "worker_self_major_faults": 0,
+      "descendant_major_faults": 0,
+      "extensions": [],
+      "descendants": [
+        {
+          "argv": [
+            "/sbin/ldconfig",
+            "-p"
+          ],
+          "began_ns": 1453724988188183,
+          "pid": 1977147,
+          "ended_ns": 1453724992543848,
+          "usage": {
+            "major_faults": 0,
+            "minor_faults": 105,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 0.0024219999999999997,
+            "system_s": 0.0,
+            "scope": "wait4 entire child lifetime, includes interpreter startup and exit"
+          }
+        },
+        {
+          "argv": [
+            "/sbin/ldconfig",
+            "-p"
+          ],
+          "began_ns": 1453724995279735,
+          "pid": 1977148,
+          "ended_ns": 1453724999730879,
+          "usage": {
+            "major_faults": 0,
+            "minor_faults": 102,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 0.002275,
+            "system_s": 0.0,
+            "scope": "wait4 entire child lifetime, includes interpreter startup and exit"
+          }
+        },
+        {
+          "argv": [
+            "/sbin/ldconfig",
+            "-p"
+          ],
+          "began_ns": 1453725622669152,
+          "pid": 1977161,
+          "ended_ns": 1453725628349385,
+          "usage": {
+            "major_faults": 0,
+            "minor_faults": 101,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 0.0,
+            "system_s": 0.002405,
+            "scope": "wait4 entire child lifetime, includes interpreter startup and exit"
+          }
+        },
+        {
+          "argv": [
+            "/sbin/ldconfig",
+            "-p"
+          ],
+          "began_ns": 1453726012966238,
+          "pid": 1977272,
+          "ended_ns": 1453726016526785,
+          "usage": {
+            "major_faults": 0,
+            "minor_faults": 102,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 0.002175,
+            "system_s": 0.0,
+            "scope": "wait4 entire child lifetime, includes interpreter startup and exit"
+          }
+        }
+      ],
+      "launcher_major_faults": 0,
+      "first_python_major_faults": 0
+    },
+    {
+      "task": "missing_median",
+      "lifetime_major_faults": 0,
+      "worker_self_major_faults": 0,
+      "descendant_major_faults": 0,
+      "extensions": [],
+      "descendants": [
+        {
+          "argv": [
+            "/sbin/ldconfig",
+            "-p"
+          ],
+          "began_ns": 1453724770490823,
+          "pid": 1977133,
+          "ended_ns": 1453724773661645,
+          "usage": {
+            "major_faults": 0,
+            "minor_faults": 103,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 0.002134,
+            "system_s": 0.0,
+            "scope": "wait4 entire child lifetime, includes interpreter startup and exit"
+          }
+        },
+        {
+          "argv": [
+            "/sbin/ldconfig",
+            "-p"
+          ],
+          "began_ns": 1453724775548081,
+          "pid": 1977134,
+          "ended_ns": 1453724778324394,
+          "usage": {
+            "major_faults": 0,
+            "minor_faults": 102,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 0.0,
+            "system_s": 0.0019649999999999997,
+            "scope": "wait4 entire child lifetime, includes interpreter startup and exit"
+          }
+        },
+        {
+          "argv": [
+            "/sbin/ldconfig",
+            "-p"
+          ],
+          "began_ns": 1453725237458650,
+          "pid": 1977151,
+          "ended_ns": 1453725244312188,
+          "usage": {
+            "major_faults": 0,
+            "minor_faults": 104,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 0.0,
+            "system_s": 0.0024749999999999998,
+            "scope": "wait4 entire child lifetime, includes interpreter startup and exit"
+          }
+        },
+        {
+          "argv": [
+            "/sbin/ldconfig",
+            "-p"
+          ],
+          "began_ns": 1453728681144480,
+          "pid": 1977286,
+          "ended_ns": 1453728684617766,
+          "usage": {
+            "major_faults": 0,
+            "minor_faults": 102,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 0.002183,
+            "system_s": 0.0,
+            "scope": "wait4 entire child lifetime, includes interpreter startup and exit"
+          }
+        }
+      ],
+      "launcher_major_faults": 0,
+      "first_python_major_faults": 0
+    },
+    {
+      "task": "multi_group_anova",
+      "lifetime_major_faults": 1,
+      "worker_self_major_faults": 0,
+      "descendant_major_faults": 1,
+      "extensions": [],
+      "descendants": [
+        {
+          "argv": [
+            "/sbin/ldconfig",
+            "-p"
+          ],
+          "began_ns": 1453724831218847,
+          "pid": 1977137,
+          "ended_ns": 1453724835474764,
+          "usage": {
+            "major_faults": 0,
+            "minor_faults": 102,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 0.0,
+            "system_s": 0.002267,
+            "scope": "wait4 entire child lifetime, includes interpreter startup and exit"
+          }
+        },
+        {
+          "argv": [
+            "/sbin/ldconfig",
+            "-p"
+          ],
+          "began_ns": 1453724838099183,
+          "pid": 1977143,
+          "ended_ns": 1453724841699521,
+          "usage": {
+            "major_faults": 0,
+            "minor_faults": 102,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 0.002036,
+            "system_s": 0.0,
+            "scope": "wait4 entire child lifetime, includes interpreter startup and exit"
+          }
+        },
+        {
+          "argv": [
+            "/sbin/ldconfig",
+            "-p"
+          ],
+          "began_ns": 1453725463636242,
+          "pid": 1977155,
+          "ended_ns": 1453725469312810,
+          "usage": {
+            "major_faults": 1,
+            "minor_faults": 104,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 0.0,
+            "system_s": 0.0024,
+            "scope": "wait4 entire child lifetime, includes interpreter startup and exit"
+          }
+        },
+        {
+          "argv": [
+            "/sbin/ldconfig",
+            "-p"
+          ],
+          "began_ns": 1453730082086013,
+          "pid": 1977295,
+          "ended_ns": 1453730085886757,
+          "usage": {
+            "major_faults": 0,
+            "minor_faults": 101,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 0.002176,
+            "system_s": 0.0,
+            "scope": "wait4 entire child lifetime, includes interpreter startup and exit"
+          }
+        }
+      ],
+      "launcher_major_faults": 0,
+      "first_python_major_faults": 0
+    },
+    {
+      "task": "rank_sum_test",
+      "lifetime_major_faults": 2,
+      "worker_self_major_faults": 1,
+      "descendant_major_faults": 1,
+      "extensions": [
+        {
+          "origin": "/dev/shm/leasepath-preexec-v1-20261110/runtime/lib/python3.13/site-packages/numpy/_core/_multiarray_umath.cpython-313-x86_64-linux-gnu.so",
+          "method": "create_module",
+          "delta": {
+            "major_faults": 1,
+            "minor_faults": 155,
+            "read_bytes": 0,
+            "rchar": 8664
+          },
+          "duration_ns": 5505597
+        }
+      ],
+      "descendants": [
+        {
+          "argv": [
+            "/sbin/ldconfig",
+            "-p"
+          ],
+          "began_ns": 1453724831552207,
+          "pid": 1977138,
+          "ended_ns": 1453724835787316,
+          "usage": {
+            "major_faults": 0,
+            "minor_faults": 101,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 0.0020239999999999998,
+            "system_s": 0.0,
+            "scope": "wait4 entire child lifetime, includes interpreter startup and exit"
+          }
+        },
+        {
+          "argv": [
+            "/sbin/ldconfig",
+            "-p"
+          ],
+          "began_ns": 1453724838262136,
+          "pid": 1977144,
+          "ended_ns": 1453724841802639,
+          "usage": {
+            "major_faults": 0,
+            "minor_faults": 99,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 0.00198,
+            "system_s": 0.0,
+            "scope": "wait4 entire child lifetime, includes interpreter startup and exit"
+          }
+        },
+        {
+          "argv": [
+            "/sbin/ldconfig",
+            "-p"
+          ],
+          "began_ns": 1453725463885068,
+          "pid": 1977159,
+          "ended_ns": 1453725469316553,
+          "usage": {
+            "major_faults": 1,
+            "minor_faults": 104,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 0.002188,
+            "system_s": 0.0,
+            "scope": "wait4 entire child lifetime, includes interpreter startup and exit"
+          }
+        },
+        {
+          "argv": [
+            "/sbin/ldconfig",
+            "-p"
+          ],
+          "began_ns": 1453729926151178,
+          "pid": 1977292,
+          "ended_ns": 1453729929186063,
+          "usage": {
+            "major_faults": 0,
+            "minor_faults": 102,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 0.0021739999999999997,
+            "system_s": 0.0,
+            "scope": "wait4 entire child lifetime, includes interpreter startup and exit"
+          }
+        }
+      ],
+      "launcher_major_faults": 0,
+      "first_python_major_faults": 0
+    },
+    {
+      "task": "dominant_frequency",
+      "lifetime_major_faults": 1,
+      "worker_self_major_faults": 1,
+      "descendant_major_faults": 0,
+      "extensions": [
+        {
+          "origin": "/dev/shm/leasepath-preexec-v1-20261110/runtime/lib/python3.13/lib-dynload/_decimal.cpython-313-x86_64-linux-gnu.so",
+          "method": "create_module",
+          "delta": {
+            "major_faults": 1,
+            "minor_faults": 14,
+            "read_bytes": 0,
+            "rchar": 1770
+          },
+          "duration_ns": 640682
+        }
+      ],
+      "descendants": [
+        {
+          "argv": [
+            "/sbin/ldconfig",
+            "-p"
+          ],
+          "began_ns": 1453724835824136,
+          "pid": 1977140,
+          "ended_ns": 1453724839700376,
+          "usage": {
+            "major_faults": 0,
+            "minor_faults": 103,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 0.001985,
+            "system_s": 0.0,
+            "scope": "wait4 entire child lifetime, includes interpreter startup and exit"
+          }
+        },
+        {
+          "argv": [
+            "/sbin/ldconfig",
+            "-p"
+          ],
+          "began_ns": 1453724842190322,
+          "pid": 1977146,
+          "ended_ns": 1453724845691925,
+          "usage": {
+            "major_faults": 0,
+            "minor_faults": 102,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 0.001919,
+            "system_s": 0.0,
+            "scope": "wait4 entire child lifetime, includes interpreter startup and exit"
+          }
+        },
+        {
+          "argv": [
+            "/sbin/ldconfig",
+            "-p"
+          ],
+          "began_ns": 1453725464765915,
+          "pid": 1977160,
+          "ended_ns": 1453725469921069,
+          "usage": {
+            "major_faults": 0,
+            "minor_faults": 101,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 0.001966,
+            "system_s": 0.0,
+            "scope": "wait4 entire child lifetime, includes interpreter startup and exit"
+          }
+        },
+        {
+          "argv": [
+            "/sbin/ldconfig",
+            "-p"
+          ],
+          "began_ns": 1453730082086476,
+          "pid": 1977296,
+          "ended_ns": 1453730087459895,
+          "usage": {
+            "major_faults": 0,
+            "minor_faults": 101,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 0.0020139999999999997,
+            "system_s": 0.0,
+            "scope": "wait4 entire child lifetime, includes interpreter startup and exit"
+          }
+        }
+      ],
+      "launcher_major_faults": 0,
+      "first_python_major_faults": 0
+    },
+    {
+      "task": "feature_information",
+      "lifetime_major_faults": 4,
+      "worker_self_major_faults": 0,
+      "descendant_major_faults": 4,
+      "extensions": [],
+      "descendants": [
+        {
+          "argv": [
+            "/sbin/ldconfig",
+            "-p"
+          ],
+          "began_ns": 1453724835144839,
+          "pid": 1977139,
+          "ended_ns": 1453724839026890,
+          "usage": {
+            "major_faults": 0,
+            "minor_faults": 102,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 0.0019909999999999997,
+            "system_s": 0.0,
+            "scope": "wait4 entire child lifetime, includes interpreter startup and exit"
+          }
+        },
+        {
+          "argv": [
+            "/sbin/ldconfig",
+            "-p"
+          ],
+          "began_ns": 1453724841516522,
+          "pid": 1977145,
+          "ended_ns": 1453724845036504,
+          "usage": {
+            "major_faults": 0,
+            "minor_faults": 105,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 0.001944,
+            "system_s": 0.0,
+            "scope": "wait4 entire child lifetime, includes interpreter startup and exit"
+          }
+        },
+        {
+          "argv": [
+            "/sbin/ldconfig",
+            "-p"
+          ],
+          "began_ns": 1453725463641281,
+          "pid": 1977156,
+          "ended_ns": 1453725469309129,
+          "usage": {
+            "major_faults": 4,
+            "minor_faults": 104,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 0.0,
+            "system_s": 0.002401,
+            "scope": "wait4 entire child lifetime, includes interpreter startup and exit"
+          }
+        },
+        {
+          "argv": [
+            "/sbin/ldconfig",
+            "-p"
+          ],
+          "began_ns": 1453731718890674,
+          "pid": 1977415,
+          "ended_ns": 1453731724118948,
+          "usage": {
+            "major_faults": 0,
+            "minor_faults": 105,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 0.0,
+            "system_s": 0.002195,
+            "scope": "wait4 entire child lifetime, includes interpreter startup and exit"
+          }
+        }
+      ],
+      "launcher_major_faults": 0,
+      "first_python_major_faults": 0
+    },
+    {
+      "task": "image_regions",
+      "lifetime_major_faults": 2,
+      "worker_self_major_faults": 2,
+      "descendant_major_faults": 0,
+      "extensions": [
+        {
+          "origin": "/dev/shm/leasepath-preexec-v1-20261110/runtime/lib/python3.13/site-packages/numpy/_core/_multiarray_umath.cpython-313-x86_64-linux-gnu.so",
+          "method": "create_module",
+          "delta": {
+            "major_faults": 1,
+            "minor_faults": 155,
+            "read_bytes": 0,
+            "rchar": 8664
+          },
+          "duration_ns": 5537472
+        },
+        {
+          "origin": "/dev/shm/leasepath-preexec-v1-20261110/runtime/lib/python3.13/lib-dynload/_decimal.cpython-313-x86_64-linux-gnu.so",
+          "method": "create_module",
+          "delta": {
+            "major_faults": 1,
+            "minor_faults": 16,
+            "read_bytes": 0,
+            "rchar": 1770
+          },
+          "duration_ns": 697810
+        }
+      ],
+      "descendants": [
+        {
+          "argv": [
+            "/sbin/ldconfig",
+            "-p"
+          ],
+          "began_ns": 1453724831146368,
+          "pid": 1977136,
+          "ended_ns": 1453724835422982,
+          "usage": {
+            "major_faults": 0,
+            "minor_faults": 104,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 0.0,
+            "system_s": 0.002355,
+            "scope": "wait4 entire child lifetime, includes interpreter startup and exit"
+          }
+        },
+        {
+          "argv": [
+            "/sbin/ldconfig",
+            "-p"
+          ],
+          "began_ns": 1453724838092087,
+          "pid": 1977141,
+          "ended_ns": 1453724841663936,
+          "usage": {
+            "major_faults": 0,
+            "minor_faults": 104,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 0.0,
+            "system_s": 0.002019,
+            "scope": "wait4 entire child lifetime, includes interpreter startup and exit"
+          }
+        },
+        {
+          "argv": [
+            "/sbin/ldconfig",
+            "-p"
+          ],
+          "began_ns": 1453725463652405,
+          "pid": 1977158,
+          "ended_ns": 1453725469303448,
+          "usage": {
+            "major_faults": 0,
+            "minor_faults": 103,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 0.0,
+            "system_s": 0.002414,
+            "scope": "wait4 entire child lifetime, includes interpreter startup and exit"
+          }
+        },
+        {
+          "argv": [
+            "/sbin/ldconfig",
+            "-p"
+          ],
+          "began_ns": 1453730077795623,
+          "pid": 1977294,
+          "ended_ns": 1453730081770570,
+          "usage": {
+            "major_faults": 0,
+            "minor_faults": 101,
+            "block_input_ops": 0,
+            "block_output_ops": 0,
+            "user_s": 0.0023409999999999998,
+            "system_s": 0.0,
+            "scope": "wait4 entire child lifetime, includes interpreter startup and exit"
+          }
+        }
+      ],
+      "launcher_major_faults": 0,
+      "first_python_major_faults": 0
+    }
+  ],
+  "unique_kernel_faulting_address_known": false,
+  "scope": "Current v1 failure only; no retrospective mapping to historical single fault"
+}

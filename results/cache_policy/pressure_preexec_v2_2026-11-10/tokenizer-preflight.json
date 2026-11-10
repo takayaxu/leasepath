@@ -1,0 +1,73 @@
+{
+  "status": "passed_initial_prompts_and_gate_fixtures",
+  "rows": [
+    {
+      "task": "logistic_holdout",
+      "initial_tokens": 1213,
+      "blocks": 9
+    },
+    {
+      "task": "ridge_validation",
+      "initial_tokens": 1276,
+      "blocks": 9
+    },
+    {
+      "task": "temporal_asof",
+      "initial_tokens": 1360,
+      "blocks": 10
+    },
+    {
+      "task": "priority_top",
+      "initial_tokens": 2127,
+      "blocks": 16
+    },
+    {
+      "task": "missing_median",
+      "initial_tokens": 1309,
+      "blocks": 10
+    },
+    {
+      "task": "multi_group_anova",
+      "initial_tokens": 1403,
+      "blocks": 10
+    },
+    {
+      "task": "rank_sum_test",
+      "initial_tokens": 1419,
+      "blocks": 11
+    },
+    {
+      "task": "dominant_frequency",
+      "initial_tokens": 1421,
+      "blocks": 11
+    },
+    {
+      "task": "feature_information",
+      "initial_tokens": 1358,
+      "blocks": 10
+    },
+    {
+      "task": "image_regions",
+      "initial_tokens": 1422,
+      "blocks": 11
+    },
+    {
+      "fixture": "a",
+      "tokens": 1372,
+      "blocks": 10
+    },
+    {
+      "fixture": "b",
+      "tokens": 1372,
+      "blocks": 10
+    },
+    {
+      "fixture": "c",
+      "tokens": 3048,
+      "blocks": 23
+    }
+  ],
+  "model_generations": 0,
+  "ledger_reservations": 0,
+  "actual_later_history": "checked before each reservation, no truncation"
+}

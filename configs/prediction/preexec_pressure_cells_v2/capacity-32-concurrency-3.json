@@ -1,0 +1,2657 @@
+{
+  "model_sha256": "0c2f9e4daac78e72b24f7c054416232a523f0fd2aeb37653747d3c21f7dca078",
+  "model_cpus": [
+    0,
+    2,
+    5,
+    6,
+    8,
+    10,
+    11,
+    12
+  ],
+  "verified_model_origin": "/home/liuxv/LeasePath-new-server-data/.artifacts/qwen-distribution-v1-2026-11-09/run/run-manifest.json",
+  "verified_model_origin_sha256": "5ee43aa0beae6a0671a8747f7da3196476e798d890bffb0d2135fbe3608a7969",
+  "verified_model_runner": "/home/liuxv/LeasePath-new-server-data/scripts/run_qwen_distribution_v1.py",
+  "prior_plan_path": "/home/liuxv/LeasePath-new-server-data/configs/prediction/qwen_distribution_v1_2026-11-09.json",
+  "model_residency_startup_timeout_s": 1800,
+  "prediction_result": "results/prediction/qwen50_holdout_2026-11-08",
+  "version": 1,
+  "stage": "qwen_pressure_preexec_v2_2026-11-10",
+  "created_client_date": "2026-11-10 Asia/Shanghai",
+  "preregistration": "results/cache_policy/kv_distribution_next_stage_2026-11-09/plan.json",
+  "baseline_manifest": "configs/baselines/kv_equal_cost_distribution_v1.json",
+  "live_tasks": [
+    "logistic_holdout",
+    "ridge_validation",
+    "temporal_asof"
+  ],
+  "tool_threads": 1,
+  "tool_memory_gib": 12,
+  "tool_controls": {
+    "logistic_holdout": {
+      "cpus": [
+        14,
+        42
+      ],
+      "numa_node": 1,
+      "disable_thp": true,
+      "launcher": "/dev/shm/leasepath-preexec-v2-20261110/launcher",
+      "library_resolution": {
+        "c": {
+          "path": "/usr/lib/x86_64-linux-gnu/libc.so.6",
+          "sha256": "b2cf6c33b74d2f22543b7a469a75b538911e690f769d0b238843a49465b83793"
+        },
+        "numa": {
+          "path": "/usr/lib/x86_64-linux-gnu/libnuma.so.1.0.0",
+          "sha256": "3582bce922d99959ee3eb6b7d686c0b99e14c2135616ad4d9d608b2118a7e78c"
+        }
+      }
+    },
+    "ridge_validation": {
+      "cpus": [
+        15,
+        43
+      ],
+      "numa_node": 1,
+      "disable_thp": true,
+      "launcher": "/dev/shm/leasepath-preexec-v2-20261110/launcher",
+      "library_resolution": {
+        "c": {
+          "path": "/usr/lib/x86_64-linux-gnu/libc.so.6",
+          "sha256": "b2cf6c33b74d2f22543b7a469a75b538911e690f769d0b238843a49465b83793"
+        },
+        "numa": {
+          "path": "/usr/lib/x86_64-linux-gnu/libnuma.so.1.0.0",
+          "sha256": "3582bce922d99959ee3eb6b7d686c0b99e14c2135616ad4d9d608b2118a7e78c"
+        }
+      }
+    },
+    "temporal_asof": {
+      "cpus": [
+        16,
+        44
+      ],
+      "numa_node": 1,
+      "disable_thp": true,
+      "launcher": "/dev/shm/leasepath-preexec-v2-20261110/launcher",
+      "library_resolution": {
+        "c": {
+          "path": "/usr/lib/x86_64-linux-gnu/libc.so.6",
+          "sha256": "b2cf6c33b74d2f22543b7a469a75b538911e690f769d0b238843a49465b83793"
+        },
+        "numa": {
+          "path": "/usr/lib/x86_64-linux-gnu/libnuma.so.1.0.0",
+          "sha256": "3582bce922d99959ee3eb6b7d686c0b99e14c2135616ad4d9d608b2118a7e78c"
+        }
+      }
+    },
+    "priority_top": {
+      "cpus": [
+        17,
+        45
+      ],
+      "numa_node": 1,
+      "disable_thp": true,
+      "launcher": "/dev/shm/leasepath-preexec-v2-20261110/launcher",
+      "library_resolution": {
+        "c": {
+          "path": "/usr/lib/x86_64-linux-gnu/libc.so.6",
+          "sha256": "b2cf6c33b74d2f22543b7a469a75b538911e690f769d0b238843a49465b83793"
+        },
+        "numa": {
+          "path": "/usr/lib/x86_64-linux-gnu/libnuma.so.1.0.0",
+          "sha256": "3582bce922d99959ee3eb6b7d686c0b99e14c2135616ad4d9d608b2118a7e78c"
+        }
+      }
+    },
+    "missing_median": {
+      "cpus": [
+        18,
+        46
+      ],
+      "numa_node": 1,
+      "disable_thp": true,
+      "launcher": "/dev/shm/leasepath-preexec-v2-20261110/launcher",
+      "library_resolution": {
+        "c": {
+          "path": "/usr/lib/x86_64-linux-gnu/libc.so.6",
+          "sha256": "b2cf6c33b74d2f22543b7a469a75b538911e690f769d0b238843a49465b83793"
+        },
+        "numa": {
+          "path": "/usr/lib/x86_64-linux-gnu/libnuma.so.1.0.0",
+          "sha256": "3582bce922d99959ee3eb6b7d686c0b99e14c2135616ad4d9d608b2118a7e78c"
+        }
+      }
+    },
+    "multi_group_anova": {
+      "cpus": [
+        19,
+        47
+      ],
+      "numa_node": 1,
+      "disable_thp": true,
+      "launcher": "/dev/shm/leasepath-preexec-v2-20261110/launcher",
+      "library_resolution": {
+        "c": {
+          "path": "/usr/lib/x86_64-linux-gnu/libc.so.6",
+          "sha256": "b2cf6c33b74d2f22543b7a469a75b538911e690f769d0b238843a49465b83793"
+        },
+        "numa": {
+          "path": "/usr/lib/x86_64-linux-gnu/libnuma.so.1.0.0",
+          "sha256": "3582bce922d99959ee3eb6b7d686c0b99e14c2135616ad4d9d608b2118a7e78c"
+        }
+      }
+    },
+    "rank_sum_test": {
+      "cpus": [
+        20,
+        48
+      ],
+      "numa_node": 1,
+      "disable_thp": true,
+      "launcher": "/dev/shm/leasepath-preexec-v2-20261110/launcher",
+      "library_resolution": {
+        "c": {
+          "path": "/usr/lib/x86_64-linux-gnu/libc.so.6",
+          "sha256": "b2cf6c33b74d2f22543b7a469a75b538911e690f769d0b238843a49465b83793"
+        },
+        "numa": {
+          "path": "/usr/lib/x86_64-linux-gnu/libnuma.so.1.0.0",
+          "sha256": "3582bce922d99959ee3eb6b7d686c0b99e14c2135616ad4d9d608b2118a7e78c"
+        }
+      }
+    },
+    "dominant_frequency": {
+      "cpus": [
+        21,
+        49
+      ],
+      "numa_node": 1,
+      "disable_thp": true,
+      "launcher": "/dev/shm/leasepath-preexec-v2-20261110/launcher",
+      "library_resolution": {
+        "c": {
+          "path": "/usr/lib/x86_64-linux-gnu/libc.so.6",
+          "sha256": "b2cf6c33b74d2f22543b7a469a75b538911e690f769d0b238843a49465b83793"
+        },
+        "numa": {
+          "path": "/usr/lib/x86_64-linux-gnu/libnuma.so.1.0.0",
+          "sha256": "3582bce922d99959ee3eb6b7d686c0b99e14c2135616ad4d9d608b2118a7e78c"
+        }
+      }
+    },
+    "feature_information": {
+      "cpus": [
+        22,
+        50
+      ],
+      "numa_node": 1,
+      "disable_thp": true,
+      "launcher": "/dev/shm/leasepath-preexec-v2-20261110/launcher",
+      "library_resolution": {
+        "c": {
+          "path": "/usr/lib/x86_64-linux-gnu/libc.so.6",
+          "sha256": "b2cf6c33b74d2f22543b7a469a75b538911e690f769d0b238843a49465b83793"
+        },
+        "numa": {
+          "path": "/usr/lib/x86_64-linux-gnu/libnuma.so.1.0.0",
+          "sha256": "3582bce922d99959ee3eb6b7d686c0b99e14c2135616ad4d9d608b2118a7e78c"
+        }
+      }
+    },
+    "image_regions": {
+      "cpus": [
+        23,
+        51
+      ],
+      "numa_node": 1,
+      "disable_thp": true,
+      "launcher": "/dev/shm/leasepath-preexec-v2-20261110/launcher",
+      "library_resolution": {
+        "c": {
+          "path": "/usr/lib/x86_64-linux-gnu/libc.so.6",
+          "sha256": "b2cf6c33b74d2f22543b7a469a75b538911e690f769d0b238843a49465b83793"
+        },
+        "numa": {
+          "path": "/usr/lib/x86_64-linux-gnu/libnuma.so.1.0.0",
+          "sha256": "3582bce922d99959ee3eb6b7d686c0b99e14c2135616ad4d9d608b2118a7e78c"
+        }
+      }
+    }
+  },
+  "cpu_recipe": "One distinct physical NUMA1 core and its SMT sibling per tool; eight original model cores on NUMA0. Fixed for all cells, one numerical thread. Affinity is not reservation. Fresh 24/3 anchor; not pooled with old two-core/tool timings.",
+  "memory_budget": {
+    "model_bytes": 65535970144,
+    "max_tool_address_space_gib": 120,
+    "runtime_and_inputs_reserve_gib": 4,
+    "native_host_and_audit_reserve_gib": 16,
+    "minimum_MemAvailable_gib": 220,
+    "minimum_tmpfs_available_gib": 8,
+    "note": "120GiB is sum of per-tool RLIMIT_AS limits, not measured resident allocation. Admission snapshots do not establish exclusive memory bandwidth."
+  },
+  "matrix": {
+    "purpose": "pressure generalization on known development workload; not new-parent evidence",
+    "capacities_blocks": [
+      24,
+      32,
+      64
+    ],
+    "concurrencies": [
+      3,
+      6,
+      10
+    ],
+    "nested_task_order": [
+      "logistic_holdout",
+      "ridge_validation",
+      "temporal_asof",
+      "priority_top",
+      "missing_median",
+      "multi_group_anova",
+      "rank_sum_test",
+      "dominant_frequency",
+      "feature_information",
+      "image_regions"
+    ],
+    "orders": [
+      [
+        "retired_first_lru",
+        "gbdt_point",
+        "gbdt_distribution"
+      ],
+      [
+        "retired_first_lru",
+        "gbdt_distribution",
+        "gbdt_point"
+      ],
+      [
+        "gbdt_point",
+        "retired_first_lru",
+        "gbdt_distribution"
+      ],
+      [
+        "gbdt_point",
+        "gbdt_distribution",
+        "retired_first_lru"
+      ],
+      [
+        "gbdt_distribution",
+        "retired_first_lru",
+        "gbdt_point"
+      ],
+      [
+        "gbdt_distribution",
+        "gbdt_point",
+        "retired_first_lru"
+      ]
+    ],
+    "cells": [
+      {
+        "capacity_blocks": 24,
+        "concurrency": 3,
+        "idle_tokens": 3072,
+        "status": "pending_native_input_and_resource_preflight",
+        "task_ids": [
+          "logistic_holdout",
+          "ridge_validation",
+          "temporal_asof"
+        ],
+        "batches": [
+          {
+            "cycle": 0,
+            "position": 0,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-24/concurrency-3/cycle-0/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 0,
+            "position": 1,
+            "policy": "gbdt_point",
+            "ledger": "capacity-24/concurrency-3/cycle-0/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 0,
+            "position": 2,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-24/concurrency-3/cycle-0/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 1,
+            "position": 0,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-24/concurrency-3/cycle-1/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 1,
+            "position": 1,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-24/concurrency-3/cycle-1/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 1,
+            "position": 2,
+            "policy": "gbdt_point",
+            "ledger": "capacity-24/concurrency-3/cycle-1/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 2,
+            "position": 0,
+            "policy": "gbdt_point",
+            "ledger": "capacity-24/concurrency-3/cycle-2/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 2,
+            "position": 1,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-24/concurrency-3/cycle-2/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 2,
+            "position": 2,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-24/concurrency-3/cycle-2/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 3,
+            "position": 0,
+            "policy": "gbdt_point",
+            "ledger": "capacity-24/concurrency-3/cycle-3/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 3,
+            "position": 1,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-24/concurrency-3/cycle-3/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 3,
+            "position": 2,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-24/concurrency-3/cycle-3/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 4,
+            "position": 0,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-24/concurrency-3/cycle-4/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 4,
+            "position": 1,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-24/concurrency-3/cycle-4/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 4,
+            "position": 2,
+            "policy": "gbdt_point",
+            "ledger": "capacity-24/concurrency-3/cycle-4/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 5,
+            "position": 0,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-24/concurrency-3/cycle-5/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 5,
+            "position": 1,
+            "policy": "gbdt_point",
+            "ledger": "capacity-24/concurrency-3/cycle-5/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 5,
+            "position": 2,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-24/concurrency-3/cycle-5/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          }
+        ]
+      },
+      {
+        "capacity_blocks": 32,
+        "concurrency": 3,
+        "idle_tokens": 4096,
+        "status": "pending_native_input_and_resource_preflight",
+        "task_ids": [
+          "logistic_holdout",
+          "ridge_validation",
+          "temporal_asof"
+        ],
+        "batches": [
+          {
+            "cycle": 0,
+            "position": 0,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-32/concurrency-3/cycle-0/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 0,
+            "position": 1,
+            "policy": "gbdt_point",
+            "ledger": "capacity-32/concurrency-3/cycle-0/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 0,
+            "position": 2,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-32/concurrency-3/cycle-0/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 1,
+            "position": 0,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-32/concurrency-3/cycle-1/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 1,
+            "position": 1,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-32/concurrency-3/cycle-1/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 1,
+            "position": 2,
+            "policy": "gbdt_point",
+            "ledger": "capacity-32/concurrency-3/cycle-1/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 2,
+            "position": 0,
+            "policy": "gbdt_point",
+            "ledger": "capacity-32/concurrency-3/cycle-2/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 2,
+            "position": 1,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-32/concurrency-3/cycle-2/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 2,
+            "position": 2,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-32/concurrency-3/cycle-2/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 3,
+            "position": 0,
+            "policy": "gbdt_point",
+            "ledger": "capacity-32/concurrency-3/cycle-3/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 3,
+            "position": 1,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-32/concurrency-3/cycle-3/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 3,
+            "position": 2,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-32/concurrency-3/cycle-3/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 4,
+            "position": 0,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-32/concurrency-3/cycle-4/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 4,
+            "position": 1,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-32/concurrency-3/cycle-4/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 4,
+            "position": 2,
+            "policy": "gbdt_point",
+            "ledger": "capacity-32/concurrency-3/cycle-4/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 5,
+            "position": 0,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-32/concurrency-3/cycle-5/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 5,
+            "position": 1,
+            "policy": "gbdt_point",
+            "ledger": "capacity-32/concurrency-3/cycle-5/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 5,
+            "position": 2,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-32/concurrency-3/cycle-5/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          }
+        ]
+      },
+      {
+        "capacity_blocks": 64,
+        "concurrency": 3,
+        "idle_tokens": 8192,
+        "status": "pending_native_input_and_resource_preflight",
+        "task_ids": [
+          "logistic_holdout",
+          "ridge_validation",
+          "temporal_asof"
+        ],
+        "batches": [
+          {
+            "cycle": 0,
+            "position": 0,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-64/concurrency-3/cycle-0/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 0,
+            "position": 1,
+            "policy": "gbdt_point",
+            "ledger": "capacity-64/concurrency-3/cycle-0/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 0,
+            "position": 2,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-64/concurrency-3/cycle-0/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 1,
+            "position": 0,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-64/concurrency-3/cycle-1/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 1,
+            "position": 1,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-64/concurrency-3/cycle-1/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 1,
+            "position": 2,
+            "policy": "gbdt_point",
+            "ledger": "capacity-64/concurrency-3/cycle-1/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 2,
+            "position": 0,
+            "policy": "gbdt_point",
+            "ledger": "capacity-64/concurrency-3/cycle-2/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 2,
+            "position": 1,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-64/concurrency-3/cycle-2/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 2,
+            "position": 2,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-64/concurrency-3/cycle-2/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 3,
+            "position": 0,
+            "policy": "gbdt_point",
+            "ledger": "capacity-64/concurrency-3/cycle-3/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 3,
+            "position": 1,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-64/concurrency-3/cycle-3/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 3,
+            "position": 2,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-64/concurrency-3/cycle-3/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 4,
+            "position": 0,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-64/concurrency-3/cycle-4/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 4,
+            "position": 1,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-64/concurrency-3/cycle-4/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 4,
+            "position": 2,
+            "policy": "gbdt_point",
+            "ledger": "capacity-64/concurrency-3/cycle-4/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 5,
+            "position": 0,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-64/concurrency-3/cycle-5/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 5,
+            "position": 1,
+            "policy": "gbdt_point",
+            "ledger": "capacity-64/concurrency-3/cycle-5/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          },
+          {
+            "cycle": 5,
+            "position": 2,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-64/concurrency-3/cycle-5/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 18,
+              "total": 18
+            }
+          }
+        ]
+      },
+      {
+        "capacity_blocks": 24,
+        "concurrency": 6,
+        "idle_tokens": 3072,
+        "status": "pending_native_input_and_resource_preflight",
+        "task_ids": [
+          "logistic_holdout",
+          "ridge_validation",
+          "temporal_asof",
+          "priority_top",
+          "missing_median",
+          "multi_group_anova"
+        ],
+        "batches": [
+          {
+            "cycle": 0,
+            "position": 0,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-24/concurrency-6/cycle-0/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 0,
+            "position": 1,
+            "policy": "gbdt_point",
+            "ledger": "capacity-24/concurrency-6/cycle-0/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 0,
+            "position": 2,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-24/concurrency-6/cycle-0/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 1,
+            "position": 0,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-24/concurrency-6/cycle-1/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 1,
+            "position": 1,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-24/concurrency-6/cycle-1/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 1,
+            "position": 2,
+            "policy": "gbdt_point",
+            "ledger": "capacity-24/concurrency-6/cycle-1/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 2,
+            "position": 0,
+            "policy": "gbdt_point",
+            "ledger": "capacity-24/concurrency-6/cycle-2/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 2,
+            "position": 1,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-24/concurrency-6/cycle-2/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 2,
+            "position": 2,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-24/concurrency-6/cycle-2/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 3,
+            "position": 0,
+            "policy": "gbdt_point",
+            "ledger": "capacity-24/concurrency-6/cycle-3/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 3,
+            "position": 1,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-24/concurrency-6/cycle-3/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 3,
+            "position": 2,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-24/concurrency-6/cycle-3/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 4,
+            "position": 0,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-24/concurrency-6/cycle-4/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 4,
+            "position": 1,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-24/concurrency-6/cycle-4/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 4,
+            "position": 2,
+            "policy": "gbdt_point",
+            "ledger": "capacity-24/concurrency-6/cycle-4/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 5,
+            "position": 0,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-24/concurrency-6/cycle-5/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 5,
+            "position": 1,
+            "policy": "gbdt_point",
+            "ledger": "capacity-24/concurrency-6/cycle-5/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 5,
+            "position": 2,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-24/concurrency-6/cycle-5/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          }
+        ]
+      },
+      {
+        "capacity_blocks": 32,
+        "concurrency": 6,
+        "idle_tokens": 4096,
+        "status": "pending_native_input_and_resource_preflight",
+        "task_ids": [
+          "logistic_holdout",
+          "ridge_validation",
+          "temporal_asof",
+          "priority_top",
+          "missing_median",
+          "multi_group_anova"
+        ],
+        "batches": [
+          {
+            "cycle": 0,
+            "position": 0,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-32/concurrency-6/cycle-0/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 0,
+            "position": 1,
+            "policy": "gbdt_point",
+            "ledger": "capacity-32/concurrency-6/cycle-0/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 0,
+            "position": 2,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-32/concurrency-6/cycle-0/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 1,
+            "position": 0,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-32/concurrency-6/cycle-1/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 1,
+            "position": 1,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-32/concurrency-6/cycle-1/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 1,
+            "position": 2,
+            "policy": "gbdt_point",
+            "ledger": "capacity-32/concurrency-6/cycle-1/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 2,
+            "position": 0,
+            "policy": "gbdt_point",
+            "ledger": "capacity-32/concurrency-6/cycle-2/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 2,
+            "position": 1,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-32/concurrency-6/cycle-2/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 2,
+            "position": 2,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-32/concurrency-6/cycle-2/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 3,
+            "position": 0,
+            "policy": "gbdt_point",
+            "ledger": "capacity-32/concurrency-6/cycle-3/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 3,
+            "position": 1,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-32/concurrency-6/cycle-3/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 3,
+            "position": 2,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-32/concurrency-6/cycle-3/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 4,
+            "position": 0,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-32/concurrency-6/cycle-4/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 4,
+            "position": 1,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-32/concurrency-6/cycle-4/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 4,
+            "position": 2,
+            "policy": "gbdt_point",
+            "ledger": "capacity-32/concurrency-6/cycle-4/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 5,
+            "position": 0,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-32/concurrency-6/cycle-5/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 5,
+            "position": 1,
+            "policy": "gbdt_point",
+            "ledger": "capacity-32/concurrency-6/cycle-5/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 5,
+            "position": 2,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-32/concurrency-6/cycle-5/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          }
+        ]
+      },
+      {
+        "capacity_blocks": 64,
+        "concurrency": 6,
+        "idle_tokens": 8192,
+        "status": "pending_native_input_and_resource_preflight",
+        "task_ids": [
+          "logistic_holdout",
+          "ridge_validation",
+          "temporal_asof",
+          "priority_top",
+          "missing_median",
+          "multi_group_anova"
+        ],
+        "batches": [
+          {
+            "cycle": 0,
+            "position": 0,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-64/concurrency-6/cycle-0/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 0,
+            "position": 1,
+            "policy": "gbdt_point",
+            "ledger": "capacity-64/concurrency-6/cycle-0/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 0,
+            "position": 2,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-64/concurrency-6/cycle-0/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 1,
+            "position": 0,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-64/concurrency-6/cycle-1/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 1,
+            "position": 1,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-64/concurrency-6/cycle-1/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 1,
+            "position": 2,
+            "policy": "gbdt_point",
+            "ledger": "capacity-64/concurrency-6/cycle-1/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 2,
+            "position": 0,
+            "policy": "gbdt_point",
+            "ledger": "capacity-64/concurrency-6/cycle-2/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 2,
+            "position": 1,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-64/concurrency-6/cycle-2/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 2,
+            "position": 2,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-64/concurrency-6/cycle-2/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 3,
+            "position": 0,
+            "policy": "gbdt_point",
+            "ledger": "capacity-64/concurrency-6/cycle-3/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 3,
+            "position": 1,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-64/concurrency-6/cycle-3/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 3,
+            "position": 2,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-64/concurrency-6/cycle-3/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 4,
+            "position": 0,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-64/concurrency-6/cycle-4/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 4,
+            "position": 1,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-64/concurrency-6/cycle-4/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 4,
+            "position": 2,
+            "policy": "gbdt_point",
+            "ledger": "capacity-64/concurrency-6/cycle-4/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 5,
+            "position": 0,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-64/concurrency-6/cycle-5/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 5,
+            "position": 1,
+            "policy": "gbdt_point",
+            "ledger": "capacity-64/concurrency-6/cycle-5/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          },
+          {
+            "cycle": 5,
+            "position": 2,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-64/concurrency-6/cycle-5/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 36,
+              "total": 36
+            }
+          }
+        ]
+      },
+      {
+        "capacity_blocks": 24,
+        "concurrency": 10,
+        "idle_tokens": 3072,
+        "status": "pending_native_input_and_resource_preflight",
+        "task_ids": [
+          "logistic_holdout",
+          "ridge_validation",
+          "temporal_asof",
+          "priority_top",
+          "missing_median",
+          "multi_group_anova",
+          "rank_sum_test",
+          "dominant_frequency",
+          "feature_information",
+          "image_regions"
+        ],
+        "batches": [
+          {
+            "cycle": 0,
+            "position": 0,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-24/concurrency-10/cycle-0/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 0,
+            "position": 1,
+            "policy": "gbdt_point",
+            "ledger": "capacity-24/concurrency-10/cycle-0/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 0,
+            "position": 2,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-24/concurrency-10/cycle-0/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 1,
+            "position": 0,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-24/concurrency-10/cycle-1/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 1,
+            "position": 1,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-24/concurrency-10/cycle-1/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 1,
+            "position": 2,
+            "policy": "gbdt_point",
+            "ledger": "capacity-24/concurrency-10/cycle-1/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 2,
+            "position": 0,
+            "policy": "gbdt_point",
+            "ledger": "capacity-24/concurrency-10/cycle-2/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 2,
+            "position": 1,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-24/concurrency-10/cycle-2/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 2,
+            "position": 2,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-24/concurrency-10/cycle-2/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 3,
+            "position": 0,
+            "policy": "gbdt_point",
+            "ledger": "capacity-24/concurrency-10/cycle-3/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 3,
+            "position": 1,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-24/concurrency-10/cycle-3/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 3,
+            "position": 2,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-24/concurrency-10/cycle-3/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 4,
+            "position": 0,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-24/concurrency-10/cycle-4/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 4,
+            "position": 1,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-24/concurrency-10/cycle-4/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 4,
+            "position": 2,
+            "policy": "gbdt_point",
+            "ledger": "capacity-24/concurrency-10/cycle-4/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 5,
+            "position": 0,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-24/concurrency-10/cycle-5/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 5,
+            "position": 1,
+            "policy": "gbdt_point",
+            "ledger": "capacity-24/concurrency-10/cycle-5/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 5,
+            "position": 2,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-24/concurrency-10/cycle-5/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          }
+        ]
+      },
+      {
+        "capacity_blocks": 32,
+        "concurrency": 10,
+        "idle_tokens": 4096,
+        "status": "pending_native_input_and_resource_preflight",
+        "task_ids": [
+          "logistic_holdout",
+          "ridge_validation",
+          "temporal_asof",
+          "priority_top",
+          "missing_median",
+          "multi_group_anova",
+          "rank_sum_test",
+          "dominant_frequency",
+          "feature_information",
+          "image_regions"
+        ],
+        "batches": [
+          {
+            "cycle": 0,
+            "position": 0,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-32/concurrency-10/cycle-0/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 0,
+            "position": 1,
+            "policy": "gbdt_point",
+            "ledger": "capacity-32/concurrency-10/cycle-0/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 0,
+            "position": 2,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-32/concurrency-10/cycle-0/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 1,
+            "position": 0,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-32/concurrency-10/cycle-1/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 1,
+            "position": 1,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-32/concurrency-10/cycle-1/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 1,
+            "position": 2,
+            "policy": "gbdt_point",
+            "ledger": "capacity-32/concurrency-10/cycle-1/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 2,
+            "position": 0,
+            "policy": "gbdt_point",
+            "ledger": "capacity-32/concurrency-10/cycle-2/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 2,
+            "position": 1,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-32/concurrency-10/cycle-2/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 2,
+            "position": 2,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-32/concurrency-10/cycle-2/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 3,
+            "position": 0,
+            "policy": "gbdt_point",
+            "ledger": "capacity-32/concurrency-10/cycle-3/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 3,
+            "position": 1,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-32/concurrency-10/cycle-3/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 3,
+            "position": 2,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-32/concurrency-10/cycle-3/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 4,
+            "position": 0,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-32/concurrency-10/cycle-4/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 4,
+            "position": 1,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-32/concurrency-10/cycle-4/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 4,
+            "position": 2,
+            "policy": "gbdt_point",
+            "ledger": "capacity-32/concurrency-10/cycle-4/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 5,
+            "position": 0,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-32/concurrency-10/cycle-5/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 5,
+            "position": 1,
+            "policy": "gbdt_point",
+            "ledger": "capacity-32/concurrency-10/cycle-5/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 5,
+            "position": 2,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-32/concurrency-10/cycle-5/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          }
+        ]
+      },
+      {
+        "capacity_blocks": 64,
+        "concurrency": 10,
+        "idle_tokens": 8192,
+        "status": "pending_native_input_and_resource_preflight",
+        "task_ids": [
+          "logistic_holdout",
+          "ridge_validation",
+          "temporal_asof",
+          "priority_top",
+          "missing_median",
+          "multi_group_anova",
+          "rank_sum_test",
+          "dominant_frequency",
+          "feature_information",
+          "image_regions"
+        ],
+        "batches": [
+          {
+            "cycle": 0,
+            "position": 0,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-64/concurrency-10/cycle-0/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 0,
+            "position": 1,
+            "policy": "gbdt_point",
+            "ledger": "capacity-64/concurrency-10/cycle-0/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 0,
+            "position": 2,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-64/concurrency-10/cycle-0/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 1,
+            "position": 0,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-64/concurrency-10/cycle-1/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 1,
+            "position": 1,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-64/concurrency-10/cycle-1/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 1,
+            "position": 2,
+            "policy": "gbdt_point",
+            "ledger": "capacity-64/concurrency-10/cycle-1/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 2,
+            "position": 0,
+            "policy": "gbdt_point",
+            "ledger": "capacity-64/concurrency-10/cycle-2/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 2,
+            "position": 1,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-64/concurrency-10/cycle-2/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 2,
+            "position": 2,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-64/concurrency-10/cycle-2/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 3,
+            "position": 0,
+            "policy": "gbdt_point",
+            "ledger": "capacity-64/concurrency-10/cycle-3/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 3,
+            "position": 1,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-64/concurrency-10/cycle-3/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 3,
+            "position": 2,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-64/concurrency-10/cycle-3/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 4,
+            "position": 0,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-64/concurrency-10/cycle-4/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 4,
+            "position": 1,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-64/concurrency-10/cycle-4/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 4,
+            "position": 2,
+            "policy": "gbdt_point",
+            "ledger": "capacity-64/concurrency-10/cycle-4/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 5,
+            "position": 0,
+            "policy": "gbdt_distribution",
+            "ledger": "capacity-64/concurrency-10/cycle-5/gbdt_distribution/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 5,
+            "position": 1,
+            "policy": "gbdt_point",
+            "ledger": "capacity-64/concurrency-10/cycle-5/gbdt_point/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          },
+          {
+            "cycle": 5,
+            "position": 2,
+            "policy": "retired_first_lru",
+            "ledger": "capacity-64/concurrency-10/cycle-5/retired_first_lru/ledger.jsonl",
+            "generation_limits": {
+              "probe": 1,
+              "pilot": 60,
+              "total": 60
+            }
+          }
+        ]
+      }
+    ],
+    "counts": {
+      "cells": 9,
+      "batches": 162,
+      "task_executions": 1026,
+      "live_generations_if_three_per_task": 3078,
+      "live_generation_hard_cap": 6156,
+      "native_probe_cap": 39,
+      "full_matrix_hard_cap_excluding_preflights": 6195
+    },
+    "native_probe_ledgers": {
+      "24": {
+        "probe": 13,
+        "pilot": 1,
+        "total": 13
+      },
+      "32": {
+        "probe": 13,
+        "pilot": 1,
+        "total": 13
+      },
+      "64": {
+        "probe": 13,
+        "pilot": 1,
+        "total": 13
+      }
+    },
+    "prefix_guard": "Before reserving any generation validate each actual prompt cached-block count <= cell capacity; no silent truncation, compression, prompt padding or no-cache bypass.",
+    "timing_rule": "Fresh complete crossover per cell. Never pool prior legacy matrix or 24/3 means into new averages.",
+    "host_recipe": "Fresh real tool CPU/SMT/NUMA plan for 10 concurrent tasks; account aggregate memory and all runnable tool threads. Reusing three CPU groups without documenting contention is forbidden.",
+    "failure_rule": "Stop at first native/protocol/quality/resource/source violation, seal all affected ledgers; no replacement batches or posthoc threshold relaxation."
+  },
+  "preflight": {
+    "tool_groups": [
+      3,
+      6,
+      10
+    ],
+    "tool_group_repeats": 1,
+    "full_controller_trace": {
+      "capacities": [
+        24,
+        32,
+        64
+      ],
+      "concurrency": 10,
+      "policy": "gbdt_distribution",
+      "limits_per_capacity": {
+        "probe": 13,
+        "pilot": 60,
+        "total": 73
+      }
+    },
+    "failure_rule": "Stop at first quality/resource failure, retain evidence, no replacement."
+  },
+  "natural_gates": {
+    "parent_read_bytes": 0,
+    "parent_major_faults": 0,
+    "parent_block_input_ops": 0,
+    "worker_lifetime_read_bytes": 0,
+    "worker_lifetime_major_faults": 0,
+    "worker_lifetime_block_input_ops": 0
+  },
+  "new_generations_at_freeze": 0,
+  "resource_recipe": "preexec-fixed-resolver-current-future-mlock-v2",
+  "launcher": "/dev/shm/leasepath-preexec-v2-20261110/launcher",
+  "launcher_sha256": "8b55d5fe3c86957df0a526f74a7310036d824f25c130accdb9fe16d94ce5c5b7",
+  "resource_change": "v1 retained. Add worker MCL_CURRENT|MCL_FUTURE before numerical imports, frozen hashed libc/numa lookup instead of four ldconfig executions, unknown lookup fails. All costs included in actual tool wall time; no extra hidden warmup or delay. Same CPU/NUMA/thread/timeout/capacity scoring.",
+  "qualification": {
+    "trace_concurrency": 10,
+    "qualifying_concurrencies": [
+      3,
+      6,
+      10
+    ],
+    "cycles_per_concurrency": 1,
+    "real_tool_calls_hard_cap": 29,
+    "model_generations": 0,
+    "failure_rule": "Stop on first quality/control/qualification fault or I/O violation. Preserve old failed recipe and every new result. No replacement or posthoc relaxation."
+  },
+  "full_native_trace": {
+    "capacity": 24,
+    "concurrency": 10,
+    "policy": "gbdt_distribution",
+    "probe_cap": 13,
+    "live_cap": 60,
+    "total_cap": 73,
+    "status": "preregistered_pending_resource_qualification"
+  },
+  "native_gate_scopes": "First24/10 diagnostic only. Larger capacities use separately frozen existing matrix progression; no aggregate-budget increase.",
+  "runtime_manifest_sha256": "2c28d948050789684ea97b9954f5da990af51427a6c67f90160d9e90c790fe85",
+  "system_manifest_sha256": "d34101bdf751fd0daa064d226d36cf62785e5854f9c6f1052daa615d3b124b72",
+  "source_sha256": {
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/codex_protocol.py": "613c1dcc6a9f7f7931e55085335dc45229678606530bbfb948c2002b6086f20a",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/real_environment.py": "437318de21ad1ec08523de4258eb3dfad566c589a6008cd0c6ba1e3398042ccd",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/prediction_state.py": "513acd885ad7bf490a52c1f3be004429489ed682920b26b3213e17378ce6d30f",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/distribution_model_residency_v2.py": "0180db3c995b8f635a96eeb606e17414631f32fabbe679b9af6a98df327a2dba",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/qwen_data_audit.py": "173e9e7ba200a20e0580f5b8329e1a8e5860756f13eab1b2c42c7683fc94a1d3",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/cache_matrix_continuation.py": "128b3674b8d60c66f919997dc138f8e405913bd1a9fc79e96dc6c1912612cafc",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/predictive_cache.py": "56fd34121ac2bcc8d3aecb0a990f3b95538487814bf6f2f381f35aaeb2bd5d8a",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/restricted_data_resident_tree_worker.py": "04bb1bcdb000b2857fc1a255c80cba5846d9f3c023bf7cd24de22ce4ed81b01c",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/restricted_data_resident_tools.py": "1fde6cd7f6237173dff8efdd054ab81d01cb5317474979cfd79aac971d8af23f",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/restricted_data_controlled_tools.py": "586f670878c8249c00ec7ac42ff37aab7271e8c5503835f67763d5400fbca8a3",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/qwen_data_extension_tasks.py": "d4e39da5f93bc6a573b4602fa14bb103a9aa2c2503004caa6ef7170ed37c72bc",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/real_projection_v2.py": "287cae728148247218da7ea8408e5b76a8b63da24e23eb83b057ae103605fcf4",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/cache_matrix.py": "f3d31666a5542f74c2f2b0b83eeab070f3e314917c1755f99b7854146665fae6",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/independent_agent_reference.py": "8b9b0c45920488bbde807b3238a8a52baaee99fac645028a8698a8b2fc7e8e2e",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/d2_repair.py": "4ad5a4205abdcbba61472e435488c72ac9111a5e6c2a9a8e587d9c80ebedc8ee",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/d2_dataset.py": "27d0c0b12a8616c0ea7f482af94539bc8f5b06b17f2e8e24f5a1969d0a760330",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/real_probe.py": "eeae8cf9b544ee1de1e72a4d56f8b9d1bef2455dd55f714ab5032807f912f301",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/startup_fault_worker_v1.py": "3a0d9284ecd6d9ffd14dd149718de45f3398881e543e0422c22eb3c7e0ce71db",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/restricted_data_tools.py": "7a85342450982a5db5b8841cec58e3f7e0b6913064b66f0f026a463fbdf58cae",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/qwen_data_backend.py": "d4e3373aa48d5654e739567a4d3ac0c9764b276c074d359736172f70f3ff2899",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/preexec_pressure_v2.py": "44d98105845b6b31f69f9d5f277768f7c3f7f0c56f23ac029b1d1cd3c58f3503",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/qwen_data_ledger.py": "3a377a02b372776df1c43735a35044affe968fc34408a58be365d1ebac0f38f5",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/qwen_data_tasks.py": "8ac84f097d088b2152bdbf97e561b7ca13a879a675d03f46f63c91d1c1eae61d",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/preexec_tools_v1.py": "792c8a3553fd5a9f9e0b19464041f8328b4b0cc1cb8bc208f2b5b4a38f1ac246",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/independent_agent_tasks.py": "38bf2fd9030d97220f213239a0ff539dcbbd657566d8d293e854ac47a2416628",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/restricted_data_worker.py": "a6b1c07a0451514573b0f2b243984d121bc0329c0cbed528cf1774752cfd2aa0",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/resident_trace_paths.py": "a6bc4f76d8b020ac1aaf9f30cac29423884054a65d5c98a79dc9fbd29afe1939",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/independent_agent_protocol.py": "cf1e0f5f7ed35f695b8bee8141018a8e148d1784d3eb6e946ba1ae984c1b515a",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/prediction_training.py": "3d9a04d3c11f906b412af0610d4ee04d7b9569a3869b23b546865b95a14377f0",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/real_dataset.py": "5a384a08a5b2a99e2d89c648eef330a45e367d9860f7cf00e2d6a3ee003ca5df",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/trace.py": "a123767706d42cc6cb15e7cc34af85a8e253f41aaa04d863b7102e3891e51d89",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/shared_experiment_residency.py": "cd2b588fb1de5e0aaaf5b069346cf900d6cd61cf77554ed171e62a1fc4ed91d9",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/d2_repair_audit.py": "e7b57499c49ce922dbb804912938a2810ad429785ceb06ffb609c8cc1ad8461a",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/d2_repair_guidance.py": "a17ba7e4e7b6c3faf24e01ee172585a75f3dfd7004182e42ee0f6abdcba77e7b",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/distribution_cache.py": "0d28dbfbba409bc79070e36e8095c878030ff4b5b24c391c3048dda044a16a6d",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/native.py": "6effa3a8f28111d78f29a07d27fe9ca5ea6f522281075c4ec820b846018333c0",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/preexec_worker_v1.py": "c1969be09104b6b9f72dd6b71f4b0030fcd2d1f3443138a03b1ab7eda513b38c",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/real_patches.py": "a283aa79efc98b715b8f5aee0607956daaab1b59eb80ee3acbd9e42af267fb01",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/resident_runtime.py": "f28ab34d7f41ece03258e4a6968d72dc357ccf9fc34e76fe7cc47ba0e4d02f14",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/pressure_matrix.py": "fdf31558b026796e0815b2ed1706c04c844c684397798b6a1fb936d55cb6202d",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/resident_tree_worker_process.py": "440157f033ad33963662350e5932577e3aef6acc97b02077e883c79a01c2a3db",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/restricted_data_extended.py": "988afdee68582f4c34b05d4b6195a18a65ed1698c016579eb17492fcb0c9b953",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/preexec_worker_v2.py": "5c7c3883c2c3c3df2975c2ba8a70a34cf52e177dd4dae65a647f60f0a9ff3dd6",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/contract_fixtures.py": "c0dee446e348dee6eee44eae29409e63916995ba21be88cc1842ce48c62f3d7e",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/d2_hazards.py": "0feaa2ec2ec327ff5e5feedb9d5018dcd61ce95f9041b5d47a6d63b6ffe535b2",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/restricted_data_thread_probe_worker.py": "c640ca2f531d546fa8a2d29b518e6bed47e190bc27cb5d58fe01208034ca13f8",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/cachewise.py": "59f93fb9b4848cc7e503d4e0f9bb0c5e8c9f04c87a53748c50e82614baa4dceb",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/bfcl_runtime.py": "706887f7d8c01a688e909e3b1dc11da3cb1d80763cc9016feb13ec24fe55cc75",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/restricted_data_no_thp_worker.py": "7469975eceacea47a5d2089b553bca714ab9269bbc30ad47964e4ffafdec7d8d",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/restricted_data_resident_tree_tools.py": "3dd4bf311916958f485a0355992db0637c2d02fed57757a9e3b49f0f29644394",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/distribution_model_residency.py": "75498a1910bbf5fcdb2b4b8bbf1d34c780e7230edafeb64766e2126f1d146716",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/source_cost.py": "0cac94a760e73c5349690040b626c4f14ae573df68cac518cc1902b6a16dc3d5",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/source_replay.py": "52b99f8a35dc15f27d96a90cfa8b70480dfd92df3ecce971b8a3f24e349a7d28",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/reuse_predictor.py": "24773e363c9fb77e3008cdf7672a4136a4cd2ebb95c85cdc5752126137b67729",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/preexec_pressure_v1.py": "85cd0f28f47beffd623699dd1c730e5cdd11deda92979eb04ba2bdf0b7135e77",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/resident_worker_process.py": "fd27743028f1c12eeb6e10cace7f672b557d26153c608e722736e8d384554967",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/restricted_data_timed_worker.py": "0f02a08c4aa269ac00eb4bc87f3a30fdc2181456b07f12955f72db5b80d17a2a",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/d2_expansion.py": "d4dc6e7f0721a2726d1cebd2e7ab9587d9be1227f9ca36f606c24cd653f37137",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/prefill_cost_calibration.py": "a2bfee327ddc6a3ec0250e32927b8336bbd6c736f38898e13eb7ca08341e1faa",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/real_worker.py": "0bf78708787385a1f1c082a1560381e0339bf3a86e0740c9a1a9f63fd7057519",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/real_observer.py": "222a0f78e204f9fab0fa6580ae77bca3ba5b37f779244685cc6a5b3b2c75bee8",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/qwen_prediction_holdout.py": "6a5df999740a6012e0ce5cbf92c1b767f86d8ca8726517d7f645706d7074c77b",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/gbdt_predictor.py": "df8645870c255c70f2edee7ec288c1bdf7d6fd8c5bddc0335d3fae7d460d440c",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/resident_file_keeper.py": "bfeadac4ea7bf1f90c349a78cafba921600895a7b1c258e1186072241d42abbc",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/__init__.py": "6d571806d61aa4bcae35aecc8186a538f4bb0d341ad1ad8c62c7e1548c6cb8ed",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/cache_policy_models.py": "1b4d661456e1984776c779cd64dece684c277d24181576dd98b407873a916391",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/real_audit.py": "3138b6e20c76e99b67c46a1006989c9e339263002d9a9efcb93c6797e4b5a2c0",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/tracelab.py": "03ade77101228a5dbbbb31d5afd9c23dd4d13e7619bcac3a2b9d66310954e016",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/real_tools_v3.py": "23f4fc604f7c25633eea9bb5c9cd18ce72e2b61f1c93a0069b196071c7aaad6d",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/d2_probe.py": "a924b81cd190f962f5d791da2a80af6825a1bf6da81edeec92cd7c61db8754ec",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/restricted_data_resident_worker.py": "551758cf515f4282f2e401dda71fd61cf657d8bcfb29bae966c4210f4f667500",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/frozen_distribution_baseline.py": "6ebc484e3925f9dbea366c2b0e41e28e461dc8ab1bcf95c7f50f106be88c5b2d",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/restricted_data_timed_tools.py": "95d76aadd24da65b32e0416f1b5864006cea10f6ab6d3c4aa38704849cefacf8",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/controlled_window_tools.py": "a8348a5472cc93f7e05abbe4ae778f35d1a47cd32034fe8fb4d85cc4a6dfb7da",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/kv_layout.py": "94ac484aff37fdb7dcd1a43be03991b61d954b6aa83e386469b56ab890502a5f",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/qwen_data_agent.py": "70bf03fe10da0fe00c01118b0c85f05b11998a7fcdbe989aebaae2475e261b61",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/measurement_clock.py": "9489177fbca9d2af629e29b825674bdff4c3a7667608b061780e74eb893771b0",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/real_workflow.py": "7c77af4443fe969e8391e9daea7382d6b724b06a0e067af61f0fd234f0fc631f",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/pressure_data_agent.py": "8db7e75b480b720e49d17c9c3a64141f198f976dd0264a6acf583e2d8dd33412",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/source_cases.py": "fbe6621fdfd53d6f64113448eebdef139bdc5647a5b834af41df4d43f7f31122",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/restricted_data_single_thread_tools.py": "b84ff3d4f9eb3595f7f45b3491f132ad8192cecce683de7b2713a6a09ba8d51e",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/preexec_tools_v2.py": "2e85d27fa9bd338bd9a85e2cfb4f70e8bf6d408d7b757129b0e692dc3decbecd",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/qwen_cache_backend.py": "c8f46fe6232e3b38863bed3af9e5167070d390f5aac5e138e95d85e32d51018c",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/distribution_cache_backend.py": "225aa39160e5ea9f82b5a49809336e16042444c3da1dcb36d7c01778988f20c5",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/d2_raw.py": "1a4666def4d0c55a7ddcdb213135cb4e1578f2dbc1f5e94e1ef45fc627c57443",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/independent_agent_worker.py": "658016e62133c34747b9d5a9f4ca98a0480dab928158106228c89a87cdbc7f8e",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/prediction_merged.py": "ef1041e342af9c7181a8c3a4f70c0be55a3881749e267c795604caae14c9f135",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/startup_fault_tools_v1.py": "11dce367aa34670ac2e27f6c2b9459d24d5ce77025f4bb4d169c06c3194efbdc",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/cache.py": "3ac477520a6584fe4c9fdc5115aade6b46489d88d670875d45f546ccc232d63f",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/controlled_resources.py": "c8ce2aba12f511bd4646bc0259cedb7e7df950f5f1f780a7c26496cec3d024b1",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/restricted_data_controlled_worker.py": "d3bc7e43cbb7ec03fd0e996de51fa9ce60c3be0f1a3a5d299253ef5494dc6e06",
+    "/home/liuxv/LeasePath-new-server-data/scripts/check_event_contract.py": "d00552696e6754113e427cdc8a8e886193a21713381325818e14645d38440bdf",
+    "/home/liuxv/LeasePath-new-server-data/scripts/finalize_qwen_data_run.py": "cc25fc37510cb9849b3d6dd4122428a18429785e81eb59887fbc707049a9f2f4",
+    "/home/liuxv/LeasePath-new-server-data/scripts/audit_real_development_stage0.py": "02ff07751b51ae505943c0328e79ac7a833969bdb4c5639f953fef5e64a6cbfa",
+    "/home/liuxv/LeasePath-new-server-data/scripts/qwen_cache_preexec_batch_v1.py": "1c4de60a25a02cceb1ed4a0f31d13ef47fe2e106fb9a7926b086b1fa46bb53a5",
+    "/home/liuxv/LeasePath-new-server-data/scripts/run_d2_repair.py": "fb9bf83460441c39d69c383cb8e05328cd5765c8e799e9c216968d3b2ae00434",
+    "/home/liuxv/LeasePath-new-server-data/scripts/run_qwen_shared_server_paired.py": "7ea94f4df65f74bc45e07cb66a291b54c03e015c4006be2b4af6be456c839713",
+    "/home/liuxv/LeasePath-new-server-data/scripts/check_real_development_protocol.py": "93101e84a895f762b83400974b12a9b45213962ce6992ac760926b8332b4b123",
+    "/home/liuxv/LeasePath-new-server-data/scripts/qwen_cache_stage3b_batch.py": "1c6253d9301e1f719da297f7de2d196488b799ce97c0eebced8028fdd6e35f6c",
+    "/home/liuxv/LeasePath-new-server-data/scripts/validate_trace.py": "bebbe140ff79d83126a4a88887bc08ed24dd9f96560319b9032c710a69bbbc5b",
+    "/home/liuxv/LeasePath-new-server-data/scripts/run_d2_expansion.py": "f2567c2530f35b76a4132ab301b38a61c91ca7ff49e27fe030f849f0ea88c073",
+    "/home/liuxv/LeasePath-new-server-data/scripts/qwen_cache_independent_agent_batch.py": "672877006fefd807a19c93ee8bfc680cdaee72b6fb6681d2c1d6ab3a01b9a150",
+    "/home/liuxv/LeasePath-new-server-data/scripts/probe_qwen_tool_thp.py": "1101fe3c21f3bf8a33bee30c01ee4af3e34dbb2aacb4459b0de86adcd8c56d3e",
+    "/home/liuxv/LeasePath-new-server-data/scripts/run_qwen_prediction_holdout.py": "bd1c277304bd0cf1e9a69e1d5d6904618d79d3ed74e78fcd1ef43b999ce3eee5",
+    "/home/liuxv/LeasePath-new-server-data/scripts/audit_kv_distribution_cost_actions.py": "856b775c7c21e6301185c4aceea5d2eae64e1e29cffe18bf1bd9ca132a824425",
+    "/home/liuxv/LeasePath-new-server-data/scripts/measure_real_development_overhead.py": "f8ee02620a1111f898a901d475971014423734f5cdea23565049511158b165ea",
+    "/home/liuxv/LeasePath-new-server-data/scripts/check_qwen_resident_natural.py": "7fc1224b4d914c63e9760077ca64d3c25ab6b9a0dc7d133196d2b2d60b9a6ba5",
+    "/home/liuxv/LeasePath-new-server-data/scripts/verify_qwen_data_remaining.py": "bbf89e9dea6c4088ab41638273b025a1bc9a4a8a58a043ecfe7802c3ff4910c1",
+    "/home/liuxv/LeasePath-new-server-data/scripts/check_real_development_lifecycle.py": "d6ae8508e3519503d33c668a810bb90ea3e7375a80f447886645ab84904388e5",
+    "/home/liuxv/LeasePath-new-server-data/scripts/prepare_real_development_model.py": "a73f7f9191a703028ad1254b4f6052c6a836554665db5478e949bfcb6959edd5",
+    "/home/liuxv/LeasePath-new-server-data/scripts/qwen_cache_resident_batch.py": "6a29eea3cf096fb5afb96f5d3c708e0987f8c7c4345bcbdbbbb309f01839891d",
+    "/home/liuxv/LeasePath-new-server-data/scripts/freeze_distribution_next_stage.py": "f709a535d13000cd0738382d2cf3af06a54c11101f79fdbcdb8196daed6c130d",
+    "/home/liuxv/LeasePath-new-server-data/scripts/d2_service.py": "506819953d19f1a61632a256aa8f2e47cc1233c7400c8a7411eead816d1b5601",
+    "/home/liuxv/LeasePath-new-server-data/scripts/check_real_development_v2.py": "eabe0fb54006367a4a90ccaaa3f246371f5b5aeb6967364e6556f77c4d500691",
+    "/home/liuxv/LeasePath-new-server-data/scripts/summarize_kv_distribution_natural.py": "a79a2c42caf208b2f6e02f32a07d343d9e204f04abc3912fbae496ac903678f5",
+    "/home/liuxv/LeasePath-new-server-data/scripts/run_stage0_diagnostics_v3.py": "5958b6a8b1fcaa7c365f5aa4e0065fb843e1a05761c68786b99f8aa502d4c90c",
+    "/home/liuxv/LeasePath-new-server-data/scripts/analyze_qwen_cache_matrix_kernel.py": "833cdbb6013ac5bb651ddb159ae63cda892af0ca1e26f251e7562f7e619f05b7",
+    "/home/liuxv/LeasePath-new-server-data/scripts/check_qwen_distribution_v1.py": "8c9f9a967ebf4d0129a523455815aee4f76b8b8a0615898ec977859a26cbef25",
+    "/home/liuxv/LeasePath-new-server-data/scripts/run_qwen_cache_controlled.py": "e865a286318b97b05db5b8b90042107056149fbbcd198956664b5300b3a3e3b2",
+    "/home/liuxv/LeasePath-new-server-data/scripts/evaluate_d2_tasks.py": "c8b09e106a58b0199b5194ac0e304e92ea43d95224f726575012c847eed75bb4",
+    "/home/liuxv/LeasePath-new-server-data/scripts/restore_qwen_data_checkpoint.py": "be7dd3698c872d347d3514573880442aeb8b38990092f026963f8a6ba310b431",
+    "/home/liuxv/LeasePath-new-server-data/scripts/environment_probe.py": "01191ca0962b0d2841d47e2a3bf475e4c0481c7b3ef715df9e0cde82ab366729",
+    "/home/liuxv/LeasePath-new-server-data/scripts/run_qwen_cache_matrix_v2.py": "c8a10d77a96586e3e641876a8dbc0ac8db8c2d9d5b535693894be02ae61b235c",
+    "/home/liuxv/LeasePath-new-server-data/scripts/check_qwen_thread_contention.py": "06027da0f6a349a5fa6ecf253e443d162787765026cda79aeb0a8bbca05788d7",
+    "/home/liuxv/LeasePath-new-server-data/scripts/run_qwen_preexec_pressure_v2.py": "505a8c5dd20856321a534fe966aab30566c71b356aaa26de35a2c62baf453e96",
+    "/home/liuxv/LeasePath-new-server-data/scripts/check_d2_backend.py": "2a90b2b9cba86247298aac37410a82e00fd1978efebde8abb6b6cca98d6910a7",
+    "/home/liuxv/LeasePath-new-server-data/scripts/plot_prediction_d1.py": "902f467f0c54f34b2e59f21457053be025df35f648bbbe183cf7aec1175f87dc",
+    "/home/liuxv/LeasePath-new-server-data/scripts/audit_kv_distribution_proposal.py": "49eba130b5f1f861109ffcb23f217879af246fe44cf2c5fe17dfe3a3689a54a0",
+    "/home/liuxv/LeasePath-new-server-data/scripts/run_qwen_distribution_natural.py": "2ed66190934be7ac86b26a3f37c50d2be172b77b90884c9859fb3b48bcd2e30d",
+    "/home/liuxv/LeasePath-new-server-data/scripts/prepare_d2_model.py": "6c471e75df8ef0e7aeacff150a16074a26c49cf500548cfeb671d0a20eabea1f",
+    "/home/liuxv/LeasePath-new-server-data/scripts/prepare_real_development_tasks.py": "09205e2ce5425da5ac0cd2d40a57ba5959ac4f05269be022cab8ecd4885969b6",
+    "/home/liuxv/LeasePath-new-server-data/scripts/evaluate_d2_mbpp.py": "c28dd58a0cf3633b951053f3c3055fbeb01fbfe59ca61ac18b85c1a3bcfc448c",
+    "/home/liuxv/LeasePath-new-server-data/scripts/prepare_d2_mbpp.py": "cadde8f87a2e05778f7e2e25bda2170f1ebc59b05ad26608e43db35f09c4d1f9",
+    "/home/liuxv/LeasePath-new-server-data/scripts/audit_pressure_preexec_v1.py": "1f3572a5fbc617cdef286709c7719d4900336b97cf2cc1178fa41c826051fc48",
+    "/home/liuxv/LeasePath-new-server-data/scripts/audit_distribution_live.py": "340df8e86b135f265b71d730492c93e0168feb2969831c0bfafaa49c520e3a6d",
+    "/home/liuxv/LeasePath-new-server-data/scripts/real_development_gateway.py": "2e78ef41258f7771ee734af54d5998c86dffdc19f960c215d00a0e3bbfc603d9",
+    "/home/liuxv/LeasePath-new-server-data/scripts/check_qwen_shared_server_paired_attempt.py": "d236ab4981a1d9c710944e2182f13ccc7a07d345b65fbb330f33a68814bc6db9",
+    "/home/liuxv/LeasePath-new-server-data/scripts/check_qwen_distribution_natural.py": "b3230040e5af98f7432661a251aadbc4c9b3b9adb23e5f338e6933d0efb7e442",
+    "/home/liuxv/LeasePath-new-server-data/scripts/audit_codex32b.py": "099ec6937d1a9f84934811c5cc2c5f26d2e3c66d9e8c05933060bc7cfae982df",
+    "/home/liuxv/LeasePath-new-server-data/scripts/check_real_development_backend.py": "c9b614c7cf83189a682b9f752561119a033c1204778e7db3c7b8075dfd185661",
+    "/home/liuxv/LeasePath-new-server-data/scripts/preflight_distribution_pressure_v2.py": "8facf76efeb5cd4b2ef66618c8655da021b6eb3daca8ba31aca6a677b3149d8a",
+    "/home/liuxv/LeasePath-new-server-data/scripts/prepare_qwen_data_extension.py": "a388b0dc393b5a825a2f753cc249b3bce385472fdfaed629c30443f7a0747d80",
+    "/home/liuxv/LeasePath-new-server-data/scripts/prepare_d2_repair_guided.py": "cf2f87a3d6244867a42947fb5a36eaf3905c4d7ec9a79ae423e5cef32c629a87",
+    "/home/liuxv/LeasePath-new-server-data/scripts/audit_independent_agent_loop.py": "f85ae4198ee5c597b97b39ec2ee552160a541d51279792a3419d9316a12f1f0a",
+    "/home/liuxv/LeasePath-new-server-data/scripts/analyze_qwen_cache_matrix_gaps.py": "98bdee937fbb77aa2c00d0154f5072a9574360b288ebdb207621afd9e6079330",
+    "/home/liuxv/LeasePath-new-server-data/scripts/check_qwen_cache_stage2.py": "84352b0b8c9b06aa82e7870c3b0f3f8f14cb875be172355ce3ceb7dfa401203b",
+    "/home/liuxv/LeasePath-new-server-data/scripts/check_qwen_controlled_tools.py": "a8e7ce99c99919e72b6cc62519090ce26a13b600d83253e6016d2c20146c2b13",
+    "/home/liuxv/LeasePath-new-server-data/scripts/check_qwen_cache_matrix.py": "51266683ff9414ddea61cc78beb35ffde65f16b2bc54355e96746bc326e4052e",
+    "/home/liuxv/LeasePath-new-server-data/scripts/analyze_qwen_cache_matrix.py": "33ecc915df0d0eee93041c70c782c6cef5cca3ebc1e24ec80799254140f302f9",
+    "/home/liuxv/LeasePath-new-server-data/scripts/run_codex32b.py": "e25d3fd4a64ea286bc098a0acad2e2a28f5b6045eff0b272745bba0826f1b6df",
+    "/home/liuxv/LeasePath-new-server-data/scripts/qwen_cache_preexec_batch_v2.py": "0c5c76cf80a02019577cd6703740f8e03c87b495a945bd7aafe433901441968f",
+    "/home/liuxv/LeasePath-new-server-data/scripts/start_stage0_diagnostic_alternative.py": "ffad2d02ac28217e1134d825110eed06ad3398e3517dff4d11528bc6dc45ee02",
+    "/home/liuxv/LeasePath-new-server-data/scripts/run_d2_mbpp.py": "ed4dde9a65627f3562fc11b18ef577a44ee13fd64f7fbf1b56b1973aaf612714",
+    "/home/liuxv/LeasePath-new-server-data/scripts/probe_qwen_cache_native.py": "71793d495c4d009f3bc94b8ddfcb58c99a0dd354f598b64ee412143214e7e5b7",
+    "/home/liuxv/LeasePath-new-server-data/scripts/run_d2_diversity.py": "4a7fd631ff6e74a44cd1cee672a4eacf1a0a68af98990947f4792f2b4838c1cc",
+    "/home/liuxv/LeasePath-new-server-data/scripts/export_real_development.py": "23935cc98f6f46cbd8d9a4c4f1145b534d56a7ce7e2fb980cb8ff33fcc37afd7",
+    "/home/liuxv/LeasePath-new-server-data/scripts/build_native.py": "5c3bcb5100f376a24c6e528cbba8d12b68a013d85e218053164290ed66515a93",
+    "/home/liuxv/LeasePath-new-server-data/scripts/evaluate_real_development_pilot.py": "abf17008dac1983689c009ca31c9b1e5b44eb0b9708011d5f62f2b7a37adafce",
+    "/home/liuxv/LeasePath-new-server-data/scripts/audit_kv_cost_weight_mechanism.py": "934cb765d19a7516259f0c3b313132829cf54f7d31582e5602a627a949b272af",
+    "/home/liuxv/LeasePath-new-server-data/scripts/run_d2_pilot.py": "11a0d6e8a64b7cfb9a753b143d1b5e517ce5532b38f2ead8d39ad51c0b28cbb4",
+    "/home/liuxv/LeasePath-new-server-data/scripts/check_qwen_shared_server_paired.py": "0df0b2a3f7ef8fd704d3f0a0749978966fe958c62ad26341876f5cf7c8ee6cd4",
+    "/home/liuxv/LeasePath-new-server-data/scripts/probe_qwen_resident_tools.py": "0dc5d50464643684f111da62362b712a457cae7d0866e711e89fe54aa524ee8f",
+    "/home/liuxv/LeasePath-new-server-data/scripts/probe_qwen_controlled_v2_tools.py": "0cfdc66b358b72aa3572170028405b51e04b87cd57edf9e532a7269a34bc93a6",
+    "/home/liuxv/LeasePath-new-server-data/scripts/run_d2_repair_guided.py": "0851530b2f24c51b02c5cd23a44bbc926c160f161de5bb39e9edc28b89067dbe",
+    "/home/liuxv/LeasePath-new-server-data/scripts/run_qwen_distribution_v1_resident_v2.py": "32434f475e452401e4a27d80974cee5496885a206def4553312595f3a027c27e",
+    "/home/liuxv/LeasePath-new-server-data/scripts/preflight_real_development.py": "8513d381c6e737930e09dd0ff34ba03cabf6f1069639b89022abb58a0dc8e964",
+    "/home/liuxv/LeasePath-new-server-data/scripts/diagnose_pressure_fault_windows_v1.py": "4da0930ab603f7498187aafe68674feca2cbb632bc3d59fc363a839550993164",
+    "/home/liuxv/LeasePath-new-server-data/scripts/run_qwen_distribution_v1.py": "f1d3f13a6694d8a330218fb5a3a5903f40a877b0ce91bb376a9a10eb0a03ed77",
+    "/home/liuxv/LeasePath-new-server-data/scripts/analyze_prediction_v2.py": "65e1509cab18c7ec201cc0861eeb2781672c90461482be7333c5b2a3048687da",
+    "/home/liuxv/LeasePath-new-server-data/scripts/check_real_projection_v2_boundaries.py": "7a219a1a1d37cc8fb317d01125a710708aa5fcf64b1284e1447aa4e0825324c8",
+    "/home/liuxv/LeasePath-new-server-data/scripts/run_qwen_resident_tree_natural.py": "4e9ea253e0f2a794435b23fba9db07a754571c1f4c97535b1c3d004622566562",
+    "/home/liuxv/LeasePath-new-server-data/scripts/check_qwen_distribution_pressure.py": "db6148042c7a01b9d24e0545fb0d837cbcd9984c5d2eb76b975754c5fd44331a",
+    "/home/liuxv/LeasePath-new-server-data/scripts/finalize_d2_mbpp.py": "4a4b84cd911370fccc34fb6e1e4a4c14e253a1c1d913d077e946c3d154b4efb6",
+    "/home/liuxv/LeasePath-new-server-data/scripts/run_qwen_cache_controlled_v2.py": "a0c7e6c260880d326c9c15d9dc5464aa72d56a30f5cdc4853d7161a350530f3a",
+    "/home/liuxv/LeasePath-new-server-data/scripts/finalize_d2_repair.py": "7283ca006163ced99c53d3438b07e34e898b4d5aa1250775132ea633b1bad1ea",
+    "/home/liuxv/LeasePath-new-server-data/scripts/check_qwen_preexec_pressure_v1.py": "aa747e9b179b7c7f39eb6a39b8114dd056de4ad8da6ce10608ce35ca4ba7acfb",
+    "/home/liuxv/LeasePath-new-server-data/scripts/summarize_real_development_overhead.py": "d39db3520f45acdbf92d114d2639bbc2cc504120815b5fc099c66e1af11ad55b",
+    "/home/liuxv/LeasePath-new-server-data/scripts/verify_persisted_qwen_data_model.py": "c94861806b7e81039c6b19ab7f589375e312de636cac679994ab82650d3bf349",
+    "/home/liuxv/LeasePath-new-server-data/scripts/qwen_cache_resident_tree_batch.py": "68d1061196f4230b74d81cb21e67283acecb8bd91b0f76e6171e668968d9c717",
+    "/home/liuxv/LeasePath-new-server-data/scripts/audit_pressure_preexec_v2.py": "95c5a3ab1f3be5dad9a3aa0fbe3231dd7428e53700869a7c7b3f56148e72f45a",
+    "/home/liuxv/LeasePath-new-server-data/scripts/run_qwen_distribution_natural_verified.py": "4c069ce49666ff02d2b6ca10a5d86623aee7a6f913ebb86f0dcd52091cd6472c",
+    "/home/liuxv/LeasePath-new-server-data/scripts/real_development_boundary.py": "900d9eb102af4cdcb884f4d8a1bceb3dfc2dd63bade24cf78b6f0917545d8250",
+    "/home/liuxv/LeasePath-new-server-data/scripts/run_qwen_resident_natural_preloaded.py": "d559ac0afbd1564378c8277913bb9f0e4cbf2dbbbb150a413bc678c5eaeda4f6",
+    "/home/liuxv/LeasePath-new-server-data/scripts/prepare_qwen_data_tasks.py": "0b8c659f2824bf76e2d7cf794e8d94a99d4c241942d326b8fcecdc5a223ee33e",
+    "/home/liuxv/LeasePath-new-server-data/scripts/summarize_kv_distribution_v1.py": "edaa25888bfc69e7b2250c26e9f29d18596e08a02fb103fb784aad3b38338d6b",
+    "/home/liuxv/LeasePath-new-server-data/scripts/aggregate_qwen_data_fifty.py": "9bacf8f9e1f3d915ea553ab8b4713896f491d39912f5385a331b46b178eb1ca6",
+    "/home/liuxv/LeasePath-new-server-data/scripts/prepare_d2_tasks.py": "01a28cd2a3726d63acbd104bff395d7eb9202b84416b9b04a113bb019a50cf71",
+    "/home/liuxv/LeasePath-new-server-data/scripts/preflight_independent_agent_tokens.py": "1097b58307b2fa03ed110078327b5e9e3286b9fdd1dd2f90fb5501cf9b5e8cdb",
+    "/home/liuxv/LeasePath-new-server-data/scripts/summarize_qwen_resident_natural.py": "0a81f81a6c2bf7fd05a851b5607cf9afe321f64bac2c0bae9ebd2480b2430a71",
+    "/home/liuxv/LeasePath-new-server-data/scripts/qwen_cache_pressure_batch.py": "eaa1ebc2f4ec8215985c1395b0307624cb2572f68d2134d175cd88a1c454df93",
+    "/home/liuxv/LeasePath-new-server-data/scripts/run_real_development_codex.py": "567792e03b849a0b47eb2a344c23cf877d9509375e1010ca0288c7cbd888113e",
+    "/home/liuxv/LeasePath-new-server-data/scripts/prepare_d2_diversity.py": "274358e2afcc8ccacafa886e9827bfb6f96630c2cf3aa68667696d738ee3ed33",
+    "/home/liuxv/LeasePath-new-server-data/scripts/summarize_qwen_cache_matrix_attempt.py": "79dcf5de4cb742bf0c826b5248bf4c5ae733096aa6396090c5e875f3e73f0540",
+    "/home/liuxv/LeasePath-new-server-data/scripts/export_d2_hazards.py": "4740265f983a8115cf587ad29464b98122004f6f717f30610d2e2a4ed6d21a32",
+    "/home/liuxv/LeasePath-new-server-data/scripts/check_qwen_preexec_pressure_v2.py": "9867376f4efaf67e408c48c8fcdb1b8c98183aeda562b49f539bf673f03dd3f7",
+    "/home/liuxv/LeasePath-new-server-data/scripts/run_real_development_tasks.py": "ba7f6c91232f6e594560de2e31cc6547c05791c8def1556c16c702ac19b56d8f",
+    "/home/liuxv/LeasePath-new-server-data/scripts/run_qwen_distribution_v1_resident.py": "eb4ab644cc96b74886226131b7a29272ab88c2be04028a7c70630558b3384d32",
+    "/home/liuxv/LeasePath-new-server-data/scripts/verify_d2_diversity.py": "10393ea2d3d346ece168c4487159c22835eb4e8fa637f5cee6db8eb5d96abf6f",
+    "/home/liuxv/LeasePath-new-server-data/scripts/probe_qwen_data_backend.py": "61a1806e5c142a3f782eb49cb5784919be58901f7a079b00bdfd8a8d325e3f74",
+    "/home/liuxv/LeasePath-new-server-data/scripts/run_qwen_cache_stage2.py": "5377084071df3feb01cd3463132b561c24e0a4a27abd93546673850e4dc81dc6",
+    "/home/liuxv/LeasePath-new-server-data/scripts/verify_prediction_v2.py": "1950c5fe0f5626c6a7e60611b7175224d3e8b5fa2bf3a9a299822b5cbbcca07b",
+    "/home/liuxv/LeasePath-new-server-data/scripts/codex32b_shell.py": "d8c12d6eea403bf547ae74acd6062d74f20773b38ba27e385a00feb064d6b7a3",
+    "/home/liuxv/LeasePath-new-server-data/scripts/export_d2_dataset.py": "9364fe268a0833eae1db97c737502271a9a41c149b8108574b1fb5c229e2a011",
+    "/home/liuxv/LeasePath-new-server-data/scripts/preflight_pressure_preexec_v1.py": "4273ab00850a84b7d2c78e40bd2f84bcc8156e38afee5dd8fd389d73513b1d35",
+    "/home/liuxv/LeasePath-new-server-data/scripts/collect_cachewise.py": "b940efc4d1a8264bf23a0d21bd62961d7612553504e9c4cb773853b832ac3193",
+    "/home/liuxv/LeasePath-new-server-data/scripts/audit_pressure_live_state.py": "b67e4e0ef7698f02481e58d8818ea0d22962e2bbf2223ac15828593581f05f12",
+    "/home/liuxv/LeasePath-new-server-data/scripts/check_real_development_recovery.py": "af9818e7ef9aef447fe240d5080fac3575fb8304a136ebbcdf2079e06ee5bbf6",
+    "/home/liuxv/LeasePath-new-server-data/scripts/qwen_cache_shared_paired_batch.py": "2a427aad5023cd218d997f919588ed278cf1a3c3078e2f22ef486869f5ff48ad",
+    "/home/liuxv/LeasePath-new-server-data/scripts/check_real_development_tasks.py": "19a3cc0d94d610a93a1c8867ac635ae05c77da5e66c667daf2ad5406e57f52b7",
+    "/home/liuxv/LeasePath-new-server-data/scripts/inventory_d2_datasets.py": "33ee9e1eaf2690cae5862e2777aa3ec89487e8250c60a1c79ac8b51beb7cb34a",
+    "/home/liuxv/LeasePath-new-server-data/scripts/summarize_qwen_data_timing.py": "00329ad343ba59820fcc1bea279c05c9490e908be08a54e862c6db666bfbc0e7",
+    "/home/liuxv/LeasePath-new-server-data/scripts/export_real_development_v2.py": "83286e5970098bbf7ad9d91fdfe2a2dba3db505893b999f358768f45946f437c",
+    "/home/liuxv/LeasePath-new-server-data/scripts/finalize_d2_diversity.py": "6ab1ecd7d658e8905edc2a24021f9826f8a1074986619203e240500bf4dc6bcd",
+    "/home/liuxv/LeasePath-new-server-data/scripts/qwen_cache_stage3_batch.py": "8afed698abee1e103cb47883659b21cc93a0e3b5694e7c3f2c7f8aef622c7903",
+    "/home/liuxv/LeasePath-new-server-data/scripts/prepare_tracelab.py": "7eeec6cde1b2011091c5fb753758b60b01e0e0739dc535e8c38eeccf15c0ac0b",
+    "/home/liuxv/LeasePath-new-server-data/scripts/convert_qwen_data_model.py": "e6ceeb413cab7b6f622e63df007e944a457db589beb3ce4a701cbfec770c07fc",
+    "/home/liuxv/LeasePath-new-server-data/scripts/audit_kv_distribution_actions.py": "805c49698695dcbf4b7c023df3d9cc1d4918e9100fa2f34a8bb66acc631b3dcc",
+    "/home/liuxv/LeasePath-new-server-data/scripts/diagnose_qwen_resident_files.py": "e61ba79cfe0009ca6f967d19893e7dd5bbf2102939242437a2af107bf70af040",
+    "/home/liuxv/LeasePath-new-server-data/scripts/train_reuse_predictor.py": "8bdcca888b327618d446ef136af700b256e7f7642331d3e9a5c02b662d299083",
+    "/home/liuxv/LeasePath-new-server-data/scripts/check_qwen_resident_tree_natural.py": "94fb0cf474b912cacd15fed0a28bb72657ca7e07768de8701905556f7abe8e77",
+    "/home/liuxv/LeasePath-new-server-data/scripts/fetch_model.py": "d2503abec875f41c84e7c3c400f3e2f504cde4aaeb939deca287e7d499a05c8f",
+    "/home/liuxv/LeasePath-new-server-data/scripts/run_real_development_tasks_v2.py": "70f105f06f0556d875328db9950ba222f1169997f0de928c683adf08c9d693b8",
+    "/home/liuxv/LeasePath-new-server-data/scripts/freeze_independent_agent_suite.py": "20046cd1b0157e06705a2d49afe4861f5f957cc5423eed892967ec461850ab1e",
+    "/home/liuxv/LeasePath-new-server-data/scripts/persist_qwen_data_model.py": "83d78b147b6524cfd6ab526f903ca2cc1e30eb3ef67fffe41912bc79c0c3ba4f",
+    "/home/liuxv/LeasePath-new-server-data/scripts/run_qwen_distribution_pressure.py": "b49b225f44fb7c418673408237535a5a6d8d4ab16b812ef759ddc078f915c745",
+    "/home/liuxv/LeasePath-new-server-data/scripts/probe_qwen_cache_matrix.py": "b451f5bc3b491252c99677bf84d4d17600fa33c421433e38fa0143d3a48d84fb",
+    "/home/liuxv/LeasePath-new-server-data/scripts/run_qwen_resident_natural.py": "ddf8aefc694a3529422b679c55cd3a44f396fe64e3747ea68819abb2fe04426b",
+    "/home/liuxv/LeasePath-new-server-data/scripts/real_development_service.py": "00bd1ca775be302ad29cab12e104644474a1885d6b31a261d4ee1deeac39f6b8",
+    "/home/liuxv/LeasePath-new-server-data/scripts/probe_qwen_distribution_parent_io.py": "7bd412a8075e05c3f1cce96a06a94f457982cc0a1ed5b2a97ac6635bd877e95f",
+    "/home/liuxv/LeasePath-new-server-data/scripts/check_qwen_cache_matrix_attempt.py": "461dc81f6e4813011a65d73ca1fcfbf60adcc8768b31cc13b6a209f65e5b48c1",
+    "/home/liuxv/LeasePath-new-server-data/scripts/preflight_diagnostic_template.py": "29734e0e307d1a73c74bc0ee7c1cbc8d514368a168d1987855dbefc524845f75",
+    "/home/liuxv/LeasePath-new-server-data/scripts/preflight_distribution_pressure.py": "980407dae31ae44fc5499109be253e007b701c57385c8ee934762a86ec6b4b54",
+    "/home/liuxv/LeasePath-new-server-data/scripts/qwen_cache_controlled_v2_batch.py": "3f1752aeb99d5baea71304d4f36042b7fd2e0314e4b1e6c9760fd38bad1ad9ee",
+    "/home/liuxv/LeasePath-new-server-data/scripts/archive_startup_diagnostic_v1.py": "8913014c745aa905f2e44f9c61ca7d5b8cae702688b10491b48aa452a3ce8ff0",
+    "/home/liuxv/LeasePath-new-server-data/scripts/run_qwen_preexec_pressure_v1.py": "3a3cb33c9b1b00383474133e965fca013b981369fc9d433033bcca83564c6a9e",
+    "/home/liuxv/LeasePath-new-server-data/scripts/audit_pressure_preexec_v3.py": "5b2a421ad7c87134bc63d6368f08c32b82879a6dc1371e7c2b627ae6f4622a01",
+    "/home/liuxv/LeasePath-new-server-data/scripts/preflight_pressure_preexec_v2.py": "03eafa4c36781d446bb971df6c50f21d88145eb61b7a262daa751765af3d0bc3",
+    "/home/liuxv/LeasePath-new-server-data/scripts/qwen_cache_controlled_batch.py": "b1b63314888ef40d54b26bbc5e83072a80debfa3e19946b6d98fa6ad5bba5308",
+    "/home/liuxv/LeasePath-new-server-data/scripts/probe_qwen_resident_tree_tools.py": "670c4a61543bdb8c44b20020d7fed2149ca43f05bd1c9445636d1b220b16cfab",
+    "/home/liuxv/LeasePath-new-server-data/scripts/prepare_qwen_resident_runtime.py": "66befa4985adf935467f66d433ab1464a916732f2898d76c00f62030ff8492e1",
+    "/home/liuxv/LeasePath-new-server-data/scripts/verify_qwen_data_native_source.py": "333d7e20e7e1f4647b81b9c67d4224f46c1bb4797fa97194be2678d3492999e9",
+    "/home/liuxv/LeasePath-new-server-data/scripts/check_real_projection_v2.py": "04fbc8d92eea6492ca8526b8d74836ecfba68d8888827d5953cb3c85def68a40",
+    "/home/liuxv/LeasePath-new-server-data/scripts/run_qwen_data_pilot.py": "650b13aa702730e7b00dd21584742ed9de98c372268f433bfc1caaae1962a46d",
+    "/home/liuxv/LeasePath-new-server-data/scripts/check_prediction_d1.py": "edc8fc6c42f9be3f6205541690bce728f2bcfe504d87e4a4d6fef4ec6bd87032",
+    "/home/liuxv/LeasePath-new-server-data/scripts/check_qwen_data_dataset.py": "cf463271baada89f9ec8830dd4b11f2394a8430b14160d84339c5741bc624a30",
+    "/home/liuxv/LeasePath-new-server-data/scripts/probe_qwen_thread_contention.py": "6108696205e5f7e124dffe8300edba4cf15aeb9f99444408c6c1cd6cc0a4a583",
+    "/home/liuxv/LeasePath-new-server-data/scripts/run_qwen_cache_matrix.py": "7d0dca1bcf22284917dba9eca80f4c783299247f091dc34a1865d39772049e48",
+    "/home/liuxv/LeasePath-new-server-data/scripts/evaluate_real_development_pilot_v2.py": "410900a002d00b94168021a58c5bcd41e85f89af5b9f7462476cbab9e4cfafe8",
+    "/home/liuxv/LeasePath-new-server-data/scripts/fetch_qwen_data_weights.py": "dcf80c10e0f27de22c801e91944d7428ab7f18e4b41bf2bab63597f2d17826a5",
+    "/home/liuxv/LeasePath-new-server-data/scripts/audit_pressure_tool_preflight.py": "50caef948337de6ff667c09916864fc89767e8c8ab2af5584a20f3c40e596a7c",
+    "/home/liuxv/LeasePath-new-server-data/scripts/probe_qwen_controlled_tools.py": "c7643a1e59dbb7113a28fb83375c423e8aae1b967c4dbf7e07f70062970c8728",
+    "/home/liuxv/LeasePath-new-server-data/scripts/prepare_d2_repair.py": "be0b1f91bc4a9728e10e9212eb97be7a062efaae9ada89cedb016bf6b6e312c9",
+    "/home/liuxv/LeasePath-new-server-data/scripts/audit_stage0_failure_visibility.py": "b9fbb04c67cbc974efc77245b70911c35fe6ab99f5b587deeb835cc678341b4a",
+    "/home/liuxv/LeasePath-new-server-data/scripts/audit_pressure_fault_windows_v1.py": "9307654e92b33556df4e035eec618ca1e32a13172fe99c7d5c2b44f558470a0f",
+    "/home/liuxv/LeasePath-new-server-data/scripts/prepare_d2_expansion.py": "dcef664fec33ff44a6c453035576dc164064ea1efc4417f44ba3352d712d9cf6",
+    "/home/liuxv/LeasePath-new-server-data/scripts/finalize_d2_expansion.py": "bf3b86611f8158d7fc8b68abff6c79f9894e56c3900e605d3ef73669738f1671",
+    "/home/liuxv/LeasePath-new-server-data/scripts/run_real_development_overhead_lane.py": "1547cc429651f17ddeba9e05ecf45a5786ed42416e691d14cf76a71d6e58ed0b",
+    "/home/liuxv/LeasePath-new-server-data/scripts/fit_empirical_risk.py": "e4ac55eea9ddd56449fe94ad39135628524204f677ea31d13fcfc69709b18760",
+    "/home/liuxv/LeasePath-new-server-data/scripts/replay_qwen_cache_policy.py": "3185d0ee24c96188fc8b790e12df09d0d01897c639eab8007ebec4831ae83c45",
+    "/home/liuxv/LeasePath-new-server-data/scripts/run_qwen_cache_matrix_capacity.py": "3fba4d2db6cde506a65d62e0e67dca09ceed7d49f82317044896d1df2ff2ea66",
+    "/home/liuxv/LeasePath-new-server-data/scripts/check_qwen_resident_preflight_attempt.py": "fa66b2e94230989e73e901a43ccba40ff6442f7791e276ade6534334cba20af6",
+    "/home/liuxv/LeasePath-new-server-data/scripts/verify_d2_repair.py": "586bf9bb8aaab1f6a672387a023dbaad8b205d38b7aeed88082fa57dc13c468e",
+    "/home/liuxv/LeasePath-new-server-data/scripts/run_qwen_cache_matrix_v2_capacity.py": "451b4e2927044d98ce17b42d4b66b519d4b0973a043a7ae0581b3402286767cc",
+    "/home/liuxv/LeasePath-new-server-data/scripts/preflight_real_development_tools.py": "3c54dd567e8c398ecf81320ecb4b6995203407debcc779c336726d06f2307611",
+    "/home/liuxv/LeasePath-new-server-data/scripts/capture_qwen_data_environment.py": "19189428ae5f8d6fb107365491ea972902ae938628610370f4b20282a2e5a090",
+    "/home/liuxv/LeasePath-new-server-data/scripts/train_prediction_v2.py": "7c28eb53cfcfebb0e1faa4e7c730ed6d587f4f22c922b124d5d67822ced9ad45",
+    "/home/liuxv/LeasePath-new-server-data/scripts/check_d2_diversity_tasks.py": "ff182da570b8501cba9c633d0c3c854ef7430fa9544e9a87808dbe0c2a66c41e",
+    "/home/liuxv/LeasePath-new-server-data/scripts/__pycache__/prepare_real_development_model.cpython-313.pyc": "aee18ed22244b3dde6ac0cfe7e79ba2f1abe8baf0e0ed611ceef0654980ffab8",
+    "/home/liuxv/LeasePath-new-server-data/scripts/__pycache__/run_qwen_distribution_pressure.cpython-313.pyc": "9b59f9a308aa3daed5f2b09c80a2c94c53be3079594459559badbc14bb29d34e",
+    "/home/liuxv/LeasePath-new-server-data/scripts/__pycache__/freeze_distribution_next_stage.cpython-313.pyc": "d4db207b26da21bddc5965223aa7b6b847c072fc813673f7927247c860d22c16",
+    "/home/liuxv/LeasePath-new-server-data/scripts/__pycache__/verify_qwen_data_remaining.cpython-313.pyc": "4d97d14ea68a3dcfbd2feb1b1e55fb2b69e18dd4b716741c4917b899edfbb092",
+    "/home/liuxv/LeasePath-new-server-data/scripts/__pycache__/preflight_distribution_pressure.cpython-313.pyc": "fac65ca6f219de2706369ec67a8ceb18dfea227779aea83ca800d10378229887",
+    "/home/liuxv/LeasePath-new-server-data/scripts/__pycache__/check_qwen_cache_matrix.cpython-313.pyc": "4b15886432787d41e58537a5eecaee144446355b0fb24886193c99b39bb31f55",
+    "/home/liuxv/LeasePath-new-server-data/scripts/__pycache__/run_qwen_cache_matrix_v2.cpython-313.pyc": "d54be8f9f02d515d1f3dc9cc4d7d47bb0ea9521073aa5fbdc3a246c01f330630",
+    "/home/liuxv/LeasePath-new-server-data/scripts/__pycache__/run_qwen_cache_matrix_v2_capacity.cpython-313.pyc": "463f3518ed2ca077cde639c4319b3a58093398c403f379d95dd54acb2fd43796",
+    "/home/liuxv/LeasePath-new-server-data/scripts/__pycache__/summarize_qwen_resident_natural.cpython-313.pyc": "618ce2c554a795f5c098f44e98f9c78887e6a26d23707a5b364ad20fa2c94af8",
+    "/home/liuxv/LeasePath-new-server-data/scripts/__pycache__/check_qwen_shared_server_paired.cpython-313.pyc": "a5e1d058c4e5012a9e0c707a7a90355116569b46ff3fab00b7c603d3820f121d",
+    "/home/liuxv/LeasePath-new-server-data/scripts/__pycache__/verify_persisted_qwen_data_model.cpython-313.pyc": "225763c25b03d0f36c2f4d173361950407bb56db0801414a8592027939a80563",
+    "/home/liuxv/LeasePath-new-server-data/scripts/__pycache__/prepare_qwen_data_tasks.cpython-313.pyc": "6bb30964346eeed41f836a733a1cad36ada7108d0b866831733f6cbb756c8b81",
+    "/home/liuxv/LeasePath-new-server-data/scripts/__pycache__/check_qwen_distribution_pressure.cpython-313.pyc": "a0956c43f48eb3df559f22e181c2cf750a11c347192848e11486fdfc705cff03",
+    "/home/liuxv/LeasePath-new-server-data/scripts/__pycache__/check_qwen_cache_stage2.cpython-313.pyc": "b9cda624809d65f279a21d982ac57d0a0113e3e85100333466da6eecde21e2d3",
+    "/home/liuxv/LeasePath-new-server-data/scripts/__pycache__/analyze_qwen_cache_matrix_kernel.cpython-313.pyc": "5e1615a532e57097ce5d625e9b57a30f3e663bc5accae87808a12d1cf6a76d04",
+    "/home/liuxv/LeasePath-new-server-data/scripts/__pycache__/probe_qwen_cache_matrix.cpython-313.pyc": "e1e5eb06677195e1b5446c53a3b0324f52bdd6b84ead0143b05d429a687498f8",
+    "/home/liuxv/LeasePath-new-server-data/scripts/__pycache__/probe_qwen_tool_thp.cpython-313.pyc": "06a2d5f82caa502014eea51dc409dea336c55c4eb2449be32639c2741ccb4615",
+    "/home/liuxv/LeasePath-new-server-data/scripts/__pycache__/run_qwen_shared_server_paired.cpython-313.pyc": "0e63fa545c322c8d9aa2349b8cc7f0cd69073ad56a542e4680cfe4f6d7311ece",
+    "/home/liuxv/LeasePath-new-server-data/scripts/__pycache__/qwen_cache_stage3_batch.cpython-313.pyc": "c8abb6af7b90b2285b2b40c502775d935cfcd0c489deaeee44a71496dd6a44eb",
+    "/home/liuxv/LeasePath-new-server-data/scripts/__pycache__/run_qwen_cache_matrix.cpython-313.pyc": "1cf7322a68626c68e7bafaa408980820c205c594957bf65af622ff977e62ab91",
+    "/home/liuxv/LeasePath-new-server-data/scripts/__pycache__/run_qwen_cache_controlled_v2.cpython-313.pyc": "6d06c1e05c680d07956e946cd37783c0c934525b95119f2c46c6e72eb11337f8",
+    "/home/liuxv/LeasePath-new-server-data/scripts/__pycache__/probe_qwen_thread_contention.cpython-313.pyc": "ee3669d6727af85e410ff59ebaedc05c7b8a88f21dca541883c5edbf969cb802",
+    "/home/liuxv/LeasePath-new-server-data/scripts/__pycache__/run_qwen_cache_controlled.cpython-313.pyc": "1a4312fd242342b1e5528a7a81872740d0ab978f162b70eef91a291e9091fbff",
+    "/home/liuxv/LeasePath-new-server-data/scripts/__pycache__/audit_pressure_live_state.cpython-313.pyc": "f58a3411252d039b453f8a51a03ae9321bce6fa70e0c743164387848104be70a",
+    "/home/liuxv/LeasePath-new-server-data/scripts/__pycache__/probe_qwen_data_backend.cpython-313.pyc": "95b04e2b841a01567b77db56c24597fb10d200cf0ad7e4031f982c802407635d",
+    "/home/liuxv/LeasePath-new-server-data/scripts/__pycache__/probe_qwen_controlled_v2_tools.cpython-313.pyc": "20c9d007ceef398497d3e4584cc082f24bd2cc7d4b35eab78a4b3b134074a9c2",
+    "/home/liuxv/LeasePath-new-server-data/scripts/__pycache__/fetch_qwen_data_weights.cpython-313.pyc": "2718247c07cd2f684dfe2297215c0c2eb3b5e98db4d8c78140f6b4a00463be0b",
+    "/home/liuxv/LeasePath-new-server-data/scripts/__pycache__/check_qwen_cache_matrix_attempt.cpython-313.pyc": "0262fd102aa777b26329b4978e494b7e20d17914a4a69df807289a4931f81ac4",
+    "/home/liuxv/LeasePath-new-server-data/scripts/__pycache__/persist_qwen_data_model.cpython-313.pyc": "fcc770cdc69c63bb6ebf9f2fb52c81dd33bba009a13c511352c97b202a9cfe3b",
+    "/home/liuxv/LeasePath-new-server-data/scripts/__pycache__/qwen_cache_independent_agent_batch.cpython-313.pyc": "998102f83a52f76ee68671ae30fc2a7404a00fc6ce8dcef46e66aa58bfd0d88a",
+    "/home/liuxv/LeasePath-new-server-data/scripts/__pycache__/qwen_cache_controlled_v2_batch.cpython-313.pyc": "b27d53c1d674a4e23977c79d3ea57dac6c666b16b91325247fae92f756d49330",
+    "/home/liuxv/LeasePath-new-server-data/scripts/__pycache__/probe_qwen_controlled_tools.cpython-313.pyc": "016b7e4b61f519e1c6d0bce329af3bdd88e2facf00534e9eec74b7a364e2c798",
+    "/home/liuxv/LeasePath-new-server-data/scripts/__pycache__/analyze_qwen_cache_matrix_gaps.cpython-313.pyc": "6aa7c22b879cdd8f380dcd895cb2cfc687e60a3677da6826c63918b209712b85",
+    "/home/liuxv/LeasePath-new-server-data/scripts/__pycache__/run_qwen_distribution_v1.cpython-313.pyc": "e7dbef510d52e11695974fdda7a114746a9047e0254c1c42b41af62d57c9b60e",
+    "/home/liuxv/LeasePath-new-server-data/scripts/__pycache__/run_qwen_resident_natural_preloaded.cpython-313.pyc": "747cf1856cb3036b43f4235108ee2087489b206fca6e9a403eccf276e792e440",
+    "/home/liuxv/LeasePath-new-server-data/scripts/__pycache__/probe_qwen_distribution_parent_io.cpython-313.pyc": "df65dbf718b89e4a68aaa6e55135c3fc04abe2d17e1bd1e01ab56c32c15187d1",
+    "/home/liuxv/LeasePath-new-server-data/scripts/__pycache__/check_qwen_resident_natural.cpython-313.pyc": "11e38d45fa22a9157ed7af3c6f3c35fe475ae0d31b00a117419370678bbb6e6c",
+    "/home/liuxv/LeasePath-new-server-data/scripts/__pycache__/aggregate_qwen_data_fifty.cpython-313.pyc": "2d92f54d04463ee7db37336f3afc1086ac019c9afb68cf75c67fa7f6f29d60bf",
+    "/home/liuxv/LeasePath-new-server-data/scripts/__pycache__/run_qwen_data_pilot.cpython-313.pyc": "473480fd10faa824d2d88bc1610b24499f97546aca2dff2f12c623289c4044a7",
+    "/home/liuxv/LeasePath-new-server-data/scripts/__pycache__/preflight_real_development.cpython-313.pyc": "61f358a64b8426194be4ba3fb651719ed71be451383fd6507a453407f005e72c",
+    "/home/liuxv/LeasePath-new-server-data/scripts/__pycache__/audit_distribution_live.cpython-313.pyc": "4d6b408981c2a168b7cd2ecaec42010846b57bd62b20e527a75f8bd50e47243b",
+    "/home/liuxv/LeasePath-new-server-data/scripts/__pycache__/convert_qwen_data_model.cpython-313.pyc": "89625dd840d338edad3c6fef3ffb3a052423ccdb082aafc7a93602879d256837",
+    "/home/liuxv/LeasePath-new-server-data/scripts/__pycache__/qwen_cache_pressure_batch.cpython-313.pyc": "887ba75716b4455c46dd4360d91662d50024aad8fafa83d2b58a7a5277b491de",
+    "/home/liuxv/LeasePath-new-server-data/scripts/__pycache__/run_qwen_resident_natural.cpython-313.pyc": "ca2edcb5c011cc923383e541b5736a23c00dc046e011c5974792f63a5c3c7843",
+    "/home/liuxv/LeasePath-new-server-data/scripts/__pycache__/check_qwen_distribution_v1.cpython-313.pyc": "294711196a44860ec6ee0752e6395742739bab2313b19aa7a5c038ffb36d2cab",
+    "/home/liuxv/LeasePath-new-server-data/scripts/__pycache__/prepare_qwen_resident_runtime.cpython-313.pyc": "f960194af4a7c218601efed9eb20eefaa48c4b52b7071881332355c5a1a89d77",
+    "/home/liuxv/LeasePath-new-server-data/scripts/__pycache__/run_qwen_distribution_natural_verified.cpython-313.pyc": "20ceb7eaffca1c55b1333d8ab471acbe73d13081144d16a5e8be9e5c3912b229",
+    "/home/liuxv/LeasePath-new-server-data/scripts/__pycache__/qwen_cache_resident_tree_batch.cpython-313.pyc": "70816a649ff1912e9f91ec330d514ba937abdea20b5645365d44085be0be4173",
+    "/home/liuxv/LeasePath-new-server-data/scripts/__pycache__/audit_independent_agent_loop.cpython-313.pyc": "60e0ab59157de3caa1b25041bac08008ab8572ccce78d6ee8362f2b0ebaa69c8",
+    "/home/liuxv/LeasePath-new-server-data/scripts/__pycache__/qwen_cache_controlled_batch.cpython-313.pyc": "cb4bff357b111c5a44b05076ef1b5b0a7569afe33c0fd617534603ed4c56da0b",
+    "/home/liuxv/LeasePath-new-server-data/scripts/__pycache__/qwen_cache_stage3b_batch.cpython-313.pyc": "c4ab935f2a293ff85aaa633c6d965bc3788ebce74d6d90ac02da214306a95af7",
+    "/home/liuxv/LeasePath-new-server-data/scripts/__pycache__/audit_kv_distribution_actions.cpython-313.pyc": "45dab800c1b4bf02d92c2c81e98eee429a606d3b4c1758fd60609e58ca440cde",
+    "/home/liuxv/LeasePath-new-server-data/scripts/__pycache__/run_qwen_cache_stage2.cpython-313.pyc": "c1990df8359a4a8095f463c64f0dfa93a6d827a8f80ebca0bc83c34fc26ab34e",
+    "/home/liuxv/LeasePath-new-server-data/scripts/__pycache__/check_qwen_resident_tree_natural.cpython-313.pyc": "61fdfc4f48ad4bb3ff01a16adab1d1f34a6a5142195ec154735db7abbf6cc85c",
+    "/home/liuxv/LeasePath-new-server-data/scripts/__pycache__/probe_qwen_resident_tree_tools.cpython-313.pyc": "9dcbe74306b46a74da0d637821295a17061924c5f26690fb99d1b79338c19bab",
+    "/home/liuxv/LeasePath-new-server-data/scripts/__pycache__/audit_kv_distribution_cost_actions.cpython-313.pyc": "2c205ca0c27233307a3f4a0346568fb13b1ebd06da7d3a00e6a2e228c8f5c232",
+    "/home/liuxv/LeasePath-new-server-data/scripts/__pycache__/run_qwen_resident_tree_natural.cpython-313.pyc": "c17520dac2f9926d80c4da810864fb533d78c1bf957302b97dccc3171c611492",
+    "/home/liuxv/LeasePath-new-server-data/scripts/__pycache__/check_qwen_controlled_tools.cpython-313.pyc": "c2652253921bdfd995963ec94bb691f20ef90fde87bdd8edbf1a7a24dcd70c3a",
+    "/home/liuxv/LeasePath-new-server-data/scripts/__pycache__/run_qwen_distribution_natural.cpython-313.pyc": "2dc0d3db22a7e7741257ef9af6ff66f3c1f795a093acb1fcb505adcccbb909d5",
+    "/home/liuxv/LeasePath-new-server-data/scripts/__pycache__/train_reuse_predictor.cpython-313.pyc": "fb3d555937d747d3d529a85db1ca20636635e1008b6a9d178ead9db944f800be",
+    "/home/liuxv/LeasePath-new-server-data/scripts/__pycache__/run_qwen_cache_matrix_capacity.cpython-313.pyc": "76a604f36ed4537372e0f508777e328f9bb32628ddbb1c6d42880f2e9ce80282",
+    "/home/liuxv/LeasePath-new-server-data/scripts/__pycache__/summarize_qwen_cache_matrix_attempt.cpython-313.pyc": "18b2547b4347b6705e3b6b68a8f906feaf32b20079120a482b61ff06aa50810c",
+    "/home/liuxv/LeasePath-new-server-data/scripts/__pycache__/check_qwen_distribution_natural.cpython-313.pyc": "f14634c01d052dc92ee16c1c19445e2ff792d4197a99aab7216afdeac19d1070",
+    "/home/liuxv/LeasePath-new-server-data/scripts/__pycache__/probe_qwen_cache_native.cpython-313.pyc": "2f65cb6c95b942e1212846dffe65fe26048a73eeb8eda432132589715f2b7441",
+    "/home/liuxv/LeasePath-new-server-data/scripts/__pycache__/analyze_qwen_cache_matrix.cpython-313.pyc": "153ca4e99d1c6d7bdc4ac4e8973683f1cce7f06451b30815c2734e566e5a7835",
+    "/home/liuxv/LeasePath-new-server-data/scripts/__pycache__/qwen_cache_shared_paired_batch.cpython-313.pyc": "7693f8cf71eedcc1b3d6f0205eef4a53e3fc9f192a71ab2377ca96a007c65373",
+    "/home/liuxv/LeasePath-new-server-data/native/leasepath_preexec_v1.c": "2356c0656e5f2446ef7596345bed9d1211ecfe1ae9107c47157f24a28ff400c0",
+    "/dev/shm/leasepath-preexec-v2-20261110/launcher": "8b55d5fe3c86957df0a526f74a7310036d824f25c130accdb9fe16d94ce5c5b7"
+  },
+  "causal_scope": "v1 observed13 lifecycle faults:5 worker extension-loader windows and8 ldconfig descendant faults. v2 targets those mechanisms; not a unique kernel fault-address proof or retrospective fix.",
+  "prior_failed_qualification": {
+    "path": "/dev/shm/leasepath-preexec-v1-20261110/qualification/summary.json",
+    "sha256": "82464f75615da8d5abc44dd73325f22f1cd49757859d8fe66abd2e8333d51fe3",
+    "generations": 0,
+    "tool_calls": 29
+  },
+  "capacity_blocks": 32,
+  "concurrency": 3
+}

@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "source": "/dev/shm/leasepath-preexec-v2-20261110",
+  "base_archive": "/home/liuxv/LeasePath-new-server-data/.artifacts/checkpoints/pressure-independent-2026-11-10/raw-evidence.tar.gz",
+  "base_archive_sha256": "cf29f77730750dc3fe5a77cc6edc371ca4faf6791de52b38c1279ab1836aea90",
+  "delta_archive": ".artifacts/checkpoints/pressure-preexec-v2-2026-11-10/diagnostic-delta.tar.gz",
+  "delta_archive_sha256": "79a018b86612fe15a68137d7e630b16b879c8b8894beab6a7aa0180c3b443243",
+  "delta_bytes": 543024180,
+  "delta_members_verified": 433,
+  "base_regular_files_reused": 22273,
+  "restore_rule": "Construct source root from each base/delta archive_member at relative path; verify sha256 before use. Recreate recorded symlinks. Existing historical archive is immutable."
+}

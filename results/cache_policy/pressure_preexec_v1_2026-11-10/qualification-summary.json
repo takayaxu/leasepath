@@ -1,0 +1,66 @@
+{
+  "status": "failed",
+  "resource_recipe": "preexec-affinity-membind-thp-limits-v1",
+  "rows": [
+    {
+      "mode": "trace",
+      "concurrency": 10,
+      "correct": 10,
+      "parent_delta": {
+        "major_faults": 0,
+        "block_input_ops": 0,
+        "read_bytes": 0
+      },
+      "worker_lifetime_major_faults": 0,
+      "worker_read_bytes": 0,
+      "worker_block_input_ops": 0,
+      "descendant_processes": 40
+    },
+    {
+      "mode": "qualify",
+      "concurrency": 3,
+      "correct": 3,
+      "parent_delta": {
+        "major_faults": 0,
+        "block_input_ops": 0,
+        "read_bytes": 0
+      },
+      "worker_lifetime_major_faults": 0,
+      "worker_read_bytes": 0,
+      "worker_block_input_ops": 0,
+      "descendant_processes": 12
+    },
+    {
+      "mode": "qualify",
+      "concurrency": 6,
+      "correct": 6,
+      "parent_delta": {
+        "major_faults": 0,
+        "block_input_ops": 0,
+        "read_bytes": 0
+      },
+      "worker_lifetime_major_faults": 0,
+      "worker_read_bytes": 0,
+      "worker_block_input_ops": 0,
+      "descendant_processes": 24
+    },
+    {
+      "mode": "qualify",
+      "concurrency": 10,
+      "correct": 10,
+      "parent_delta": {
+        "major_faults": 0,
+        "block_input_ops": 0,
+        "read_bytes": 0
+      },
+      "worker_lifetime_major_faults": 13,
+      "worker_read_bytes": 0,
+      "worker_block_input_ops": 0,
+      "descendant_processes": 40
+    }
+  ],
+  "tool_calls": 29,
+  "numeric_replacement_calls": 0,
+  "model_generations": 0,
+  "natural_JCT_passed": false
+}
