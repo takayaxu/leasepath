@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "tests": 10,
+  "command": "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=.artifacts/prediction-holdout-deps:src OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 python -m pytest -q tests/test_pressure_model_staging.py tests/test_pressure_staged_admission.py tests/test_distribution_model_residency.py tests/test_pressure_stage_v1.py",
+  "elapsed_s": 55.23,
+  "native_generations": 0,
+  "checked_wall_ns": 1794283599965788649,
+  "baseline_id": "gbdt-distribution-equalcost-H30-tau10-v1",
+  "baseline_manifest_sha256": "bf93dcdbb907cc130cdc3bd23f4e14e00fc29766942ae827694a24461c3a42bc"
+}

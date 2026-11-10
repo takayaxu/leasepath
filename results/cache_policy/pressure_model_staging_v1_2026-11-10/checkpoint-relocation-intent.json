@@ -1,0 +1,8 @@
+{
+  "wall_ns": 1794283901736270937,
+  "pid": 2088500,
+  "command": "python scripts/stage_pressure_model_v1.py --plan results/cache_policy/pressure_model_staging_v1_2026-11-10/plan.json --checkpoint results/cache_policy/pressure_model_staging_v1_2026-11-10/checkpoint.json ",
+  "wchan": "jbd2_log_wait_commit",
+  "io": "rchar: 6980500359\nwchar: 6980221288\nsyscr: 2034\nsyscw: 367\nread_bytes: 2386518016\nwrite_bytes: 1429504\ncancelled_write_bytes: 0\n",
+  "reason": "Move hot progress/checkpoint metadata to own tmpfs after observing jbd2_log_wait_commit, preserving exact plan and cumulative budget; original paused checkpoint is retained. No native or JCT started."
+}

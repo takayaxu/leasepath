@@ -1,0 +1,10 @@
+{
+  "tests": 3,
+  "status": "passed",
+  "cases": [
+    "native failure prevents all later cells",
+    "independent audit failure prevents all later cells",
+    "deadline interrupts and reaps child"
+  ],
+  "initial_report_fixture_failure_corrected": true
+}

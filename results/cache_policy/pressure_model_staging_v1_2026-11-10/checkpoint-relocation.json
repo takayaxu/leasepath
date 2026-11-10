@@ -1,0 +1,12 @@
+{
+  "status": "verified",
+  "wall_ns": 1794283940823829682,
+  "old_checkpoint": "/home/liuxv/LeasePath-new-server-data/results/cache_policy/pressure_model_staging_v1_2026-11-10/checkpoint.json",
+  "new_checkpoint": "/dev/shm/leasepath-model-stage-v1-20261110/checkpoint.json",
+  "sha256": "c48585a57026a9ddec9ee1192115837fe427245a0ebc0c3645734e91817b9a1b",
+  "committed_bytes": 6979321856,
+  "total_elapsed_s": 817.1127587270457,
+  "same_staging_plan": true,
+  "native_generations": 0,
+  "old_process_exited": true
+}
