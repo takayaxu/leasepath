@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "created_wall_ns": 1794283086426465922,
+  "source": "/home/liuxv/local-models/qwen25-coder-32b-leasepath/persistent-f16/Qwen2.5-Coder-32B-Instruct-F16.gguf",
+  "source_identity": {
+    "st_dev": 64768,
+    "st_ino": 538574990,
+    "st_size": 65535970144,
+    "st_mtime_ns": 1794042459039366122,
+    "st_ctime_ns": 1794043977304884357
+  },
+  "destination": "/dev/shm/leasepath-model-stage-v1-20261110/Qwen2.5-Coder-32B-Instruct-F16.gguf",
+  "bytes": 65535970144,
+  "sha256": "0c2f9e4daac78e72b24f7c054416232a523f0fd2aeb37653747d3c21f7dca078",
+  "chunk_bytes": 67108864,
+  "total_budget_s": 10800,
+  "attempt_budget_s": 3600,
+  "minimum_total_available_bytes": 236223201280,
+  "tmpfs_reserve_bytes": 8589934592,
+  "script": "/home/liuxv/LeasePath-new-server-data/scripts/stage_pressure_model_v1.py",
+  "script_sha256": "fe6eed2ef3fe8bda423f4d138ea350a93f99d2d88fde8b1258c24797dc1265e3",
+  "scope": "preparation only; no inference, no tools, no JCT. Independent 3h cumulative storage budget, 1h per invocation; original native keeper timeout1800s unchanged. Pause on resource guard, preserve prefix and failures. Native only after full destination hash, source stat, own resident bytes and fresh host/GPU admission.",
+  "memory_accounting": "MemAvailable + own model bytes actually resident by mincore >=220GiB; this keeps original 120GiB tool,4GiB runtime/input,16GiB native reserve and remaining margin; no credit for nonresident/swapped pages.",
+  "new_model_generations": 0
+}
