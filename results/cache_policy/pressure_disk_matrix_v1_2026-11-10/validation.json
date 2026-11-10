@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "rejection_and_keeper_tests": 11,
+  "continuation_tests": 2,
+  "full_historical_reaudit": "passed",
+  "fresh_tool_qualification": "passed",
+  "model_generations": 0
+}

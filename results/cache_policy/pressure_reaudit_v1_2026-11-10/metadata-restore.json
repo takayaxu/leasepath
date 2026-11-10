@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "root": "/dev/shm/leasepath-model-stage-v1-20261110",
+  "files": 21,
+  "archive_sha256": "3760395865bf1a8e46b45424fd069bb594aac2f792e5f52260c108d3c4212f1d",
+  "model_file_restored": false
+}

@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "manifest_sha256": "6628185e4d06c302cf1ffdf9e686c3ccfe500e1b5a74fcec5ecb10b343785c9c",
+  "root": "/dev/shm/leasepath-preexec-v2-20261110",
+  "archives": [
+    {
+      "kind": "base",
+      "archive": "/home/liuxv/LeasePath-new-server-data/.artifacts/checkpoints/pressure-independent-2026-11-10/raw-evidence.tar.gz",
+      "sha256": "cf29f77730750dc3fe5a77cc6edc371ca4faf6791de52b38c1279ab1836aea90"
+    },
+    {
+      "kind": "delta",
+      "archive": "/home/liuxv/LeasePath-new-server-data/.artifacts/checkpoints/pressure-staged-matrix-v2-2026-11-10/diagnostic-delta.tar.gz",
+      "sha256": "25de56d44ab79c29f42e53342c5a0332b4631aacc41dc895a2e86841312dc3ac"
+    }
+  ],
+  "files": 23442,
+  "regular_bytes": 3867038538,
+  "elapsed_s": 54.701487466925755,
+  "method": "full archive hash plus every restored regular file hash; recorded symlinks"
+}

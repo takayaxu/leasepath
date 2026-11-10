@@ -1,0 +1,14 @@
+{
+  "created_wall_ns": 1794296256986476104,
+  "scope": "read-only reaudit of original44generations; initial KeyError audit unchanged, no model/tool execution or replacement; strict schema rejection reproduction, raw native output linkage, raw worker PID bijection and all old protocol/resource checks",
+  "new_generations": 0,
+  "run": "/dev/shm/leasepath-preexec-v2-20261110/staged-native-v2/diagnostic-24-10",
+  "archive_manifest": "/home/liuxv/LeasePath-new-server-data/.artifacts/checkpoints/pressure-staged-matrix-v2-2026-11-10/restore-manifest.json",
+  "source_sha256": {
+    "/home/liuxv/LeasePath-new-server-data/scripts/audit_pressure_rejection_v1.py": "87b899af8a703dc05dca1f33e273b69087e1f247913effce3208073f0ff622ca",
+    "/home/liuxv/LeasePath-new-server-data/scripts/audit_pressure_protocol_v3.py": "a0280e9fb49b536fc1f30eb3be6aa29c8a6379afa43b2c47934cf04abe8da1da",
+    "/home/liuxv/LeasePath-new-server-data/scripts/check_qwen_preexec_pressure_v5.py": "771be7d477d1da580f9cfee34559a9468b13ab580968bd07dcbd704d4625f891"
+  },
+  "tests_passed": 8,
+  "model_evidence": "archived completed double full SHA256 and recorded mlock/mincore; missing tmpfs model is not claimed live/ready for new inference"
+}

@@ -1,0 +1,13 @@
+{
+  "path": "/home/liuxv/local-models/qwen25-coder-32b-leasepath/persistent-f16/Qwen2.5-Coder-32B-Instruct-F16.gguf",
+  "identity": {
+    "st_dev": 64768,
+    "st_ino": 538574990,
+    "st_size": 65535970144,
+    "st_mtime_ns": 1794042459039366122,
+    "st_ctime_ns": 1794043977304884357
+  },
+  "resident_bytes": 38445464416,
+  "elapsed_s": 2.2313370869960636,
+  "observed_wall_ns": 1794295842081129678
+}
