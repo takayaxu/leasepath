@@ -1,0 +1,8 @@
+{
+  "wall_ns": 1794292824380516682,
+  "wchan": "blk_io_schedule",
+  "io": "rchar: 22768103960\nwchar: 404618\nsyscr: 21936\nsyscw: 679\nread_bytes: 17539072\nwrite_bytes: 0\ncancelled_write_bytes: 0\n",
+  "fd4": "pos:\t22761439232\nflags:\t02100000\nmnt_id:\t32\nino:\t2195028\n",
+  "memory_psi": "some avg10=27.91 avg60=27.08 avg300=26.80 total=7363222908\nfull avg10=25.47 avg60=24.38 avg300=23.92 total=5146982020\n",
+  "io_psi": "some avg10=50.17 avg60=45.95 avg300=45.33 total=51531521101\nfull avg10=44.54 avg60=40.62 avg300=39.74 total=38047582008\n"
+}

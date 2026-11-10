@@ -1,0 +1,124 @@
+{
+  "status": "read_only_triage_complete",
+  "independent_full_audit_passed": false,
+  "native_gate_passed": true,
+  "tasks_correct": 10,
+  "new_generations": 44,
+  "known_cumulative_generations": 1771,
+  "natural_cells_completed": 0,
+  "rejection_reproduced_from_frozen_schema": true,
+  "recorded_error_message_exactly_matches": true,
+  "invalid_call": {
+    "call_id": "tdced69bbe8ed42d2b8131168b883386c",
+    "name": "compute",
+    "arguments": {
+      "dataset_id": "dmissing_median",
+      "operation": "impute",
+      "strategy": "median",
+      "column": 2
+    },
+    "started_ns": 1468142181111088,
+    "status": "error",
+    "ended_ns": 1468142186436823,
+    "call_thread_cpu_ns": 5272159,
+    "result": {
+      "error": "ValidationError",
+      "message": "{'dataset_id': 'dmissing_median', 'operation': 'impute', 'strategy': 'median', 'column': 2} is not valid under any of the given schemas\n\nFailed validating 'oneOf' in schema:\n    {'type': 'object',\n     'properties': {'dataset_id': {'type': 'string',\n                                   'pattern': '^[a-z][a-z0-9_-]{0,63}$',\n                                   'maxLength': 64},\n                    'operation': {'enum': ['impute', 'quantile']},\n                    'strategy': {'anyOf': [{'enum': ['mean', 'median'],\n                                            'description': 'Fill missing '\n                                                           'values using '\n                                                           'the selected '\n                                                           '"
+    },
+    "call_evidence_write_ns": 851820
+  },
+  "corrected_call_arguments": {
+    "dataset_id": "dmissing_median",
+    "operation": "impute",
+    "strategy": "median"
+  },
+  "actual_error_feedback_in_later_model_prompt": true,
+  "all_actual_compute_workers": [
+    {
+      "task": "dominant_frequency",
+      "pid": 2916231,
+      "major_faults": 0,
+      "block_input_ops": 0,
+      "read_bytes": 0,
+      "has_preexec_controls": true
+    },
+    {
+      "task": "feature_information",
+      "pid": 2916767,
+      "major_faults": 0,
+      "block_input_ops": 0,
+      "read_bytes": 0,
+      "has_preexec_controls": true
+    },
+    {
+      "task": "image_regions",
+      "pid": 2917159,
+      "major_faults": 0,
+      "block_input_ops": 0,
+      "read_bytes": 0,
+      "has_preexec_controls": true
+    },
+    {
+      "task": "logistic_holdout",
+      "pid": 2918045,
+      "major_faults": 0,
+      "block_input_ops": 0,
+      "read_bytes": 0,
+      "has_preexec_controls": true
+    },
+    {
+      "task": "missing_median",
+      "pid": 2923230,
+      "major_faults": 0,
+      "block_input_ops": 0,
+      "read_bytes": 0,
+      "has_preexec_controls": true
+    },
+    {
+      "task": "multi_group_anova",
+      "pid": 2918526,
+      "major_faults": 0,
+      "block_input_ops": 0,
+      "read_bytes": 0,
+      "has_preexec_controls": true
+    },
+    {
+      "task": "priority_top",
+      "pid": 2918935,
+      "major_faults": 0,
+      "block_input_ops": 0,
+      "read_bytes": 0,
+      "has_preexec_controls": true
+    },
+    {
+      "task": "rank_sum_test",
+      "pid": 2919271,
+      "major_faults": 0,
+      "block_input_ops": 0,
+      "read_bytes": 0,
+      "has_preexec_controls": true
+    },
+    {
+      "task": "ridge_validation",
+      "pid": 2920011,
+      "major_faults": 0,
+      "block_input_ops": 0,
+      "read_bytes": 0,
+      "has_preexec_controls": true
+    },
+    {
+      "task": "temporal_asof",
+      "pid": 2920147,
+      "major_faults": 0,
+      "block_input_ops": 0,
+      "read_bytes": 0,
+      "has_preexec_controls": true
+    }
+  ],
+  "parent_zero_read_bytes_major_fault_block_input": true,
+  "evidence_sha256": {
+    "/dev/shm/leasepath-preexec-v2-20261110/staged-native-v2/diagnostic-24-10/cycle-0-gbdt_distribution/batch/missing_median-quality.json": "0ab2471f6f274584ffca159a6a75042ae603456988e12255c37f4aaed6b8ac07"
+  },
+  "next_required_work": "Versioned read-only auditor must strictly distinguish reproduced prelaunch schema rejections from successful worker executions; preserve this initial failed audit and re-read same evidence, no replacement model run. Full original audit checks still required.",
+  "recorded_wall_ns": 1794295396205267609
+}

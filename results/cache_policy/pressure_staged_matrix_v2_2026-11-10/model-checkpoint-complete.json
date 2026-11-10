@@ -1,0 +1,64 @@
+{
+  "version": 3,
+  "status": "complete",
+  "plan_sha256": "336abb7890e7337a5b636e1ec3c9b68b211221bb45f08290008fd8b55a45ad72",
+  "pass": 3,
+  "offset": 0,
+  "chunk_index": 0,
+  "sha_state": null,
+  "elapsed_s": 2033.8683251028415,
+  "attempts": [
+    {
+      "started_wall_ns": 1794292257271315659,
+      "resume_pass": 1,
+      "resume_offset": 0,
+      "finished_wall_ns": 1794294291139280708,
+      "elapsed_s": 2033.8683271219488,
+      "status": "complete",
+      "verified_pass": 3,
+      "verified_offset": 0
+    }
+  ],
+  "passes": [
+    {
+      "pass": 1,
+      "sha256": "0c2f9e4daac78e72b24f7c054416232a523f0fd2aeb37653747d3c21f7dca078",
+      "bytes": 65535970144,
+      "all_copy_chunk_hashes_checked": true,
+      "finished_wall_ns": 1794293685385397697
+    },
+    {
+      "pass": 2,
+      "sha256": "0c2f9e4daac78e72b24f7c054416232a523f0fd2aeb37653747d3c21f7dca078",
+      "bytes": 65535970144,
+      "all_copy_chunk_hashes_checked": true,
+      "finished_wall_ns": 1794294291139003323
+    }
+  ],
+  "model_identity": {
+    "st_dev": 27,
+    "st_ino": 2195028,
+    "st_size": 65535970144,
+    "st_mtime_ns": 1794286121898089978,
+    "st_ctime_ns": 1794292071243692998
+  },
+  "new_model_generations": 0,
+  "checkpoint_sha256": "ba65ea675c3e824e58cde6697ac22ea69b1ff6c7decacc83af596048b6bf029f",
+  "memory_admission": {
+    "available_bytes": 234307584000,
+    "owned_model_bytes": 65535970144,
+    "effective_available_bytes": 299843554144,
+    "required_total_bytes": 236223201280
+  },
+  "sha256": "0c2f9e4daac78e72b24f7c054416232a523f0fd2aeb37653747d3c21f7dca078",
+  "bytes": 65535970144,
+  "destination_identity": {
+    "st_dev": 27,
+    "st_ino": 2195028,
+    "st_size": 65535970144,
+    "st_mtime_ns": 1794286121898089978,
+    "st_ctime_ns": 1794292071243692998
+  },
+  "destination_full_hash_verified": true,
+  "verification": "two independent complete destination SHA256 passes and all original copy-chunk hashes"
+}

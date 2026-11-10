@@ -1,0 +1,35 @@
+{
+  "status": "stopped_after_independent_audit_error",
+  "recorded_client_time": "2026-11-10T15:27:03+08:00",
+  "model_verification_passes": [
+    {
+      "pass": 1,
+      "sha256": "0c2f9e4daac78e72b24f7c054416232a523f0fd2aeb37653747d3c21f7dca078",
+      "bytes": 65535970144,
+      "all_copy_chunk_hashes_checked": true,
+      "finished_wall_ns": 1794293685385397697
+    },
+    {
+      "pass": 2,
+      "sha256": "0c2f9e4daac78e72b24f7c054416232a523f0fd2aeb37653747d3c21f7dca078",
+      "bytes": 65535970144,
+      "all_copy_chunk_hashes_checked": true,
+      "finished_wall_ns": 1794294291139003323
+    }
+  ],
+  "model_verifier_elapsed_s": 2033.8683251028415,
+  "native_probe_passed": 13,
+  "live_tasks_correct": 10,
+  "new_generations": 44,
+  "known_cumulative_generations": 1771,
+  "natural_cells_completed": 0,
+  "full_native_audit_passed": false,
+  "audit_error": "KeyError preexec_controls on a schema-rejected compute call; read-only triage reproduced error and confirmed no worker launched for it",
+  "raw_archive_sha256": "25de56d44ab79c29f42e53342c5a0332b4631aacc41dc895a2e86841312dc3ac",
+  "raw_archive_bytes": 1369222030,
+  "metadata_archive_sha256": "3760395865bf1a8e46b45424fd069bb594aac2f792e5f52260c108d3c4212f1d",
+  "archiving_complete": true,
+  "own_tmpfs_cleaned": true,
+  "live_model_revalidated_after_cleanup": false,
+  "next_step": "Versioned independent auditor for prelaunch schema rejections; restore evidence, re-audit same44calls, no replacement inference."
+}
