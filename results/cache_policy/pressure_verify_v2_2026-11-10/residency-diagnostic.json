@@ -1,0 +1,15 @@
+{
+  "wall_ns": 1794291705645034096,
+  "model_identity": {
+    "st_dev": 27,
+    "st_ino": 2195028,
+    "st_size": 65535970144,
+    "st_mtime_ns": 1794286121898089978,
+    "st_ctime_ns": 1794286121898089978
+  },
+  "resident_bytes": 65474837344,
+  "nonresident_bytes": 61132800,
+  "mincore_duration_s": 2.6876683009322733,
+  "memory_psi": "some avg10=26.89 avg60=27.26 avg300=28.31 total=7066633586\nfull avg10=24.29 avg60=25.07 avg300=26.26 total=4882648133\n",
+  "io_psi": "some avg10=49.55 avg60=44.17 avg300=42.91 total=51026792862\nfull avg10=43.53 avg60=39.58 avg300=38.84 total=37607856400\n"
+}

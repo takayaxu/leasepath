@@ -1,0 +1,8 @@
+{
+  "pid": 2314639,
+  "start_ticks": 145836736,
+  "launched_wall_ns": 1794285128883524902,
+  "commit": "4a4eca10319a55b73b0cf1aeddee690459e57c94",
+  "plan": "/home/liuxv/LeasePath-new-server-data/results/cache_policy/pressure_staged_matrix_v1_2026-11-10/plan.json",
+  "detached": true
+}

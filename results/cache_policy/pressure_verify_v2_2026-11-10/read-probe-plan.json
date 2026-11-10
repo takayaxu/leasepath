@@ -1,0 +1,4 @@
+{
+  "scope": "read-only storage diagnosis, no model generations; four sequential64MiB reads at0 and32GiB in original and staged files, fixed reusable1MiB buffer; own preexec controls CPU0/28 NUMA0 THPoff 2GiB AS240s CPU; per read timeout45s; retain timeout and strace evidence",
+  "created_wall_ns": 1794291678189557638
+}

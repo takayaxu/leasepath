@@ -1,0 +1,45 @@
+{
+  "version": 2,
+  "created_wall_ns": 1794292071248109622,
+  "model_path": "/dev/shm/leasepath-model-stage-v1-20261110/Qwen2.5-Coder-32B-Instruct-F16.gguf",
+  "model_identity": {
+    "st_dev": 27,
+    "st_ino": 2195028,
+    "st_size": 65535970144,
+    "st_mtime_ns": 1794286121898089978,
+    "st_ctime_ns": 1794292071243692998
+  },
+  "bytes": 65535970144,
+  "sha256": "0c2f9e4daac78e72b24f7c054416232a523f0fd2aeb37653747d3c21f7dca078",
+  "source_sha256": {
+    "/home/liuxv/LeasePath-new-server-data/scripts/verify_pressure_model_v2.py": "a2a1b06d3beacc623daba53e86a624bab65a06479882f9999f50cad7ed8206e6",
+    "/home/liuxv/LeasePath-new-server-data/scripts/stage_pressure_model_v1.py": "fe6eed2ef3fe8bda423f4d138ea350a93f99d2d88fde8b1258c24797dc1265e3",
+    "/home/liuxv/LeasePath-new-server-data/native/leasepath_storage_preexec_v2.c": "d6f03f4cce15329cdc9a5e51e64eeb6986f6742264c8ad67349749c319b3ac29",
+    "/dev/shm/leasepath-model-stage-v1-20261110/storage-launcher-v2": "09a6c4de258eeec4db2780bb987357346a0e3d8d6ceb9e22a31f3739c499340c",
+    "/home/liuxv/LeasePath-new-server-data/results/cache_policy/pressure_verify_v2_2026-11-10/prior-checkpoint.json": "a68bc5c4d1c3efdce4c8137cf2a2766d08a29227df6efa279935a0e8195fd05f",
+    "/home/liuxv/LeasePath-new-server-data/results/cache_policy/pressure_model_staging_v1_2026-11-10/plan.json": "73551b6961928b7962cb36c6abdb7f2f62413c5af92e99d9908d32c6712ab11f",
+    "/usr/lib/x86_64-linux-gnu/libcrypto.so.3": "7cc817ff1841b59516d684f357bc0c3fc2cc52c3fa9b4ffb8ce8bdc215f02915"
+  },
+  "copy_plan": "/home/liuxv/LeasePath-new-server-data/results/cache_policy/pressure_model_staging_v1_2026-11-10/plan.json",
+  "copy_checkpoint": "/home/liuxv/LeasePath-new-server-data/results/cache_policy/pressure_verify_v2_2026-11-10/prior-checkpoint.json",
+  "libcrypto": "/usr/lib/x86_64-linux-gnu/libcrypto.so.3",
+  "buffer_bytes": 1048576,
+  "remaining_budget_s": 2610,
+  "original_total_budget_s": 10800,
+  "prior_recorded_elapsed_s": 4417.2754804769065,
+  "previous_unrecorded_attempt_s": 3772.708775274,
+  "prior_total_elapsed_s": 8189.984255750906,
+  "minimum_total_available_bytes": 236223201280,
+  "storage_controls": {
+    "cpus": [
+      0,
+      28
+    ],
+    "numa_node": 0,
+    "THP_disabled": true,
+    "memory_limit_gib": 2,
+    "cpu_limit_s": 1800
+  },
+  "method": "Two independent full destination SHA256 hashes; every chunk checked against original copied chunk; serialized OpenSSL SHA256 state after each64MiB; reuse only with immutable stat, exact verifier/libcrypto and checkpoint checksum. No claim of newly reading source model in full.",
+  "scope": "Storage preparation only, no JCT/generation or global controls. Original wall budget unchanged; missing killed runtime charged. No retry after resource/integrity failure."
+}

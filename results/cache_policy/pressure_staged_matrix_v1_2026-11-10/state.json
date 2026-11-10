@@ -1,0 +1,24 @@
+{
+  "status": "stopped",
+  "pid": 2314639,
+  "started_wall_ns": 1794285128959854087,
+  "plan_sha256": "c51d336a13f02ae06c7ae84c467603f51801edea775f9d6f666f8c5c81d67ff4",
+  "steps": [],
+  "new_model_generations": 0,
+  "natural_JCT_passed": false,
+  "model_preparation": {
+    "status": "verifying_prefix",
+    "bytes": 65535970144,
+    "total_elapsed_s": 4417.2754804769065
+  },
+  "updated_utc": "2026-11-10T06:15:21.723198+00:00",
+  "error": "TimeoutExpired: Command '['/opt/anaconda3/bin/python', '/home/liuxv/LeasePath-new-server-data/scripts/stage_pressure_model_v1.py', '--plan', '/home/liuxv/LeasePath-new-server-data/results/cache_policy/pressure_model_staging_v1_2026-11-10/plan.json', '--checkpoint', '/dev/shm/leasepath-model-stage-v1-20261110/checkpoint.json']' timed out after 3660 seconds",
+  "finished_wall_ns": 1794291321705911610,
+  "generation_count_semantics": "all reserved calls charged, including incomplete calls; no replacement",
+  "retained_tmpfs_roots": [
+    "/dev/shm/leasepath-preexec-v2-20261110",
+    "/dev/shm/leasepath-model-stage-v1-20261110"
+  ],
+  "cleanup_required_after_review": true,
+  "archiving": false
+}

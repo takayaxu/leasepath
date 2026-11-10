@@ -1,0 +1,7 @@
+{
+  "name": "staged-34359738368",
+  "returncode": 0,
+  "elapsed": 0.3158927629701793,
+  "log": "/dev/shm/leasepath-model-stage-v1-20261110/staged-34359738368.log",
+  "trace": "/dev/shm/leasepath-model-stage-v1-20261110/staged-34359738368.strace"
+}

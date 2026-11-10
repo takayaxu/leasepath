@@ -1,0 +1,11 @@
+{
+  "tests": 10,
+  "status": "passed",
+  "groups": {
+    "verifier_and_windowed_residency": 6,
+    "failure_stop_and_deadline": 3,
+    "native_hash_admission": 1
+  },
+  "pytest_autoload_disabled": true,
+  "first_default_pytest_invocation_interrupted_during_shared_disk_wait": true
+}

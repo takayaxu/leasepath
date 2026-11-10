@@ -1,0 +1,5 @@
+{"bytes": 1048576, "elapsed": 0.003597381990402937}
+{"bytes": 17825792, "elapsed": 0.059619735926389694}
+{"bytes": 34603008, "elapsed": 0.11271561100147665}
+{"bytes": 51380224, "elapsed": 0.16550664696842432}
+{"status": "complete", "elapsed": 0.2157671528402716, "offset": 34359738368, "sha256": "a2951991c4930e41b2e16e32876a5189233b2c54e6a1cd91c1f0314a6ed22228", "major_faults": 0, "io": "rchar: 67778142\nwchar: 209\nsyscr: 189\nsyscw: 4\nread_bytes: 0\nwrite_bytes: 0\ncancelled_write_bytes: 0\n"}

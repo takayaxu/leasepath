@@ -1,0 +1,33 @@
+{
+  "version": 2,
+  "status": "failed",
+  "plan_sha256": "74c3fc3f828a38f310705e499241601a40407906f96e8a23f17bb681d87ccffb",
+  "pass": 1,
+  "offset": 67108864,
+  "chunk_index": 1,
+  "sha_state": "0c4be5b224b432c4a5d37d1b7a97001db1dd07320e3ba08638c79bb05cbbc9060000002000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000020000000",
+  "elapsed_s": 3.292381029110402,
+  "attempts": [
+    {
+      "started_wall_ns": 1794292119784294423,
+      "resume_pass": 1,
+      "resume_offset": 0,
+      "finished_wall_ns": 1794292122750332279,
+      "elapsed_s": 3.2923852959647775,
+      "status": "failed",
+      "verified_pass": 1,
+      "verified_offset": 67108864
+    }
+  ],
+  "passes": [],
+  "model_identity": {
+    "st_dev": 27,
+    "st_ino": 2195028,
+    "st_size": 65535970144,
+    "st_mtime_ns": 1794286121898089978,
+    "st_ctime_ns": 1794292071243692998
+  },
+  "new_model_generations": 0,
+  "checkpoint_sha256": "78bab5aa2cd0feea50583fbd77c69f0628479be86b76ddecfa50026379849405",
+  "error": "OSError: [Errno 12] mmap for mincore"
+}

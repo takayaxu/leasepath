@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "tests": 6,
+  "duration_s": 0.65,
+  "cases": [
+    "serialized SHA256 matches hashlib across partial-block resume",
+    "two complete passes after interruption",
+    "changed file/checkpoint rejected",
+    "wrong complete hash rejected",
+    "partial last page not overcredited",
+    "3GiB file checked under256MiB AS"
+  ]
+}
