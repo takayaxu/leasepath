@@ -1,0 +1,28 @@
+{
+  "wall_ns": 1794292612767072266,
+  "wchan": "blk_io_schedule",
+  "io": "rchar: 22758666776\nwchar: 404618\nsyscr: 21927\nsyscw: 679\nread_bytes: 8675328\nwrite_bytes: 0\ncancelled_write_bytes: 0\n",
+  "status": "Name:\tpython3.13\nUmask:\t0002\nState:\tD (disk sleep)\nTgid:\t2645564\nNgid:\t0\nPid:\t2645564\nPPid:\t2645563\nTracerPid:\t0\nUid:\t1012\t1012\t1012\t1012\nGid:\t1013\t1013\t1013\t1013\nFDSize:\t64\nGroups:\t27 120 1013 \nNStgid:\t2645564\nNSpid:\t2645564\nNSpgid:\t2645563\nNSsid:\t2645558\nVmPeak:\t   63336 kB\nVmSize:\t   30568 kB\nVmLck:\t       0 kB\nVmPin:\t       0 kB\nVmHWM:\t   21880 kB\nVmRSS:\t   21880 kB\nRssAnon:\t   12560 kB\nRssFile:\t    5508 kB\nRssShmem:\t    3812 kB\nVmData:\t   13356 kB\nVmStk:\t     132 kB\nVmExe:\t    3172 kB\nVmLib:\t    5208 kB\nVmPTE:\t      88 kB\nVmSwap:\t       0 kB\nHugetlbPages:\t       0 kB\nCoreDumping:\t0\nTHP_enabled:\t0\nThreads:\t1\nSigQ:\t1/2060032\nSigPnd:\t0000000000000000\nShdPnd:\t0000000000000000\nSigBlk:\t0000000000000000\nSigIgn:\t0000000001001000\nSigCgt:\t0000000000006002\nCapInh:\t0000000000000000\nCapPrm:\t0000000000000000\nCapEff:\t0000000000000000\nCapBnd:\t000001ffffffffff\nCapAmb:\t0000000000000000\nNoNewPrivs:\t0\nSeccomp:\t0\nSeccomp_filters:\t0\nSpeculation_Store_Bypass:\tthread vulnerable\nSpeculationIndirectBranch:\tconditional enabled\nCpus_allowed:\t000000,10000001\nCpus_allowed_list:\t0,28\nMems_allowed:\t00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000003\nMems_allowed_list:\t0-1\nvoluntary_ctxt_switches:\t999\nnonvoluntary_ctxt_switches:\t306\n",
+  "fds": {
+    "0": {
+      "path": "/dev/null",
+      "info": "pos:\t0\nflags:\t0100000\nmnt_id:\t26\nino:\t5\n"
+    },
+    "1": {
+      "path": "/dev/shm/leasepath-model-stage-v1-20261110/verify-v3-run.log",
+      "info": "pos:\t31857\nflags:\t0100001\nmnt_id:\t32\nino:\t2221687\n"
+    },
+    "2": {
+      "path": "/dev/shm/leasepath-model-stage-v1-20261110/verify-v3-run.log",
+      "info": "pos:\t31857\nflags:\t0100001\nmnt_id:\t32\nino:\t2221687\n"
+    },
+    "3": {
+      "path": "/dev/shm/leasepath-model-stage-v1-20261110/verify-v3-checkpoint.lock",
+      "info": "pos:\t0\nflags:\t02102001\nmnt_id:\t32\nino:\t2221688\nlock:\t1: FLOCK  ADVISORY  WRITE 2645564 00:1b:2221688 0 EOF\n"
+    },
+    "4": {
+      "path": "/dev/shm/leasepath-model-stage-v1-20261110/Qwen2.5-Coder-32B-Instruct-F16.gguf",
+      "info": "pos:\t22752002048\nflags:\t02100000\nmnt_id:\t32\nino:\t2195028\n"
+    }
+  }
+}
