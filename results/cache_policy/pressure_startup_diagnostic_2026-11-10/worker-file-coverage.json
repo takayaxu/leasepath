@@ -1,0 +1,196 @@
+{
+  "status": "passed",
+  "scope": "actual traced worker and known library-discovery descendants, nonempty regular files; all paths are access evidence, not faulting-address attribution",
+  "rows": [
+    {
+      "task": "logistic_holdout",
+      "worker_and_descendant_pids": [
+        1768324,
+        1768341,
+        1768342,
+        1768352,
+        1768762
+      ],
+      "nonempty_regular_paths": 2003,
+      "uncovered_paths": [],
+      "trace_sha256": {
+        "/dev/shm/leasepath-startup-diag-20261110/diagnostic/startup.strace.1768324": "cfae8b3b3f89e61aed849f93e61882a664c30a69218294a0afc38cd2f333b17a",
+        "/dev/shm/leasepath-startup-diag-20261110/diagnostic/startup.strace.1768341": "6afc7b1c1e6430df105580fabb54a26733def3f08b1d55db0ea9da6d5edfeffd",
+        "/dev/shm/leasepath-startup-diag-20261110/diagnostic/startup.strace.1768342": "b193fefca6c81dff4b4d391d8bbf92c5331a71410b0953e24f10b9f75cd668c3",
+        "/dev/shm/leasepath-startup-diag-20261110/diagnostic/startup.strace.1768352": "8b204af42fdfc07823ec1a41dc78f92bdfaa585791fc0b177901772d4adfcd71",
+        "/dev/shm/leasepath-startup-diag-20261110/diagnostic/startup.strace.1768762": "524900aca644cd3c5f71c64d48163f01e6d274588117f4b2f6139e9ded1bcbee"
+      }
+    },
+    {
+      "task": "ridge_validation",
+      "worker_and_descendant_pids": [
+        1768346,
+        1768410,
+        1768411,
+        1768574,
+        1768835
+      ],
+      "nonempty_regular_paths": 2003,
+      "uncovered_paths": [],
+      "trace_sha256": {
+        "/dev/shm/leasepath-startup-diag-20261110/diagnostic/startup.strace.1768346": "826643911382820a5f5b40795b46d212f74c74edd4d98a7b3b6f6bd22603a0bf",
+        "/dev/shm/leasepath-startup-diag-20261110/diagnostic/startup.strace.1768410": "b3de70541785acc0378ddae21e50d87eb1e8b169e6de711895ea3379b509200e",
+        "/dev/shm/leasepath-startup-diag-20261110/diagnostic/startup.strace.1768411": "0fec07d0b852bf542d0640681e24ac5b713457f03013de702dfacd47f3ce042a",
+        "/dev/shm/leasepath-startup-diag-20261110/diagnostic/startup.strace.1768574": "df76adf033a87bcaeac49d2e93c6ead517983a9a03503870cc49ae9a61b424ac",
+        "/dev/shm/leasepath-startup-diag-20261110/diagnostic/startup.strace.1768835": "8effc142fd71190233f00699cc0deaf51b778e5cde581c9542b001f7b597d943"
+      }
+    },
+    {
+      "task": "temporal_asof",
+      "worker_and_descendant_pids": [
+        1768316,
+        1768335,
+        1768340,
+        1768353,
+        1768685
+      ],
+      "nonempty_regular_paths": 1461,
+      "uncovered_paths": [],
+      "trace_sha256": {
+        "/dev/shm/leasepath-startup-diag-20261110/diagnostic/startup.strace.1768316": "4360030eff95c8936763d86a7dff738fea5d3b7ed5844e98605fda5f91a2817f",
+        "/dev/shm/leasepath-startup-diag-20261110/diagnostic/startup.strace.1768335": "29e581df29bfe3e00e4e84a5891dea3fb00da2ff62e10885c40b4ce8fe252e8d",
+        "/dev/shm/leasepath-startup-diag-20261110/diagnostic/startup.strace.1768340": "2938a53c9901c3601bb9a9ed7f004132c285b6e824deb89375e066ae05c208bc",
+        "/dev/shm/leasepath-startup-diag-20261110/diagnostic/startup.strace.1768353": "7be5b76c3197b9ccbff4afcefb890b1b2478974db0150396f6b59bfb481a9c3f",
+        "/dev/shm/leasepath-startup-diag-20261110/diagnostic/startup.strace.1768685": "f8e8dd69c05962147dd7929d3c19c38cef26eee279c06030ec36dc82081bd022"
+      }
+    },
+    {
+      "task": "priority_top",
+      "worker_and_descendant_pids": [
+        1768323,
+        1768334,
+        1768339,
+        1768348,
+        1768538
+      ],
+      "nonempty_regular_paths": 338,
+      "uncovered_paths": [],
+      "trace_sha256": {
+        "/dev/shm/leasepath-startup-diag-20261110/diagnostic/startup.strace.1768323": "fa80d02de5bb207472526da057b14da83e70e8ae2912ad2d278d0cec4b2a7c53",
+        "/dev/shm/leasepath-startup-diag-20261110/diagnostic/startup.strace.1768334": "b310467e9b2e634e7e80e6f95a543de38a2043db6833c8f0dad1937d3babecc3",
+        "/dev/shm/leasepath-startup-diag-20261110/diagnostic/startup.strace.1768339": "7e872d1dc0878a2d9e272d08a3dda27c7fc0e5ddcc64b01823fb42543fd592be",
+        "/dev/shm/leasepath-startup-diag-20261110/diagnostic/startup.strace.1768348": "54d2ae5538ace6d11a3a355dd582395b6371d1b814238dab1fdfd0c4477fa048",
+        "/dev/shm/leasepath-startup-diag-20261110/diagnostic/startup.strace.1768538": "01e45b89fcd3d01c1bf2af4a2de5b5929adffcb2b575c3b152763a7c6bbf9546"
+      }
+    },
+    {
+      "task": "missing_median",
+      "worker_and_descendant_pids": [
+        1768322,
+        1768326,
+        1768328,
+        1768344,
+        1768629
+      ],
+      "nonempty_regular_paths": 1461,
+      "uncovered_paths": [],
+      "trace_sha256": {
+        "/dev/shm/leasepath-startup-diag-20261110/diagnostic/startup.strace.1768322": "c35833025cf8dd0a474fb47f930378f672d58b34f561c122166229345c440065",
+        "/dev/shm/leasepath-startup-diag-20261110/diagnostic/startup.strace.1768326": "ce98bdd5bfd4fb97ec14cf1aa2a5188dacf83ec06cdf4af479a71a29663f0f60",
+        "/dev/shm/leasepath-startup-diag-20261110/diagnostic/startup.strace.1768328": "821611820308964d06e7b8ecceb463a12cb39dcee09e28ca503dc6fc5c94e0f8",
+        "/dev/shm/leasepath-startup-diag-20261110/diagnostic/startup.strace.1768344": "359761c183c97c9eb267a05892ab859a660771194083010c8fa53307ef4198c4",
+        "/dev/shm/leasepath-startup-diag-20261110/diagnostic/startup.strace.1768629": "6e2928f50df8b7f676e05779f0f3a23399b84b90ce6ed71b30a9ac449eec409c"
+      }
+    },
+    {
+      "task": "multi_group_anova",
+      "worker_and_descendant_pids": [
+        1768317,
+        1768331,
+        1768337,
+        1768349,
+        1768683
+      ],
+      "nonempty_regular_paths": 1461,
+      "uncovered_paths": [],
+      "trace_sha256": {
+        "/dev/shm/leasepath-startup-diag-20261110/diagnostic/startup.strace.1768317": "69b99da81f7fd0d7189018b74604fde7e70b60c521ae1c5a7e1b85f200b5bd81",
+        "/dev/shm/leasepath-startup-diag-20261110/diagnostic/startup.strace.1768331": "c5656662b1d76f57ebeb59176f1722378c75f3ab949491c3520fa3376b7c8873",
+        "/dev/shm/leasepath-startup-diag-20261110/diagnostic/startup.strace.1768337": "a9cc3e822f45e5aeaa769a2df27b299a3a9006e5266079d57e6b551f61571c8c",
+        "/dev/shm/leasepath-startup-diag-20261110/diagnostic/startup.strace.1768349": "dde718e0fe1e6ebac4e86203375e848d7ddc438069ad1396ecea732883f5cc2c",
+        "/dev/shm/leasepath-startup-diag-20261110/diagnostic/startup.strace.1768683": "f931ad9fadb935d6caab35399ac8f3b1ddfca310dd035e9f6aa7e26f8148a564"
+      }
+    },
+    {
+      "task": "rank_sum_test",
+      "worker_and_descendant_pids": [
+        1768318,
+        1768325,
+        1768327,
+        1768345,
+        1768686
+      ],
+      "nonempty_regular_paths": 1461,
+      "uncovered_paths": [],
+      "trace_sha256": {
+        "/dev/shm/leasepath-startup-diag-20261110/diagnostic/startup.strace.1768318": "c29a275a6d36df05e860b51607358999756e7818e5c06c6dd1de11cb76bedcc4",
+        "/dev/shm/leasepath-startup-diag-20261110/diagnostic/startup.strace.1768325": "bc15a5b91c2d68c7071128421f6f6539f7c42e1557ad520ec1a70053432b539c",
+        "/dev/shm/leasepath-startup-diag-20261110/diagnostic/startup.strace.1768327": "1d3b2bcef42f86fd310d5c527d65cd1b418e674702a99e062f4a5aca1656ef35",
+        "/dev/shm/leasepath-startup-diag-20261110/diagnostic/startup.strace.1768345": "c3e45bde5e32677d1e86a5634f758425122471e6fab2b5292e6e06771d621138",
+        "/dev/shm/leasepath-startup-diag-20261110/diagnostic/startup.strace.1768686": "f27b38e87f5d9012b860584e62f67aac20116b71f8e3ae5afd82d8d057472f2e"
+      }
+    },
+    {
+      "task": "dominant_frequency",
+      "worker_and_descendant_pids": [
+        1768320,
+        1768332,
+        1768338,
+        1768350,
+        1768684
+      ],
+      "nonempty_regular_paths": 1461,
+      "uncovered_paths": [],
+      "trace_sha256": {
+        "/dev/shm/leasepath-startup-diag-20261110/diagnostic/startup.strace.1768320": "413275e2fce1e887a1744d986025a4e8840105e6d712a8204e24329c873ea148",
+        "/dev/shm/leasepath-startup-diag-20261110/diagnostic/startup.strace.1768332": "b39d18fce855234847e2ea41fa9fc00f57b3ee46b6b5ae37968cddcdb70cecc4",
+        "/dev/shm/leasepath-startup-diag-20261110/diagnostic/startup.strace.1768338": "5fb31c89418376c90a40c537b53d79eea82d4d0c8bcb299e3bf1a07961d792a2",
+        "/dev/shm/leasepath-startup-diag-20261110/diagnostic/startup.strace.1768350": "87635531e1a083d5b28c8e7306e6e0f353f182523b6ab9aa50b0f5fe7f2fbe91",
+        "/dev/shm/leasepath-startup-diag-20261110/diagnostic/startup.strace.1768684": "a3f63f44e1a930124658ea08b9a2b756e78feb19884a0a6f07b1fdf809842c68"
+      }
+    },
+    {
+      "task": "feature_information",
+      "worker_and_descendant_pids": [
+        1768321,
+        1768330,
+        1768336,
+        1768347,
+        1768714
+      ],
+      "nonempty_regular_paths": 1977,
+      "uncovered_paths": [],
+      "trace_sha256": {
+        "/dev/shm/leasepath-startup-diag-20261110/diagnostic/startup.strace.1768321": "1437b5ed772f91a0430e0af69c68413dddb5f70f5f7e69246fa611c5bd7d70f8",
+        "/dev/shm/leasepath-startup-diag-20261110/diagnostic/startup.strace.1768330": "cc5d26ed6e1641326eb6ae69509fc146cee0c7ca2731f7027f6c735648df6a33",
+        "/dev/shm/leasepath-startup-diag-20261110/diagnostic/startup.strace.1768336": "f066f72689d898c8e0bc839f401b2456563dd7f01ad6a3dcbb70d4278fc1b065",
+        "/dev/shm/leasepath-startup-diag-20261110/diagnostic/startup.strace.1768347": "a7f5ed919cdfc853a9409a784d291270ddba6fb05c889aa1f39dd91f4e572074",
+        "/dev/shm/leasepath-startup-diag-20261110/diagnostic/startup.strace.1768714": "aba293b2579e28068a157b517af0ac2d63787b09da8cd8282f5be97cbe2b8e96"
+      }
+    },
+    {
+      "task": "image_regions",
+      "worker_and_descendant_pids": [
+        1768319,
+        1768329,
+        1768333,
+        1768351,
+        1768682
+      ],
+      "nonempty_regular_paths": 1461,
+      "uncovered_paths": [],
+      "trace_sha256": {
+        "/dev/shm/leasepath-startup-diag-20261110/diagnostic/startup.strace.1768319": "e5da9957d8811d3bdf8659f722ffce14238eff84fe8886b9f551e8186d6b2256",
+        "/dev/shm/leasepath-startup-diag-20261110/diagnostic/startup.strace.1768329": "93e5f96f61cb6ae12b28951257038f6de9723f6256cb05cffd50e7afa3f29a68",
+        "/dev/shm/leasepath-startup-diag-20261110/diagnostic/startup.strace.1768333": "01fc47fd00540183908519bb9f463a2304d584f5e50a4851a36ea4c2d694ab60",
+        "/dev/shm/leasepath-startup-diag-20261110/diagnostic/startup.strace.1768351": "a2b7c8f296d3f87773187385e5171c4e66d351e42748f1fda6ed6cc7c9fec338",
+        "/dev/shm/leasepath-startup-diag-20261110/diagnostic/startup.strace.1768682": "b17aff51d56ff969d441d9cb11fa636f349e548a5c12653c6d8b9346b8efa90e"
+      }
+    }
+  ]
+}

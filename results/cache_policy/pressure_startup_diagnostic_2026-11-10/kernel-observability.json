@@ -1,0 +1,14 @@
+{
+  "kernel": "5.15.0-198-generic",
+  "architecture": "x86_64",
+  "perf_event_paranoid": "4",
+  "numa_balancing": "1",
+  "self_only_disabled_major_fault_perf_counter": {
+    "opened": false,
+    "errno": 13,
+    "error": "Permission denied"
+  },
+  "privilege_changes": false,
+  "exact_kernel_fault_address_recorded": false,
+  "interpretation": "Counter access test only, not a fault-address attribution experiment. No global setting altered."
+}

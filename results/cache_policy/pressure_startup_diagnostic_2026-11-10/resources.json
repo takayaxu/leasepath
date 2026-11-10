@@ -1,0 +1,105 @@
+{
+  "meminfo_kib": {
+    "MemTotal": 527739504,
+    "MemFree": 39231060,
+    "MemAvailable": 299682336,
+    "Buffers": 15751520,
+    "Cached": 241096588,
+    "SwapCached": 729056,
+    "Active": 168950680,
+    "Inactive": 287926588,
+    "Active(anon)": 8590084,
+    "Inactive(anon)": 205738132,
+    "Active(file)": 160360596,
+    "Inactive(file)": 82188456,
+    "Unevictable": 31904,
+    "Mlocked": 31904,
+    "SwapTotal": 8388604,
+    "SwapFree": 408688,
+    "Dirty": 338744,
+    "Writeback": 4080,
+    "AnonPages": 199201836,
+    "Mapped": 14846964,
+    "Shmem": 14289076,
+    "KReclaimable": 21325856,
+    "Slab": 25286784,
+    "SReclaimable": 21325856,
+    "SUnreclaim": 3960928,
+    "KernelStack": 170368,
+    "PageTables": 887228,
+    "NFS_Unstable": 0,
+    "Bounce": 0,
+    "WritebackTmp": 0,
+    "CommitLimit": 272258356,
+    "Committed_AS": 353802024,
+    "VmallocTotal": 34359738367,
+    "VmallocUsed": 840188,
+    "VmallocChunk": 0,
+    "Percpu": 350464,
+    "HardwareCorrupted": 0,
+    "AnonHugePages": 5578752,
+    "ShmemHugePages": 0,
+    "ShmemPmdMapped": 0,
+    "FileHugePages": 0,
+    "FilePmdMapped": 0,
+    "HugePages_Total": 0,
+    "HugePages_Free": 0,
+    "HugePages_Rsvd": 0,
+    "HugePages_Surp": 0,
+    "Hugepagesize": 2048,
+    "Hugetlb": 0,
+    "DirectMap4k": 36537808,
+    "DirectMap2M": 463015936,
+    "DirectMap1G": 36700160
+  },
+  "psi": {
+    "cpu": {
+      "some": {
+        "avg10": 0.0,
+        "avg60": 0.08,
+        "avg300": 1.53,
+        "total": 52196073986.0
+      },
+      "full": {
+        "avg10": 0.0,
+        "avg60": 0.0,
+        "avg300": 0.0,
+        "total": 0.0
+      }
+    },
+    "io": {
+      "some": {
+        "avg10": 11.19,
+        "avg60": 11.22,
+        "avg300": 13.42,
+        "total": 46205448549.0
+      },
+      "full": {
+        "avg10": 9.46,
+        "avg60": 9.51,
+        "avg300": 10.63,
+        "total": 33608102477.0
+      }
+    },
+    "memory": {
+      "some": {
+        "avg10": 0.0,
+        "avg60": 0.0,
+        "avg300": 0.08,
+        "total": 5498021766.0
+      },
+      "full": {
+        "avg10": 0.0,
+        "avg60": 0.0,
+        "avg300": 0.05,
+        "total": 3448498213.0
+      }
+    }
+  },
+  "global_settings": {
+    "/sys/kernel/mm/transparent_hugepage/enabled": "always [madvise] never",
+    "/sys/kernel/mm/transparent_hugepage/defrag": "always defer defer+madvise [madvise] never",
+    "/proc/sys/kernel/numa_balancing": "1"
+  },
+  "read_only": true
+}

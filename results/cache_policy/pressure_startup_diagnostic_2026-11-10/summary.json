@@ -1,0 +1,28 @@
+{
+  "status": "bounded_diagnostic_completed_root_cause_unresolved",
+  "real_tool_calls": 20,
+  "correct": 20,
+  "major_faults_observed": 0,
+  "uncovered_worker_dependencies": 0,
+  "historical_worker_fault_still_valid": true,
+  "historical_fault_uniquely_attributed": false,
+  "natural_gate_passed": false,
+  "new_model_generations": 0,
+  "new_JCT_cells": 0,
+  "known_model_generations_unchanged": 1727,
+  "tests_passed": 9,
+  "archive": {
+    "status": "passed",
+    "source": "/dev/shm/leasepath-startup-diag-20261110",
+    "base_archive": "/home/liuxv/LeasePath-new-server-data/.artifacts/checkpoints/pressure-independent-2026-11-10/raw-evidence.tar.gz",
+    "base_archive_sha256": "cf29f77730750dc3fe5a77cc6edc371ca4faf6791de52b38c1279ab1836aea90",
+    "delta_archive": ".artifacts/checkpoints/pressure-startup-diagnostic-2026-11-10/diagnostic-delta.tar.gz",
+    "delta_archive_sha256": "1c46060cf26bdae2d11ef647e43edf58e954bedd95f71f662fab4dcc1aa4ada2",
+    "delta_bytes": 29456789,
+    "delta_members_verified": 231,
+    "base_regular_files_reused": 22273,
+    "restore_rule": "Construct source root from each base/delta archive_member at relative path; verify sha256 before use. Recreate recorded symlinks. Existing historical archive is immutable."
+  },
+  "cleanup": "own tmpfs removed after current files and base/delta archive verification",
+  "next_step_constraint": "No repeated resource gate until new evidence or an explicitly preregistered resource recipe; do not relabel diagnostics as natural acceptance."
+}
