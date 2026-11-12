@@ -1,0 +1,99 @@
+{
+  "historical_run": "/home/liuxv/LeasePath-new-server-data/results/cache_policy/pressure_disk_matrix_v1_2026-11-10",
+  "historical_state_sha256": "691feb48a624ad970017d6bd3019eeb90157ed6fe5aa59df32e463d1d9eccda8",
+  "failed_batch": "natural-32-3/cycle-2-gbdt_point",
+  "parent_io_delta": {
+    "rchar": 33375760559,
+    "wchar": 35013393,
+    "syscr": 80709,
+    "syscw": 83,
+    "read_bytes": 57344,
+    "write_bytes": 0,
+    "cancelled_write_bytes": 0
+  },
+  "parent_major_faults": 0,
+  "parent_block_input_ops": 112,
+  "residency_before_batch": {
+    "model": {
+      "files": 1,
+      "pages": 15999993,
+      "nonresident_pages": 0
+    },
+    "protected": {
+      "files": 689,
+      "pages": 231470,
+      "nonresident_pages": 0
+    },
+    "runtime": {
+      "files": 22008,
+      "pages": 178919,
+      "nonresident_pages": 0
+    },
+    "post_load": {
+      "files": 3,
+      "pages": 122775,
+      "nonresident_pages": 0
+    }
+  },
+  "worker_io": [
+    {
+      "task": "logistic_holdout",
+      "success": true,
+      "lifetime": {
+        "major_faults": 0,
+        "minor_faults": 144477,
+        "block_input_ops": 0,
+        "block_output_ops": 0,
+        "user_s": 6.251094,
+        "system_s": 0.5879139999999999,
+        "scope": "wait4 worker lifetime including startup, exit, and reaped descendants"
+      },
+      "io_since_exec": {
+        "major_faults": 0,
+        "minor_faults": 144477,
+        "read_bytes": 0,
+        "rchar": 143813892
+      }
+    },
+    {
+      "task": "ridge_validation",
+      "success": true,
+      "lifetime": {
+        "major_faults": 0,
+        "minor_faults": 1078158,
+        "block_input_ops": 0,
+        "block_output_ops": 0,
+        "user_s": 11.059421,
+        "system_s": 3.443819,
+        "scope": "wait4 worker lifetime including startup, exit, and reaped descendants"
+      },
+      "io_since_exec": {
+        "major_faults": 0,
+        "minor_faults": 1077670,
+        "read_bytes": 0,
+        "rchar": 449414605
+      }
+    },
+    {
+      "task": "temporal_asof",
+      "success": true,
+      "lifetime": {
+        "major_faults": 0,
+        "minor_faults": 49088,
+        "block_input_ops": 0,
+        "block_output_ops": 0,
+        "user_s": 4.246639,
+        "system_s": 0.3119,
+        "scope": "wait4 worker lifetime including startup, exit, and reaped descendants"
+      },
+      "io_since_exec": {
+        "major_faults": 0,
+        "minor_faults": 48979,
+        "read_bytes": 0,
+        "rchar": 35708713
+      }
+    }
+  ],
+  "attribution": "Parent disk I/O confirmed, exact historical file unresolved. 36 no-GPU source checks did not reproduce disk I/O. Retain path metadata including empty files and add attribution in a new named attempt.",
+  "historical_data_reclassified": false
+}

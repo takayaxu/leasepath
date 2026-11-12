@@ -1,0 +1,80 @@
+{
+  "status": "diagnosed",
+  "original_results_unchanged": true,
+  "failures": [
+    {
+      "project": "continuous_api",
+      "original_error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "original_success": false,
+      "independent_artifact_recheck": {
+        "success": true,
+        "error": null,
+        "checked_rounds": 1
+      },
+      "root_cause": "controller required bare JSON despite correct artifact and valid native assistant delivery",
+      "fix": "accept natural assistant delivery and independently verify cumulative artifacts; no oracle feedback"
+    },
+    {
+      "project": "continuous_billing",
+      "original_error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "original_success": false,
+      "independent_artifact_recheck": {
+        "success": true,
+        "error": null,
+        "checked_rounds": 1
+      },
+      "root_cause": "controller required bare JSON despite correct artifact and valid native assistant delivery",
+      "fix": "accept natural assistant delivery and independently verify cumulative artifacts; no oracle feedback"
+    },
+    {
+      "project": "continuous_documents",
+      "original_error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "original_success": false,
+      "independent_artifact_recheck": {
+        "success": true,
+        "error": null,
+        "checked_rounds": 1
+      },
+      "root_cause": "controller required bare JSON despite correct artifact and valid native assistant delivery",
+      "fix": "accept natural assistant delivery and independently verify cumulative artifacts; no oracle feedback"
+    },
+    {
+      "project": "continuous_experiment",
+      "original_error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "original_success": false,
+      "independent_artifact_recheck": {
+        "success": true,
+        "error": null,
+        "checked_rounds": 1
+      },
+      "root_cause": "controller required bare JSON despite correct artifact and valid native assistant delivery",
+      "fix": "accept natural assistant delivery and independently verify cumulative artifacts; no oracle feedback"
+    },
+    {
+      "project": "continuous_inventory",
+      "original_error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "original_success": false,
+      "independent_artifact_recheck": {
+        "success": true,
+        "error": null,
+        "checked_rounds": 1
+      },
+      "root_cause": "controller required bare JSON despite correct artifact and valid native assistant delivery",
+      "fix": "accept natural assistant delivery and independently verify cumulative artifacts; no oracle feedback"
+    },
+    {
+      "project": "continuous_logs",
+      "original_error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "original_success": false,
+      "independent_artifact_recheck": {
+        "success": true,
+        "error": null,
+        "checked_rounds": 1
+      },
+      "root_cause": "controller required bare JSON despite correct artifact and valid native assistant delivery",
+      "fix": "accept natural assistant delivery and independently verify cumulative artifacts; no oracle feedback"
+    }
+  ],
+  "regression_tests_passed": 12,
+  "new_model_generations_in_diagnosis": 0
+}

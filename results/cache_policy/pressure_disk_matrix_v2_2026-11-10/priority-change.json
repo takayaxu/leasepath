@@ -1,0 +1,7 @@
+{
+  "action": "stop_own_supervisor_before_model_generation",
+  "pid": 3962288,
+  "wall_ns": 1794313919778239573,
+  "reason": "User steered priority back to prediction performance on independent families and real agent loops. Auxiliary old-development resource matrix is no longer the main dependency. Preserve all preparation and old results; no statistical failure reclassification.",
+  "generation_count_at_request": 0
+}

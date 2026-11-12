@@ -1,0 +1,22 @@
+{
+  "status": "stopped_requires_review",
+  "pid": 1136640,
+  "holdout_model_tasks": 0,
+  "stages": [
+    {
+      "name": "v2_collection",
+      "state": "completed_collection",
+      "original_failures_preserved": true
+    }
+  ],
+  "updated_wall_ns": 1794368344691192529,
+  "elapsed_s": 3861.6116938272025,
+  "active_command": [
+    "/home/liuxv/LeasePath-new-server-data/scripts/audit_continuous_pilot_v3.py",
+    "--plan",
+    "/home/liuxv/LeasePath-new-server-data/results/agent/continuous_pilot_v3_2026-11-11/plan.json",
+    "--output",
+    "/home/liuxv/LeasePath-new-server-data/results/agent/continuous_pilot_v3_2026-11-11/audit"
+  ],
+  "error": "RuntimeError: pipeline command failed; inspect /home/liuxv/LeasePath-new-server-data/results/agent/continuous_pilot_v3_2026-11-11/audit.log"
+}

@@ -1,0 +1,34 @@
+{
+  "status": "stopped_requires_review",
+  "pid": 1253972,
+  "holdout_model_tasks": 0,
+  "stages": [
+    {
+      "name": "v3_collection",
+      "state": "completed_collection",
+      "original_failures_preserved": true
+    },
+    {
+      "name": "v6_repair_collection",
+      "summary": {
+        "status": "quality_failed",
+        "successful_rounds": 44,
+        "observed_rounds": 45,
+        "completed_projects": 5,
+        "model_generations": 229,
+        "tool_calls": 184,
+        "max_prompt_tokens": 12360
+      }
+    }
+  ],
+  "updated_wall_ns": 1794371647732832826,
+  "elapsed_s": 2842.67358813202,
+  "active_command": [
+    "/home/liuxv/LeasePath-new-server-data/scripts/audit_continuous_pilot_v6.py",
+    "--plan",
+    "/home/liuxv/LeasePath-new-server-data/results/agent/continuous_pilot_v6_2026-11-11/plan.json",
+    "--output",
+    "/home/liuxv/LeasePath-new-server-data/results/agent/continuous_pilot_v6_2026-11-11/audit"
+  ],
+  "error": "RuntimeError: capability gate not met; preserve failures and diagnose before training/E2E"
+}

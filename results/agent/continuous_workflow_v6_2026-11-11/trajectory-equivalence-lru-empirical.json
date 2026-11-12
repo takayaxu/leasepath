@@ -1,0 +1,22 @@
+{
+  "left": "lru",
+  "right": "empirical_distribution",
+  "same_owner_request_sequences": {
+    "continuous_inventory": true,
+    "continuous_billing": true,
+    "continuous_logs": true,
+    "continuous_api": true,
+    "continuous_experiment": true,
+    "continuous_documents": true
+  },
+  "request_counts": {
+    "lru": 244,
+    "empirical_distribution": 244
+  },
+  "prompt_tokens": {
+    "lru": 1227620,
+    "empirical_distribution": 1227620
+  },
+  "global_interleaving_identical": false,
+  "actual_native_prompt_identity": "same exact prompt hashes per owner required for token comparisons; global FCFS interleaving may differ"
+}

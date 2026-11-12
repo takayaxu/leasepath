@@ -1,0 +1,7 @@
+{
+  "audit_script": "/home/liuxv/LeasePath-new-server-data/scripts/audit_continuous_pilot_v6.py",
+  "audit_script_sha256": "359b833c585b5a413d2e52bb984ae6831128d990d52169d2394ee340535983a6",
+  "schedule_replay_sha256": "ee4fc028cd1e27bcbce23ce306dbae3f10e6a569dd0dfad5c5cbd97740d9d6ea",
+  "mode": "historical submission inferred only from actual native function-call output; original raw events unchanged",
+  "summary_sha256": "18b997b7983b2d850e4b80e506f7c4f14b94510d4844d84c00996ea0ad8dbb8a"
+}

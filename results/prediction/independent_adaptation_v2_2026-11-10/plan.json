@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "created_wall_ns": 1794317643991711700,
+  "suite": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_v1_2026-11-10",
+  "output": "/home/liuxv/LeasePath-new-server-data/results/prediction/independent_adaptation_v2_2026-11-10/artifacts",
+  "batches": [
+    "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view/batch-0",
+    "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0",
+    "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0"
+  ],
+  "source_sha256": {
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/agent_risk_predictor_v2.py": "5247d2cee30a528bb69fcd15daf8d66d2488467b0f085c0915ffcbfef375789b",
+    "/home/liuxv/LeasePath-new-server-data/scripts/train_agent_predictor_v2.py": "1b606d3bfaf655a49c88774ce0b04a8d91d2fbbd1e00c2acbf0f23a4caaa2e11",
+    "/home/liuxv/LeasePath-new-server-data/scripts/evaluate_independent_predictions_v1.py": "1dbfc00d19326c0e1a51a2bbe4241ab3dc1bba1fbf8840a96585b071624d7f5c",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/gbdt_predictor.py": "df8645870c255c70f2edee7ec288c1bdf7d6fd8c5bddc0335d3fae7d460d440c",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/reuse_predictor.py": "24773e363c9fb77e3008cdf7672a4136a4cd2ebb95c85cdc5752126137b67729",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/d2_hazards.py": "0feaa2ec2ec327ff5e5feedb9d5018dcd61ce95f9041b5d47a6d63b6ffe535b2",
+    "/home/liuxv/LeasePath-new-server-data/src/leasepath/distribution_cache.py": "0d28dbfbba409bc79070e36e8095c878030ff4b5b24c391c3048dda044a16a6d",
+    "/home/liuxv/LeasePath-new-server-data/configs/baselines/kv_equal_cost_distribution_v1.json": "bf93dcdbb907cc130cdc3bd23f4e14e00fc29766942ae827694a24461c3a42bc"
+  },
+  "holdout_allowed": false,
+  "scoring_parameters_changed": false,
+  "validation": "leave one of six development source families out; all repeated instances remain within family",
+  "selection": "single predeclared candidate, no parameter search",
+  "support": "distinct source families used conservatively instead of counting repeated workflows",
+  "online_promotion": false
+}

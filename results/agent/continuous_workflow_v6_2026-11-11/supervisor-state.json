@@ -1,0 +1,58 @@
+{
+  "status": "completed_development_cycle",
+  "pid": 1427926,
+  "holdout_model_tasks": 0,
+  "stages": [
+    {
+      "name": "reused_verified_collection_and_initial_models",
+      "projects": 6,
+      "snapshots": 1079,
+      "episodes": 234,
+      "all_48_rounds_passed": true
+    },
+    {
+      "name": "e2e_lru",
+      "status": "passed",
+      "successful_rounds": 48,
+      "observed_rounds": 48,
+      "updates": 0
+    },
+    {
+      "name": "e2e_empirical_distribution",
+      "status": "passed",
+      "successful_rounds": 48,
+      "observed_rounds": 48,
+      "updates": 2
+    },
+    {
+      "name": "e2e_gbdt_static_distribution",
+      "status": "passed",
+      "successful_rounds": 48,
+      "observed_rounds": 48,
+      "updates": 0
+    },
+    {
+      "name": "e2e_gbdt_dynamic_point",
+      "status": "passed",
+      "successful_rounds": 48,
+      "observed_rounds": 48,
+      "updates": 2
+    },
+    {
+      "name": "e2e_gbdt_dynamic_distribution",
+      "status": "passed",
+      "successful_rounds": 48,
+      "observed_rounds": 48,
+      "updates": 2
+    }
+  ],
+  "updated_wall_ns": 1794392839546770611,
+  "elapsed_s": 17185.27497060201,
+  "current_arm": "gbdt_dynamic_distribution",
+  "active_command": [
+    "/home/liuxv/LeasePath-new-server-data/scripts/summarize_continuous_e2e_v1.py",
+    "--pipeline",
+    "/home/liuxv/LeasePath-new-server-data/results/agent/continuous_workflow_v6_2026-11-11"
+  ],
+  "final_scope": "six authored projects and one E2E cycle; 60-project expansion and balanced repeats remain"
+}

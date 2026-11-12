@@ -1,0 +1,13 @@
+{
+  "status": "stopped",
+  "pid": 1242052,
+  "started_wall_ns": 1794368361044544986,
+  "plan_sha256": "2ad72126a79de7b1e815d02b791b413af586f9dea7f7467c0bec3f8e7b4d51d0",
+  "holdout_model_tasks": 0,
+  "completed_rounds": 0,
+  "successful_rounds": 0,
+  "updated_utc": "2026-11-11T03:39:22.866614+00:00",
+  "new_generations": 0,
+  "error": "ValueError: private runtime changed",
+  "finished_wall_ns": 1794368362866608679
+}

@@ -23,3 +23,14 @@ data/sources/tracelab/v0.0.2/reference/
 data/sources/tracelab/v0.0.2/*.gz
 data/processed/**/*.jsonl
 data/processed/**/*.jsonl.gz
+
+# 服务器实验原始记录与重复验收视图留在本机；Git 保留汇总、模型及来源哈希。
+/results/agent/**/raw/*
+!/results/agent/**/raw/training/
+/results/agent/**/verified-view/
+/results/agent/**/native.strace*
+/results/**/*.lock
+
+# 论文图保留原创绘图与有许可的图标；下载的设计参考页只在本机使用。
+/docs/leasepath_isca_v3_assets/design_references/*.html
+/docs/leasepath_isca_v3_assets/design_references/lightgbm-leaf-wise.png

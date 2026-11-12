@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "model_generations": 0,
+  "original_status": "stopped",
+  "original_error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+  "original_raw_unchanged": true,
+  "original_failed_task_retained": true,
+  "feedback_linkage": "controller tool_end result values must match canonical calls; exact controller key order is used to verify next prompt consumption",
+  "holdout_model_execution": false,
+  "frozen_qwen_parser_sha256": "87338175171d25a044214d741aa14c96b6680bf819093767a03e20c40193c3e5",
+  "final_parser_receipts": [
+    {
+      "task": "independent_propositional_sat",
+      "request_id": "r0acbb877c5284c43a0c681935c7df8bb",
+      "actual_prompt_ends_FN_EXIT": true,
+      "actual_native_starts_colon": true,
+      "actual_frozen_parser_matches": true
+    },
+    {
+      "task": "independent_package_resolution",
+      "request_id": "r586305c8ce4a45ad80e246514e5fc1bf",
+      "actual_prompt_ends_FN_EXIT": true,
+      "actual_native_starts_colon": true,
+      "actual_frozen_parser_matches": true
+    }
+  ],
+  "audit_source_sha256": "84f916795b279e7766e048b7adce0674c1dffb3361264329ee98e6a81c9e6850",
+  "derived_view": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view",
+  "natural_JCT_acceptance": false
+}

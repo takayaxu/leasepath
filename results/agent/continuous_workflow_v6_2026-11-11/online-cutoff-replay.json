@@ -1,0 +1,83 @@
+{
+  "status": "passed",
+  "updates": [
+    {
+      "arm": "empirical_distribution",
+      "version": 1,
+      "cutoff_s": 1553645.825555575,
+      "source_sha256": "5adff52df9af628237c7db59d523e41a7e1b557b2cb5a178f8e39f8ad275857c",
+      "source_reconstructed_from_observed_prefix": true,
+      "samples": 1594,
+      "matured_live_episodes": 100,
+      "model_sha_verified": true,
+      "used_only_after_deployment": true,
+      "training_wall_s": 0.35948272910900414,
+      "training_cpu_s": 0.304831516
+    },
+    {
+      "arm": "empirical_distribution",
+      "version": 2,
+      "cutoff_s": 1555194.685138966,
+      "source_sha256": "e19587338e7fc49c67562b5693358ed0fd593a248074f0dc8836ac24ee99d16c",
+      "source_reconstructed_from_observed_prefix": true,
+      "samples": 2082,
+      "matured_live_episodes": 200,
+      "model_sha_verified": true,
+      "used_only_after_deployment": true,
+      "training_wall_s": 0.38206801004707813,
+      "training_cpu_s": 0.32926091
+    },
+    {
+      "arm": "gbdt_dynamic_point",
+      "version": 1,
+      "cutoff_s": 1560287.762984116,
+      "source_sha256": "609a729e09a3be0651a2cbcf730d1e028f5a4780a1008ceb8599c46698c3aed7",
+      "source_reconstructed_from_observed_prefix": true,
+      "samples": 1594,
+      "matured_live_episodes": 100,
+      "model_sha_verified": true,
+      "used_only_after_deployment": true,
+      "training_wall_s": 0.40364931314252317,
+      "training_cpu_s": 0.339035245
+    },
+    {
+      "arm": "gbdt_dynamic_point",
+      "version": 2,
+      "cutoff_s": 1561816.114138886,
+      "source_sha256": "4bef905352ad6fa2dcd76b2f2836e5f84d4a1488c4fdb8fa66683fd9e9edcc13",
+      "source_reconstructed_from_observed_prefix": true,
+      "samples": 2080,
+      "matured_live_episodes": 200,
+      "model_sha_verified": true,
+      "used_only_after_deployment": true,
+      "training_wall_s": 0.5798373511061072,
+      "training_cpu_s": 0.508226992
+    },
+    {
+      "arm": "gbdt_dynamic_distribution",
+      "version": 1,
+      "cutoff_s": 1563691.040854244,
+      "source_sha256": "c353e97bf1d746436fc0e05d5c044129ab75f01260aab55dcd5559c433da0030",
+      "source_reconstructed_from_observed_prefix": true,
+      "samples": 1594,
+      "matured_live_episodes": 100,
+      "model_sha_verified": true,
+      "used_only_after_deployment": true,
+      "training_wall_s": 0.5438070900272578,
+      "training_cpu_s": 0.46156260400000004
+    },
+    {
+      "arm": "gbdt_dynamic_distribution",
+      "version": 2,
+      "cutoff_s": 1565222.337141132,
+      "source_sha256": "c209a69bf3c2f98cc8da87433ce03511a29114b444098cc9233e22990e7b5a6a",
+      "source_reconstructed_from_observed_prefix": true,
+      "samples": 2080,
+      "matured_live_episodes": 200,
+      "model_sha_verified": true,
+      "used_only_after_deployment": true,
+      "training_wall_s": 0.49749047099612653,
+      "training_cpu_s": 0.423954113
+    }
+  ]
+}

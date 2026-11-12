@@ -1,0 +1,74 @@
+{
+  "status": "completed_e2e_arm",
+  "pid": 1427931,
+  "arm": "lru",
+  "holdout_model_tasks": 0,
+  "completed_rounds": 48,
+  "successful_rounds": 48,
+  "updated_wall_ns": 1794379389127920746,
+  "topology": {
+    "status": "passed",
+    "groups": [
+      [
+        0,
+        2,
+        5,
+        6,
+        8,
+        10,
+        11,
+        12
+      ],
+      [
+        14,
+        42
+      ],
+      [
+        15,
+        43
+      ],
+      [
+        16,
+        44
+      ],
+      [
+        17,
+        45
+      ],
+      [
+        18,
+        46
+      ],
+      [
+        19,
+        47
+      ]
+    ],
+    "exclusive_host_claim": false
+  },
+  "runtime_compatibility": "d17a67962f958f74efcd130e1ebeed228760b8385c34a6868e8c66fa265f3a4b",
+  "model_load_s": 30.18006442510523,
+  "device_preflight": [
+    {
+      "index": "5",
+      "uuid": "GPU-9fedf347-c37c-a7d0-5db7-0bd9fb6d7188",
+      "used_mib": 4,
+      "total_mib": 32768
+    },
+    {
+      "index": "6",
+      "uuid": "GPU-a2abbb79-e97e-3dad-7c2c-3e3a1bed3430",
+      "used_mib": 4,
+      "total_mib": 32768
+    },
+    {
+      "index": "7",
+      "uuid": "GPU-87cd5f26-d0a4-4b48-62c9-161b68452dfc",
+      "used_mib": 4,
+      "total_mib": 32768
+    }
+  ],
+  "native_gate": "passed",
+  "summary_status": "passed",
+  "finished_wall_ns": 1794379389127915428
+}

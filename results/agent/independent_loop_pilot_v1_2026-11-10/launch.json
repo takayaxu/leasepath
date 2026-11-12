@@ -1,0 +1,25 @@
+{
+  "supervisor_pid": 3992518,
+  "started_wall_ns": 1794314759119719844,
+  "command": [
+    "strace",
+    "-ff",
+    "-ttt",
+    "-yy",
+    "-s",
+    "4096",
+    "-e",
+    "trace=%file,read,pread64,mmap,execve,wait4,mlock,mlockall,munlock,munlockall,set_mempolicy,get_mempolicy,prctl,sched_setaffinity,prlimit64",
+    "-o",
+    "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/native.strace",
+    "/dev/shm/leasepath-preexec-v2-20261110/runtime/bin/python3.13",
+    "-u",
+    "/home/liuxv/LeasePath-new-server-data/scripts/run_independent_loop_pilot_v1.py",
+    "--plan",
+    "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/plan.json"
+  ],
+  "scope": "development-only behavioral/native/feedback observation; not natural-JCT acceptance",
+  "maximum_live_generations": 72,
+  "maximum_probe_generations": 13,
+  "holdout_allowed": false
+}

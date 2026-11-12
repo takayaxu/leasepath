@@ -1,0 +1,14 @@
+\begin{table*}[t]
+\centering\small
+\caption{Data sources, measurement coverage, and evaluation roles; authored workloads and public traces are reported separately.}
+\label{tab:workload-provenance}
+\begin{tabular}{@{}p{.20\textwidth}p{.23\textwidth}p{.24\textwidth}p{.25\textwidth}@{}}
+\toprule
+Data & Size and origin & Observable evidence & Use and limit \\
+\midrule
+Earlier task collection & 50 authored parent tasks; 150 episodes, 347 snapshots & Real model/tools and native lookup & Internal 40/10 split; short tasks, already inspected \\
+Continuous development & 6 authored projects; 48 user turns, 244 requests & Real feedback, native prefix/lookup, queue and delivery & Target-domain training and known-project E2E; not a natural user trace \\
+Public CATraces release & 11 anonymized projects; 94 session files, 81 nonempty & Tool identities and log timestamps; content/arguments redacted & External workload reference; no exact compatible-prefix/lookup labels \\
+\bottomrule
+\end{tabular}
+\end{table*}

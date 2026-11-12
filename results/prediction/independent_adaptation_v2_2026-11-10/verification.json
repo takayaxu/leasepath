@@ -1,0 +1,71 @@
+{
+  "status": "passed",
+  "checked_wall_ns": 1794318336758449011,
+  "collection": {
+    "remaining3": {
+      "status": "completed_behavioral_pilot",
+      "generations": 49,
+      "queue_audit": {
+        "status": "passed",
+        "requests": 36,
+        "idle_feature_vectors_checked": 67,
+        "scope": "controller-visible state and decision-time linkage; no future information"
+      },
+      "delivery_sha256": "fd6d3fe03dfb5f389b32bcb773682af82d218d2e2ae5ca3b683aee4fb93496d7"
+    },
+    "pressure6": {
+      "status": "completed_behavioral_pilot",
+      "generations": 83,
+      "queue_audit": {
+        "status": "passed",
+        "requests": 70,
+        "idle_feature_vectors_checked": 316,
+        "scope": "controller-visible state and decision-time linkage; no future information"
+      },
+      "delivery_sha256": "d5c6e1ca7df440a35e9c130b7d537ae6ee72fd2e7c8904fdbbbfecbf56c79de7"
+    }
+  },
+  "frozen_baseline": {
+    "baseline_id": "gbdt-distribution-equalcost-H30-tau10-v1",
+    "manifest_sha256": "bf93dcdbb907cc130cdc3bd23f4e14e00fc29766942ae827694a24461c3a42bc",
+    "predictor_sha256": "283b3c829a48460360ccf6a1ac311e2e7989a90d74d2338e15e25b08f7e78c5c",
+    "fixed": {
+      "policy": "distribution_value",
+      "horizon_s": 30.0,
+      "tau_s": 10.0,
+      "min_global_workflows": 5,
+      "block_tokens": 128,
+      "block_bytes": 33554432,
+      "cost": "equal_one",
+      "owner_aggregation": "max",
+      "interval_weight": "right_edge_exp",
+      "fallback": "retired_first_lru",
+      "eviction": "pressure_only_legal_leaf",
+      "scheduling": "FCFS",
+      "adaptive_tau": false,
+      "retraining": false,
+      "prefetch": false,
+      "offload": false,
+      "audit_shadows": true
+    }
+  },
+  "holdout_model_tasks": 0,
+  "holdout_training_rows": 0,
+  "predictor_summary_sha256": "466f8a7babf5469dc7d06d8a6da5967765565cb4e3e96e59267440febbba0c2e",
+  "tests": [
+    {
+      "selection": "queue + independent protocol + native final + feedback",
+      "passed": 43
+    },
+    {
+      "selection": "candidate predictor + queue + scoring",
+      "passed": 12
+    },
+    {
+      "selection": "frozen baseline + legacy GBDT + feature contract",
+      "passed": 10
+    }
+  ],
+  "test_count_note": "65 successful test executions; 3 queue tests occur in two selections; 62 distinct tests",
+  "report_sha256": "ea200297b27e0d27326c4ddefc558ae6e92d043236972bc2a103f6990adcbba0"
+}

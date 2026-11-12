@@ -1,0 +1,41 @@
+{
+  "validated_at": "2026-11-10T19:11:20.293339+08:00",
+  "scope": "Manuscript, arithmetic, sources, and PDF export only; no new training or performance experiments.",
+  "word_count_whitespace": 8624,
+  "pdf_pages": 21,
+  "figures": 3,
+  "tables": 6,
+  "numeric_crosschecks": {
+    "additional_cached_tokens_C_vs_A": 768,
+    "prefill_reduction_pct_C_vs_A": 14.6,
+    "jct_reduction_pct_C_vs_A": 2.929,
+    "jct_reduction_pct_C_vs_B": 1.723,
+    "jct_increase_pct_D_vs_C": 1.266
+  },
+  "local_markdown_links": "all referenced local files exist",
+  "pdf_checks": {
+    "overfull_boxes": 0,
+    "missing_glyphs": 0,
+    "algorithm_on_one_page": true,
+    "visual_review_pages": [
+      1,
+      7,
+      8,
+      12,
+      18
+    ]
+  },
+  "reviews": {
+    "results": "passed source and units review",
+    "literature": "passed bounded-claim review; LRB source recheck remains pending",
+    "method": "weight semantics, native bounds/order, timestamp, and abort handling corrected after review"
+  },
+  "source_and_artifact_sha256": {
+    "docs/leasepath_iclr_paper_v1_2026-11-10.md": "5e5842084d8bec7948531426f504949afe90c63754d79f7bf418dcd5daf5638a",
+    "docs/leasepath_iclr_paper_v1_2026-11-10.tex": "9995bb48831eec20e5d2a16db744123a2c4ea359bf64eabe035caa899ab6deee",
+    "docs/leasepath_iclr_paper_v1_2026-11-10.pdf": "50890c86ac0aea3968feb7deddb467c902677f4653c1ed9d44d21ef6385f0e11",
+    "docs/leasepath_iclr_paper_v1_notes_2026-11-10.md": "dbe01311272654858c2cf79d8d92dd2aee9e6783ae666eaadb8fce8cac27b05f",
+    "results/cache_policy/kv_distribution_natural_2026-11-09/natural-comparison.json": "ea26870e1243599ee19acba9c55288ae06460100766f944613309509ffd4bdac",
+    "docs/leasepath_iclr_outline_2026-11-10.md": "00c98f39301a4a47aba5d03b507a97a8084695c0ef25a3b960d93e5862adc592"
+  }
+}

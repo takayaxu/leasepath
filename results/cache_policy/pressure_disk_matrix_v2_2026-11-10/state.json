@@ -1,0 +1,64 @@
+{
+  "status": "stopped",
+  "process": {
+    "pid": 3962288,
+    "start_ticks": 148682427,
+    "boot_id": "91b65d19-10fc-4f9a-ae68-2b38e6ad0b40"
+  },
+  "started_wall_ns": 1794313585898770662,
+  "plan_sha256": "6adcdddb5f725dda3cd879eaf9acd3b1b4dc1fb7f5c88235e04ed99799f4a7c5",
+  "steps": [],
+  "new_model_generations": 0,
+  "natural_JCT_passed": false,
+  "updated_utc": "2026-11-10T12:40:10.289285+00:00",
+  "model_preparation": {
+    "status": "failed",
+    "plan_sha256": "a9f7349e03c1cbc7df60ffdb85bd3d9f53e17f888137b484ee78b0c62868a72a",
+    "process": {
+      "pid": 3962295,
+      "start_ticks": 148682476,
+      "boot_id": "91b65d19-10fc-4f9a-ae68-2b38e6ad0b40"
+    },
+    "started_wall_ns": 1794313586597780387,
+    "locked_bytes": 26273120256,
+    "bytes_hashed": 26273120256,
+    "pass": 1,
+    "passes": [],
+    "new_model_generations": 0,
+    "outside_JCT": true,
+    "initial_memory": {
+      "available_bytes": 273777242112,
+      "owned_model_bytes": 0,
+      "effective_available_bytes": 273777242112,
+      "required_total_bytes": 236223201280
+    },
+    "controls": {
+      "cpus": [
+        0,
+        2,
+        5,
+        6,
+        8,
+        10,
+        11,
+        12
+      ],
+      "thp_disabled": true,
+      "address_space_bytes": 85899345920
+    },
+    "elapsed_s": 333.469329334097,
+    "updated_wall_ns": 1794313920066848293,
+    "pass_number": 1,
+    "last_memory_admission": {
+      "available_bytes": 247404568576,
+      "owned_model_bytes": 26273120256,
+      "effective_available_bytes": 273677688832,
+      "required_total_bytes": 236223201280
+    },
+    "error": "TimeoutError: bounded model preparation/holding stopped: 15"
+  },
+  "error": "InterruptedError: supervisor stopped: 15",
+  "finished_wall_ns": 1794313926306441309,
+  "retained_tmpfs_root": "/dev/shm/leasepath-preexec-v2-20261110",
+  "verified_archive": "/home/liuxv/LeasePath-new-server-data/.artifacts/checkpoints/pressure-disk-matrix-v2-2026-11-10"
+}

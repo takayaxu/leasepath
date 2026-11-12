@@ -1,0 +1,17 @@
+\begin{table*}[t]
+\centering\small
+\caption{Measured timing categories for the continuous-agent comparison, in seconds per arm. Tools and background training overlap service; controller preparation includes prediction, so columns cannot be added to reconstruct a critical path. Model loading precedes the response window.}
+\label{tab:continuous-overhead}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}lrrrrrrr@{}}
+\toprule
+Policy & Decode & Tools & Prediction & Preparation & Online fit & Load & Makespan \\
+\midrule
+Retired-first LRU & 1,796.477 & 20.510 & 0.000 & 25.342 & 0.000 & 30.180 & 3,641.511 \\
+Empirical, dynamic, distribution & 1,797.064 & 20.688 & 0.299 & 26.618 & 0.742 & 34.336 & 3,039.848 \\
+GBDT, static, distribution & 1,797.451 & 20.681 & 0.682 & 27.025 & 0.000 & 52.639 & 2,943.373 \\
+GBDT, dynamic, fixed window & 1,797.536 & 20.198 & 0.740 & 27.750 & 0.983 & 88.545 & 2,955.819 \\
+GBDT, dynamic, distribution & 1,797.737 & 20.583 & 0.758 & 27.758 & 1.041 & 178.907 & 2,950.107 \\
+\bottomrule
+\end{tabular}
+\end{table*}

@@ -1,0 +1,80 @@
+{
+  "status": "stopped",
+  "pid": 3992521,
+  "started_wall_ns": 1794314774830126058,
+  "plan_sha256": "3378abda06675f17f7f63530dcbafef9d7f1c4b363290a884a6ad2961eaf2d42",
+  "new_model_generations": 47,
+  "holdout_model_tasks": 0,
+  "natural_JCT_acceptance": false,
+  "batches": [],
+  "updated_utc": "2026-11-10T13:01:08.461880+00:00",
+  "tracer_pid": 3992518,
+  "topology": {
+    "status": "passed",
+    "groups": [
+      [
+        0,
+        2,
+        5,
+        6,
+        8,
+        10,
+        11,
+        12
+      ],
+      [
+        14,
+        42
+      ],
+      [
+        15,
+        43
+      ],
+      [
+        16,
+        44
+      ],
+      [
+        17,
+        45
+      ],
+      [
+        18,
+        46
+      ],
+      [
+        19,
+        47
+      ]
+    ],
+    "exclusive_host_claim": false
+  },
+  "model_bytes_verified": 65535970144,
+  "model_verification_s": 615.5146115240641,
+  "runtime_compatibility": "19d302d47e14d4f91c6e7cf09133e359f486af9872953bd0a75eb39a148eb8f4",
+  "model_load_s": 42.92921524005942,
+  "device_preflight": [
+    {
+      "index": "5",
+      "uuid": "GPU-9fedf347-c37c-a7d0-5db7-0bd9fb6d7188",
+      "used_mib": 4,
+      "total_mib": 32768
+    },
+    {
+      "index": "6",
+      "uuid": "GPU-a2abbb79-e97e-3dad-7c2c-3e3a1bed3430",
+      "used_mib": 4,
+      "total_mib": 32768
+    },
+    {
+      "index": "7",
+      "uuid": "GPU-87cd5f26-d0a4-4b48-62c9-161b68452dfc",
+      "used_mib": 4,
+      "total_mib": 32768
+    }
+  ],
+  "native_gate": "passed",
+  "current_batch": 0,
+  "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+  "finished_wall_ns": 1794315668461874893
+}

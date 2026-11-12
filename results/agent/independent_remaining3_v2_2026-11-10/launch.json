@@ -1,0 +1,21 @@
+{
+  "supervisor_pid": 4050397,
+  "command": [
+    "strace",
+    "-ff",
+    "-ttt",
+    "-yy",
+    "-s",
+    "4096",
+    "-e",
+    "trace=%file,read,pread64,mmap,execve,wait4,mlock,mlockall,munlock,munlockall,set_mempolicy,get_mempolicy,prctl,sched_setaffinity,prlimit64",
+    "-o",
+    "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/native.strace",
+    "/dev/shm/leasepath-preexec-v2-20261110/runtime/bin/python3.13",
+    "-u",
+    "/home/liuxv/LeasePath-new-server-data/scripts/run_independent_collection_v2.py",
+    "--plan",
+    "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/plan.json"
+  ],
+  "started_wall_ns": 1794317157573884297
+}

@@ -1,0 +1,6 @@
+{
+  "reason": "Further v3 root causes identified before v4 started; register comprehensive tool validation repair instead of knowingly incomplete validation run",
+  "new_model_generations": 0,
+  "preserved_registered_plan": true,
+  "wall_ns": 1794368130140797494
+}

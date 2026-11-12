@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/home/liuxv/LeasePath-new-server-data/scripts/pressure_disk_keeper_v1.py", line 158, in <module>
+    prepare(args.plan, args.progress, args.ready)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liuxv/LeasePath-new-server-data/scripts/pressure_disk_keeper_v1.py", line 111, in prepare
+    address = (guard.add(offset, length) if pass_number == 1 else
+               ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/liuxv/LeasePath-new-server-data/scripts/pressure_disk_keeper_v1.py", line 51, in add
+    if self.lib.mlock(address, length):
+       ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/liuxv/LeasePath-new-server-data/scripts/pressure_disk_keeper_v1.py", line 89, in stop
+    raise TimeoutError('bounded model preparation/holding stopped: ' + str(signum))
+TimeoutError: bounded model preparation/holding stopped: 15

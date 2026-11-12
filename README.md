@@ -300,6 +300,8 @@ python scripts/validate_trace.py results/prediction/d1_contract/legal_demand_phy
 
 Git 仓库保留项目代码、文档、测试、D1 合成验收结果及图表、BFCL 参考任务和公开数据来源说明。模型权重、构建目录、CacheWise/TraceLab 下载快照与大型派生数据不上传，已有本地文件不受影响。首次克隆后，涉及 CacheWise 全量快照的测试需要先恢复 `data/sources/cachewise/upstream/`（其余测试可用 `python -m pytest -q -k "not full_pinned_audit"` 运行）。可用 `python scripts/collect_cachewise.py --source /tmp/leasepath-cachewise` 下载到一个尚不存在的目录，再将其中的 `upstream/` 复制到 `data/sources/cachewise/`，具体命令见 [部署说明](docs/deployment.md)。本机已恢复此 CacheWise 快照；TraceLab 的压缩原始数据和大型派生文件尚未下载。TraceLab 辅助数据通过 `python scripts/prepare_tracelab.py` 获取和生成。这些公开数据仍不是主任务真实 U/D/C 训练集。
 
+2026-11-12 服务器开发内容同步于 `codex/new-server-data` 分支，包含连续 agent 采集/预测/在线调整代码、实验汇总及 [最新版论文 PDF](docs/leasepath_isca2027_paper_v3_2026-11-11.pdf)、[TeX](docs/leasepath_isca2027_paper_v3_2026-11-11.tex) 和 [GBDT 训练说明](docs/leasepath_gbdt_training_contract_2026-11-12.md)。小型经验/GBDT 模型与训练时间线随 Git 保存；完整原始日志、重复验收视图和 native strace 保留在服务器。范围及回归检查见 [本次同步记录](docs/github_sync_2026-11-12.md)。
+
 ## 数据现状与用途边界
 
 ### 主任务数据：已有开发集，扩大采集验收仍待完成

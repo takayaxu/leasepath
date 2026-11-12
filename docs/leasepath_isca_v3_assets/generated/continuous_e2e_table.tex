@@ -1,0 +1,17 @@
+\begin{table*}[t]
+\centering\small
+\caption{Five-policy comparison at 150 blocks and six sessions: totals per arm, mean response per user turn; 48/48 turns validate.}
+\label{tab:continuous-e2e}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}lrrrrrrr@{}}
+\toprule
+Policy & Cached tokens & Prefill tokens & Prefill (s) & Saved & Response (s) & Saved & Updates \\
+\midrule
+Retired-first LRU & 433,536 & 794,084 & 1,602.567 & 0.00\% & 394.295 & 0.00\% & 0 \\
+Empirical, dynamic, distribution & 718,464 & 509,156 & 981.421 & 38.76\% & 323.527 & 17.95\% & 2 \\
+GBDT, static, distribution & 758,784 & 468,836 & 885.533 & 44.74\% & 316.997 & 19.60\% & 0 \\
+GBDT, dynamic, fixed window & 761,984 & 465,636 & 889.837 & 44.47\% & 316.236 & 19.80\% & 2 \\
+GBDT, dynamic, distribution & 762,880 & 464,740 & 883.732 & 44.86\% & 316.368 & 19.76\% & 2 \\
+\bottomrule
+\end{tabular}
+\end{table*}

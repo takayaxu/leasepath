@@ -1,0 +1,7 @@
+{
+  "pid": 3962288,
+  "started_wall_ns": 1794313585794053426,
+  "base_commit": "096d6c7fe652f128fa85980328e76fe7f99d9e36",
+  "plan": "/home/liuxv/LeasePath-new-server-data/results/cache_policy/pressure_disk_matrix_v2_2026-11-10/plan.json",
+  "source_provenance": "new files are frozen by SHA256 in plan; base commit is not a claim they are committed"
+}

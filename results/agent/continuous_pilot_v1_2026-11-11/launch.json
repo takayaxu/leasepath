@@ -1,0 +1,13 @@
+{
+  "pid": 1105690,
+  "command": [
+    "/dev/shm/leasepath-preexec-v2-20261110/runtime/bin/python3.13",
+    "-u",
+    "/home/liuxv/LeasePath-new-server-data/scripts/run_continuous_pilot_v1.py",
+    "--plan",
+    "/home/liuxv/LeasePath-new-server-data/results/agent/continuous_pilot_v1_2026-11-11/plan.json"
+  ],
+  "started_wall_ns": 1794363233833851826,
+  "maximum_generations": 589,
+  "scope": "development capability collection; no timing comparison"
+}

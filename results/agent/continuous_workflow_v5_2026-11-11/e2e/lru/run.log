@@ -1,0 +1,12 @@
+PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Traceback (most recent call last):
+  File "/home/liuxv/LeasePath-new-server-data/scripts/run_continuous_e2e_v5.py", line 132, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/home/liuxv/LeasePath-new-server-data/scripts/run_continuous_e2e_v5.py", line 100, in main
+    live=UpdatingPredictor(model,runtime_domain=compatibility,training_domain=p['training_domain'],kind=kind,
+        output=work/'training',seed_observations=seed,dynamic=p['dynamic'],update_episodes=100,minimum_projects=5,interval_s=600)
+  File "/home/liuxv/LeasePath-new-server-data/src/leasepath/continuous_online_v1.py", line 71, in __init__
+    self._event('initial_deployment',kind=kind,dynamic=dynamic)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: UpdatingPredictor._event() got multiple values for argument 'kind'

@@ -1,0 +1,7 @@
+owner,source_group,user_turns,model_requests,tools,tool_types,input_tokens,output_tokens,first_input_tokens,last_input_tokens,session_first_to_last_lookup_s,first_user_to_last_delivery_s
+continuous_inventory,inventory_repository_authored_fixture_v1,8,33,25,4,122393,3834,821,8095,2406.135147024,2429.1709353420883
+continuous_billing,billing_analysis_authored_fixture_v1,8,44,36,5,143349,2519,880,6928,3327.55246493,3344.2142492770217
+continuous_logs,service_diagnostics_authored_fixture_v1,8,36,28,5,177833,1902,808,8919,2852.903622721,2879.7818145130295
+continuous_api,catalog_integration_authored_fixture_v1,8,50,42,5,194020,3467,881,7421,3441.39088981,3451.4977013820317
+continuous_experiment,measurement_experiment_authored_fixture_v1,8,45,37,5,487070,5617,879,18196,3364.223344974,3379.5011596560944
+continuous_documents,release_document_audit_authored_fixture_v1,8,36,28,4,102955,2511,813,5285,2898.53495272,2924.732115944149

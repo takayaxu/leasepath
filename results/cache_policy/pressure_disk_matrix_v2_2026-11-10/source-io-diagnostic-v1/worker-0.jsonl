@@ -1,0 +1,12 @@
+{"worker": 0, "repeat": 0, "wall_s": 6.49637351394631, "delta": {"read_bytes": 0, "major_faults": 0, "block_input_ops": 0}, "events": []}
+{"worker": 0, "repeat": 1, "wall_s": 6.047595405951142, "delta": {"read_bytes": 0, "major_faults": 0, "block_input_ops": 0}, "events": []}
+{"worker": 0, "repeat": 2, "wall_s": 6.183572531910613, "delta": {"read_bytes": 0, "major_faults": 0, "block_input_ops": 0}, "events": []}
+{"worker": 0, "repeat": 3, "wall_s": 4.071808479027823, "delta": {"read_bytes": 0, "major_faults": 0, "block_input_ops": 0}, "events": []}
+{"worker": 0, "repeat": 4, "wall_s": 3.7382845040410757, "delta": {"read_bytes": 0, "major_faults": 0, "block_input_ops": 0}, "events": []}
+{"worker": 0, "repeat": 5, "wall_s": 4.56306013208814, "delta": {"read_bytes": 0, "major_faults": 0, "block_input_ops": 0}, "events": []}
+{"worker": 0, "repeat": 6, "wall_s": 4.999473144067451, "delta": {"read_bytes": 0, "major_faults": 0, "block_input_ops": 0}, "events": []}
+{"worker": 0, "repeat": 7, "wall_s": 6.210868448019028, "delta": {"read_bytes": 0, "major_faults": 0, "block_input_ops": 0}, "events": []}
+{"worker": 0, "repeat": 8, "wall_s": 6.153523095184937, "delta": {"read_bytes": 0, "major_faults": 0, "block_input_ops": 0}, "events": []}
+{"worker": 0, "repeat": 9, "wall_s": 4.545107717858627, "delta": {"read_bytes": 0, "major_faults": 0, "block_input_ops": 0}, "events": []}
+{"worker": 0, "repeat": 10, "wall_s": 3.7414737581275403, "delta": {"read_bytes": 0, "major_faults": 0, "block_input_ops": 0}, "events": []}
+{"worker": 0, "repeat": 11, "wall_s": 3.7667119309771806, "delta": {"read_bytes": 0, "major_faults": 0, "block_input_ops": 0}, "events": []}

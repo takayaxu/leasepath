@@ -1,0 +1,17 @@
+{
+  "status": "preparing",
+  "diagnostic_only": true,
+  "new_model_generations": 0,
+  "source_run": "/dev/shm/leasepath-preexec-v2-20261110/disk-matrix-v1/natural-32-3",
+  "source_manifest_sha256": "01ba85eb9690d79cead254c986e336691061354d24844e0612452505668fd8db",
+  "threads": 3,
+  "checks_per_thread": 12,
+  "wall_budget_s": 600,
+  "files_per_check": 692,
+  "started_wall_ns": 1794313077177242090,
+  "initial_residency": {
+    "files": 689,
+    "pages": 231470,
+    "nonresident_pages": 0
+  }
+}

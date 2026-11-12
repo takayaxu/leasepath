@@ -1,0 +1,51 @@
+{
+  "source": "/home/liuxv/LeasePath-new-server-data/results/cache_policy/kv_distribution_natural_2026-11-09/natural-comparison.json",
+  "source_sha256": "ea26870e1243599ee19acba9c55288ae06460100766f944613309509ffd4bdac",
+  "script_sha256": "73a87e51456acadc6943f20c281ab6b7a4dc0193544aeecf86c5e3493f0c9710",
+  "matplotlib_version": "3.10.6",
+  "numpy_version": "2.3.5",
+  "constructed_figure": {
+    "kind": "constructed_illustration_not_measured",
+    "right_edges_s": [
+      1.0,
+      10.0,
+      30.0
+    ],
+    "demand_mass_A": [
+      0.2,
+      0.6,
+      0.0
+    ],
+    "demand_mass_B": [
+      0.2,
+      0.0,
+      0.6
+    ],
+    "horizon_s": 30,
+    "tau_s": 10.0,
+    "score_A": 0.4016951483100573,
+    "score_B": 0.21083972462791029,
+    "remaining_mass_has_assumed_outcome": false
+  },
+  "measured_figure_fields": {
+    "figure2_preliminary_results": [
+      "aggregates.cached_tokens",
+      "aggregates.prefill_s",
+      "aggregates.mean_successful_jct_s"
+    ],
+    "figure3_paired_cycles": [
+      "paired[].cycles[].mean_successful_jct_s_delta"
+    ]
+  },
+  "scope": "Four paired cycles, three known development parents; repeats/parents are correlated. Strict local I/O controls, shared CPU and memory bandwidth. No general causal or statistical-significance claim.",
+  "uncertainty_intervals_computed": false,
+  "new_experiments_performed": false,
+  "outputs": [
+    "figure1_distribution_example.pdf",
+    "figure1_distribution_example.png",
+    "figure2_preliminary_results.pdf",
+    "figure2_preliminary_results.png",
+    "figure3_paired_cycles.pdf",
+    "figure3_paired_cycles.png"
+  ]
+}

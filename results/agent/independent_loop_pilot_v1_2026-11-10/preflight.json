@@ -1,0 +1,52 @@
+{
+  "status": "passed",
+  "actual_runtime": "/dev/shm/leasepath-preexec-v2-20261110/runtime/bin/python3.13",
+  "model_generations": 0,
+  "valid_development_plan": true,
+  "rejected_invalid_cases": [
+    "holdout",
+    "duplicate",
+    "extra"
+  ],
+  "topology": {
+    "status": "passed",
+    "groups": [
+      [
+        0,
+        2,
+        5,
+        6,
+        8,
+        10,
+        11,
+        12
+      ],
+      [
+        14,
+        42
+      ],
+      [
+        15,
+        43
+      ],
+      [
+        16,
+        44
+      ],
+      [
+        17,
+        45
+      ],
+      [
+        18,
+        46
+      ],
+      [
+        19,
+        47
+      ]
+    ],
+    "exclusive_host_claim": false
+  },
+  "existing_independent_suite_tests_passed": 33
+}

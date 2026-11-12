@@ -1,0 +1,2217 @@
+[
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view/batch-0:r2638bf7bae0f47ba96b311fcef91757e:independent_job_shop",
+    "remaining_s": 3.447908124886453,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view/batch-0:reb0ebeb7cb6a4ef4950883b2c93d35b8:independent_job_shop",
+    "remaining_s": 1.694604144897312,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view/batch-0:reb0ebeb7cb6a4ef4950883b2c93d35b8:independent_package_resolution",
+    "remaining_s": 8.252051040995866,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view/batch-0:r4a07130bea0b4d049ea3fe4f05162ea9:independent_package_resolution",
+    "remaining_s": 6.562541789142415,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view/batch-0:r4a07130bea0b4d049ea3fe4f05162ea9:independent_propositional_sat",
+    "remaining_s": 12.26616821414791,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view/batch-0:r0b6ec9649b0a4bf99cd11ea48f57c512:independent_propositional_sat",
+    "remaining_s": 5.708684692159295,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view/batch-0:r0b6ec9649b0a4bf99cd11ea48f57c512:independent_job_shop",
+    "remaining_s": 10.788827873999253,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view/batch-0:r7513323374a540dc86059276404b8d09:independent_job_shop",
+    "remaining_s": 5.084677276900038,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view/batch-0:r7513323374a540dc86059276404b8d09:independent_package_resolution",
+    "remaining_s": 11.702292575966567,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view/batch-0:rb92bae45fc154296b7151330dfed7190:independent_package_resolution",
+    "remaining_s": 6.623165765078738,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view/batch-0:rb92bae45fc154296b7151330dfed7190:independent_propositional_sat",
+    "remaining_s": 14.14045634912327,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view/batch-0:r314529b321ae4112871f2363d6efed0d:independent_propositional_sat",
+    "remaining_s": 7.522502756910399,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view/batch-0:r314529b321ae4112871f2363d6efed0d:independent_job_shop",
+    "remaining_s": 13.295302334940061,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view/batch-0:r54f797838a884d25a3f021dced3cb50a:independent_job_shop",
+    "remaining_s": 5.778145179152489,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view/batch-0:r54f797838a884d25a3f021dced3cb50a:independent_package_resolution",
+    "remaining_s": 11.509131879080087,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view/batch-0:r5ea4c047899448d7823443d54b985296:independent_package_resolution",
+    "remaining_s": 5.737520023947582,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view/batch-0:r5ea4c047899448d7823443d54b985296:independent_propositional_sat",
+    "remaining_s": 11.808462623041123,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view/batch-0:rf498f15f78d04e8694ac77d0478996fd:independent_propositional_sat",
+    "remaining_s": 6.077683181036264,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view/batch-0:rf498f15f78d04e8694ac77d0478996fd:independent_job_shop",
+    "remaining_s": 11.579531179973856,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view/batch-0:r669b7d53809d4173a187ec5bdfe83ad1:independent_job_shop",
+    "remaining_s": 5.507749252021313,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view/batch-0:r669b7d53809d4173a187ec5bdfe83ad1:independent_package_resolution",
+    "remaining_s": 11.211424235953018,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view/batch-0:r4c8fc16f18e54173be30fa3d937bcb5d:independent_package_resolution",
+    "remaining_s": 5.71041400404647,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view/batch-0:r4c8fc16f18e54173be30fa3d937bcb5d:independent_propositional_sat",
+    "remaining_s": 12.395208205096424,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view/batch-0:rb5772fc1847d419da02b949fe22777e4:independent_propositional_sat",
+    "remaining_s": 6.6919983038678765,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view/batch-0:rb5772fc1847d419da02b949fe22777e4:independent_job_shop",
+    "remaining_s": 12.380238820798695,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view/batch-0:rfdf4fe057c1742d8850864de8e3c6309:independent_job_shop",
+    "remaining_s": 5.6948004039004445,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view/batch-0:rfdf4fe057c1742d8850864de8e3c6309:independent_package_resolution",
+    "remaining_s": 11.755621470976621,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view/batch-0:rabdc4ecef3c2498baec0c3cd670f21f7:independent_package_resolution",
+    "remaining_s": 6.072939828969538,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view/batch-0:rabdc4ecef3c2498baec0c3cd670f21f7:independent_propositional_sat",
+    "remaining_s": 11.420081653865054,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view/batch-0:r1a54cd973135423abfbc05fa65769bc6:independent_propositional_sat",
+    "remaining_s": 5.355675293831155,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view/batch-0:r1a54cd973135423abfbc05fa65769bc6:independent_job_shop",
+    "remaining_s": 11.004969062982127,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view/batch-0:rebf5e3a18ee943c3b708c4cdd1ed5cff:independent_job_shop",
+    "remaining_s": 5.657452145125717,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view/batch-0:rebf5e3a18ee943c3b708c4cdd1ed5cff:independent_package_resolution",
+    "remaining_s": 11.949009255040437,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view/batch-0:rb04c5fda511f4cdcb4353a703b2b21eb:independent_package_resolution",
+    "remaining_s": 6.298229419859126,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view/batch-0:rb04c5fda511f4cdcb4353a703b2b21eb:independent_propositional_sat",
+    "remaining_s": 13.214466712903231,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view/batch-0:rfb463390db53498b953aec733c341787:independent_propositional_sat",
+    "remaining_s": 6.928882641950622,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view/batch-0:rfb463390db53498b953aec733c341787:independent_job_shop",
+    "remaining_s": 12.48426386504434,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view/batch-0:ra6eb029f2b9444e986aca9ef99179319:independent_job_shop",
+    "remaining_s": 5.56171407410875,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view/batch-0:ra6eb029f2b9444e986aca9ef99179319:independent_package_resolution",
+    "remaining_s": 11.454173441044986,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view/batch-0:rb026be0cfe8a43f3a4afe41600a815f2:independent_package_resolution",
+    "remaining_s": 5.90085475705564,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view/batch-0:rb026be0cfe8a43f3a4afe41600a815f2:independent_propositional_sat",
+    "remaining_s": 12.952935747103766,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view/batch-0:re2725a1828ff419a990478465fe9fef2:independent_propositional_sat",
+    "remaining_s": 7.066555733093992,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view/batch-0:re2725a1828ff419a990478465fe9fef2:independent_job_shop",
+    "remaining_s": 12.675648797070608,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view/batch-0:rf5152d1730434423926e175fb37455b2:independent_job_shop",
+    "remaining_s": 5.616267125122249,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view/batch-0:rf5152d1730434423926e175fb37455b2:independent_package_resolution",
+    "remaining_s": 11.842454801080748,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view/batch-0:r75a895e832224025a8ffe845b8e88357:independent_package_resolution",
+    "remaining_s": 6.2341856609564275,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view/batch-0:r75a895e832224025a8ffe845b8e88357:independent_propositional_sat",
+    "remaining_s": 13.266503501916304,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view/batch-0:r2c6f6810d6e0469eae5e85d552b11a8d:independent_propositional_sat",
+    "remaining_s": 7.0403759309556335,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view/batch-0:r2c6f6810d6e0469eae5e85d552b11a8d:independent_job_shop",
+    "remaining_s": 13.41282675601542,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view/batch-0:rd0bbf2ab03d54f1d977654732244272f:independent_job_shop",
+    "remaining_s": 6.381322080036625,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view/batch-0:rd0bbf2ab03d54f1d977654732244272f:independent_package_resolution",
+    "remaining_s": 12.54997160891071,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view/batch-0:r0827ea403d4748ff8010597519584012:independent_package_resolution",
+    "remaining_s": 6.18378118891269,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view/batch-0:r0827ea403d4748ff8010597519584012:independent_propositional_sat",
+    "remaining_s": 8.871743412921205,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view/batch-0:r586305c8ce4a45ad80e246514e5fc1bf:independent_propositional_sat",
+    "remaining_s": 2.6994094669353217,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view/batch-0:r586305c8ce4a45ad80e246514e5fc1bf:independent_job_shop",
+    "remaining_s": 8.704699849942699,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view/batch-0:r2ac75b409f634180bb565aa98c3829c8:independent_job_shop",
+    "remaining_s": 6.0152084259316325,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view/batch-0:rde9eb4a015c84deb9e478a9ff05139ac:independent_propositional_sat",
+    "remaining_s": 6.286947798915207,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view/batch-0:rc99e940f3c9441949794f3127fd4ab79:independent_job_shop",
+    "remaining_s": 6.397958718938753,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view/batch-0:r2299e416217f4b66bcb40097f7d06f2b:independent_propositional_sat",
+    "remaining_s": 5.928451370913535,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view/batch-0:r0acbb877c5284c43a0c681935c7df8bb:independent_job_shop",
+    "remaining_s": 2.876361879054457,
+    "outcome": "retire"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0:ra2c28a4d8b1d427885acfae5af77c988:independent_error_correction",
+    "remaining_s": 3.1866318229585886,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0:rf70a164243aa4767b71aad10cf5fdb4c:independent_error_correction",
+    "remaining_s": 1.5747451540082693,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0:rf70a164243aa4767b71aad10cf5fdb4c:independent_exact_cover",
+    "remaining_s": 9.753088439116254,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0:rceebb1fe3e2446739999c57339803f6e:independent_exact_cover",
+    "remaining_s": 8.18319500121288,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0:rceebb1fe3e2446739999c57339803f6e:independent_max_flow",
+    "remaining_s": 14.460361276054755,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0:r9aecaed8c2b1400d9fc97b03a604e2b4:independent_max_flow",
+    "remaining_s": 6.28151207184419,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0:r9aecaed8c2b1400d9fc97b03a604e2b4:independent_error_correction",
+    "remaining_s": 12.49568282882683,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0:r0feaa8f74c4e4cd396ec38480c4e2d0f:independent_error_correction",
+    "remaining_s": 6.218975832918659,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0:r0feaa8f74c4e4cd396ec38480c4e2d0f:independent_exact_cover",
+    "remaining_s": 12.22117406106554,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0:rf28d18ab7b3745628aecc275afff4257:independent_exact_cover",
+    "remaining_s": 6.012674706988037,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0:rf28d18ab7b3745628aecc275afff4257:independent_max_flow",
+    "remaining_s": 12.582907176809385,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0:r1a4d3f028eb54b32bdefbc6a76fbd178:independent_max_flow",
+    "remaining_s": 6.574713286012411,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0:r1a4d3f028eb54b32bdefbc6a76fbd178:independent_error_correction",
+    "remaining_s": 12.917290417011827,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0:rbfaafdc42bea48efaaba4506bc947ed1:independent_error_correction",
+    "remaining_s": 6.34649540996179,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0:rbfaafdc42bea48efaaba4506bc947ed1:independent_exact_cover",
+    "remaining_s": 12.128590123960748,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0:r481d390da52648238b585982734e243b:independent_exact_cover",
+    "remaining_s": 5.793572476832196,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0:r481d390da52648238b585982734e243b:independent_max_flow",
+    "remaining_s": 11.578232493018731,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0:rb63860317c4d4cc1800a43df536a0118:independent_max_flow",
+    "remaining_s": 5.790838781977072,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0:rb63860317c4d4cc1800a43df536a0118:independent_error_correction",
+    "remaining_s": 10.808291126973927,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0:rebc94c8a978146aa87b24d584425bdb2:independent_error_correction",
+    "remaining_s": 5.023880037013441,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0:rebc94c8a978146aa87b24d584425bdb2:independent_exact_cover",
+    "remaining_s": 11.100063920021057,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0:rce73f16acc734ed0826796a3369f2d79:independent_exact_cover",
+    "remaining_s": 6.083171107107773,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0:rce73f16acc734ed0826796a3369f2d79:independent_max_flow",
+    "remaining_s": 12.114993094932288,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0:rdc856d51aa9848dcbbb23b69a4df4a54:independent_max_flow",
+    "remaining_s": 6.038702355930582,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0:rdc856d51aa9848dcbbb23b69a4df4a54:independent_error_correction",
+    "remaining_s": 10.637636448955163,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0:r091b717b4b6b4934a1c6ebf6bd34acb2:independent_error_correction",
+    "remaining_s": 4.610685555962846,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0:r091b717b4b6b4934a1c6ebf6bd34acb2:independent_exact_cover",
+    "remaining_s": 10.704487740062177,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0:rab700b6c974f42998d832c57c459face:independent_exact_cover",
+    "remaining_s": 6.101840037154034,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0:rab700b6c974f42998d832c57c459face:independent_max_flow",
+    "remaining_s": 11.854380563134328,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0:r9bb58e5109d148c98158b0a4585af207:independent_max_flow",
+    "remaining_s": 5.760616821004078,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0:r9bb58e5109d148c98158b0a4585af207:independent_error_correction",
+    "remaining_s": 10.279785882914439,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0:r6183a7a3d4964e46868d73a91403db08:independent_error_correction",
+    "remaining_s": 4.52623644284904,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0:r6183a7a3d4964e46868d73a91403db08:independent_exact_cover",
+    "remaining_s": 10.537999433930963,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0:r027b943dbb5044b6b3967fcaa3cf7c55:independent_exact_cover",
+    "remaining_s": 6.020487925037742,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0:r027b943dbb5044b6b3967fcaa3cf7c55:independent_max_flow",
+    "remaining_s": 11.297381191048771,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0:r8459df044efa4da99ff649caeee59509:independent_max_flow",
+    "remaining_s": 5.290230181999505,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0:r8459df044efa4da99ff649caeee59509:independent_error_correction",
+    "remaining_s": 9.725303862942383,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0:rf95f5333095b4fcfb55f7f632124b305:independent_error_correction",
+    "remaining_s": 4.443519707070664,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0:rf95f5333095b4fcfb55f7f632124b305:independent_exact_cover",
+    "remaining_s": 10.34597581019625,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0:r37a9c730f07d4344aeae1f205cceedc3:independent_exact_cover",
+    "remaining_s": 5.912642253097147,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0:r37a9c730f07d4344aeae1f205cceedc3:independent_max_flow",
+    "remaining_s": 11.376952935941517,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0:rfecb1c4715b746428b99976fe2e6fd33:independent_max_flow",
+    "remaining_s": 5.473551838891581,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0:rfecb1c4715b746428b99976fe2e6fd33:independent_error_correction",
+    "remaining_s": 10.134554992895573,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0:rd0b081c4fd5e43c682f36ce9d13ad8ad:independent_error_correction",
+    "remaining_s": 4.667755112983286,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0:rd0b081c4fd5e43c682f36ce9d13ad8ad:independent_exact_cover",
+    "remaining_s": 10.628526052925736,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0:r15cffdb8e8cb4d1593285a6c485abea9:independent_exact_cover",
+    "remaining_s": 5.975720398826525,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0:r15cffdb8e8cb4d1593285a6c485abea9:independent_max_flow",
+    "remaining_s": 12.54721747385338,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0:rbb1ebc04d5d8445b826795ae9b04d41f:independent_max_flow",
+    "remaining_s": 6.581783406902105,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0:rbb1ebc04d5d8445b826795ae9b04d41f:independent_error_correction",
+    "remaining_s": 11.38059922400862,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0:r6e32407dcade4395b49785b23f8f6faa:independent_error_correction",
+    "remaining_s": 4.808392741018906,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0:r6e32407dcade4395b49785b23f8f6faa:independent_exact_cover",
+    "remaining_s": 10.76182718295604,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0:r27be4c9bcc8141c4a02b1a3e1891d54b:independent_exact_cover",
+    "remaining_s": 5.9641110429074615,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0:r27be4c9bcc8141c4a02b1a3e1891d54b:independent_max_flow",
+    "remaining_s": 10.698593226959929,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0:r104f249033fb436e81f5faace969880d:independent_max_flow",
+    "remaining_s": 4.744063478894532,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0:r104f249033fb436e81f5faace969880d:independent_error_correction",
+    "remaining_s": 9.61827520094812,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0:rcfdfb5ef4a97404fa184985a2fd7a2ea:independent_error_correction",
+    "remaining_s": 4.8889243910089135,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0:rcfdfb5ef4a97404fa184985a2fd7a2ea:independent_exact_cover",
+    "remaining_s": 11.027870506979525,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0:r322a1b9e3e224d0d96fea79a8a7c2103:independent_exact_cover",
+    "remaining_s": 6.151318666059524,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0:r322a1b9e3e224d0d96fea79a8a7c2103:independent_max_flow",
+    "remaining_s": 12.034229946089908,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0:rb5088a4ca83548a191443325684c2e85:independent_max_flow",
+    "remaining_s": 5.891871117055416,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0:rb5088a4ca83548a191443325684c2e85:independent_error_correction",
+    "remaining_s": 10.669826518045738,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0:r6d8ca2eed63346d98eb64f6f56aa30eb:independent_error_correction",
+    "remaining_s": 4.78862121514976,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0:r6d8ca2eed63346d98eb64f6f56aa30eb:independent_exact_cover",
+    "remaining_s": 10.855526563012972,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0:r533cd7f773eb4687b7282cbe499b48d7:independent_exact_cover",
+    "remaining_s": 6.079143641982228,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0:r533cd7f773eb4687b7282cbe499b48d7:independent_max_flow",
+    "remaining_s": 12.565082220127806,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0:rd4d7c67f19cc4bc287a573f811fcabb2:independent_max_flow",
+    "remaining_s": 6.495327118085697,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0:rd4d7c67f19cc4bc287a573f811fcabb2:independent_error_correction",
+    "remaining_s": 5.227120767114684,
+    "outcome": "retire"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r38bf848214714b28a108202b1a049750:independent_error_correction",
+    "remaining_s": 8.402272827923298,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r651bb6033e8c4973aa6602800c81fc8a:independent_error_correction",
+    "remaining_s": 6.794305247021839,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r651bb6033e8c4973aa6602800c81fc8a:independent_exact_cover",
+    "remaining_s": 14.831401644973084,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r8ce060838911419f91b8626cd1ce11da:independent_error_correction",
+    "remaining_s": 5.175546241924167,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r8ce060838911419f91b8626cd1ce11da:independent_exact_cover",
+    "remaining_s": 13.212642639875412,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r8ce060838911419f91b8626cd1ce11da:independent_job_shop",
+    "remaining_s": 19.392516165040433,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r91904712584a46efb550c604a9aa6b3a:independent_error_correction",
+    "remaining_s": 3.57650871691294,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r91904712584a46efb550c604a9aa6b3a:independent_exact_cover",
+    "remaining_s": 11.613605114864185,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r91904712584a46efb550c604a9aa6b3a:independent_job_shop",
+    "remaining_s": 17.793478640029207,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r91904712584a46efb550c604a9aa6b3a:independent_max_flow",
+    "remaining_s": 24.646548088872805,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:ra73961e32cd1494bb9975ca0090f025b:independent_error_correction",
+    "remaining_s": 1.7856348529458046,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:ra73961e32cd1494bb9975ca0090f025b:independent_exact_cover",
+    "remaining_s": 9.82273125089705,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:ra73961e32cd1494bb9975ca0090f025b:independent_job_shop",
+    "remaining_s": 16.00260477606207,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:ra73961e32cd1494bb9975ca0090f025b:independent_max_flow",
+    "remaining_s": 22.85567422490567,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:ra73961e32cd1494bb9975ca0090f025b:independent_package_resolution",
+    "remaining_s": 28.554415100021288,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r025a791c4d2648c88c332a49ab2ab629:independent_exact_cover",
+    "remaining_s": 8.042933746008202,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r025a791c4d2648c88c332a49ab2ab629:independent_job_shop",
+    "remaining_s": 14.222807271173224,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r025a791c4d2648c88c332a49ab2ab629:independent_max_flow",
+    "remaining_s": 21.075876720016822,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r025a791c4d2648c88c332a49ab2ab629:independent_package_resolution",
+    "remaining_s": 26.77461759513244,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r025a791c4d2648c88c332a49ab2ab629:independent_propositional_sat",
+    "remaining_s": 32.651962739182636,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rcb6abace47844d94a2dd9479001a7b76:independent_job_shop",
+    "remaining_s": 6.189668738050386,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rcb6abace47844d94a2dd9479001a7b76:independent_max_flow",
+    "remaining_s": 13.042738186893985,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rcb6abace47844d94a2dd9479001a7b76:independent_package_resolution",
+    "remaining_s": 18.741479062009603,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rcb6abace47844d94a2dd9479001a7b76:independent_propositional_sat",
+    "remaining_s": 24.6188242060598,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rcb6abace47844d94a2dd9479001a7b76:independent_error_correction",
+    "remaining_s": 29.611494388896972,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r0c44df5f995e426daabee7d33fc99bae:independent_max_flow",
+    "remaining_s": 6.858658693032339,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r0c44df5f995e426daabee7d33fc99bae:independent_package_resolution",
+    "remaining_s": 12.557399568147957,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r0c44df5f995e426daabee7d33fc99bae:independent_propositional_sat",
+    "remaining_s": 18.434744712198153,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r0c44df5f995e426daabee7d33fc99bae:independent_error_correction",
+    "remaining_s": 23.427414895035326,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r0c44df5f995e426daabee7d33fc99bae:independent_exact_cover",
+    "remaining_s": 29.546099884202704,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r215d6ce4e16144d1bdf388fedc5ebcdc:independent_package_resolution",
+    "remaining_s": 5.7082476620562375,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r215d6ce4e16144d1bdf388fedc5ebcdc:independent_propositional_sat",
+    "remaining_s": 11.585592806106433,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r215d6ce4e16144d1bdf388fedc5ebcdc:independent_error_correction",
+    "remaining_s": 16.578262988943607,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r215d6ce4e16144d1bdf388fedc5ebcdc:independent_exact_cover",
+    "remaining_s": 22.696947978110984,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r215d6ce4e16144d1bdf388fedc5ebcdc:independent_job_shop",
+    "remaining_s": 29.107720847940072,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r11b662639f5f49f9999d1208ec4a8e50:independent_propositional_sat",
+    "remaining_s": 5.881216597976163,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r11b662639f5f49f9999d1208ec4a8e50:independent_error_correction",
+    "remaining_s": 10.873886780813336,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r11b662639f5f49f9999d1208ec4a8e50:independent_exact_cover",
+    "remaining_s": 16.992571769980714,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r11b662639f5f49f9999d1208ec4a8e50:independent_job_shop",
+    "remaining_s": 23.403344639809802,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r11b662639f5f49f9999d1208ec4a8e50:independent_max_flow",
+    "remaining_s": 30.078211810905486,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r506dd07d47f1446890406b85eec3558f:independent_error_correction",
+    "remaining_s": 5.002479332033545,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r506dd07d47f1446890406b85eec3558f:independent_exact_cover",
+    "remaining_s": 11.121164321200922,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r506dd07d47f1446890406b85eec3558f:independent_job_shop",
+    "remaining_s": 17.53193719103001,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r506dd07d47f1446890406b85eec3558f:independent_max_flow",
+    "remaining_s": 24.206804362125695,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r506dd07d47f1446890406b85eec3558f:independent_package_resolution",
+    "remaining_s": 30.597436460200697,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r7158672f70f4413aba1e4374c9eeaeef:independent_exact_cover",
+    "remaining_s": 6.124300287105143,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r7158672f70f4413aba1e4374c9eeaeef:independent_job_shop",
+    "remaining_s": 12.535073156934232,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r7158672f70f4413aba1e4374c9eeaeef:independent_max_flow",
+    "remaining_s": 19.209940328029916,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r7158672f70f4413aba1e4374c9eeaeef:independent_package_resolution",
+    "remaining_s": 25.600572426104918,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r7158672f70f4413aba1e4374c9eeaeef:independent_propositional_sat",
+    "remaining_s": 33.35478573711589,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r78fbaf587e32479598f99e7b9f7b43a0:independent_job_shop",
+    "remaining_s": 6.416876615956426,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r78fbaf587e32479598f99e7b9f7b43a0:independent_max_flow",
+    "remaining_s": 13.09174378705211,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r78fbaf587e32479598f99e7b9f7b43a0:independent_package_resolution",
+    "remaining_s": 19.482375885127112,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r78fbaf587e32479598f99e7b9f7b43a0:independent_propositional_sat",
+    "remaining_s": 27.236589196138084,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r78fbaf587e32479598f99e7b9f7b43a0:independent_error_correction",
+    "remaining_s": 33.08800926897675,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r7890cab0f1e349a9b90e485d68ef62c1:independent_max_flow",
+    "remaining_s": 6.685720246983692,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r7890cab0f1e349a9b90e485d68ef62c1:independent_package_resolution",
+    "remaining_s": 13.076352345058694,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r7890cab0f1e349a9b90e485d68ef62c1:independent_propositional_sat",
+    "remaining_s": 20.830565656069666,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r7890cab0f1e349a9b90e485d68ef62c1:independent_error_correction",
+    "remaining_s": 26.68198572890833,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r7890cab0f1e349a9b90e485d68ef62c1:independent_exact_cover",
+    "remaining_s": 32.4221971440129,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r2dd0362d3d2d4e2292460f7c61808219:independent_package_resolution",
+    "remaining_s": 6.396983296144754,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r2dd0362d3d2d4e2292460f7c61808219:independent_propositional_sat",
+    "remaining_s": 14.151196607155725,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r2dd0362d3d2d4e2292460f7c61808219:independent_error_correction",
+    "remaining_s": 20.00261667999439,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r2dd0362d3d2d4e2292460f7c61808219:independent_exact_cover",
+    "remaining_s": 25.742828095098957,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r2dd0362d3d2d4e2292460f7c61808219:independent_job_shop",
+    "remaining_s": 31.511840244056657,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r06b166b8a12843319c2320629dc45df7:independent_propositional_sat",
+    "remaining_s": 7.766656983178109,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r06b166b8a12843319c2320629dc45df7:independent_error_correction",
+    "remaining_s": 13.618077056016773,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r06b166b8a12843319c2320629dc45df7:independent_exact_cover",
+    "remaining_s": 19.35828847112134,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r06b166b8a12843319c2320629dc45df7:independent_job_shop",
+    "remaining_s": 25.12730062007904,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r06b166b8a12843319c2320629dc45df7:independent_max_flow",
+    "remaining_s": 31.045981392962858,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r4d1c6c52206f4acab36191c45a5824aa:independent_error_correction",
+    "remaining_s": 5.857788381865248,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r4d1c6c52206f4acab36191c45a5824aa:independent_exact_cover",
+    "remaining_s": 11.597999796969816,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r4d1c6c52206f4acab36191c45a5824aa:independent_job_shop",
+    "remaining_s": 17.367011945927516,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r4d1c6c52206f4acab36191c45a5824aa:independent_max_flow",
+    "remaining_s": 23.285692718811333,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r4d1c6c52206f4acab36191c45a5824aa:independent_package_resolution",
+    "remaining_s": 28.039548692991957,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rba64fef8b904469b8a241881ee80182b:independent_exact_cover",
+    "remaining_s": 5.750499498099089,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rba64fef8b904469b8a241881ee80182b:independent_job_shop",
+    "remaining_s": 11.519511647056788,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rba64fef8b904469b8a241881ee80182b:independent_max_flow",
+    "remaining_s": 17.438192419940606,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rba64fef8b904469b8a241881ee80182b:independent_package_resolution",
+    "remaining_s": 22.19204839412123,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rba64fef8b904469b8a241881ee80182b:independent_propositional_sat",
+    "remaining_s": 28.550788935041055,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rd711c95d545b4ebeaa53d7208f01a928:independent_job_shop",
+    "remaining_s": 5.776243016123772,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rd711c95d545b4ebeaa53d7208f01a928:independent_max_flow",
+    "remaining_s": 11.69492378900759,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rd711c95d545b4ebeaa53d7208f01a928:independent_package_resolution",
+    "remaining_s": 16.448779763188213,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rd711c95d545b4ebeaa53d7208f01a928:independent_propositional_sat",
+    "remaining_s": 22.80752030410804,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rd711c95d545b4ebeaa53d7208f01a928:independent_error_correction",
+    "remaining_s": 28.577763999113813,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r3ea509d75a3d44a2aedac512e8833df6:independent_max_flow",
+    "remaining_s": 5.924484997987747,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r3ea509d75a3d44a2aedac512e8833df6:independent_package_resolution",
+    "remaining_s": 10.678340972168371,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r3ea509d75a3d44a2aedac512e8833df6:independent_propositional_sat",
+    "remaining_s": 17.037081513088197,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r3ea509d75a3d44a2aedac512e8833df6:independent_error_correction",
+    "remaining_s": 22.80732520809397,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r3ea509d75a3d44a2aedac512e8833df6:independent_exact_cover",
+    "remaining_s": 29.078180328011513,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r52e4a34d84d94dd5a08017cfb6e13b83:independent_package_resolution",
+    "remaining_s": 4.761340419063345,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r52e4a34d84d94dd5a08017cfb6e13b83:independent_propositional_sat",
+    "remaining_s": 11.12008095998317,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r52e4a34d84d94dd5a08017cfb6e13b83:independent_error_correction",
+    "remaining_s": 16.890324654988945,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r52e4a34d84d94dd5a08017cfb6e13b83:independent_exact_cover",
+    "remaining_s": 23.161179774906486,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r52e4a34d84d94dd5a08017cfb6e13b83:independent_job_shop",
+    "remaining_s": 29.055877451086417,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r725e2e7cb42946bf842107464e61108b:independent_propositional_sat",
+    "remaining_s": 6.366719363024458,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r725e2e7cb42946bf842107464e61108b:independent_error_correction",
+    "remaining_s": 12.136963058030233,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r725e2e7cb42946bf842107464e61108b:independent_exact_cover",
+    "remaining_s": 18.407818177947775,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r725e2e7cb42946bf842107464e61108b:independent_job_shop",
+    "remaining_s": 24.302515854127705,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r725e2e7cb42946bf842107464e61108b:independent_max_flow",
+    "remaining_s": 30.170446650125086,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r8b91e9f9c0d54bac888ab4c66a57d993:independent_error_correction",
+    "remaining_s": 5.7817933179903775,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r8b91e9f9c0d54bac888ab4c66a57d993:independent_exact_cover",
+    "remaining_s": 12.05264843790792,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r8b91e9f9c0d54bac888ab4c66a57d993:independent_job_shop",
+    "remaining_s": 17.94734611408785,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r8b91e9f9c0d54bac888ab4c66a57d993:independent_max_flow",
+    "remaining_s": 23.81527691008523,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r8b91e9f9c0d54bac888ab4c66a57d993:independent_package_resolution",
+    "remaining_s": 28.314060332020745,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rac17260a61984c64bcd13c82160fcf58:independent_exact_cover",
+    "remaining_s": 6.279583901865408,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rac17260a61984c64bcd13c82160fcf58:independent_job_shop",
+    "remaining_s": 12.174281578045338,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rac17260a61984c64bcd13c82160fcf58:independent_max_flow",
+    "remaining_s": 18.04221237404272,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rac17260a61984c64bcd13c82160fcf58:independent_package_resolution",
+    "remaining_s": 22.540995795978233,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rac17260a61984c64bcd13c82160fcf58:independent_propositional_sat",
+    "remaining_s": 29.387654497055337,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r17ee9300a90b4e9ab7cfcce9b9e72fc4:independent_job_shop",
+    "remaining_s": 5.903091148007661,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r17ee9300a90b4e9ab7cfcce9b9e72fc4:independent_max_flow",
+    "remaining_s": 11.771021944005042,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r17ee9300a90b4e9ab7cfcce9b9e72fc4:independent_package_resolution",
+    "remaining_s": 16.269805365940556,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r17ee9300a90b4e9ab7cfcce9b9e72fc4:independent_propositional_sat",
+    "remaining_s": 23.11646406701766,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r17ee9300a90b4e9ab7cfcce9b9e72fc4:independent_error_correction",
+    "remaining_s": 29.1986941578798,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rc2a8966290d845ad940984b09e144438:independent_max_flow",
+    "remaining_s": 5.876387919997796,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rc2a8966290d845ad940984b09e144438:independent_package_resolution",
+    "remaining_s": 10.37517134193331,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rc2a8966290d845ad940984b09e144438:independent_propositional_sat",
+    "remaining_s": 17.221830043010414,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rc2a8966290d845ad940984b09e144438:independent_error_correction",
+    "remaining_s": 23.304060133872554,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rc2a8966290d845ad940984b09e144438:independent_exact_cover",
+    "remaining_s": 29.523862384958193,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r558c851af5cf40c5b3075b770a432513:independent_package_resolution",
+    "remaining_s": 4.507284172112122,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r558c851af5cf40c5b3075b770a432513:independent_propositional_sat",
+    "remaining_s": 11.353942873189226,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r558c851af5cf40c5b3075b770a432513:independent_error_correction",
+    "remaining_s": 17.436172964051366,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r558c851af5cf40c5b3075b770a432513:independent_exact_cover",
+    "remaining_s": 23.655975215137005,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r558c851af5cf40c5b3075b770a432513:independent_job_shop",
+    "remaining_s": 29.32489575399086,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rf0d91fec83604a6e9a34e1221db511a1:independent_propositional_sat",
+    "remaining_s": 6.860108841210604,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rf0d91fec83604a6e9a34e1221db511a1:independent_error_correction",
+    "remaining_s": 12.942338932072744,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rf0d91fec83604a6e9a34e1221db511a1:independent_exact_cover",
+    "remaining_s": 19.162141183158383,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rf0d91fec83604a6e9a34e1221db511a1:independent_job_shop",
+    "remaining_s": 24.831061722012237,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rf0d91fec83604a6e9a34e1221db511a1:independent_max_flow",
+    "remaining_s": 31.642071215203032,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rad9b8a39dd5e4ad0945b1f48481e0f58:independent_error_correction",
+    "remaining_s": 6.09032628685236,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rad9b8a39dd5e4ad0945b1f48481e0f58:independent_exact_cover",
+    "remaining_s": 12.310128537937999,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rad9b8a39dd5e4ad0945b1f48481e0f58:independent_job_shop",
+    "remaining_s": 17.979049076791853,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rad9b8a39dd5e4ad0945b1f48481e0f58:independent_max_flow",
+    "remaining_s": 24.790058569982648,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rad9b8a39dd5e4ad0945b1f48481e0f58:independent_package_resolution",
+    "remaining_s": 30.033951615914702,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rc739a320be264fd5889345a7bc1c285f:independent_exact_cover",
+    "remaining_s": 6.250456401146948,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rc739a320be264fd5889345a7bc1c285f:independent_job_shop",
+    "remaining_s": 11.919376940000802,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rc739a320be264fd5889345a7bc1c285f:independent_max_flow",
+    "remaining_s": 18.730386433191597,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rc739a320be264fd5889345a7bc1c285f:independent_package_resolution",
+    "remaining_s": 23.974279479123652,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rc739a320be264fd5889345a7bc1c285f:independent_propositional_sat",
+    "remaining_s": 30.201843557180837,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rc38e7072c7c84c9a87d68cbc19820e33:independent_job_shop",
+    "remaining_s": 5.695058695971966,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rc38e7072c7c84c9a87d68cbc19820e33:independent_max_flow",
+    "remaining_s": 12.506068189162761,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rc38e7072c7c84c9a87d68cbc19820e33:independent_package_resolution",
+    "remaining_s": 17.749961235094815,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rc38e7072c7c84c9a87d68cbc19820e33:independent_propositional_sat",
+    "remaining_s": 23.977525313152,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rc38e7072c7c84c9a87d68cbc19820e33:independent_error_correction",
+    "remaining_s": 30.327297494979575,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:re38f7f2671964dc891d345b789e181f3:independent_max_flow",
+    "remaining_s": 6.8356055580079556,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:re38f7f2671964dc891d345b789e181f3:independent_package_resolution",
+    "remaining_s": 12.07949860394001,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:re38f7f2671964dc891d345b789e181f3:independent_propositional_sat",
+    "remaining_s": 18.307062681997195,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:re38f7f2671964dc891d345b789e181f3:independent_error_correction",
+    "remaining_s": 24.65683486382477,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:re38f7f2671964dc891d345b789e181f3:independent_exact_cover",
+    "remaining_s": 31.727267536800355,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rebdc9c72f7074388b13e42c26816583f:independent_package_resolution",
+    "remaining_s": 5.273249153979123,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rebdc9c72f7074388b13e42c26816583f:independent_propositional_sat",
+    "remaining_s": 11.500813232036307,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rebdc9c72f7074388b13e42c26816583f:independent_error_correction",
+    "remaining_s": 17.850585413863882,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rebdc9c72f7074388b13e42c26816583f:independent_exact_cover",
+    "remaining_s": 24.921018086839467,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rebdc9c72f7074388b13e42c26816583f:independent_job_shop",
+    "remaining_s": 31.68204862694256,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rbd1e8fdd2b424c0f834ea9d6146728a3:independent_propositional_sat",
+    "remaining_s": 6.254374559037387,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rbd1e8fdd2b424c0f834ea9d6146728a3:independent_error_correction",
+    "remaining_s": 12.604146740864962,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rbd1e8fdd2b424c0f834ea9d6146728a3:independent_exact_cover",
+    "remaining_s": 19.674579413840547,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rbd1e8fdd2b424c0f834ea9d6146728a3:independent_job_shop",
+    "remaining_s": 26.43560995394364,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rbd1e8fdd2b424c0f834ea9d6146728a3:independent_max_flow",
+    "remaining_s": 33.64784465287812,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r1a975aad818c44e2a817ca0f82b93ea9:independent_error_correction",
+    "remaining_s": 6.377859483938664,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r1a975aad818c44e2a817ca0f82b93ea9:independent_exact_cover",
+    "remaining_s": 13.448292156914249,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r1a975aad818c44e2a817ca0f82b93ea9:independent_job_shop",
+    "remaining_s": 20.209322697017342,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r1a975aad818c44e2a817ca0f82b93ea9:independent_max_flow",
+    "remaining_s": 27.421557395951822,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r1a975aad818c44e2a817ca0f82b93ea9:independent_package_resolution",
+    "remaining_s": 32.68075569299981,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r6aafdcd0ba5f4b08a9611134db2fef2b:independent_exact_cover",
+    "remaining_s": 7.1040486979763955,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r6aafdcd0ba5f4b08a9611134db2fef2b:independent_job_shop",
+    "remaining_s": 13.865079238079488,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r6aafdcd0ba5f4b08a9611134db2fef2b:independent_max_flow",
+    "remaining_s": 21.07731393701397,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r6aafdcd0ba5f4b08a9611134db2fef2b:independent_package_resolution",
+    "remaining_s": 26.336512234061956,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r6aafdcd0ba5f4b08a9611134db2fef2b:independent_propositional_sat",
+    "remaining_s": 34.377922140061855,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r9cdb5be12628490a9bd777b906dd89f6:independent_job_shop",
+    "remaining_s": 6.793652059044689,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r9cdb5be12628490a9bd777b906dd89f6:independent_max_flow",
+    "remaining_s": 14.00588675797917,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r9cdb5be12628490a9bd777b906dd89f6:independent_package_resolution",
+    "remaining_s": 19.265085055027157,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r9cdb5be12628490a9bd777b906dd89f6:independent_propositional_sat",
+    "remaining_s": 27.306494961027056,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r9cdb5be12628490a9bd777b906dd89f6:independent_error_correction",
+    "remaining_s": 33.6754752821289,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r32d7b5db3e8e421ba1d3a7400df77692:independent_max_flow",
+    "remaining_s": 7.240889285923913,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r32d7b5db3e8e421ba1d3a7400df77692:independent_package_resolution",
+    "remaining_s": 12.5000875829719,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r32d7b5db3e8e421ba1d3a7400df77692:independent_propositional_sat",
+    "remaining_s": 20.5414974889718,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r32d7b5db3e8e421ba1d3a7400df77692:independent_error_correction",
+    "remaining_s": 26.910477810073644,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r32d7b5db3e8e421ba1d3a7400df77692:independent_exact_cover",
+    "remaining_s": 33.85694277891889,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r36d327f916744f9981dc314c658042ae:independent_package_resolution",
+    "remaining_s": 5.292426343075931,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r36d327f916744f9981dc314c658042ae:independent_propositional_sat",
+    "remaining_s": 13.33383624907583,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r36d327f916744f9981dc314c658042ae:independent_error_correction",
+    "remaining_s": 19.702816570177674,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r36d327f916744f9981dc314c658042ae:independent_exact_cover",
+    "remaining_s": 26.649281539022923,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r36d327f916744f9981dc314c658042ae:independent_job_shop",
+    "remaining_s": 33.55349176703021,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:recff5eb81c40440eb28277d1bdec35c7:independent_propositional_sat",
+    "remaining_s": 8.069427413865924,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:recff5eb81c40440eb28277d1bdec35c7:independent_error_correction",
+    "remaining_s": 14.438407734967768,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:recff5eb81c40440eb28277d1bdec35c7:independent_exact_cover",
+    "remaining_s": 21.384872703813016,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:recff5eb81c40440eb28277d1bdec35c7:independent_job_shop",
+    "remaining_s": 28.289082931820303,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:recff5eb81c40440eb28277d1bdec35c7:independent_max_flow",
+    "remaining_s": 35.76745725586079,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r79916222c3504f4e99bc13d9ddf99052:independent_error_correction",
+    "remaining_s": 6.402153695002198,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r79916222c3504f4e99bc13d9ddf99052:independent_exact_cover",
+    "remaining_s": 13.348618663847446,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r79916222c3504f4e99bc13d9ddf99052:independent_job_shop",
+    "remaining_s": 20.252828891854733,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r79916222c3504f4e99bc13d9ddf99052:independent_max_flow",
+    "remaining_s": 27.73120321589522,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r79916222c3504f4e99bc13d9ddf99052:independent_package_resolution",
+    "remaining_s": 33.33043514797464,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r95fab9d551d0436c9ee083a048e2900a:independent_exact_cover",
+    "remaining_s": 6.970814552856609,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r95fab9d551d0436c9ee083a048e2900a:independent_job_shop",
+    "remaining_s": 13.875024780863896,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r95fab9d551d0436c9ee083a048e2900a:independent_max_flow",
+    "remaining_s": 21.353399104904383,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r95fab9d551d0436c9ee083a048e2900a:independent_package_resolution",
+    "remaining_s": 26.952631036983803,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r95fab9d551d0436c9ee083a048e2900a:independent_propositional_sat",
+    "remaining_s": 35.16555790393613,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r243da8fc0b9740929a6a97384efb6e44:independent_job_shop",
+    "remaining_s": 6.924638252006844,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r243da8fc0b9740929a6a97384efb6e44:independent_max_flow",
+    "remaining_s": 14.403012576047331,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r243da8fc0b9740929a6a97384efb6e44:independent_package_resolution",
+    "remaining_s": 20.00224450812675,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r243da8fc0b9740929a6a97384efb6e44:independent_propositional_sat",
+    "remaining_s": 28.21517137507908,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r243da8fc0b9740929a6a97384efb6e44:independent_error_correction",
+    "remaining_s": 34.84649076499045,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r6fda38f4e6d24886b98f6568162ba157:independent_max_flow",
+    "remaining_s": 7.50607401994057,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r6fda38f4e6d24886b98f6568162ba157:independent_package_resolution",
+    "remaining_s": 13.10530595201999,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r6fda38f4e6d24886b98f6568162ba157:independent_propositional_sat",
+    "remaining_s": 21.31823281897232,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r6fda38f4e6d24886b98f6568162ba157:independent_error_correction",
+    "remaining_s": 27.949552208883688,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r6fda38f4e6d24886b98f6568162ba157:independent_exact_cover",
+    "remaining_s": 35.321876825997606,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r443efa709b134dccb7d65d6e88dd4246:independent_package_resolution",
+    "remaining_s": 6.151908179046586,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r443efa709b134dccb7d65d6e88dd4246:independent_propositional_sat",
+    "remaining_s": 14.364835045998916,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r443efa709b134dccb7d65d6e88dd4246:independent_error_correction",
+    "remaining_s": 20.996154435910285,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r443efa709b134dccb7d65d6e88dd4246:independent_exact_cover",
+    "remaining_s": 28.368479053024203,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r443efa709b134dccb7d65d6e88dd4246:independent_job_shop",
+    "remaining_s": 36.39185364590958,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rb8be881f38dc4e06952eb52c19cb6951:independent_propositional_sat",
+    "remaining_s": 8.245417336933315,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rb8be881f38dc4e06952eb52c19cb6951:independent_error_correction",
+    "remaining_s": 14.876736726844683,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rb8be881f38dc4e06952eb52c19cb6951:independent_exact_cover",
+    "remaining_s": 22.2490613439586,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rb8be881f38dc4e06952eb52c19cb6951:independent_job_shop",
+    "remaining_s": 30.272435936843976,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rb8be881f38dc4e06952eb52c19cb6951:independent_max_flow",
+    "remaining_s": 37.85417784797028,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r6e5e2cb9adb74a53a2318c8ec1494ed1:independent_error_correction",
+    "remaining_s": 6.652286113938317,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r6e5e2cb9adb74a53a2318c8ec1494ed1:independent_exact_cover",
+    "remaining_s": 14.024610731052235,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r6e5e2cb9adb74a53a2318c8ec1494ed1:independent_job_shop",
+    "remaining_s": 22.04798532393761,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r6e5e2cb9adb74a53a2318c8ec1494ed1:independent_max_flow",
+    "remaining_s": 29.62972723506391,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r6e5e2cb9adb74a53a2318c8ec1494ed1:independent_package_resolution",
+    "remaining_s": 35.28151727002114,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rd468bc7d7ae244b6a99478bc1adabf5f:independent_exact_cover",
+    "remaining_s": 7.4008818869479,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rd468bc7d7ae244b6a99478bc1adabf5f:independent_job_shop",
+    "remaining_s": 15.424256479833275,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rd468bc7d7ae244b6a99478bc1adabf5f:independent_max_flow",
+    "remaining_s": 23.005998390959576,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rd468bc7d7ae244b6a99478bc1adabf5f:independent_package_resolution",
+    "remaining_s": 28.657788425916806,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rd468bc7d7ae244b6a99478bc1adabf5f:independent_propositional_sat",
+    "remaining_s": 37.05551304295659,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r31091ce182e24c42abf9e1359fe79662:independent_job_shop",
+    "remaining_s": 8.050875270972028,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r31091ce182e24c42abf9e1359fe79662:independent_max_flow",
+    "remaining_s": 15.632617182098329,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r31091ce182e24c42abf9e1359fe79662:independent_package_resolution",
+    "remaining_s": 21.28440721705556,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r31091ce182e24c42abf9e1359fe79662:independent_propositional_sat",
+    "remaining_s": 29.682131834095344,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r31091ce182e24c42abf9e1359fe79662:independent_error_correction",
+    "remaining_s": 36.717482527019456,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rf4fc52372f7b4c76a9d8305b0d6df232:independent_max_flow",
+    "remaining_s": 7.614035404054448,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rf4fc52372f7b4c76a9d8305b0d6df232:independent_package_resolution",
+    "remaining_s": 13.265825439011678,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rf4fc52372f7b4c76a9d8305b0d6df232:independent_propositional_sat",
+    "remaining_s": 21.663550056051463,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rf4fc52372f7b4c76a9d8305b0d6df232:independent_error_correction",
+    "remaining_s": 28.698900748975575,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rf4fc52372f7b4c76a9d8305b0d6df232:independent_exact_cover",
+    "remaining_s": 36.106856543105096,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r8b99d23064c84a7d92b8b8ff358ee1a4:independent_package_resolution",
+    "remaining_s": 5.679051740095019,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r8b99d23064c84a7d92b8b8ff358ee1a4:independent_propositional_sat",
+    "remaining_s": 14.076776357134804,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r8b99d23064c84a7d92b8b8ff358ee1a4:independent_error_correction",
+    "remaining_s": 21.112127050058916,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r8b99d23064c84a7d92b8b8ff358ee1a4:independent_exact_cover",
+    "remaining_s": 28.520082844188437,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r8b99d23064c84a7d92b8b8ff358ee1a4:independent_job_shop",
+    "remaining_s": 35.33177307015285,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rfedb9fba7f234670bd93c8a4fcb08204:independent_propositional_sat",
+    "remaining_s": 8.423550638137385,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rfedb9fba7f234670bd93c8a4fcb08204:independent_error_correction",
+    "remaining_s": 15.458901331061497,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rfedb9fba7f234670bd93c8a4fcb08204:independent_exact_cover",
+    "remaining_s": 22.866857125191018,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rfedb9fba7f234670bd93c8a4fcb08204:independent_job_shop",
+    "remaining_s": 29.67854735115543,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rfedb9fba7f234670bd93c8a4fcb08204:independent_max_flow",
+    "remaining_s": 37.4228537871968,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r137d8ff358504989bd8832d94de3911f:independent_error_correction",
+    "remaining_s": 7.062773182988167,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r137d8ff358504989bd8832d94de3911f:independent_exact_cover",
+    "remaining_s": 14.470728977117687,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r137d8ff358504989bd8832d94de3911f:independent_job_shop",
+    "remaining_s": 21.2824192030821,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r137d8ff358504989bd8832d94de3911f:independent_max_flow",
+    "remaining_s": 29.02672563912347,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r137d8ff358504989bd8832d94de3911f:independent_package_resolution",
+    "remaining_s": 35.15795603999868,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r076e589586cc491f87de1ee25904e426:independent_exact_cover",
+    "remaining_s": 7.441283595981076,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r076e589586cc491f87de1ee25904e426:independent_job_shop",
+    "remaining_s": 14.252973821945488,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r076e589586cc491f87de1ee25904e426:independent_max_flow",
+    "remaining_s": 21.99728025798686,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r076e589586cc491f87de1ee25904e426:independent_package_resolution",
+    "remaining_s": 28.12851065886207,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r076e589586cc491f87de1ee25904e426:independent_propositional_sat",
+    "remaining_s": 32.290217206813395,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r6f8f21b61a6241b4b2ff5aad474f8e49:independent_job_shop",
+    "remaining_s": 6.839787935139611,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r6f8f21b61a6241b4b2ff5aad474f8e49:independent_max_flow",
+    "remaining_s": 14.584094371180981,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r6f8f21b61a6241b4b2ff5aad474f8e49:independent_package_resolution",
+    "remaining_s": 20.715324772056192,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r6f8f21b61a6241b4b2ff5aad474f8e49:independent_propositional_sat",
+    "remaining_s": 24.877031320007518,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r6f8f21b61a6241b4b2ff5aad474f8e49:independent_error_correction",
+    "remaining_s": 32.09223581198603,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r063cd87b2fdf47c899d1ab21a046bfd5:independent_max_flow",
+    "remaining_s": 7.767959852004424,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r063cd87b2fdf47c899d1ab21a046bfd5:independent_package_resolution",
+    "remaining_s": 13.899190252879634,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r063cd87b2fdf47c899d1ab21a046bfd5:independent_propositional_sat",
+    "remaining_s": 18.06089680083096,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r063cd87b2fdf47c899d1ab21a046bfd5:independent_error_correction",
+    "remaining_s": 25.27610129280947,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r063cd87b2fdf47c899d1ab21a046bfd5:independent_exact_cover",
+    "remaining_s": 33.18240157701075,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:re5145f623e9c4a2fbdb6b3e30a6237c4:independent_package_resolution",
+    "remaining_s": 6.158431720919907,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:re5145f623e9c4a2fbdb6b3e30a6237c4:independent_propositional_sat",
+    "remaining_s": 10.320138268871233,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:re5145f623e9c4a2fbdb6b3e30a6237c4:independent_error_correction",
+    "remaining_s": 17.535342760849744,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:re5145f623e9c4a2fbdb6b3e30a6237c4:independent_exact_cover",
+    "remaining_s": 25.441643045051023,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:re5145f623e9c4a2fbdb6b3e30a6237c4:independent_job_shop",
+    "remaining_s": 32.88414215296507,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rdad1c8dc37d743ffbc52e2526ca9e3e6:independent_propositional_sat",
+    "remaining_s": 4.193516494939104,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rdad1c8dc37d743ffbc52e2526ca9e3e6:independent_error_correction",
+    "remaining_s": 11.408720986917615,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rdad1c8dc37d743ffbc52e2526ca9e3e6:independent_exact_cover",
+    "remaining_s": 19.315021271118894,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rdad1c8dc37d743ffbc52e2526ca9e3e6:independent_job_shop",
+    "remaining_s": 26.75752037903294,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rdad1c8dc37d743ffbc52e2526ca9e3e6:independent_max_flow",
+    "remaining_s": 34.533980827080086,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r5f2f9247624b4b198b178eff8ab4ff1a:independent_error_correction",
+    "remaining_s": 7.235101462807506,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r5f2f9247624b4b198b178eff8ab4ff1a:independent_exact_cover",
+    "remaining_s": 15.141401747008786,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r5f2f9247624b4b198b178eff8ab4ff1a:independent_job_shop",
+    "remaining_s": 22.58390085492283,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r5f2f9247624b4b198b178eff8ab4ff1a:independent_max_flow",
+    "remaining_s": 30.360361302969977,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rb8b5fe95054042e484f3abc89bf5772a:independent_exact_cover",
+    "remaining_s": 7.934556003194302,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rb8b5fe95054042e484f3abc89bf5772a:independent_job_shop",
+    "remaining_s": 15.377055111108348,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rb8b5fe95054042e484f3abc89bf5772a:independent_max_flow",
+    "remaining_s": 23.153515559155494,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rb8b5fe95054042e484f3abc89bf5772a:independent_propositional_sat",
+    "remaining_s": 29.17097072605975,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r4190a307eb89444b860c0314ddd439da:independent_job_shop",
+    "remaining_s": 7.468479264993221,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r4190a307eb89444b860c0314ddd439da:independent_max_flow",
+    "remaining_s": 15.244939713040367,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r4190a307eb89444b860c0314ddd439da:independent_propositional_sat",
+    "remaining_s": 21.262394879944623,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r4190a307eb89444b860c0314ddd439da:independent_error_correction",
+    "remaining_s": 28.647128037875518,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rc6ae2436b0634e0a852c2f02f99c44d5:independent_max_flow",
+    "remaining_s": 7.803827190073207,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rc6ae2436b0634e0a852c2f02f99c44d5:independent_propositional_sat",
+    "remaining_s": 13.821282356977463,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rc6ae2436b0634e0a852c2f02f99c44d5:independent_error_correction",
+    "remaining_s": 21.20601551490836,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rc6ae2436b0634e0a852c2f02f99c44d5:independent_exact_cover",
+    "remaining_s": 28.989484461024404,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r690448c4bf274c6e97f29b2228875ff0:independent_propositional_sat",
+    "remaining_s": 6.043588730040938,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r690448c4bf274c6e97f29b2228875ff0:independent_error_correction",
+    "remaining_s": 13.428321887971833,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r690448c4bf274c6e97f29b2228875ff0:independent_exact_cover",
+    "remaining_s": 21.21179083408788,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r690448c4bf274c6e97f29b2228875ff0:independent_job_shop",
+    "remaining_s": 29.72021191311069,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r6f38d1e9e20a4cc58704bd90872cc608:independent_error_correction",
+    "remaining_s": 7.410744496854022,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r6f38d1e9e20a4cc58704bd90872cc608:independent_exact_cover",
+    "remaining_s": 15.194213442970067,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r6f38d1e9e20a4cc58704bd90872cc608:independent_job_shop",
+    "remaining_s": 23.702634521992877,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r6f38d1e9e20a4cc58704bd90872cc608:independent_max_flow",
+    "remaining_s": 31.21894304989837,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r92388ec987904955bf06ee7d221621e3:independent_exact_cover",
+    "remaining_s": 7.810367370955646,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r92388ec987904955bf06ee7d221621e3:independent_job_shop",
+    "remaining_s": 16.318788449978456,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r92388ec987904955bf06ee7d221621e3:independent_max_flow",
+    "remaining_s": 23.83509697788395,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r92388ec987904955bf06ee7d221621e3:independent_propositional_sat",
+    "remaining_s": 30.933930314844474,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rb6745b31b3554b9c837e347cb7ee75d1:independent_job_shop",
+    "remaining_s": 8.54498882801272,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rb6745b31b3554b9c837e347cb7ee75d1:independent_max_flow",
+    "remaining_s": 16.061297355918214,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rb6745b31b3554b9c837e347cb7ee75d1:independent_propositional_sat",
+    "remaining_s": 23.160130692878738,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:rb6745b31b3554b9c837e347cb7ee75d1:independent_error_correction",
+    "remaining_s": 7.200563020072877,
+    "outcome": "retire"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:re0081e987654485f9484a9a9d5b9b069:independent_max_flow",
+    "remaining_s": 7.537515803007409,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:re0081e987654485f9484a9a9d5b9b069:independent_propositional_sat",
+    "remaining_s": 14.636349139967933,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r452aeea65fcf4a989195b10f466a5ce9:independent_propositional_sat",
+    "remaining_s": 7.120204043807462,
+    "outcome": "legal_demand"
+  },
+  {
+    "sample_id": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0:r452aeea65fcf4a989195b10f466a5ce9:independent_job_shop",
+    "remaining_s": 5.887176736956462,
+    "outcome": "retire"
+  }
+]

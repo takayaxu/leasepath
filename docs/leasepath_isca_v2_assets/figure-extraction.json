@@ -1,0 +1,12 @@
+{
+  "source": "/home/liuxv/.codex/attachments/84aef88b-8aa8-4640-8598-af5a6ca59868/leasepath_isca2027_submission.pdf",
+  "sha256": "98933c6db21f714ea3c7839fa1f7e10a70d00d9f1ea5cc53bb762a50381f2377",
+  "page": 2,
+  "clip_points": [
+    59.0,
+    91.0,
+    553.0,
+    370.0
+  ],
+  "purpose": "recover unchanged vector schematic referenced by uploaded TeX but absent from server assets"
+}

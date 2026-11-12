@@ -1,0 +1,411 @@
+{
+  "projects": [
+    {
+      "id": "continuous_inventory",
+      "family": "inventory_repository",
+      "description": "Maintain a small warehouse inventory Python library through changing requirements.",
+      "tools": [
+        "list_files",
+        "read_file",
+        "search_files",
+        "write_file",
+        "run_python",
+        "run_checks"
+      ],
+      "turns": [
+        {
+          "request": "Target deliverable: inventory.py. In inventory.py implement available(stock, sku). Return stock.get(sku, 0), without mutating stock. Keep all previous behavior. Inspect the project as needed, implement and check it, then deliver.",
+          "artifact": "inventory.py",
+          "key": "available",
+          "requirement": "Return stock.get(sku, 0), without mutating stock."
+        },
+        {
+          "request": "Target deliverable: inventory.py. In inventory.py implement reserve(stock, sku, qty). Return a new stock dictionary after subtracting qty. Require a nonnegative integer qty and sufficient available stock; raise ValueError otherwise. Missing sku starts at zero. Do not mutate stock. Keep all previous behavior. Inspect the project as needed, implement and check it, then deliver.",
+          "artifact": "inventory.py",
+          "key": "reserve",
+          "requirement": "Return a new stock dictionary after subtracting qty. Require a nonnegative integer qty and sufficient available stock; raise ValueError otherwise. Missing sku starts at zero. Do not mutate stock."
+        },
+        {
+          "request": "Target deliverable: inventory.py. In inventory.py implement release(stock, sku, qty). Return a new stock dictionary adding nonnegative integer qty to sku; raise ValueError for invalid qty. Do not mutate stock. Keep all previous behavior. Inspect the project as needed, implement and check it, then deliver.",
+          "artifact": "inventory.py",
+          "key": "release",
+          "requirement": "Return a new stock dictionary adding nonnegative integer qty to sku; raise ValueError for invalid qty. Do not mutate stock."
+        },
+        {
+          "request": "Target deliverable: inventory.py. In inventory.py implement low_stock(stock, threshold). Return sorted SKU names whose quantities are strictly below threshold. Keep all previous behavior. Inspect the project as needed, implement and check it, then deliver.",
+          "artifact": "inventory.py",
+          "key": "low_stock",
+          "requirement": "Return sorted SKU names whose quantities are strictly below threshold."
+        },
+        {
+          "request": "Target deliverable: inventory.py. In inventory.py implement stock_value(stock, prices). Return total quantity times price, treating missing prices as zero. Do not round. Keep all previous behavior. Inspect the project as needed, implement and check it, then deliver.",
+          "artifact": "inventory.py",
+          "key": "stock_value",
+          "requirement": "Return total quantity times price, treating missing prices as zero. Do not round."
+        },
+        {
+          "request": "Target deliverable: inventory.py. In inventory.py implement merge_deliveries(stock, deliveries). Return a new stock dictionary adding each {sku, qty} delivery. Reject negative or noninteger qty with ValueError; never mutate inputs. Keep all previous behavior. Inspect the project as needed, implement and check it, then deliver. Parameter type: deliveries is a list of dictionaries, each with keys sku (string) and qty (integer); it is not a SKU-to-quantity dictionary.",
+          "artifact": "inventory.py",
+          "key": "merge_deliveries",
+          "requirement": "Return a new stock dictionary adding each {sku, qty} delivery. Reject negative or noninteger qty with ValueError; never mutate inputs."
+        },
+        {
+          "request": "Target deliverable: inventory.py. In inventory.py implement fulfill_order(stock, order). order is a SKU-to-quantity dictionary. Validate all quantities as nonnegative integers and sufficient stock, then return the updated copy. Raise ValueError without changing inputs on failure. Keep all previous behavior. Inspect the project as needed, implement and check it, then deliver. Parameter type: order is a dictionary mapping SKU strings to integer quantities.",
+          "artifact": "inventory.py",
+          "key": "fulfill_order",
+          "requirement": "order is a SKU-to-quantity dictionary. Validate all quantities as nonnegative integers and sufficient stock, then return the updated copy. Raise ValueError without changing inputs on failure."
+        },
+        {
+          "request": "Target deliverable: inventory.py. In inventory.py implement summarize(stock, prices, threshold). Return {units: sum of quantities, value: stock_value, low: low_stock}. Preserve all earlier functions and avoid mutation. Keep all previous behavior. Inspect the project as needed, implement and check it, then deliver.",
+          "artifact": "inventory.py",
+          "key": "summarize",
+          "requirement": "Return {units: sum of quantities, value: stock_value, low: low_stock}. Preserve all earlier functions and avoid mutation."
+        }
+      ],
+      "split": "development",
+      "source_group": "inventory_repository_authored_fixture_v1",
+      "rounds": 8,
+      "specification_version": 2
+    },
+    {
+      "id": "continuous_billing",
+      "family": "billing_analysis",
+      "description": "Keep a cumulative billing report backed by invoices.csv and billing.sqlite.",
+      "tools": [
+        "list_files",
+        "read_file",
+        "search_files",
+        "write_file",
+        "run_python",
+        "query_sql",
+        "run_checks"
+      ],
+      "turns": [
+        {
+          "request": "Target deliverable: report.json. Update report.json, preserving earlier fields. Add invoice_count: the number of invoices. The local database has table invoices; amounts are integer cents. Inspect actual records and validate your result.",
+          "artifact": "report.json",
+          "key": "invoice_count",
+          "requirement": "Add invoice_count: the number of invoices."
+        },
+        {
+          "request": "Target deliverable: report.json. Update report.json, preserving earlier fields. Add gross_cents: sum of amount_cents over all invoices. The local database has table invoices; amounts are integer cents. Inspect actual records and validate your result.",
+          "artifact": "report.json",
+          "key": "gross_cents",
+          "requirement": "Add gross_cents: sum of amount_cents over all invoices."
+        },
+        {
+          "request": "Target deliverable: report.json. Update report.json, preserving earlier fields. Add paid_cents: sum of amount_cents with status paid. The local database has table invoices; amounts are integer cents. Inspect actual records and validate your result.",
+          "artifact": "report.json",
+          "key": "paid_cents",
+          "requirement": "Add paid_cents: sum of amount_cents with status paid."
+        },
+        {
+          "request": "Target deliverable: report.json. Update report.json, preserving earlier fields. Add open_cents: sum with status open. The local database has table invoices; amounts are integer cents. Inspect actual records and validate your result.",
+          "artifact": "report.json",
+          "key": "open_cents",
+          "requirement": "Add open_cents: sum with status open."
+        },
+        {
+          "request": "Target deliverable: report.json. Update report.json, preserving earlier fields. Add by_region_cents: object mapping every region to its total amount_cents. The local database has table invoices; amounts are integer cents. Inspect actual records and validate your result.",
+          "artifact": "report.json",
+          "key": "by_region_cents",
+          "requirement": "Add by_region_cents: object mapping every region to its total amount_cents."
+        },
+        {
+          "request": "Target deliverable: report.json. Update report.json, preserving earlier fields. Add overdue_ids: sorted integer IDs where status is open and due_day < 20; equality is not overdue. The local database has table invoices; amounts are integer cents. Inspect actual records and validate your result.",
+          "artifact": "report.json",
+          "key": "overdue_ids",
+          "requirement": "Add overdue_ids: sorted integer IDs where status is open and due_day < 20; equality is not overdue."
+        },
+        {
+          "request": "Target deliverable: report.json. Update report.json, preserving earlier fields. Add paid_by_region_cents: every region mapped to paid cents, including zero. The local database has table invoices; amounts are integer cents. Inspect actual records and validate your result.",
+          "artifact": "report.json",
+          "key": "paid_by_region_cents",
+          "requirement": "Add paid_by_region_cents: every region mapped to paid cents, including zero."
+        },
+        {
+          "request": "Target deliverable: report.json. Update report.json, preserving earlier fields. Add reconciliation: {accounted_cents: paid plus open plus void cents, balanced: whether accounted equals gross}. Keep all earlier fields. The local database has table invoices; amounts are integer cents. Inspect actual records and validate your result.",
+          "artifact": "report.json",
+          "key": "reconciliation",
+          "requirement": "Add reconciliation: {accounted_cents: paid plus open plus void cents, balanced: whether accounted equals gross}. Keep all earlier fields."
+        }
+      ],
+      "split": "development",
+      "source_group": "billing_analysis_authored_fixture_v1",
+      "rounds": 8,
+      "specification_version": 2
+    },
+    {
+      "id": "continuous_logs",
+      "family": "service_diagnostics",
+      "description": "Diagnose a local service incident using config, service notes and recorded logs.",
+      "tools": [
+        "list_files",
+        "read_file",
+        "search_files",
+        "write_file",
+        "run_python",
+        "run_checks"
+      ],
+      "turns": [
+        {
+          "request": "Target deliverable: config.json. Find the documented health port in service.md and fix config.json port. Preserve prior fixes and report fields. Use the actual service files and logs.",
+          "artifact": "config.json",
+          "key": "port",
+          "requirement": "Find the documented health port in service.md and fix config.json port."
+        },
+        {
+          "request": "Target deliverable: incident.json. Create incident.json error_counts mapping each distinct ERROR code to its occurrence count in service.log. Preserve prior fixes and report fields. Use the actual service files and logs.",
+          "artifact": "incident.json",
+          "key": "error_counts",
+          "requirement": "Create incident.json error_counts mapping each distinct ERROR code to its occurrence count in service.log."
+        },
+        {
+          "request": "Target deliverable: config.json. Set timeout_ms to the smallest multiple of 100 that is at least the maximum logged latency_ms. Keep the other settings. Preserve prior fixes and report fields. Use the actual service files and logs.",
+          "artifact": "config.json",
+          "key": "timeout_ms",
+          "requirement": "Set timeout_ms to the smallest multiple of 100 that is at least the maximum logged latency_ms. Keep the other settings."
+        },
+        {
+          "request": "Target deliverable: incident.json. Add slow_request_ids: sorted request IDs with latency_ms > 500, including all log levels. Preserve prior fixes and report fields. Use the actual service files and logs.",
+          "artifact": "incident.json",
+          "key": "slow_request_ids",
+          "requirement": "Add slow_request_ids: sorted request IDs with latency_ms > 500, including all log levels."
+        },
+        {
+          "request": "Target deliverable: config.json. Use the documented retry policy in service.md to fix retry_limit. Preserve prior fixes and report fields. Use the actual service files and logs.",
+          "artifact": "config.json",
+          "key": "retry_limit",
+          "requirement": "Use the documented retry policy in service.md to fix retry_limit."
+        },
+        {
+          "request": "Target deliverable: incident.json. Add first_error_request: the request_id on the earliest ERROR line in file order. Preserve prior fixes and report fields. Use the actual service files and logs.",
+          "artifact": "incident.json",
+          "key": "first_error_request",
+          "requirement": "Add first_error_request: the request_id on the earliest ERROR line in file order."
+        },
+        {
+          "request": "Target deliverable: config.json. Set log_level to the documented production level in service.md. Preserve prior fixes and report fields. Use the actual service files and logs.",
+          "artifact": "config.json",
+          "key": "log_level",
+          "requirement": "Set log_level to the documented production level in service.md."
+        },
+        {
+          "request": "Target deliverable: incident.json. Add summary: {requests: total log lines, errors: ERROR lines, max_latency_ms: maximum latency}. Preserve prior fixes and report fields. Use the actual service files and logs.",
+          "artifact": "incident.json",
+          "key": "summary",
+          "requirement": "Add summary: {requests: total log lines, errors: ERROR lines, max_latency_ms: maximum latency}."
+        }
+      ],
+      "split": "development",
+      "source_group": "service_diagnostics_authored_fixture_v1",
+      "rounds": 8,
+      "specification_version": 2
+    },
+    {
+      "id": "continuous_api",
+      "family": "catalog_integration",
+      "description": "Integrate a local catalog HTTP service and maintain a checked integration artifact.",
+      "tools": [
+        "list_files",
+        "read_file",
+        "search_files",
+        "write_file",
+        "http_request",
+        "run_python",
+        "run_checks"
+      ],
+      "turns": [
+        {
+          "request": "Target deliverable: integration.json. Update integration.json and preserve earlier fields. Add healthy: whether the health endpoint reports status ok. Read api.md for routes and schema; use the real HTTP tool for server data.",
+          "artifact": "integration.json",
+          "key": "healthy",
+          "requirement": "Add healthy: whether the health endpoint reports status ok."
+        },
+        {
+          "request": "Target deliverable: integration.json. Update integration.json and preserve earlier fields. Add product_ids: sorted product IDs returned by the catalog. Read api.md for routes and schema; use the real HTTP tool for server data.",
+          "artifact": "integration.json",
+          "key": "product_ids",
+          "requirement": "Add product_ids: sorted product IDs returned by the catalog."
+        },
+        {
+          "request": "Target deliverable: integration.json. Update integration.json and preserve earlier fields. Add active_product_ids: sorted IDs of active catalog products. Read api.md for routes and schema; use the real HTTP tool for server data.",
+          "artifact": "integration.json",
+          "key": "active_product_ids",
+          "requirement": "Add active_product_ids: sorted IDs of active catalog products."
+        },
+        {
+          "request": "Target deliverable: integration.json. Update integration.json and preserve earlier fields. Add catalog_value_cents: sum of price_cents times stock across all catalog products. Read api.md for routes and schema; use the real HTTP tool for server data.",
+          "artifact": "integration.json",
+          "key": "catalog_value_cents",
+          "requirement": "Add catalog_value_cents: sum of price_cents times stock across all catalog products."
+        },
+        {
+          "request": "Target deliverable: integration.json. Update integration.json and preserve earlier fields. Add order_count: count of orders from the orders endpoint. Read api.md for routes and schema; use the real HTTP tool for server data.",
+          "artifact": "integration.json",
+          "key": "order_count",
+          "requirement": "Add order_count: count of orders from the orders endpoint."
+        },
+        {
+          "request": "Target deliverable: integration.json. Update integration.json and preserve earlier fields. Add paid_order_ids: sorted IDs of orders whose status is paid. Read api.md for routes and schema; use the real HTTP tool for server data.",
+          "artifact": "integration.json",
+          "key": "paid_order_ids",
+          "requirement": "Add paid_order_ids: sorted IDs of orders whose status is paid."
+        },
+        {
+          "request": "Target deliverable: integration.json. Update integration.json and preserve earlier fields. Add customer_names: object mapping string customer IDs to names from the customers endpoint. Read api.md for routes and schema; use the real HTTP tool for server data.",
+          "artifact": "integration.json",
+          "key": "customer_names",
+          "requirement": "Add customer_names: object mapping string customer IDs to names from the customers endpoint."
+        },
+        {
+          "request": "Target deliverable: integration.json. Update integration.json and preserve earlier fields. Add paid_revenue_cents: sum of qty times catalog price_cents for all lines of paid orders. Join product_id; keep previous fields. Read api.md for routes and schema; use the real HTTP tool for server data.",
+          "artifact": "integration.json",
+          "key": "paid_revenue_cents",
+          "requirement": "Add paid_revenue_cents: sum of qty times catalog price_cents for all lines of paid orders. Join product_id; keep previous fields."
+        }
+      ],
+      "split": "development",
+      "source_group": "catalog_integration_authored_fixture_v1",
+      "rounds": 8,
+      "specification_version": 2
+    },
+    {
+      "id": "continuous_experiment",
+      "family": "measurement_experiment",
+      "description": "Build and rerun a reproducible sensor-analysis script over real local measurements.",
+      "tools": [
+        "list_files",
+        "read_file",
+        "search_files",
+        "write_file",
+        "run_python",
+        "run_experiment",
+        "run_checks"
+      ],
+      "turns": [
+        {
+          "request": "Target deliverable: metrics.json. Extend analysis.py so executing it reads measurements.csv and writes metrics.json. Add count: the number of data rows. Preserve earlier metric computations, run the script via run_experiment, and validate the saved results. Use Python standard library.",
+          "artifact": "metrics.json",
+          "key": "count",
+          "requirement": "Add count: the number of data rows."
+        },
+        {
+          "request": "Target deliverable: metrics.json. Extend analysis.py so executing it reads measurements.csv and writes metrics.json. Add mean_y: arithmetic mean of y over all rows. Preserve earlier metric computations, run the script via run_experiment, and validate the saved results. Use Python standard library.",
+          "artifact": "metrics.json",
+          "key": "mean_y",
+          "requirement": "Add mean_y: arithmetic mean of y over all rows."
+        },
+        {
+          "request": "Target deliverable: metrics.json. Extend analysis.py so executing it reads measurements.csv and writes metrics.json. Add variance_y: population variance of y over all rows. Preserve earlier metric computations, run the script via run_experiment, and validate the saved results. Use Python standard library.",
+          "artifact": "metrics.json",
+          "key": "variance_y",
+          "requirement": "Add variance_y: population variance of y over all rows."
+        },
+        {
+          "request": "Target deliverable: metrics.json. Extend analysis.py so executing it reads measurements.csv and writes metrics.json. Add mean_by_sensor: object mapping sensor ID to mean y. Preserve earlier metric computations, run the script via run_experiment, and validate the saved results. Use Python standard library.",
+          "artifact": "metrics.json",
+          "key": "mean_by_sensor",
+          "requirement": "Add mean_by_sensor: object mapping sensor ID to mean y."
+        },
+        {
+          "request": "Target deliverable: metrics.json. Extend analysis.py so executing it reads measurements.csv and writes metrics.json. Add slope: ordinary least squares slope predicting y from x with an intercept, using all rows. Preserve earlier metric computations, run the script via run_experiment, and validate the saved results. Use Python standard library.",
+          "artifact": "metrics.json",
+          "key": "slope",
+          "requirement": "Add slope: ordinary least squares slope predicting y from x with an intercept, using all rows."
+        },
+        {
+          "request": "Target deliverable: metrics.json. Extend analysis.py so executing it reads measurements.csv and writes metrics.json. Add intercept: mean_y minus slope times mean_x. Preserve earlier metric computations, run the script via run_experiment, and validate the saved results. Use Python standard library.",
+          "artifact": "metrics.json",
+          "key": "intercept",
+          "requirement": "Add intercept: mean_y minus slope times mean_x."
+        },
+        {
+          "request": "Target deliverable: metrics.json. Extend analysis.py so executing it reads measurements.csv and writes metrics.json. Add mse: mean squared residual of that fitted line over all rows. Preserve earlier metric computations, run the script via run_experiment, and validate the saved results. Use Python standard library.",
+          "artifact": "metrics.json",
+          "key": "mse",
+          "requirement": "Add mse: mean squared residual of that fitted line over all rows."
+        },
+        {
+          "request": "Target deliverable: metrics.json. Extend analysis.py so executing it reads measurements.csv and writes metrics.json. Add valid_count: number of rows where quality equals good. Other metrics still use all rows. Preserve earlier metric computations, run the script via run_experiment, and validate the saved results. Use Python standard library.",
+          "artifact": "metrics.json",
+          "key": "valid_count",
+          "requirement": "Add valid_count: number of rows where quality equals good. Other metrics still use all rows."
+        }
+      ],
+      "split": "development",
+      "source_group": "measurement_experiment_authored_fixture_v1",
+      "rounds": 8,
+      "specification_version": 2
+    },
+    {
+      "id": "continuous_documents",
+      "family": "release_document_audit",
+      "description": "Cross-check release documentation and keep a cumulative structured handoff.",
+      "tools": [
+        "list_files",
+        "read_file",
+        "search_files",
+        "write_file",
+        "run_python",
+        "run_checks"
+      ],
+      "turns": [
+        {
+          "request": "Target deliverable: handoff.json. Update handoff.json while preserving earlier fields. Add release: the release ID in release.md. Read the actual documents; prefer the later dated policy if versions differ.",
+          "artifact": "handoff.json",
+          "key": "release",
+          "requirement": "Add release: the release ID in release.md."
+        },
+        {
+          "request": "Target deliverable: handoff.json. Update handoff.json while preserving earlier fields. Add owners: component-to-person object from owners.md. Read the actual documents; prefer the later dated policy if versions differ.",
+          "artifact": "handoff.json",
+          "key": "owners",
+          "requirement": "Add owners: component-to-person object from owners.md."
+        },
+        {
+          "request": "Target deliverable: handoff.json. Update handoff.json while preserving earlier fields. Add minimum_python: minimum supported Python version string from the latest policy document. Read the actual documents; prefer the later dated policy if versions differ.",
+          "artifact": "handoff.json",
+          "key": "minimum_python",
+          "requirement": "Add minimum_python: minimum supported Python version string from the latest policy document."
+        },
+        {
+          "request": "Target deliverable: handoff.json. Update handoff.json while preserving earlier fields. Add required_checks: sorted check names required by the latest policy. Read the actual documents; prefer the later dated policy if versions differ.",
+          "artifact": "handoff.json",
+          "key": "required_checks",
+          "requirement": "Add required_checks: sorted check names required by the latest policy."
+        },
+        {
+          "request": "Target deliverable: handoff.json. Update handoff.json while preserving earlier fields. Add open_issue_ids: sorted IDs of issues whose status is open in issues.json. Read the actual documents; prefer the later dated policy if versions differ.",
+          "artifact": "handoff.json",
+          "key": "open_issue_ids",
+          "requirement": "Add open_issue_ids: sorted IDs of issues whose status is open in issues.json."
+        },
+        {
+          "request": "Target deliverable: handoff.json. Update handoff.json while preserving earlier fields. Add blocking_issue_ids: sorted open issue IDs whose severity is blocking. Read the actual documents; prefer the later dated policy if versions differ.",
+          "artifact": "handoff.json",
+          "key": "blocking_issue_ids",
+          "requirement": "Add blocking_issue_ids: sorted open issue IDs whose severity is blocking."
+        },
+        {
+          "request": "Target deliverable: handoff.json. Update handoff.json while preserving earlier fields. Add ready: true only if there are no open blocking issues. Read the actual documents; prefer the later dated policy if versions differ.",
+          "artifact": "handoff.json",
+          "key": "ready",
+          "requirement": "Add ready: true only if there are no open blocking issues."
+        },
+        {
+          "request": "Target deliverable: handoff.json. Update handoff.json while preserving earlier fields. Add audit: {issue_count: all issues, open_count: open issues, policy_date: date of the latest policy}. Read the actual documents; prefer the later dated policy if versions differ.",
+          "artifact": "handoff.json",
+          "key": "audit",
+          "requirement": "Add audit: {issue_count: all issues, open_count: open issues, policy_date: date of the latest policy}."
+        }
+      ],
+      "split": "development",
+      "source_group": "release_document_audit_authored_fixture_v1",
+      "rounds": 8,
+      "specification_version": 2
+    }
+  ],
+  "split": "development",
+  "source": "same six original locally authored instances; explicit specification repair, not new independent samples"
+}

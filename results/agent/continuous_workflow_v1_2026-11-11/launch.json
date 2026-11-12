@@ -1,0 +1,11 @@
+{
+  "pid": 1136640,
+  "command": [
+    "/dev/shm/leasepath-preexec-v2-20261110/runtime/bin/python3.13",
+    "-u",
+    "/home/liuxv/LeasePath-new-server-data/scripts/supervise_continuous_workflow_v1.py",
+    "--plan",
+    "/home/liuxv/LeasePath-new-server-data/results/agent/continuous_workflow_v1_2026-11-11/plan.json"
+  ],
+  "started_wall_ns": 1794364482605194976
+}

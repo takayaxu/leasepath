@@ -1,0 +1,83 @@
+{
+  "status": "passed",
+  "holdout_model_tasks": 0,
+  "native_requests": 244,
+  "feedback_links": 196,
+  "rounds": 48,
+  "successful_rounds": 48,
+  "tool_types": {
+    "list_files": 4,
+    "read_file": 52,
+    "write_file": 32,
+    "run_checks": 51,
+    "query_sql": 8,
+    "run_python": 27,
+    "search_files": 4,
+    "http_request": 9,
+    "run_experiment": 9
+  },
+  "tool_errors": [
+    {
+      "owner": "continuous_billing",
+      "round": 6,
+      "call_id": "tca032196d1704dada0f8ea393714dcee",
+      "name": "run_checks",
+      "result": {
+        "returncode": 1,
+        "stdout": "",
+        "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import os,resource;os.sched_setaffinity(0,[15, 43]);resource.setrlimit(resource.RLIMIT_AS,(2147483648,2147483648));resource.setrlimit(resource.RLIMIT_CPU,(240,240));exec(compile(\"import ast,json,pathlib,math\\np=pathlib.Path('report.json')\\nassert p.is_file(),'requested target artifact absent'\\nv=json.loads(p.read_text());assert isinstance(v,dict),'JSON object required'\\nassert 'paid_by_region_cents' in v,'current requested field absent in target artifact'\\n\\nfor key,value in v.items():\\n if key.endswith('_ids') or key=='required_checks':\\n  assert isinstance(value,list) and value==sorted(value),key+' must be a sorted list'\\n\\nif 'paid_by_region_cents' in v:\\n assert set(v['paid_by_region_cents'])==set(v['by_region_cents']),'paid regional keys must cover every region'\\n assert sum(v['paid_by_region_cents'].values())==v['paid_cents'],'paid regional amounts must sum to paid_cents'\\nif 'by_region_cents' in v:assert sum(v['by_region_cents'].values())==v['gross_cents'],'regional amounts must sum to gross_cents'\\nprint('Public artifact schema, behavior and consistency checks passed; independent final verification remains separate.')\\n\",'<project-tool>','exec'))\n                                                                                                                                                                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<project-tool>\", line 13, in <module>\nAssertionError: paid regional amounts must sum to paid_cents\n",
+        "output_truncated": false
+      }
+    },
+    {
+      "owner": "continuous_billing",
+      "round": 6,
+      "call_id": "t7f0e3aec71ce4df4b239cf1f6f9ac389",
+      "name": "run_checks",
+      "result": {
+        "returncode": 1,
+        "stdout": "",
+        "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import os,resource;os.sched_setaffinity(0,[15, 43]);resource.setrlimit(resource.RLIMIT_AS,(2147483648,2147483648));resource.setrlimit(resource.RLIMIT_CPU,(240,240));exec(compile(\"import ast,json,pathlib,math\\np=pathlib.Path('report.json')\\nassert p.is_file(),'requested target artifact absent'\\nv=json.loads(p.read_text());assert isinstance(v,dict),'JSON object required'\\nassert 'paid_by_region_cents' in v,'current requested field absent in target artifact'\\n\\nfor key,value in v.items():\\n if key.endswith('_ids') or key=='required_checks':\\n  assert isinstance(value,list) and value==sorted(value),key+' must be a sorted list'\\n\\nif 'paid_by_region_cents' in v:\\n assert set(v['paid_by_region_cents'])==set(v['by_region_cents']),'paid regional keys must cover every region'\\n assert sum(v['paid_by_region_cents'].values())==v['paid_cents'],'paid regional amounts must sum to paid_cents'\\nif 'by_region_cents' in v:assert sum(v['by_region_cents'].values())==v['gross_cents'],'regional amounts must sum to gross_cents'\\nprint('Public artifact schema, behavior and consistency checks passed; independent final verification remains separate.')\\n\",'<project-tool>','exec'))\n                                                                                                                                                                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<project-tool>\", line 13, in <module>\nAssertionError: paid regional amounts must sum to paid_cents\n",
+        "output_truncated": false
+      }
+    },
+    {
+      "owner": "continuous_api",
+      "round": 2,
+      "call_id": "tba44d14210bd40dabc0c64373694b0e1",
+      "name": "run_python",
+      "result": {
+        "returncode": 1,
+        "stdout": "",
+        "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import os,resource;os.sched_setaffinity(0,[17, 45]);resource.setrlimit(resource.RLIMIT_AS,(2147483648,2147483648));resource.setrlimit(resource.RLIMIT_CPU,(240,240));exec(compile(\"active_product_ids = sorted([product['id'] for product in [11, 12, 14] if product['active']]); print(active_product_ids)\",'<project-tool>','exec'))\n                                                                                                                                                                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<project-tool>\", line 1, in <module>\nTypeError: 'int' object is not subscriptable\n",
+        "output_truncated": false
+      }
+    },
+    {
+      "owner": "continuous_experiment",
+      "round": 0,
+      "call_id": "t95a0422cda7a49a9a1a67fe1e91a02b5",
+      "name": "run_checks",
+      "result": {
+        "returncode": 1,
+        "stdout": "",
+        "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import os,resource;os.sched_setaffinity(0,[18, 46]);resource.setrlimit(resource.RLIMIT_AS,(2147483648,2147483648));resource.setrlimit(resource.RLIMIT_CPU,(240,240));exec(compile(\"import ast,json,pathlib,math\\np=pathlib.Path('metrics.json')\\nassert p.is_file(),'requested target artifact absent'\\nv=json.loads(p.read_text());assert isinstance(v,dict),'JSON object required'\\nassert 'count' in v,'current requested field absent in target artifact'\\n\\nfor key,value in v.items():\\n if key.endswith('_ids') or key=='required_checks':\\n  assert isinstance(value,list) and value==sorted(value),key+' must be a sorted list'\\n\\nfor key in ('mean_y','variance_y','slope','intercept','mse'):\\n if key in v:assert isinstance(v[key],(int,float)) and math.isfinite(v[key]),key+' must be finite'\\nfor key in ('variance_y','mse'):\\n if key in v:assert v[key]>=0,key+' must be nonnegative'\\nif 'valid_count' in v:assert 0<=v['valid_count']<=v['count'],'valid_count outside total count'\\n\\nif 'slope' in v:\\n import csv\\n rows=list(csv.DictReader(open('measurements.csv')))\\n xs=[float(r['x']) for r in rows];ys=[float(r['y']) for r in rows]\\n mx=math.fsum(xs)/len(xs);my=math.fsum(ys)/len(ys)\\n centered_x2=math.fsum((x-mx)**2 for x in xs)\\n centered_xy=math.fsum((x-mx)*(y-my) for x,y in zip(xs,ys))\\n assert math.isclose(v['slope']*centered_x2,centered_xy,rel_tol=1e-8,abs_tol=1e-8),'OLS normal equation failed: slope * sum((x-mean_x)**2) must equal sum((x-mean_x)*(y-mean_y)); inspect centered variance and saved calculation'\\n\\nif 'intercept' in v:assert math.isclose(v['intercept']+v['slope']*mx,my,rel_tol=1e-8,abs_tol=1e-8),'OLS intercept must center residuals at zero'\\nif 'mse' in v:\\n residual2=math.fsum((y-v['slope']*x-v['intercept'])**2 for x,y in zip(xs,ys))/len(xs)\\n assert math.isclose(v['mse'],residual2,rel_tol=1e-8,abs_tol=1e-8),'MSE must equal actual mean squared residuals'\\nprint('Public artifact schema, behavior and consistency checks passed; independent final verification remains separate.')\\n\",'<project-tool>','exec'))\n                                                                                                                                                                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "output_truncated": true
+      }
+    }
+  ],
+  "snapshots": 1079,
+  "episodes": 234,
+  "excluded_snapshots": 0,
+  "phase_counts": {
+    "waiting_tool": 191,
+    "queued": 836,
+    "waiting_user": 52
+  },
+  "source_plan_sha256": "ee3f7bf8317f5bd0ccec8039c5075783f699585627bb44af60cb45d9a8f01032",
+  "event_counts": {
+    "U": 1079
+  },
+  "natural_JCT_acceptance": false,
+  "scope": "audited six development continuous projects; no holdout or policy timing comparison"
+}

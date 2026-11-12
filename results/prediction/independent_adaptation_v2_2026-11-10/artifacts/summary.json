@@ -1,0 +1,429 @@
+{
+  "status": "completed_development_candidate",
+  "holdout_model_tasks": 0,
+  "holdout_training_rows": 0,
+  "source_plan_sha256": "3d5bfb679924ef0611089d3021685db13a0befb881b8b7a81ce1145fa7bf83e7",
+  "source_provenance": [
+    {
+      "batch": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view/batch-0",
+      "files": {
+        "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view/batch-0/loop-audit.json": "696380e247bf66e638d7e3bc09793036c94a052f4502950f2059710f32ded018",
+        "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view/batch-0/decision-audit.json": "731bda80fc3063917819bd2712fdcd15a9c149c8ce10b04e76bc2454c3abb024",
+        "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view/batch-0/batch/raw/controller.jsonl": "cacb161a3c34f510e2e02bb9787ae53b9d8a5cb85d7b96b5eaa8c179c9f0e677",
+        "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view/batch-0/batch/raw/backend.jsonl": "2b1656941a05908cdc71c957755f9a4b5c5b01cc2be095558a6123e4c4866f9b"
+      }
+    },
+    {
+      "batch": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0",
+      "files": {
+        "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0/loop-audit.json": "8035920359ca476909715097390e51a3f02434821042ef68dfe546460f5dde4f",
+        "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0/decision-audit.json": "83646909afdf2ebd94bf0ae0a66679f1586362473c968dcab6f1c629d20bf3e2",
+        "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0/batch/raw/controller.jsonl": "34ba8182e76bc547bb2f64f29d8ec6fcd075ffaf03d13c8c5ccbab13c0c20a6c",
+        "/home/liuxv/LeasePath-new-server-data/results/agent/independent_remaining3_v2_2026-11-10/raw/batch-0/batch/raw/backend.jsonl": "96b767c66c66306e6fa981907f5efb4057bc6257c286a92221d2715ed335c291"
+      }
+    },
+    {
+      "batch": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0",
+      "files": {
+        "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0/loop-audit.json": "422904de60de960da48ab37357aba8df6e565391a245083d4a891007a4902027",
+        "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0/decision-audit.json": "5608fcca07f88913cd232d907f5acb4d9b0a5a20d7d92f17bd8399d3c7a3a06d",
+        "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0/batch/raw/controller.jsonl": "9b47b8be288902256396b2feb3e886e35e0c330bde5931fcac8ece41451bfd12",
+        "/home/liuxv/LeasePath-new-server-data/results/agent/independent_pressure6_v2_2026-11-10/raw/batch-0/batch/raw/backend.jsonl": "32b99af6cb2637ed15f31591d94feeef1372a29c9f55621f5d966416be7ebbe4"
+      }
+    }
+  ],
+  "families": [
+    "error_correction",
+    "exact_cover",
+    "job_shop",
+    "max_flow",
+    "package_resolution",
+    "propositional_sat"
+  ],
+  "snapshots": 443,
+  "observed_episodes": 132,
+  "events": {
+    "U": 439,
+    "D": 4
+  },
+  "excluded_snapshots": [],
+  "original_queue_missing_snapshots": 60,
+  "folds": [
+    {
+      "validation_development_family": "error_correction",
+      "training_families": [
+        "exact_cover",
+        "job_shop",
+        "max_flow",
+        "package_resolution",
+        "propositional_sat"
+      ],
+      "train_snapshots": 365,
+      "validation_snapshots": 78,
+      "note": "development cross-validation, not the untouched holdout"
+    },
+    {
+      "validation_development_family": "exact_cover",
+      "training_families": [
+        "error_correction",
+        "job_shop",
+        "max_flow",
+        "package_resolution",
+        "propositional_sat"
+      ],
+      "train_snapshots": 367,
+      "validation_snapshots": 76,
+      "note": "development cross-validation, not the untouched holdout"
+    },
+    {
+      "validation_development_family": "job_shop",
+      "training_families": [
+        "error_correction",
+        "exact_cover",
+        "max_flow",
+        "package_resolution",
+        "propositional_sat"
+      ],
+      "train_snapshots": 366,
+      "validation_snapshots": 77,
+      "note": "development cross-validation, not the untouched holdout"
+    },
+    {
+      "validation_development_family": "max_flow",
+      "training_families": [
+        "error_correction",
+        "exact_cover",
+        "job_shop",
+        "package_resolution",
+        "propositional_sat"
+      ],
+      "train_snapshots": 367,
+      "validation_snapshots": 76,
+      "note": "development cross-validation, not the untouched holdout"
+    },
+    {
+      "validation_development_family": "package_resolution",
+      "training_families": [
+        "error_correction",
+        "exact_cover",
+        "job_shop",
+        "max_flow",
+        "propositional_sat"
+      ],
+      "train_snapshots": 380,
+      "validation_snapshots": 63,
+      "note": "development cross-validation, not the untouched holdout"
+    },
+    {
+      "validation_development_family": "propositional_sat",
+      "training_families": [
+        "error_correction",
+        "exact_cover",
+        "job_shop",
+        "max_flow",
+        "package_resolution"
+      ],
+      "train_snapshots": 370,
+      "validation_snapshots": 73,
+      "note": "development cross-validation, not the untouched holdout"
+    }
+  ],
+  "cross_validation": {
+    "frozen_empirical": {
+      "horizons": {
+        "1": {
+          "common_snapshots": 443,
+          "evaluated_weight": 6.0,
+          "Brier_U": 0.09852623456790129,
+          "predicted_U": 0.313888888888889,
+          "observed_U": 0.0
+        },
+        "3": {
+          "common_snapshots": 443,
+          "evaluated_weight": 6.0,
+          "Brier_U": 0.3121454545454541,
+          "predicted_U": 0.5599999999999996,
+          "observed_U": 0.012121212121212121
+        },
+        "10": {
+          "common_snapshots": 443,
+          "evaluated_weight": 6.0,
+          "Brier_U": 0.2881735333660679,
+          "predicted_U": 0.6143055555555551,
+          "observed_U": 0.3901725589225589
+        },
+        "30": {
+          "common_snapshots": 443,
+          "evaluated_weight": 6.0,
+          "Brier_U": 0.15880747579966356,
+          "predicted_U": 0.6354166666666662,
+          "observed_U": 0.904419191919192
+        }
+      },
+      "snapshots": 443,
+      "distribution_policy_eligible_snapshots": 443,
+      "unseen_state_fallback_snapshots": 0,
+      "finite_window_NLL": 4.114465051429215
+    },
+    "frozen_gbdt": {
+      "horizons": {
+        "1": {
+          "common_snapshots": 443,
+          "evaluated_weight": 6.0,
+          "Brier_U": 0.1032825830451347,
+          "predicted_U": 0.3203083388631392,
+          "observed_U": 0.0
+        },
+        "3": {
+          "common_snapshots": 443,
+          "evaluated_weight": 6.0,
+          "Brier_U": 0.31020821611279203,
+          "predicted_U": 0.5582204871004794,
+          "observed_U": 0.012121212121212121
+        },
+        "10": {
+          "common_snapshots": 443,
+          "evaluated_weight": 6.0,
+          "Brier_U": 0.28659236506729807,
+          "predicted_U": 0.6121503472504366,
+          "observed_U": 0.3901725589225589
+        },
+        "30": {
+          "common_snapshots": 443,
+          "evaluated_weight": 6.0,
+          "Brier_U": 0.160402977032944,
+          "predicted_U": 0.6333334557026922,
+          "observed_U": 0.904419191919192
+        }
+      },
+      "snapshots": 443,
+      "distribution_policy_eligible_snapshots": 443,
+      "unseen_state_fallback_snapshots": 428,
+      "finite_window_NLL": 4.113595648131659
+    },
+    "refit_legacy_gbdt": {
+      "horizons": {
+        "1": {
+          "common_snapshots": 443,
+          "evaluated_weight": 6.0,
+          "Brier_U": 0.07995441952029068,
+          "predicted_U": 0.28275950021340907,
+          "observed_U": 0.0
+        },
+        "3": {
+          "common_snapshots": 443,
+          "evaluated_weight": 6.0,
+          "Brier_U": 0.11199893798109822,
+          "predicted_U": 0.32840987670217164,
+          "observed_U": 0.012121212121212121
+        },
+        "10": {
+          "common_snapshots": 443,
+          "evaluated_weight": 6.0,
+          "Brier_U": 0.25438467719547725,
+          "predicted_U": 0.518502410465611,
+          "observed_U": 0.3901725589225589
+        },
+        "30": {
+          "common_snapshots": 443,
+          "evaluated_weight": 6.0,
+          "Brier_U": 0.15010513688657667,
+          "predicted_U": 0.652731812431896,
+          "observed_U": 0.904419191919192
+        }
+      },
+      "snapshots": 443,
+      "distribution_policy_eligible_snapshots": 443,
+      "unseen_state_fallback_snapshots": 0,
+      "finite_window_NLL": 1.9508040888453742
+    },
+    "adapted_empirical_v2": {
+      "horizons": {
+        "1": {
+          "common_snapshots": 443,
+          "evaluated_weight": 6.0,
+          "Brier_U": 0.0,
+          "predicted_U": 0.0,
+          "observed_U": 0.0
+        },
+        "3": {
+          "common_snapshots": 443,
+          "evaluated_weight": 6.0,
+          "Brier_U": 0.011995262840521164,
+          "predicted_U": 0.00923319069178208,
+          "observed_U": 0.012121212121212121
+        },
+        "10": {
+          "common_snapshots": 443,
+          "evaluated_weight": 6.0,
+          "Brier_U": 0.21675374436935577,
+          "predicted_U": 0.3427697636106301,
+          "observed_U": 0.3901725589225589
+        },
+        "30": {
+          "common_snapshots": 443,
+          "evaluated_weight": 6.0,
+          "Brier_U": 0.06976911794910248,
+          "predicted_U": 0.8966826551737559,
+          "observed_U": 0.904419191919192
+        }
+      },
+      "snapshots": 443,
+      "distribution_policy_eligible_snapshots": 443,
+      "unseen_state_fallback_snapshots": 0,
+      "finite_window_NLL": 1.1136528819877223
+    },
+    "adapted_gbdt_v2": {
+      "horizons": {
+        "1": {
+          "common_snapshots": 443,
+          "evaluated_weight": 6.0,
+          "Brier_U": 0.07995441952029068,
+          "predicted_U": 0.28275950021340907,
+          "observed_U": 0.0
+        },
+        "3": {
+          "common_snapshots": 443,
+          "evaluated_weight": 6.0,
+          "Brier_U": 0.11199893798109822,
+          "predicted_U": 0.32840987670217164,
+          "observed_U": 0.012121212121212121
+        },
+        "10": {
+          "common_snapshots": 443,
+          "evaluated_weight": 6.0,
+          "Brier_U": 0.25438467719547725,
+          "predicted_U": 0.518502410465611,
+          "observed_U": 0.3901725589225589
+        },
+        "30": {
+          "common_snapshots": 443,
+          "evaluated_weight": 6.0,
+          "Brier_U": 0.15010513688657667,
+          "predicted_U": 0.652731812431896,
+          "observed_U": 0.904419191919192
+        }
+      },
+      "snapshots": 443,
+      "distribution_policy_eligible_snapshots": 443,
+      "unseen_state_fallback_snapshots": 0,
+      "finite_window_NLL": 1.9508040888453742
+    }
+  },
+  "feature_names": [
+    "log_elapsed_idle",
+    "log_tool_elapsed",
+    "tool_elapsed_known",
+    "ready",
+    "ready_known",
+    "log_queue_length",
+    "queue_known",
+    "log_prefix_tokens",
+    "waiting_tool",
+    "phase_unknown",
+    "log_retry_count",
+    "retry_known",
+    "interval_index"
+  ],
+  "feature_gain": {
+    "log_elapsed_idle": 0.0,
+    "log_tool_elapsed": 0.0,
+    "tool_elapsed_known": 0.0,
+    "ready": 0.0,
+    "ready_known": 0.0,
+    "log_queue_length": 0.0,
+    "queue_known": 0.0,
+    "log_prefix_tokens": 0.0,
+    "waiting_tool": 0.0,
+    "phase_unknown": 0.0,
+    "log_retry_count": 0.0,
+    "retry_known": 0.0,
+    "interval_index": 134.95146888494492
+  },
+  "support_counts": [
+    {
+      "right_s": 0.01,
+      "conservative_source_families": 6
+    },
+    {
+      "right_s": 0.03,
+      "conservative_source_families": 6
+    },
+    {
+      "right_s": 0.1,
+      "conservative_source_families": 6
+    },
+    {
+      "right_s": 0.3,
+      "conservative_source_families": 6
+    },
+    {
+      "right_s": 1,
+      "conservative_source_families": 6
+    },
+    {
+      "right_s": 3,
+      "conservative_source_families": 6
+    },
+    {
+      "right_s": 10,
+      "conservative_source_families": 6
+    },
+    {
+      "right_s": 30,
+      "conservative_source_families": 6
+    },
+    {
+      "right_s": 60,
+      "conservative_source_families": 6
+    },
+    {
+      "right_s": 120,
+      "conservative_source_families": 0
+    },
+    {
+      "right_s": 300,
+      "conservative_source_families": 0
+    },
+    {
+      "right_s": 600,
+      "conservative_source_families": 0
+    }
+  ],
+  "full_candidate_policy_eligible_snapshots": 443,
+  "candidate_sha256": "df668431ade07bdb6987c72bd196382dd81760478f9ce60870b3da402e7443d0",
+  "baseline": {
+    "baseline_id": "gbdt-distribution-equalcost-H30-tau10-v1",
+    "manifest_sha256": "bf93dcdbb907cc130cdc3bd23f4e14e00fc29766942ae827694a24461c3a42bc",
+    "predictor_sha256": "283b3c829a48460360ccf6a1ac311e2e7989a90d74d2338e15e25b08f7e78c5c",
+    "fixed": {
+      "policy": "distribution_value",
+      "horizon_s": 30.0,
+      "tau_s": 10.0,
+      "min_global_workflows": 5,
+      "block_tokens": 128,
+      "block_bytes": 33554432,
+      "cost": "equal_one",
+      "owner_aggregation": "max",
+      "interval_weight": "right_edge_exp",
+      "fallback": "retired_first_lru",
+      "eviction": "pressure_only_legal_leaf",
+      "scheduling": "FCFS",
+      "adaptive_tau": false,
+      "retraining": false,
+      "prefetch": false,
+      "offload": false,
+      "audit_shadows": true
+    }
+  },
+  "online_deployment": false,
+  "natural_JCT_acceptance": false,
+  "limitations": [
+    "six locally authored toy fixtures; repeated sessions are not new parents",
+    "family-grouped development CV is not independent holdout generalization",
+    "trace and shared-host conditions affect label timing",
+    "support counts use distinct families, conservatively no larger than workflow counts",
+    "no hyperparameter selection or calibration on validation folds",
+    "frozen-vs-adapted changes both data and features; refit_legacy_gbdt controls training data"
+  ]
+}

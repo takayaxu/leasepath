@@ -1,0 +1,59 @@
+{
+  "capacity": 24,
+  "concurrency": 3,
+  "batches": 18,
+  "means": {
+    "retired_first_lru": {
+      "mean_jct_s": 121.31485481956042,
+      "cached_tokens": 7424.0,
+      "prefill_tokens": 7130.0,
+      "prefill_s": 10.789625064333334,
+      "decode_s": 53.273035827
+    },
+    "gbdt_point": {
+      "mean_jct_s": 124.88764516872146,
+      "cached_tokens": 8192.0,
+      "prefill_tokens": 6362.0,
+      "prefill_s": 9.185615978,
+      "decode_s": 53.17332288983334
+    },
+    "gbdt_distribution": {
+      "mean_jct_s": 119.65680627255803,
+      "cached_tokens": 8192.0,
+      "prefill_tokens": 6362.0,
+      "prefill_s": 9.170769844,
+      "decode_s": 53.18357663416666
+    }
+  },
+  "distribution_benefits": {
+    "retired_first_lru": {
+      "additional_hit_tokens_per_batch": 768.0,
+      "prefill_s_saved_per_batch": 1.6188552203333337,
+      "mean_JCT_s_saved": 1.6580485470023945,
+      "mean_JCT_reduction_pct": 1.3667316747553457,
+      "paired_JCT_s_saved": [
+        1.4235229590752567,
+        -1.965784047419831,
+        1.9808937910323294,
+        4.10440958229205,
+        4.090457440121099,
+        0.31479155691340566
+      ]
+    },
+    "gbdt_point": {
+      "additional_hit_tokens_per_batch": 0.0,
+      "prefill_s_saved_per_batch": 0.014846133999999012,
+      "mean_JCT_s_saved": 5.230838896163434,
+      "mean_JCT_reduction_pct": 4.188435844952192,
+      "paired_JCT_s_saved": [
+        0.5027761717016546,
+        5.350966225455821,
+        9.4214435632651,
+        1.8495544544421136,
+        5.683438343151167,
+        8.576854618964717
+      ]
+    }
+  },
+  "scope": "six paired crossover cycles on shared server; no exclusive-bandwidth claim"
+}

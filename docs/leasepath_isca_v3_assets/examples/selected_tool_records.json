@@ -1,0 +1,198 @@
+[
+  {
+    "project": "continuous_inventory",
+    "title": "Inventory maintenance",
+    "source_line": 2,
+    "source_path": "results/agent/continuous_pilot_v7_2026-11-11/raw/tools/continuous_inventory/calls.jsonl",
+    "native_record": {
+      "call_id": "tda179d9854df47219be6b8106b8de61a",
+      "name": "read_file",
+      "arguments": {
+        "path": "inventory.py"
+      },
+      "round": 0,
+      "started_ns": 1545084058377551,
+      "status": "ok",
+      "result": {
+        "content": "\"\"\"Warehouse inventory operations. Quantities and prices are nonnegative.\"\"\"\n\ndef available(stock, sku):\n    return stock[sku]\n",
+        "truncated": false
+      },
+      "ended_ns": 1545084060811286,
+      "result_sha256": "6c6ff9dcffe280d8c3fa7b46a8bad9efd0074d267ec795304fbd3b4fda8b43c1"
+    },
+    "display": {
+      "name": "read_file",
+      "arguments": {
+        "path": "inventory.py"
+      },
+      "duration_ms": 2.434,
+      "status": "ok"
+    }
+  },
+  {
+    "project": "continuous_billing",
+    "title": "CSV / SQLite billing",
+    "source_line": 1,
+    "source_path": "results/agent/continuous_pilot_v7_2026-11-11/raw/tools/continuous_billing/calls.jsonl",
+    "native_record": {
+      "call_id": "td98577d6c75d48b0bf27c7c4e5254456",
+      "name": "query_sql",
+      "arguments": {
+        "sql": "SELECT COUNT(*) FROM invoices;"
+      },
+      "round": 0,
+      "started_ns": 1545072450008843,
+      "status": "ok",
+      "result": {
+        "columns": [
+          "COUNT(*)"
+        ],
+        "rows": [
+          [
+            36
+          ]
+        ],
+        "truncated": false
+      },
+      "ended_ns": 1545072451771254,
+      "result_sha256": "323536ad20f0a9f1bfe3e509bf1fd78480d2ef0cf53764ee195c9120e57b9943"
+    },
+    "display": {
+      "name": "query_sql",
+      "arguments": {
+        "sql": "SELECT COUNT(*) FROM invoices;"
+      },
+      "duration_ms": 1.762,
+      "status": "ok"
+    }
+  },
+  {
+    "project": "continuous_logs",
+    "title": "Log diagnostics",
+    "source_line": 1,
+    "source_path": "results/agent/continuous_pilot_v7_2026-11-11/raw/tools/continuous_logs/calls.jsonl",
+    "native_record": {
+      "call_id": "t2724155b1ed94bbf87e3e61019de63e5",
+      "name": "search_files",
+      "arguments": {
+        "query": "health port"
+      },
+      "round": 0,
+      "started_ns": 1545074484328808,
+      "status": "ok",
+      "result": {
+        "matches": [
+          {
+            "path": "service.md",
+            "line": 1,
+            "text": "Health port: 8087"
+          }
+        ],
+        "limit": 24
+      },
+      "ended_ns": 1545074486234207,
+      "result_sha256": "49d3d26a51d2a2cba3080ed2e6ab209ec202aaaf74176ee2d3a52069a800bdb7"
+    },
+    "display": {
+      "name": "search_files",
+      "arguments": {
+        "query": "health port"
+      },
+      "duration_ms": 1.905,
+      "status": "ok"
+    }
+  },
+  {
+    "project": "continuous_api",
+    "title": "HTTP integration",
+    "source_line": 2,
+    "source_path": "results/agent/continuous_pilot_v7_2026-11-11/raw/tools/continuous_api/calls.jsonl",
+    "native_record": {
+      "call_id": "tbff9093a72734638a5289bb6e671e170",
+      "name": "http_request",
+      "arguments": {
+        "path": "/health"
+      },
+      "round": 0,
+      "started_ns": 1545096222898451,
+      "status": "ok",
+      "result": {
+        "status": 200,
+        "body": {
+          "status": "ok"
+        }
+      },
+      "ended_ns": 1545096230465192,
+      "result_sha256": "925a618900d874f80b805e6bd0f5203014f64b02cc56293fb90f1a388af4eefc"
+    },
+    "display": {
+      "name": "http_request",
+      "arguments": {
+        "path": "/health"
+      },
+      "duration_ms": 7.567,
+      "status": "ok"
+    }
+  },
+  {
+    "project": "continuous_experiment",
+    "title": "Numerical experiment",
+    "source_line": 5,
+    "source_path": "results/agent/continuous_pilot_v7_2026-11-11/raw/tools/continuous_experiment/calls.jsonl",
+    "native_record": {
+      "call_id": "t3a2f0ef1d52c463096dfa44faeb05399",
+      "name": "run_experiment",
+      "arguments": {},
+      "round": 0,
+      "started_ns": 1545216615472491,
+      "status": "ok",
+      "result": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "output_truncated": false,
+        "metrics": {
+          "good_count": 11294,
+          "bad_count": 706,
+          "total_count": 12000
+        }
+      },
+      "ended_ns": 1545216908574340,
+      "result_sha256": "82d55dd19861ef868f35de2ceaed2e37fd9f4ca41e4eabaca3355710b44e6d02"
+    },
+    "display": {
+      "name": "run_experiment",
+      "arguments": {},
+      "duration_ms": 293.102,
+      "status": "ok"
+    }
+  },
+  {
+    "project": "continuous_documents",
+    "title": "Release documents",
+    "source_line": 5,
+    "source_path": "results/agent/continuous_pilot_v7_2026-11-11/raw/tools/continuous_documents/calls.jsonl",
+    "native_record": {
+      "call_id": "td67726129bb641fb8872c6f059223dc8",
+      "name": "run_checks",
+      "arguments": {},
+      "round": 0,
+      "started_ns": 1545220532196740,
+      "ended_ns": 1545220782021026,
+      "result": {
+        "returncode": 0,
+        "stdout": "Public artifact schema, behavior and consistency checks passed; independent final verification remains separate.\n",
+        "stderr": "",
+        "output_truncated": false
+      },
+      "status": "ok",
+      "result_sha256": "7a5c05fae572976c024fd3ebc6dae64eb1ffb8b8f166d066256022516c63e194"
+    },
+    "display": {
+      "name": "run_checks",
+      "arguments": {},
+      "duration_ms": 249.824,
+      "status": "ok"
+    }
+  }
+]

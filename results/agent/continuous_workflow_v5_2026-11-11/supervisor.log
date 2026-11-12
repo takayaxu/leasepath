@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/home/liuxv/LeasePath-new-server-data/scripts/supervise_continuous_workflow_v5.py", line 116, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/home/liuxv/LeasePath-new-server-data/scripts/supervise_continuous_workflow_v5.py", line 104, in main
+    command([ROOT/'scripts/run_continuous_e2e_v5.py','--plan',evidence/'plan.json'],evidence/'run.log',p['overall_wall_budget_s']+60)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liuxv/LeasePath-new-server-data/scripts/supervise_continuous_workflow_v5.py", line 53, in command
+    if returncode:raise RuntimeError('pipeline command failed; inspect '+str(log))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: pipeline command failed; inspect /home/liuxv/LeasePath-new-server-data/results/agent/continuous_workflow_v5_2026-11-11/e2e/lru/run.log

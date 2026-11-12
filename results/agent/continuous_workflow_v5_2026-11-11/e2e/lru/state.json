@@ -1,0 +1,51 @@
+{
+  "status": "stopped",
+  "pid": 1424594,
+  "arm": "lru",
+  "holdout_model_tasks": 0,
+  "completed_rounds": 0,
+  "successful_rounds": 0,
+  "updated_wall_ns": 1794375529266039810,
+  "topology": {
+    "status": "passed",
+    "groups": [
+      [
+        0,
+        2,
+        5,
+        6,
+        8,
+        10,
+        11,
+        12
+      ],
+      [
+        14,
+        42
+      ],
+      [
+        15,
+        43
+      ],
+      [
+        16,
+        44
+      ],
+      [
+        17,
+        45
+      ],
+      [
+        18,
+        46
+      ],
+      [
+        19,
+        47
+      ]
+    ],
+    "exclusive_host_claim": false
+  },
+  "error": "TypeError: UpdatingPredictor._event() got multiple values for argument 'kind'",
+  "finished_wall_ns": 1794375529266038307
+}

@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/home/liuxv/LeasePath-new-server-data/scripts/supervise_continuous_workflow_v1.py", line 109, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/home/liuxv/LeasePath-new-server-data/scripts/supervise_continuous_workflow_v1.py", line 71, in main
+    command([ROOT/'scripts/audit_continuous_pilot_v3.py','--plan',config['repair_plan'],'--output',Path(v3['evidence'])/'audit'],Path(v3['evidence'])/'audit.log',1800)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liuxv/LeasePath-new-server-data/scripts/supervise_continuous_workflow_v1.py", line 53, in command
+    if returncode:raise RuntimeError('pipeline command failed; inspect '+str(log))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: pipeline command failed; inspect /home/liuxv/LeasePath-new-server-data/results/agent/continuous_pilot_v3_2026-11-11/audit.log

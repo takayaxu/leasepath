@@ -1,0 +1,22 @@
+{
+  "status": "tool_contract_reproduction_passed",
+  "project": "continuous_logs",
+  "round": 2,
+  "root_cause": "model embedded entire actual service.log into run_python code string, exceeding 1024 generated tokens before closing arguments",
+  "original_failure_retained": true,
+  "original_failure_record_sha256": "c2dea8e3ff9601c1a8a5df405f865ebf83dbc2e4099cf42fe8c0deaa3d69d1e0",
+  "fix": "read actual relative file directly inside real Python working directory; explicit tool-use instruction in v3",
+  "reproduction": {
+    "code": "import json,collections; rows=[json.loads(line) for line in open('service.log')]; print(json.dumps(dict(collections.Counter(r['code'] for r in rows if r['level']=='ERROR')),sort_keys=True))",
+    "code_characters": 189,
+    "result": {
+      "returncode": 0,
+      "stdout": "{\"E_DB\": 3, \"E_TIMEOUT\": 4}\n",
+      "stderr": "",
+      "output_truncated": false
+    },
+    "log_sha256": "b675cd5db80884fc1358c6565f7d6ba79480cecb4eb1b2a423310482008b3bac"
+  },
+  "validation_scope": "real CPU tool reproduction only; model behavior repair remains pending registered v3 run",
+  "new_model_generations": 0
+}

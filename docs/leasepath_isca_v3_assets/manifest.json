@@ -1,0 +1,240 @@
+{
+  "scope": "six authored development projects, one accepted collection; not natural human sessions or independent holdout",
+  "source": "docs/leasepath_isca2027_paper_v2_2026-11-11.tex",
+  "inference_calls": 0,
+  "holdout_access": false,
+  "raw_sources": {
+    "results/agent/continuous_pilot_v7_2026-11-11/raw/raw/controller.jsonl": "3a3357624faba2e37a76693d4e7f0b10f43e9b1e6493f22332a3a3bde9783d21",
+    "results/agent/continuous_pilot_v7_2026-11-11/raw/raw/backend.jsonl": "72d30bd7e78a8193c8a9dfc50d087de75ed3da0497abaa8875e82e2f36bea4d1",
+    "results/agent/continuous_workflow_v6_2026-11-11/e2e/gbdt_static_distribution/raw/raw/controller.jsonl": "24e1ae793ca8d2f568ee0862debf9c7530e628a74be3a7eb326c2021ef82c079",
+    "results/agent/continuous_workflow_v6_2026-11-11/e2e/gbdt_static_distribution/raw/raw/backend.jsonl": "8675cbe550d9bee481ba39765f86bb5e1a644e70ab10747cb06a74793efeeb45"
+  },
+  "sha256": {
+    "docs/leasepath_isca2027_paper_v2_2026-11-11.tex": "1a2c623fcd01a86234d520e1ec22814fb68bbd279329545d3c206b42b95e5ef2",
+    "docs/leasepath_isca2027_paper_v3_2026-11-11.tex": "b1485435886f457293155af4b778025adaf1b2c0f99c4b92224fdbba71cba220",
+    "results/analysis/agent_workload_v1_2026-11-11/summary.json": "78fd391b928b8c682802ded30a5016ab5f2d4686bf493559ac165a0948e4b777",
+    "docs/leasepath_isca_v3_assets/assemble_paper.py": "9b68624f905916f8964b3fcf2dc1ac96f7a781a54756a79d03cb715296a12917",
+    "docs/leasepath_isca_v3_assets/analyze_workload.py": "7cfbf128012e810910380d003e706fe7aa8627cc1a2adad4c5d02b1f306a939f",
+    "docs/leasepath_isca_v3_assets/extract_characterization.py": "7eb3d1d0c7c2497c6cd2a638db9f46b6f44c60f9e64d911ee796b9dcd6f0b36d",
+    "results/analysis/agent_workload_v1_2026-11-11/collection-source-sha256.json": "f12c1a3b579239c76ced2afae30820442d6099ce25bc1c25ba1322c467de300d",
+    "results/analysis/agent_workload_v1_2026-11-11/static-source-sha256.json": "0f46676758fb4a0b41dec64dcb4af387718ecd50e54e36b48ee841f886b56b69",
+    "docs/leasepath_isca_v3_assets/generated/continuous_overhead_table.tex": "d31a0e559129739dbad3df6430bf7c300a533fff4efe9e528e49af24f9b298cc",
+    "docs/leasepath_isca_v3_assets/generated/workload_provenance.tex": "ad9fb1c0df5254619c7d5b1083ab5acd3fe86b8cf609655bfd58859eed5572b3",
+    "docs/leasepath_isca_v3_assets/generated/continuous_prediction_table.tex": "dd292b3c9af8207c602fd3d0b483cf834ec701afbc1e5d5335eeabaa13949a12",
+    "docs/leasepath_isca_v3_assets/generated/continuous_e2e_table.tex": "a05c2373a43cab76c5434826075d06e860283b087faf2bfaea9bffdb5c2e71a0",
+    "docs/leasepath_isca_v3_assets/generated/workload_projects.tex": "3d23863a7686134afc9fe062e8f99d87d226d471490e57ce9200339653c945a2",
+    "docs/leasepath_isca_v3_assets/figures/workload_score_case.pdf": "7281137968b72c8dd98aa7fb411dc7cdf53dea4be1795feba07974dbbab3e21e",
+    "docs/leasepath_isca_v3_assets/figures/workload_timing.pdf": "3cc57377a76ee942c4355ae4be601a5be6d2ccb753f6a9e137457587cc682c34",
+    "docs/leasepath_isca_v3_assets/figures/workload_loops.pdf": "571fd59df3a24d58bbab063264f1c5d94ce94be2dde1bc2e3986f1d1d3f54883",
+    "docs/leasepath_isca_v3_assets/figures/workload_context.pdf": "6286daac2d1600c1cf1c0553da691ff79af283ed16ea6d77b95b761ca19fafa4",
+    "results/analysis/agent_workload_v1_2026-11-11/first_sweep_comparisons.csv": "ff4da0813734ba64e34b663a5c255c96fa51bbf69fba3281986e13456115acc2",
+    "results/analysis/agent_workload_v1_2026-11-11/intervals.csv": "d9e657f4d1d0c6cab878f0ceda6ee3387f92816b63e93ee9302a82d4364ce285",
+    "results/analysis/agent_workload_v1_2026-11-11/tools.csv": "4e7a70371f2e002a3898b9f35f50ff1ac184fa4171befe6eb01fef195480fc5f",
+    "results/analysis/agent_workload_v1_2026-11-11/rounds.csv": "5f5f9f50a4a3d7f0588a2cc527d8a0a9cb5e0ed4100e3d5d0323ac5fc90dc02b",
+    "results/analysis/agent_workload_v1_2026-11-11/requests.csv": "a6619adc4995a7815e5f21b18450e094f996957e61b50aca632ce5862f357ad8",
+    "results/analysis/agent_workload_v1_2026-11-11/projects.csv": "3e8ad324b16cd18f1ed9aee17cbc8c0a33723df7dd9a914d24e0eced89ba746e",
+    "reports/agent_workload_characterization_2026-11-11.md": "c1dd68dba598f3d250e0d4c19f0edf078f88b9cc82155a1eb277b5e10ccf0b86",
+    "docs/leasepath_isca2027_paper_v3_notes_2026-11-11.md": "530c24a2d8281d0bf528748f399e285816e00bfe9987c5fceb3634b45cf8f04d",
+    "docs/leasepath_iclr_outline_v3_2026-11-11.md": "267d4e0faae9ae46b708548ced7a6ea814e2813bd84ec919baf13de4c5b1fb8b",
+    "docs/leasepath_isca_v3_assets/build_paper.sh": "e1252dd8d779636fb37a9e1c6abf5e1ac3daa6a791d67ba16ad08223816e1550",
+    "docs/leasepath_isca2027_paper_v3_2026-11-11.pdf": "a10aaf0a6f71d138e292ea506be2f662bf7c4d705289f440c56e1ddf01eaf1eb",
+    "docs/leasepath_followup_experiments_2026-11-11.md": "c76e1fac8100ebfea27fa3b47cae581cf3db110b20d084af24c7aa5370ef0d0a",
+    "docs/leasepath_isca_v3_assets/short_captions.py": "3fdf9f69821a5e018b0ceafabd3c3ef72830cb6a003f2c6f0a5039a906915d3b",
+    "docs/leasepath_isca_v3_assets/generate_request_duration_figures.py": "25af755919fbf94d1cd785d9ea6d9d364da5c85709b1a5a5fcd788ca41a7284c",
+    "docs/leasepath_isca_v3_assets/generated/request_duration_section.tex": "05ce9375f5d5e3da235cb558083f9a97e76a5f28821654a2cfb393685a401716",
+    "docs/leasepath_isca_v3_assets/figures/workload_request_durations.pdf": "440e4a6422f0ea678bed5acf78d6d49d6f0a12c6d38b14bfa7eb37dd1cb395f3",
+    "docs/leasepath_isca_v3_assets/figures/workload_request_durations.png": "9f7a2fa20f65c64c434c92be79a55ad652856cdb1418b14f0a25aa523eebd613",
+    "results/analysis/agent_workload_v1_2026-11-11/request_duration_summary.json": "b2d2a3e1eb91b7e53ff72f16d7c29fcf3a4d3869ac869237d927c8cddcabf314",
+    "results/analysis/agent_workload_v1_2026-11-11/request_durations.csv": "43fcc06765a5b1af693a19097c0d328d9bb3c58094a37c14569d27d20e514c62",
+    "docs/leasepath_isca_v3_assets/generate_problem_setting_figure.py": "b0923dc031594ac28eca77f77c1d7e5b07030d55558741468ddc478c45737503",
+    "docs/leasepath_isca_v3_assets/figures/figure1_problem_setting.png": "c50a39099f5cccea114fd3ac57923833538cc66393afef70105fa85db4000ab7",
+    "docs/leasepath_isca_v3_assets/figures/figure1_problem_setting.svg": "badeae394934b222da7b3f996fb68db0f74a0b37e31f3f71ad7359a91d4ec388",
+    "docs/leasepath_isca_v3_assets/figures/figure1_problem_setting.pdf": "7275731479989ee531d663487f0b9096964878f5aed83a958d04f9f76d03217d",
+    "docs/leasepath_isca_v3_assets/check_paper_layout.py": "1d6131ef8d7ad9ca99ef9990c55a6fee1a5ff9d9d5524700cb8b5f922dce527c",
+    "docs/leasepath_isca_v3_assets/build/layout-checks.json": "4c343a507fcf8e56698d7c86960865bda4c79958ec1cbf55adc78e9cc7512210",
+    "docs/leasepath_dataset_examples_2026-11-12.md": "96e4744407b9cad141639cbd1483df13aa625555fa5a4fbc69db051eb86561e3",
+    "docs/leasepath_isca_v3_assets/generate_trace_examples.py": "1cf6df241ed83fb142de0e173d285f3adddb58344cda81d65a94d5acf69587cf",
+    "docs/leasepath_isca_v3_assets/generated/trace_examples_section.tex": "5ae0f4a318a7672d2d280bea0d9445b3175241b12dafc9baa95a7140b9b7b459",
+    "docs/leasepath_isca_v3_assets/figures/workload_trace_examples.pdf": "62ca03cbab77cbabc34567711809d8c6bd1c1ddb4000ebc0b94014a409086a5d",
+    "docs/leasepath_isca_v3_assets/figures/workload_trace_examples.svg": "d7837a23ae17d7708db00f4908553c37a27df748f87c970721040d272a4515f6",
+    "docs/leasepath_isca_v3_assets/figures/workload_trace_examples.png": "3724b7322f9eb2c894920af973e7343611dc1641e43acbe32ef5ca51bc468f5a",
+    "docs/leasepath_isca_v3_assets/examples/inventory_turn1_linked_example.json": "464f56d869535f129d00ffeb11ae696d51254e4a790ed2c2ac09ef56d77333ee",
+    "docs/leasepath_isca_v3_assets/examples/selected_tool_records.json": "62ab8a6e5f3dbdd70e12bcf642f801ca423b0790f94be4084b83b467979e572f",
+    "docs/leasepath_isca_v3_assets/examples/source_manifest.json": "0cc4fb91415ea7af1b475a7211105f42f416529a3699d339e6addf78f76f138a",
+    "docs/leasepath_isca_v3_assets/examples/tool_invocations_display.jsonl": "7505dd928e13960456b5f87cacf985c235d604de054c6197b7c98d2e631fc0ec",
+    "docs/leasepath_isca_v3_assets/generate_method_overview.py": "141f1b1f8fce0b9213f828f2082565dfa2edcec4273e2601480607b960e656b7",
+    "docs/leasepath_isca_v3_assets/generated/method_overview.tex": "b8a9abeb0d61a78e2592bbb081fc71b44de4471bdbb0233338023b2552f9dd98",
+    "docs/leasepath_isca_v3_assets/generated/method_overview_intro.tex": "521460b621624d1469e7c49156f4707bc5bc6900a51fcac7183ae97539d07346",
+    "docs/leasepath_isca_v3_assets/figures/leasepath_method_overview.pdf": "4fffbf3dacc39a5bc4add6aeeed87a48d1905975491b3398a44d515104f0b3de",
+    "docs/leasepath_isca_v3_assets/figures/leasepath_method_overview.png": "e3ab088c8467c15e01c576c8af11a19fa4834d97975a0aad4282ae4e5d27a1cc",
+    "docs/leasepath_isca_v3_assets/figures/leasepath_method_overview.svg": "fadf310049d5e45ce0e8570cae397be8f13537713ed050ce8f77740f8c6d5ed0",
+    "docs/leasepath_gbdt_training_contract_2026-11-12.md": "39cb42566a911d49a6e48897af06684382b70bf9b9ea5a1352a6dfd5be345b57",
+    "docs/leasepath_isca_v3_assets/design_references/README.md": "fb6ebb702f75a67dacc094df67c892d1d40f74cb4c4fa4d467ee774f0dd0c04d",
+    "docs/leasepath_isca_v3_assets/icons/source_manifest.json": "326478113b14a3a31af710d2f8f00f63d575a84c3e4473a1a40461a830981704",
+    "docs/leasepath_isca_v3_assets/icons/lucide/git-branch.svg": "b402ecca1468dec7c194074c724d32bd074701b7a434817bcb8de8aa67ff9c2e",
+    "docs/leasepath_isca_v3_assets/icons/lucide/cpu.svg": "9f4120a36facdcf370466cc803bf3de01a6336f1bf16a854ff85ac83ebe7d27a",
+    "docs/leasepath_isca_v3_assets/icons/lucide/lock-keyhole.svg": "d2c052ce26b89b063a4b1ecaa98198803b7d881cb0d176cb33c067e5140b2dd0",
+    "docs/leasepath_isca_v3_assets/icons/lucide/file-code-2.svg": "d4f244a6ba7f5e646cd801ac2ff54fd1a40c4f5190b857b822d44d165326a0bf",
+    "docs/leasepath_isca_v3_assets/icons/lucide/check.svg": "538432eec072ceeccf5a7aacf347a2ad2bff9937d203dbd0b4f4245d7accd93c",
+    "docs/leasepath_isca_v3_assets/icons/lucide/terminal.svg": "a2281f046a672628a31841b0acf24a79ebc69b2644a3f004b6abbfd389b08434",
+    "docs/leasepath_isca_v3_assets/icons/lucide/LICENSE": "1e7290b35280a048667bbf0ebabac1c7fd52a75300e8b2946ac165715997f2bc",
+    "docs/leasepath_isca_v3_assets/icons/lucide/file-check-2.svg": "0090b86dba913bcca21bd3faa7855be3f2b9fde30377c6eeed609529bca18fe5",
+    "docs/leasepath_isca_v3_assets/icons/lucide/user-round.svg": "d7390d374551a27503c64a6c4232753f0f5ad5dc03aefa760b52c9347e5474c3",
+    "docs/leasepath_isca_v3_assets/icons/lucide/wrench.svg": "995fe76da78e8bbdb5c326a76295e4140dc2857767118525ce42f3654f05cd0f",
+    "docs/leasepath_isca_v3_assets/icons/lucide/list-filter.svg": "deb0902a31901693f8b42b2da42aa49413369a927e32fc69c2ea963e3833d664",
+    "docs/leasepath_isca_v3_assets/icons/lucide/clock-3.svg": "80b713e5b0d9e50b40faf9615e067690839a4cfa243c5f1bfb180eadde201243",
+    "docs/leasepath_isca_v3_assets/icons/lucide/messages-square.svg": "3c894dd471000d573faf269444bd345ecb5874716c712cd27cf663623715b7ac",
+    "docs/leasepath_isca_v3_assets/icons/lucide/trash-2.svg": "9268a35cfb4f9d852c3d13f2c91476dd067c21c20e2bcdb0093fd93fd0bf34b7",
+    "docs/leasepath_isca_v3_assets/icons/lucide/notebook-pen.svg": "4723725b43bd649181f37fd32669650ccd8babacd3a7fae698a0e1bfbc92fe33",
+    "docs/leasepath_isca_v3_assets/icons/lucide/search.svg": "e11a04d51c122a8a759211424920efc65fa36b7ab06237c34ef90317d920ddf9",
+    "docs/leasepath_isca_v3_assets/icons/lucide/database.svg": "275e46d23e67d43698afaecd8ddf347ffbf477cbb7d25aec73e6996dc4fc6774"
+  },
+  "build": {
+    "pages": 19,
+    "engine": "XeLaTeX",
+    "class": "acmart 2.21, default font fallback",
+    "main_columns": 2,
+    "appendix_columns": 1,
+    "balance": false
+  },
+  "caption_edit": {
+    "count": 21,
+    "total_words_before": 791,
+    "total_words_after": 440,
+    "maximum_words": 98,
+    "data_unchanged": true,
+    "expanded_exception": "fig:agent-loop and fig:method-overview have panel explanations requested by user"
+  },
+  "request_duration_figure": {
+    "label": "fig:request-durations",
+    "section": "3.4",
+    "pdf_page": 6,
+    "quantiles": [
+      "P50",
+      "P99"
+    ],
+    "plot_count": 3,
+    "new_inference_calls": 0
+  },
+  "problem_setting_figure": {
+    "label": "fig:agent-loop",
+    "pdf_page": 2,
+    "purpose": "problem introduction: prefix reuse and idle-session KV capacity competition",
+    "data_source": "schematic; no experimental measurements",
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "original_v2_preserved": true,
+    "panels": 3,
+    "conversation": "Illustrative timeout edit: read_file, apply_patch, final response",
+    "history_mapping": [
+      "H1",
+      "H2",
+      "H3"
+    ],
+    "identical_prefix_and_compatible_execution_required": true,
+    "caption_structure": [
+      "(a) coding conversation and accumulated feedback",
+      "(b) history-to-KV prefix mapping and saved prefill",
+      "(c) shared capacity and retention tradeoff"
+    ]
+  },
+  "layout_preflight": {
+    "script": "docs/leasepath_isca_v3_assets/check_paper_layout.py",
+    "report": "docs/leasepath_isca_v3_assets/build/layout-checks.json",
+    "run_before_pdf_publish": true,
+    "protrusion_enabled": false,
+    "manual_review_pages": [
+      1,
+      7,
+      8,
+      9,
+      19
+    ],
+    "all_page_contact_sheet_reviewed": true,
+    "template_margins_and_font_sizes_preserved": true
+  },
+  "appendix_edit": {
+    "date": "2026-11-12",
+    "removed": "CATraces explanatory paragraph below the final figure",
+    "last_page_ends_with": "workload-loops figure and caption"
+  },
+  "trace_examples": {
+    "pdf_page": 4,
+    "label": "fig:trace-examples",
+    "selected_calls": 6,
+    "native_files_checked_against_archive": 6,
+    "linked_example": {
+      "user_turns": 1,
+      "model_requests": 5,
+      "tool_calls": 4,
+      "snapshots_shown": 1
+    },
+    "selection": "First specified tool occurrence in each of six authored development projects, all in user turn 1",
+    "duration_definition": "(ended_ns-started_ns)/1e6; display rounded to three decimals",
+    "new_inference_calls": 0,
+    "figure_number": 2,
+    "section": "3.1 Provenance and measurement units",
+    "in_appendix": false,
+    "layout": {
+      "columns": 3,
+      "rows": 2,
+      "height_inches": 2.85,
+      "previous_height_inches": 5.85,
+      "height_reduction_pct": 51.28
+    },
+    "records_and_values_unchanged": true
+  },
+  "method_overview": {
+    "figure_number": 6,
+    "pdf_page": 8,
+    "section": "5 LeasePath",
+    "panels": {
+      "A": "Prior and current requests, tool feedback, exact shared prefixes, FCFS inference; B/C on pressure",
+      "B": "Actual input groups -> weighted interval rows -> 40-round multiclass boosting -> live hazards -> unconditional demand mass -> frozen discounted score",
+      "C": "Shared prefix ownership and active protection -> legal leaves -> plan/rescan -> one native apply -> used-cell occupancy before/after"
+    },
+    "parameters": {
+      "horizon_s": 30,
+      "tau_s": 10,
+      "cost_multiplier": 1
+    },
+    "illustrative_values": true,
+    "actual_measurements": {
+      "initial_projects": 6,
+      "initial_snapshots": 1079,
+      "initial_risk_rows": 9229,
+      "encoded_features": 14,
+      "saved_trees": 120
+    },
+    "style": "Original compact vector artwork; licensed Lucide pictograms; short sans-serif labels; one subtle pen-outline frame",
+    "optional_online_update": "dashed; observed outcomes only",
+    "unbound_first_and_LRU_fallback": "specified in adjacent text",
+    "new_inference_calls": 0,
+    "training_runs": 0,
+    "illustrative_components": [
+      "request histories",
+      "example interval rows including a general censoring mask",
+      "tree silhouettes",
+      "histogram heights",
+      "equal-size-block candidate values"
+    ],
+    "training": {
+      "rounds": 40,
+      "learning_rate": 0.05,
+      "max_depth": 2,
+      "num_leaves": 4,
+      "num_class": 3,
+      "tool_identity_retained": true,
+      "online_refit_from_scratch": true
+    },
+    "actual_initial_model_sha256": "bb4b0f85880dc191bdf6eb17ade264ad5849096b6c56eaacabed9a1412753da1",
+    "initial_labels_limitation": "All 1079 terminal snapshot labels U; initial data do not validate D/C. Mask row is a general pipeline illustration.",
+    "feature_contract": "docs/leasepath_gbdt_training_contract_2026-11-12.md",
+    "references": "docs/leasepath_isca_v3_assets/design_references/README.md",
+    "online_update": "100 additional mature episodes across at least 5 projects; background full refit; request-boundary swap without clearing KV",
+    "actual_measurements_only_for_initial_training_counts": true
+  }
+}

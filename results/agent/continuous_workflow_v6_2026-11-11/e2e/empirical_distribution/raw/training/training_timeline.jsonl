@@ -1,0 +1,10 @@
+{"kind": "initial_deployment", "observed_ns": 1552814574737833, "model_version": 0, "predictor_kind": "empirical", "dynamic": true}
+{"kind": "update_skipped", "observed_ns": 1553414623427133, "model_version": 0, "matured_episodes": 77, "new_episodes": 77, "projects": 6}
+{"kind": "training_started", "observed_ns": 1553645872416696, "model_version": 0, "cutoff_s": 1553645.825555575, "projects": 6, "samples": 1594, "matured_live_episodes": 100, "source_sha256": "5adff52df9af628237c7db59d523e41a7e1b557b2cb5a178f8e39f8ad275857c"}
+{"kind": "deployed", "observed_ns": 1553651544432021, "model_version": 1, "model_sha256": "3173774b7863029948ac6ef31d5609c492e950615db1741eeb2bffc5c5cd3d30", "cutoff_s": 1553645.825555575, "projects": 6, "samples": 1594, "matured_live_episodes": 100, "source_sha256": "5adff52df9af628237c7db59d523e41a7e1b557b2cb5a178f8e39f8ad275857c", "training_wall_s": 0.35948272910900414, "training_thread_cpu_s": 0.304831516}
+{"kind": "update_skipped", "observed_ns": 1554302781626690, "model_version": 1, "matured_episodes": 152, "new_episodes": 52, "projects": 6}
+{"kind": "update_skipped", "observed_ns": 1554924136422082, "model_version": 1, "matured_episodes": 186, "new_episodes": 86, "projects": 6}
+{"kind": "training_started", "observed_ns": 1555194757180068, "model_version": 1, "cutoff_s": 1555194.685138966, "projects": 6, "samples": 2082, "matured_live_episodes": 200, "source_sha256": "e19587338e7fc49c67562b5693358ed0fd593a248074f0dc8836ac24ee99d16c"}
+{"kind": "deployed", "observed_ns": 1555204944496262, "model_version": 2, "model_sha256": "afaad1e7ccb34250101d55a1e28ab364f3004f6f22149aa7a9a70abb5c9cf667", "cutoff_s": 1555194.685138966, "projects": 6, "samples": 2082, "matured_live_episodes": 200, "source_sha256": "e19587338e7fc49c67562b5693358ed0fd593a248074f0dc8836ac24ee99d16c", "training_wall_s": 0.38206801004707813, "training_thread_cpu_s": 0.32926091}
+{"kind": "update_skipped", "observed_ns": 1555806767717940, "model_version": 2, "matured_episodes": 230, "new_episodes": 30, "projects": 6}
+{"kind": "service_end", "observed_ns": 1555935054324460, "model_version": 2, "deployed_updates": 2}

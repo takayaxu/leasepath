@@ -1,0 +1,122 @@
+{
+  "scope": "six authored development projects, one accepted collection; correlated observations",
+  "quantile_method": "linear interpolation; CDF is empirical and unsmoothed",
+  "tool_execution": {
+    "n": 196,
+    "p50_s": 0.0131413745,
+    "p95_s": 0.318025065,
+    "p99_s": 0.35907581150000006,
+    "min_s": 0.000382879,
+    "max_s": 0.366460305
+  },
+  "same_owner_lookup_interval": {
+    "n": 238,
+    "p50_s": 57.71510903199669,
+    "p95_s": 172.78765138714803,
+    "p99_s": 219.03061399700817,
+    "min_s": 6.339243656024337,
+    "max_s": 224.78738513286225
+  },
+  "model_request_latency": {
+    "n": 244,
+    "p50_s": 55.35376495553646,
+    "p95_s": 172.94259420883608,
+    "p99_s": 217.7047016243171,
+    "min_s": 2.382736463099718,
+    "max_s": 223.85103789390996
+  },
+  "native_service": {
+    "n": 244,
+    "p50_s": 9.110933183925226,
+    "p95_s": 32.53426817347062,
+    "p99_s": 77.80304645000257,
+    "min_s": 1.3150065310765058,
+    "max_s": 91.64862071396783
+  },
+  "per_tool": {
+    "http_request": {
+      "n": 9,
+      "p50_s": 0.010025054,
+      "p95_s": 0.0149936876,
+      "p99_s": 0.01620229752,
+      "min_s": 0.006091553,
+      "max_s": 0.01650445
+    },
+    "list_files": {
+      "n": 4,
+      "p50_s": 0.002216394,
+      "p95_s": 0.003934679199999999,
+      "p99_s": 0.004131910239999999,
+      "min_s": 0.001381094,
+      "max_s": 0.004181218
+    },
+    "query_sql": {
+      "n": 8,
+      "p50_s": 0.0067391659999999996,
+      "p95_s": 0.015439548249999996,
+      "p99_s": 0.017359750449999996,
+      "min_s": 0.001762411,
+      "max_s": 0.017839801
+    },
+    "read_file": {
+      "n": 52,
+      "p50_s": 0.005817977,
+      "p95_s": 0.016402846199999998,
+      "p99_s": 0.017413738020000003,
+      "min_s": 0.000499312,
+      "max_s": 0.018138345
+    },
+    "run_checks": {
+      "n": 51,
+      "p50_s": 0.249031148,
+      "p95_s": 0.3407159375,
+      "p99_s": 0.362599599,
+      "min_s": 0.205707271,
+      "max_s": 0.366460305
+    },
+    "run_experiment": {
+      "n": 9,
+      "p50_s": 0.314809265,
+      "p95_s": 0.35371900339999995,
+      "p99_s": 0.36312561107999997,
+      "min_s": 0.28711596,
+      "max_s": 0.365477263
+    },
+    "run_python": {
+      "n": 27,
+      "p50_s": 0.167874372,
+      "p95_s": 0.2184237272,
+      "p99_s": 0.22850103615999998,
+      "min_s": 0.040055349,
+      "max_s": 0.231689451
+    },
+    "search_files": {
+      "n": 4,
+      "p50_s": 0.007582894,
+      "p95_s": 0.009068973650000001,
+      "p99_s": 0.00909482273,
+      "min_s": 0.001905399,
+      "max_s": 0.009101285
+    },
+    "write_file": {
+      "n": 32,
+      "p50_s": 0.007988337500000001,
+      "p95_s": 0.01408104205,
+      "p99_s": 0.017463647780000004,
+      "min_s": 0.000382879,
+      "max_s": 0.018813035
+    }
+  },
+  "definitions": {
+    "tool_execution": "recorded tool end minus start",
+    "same_owner_lookup_interval": "next native lookup start minus previous native lookup start, same owner",
+    "model_request_latency": "actual recorded request readiness to native release; includes waiting, preparation and model service",
+    "native_service": "native lookup to release, excluding prior queue delay"
+  },
+  "source_sha256": {
+    "results/analysis/agent_workload_v1_2026-11-11/requests.csv": "a6619adc4995a7815e5f21b18450e094f996957e61b50aca632ce5862f357ad8",
+    "results/analysis/agent_workload_v1_2026-11-11/tools.csv": "4e7a70371f2e002a3898b9f35f50ff1ac184fa4171befe6eb01fef195480fc5f",
+    "results/analysis/agent_workload_v1_2026-11-11/intervals.csv": "d9e657f4d1d0c6cab878f0ceda6ee3387f92816b63e93ee9302a82d4364ce285"
+  },
+  "new_model_generations": 0
+}

@@ -1,0 +1,11 @@
+{
+  "cause": "event parameter kind conflicts with predictor kind keyword at initialization",
+  "repair": "rename metadata to predictor_kind in separately versioned online_v2",
+  "prior_failure": "/home/liuxv/LeasePath-new-server-data/results/agent/continuous_workflow_v5_2026-11-11/e2e/lru",
+  "prior_model_generations": 0,
+  "regression_tests": 5,
+  "unchanged_initial_model_hashes": {
+    "/home/liuxv/LeasePath-new-server-data/results/agent/continuous_workflow_v5_2026-11-11/prediction/gbdt-initial.json": "bb4b0f85880dc191bdf6eb17ade264ad5849096b6c56eaacabed9a1412753da1",
+    "/home/liuxv/LeasePath-new-server-data/results/agent/continuous_workflow_v5_2026-11-11/prediction/empirical-initial.json": "4c3a268659839abed5e2538e2af5f97338c4f26b9e913d1d3064ad1b4575daab"
+  }
+}

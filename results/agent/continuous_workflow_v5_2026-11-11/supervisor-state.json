@@ -1,0 +1,39 @@
+{
+  "status": "stopped_requires_review",
+  "pid": 1328746,
+  "holdout_model_tasks": 0,
+  "stages": [
+    {
+      "name": "v3_collection",
+      "state": "completed_collection",
+      "original_failures_preserved": true
+    },
+    {
+      "name": "v7_repair_collection",
+      "summary": {
+        "status": "passed",
+        "successful_rounds": 48,
+        "observed_rounds": 48,
+        "completed_projects": 6,
+        "model_generations": 244,
+        "tool_calls": 196,
+        "max_prompt_tokens": 18196
+      }
+    },
+    {
+      "name": "initial_training",
+      "snapshots": 1079,
+      "episodes": 234,
+      "projects": 6
+    }
+  ],
+  "updated_wall_ns": 1794375530426649952,
+  "elapsed_s": 3824.7407614479307,
+  "active_command": [
+    "/home/liuxv/LeasePath-new-server-data/scripts/run_continuous_e2e_v5.py",
+    "--plan",
+    "/home/liuxv/LeasePath-new-server-data/results/agent/continuous_workflow_v5_2026-11-11/e2e/lru/plan.json"
+  ],
+  "current_arm": "lru",
+  "error": "RuntimeError: pipeline command failed; inspect /home/liuxv/LeasePath-new-server-data/results/agent/continuous_workflow_v5_2026-11-11/e2e/lru/run.log"
+}

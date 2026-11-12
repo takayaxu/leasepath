@@ -1,0 +1,2 @@
+{"kind": "initial_deployment", "observed_ns": 1556148915564248, "model_version": 0, "predictor_kind": "gbdt", "dynamic": false}
+{"kind": "service_end", "observed_ns": 1559193687593729, "model_version": 0, "deployed_updates": 0}

@@ -1,0 +1,97 @@
+{
+  "status": "completed_behavioral_pilot",
+  "pid": 4063035,
+  "started_wall_ns": 1794317592323837613,
+  "plan_sha256": "2975a1c8e5d3cce143bd92f13f55e699b68a15dc3a93b9349a3c221bac19c0de",
+  "new_model_generations": 83,
+  "holdout_model_tasks": 0,
+  "natural_JCT_acceptance": false,
+  "batches": [
+    {
+      "index": 0,
+      "names": [
+        "independent_job_shop",
+        "independent_propositional_sat",
+        "independent_package_resolution",
+        "independent_max_flow",
+        "independent_exact_cover",
+        "independent_error_correction"
+      ],
+      "status": "quality_failed",
+      "successes": 2,
+      "generations": 70,
+      "certified_loops": 2,
+      "path": "/dev/shm/leasepath-independent-pressure6-v2-20261110/batch-0",
+      "natural_JCT_acceptance": false
+    }
+  ],
+  "updated_utc": "2026-11-10T13:41:53.321926+00:00",
+  "tracer_pid": 4063032,
+  "topology": {
+    "status": "passed",
+    "groups": [
+      [
+        0,
+        2,
+        5,
+        6,
+        8,
+        10,
+        11,
+        12
+      ],
+      [
+        14,
+        42
+      ],
+      [
+        15,
+        43
+      ],
+      [
+        16,
+        44
+      ],
+      [
+        17,
+        45
+      ],
+      [
+        18,
+        46
+      ],
+      [
+        19,
+        47
+      ]
+    ],
+    "exclusive_host_claim": false
+  },
+  "model_verification_s": 0,
+  "model_bytes_verified": 0,
+  "runtime_compatibility": "353896d5ee570e9ee77192645b61e263561b3a635ec41eddfc314b36824c4930",
+  "model_load_s": 36.46359687997028,
+  "device_preflight": [
+    {
+      "index": "5",
+      "uuid": "GPU-9fedf347-c37c-a7d0-5db7-0bd9fb6d7188",
+      "used_mib": 4,
+      "total_mib": 32768
+    },
+    {
+      "index": "6",
+      "uuid": "GPU-a2abbb79-e97e-3dad-7c2c-3e3a1bed3430",
+      "used_mib": 4,
+      "total_mib": 32768
+    },
+    {
+      "index": "7",
+      "uuid": "GPU-87cd5f26-d0a4-4b48-62c9-161b68452dfc",
+      "used_mib": 4,
+      "total_mib": 32768
+    }
+  ],
+  "native_gate": "passed",
+  "current_batch": 0,
+  "finished_wall_ns": 1794318113321918021
+}

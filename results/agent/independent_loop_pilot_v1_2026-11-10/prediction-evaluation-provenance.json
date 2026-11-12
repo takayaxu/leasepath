@@ -1,0 +1,9 @@
+{
+  "prediction_evaluation": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/prediction-evaluation.json",
+  "sha256": "5a8174618e740fb9dcd8ba79fb6b2dcf7487106756451a2ea4feee9a432a11c0",
+  "original_evaluation_view": "reaudit-v1/verified-view",
+  "final_behavioral_audit_view": "reaudit-v2/verified-view",
+  "all_original_raw_files_byte_identical_across_views": true,
+  "final_feedback_audit": "/home/liuxv/LeasePath-new-server-data/results/agent/independent_loop_pilot_v1_2026-11-10/reaudit-v2/verified-view/batch-0/loop-audit.json",
+  "scope": "Parser/feedback audit corrections only; no generation reruns or changes to observed timing/labels/model predictions."
+}

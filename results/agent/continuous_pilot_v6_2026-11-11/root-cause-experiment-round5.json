@@ -1,0 +1,13 @@
+{
+  "cause": "model generated x + mean_x in OLS variance denominator instead of x - mean_x; finite-only public check did not catch mathematical error",
+  "actual_slope": 2.749652099666911,
+  "reproduced_bad_formula": 2.7496520996669105,
+  "independent_centered_formula": 2.7498293224615917,
+  "analysis_sha256": "271ab64345ce7019b3574713658a4388064ce6cab927f3529137ae3ea2d0f652",
+  "metrics_sha256": "e5cbf0757c6e3c37ceef638aed7d3fadbf101e71c9ef67aae9d00af36ce149c3",
+  "measurement_sha256": "b018937c19dca8f0062d6840b2e5acc96c04a1b359944b9cfec16803e6786eaf",
+  "original_failure_preserved": true,
+  "repair": "public OLS normal-equation residual check from actual local dataset; independent verifier unchanged",
+  "new_tool_sha256": "39a27548537ee2aba244f2c52717685efdb401a54f9ba4636be69cb9b025015e",
+  "no_new_model_calls_in_diagnosis": true
+}

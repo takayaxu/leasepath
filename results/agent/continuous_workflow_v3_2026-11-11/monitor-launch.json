@@ -1,0 +1,13 @@
+{
+  "pid": 1242245,
+  "command": [
+    "/opt/anaconda3/bin/python",
+    "-u",
+    "/home/liuxv/LeasePath-new-server-data/scripts/monitor_continuous_workflow_v2.py",
+    "--pipeline",
+    "/home/liuxv/LeasePath-new-server-data/results/agent/continuous_workflow_v3_2026-11-11",
+    "--wait-prior",
+    "/home/liuxv/LeasePath-new-server-data/results/agent/continuous_workflow_v1_2026-11-11/supervisor-state.json"
+  ],
+  "started_wall_ns": 1794368362535395659
+}

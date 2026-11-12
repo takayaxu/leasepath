@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/home/liuxv/LeasePath-new-server-data/scripts/verify_pressure_model_v2.py", line 206, in <module>
+    result = verify(args.plan, args.checkpoint)
+  File "/home/liuxv/LeasePath-new-server-data/scripts/verify_pressure_model_v2.py", line 169, in verify
+    state['memory_admission'] = memory_admission(available, resident_bytes(model, plan['bytes']), plan['minimum_total_available_bytes'])
+                                                            ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liuxv/LeasePath-new-server-data/scripts/stage_pressure_model_v1.py", line 65, in resident_bytes
+    raise OSError(ctypes.get_errno(), 'mmap for mincore')
+OSError: [Errno 12] mmap for mincore

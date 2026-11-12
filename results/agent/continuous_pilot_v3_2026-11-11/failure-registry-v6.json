@@ -1,0 +1,66 @@
+{
+  "created_wall_ns": 1794368985078644824,
+  "failure_count": 4,
+  "failures": [
+    {
+      "owner": "continuous_api",
+      "round": 6,
+      "original_error": "JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 176 (char 175)",
+      "round_evidence": "/dev/shm/leasepath-continuous-pilot-v3-20261111/rounds/continuous_api-06.json",
+      "round_sha256": "1647035e9d7677ef22ab92cd7b78f64509441d2670618faeec458d897d8fd12d",
+      "calls_evidence": "/dev/shm/leasepath-continuous-pilot-v3-20261111/tools/continuous_api/calls.jsonl",
+      "calls_sha256": "f208cf9eb649e3b9168063a16168eae8e6948044a0e5c515841ecb483c237e14",
+      "cause_code": "invalid_json_serialization",
+      "cause": "Native model wrote unquoted integer JSON keys; write_file accepted the malformed JSON.",
+      "repair": "Transactional JSON validation returns actual parser error; json.dump guidance; independent checker unchanged.",
+      "original_failure_preserved": true,
+      "repair_attempt": "/home/liuxv/LeasePath-new-server-data/results/agent/continuous_pilot_v6_2026-11-11/plan.json",
+      "repair_validation": "11 targeted regression tests passed; actual model validation still running"
+    },
+    {
+      "owner": "continuous_billing",
+      "round": 6,
+      "original_error": "independent artifact assertion failed",
+      "round_evidence": "/dev/shm/leasepath-continuous-pilot-v3-20261111/rounds/continuous_billing-06.json",
+      "round_sha256": "0030d97a74111d64b72e4abfca091d097802f48dd512416c4f14dd7fe946d6d3",
+      "calls_evidence": "/dev/shm/leasepath-continuous-pilot-v3-20261111/tools/continuous_billing/calls.jsonl",
+      "calls_sha256": "4b48a21e095d7e4350d0ab26a8be99048d35a71d98733af811222c1f18147c63",
+      "cause_code": "computed_results_not_persisted",
+      "cause": "Correct paid-by-region SQL result was followed by code reading missing report field and writing zero defaults; schema-only checks passed.",
+      "repair": "Public cross-field check requires regional paid sums equal persisted paid total; no private answer injected.",
+      "original_failure_preserved": true,
+      "repair_attempt": "/home/liuxv/LeasePath-new-server-data/results/agent/continuous_pilot_v6_2026-11-11/plan.json",
+      "repair_validation": "11 targeted regression tests passed; actual model validation still running"
+    },
+    {
+      "owner": "continuous_inventory",
+      "round": 5,
+      "original_error": "independent behavior assertion failed",
+      "round_evidence": "/dev/shm/leasepath-continuous-pilot-v3-20261111/rounds/continuous_inventory-05.json",
+      "round_sha256": "389036cfd70a518d8f191b4782baaee2ae90c8819e2adfda3557ce4ba6f65037",
+      "calls_evidence": "/dev/shm/leasepath-continuous-pilot-v3-20261111/tools/continuous_inventory/calls.jsonl",
+      "calls_sha256": "f57b9c5b77bd9a3d7a13156254b3da7ac984019df3ad39ab5434c12d1cb3a6f5",
+      "cause_code": "underspecified_parameter_type",
+      "cause": "Task omitted delivery collection type; model implemented dictionary.items while independent behavior expects list of {sku,qty}.",
+      "repair": "Explicit parameter type in current request; public small behavior checks, original semantics retained.",
+      "original_failure_preserved": true,
+      "repair_attempt": "/home/liuxv/LeasePath-new-server-data/results/agent/continuous_pilot_v6_2026-11-11/plan.json",
+      "repair_validation": "11 targeted regression tests passed; actual model validation still running"
+    },
+    {
+      "owner": "continuous_logs",
+      "round": 3,
+      "original_error": "independent artifact assertion failed",
+      "round_evidence": "/dev/shm/leasepath-continuous-pilot-v3-20261111/rounds/continuous_logs-03.json",
+      "round_sha256": "23ae3b8b84ba2c6f8de3968a5a910b44c06fbcb130ab4f77b21f155a6a75fd77",
+      "calls_evidence": "/dev/shm/leasepath-continuous-pilot-v3-20261111/tools/continuous_logs/calls.jsonl",
+      "calls_sha256": "c4b28446b6c709c0c679a035d2200e29ed152a4cb2ce174230b13f91c31f92a7",
+      "cause_code": "underspecified_target_artifact",
+      "cause": "Turn 4 omitted target filename; model stored correct slow-request list in config.json while deliverable remained incident.json.",
+      "repair": "Explicit target deliverable in each current user request; no future turn revealed.",
+      "original_failure_preserved": true,
+      "repair_attempt": "/home/liuxv/LeasePath-new-server-data/results/agent/continuous_pilot_v6_2026-11-11/plan.json",
+      "repair_validation": "11 targeted regression tests passed; actual model validation still running"
+    }
+  ]
+}
