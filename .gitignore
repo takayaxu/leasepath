@@ -34,3 +34,14 @@ data/processed/**/*.jsonl.gz
 # 论文图保留原创绘图与有许可的图标；下载的设计参考页只在本机使用。
 /docs/leasepath_isca_v3_assets/design_references/*.html
 /docs/leasepath_isca_v3_assets/design_references/lightgbm-leaf-wise.png
+
+# 投稿稿件与评审材料仅保存在服务器，不再发布到公开分支。
+/docs/leasepath_iclr_paper_*
+/docs/leasepath_isca2027_paper_*
+/docs/leasepath_paper_*
+/docs/leasepath_iclr_outline_*
+/docs/leasepath_iclr_v1_assets/
+/docs/leasepath_isca_v*_assets/
+/docs/leasepath_isca2027_registration_2026-11-10.md
+/paper_revise_*.md
+/paper_review_*.md
